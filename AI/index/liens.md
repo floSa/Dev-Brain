@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 971 pages actives.
+> 975 pages actives.
 
 ## Par page
 
@@ -88,7 +88,7 @@
 ### Ansible  ·  brique
 - tags : `infrastructure-as-code`, `reproducibility`
 - liens sortants : [[DevOps]], [[Docker]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
-- liens entrants : [[DevOps]], [[Docker]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
+- liens entrants : [[DevOps]], [[Docker]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
 
 ### AnythingLLM  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `agents`, `mcp`, `self-hosted`
@@ -208,7 +208,7 @@
 ### BentoML  ·  brique
 - tags : `model-serving`, `inference`
 - liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[HuggingFace]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[PyTorch]], [[Ray Serve]], [[Scikit-Learn]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens entrants : [[Comparatif - Serving de modèles]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[KServe]], [[Kubernetes]], [[LiteRT]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Beszel  ·  brique
 - tags : `observability`, `metrics`, `self-hosted`, `dashboard`, `container`
@@ -513,7 +513,7 @@
 ### Docker Compose  ·  brique
 - tags : `container`
 - liens sortants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Node-RED]], [[Podman]], [[Traefik]], [[k3s]]
-- liens entrants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Node-RED]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
+- liens entrants : [[CVAT]], [[Caddy]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubernetes]], [[Label Studio]], [[Nginx]], [[Node-RED]], [[Podman]], [[Reverse proxy et TLS]], [[Traefik]], [[k3s]]
 
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
@@ -918,7 +918,7 @@
 ### k3s  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
 - liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Kubernetes]], [[Traefik]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubernetes]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
 
 ### Kafka  ·  brique
 - tags : `message-broker`, `streaming`, `distributed`, `self-hosted`
@@ -953,7 +953,7 @@
 ### KServe  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Docker]], [[Déploiement de modèles]], [[Kubeflow]], [[Kubernetes]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[Kubeflow]], [[Kubernetes]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
+- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Serving de modèles]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Déploiement de modèles]], [[Feast]], [[Kubeflow]], [[Kubernetes]], [[LiteRT]], [[NVIDIA Triton]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TorchServe]], [[ZenML]]
 
 ### Kubeflow  ·  brique
 - tags : `ml-platform`, `ml-pipeline`, `kubernetes`, `hyperparameter-tuning`, `notebook`, `self-hosted`
@@ -1049,6 +1049,11 @@
 - tags : `llm`, `llm-gateway`, `inference`
 - liens sortants : [[AnythingLLM]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Guardrails]], [[Haystack]], [[LangChain]], [[LibreChat]], [[LlamaIndex]], [[Ollama]], [[OmniRoute]], [[Open WebUI]], [[OpenRouter]], [[Presidio]], [[Routing and cascading]], [[TGI]], [[vLLM]]
 - liens entrants : [[AnythingLLM]], [[DSPy]], [[Dify]], [[Données personnelles et anonymisation pour LLM]], [[Flowise]], [[Guardrails]], [[Haystack]], [[Headroom]], [[Helicone]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Langflow]], [[Langfuse]], [[LibreChat]], [[LlamaIndex]], [[OmniRoute]], [[Open WebUI]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Passerelles]], [[Presidio]], [[Reliability patterns]], [[Routing and cascading]], [[Runtimes]], [[smolagents]], [[tool-use]]
+
+### LiteRT  ·  brique
+- tags : `inference`, `edge-inference`, `quantization`, `embedded`
+- liens sortants : [[BentoML]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[PyTorch]], [[TensorFlow]], [[Ultralytics YOLO]]
+- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[ONNX Runtime]], [[OpenVINO]], [[Serving]], [[Ultralytics YOLO]]
 
 ### Llama Guard  ·  brique
 - tags : `guardrails`, `safety`, `ai-security`, `local-llm`
@@ -1347,8 +1352,8 @@
 
 ### NVIDIA Triton  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
-- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[ONNX Runtime]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[ONNX Runtime]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TensorRT-LLM]], [[TorchServe]]
+- liens sortants : [[BentoML]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[KServe]], [[ONNX Runtime]], [[OpenVINO]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[LiteRT]], [[ONNX Runtime]], [[OpenVINO]], [[PyTorch]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TensorRT-LLM]], [[TorchServe]]
 
 ### Obsidian  ·  brique
 - tags : `note-taking`, `knowledge-graph`
@@ -1371,9 +1376,9 @@
 - liens entrants : [[LiteLLM]], [[OpenRouter]], [[Passerelles]], [[Routing and cascading]]
 
 ### ONNX Runtime  ·  brique
-- tags : `inference`, `model-serving`, `inference-optimization`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[PyTorch]], [[TensorFlow]], [[TensorRT]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[Serving]], [[TensorRT]]
+- tags : `inference`, `edge-inference`, `model-serving`, `inference-optimization`, `gpu`, `quantization`
+- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[OpenVINO]], [[PyTorch]], [[TensorFlow]], [[TensorRT]]
+- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[OpenVINO]], [[Serving]], [[TensorRT]]
 
 ### Open WebUI  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `self-hosted`
@@ -1383,7 +1388,7 @@
 ### open62541  ·  brique
 - tags : `opc-ua`, `iiot`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]]
-- liens entrants : [[Données industrielles]], [[Telegraf]], [[asyncua]]
+- liens entrants : [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Telegraf]], [[asyncua]]
 
 ### open_deep_research  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `retrieval`, `mcp`
@@ -1474,6 +1479,11 @@
 - tags : `agent-memory`, `rag`, `context-engineering`, `agents`, `retrieval`, `mcp`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Context engineering]], [[Hermes Agent]], [[LLM & IA générative]], [[Letta]], [[Ollama]], [[Qdrant]], [[RAG]], [[ai-memory]], [[pgvector]]
 - liens entrants : [[Agent memory]], [[Architecture deep agent]], [[Hermes Agent]], [[LLM & IA générative]], [[Letta]], [[ai-memory]]
+
+### OpenVINO  ·  brique
+- tags : `inference`, `edge-inference`, `model-serving`, `quantization`
+- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Quantization]], [[TensorRT]], [[Ultralytics YOLO]]
+- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Serving]], [[TensorRT]], [[Ultralytics YOLO]]
 
 ### Optuna  ·  brique
 - tags : `hyperparameter-tuning`, `bayesian`, `distributed`
@@ -1598,7 +1608,7 @@
 ### Podman  ·  brique
 - tags : `container`, `self-hosted`
 - liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Trivy]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Trivy]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Trivy]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -1648,7 +1658,7 @@
 ### Prometheus  ·  brique
 - tags : `observability`, `metrics`, `alerting`, `self-hosted`
 - liens sortants : [[Alertmanager]], [[Caddy]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Loki]], [[Métriques, logs et traces]], [[NATS]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus-Eval]], [[RabbitMQ]], [[Redpanda]], [[SLO et alerting]], [[Telegraf]], [[Tempo]], [[Traefik]], [[VictoriaMetrics]], [[Zabbix]]
-- liens entrants : [[Alertmanager]], [[Caddy]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Harbor]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NATS]], [[Netdata]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Telegraf]], [[Traefik]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
+- liens entrants : [[Alertmanager]], [[Caddy]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Harbor]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NATS]], [[Netdata]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Telegraf]], [[Traefik]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
 
 ### Prometheus-Eval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `local-llm`
@@ -1748,7 +1758,7 @@
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
 - liens sortants : [[Apprentissage profond]], [[BentoML]], [[DeepSpeed]], [[Entraînement distribué]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[Keras]], [[LightGBM]], [[Mixed precision]], [[NVIDIA Triton]], [[Optuna]], [[Pruning]], [[PyTorch Lightning]], [[Scikit-Learn]], [[TensorFlow]], [[TorchServe]], [[XGBoost]], [[accelerate]], [[pykan]]
-- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Comparatif - Calcul distribué]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[EasyOCR]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Reward modeling]], [[River]], [[SFT]], [[SGLang]], [[SHAP]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[Typage statique en Python]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[neuralforecast]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
+- liens entrants : [[Aim]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Autoencodeurs]], [[BentoML]], [[CNN]], [[Captum]], [[Classification d'images]], [[ClearML]], [[Comparatif - Calcul distribué]], [[Cross-entropy]], [[CuPy]], [[DeepSpeed]], [[Detectron2]], [[EasyOCR]], [[Entraînement distribué]], [[Flash Attention and efficient attention]], [[Gradient checkpointing]], [[HuggingFace]], [[JAX]], [[KL divergence]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Kornia]], [[LiteRT]], [[MLflow]], [[Matrix products]], [[Mixed precision]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenCV]], [[Optuna]], [[PEFT]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Perceptron et MLP]], [[Pruning]], [[PyTorch Geometric]], [[PyTorch Lightning]], [[RAGatouille]], [[RL for LLMs]], [[Reward modeling]], [[River]], [[SFT]], [[SGLang]], [[SHAP]], [[Scikit-Learn]], [[Segment Anything (SAM)]], [[Self-attention]], [[Stable-Baselines3]], [[TRL]], [[TensorBoard]], [[TensorFlow]], [[TensorRT]], [[TorchServe]], [[Transfer learning vision]], [[Transformer architectures]], [[Typage statique en Python]], [[Ultralytics YOLO]], [[Vector norms]], [[Vision par ordinateur]], [[Weights & Biases]], [[accelerate]], [[albumentations]], [[darts]], [[datasets]], [[docTR]], [[neuralforecast]], [[numpy]], [[pykan]], [[pytorch-crf]], [[segment-anything]], [[sentence-transformers]], [[timm]], [[torchvision]]
 
 ### PyTorch Geometric  ·  brique
 - tags : `gnn`, `deep-learning`, `gpu`, `representation-learning`
@@ -2113,7 +2123,7 @@
 ### Telegraf  ·  brique
 - tags : `iiot`, `metrics`, `data-ingestion`, `opc-ua`, `mqtt`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[InfluxDB]], [[Kafka]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Données industrielles]], [[InfluxDB]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[TimescaleDB]], [[open62541]]
+- liens entrants : [[Données industrielles]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[TimescaleDB]], [[open62541]]
 
 ### Tempo  ·  brique
 - tags : `observability`, `tracing`, `self-hosted`
@@ -2133,7 +2143,7 @@
 ### TensorFlow  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
 - liens sortants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[PyTorch]], [[Scikit-Learn]], [[TensorFlow Serving]], [[XGBoost]]
-- liens entrants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]], [[Scikit-Learn]], [[TF-Agents]], [[TensorBoard]], [[TensorFlow Serving]], [[Weights & Biases]], [[accelerate]]
+- liens entrants : [[Apprentissage profond]], [[HuggingFace]], [[JAX]], [[Keras]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]], [[Scikit-Learn]], [[TF-Agents]], [[TensorBoard]], [[TensorFlow Serving]], [[Weights & Biases]], [[accelerate]]
 
 ### TensorFlow Serving  ·  brique
 - tags : `model-serving`, `inference`, `gpu`
@@ -2141,9 +2151,9 @@
 - liens entrants : [[BentoML]], [[Comparatif - Serving de modèles]], [[KServe]], [[NVIDIA Triton]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow]], [[TorchServe]]
 
 ### TensorRT  ·  brique
-- tags : `inference`, `inference-optimization`, `model-serving`, `gpu`, `quantization`
-- liens sortants : [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[PyTorch]]
-- liens entrants : [[Comparatif - Serving de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Serving]]
+- tags : `inference`, `edge-inference`, `inference-optimization`, `model-serving`, `gpu`, `quantization`
+- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[PyTorch]]
+- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[Serving]]
 
 ### TensorRT-LLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`, `quantization`
@@ -2252,8 +2262,8 @@
 
 ### Ultralytics YOLO  ·  brique
 - tags : `object-detection`, `segmentation`, `pose-estimation`, `object-tracking`, `computer-vision`, `deep-learning`, `gpu`
-- liens sortants : [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Label Studio]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[supervision]], [[torchvision]]
-- liens entrants : [[Annotation de données]], [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Label Studio]], [[Vision]], [[supervision]]
+- liens sortants : [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Label Studio]], [[LiteRT]], [[OpenVINO]], [[PyTorch]], [[Segmentation]], [[Suivi d'objets]], [[supervision]], [[torchvision]]
+- liens entrants : [[Annotation de données]], [[CVAT]], [[Comparatif - Détection & segmentation]], [[Detectron2]], [[Détection d'objets]], [[Label Studio]], [[LiteRT]], [[OpenVINO]], [[Vision]], [[supervision]]
 
 ### umap-learn  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -2655,6 +2665,11 @@
 - liens sortants : [[Caddy]], [[Comparatif - Reverse proxies.base]], [[Comparatifs]], [[HAProxy]], [[Nginx]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
 - liens entrants : [[Caddy]], [[Comparatifs]], [[HAProxy]], [[Nginx]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
 
+### Comparatif - Runtimes d'inférence CPU et edge  ·  comparatif
+- tags : `inference`, `edge-inference`, `quantization`
+- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge.base]], [[Comparatif - Serving de modèles]], [[Comparatifs]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[ONNX Runtime]], [[OpenVINO]], [[TensorRT]]
+- liens entrants : [[Comparatifs]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[ONNX Runtime]], [[OpenVINO]], [[Serving]], [[TensorRT]]
+
 ### Comparatif - Réduction de dimension  ·  comparatif
 - tags : `dimensionality-reduction`, `manifold`, `factor-analysis`
 - liens sortants : [[Comparatif - Réduction de dimension.base]], [[Comparatifs]], [[Fanalysis]], [[PaCMAP]], [[Prince]], [[Scikit-Learn]], [[umap-learn]]
@@ -2673,7 +2688,7 @@
 ### Comparatif - Serving de modèles  ·  comparatif
 - tags : `model-serving`, `inference`, `kubernetes`
 - liens sortants : [[BentoML]], [[Comparatif - Serving de modèles.base]], [[Comparatifs]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray]], [[Ray Serve]], [[Seldon Core]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
-- liens entrants : [[BentoML]], [[Comparatifs]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatifs]], [[KServe]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 
 ### Comparatif - Solveurs d'optimisation  ·  comparatif
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
@@ -2802,8 +2817,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -2852,8 +2867,8 @@
 
 ### Données industrielles  ·  hub
 - tags : `mqtt`, `opc-ua`, `iiot`, `message-broker`
-- liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[EMQX]], [[InfluxDB]], [[Ingestion de données]], [[Kafka]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[EMQX]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Ingestion de données]], [[Kafka]], [[LiteRT]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[OpenVINO]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[open62541]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Serving]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Embeddings & encodeurs  ·  hub
 - tags : `embeddings`, `semantic-search`, `retrieval`, `model-serving`, `inference`
@@ -2882,7 +2897,7 @@
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
-- liens sortants : [[Data & pipelines]], [[DevOps]], [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]], [[Web & API]]
+- liens sortants : [[Data & pipelines]], [[DevOps]], [[Machine Learning]], [[Observabilité]], [[Réseau]], [[Stockage]], [[Sécurité]], [[Web & API]]
 - liens entrants : —
 
 ### Ingestion de données  ·  hub
@@ -2908,7 +2923,7 @@
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
 - liens sortants : [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Évaluation de modèles]]
-- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
+- liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -3057,8 +3072,8 @@
 
 ### Serving  ·  hub
 - tags : `model-serving`, `inference`, `deployment-strategy`, `kubernetes`, `gpu`, `inference-optimization`
-- liens sortants : [[Apprentissage profond]], [[BentoML]], [[Comparatif - Serving de modèles]], [[Data drift]], [[Distillation]], [[Déploiement de modèles]], [[Evidently]], [[Feast]], [[Feature store — concept]], [[KServe]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Pruning]], [[Quantization]], [[Ray Serve]], [[Runtimes]], [[Seldon Core]], [[Suivi d'expériences]], [[Séries temporelles]], [[Tabulaire]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
-- liens entrants : [[Apprentissage profond]], [[Infinity]], [[MLOps]], [[Machine Learning]], [[Suivi d'expériences]], [[Séries temporelles]], [[Text Embeddings Inference]], [[Vision]]
+- liens sortants : [[Apprentissage profond]], [[BentoML]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Data drift]], [[Distillation]], [[Données industrielles]], [[Déploiement de modèles]], [[Evidently]], [[Feast]], [[Feature store — concept]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[KServe]], [[LiteRT]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[Pruning]], [[Quantization]], [[Ray Serve]], [[Runtimes]], [[Seldon Core]], [[Suivi d'expériences]], [[Séries temporelles]], [[Tabulaire]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[Apprentissage profond]], [[Infinity]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[MLOps]], [[Machine Learning]], [[Suivi d'expériences]], [[Séries temporelles]], [[Text Embeddings Inference]], [[Vision]]
 
 ### Signal & audio  ·  hub
 - tags : `signal-processing`, `wavelet`, `spectrogram`, `fourier`, `audio-classification`
@@ -3528,7 +3543,7 @@
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
 - liens sortants : [[Calibration]], [[Data leakage]], [[Evidently]], [[Jensen-Shannon divergence]], [[KL divergence]], [[MLflow]], [[Monitoring de modèle en production]], [[River]], [[Wasserstein distance]]
-- liens entrants : [[Apprentissage supervisé]], [[CI-CD pour le ML]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Evidently]], [[Explicabilité des modèles]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[Apprentissage supervisé]], [[CI-CD pour le ML]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'outliers multivariée]], [[Evidently]], [[Explicabilité des modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Serving]], [[Suivi d'expériences]]
 
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
@@ -3563,7 +3578,7 @@
 ### Distillation  ·  notion
 - tags : `model-compression`, `deep-learning`, `small-language-model`, `synthetic-data`, `fine-tuning`
 - liens sortants : [[Cross-entropy]], [[KL divergence]], [[PEFT]], [[Pruning]], [[Quantization]], [[SFT]], [[Small Language Models]], [[Synthetic data generation]]
-- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Diffusion models]], [[Pruning]], [[Quantization]], [[Serving]], [[Small Language Models]], [[Superposition]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
+- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[Diffusion models]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Pruning]], [[Quantization]], [[Serving]], [[Small Language Models]], [[Superposition]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
 
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
@@ -3578,7 +3593,7 @@
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
 - liens sortants : [[A/B testing]], [[BentoML]], [[Data drift]], [[KServe]], [[MLflow]], [[Model registry & versioning]], [[Monitoring de modèle en production]]
-- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Plateforme data & IA — concept]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
+- liens entrants : [[BentoML]], [[CI-CD pour le ML]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[KServe]], [[Kubeflow]], [[LiteRT]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[NVIDIA Triton]], [[ONNX Runtime]], [[OpenVINO]], [[Plateforme data & IA — concept]], [[Ray Serve]], [[Seldon Core]], [[Serving]], [[TensorFlow Serving]], [[TensorRT]], [[TorchServe]]
 
 ### Détection d'objets  ·  notion
 - tags : `object-detection`, `computer-vision`, `deep-learning`
@@ -3855,6 +3870,11 @@
 - liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[statsmodels]]
 - liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Statistiques & inférence]]
 
+### Inférence en bordure - modèles sur du matériel d'atelier  ·  notion
+- tags : `edge-inference`, `inference`, `iiot`, `model-serving`
+- liens sortants : [[Ansible]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Data drift]], [[Distillation]], [[Docker Compose]], [[Déploiement de modèles]], [[LiteRT]], [[Maintenance prédictive et RUL]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[ONNX Runtime]], [[OpenVINO]], [[Podman]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Pruning]], [[Quantization]], [[Serving]], [[Telegraf]], [[TensorRT]], [[k3s]], [[open62541]]
+- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[LiteRT]], [[ONNX Runtime]], [[OpenVINO]], [[Serving]]
+
 ### Ingestion incrémentale et curseurs  ·  notion
 - tags : `data-ingestion`, `data-pipeline`, `idempotence`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[Change Data Capture (CDC)]], [[Contrats de données & qualité]], [[Dagster]], [[Debezium]], [[ELT vs ETL & idempotence]], [[dlt]]
@@ -3988,7 +4008,7 @@
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
 - liens sortants : [[Détection d'outliers multivariée]], [[Forecasting framing]], [[Imputation des valeurs manquantes]], [[Regression metrics]], [[STUMPY]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[lifelines]]
-- liens entrants : [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Séries temporelles]], [[Time series anomaly detection]]
+- liens entrants : [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Séries temporelles]], [[Time series anomaly detection]]
 
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -4073,7 +4093,7 @@
 ### Model registry & versioning  ·  notion
 - tags : `model-registry`, `experiment-tracking`
 - liens sortants : [[Data drift]], [[Déploiement de modèles]], [[MLflow]], [[Monitoring de modèle en production]]
-- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Déploiement de modèles]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[CI-CD pour le ML]], [[Comparatif - Versionnage de données]], [[DVC]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Monitoring de modèle en production]], [[Plateforme data & IA — concept]], [[Serving]], [[Suivi d'expériences]]
 
 ### Model-based RL  ·  notion
 - tags : `reinforcement-learning`, `model-based-rl`, `dynamic-programming`
@@ -4093,7 +4113,7 @@
 ### Monitoring de modèle en production  ·  notion
 - tags : `model-monitoring`, `data-drift`, `concept-drift`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Data drift]], [[Déploiement de modèles]], [[Evidently]], [[MLflow]], [[Model registry & versioning]]
-- liens entrants : [[CI-CD pour le ML]], [[Data drift]], [[DataRobot]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[Feature store — concept]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NannyML]], [[Plateforme data & IA — concept]], [[SLO et alerting]], [[Serving]], [[Suivi d'expériences]]
+- liens entrants : [[CI-CD pour le ML]], [[Data drift]], [[DataRobot]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[Feature store — concept]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NannyML]], [[Plateforme data & IA — concept]], [[SLO et alerting]], [[Serving]], [[Suivi d'expériences]]
 
 ### Monte Carlo Tree Search  ·  notion
 - tags : `planning`, `monte-carlo`, `model-based-rl`
@@ -4333,12 +4353,12 @@
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
 - liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]]
-- liens entrants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[PyTorch]], [[Quantization]], [[Small Language Models]]
-- liens entrants : [[Apprentissage profond]], [[Calculs adaptatifs]], [[Distillation]], [[PyTorch]], [[Quantization]], [[Serving]], [[Superposition]]
+- liens entrants : [[Apprentissage profond]], [[Calculs adaptatifs]], [[Distillation]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[PyTorch]], [[Quantization]], [[Serving]], [[Superposition]]
 
 ### Q-learning and DQN  ·  notion
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
@@ -4348,7 +4368,7 @@
 ### Quantization  ·  notion
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Pruning]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
+- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pruning]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
 
 ### Query transformations  ·  notion
 - tags : `query-transformation`, `rag`, `retrieval`, `llm`
@@ -4954,10 +4974,11 @@
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
+- `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, TensorRT
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
-- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
+- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
 - `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Qwen3-Embedding, RAG, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy, Théorie de l'information
@@ -4996,12 +5017,12 @@
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : Architecture pilotée par les événements, ELT vs ETL & idempotence, Fiabilité des données, Ingestion incrémentale et curseurs, Orchestration, Stream processing
 - `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
-- `iiot` : Données industrielles, EMQX, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
+- `iiot` : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
 - `in-memory` : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
-- `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
+- `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
@@ -5058,7 +5079,7 @@
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
-- `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
+- `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
 - `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `mqtt` : Comparatif - Brokers MQTT, Données industrielles, EMQX, Mosquitto, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
@@ -5116,7 +5137,7 @@
 - `prompting` : Chain-of-Thought, Prompt engineering, i-have-adhd  — pas de page concept dédiée
 - `property-based-testing` : Hypothesis  — pas de page concept dédiée
 - `pruning` : Pruning
-- `quantization` : Apprentissage profond, Choisir un modèle d'embedding, Comparatif - Exécution & serving LLM, Fine-tuning, LM Studio, ONNX Runtime, Ollama, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
+- `quantization` : Apprentissage profond, Choisir un modèle d'embedding, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Fine-tuning, LM Studio, LiteRT, ONNX Runtime, Ollama, OpenVINO, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
 - `query-engine` : OLTP, OLAP et lakehouse, Trino  — pas de page concept dédiée
 - `query-transformation` : Query transformations
 - `rademacher-complexity` : Rademacher complexity, Théorie de l'apprentissage
@@ -5281,7 +5302,7 @@
 - `education` (porté par : OpenMAIC)
 - `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin)
 - `eigenvalue` (porté par : Algèbre linéaire, Eigendecomposition, SVD)
-- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib)
+- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
 - `event-driven` (porté par : Architecture pilotée par les événements)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Neptune, Suivi d'expériences, TensorBoard, Weights & Biases)
@@ -5302,9 +5323,9 @@
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
-- `iiot` (porté par : Données industrielles, EMQX, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
+- `iiot` (porté par : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
 - `in-memory` (porté par : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
-- `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
+- `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
 - `interactive-viz` (porté par : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly)
 - `interoperability` (porté par : Apache Arrow)
@@ -5341,7 +5362,7 @@
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Évaluation, Évaluation de modèles)
 - `model-hub` (porté par : HuggingFace, timm)
-- `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
+- `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
 - `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)

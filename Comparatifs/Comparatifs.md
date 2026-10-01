@@ -95,6 +95,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Orchestrateurs ML]]
 - [[Comparatif - Plateformes data & IA]]
 - [[Comparatif - Reinforcement learning]]
+- [[Comparatif - Runtimes d'inférence CPU et edge]]
 - [[Comparatif - Réduction de dimension]]
 - [[Comparatif - Serving de modèles]]
 - [[Comparatif - Suivi d'expériences ML]]
