@@ -50,7 +50,7 @@ de modèles ouvert.
 
 - Installation — `uv add mlflow` ; en local, `mlflow ui` suffit sur des fichiers
 - Point d'entrée — API Python (`mlflow.log_*`, `autolog`), CLI et UI web ; serveur de tracking dès qu'on est plusieurs
-- Prérequis — en équipe, une base SQL (Postgres) pour les métadonnées et un stockage d'artefacts (S3, MinIO)
+- Prérequis — en équipe, une base SQL (Postgres) pour les métadonnées et un stockage d'artefacts (S3, [[MinIO]] — projet archivé, voir sa fiche ; [[SeaweedFS]], [[Garage]] ou [[Ceph]] comme alternatives)
 - Exécution — serveur mono-nœud auto-hébergé, ou managé chez Databricks
 - Coût — gratuit, Apache-2.0 ; Managed MLflow (Databricks) payant, intégré à la plateforme
 
