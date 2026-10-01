@@ -111,6 +111,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `linter` | Analyse statique du code (erreurs, style, bonnes pratiques) |
 | `formatter` | Formatage automatique du code (style cohérent, sans débat) |
 | `testing` | Tests automatisés (unitaires, fonctionnels, fixtures) |
+| `type-checker` | Vérification statique de types — lire les annotations sans exécuter le code et signaler les incohérences (mypy, Pyright, Pyrefly, ty) ; à distinguer de `type-hints`, qui marque aussi les outils qui exploitent les annotations à l'exécution (Pydantic, Typer) |
 | `git-hooks` | Hooks Git de client — exécuter des contrôles (lint, secrets, types) avant le commit ou le push, et les partager par un fichier versionné (pre-commit, prek, lefthook) ; à distinguer de `ci-cd`, qui tourne sur le serveur |
 | `property-based-testing` | Test par propriétés — le test énonce une propriété et la bibliothèque génère les entrées, cherche un contre-exemple puis le réduit (Hypothesis) ; à distinguer de `testing`, qui couvre aussi les tests par exemples |
 | `data-validation` | Validation de données à l'exécution selon un schéma typé |
