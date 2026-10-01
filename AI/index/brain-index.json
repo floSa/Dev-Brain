@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1021,
+  "count": 1030,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,8 +197,12 @@
       "Label Studio"
     ],
     "anomaly-detection": [
+      "Anomalie visuelle par banque de mémoire",
+      "Anomalie visuelle par reconstruction, distillation et flux",
+      "Anomalie visuelle zero-shot et few-shot",
       "Comparatif - Détection d'anomalies",
       "Détection d'anomalies",
+      "Détection d'anomalies visuelle",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Détection hors distribution (OOD)",
@@ -513,6 +517,10 @@
       "PuLP"
     ],
     "computer-vision": [
+      "Anomalie visuelle par banque de mémoire",
+      "Anomalie visuelle par reconstruction, distillation et flux",
+      "Anomalie visuelle zero-shot et few-shot",
+      "AnomalyCLIP",
       "Apprentissage auto-supervisé en vision",
       "Architectures CNN",
       "Augmentation d'images",
@@ -520,7 +528,10 @@
       "CVAT",
       "Classification d'images",
       "Comparatif - Détection & segmentation",
+      "Comparatif - Détection d'anomalies visuelles",
       "Detectron2",
+      "Dinomaly",
+      "Détection d'anomalies visuelle",
       "Détection d'objets",
       "EasyOCR",
       "Estimation de pose",
@@ -542,7 +553,9 @@
       "Vision Transformers (ViT)",
       "Vision par ordinateur",
       "albumentations",
+      "anomalib",
       "docTR",
+      "patchcore-inspection",
       "segment-anything",
       "supervision",
       "timm",
@@ -886,6 +899,7 @@
     "deep-learning": [
       "Adam optimizer",
       "AlphaZero and self-play",
+      "Anomalie visuelle par reconstruction, distillation et flux",
       "Apprentissage auto-supervisé en vision",
       "Apprentissage profond",
       "Architectures CNN",
@@ -1141,7 +1155,8 @@
       "LiteRT",
       "ONNX Runtime",
       "OpenVINO",
-      "TensorRT"
+      "TensorRT",
+      "anomalib"
     ],
     "education": [
       "OpenMAIC"
@@ -1363,6 +1378,7 @@
       "Rule - Toolchain Python"
     ],
     "foundation-model": [
+      "Anomalie visuelle zero-shot et few-shot",
       "Chronos",
       "Modèles de fondation vision",
       "Séries temporelles",
@@ -1596,6 +1612,17 @@
       "hnswlib",
       "numpy",
       "pandas"
+    ],
+    "industrial-inspection": [
+      "Anomalie visuelle par banque de mémoire",
+      "Anomalie visuelle par reconstruction, distillation et flux",
+      "Anomalie visuelle zero-shot et few-shot",
+      "AnomalyCLIP",
+      "Comparatif - Détection d'anomalies visuelles",
+      "Dinomaly",
+      "Détection d'anomalies visuelle",
+      "anomalib",
+      "patchcore-inspection"
     ],
     "inference": [
       "BentoML",
@@ -2542,6 +2569,9 @@
       "pingouin",
       "scipy.stats"
     ],
+    "normalizing-flow": [
+      "Anomalie visuelle par reconstruction, distillation et flux"
+    ],
     "nosql": [
       "Apache Cassandra",
       "Bases de données",
@@ -3451,6 +3481,7 @@
     "self-supervised": [
       "Apprentissage auto-supervisé en vision",
       "Apprentissage contrastif",
+      "Dinomaly",
       "Modèles de fondation vision"
     ],
     "semantic-search": [
@@ -3866,6 +3897,7 @@
       "Sniffnet"
     ],
     "transfer-learning": [
+      "Anomalie visuelle par banque de mémoire",
       "Fusion de modèles",
       "Méta-apprentissage et few-shot learning",
       "Transfer learning vision",
@@ -3946,6 +3978,7 @@
       "Clustering hiérarchique par densité",
       "Comparatif - Détection d'anomalies",
       "DBSCAN",
+      "Détection d'anomalies visuelle",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
       "Fanalysis",
@@ -4037,6 +4070,8 @@
       "Video generation"
     ],
     "vision-language": [
+      "Anomalie visuelle zero-shot et few-shot",
+      "AnomalyCLIP",
       "ColPali",
       "Gemma",
       "MinerU",
@@ -4110,6 +4145,10 @@
     ],
     "wide-column": [
       "Apache Cassandra"
+    ],
+    "zero-shot": [
+      "Anomalie visuelle zero-shot et few-shot",
+      "AnomalyCLIP"
     ]
   },
   "pages": [
@@ -19172,6 +19211,150 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Anomalie visuelle par banque de mémoire.md",
+      "nom": "Anomalie visuelle par banque de mémoire",
+      "alias": [
+        "SPADE",
+        "PaDiM",
+        "PatchCore",
+        "Détection d'anomalies par plus proche voisin",
+        "Memory bank anomaly detection",
+        "Coreset"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "computer-vision",
+        "industrial-inspection",
+        "transfer-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Anomalie visuelle par reconstruction, distillation et flux.md",
+      "nom": "Anomalie visuelle par reconstruction, distillation et flux",
+      "alias": [
+        "DRAEM",
+        "RD4AD",
+        "Reverse Distillation",
+        "STFPM",
+        "EfficientAD",
+        "UniAD",
+        "FastFlow",
+        "CFlow",
+        "CFlow-AD",
+        "Détection d'anomalies multi-classe",
+        "Anomalie visuelle par réseau appris"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "computer-vision",
+        "industrial-inspection",
+        "normalizing-flow",
+        "deep-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Anomalie visuelle zero-shot et few-shot.md",
+      "nom": "Anomalie visuelle zero-shot et few-shot",
+      "alias": [
+        "WinCLIP",
+        "AnomalyCLIP",
+        "AnomalyDINO",
+        "AdaCLIP",
+        "Détection d'anomalies zero-shot",
+        "Few-shot anomaly detection",
+        "Anomalie visuelle avec modèle vision-langage"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "computer-vision",
+        "industrial-inspection",
+        "zero-shot",
+        "vision-language",
+        "foundation-model"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/AnomalyCLIP.md",
+      "nom": "AnomalyCLIP",
+      "alias": [
+        "zqhang/AnomalyCLIP",
+        "AnomalyCLIP ICLR 2024"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Code d'AnomalyCLIP (ICLR 2024) — détection d'anomalies visuelles zero-shot : CLIP ViT-L/14@336px gelé, deux prompts apprenables indépendants de l'objet (normal, anormal), entraînés sur un jeu auxiliaire puis testés sur des catégories jamais vues ; 91,5 % d'AUROC image annoncés sur MVTec AD ; code sous licence MIT.",
+      "tags": [
+        "industrial-inspection",
+        "computer-vision",
+        "zero-shot",
+        "vision-language"
+      ],
+      "alternatives": [
+        "[[anomalib]]",
+        "[[patchcore-inspection]]",
+        "[[Dinomaly]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies visuelles.md",
+      "nom": "Comparatif - Détection d'anomalies visuelles",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "industrial-inspection",
+        "computer-vision"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies.md",
       "nom": "Comparatif - Détection d'anomalies",
       "alias": null,
@@ -19183,6 +19366,61 @@
       "pitch": null,
       "tags": [
         "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Dinomaly.md",
+      "nom": "Dinomaly",
+      "alias": [
+        "guojiajeremy/Dinomaly",
+        "Dinomaly CVPR 2025"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Code de Dinomaly (CVPR 2025) — détection d'anomalies visuelles multi-classe avec un seul modèle pour toutes les catégories : encodeur DINOv2 à registres gelé, goulot bruité, décodeur à attention linéaire ; 99,6 % d'AUROC image annoncés sur MVTec AD, 98,7 % sur VisA, 89,3 % sur Real-IAD ; points de contrôle fournis, Apache-2.0.",
+      "tags": [
+        "industrial-inspection",
+        "computer-vision",
+        "self-supervised"
+      ],
+      "alternatives": [
+        "[[anomalib]]",
+        "[[patchcore-inspection]]",
+        "[[AnomalyCLIP]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection d'anomalies visuelle.md",
+      "nom": "Détection d'anomalies visuelle",
+      "alias": [
+        "Visual anomaly detection",
+        "Inspection visuelle par IA",
+        "Détection de défauts non supervisée",
+        "Industrial anomaly detection",
+        "Contrôle qualité visuel non supervisé"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "computer-vision",
+        "industrial-inspection",
         "unsupervised"
       ],
       "alternatives": null,
@@ -19524,6 +19762,59 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/anomalib.md",
+      "nom": "anomalib",
+      "alias": [
+        "Anomalib",
+        "open-edge-platform/anomalib",
+        "openvinotoolkit/anomalib"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python (Intel, Open Edge Platform) de détection d'anomalies visuelles — une trentaine de modèles d'images (PatchCore, PaDiM, STFPM, EfficientAD, FastFlow, CFlow, DRAEM, Dinomaly, WinCLIP…) sous PyTorch Lightning, CLI et API Python, jeux MVTec AD, VisA ou dossier maison, export ONNX et OpenVINO ; Apache-2.0.",
+      "tags": [
+        "industrial-inspection",
+        "computer-vision",
+        "edge-inference"
+      ],
+      "alternatives": [
+        "[[patchcore-inspection]]",
+        "[[Dinomaly]]",
+        "[[AnomalyCLIP]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/patchcore-inspection.md",
+      "nom": "patchcore-inspection",
+      "alias": [
+        "PatchCore",
+        "amazon-science/patchcore-inspection",
+        "Towards Total Recall in Industrial Anomaly Detection"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Implémentation de référence d'Amazon Science de PatchCore (CVPR 2022) — banque de mémoire de patchs d'un WideResNet50, réduite par coreset, puis plus proche voisin (Faiss) au test ; scripts d'entraînement et d'évaluation sur MVTec AD, 99,6 % d'AUROC image annoncés pour l'ensemble ; Apache-2.0, dernier commit de la branche principale en mars 2023.",
+      "tags": [
+        "industrial-inspection",
+        "computer-vision"
+      ],
+      "alternatives": [
+        "[[anomalib]]",
+        "[[Dinomaly]]",
+        "[[AnomalyCLIP]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
     },
     {
       "path": "Machine Learning/Détection d'anomalies/Évaluer une détection d'anomalies.md",

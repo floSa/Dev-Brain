@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 928 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 937 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -43,11 +43,11 @@
   - Sortie typée — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Text-to-SQL — 5 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Évaluation — 8 briques · 7 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
-- **Machine Learning** — 106 briques · 176 notions · 16 comparatifs → [1/3](carte/Machine%20Learning%20-%201%20sur%203.md) · [2/3](carte/Machine%20Learning%20-%202%20sur%203.md) · [3/3](carte/Machine%20Learning%20-%203%20sur%203.md)
+- **Machine Learning** — 110 briques · 180 notions · 17 comparatifs → [1/3](carte/Machine%20Learning%20-%201%20sur%203.md) · [2/3](carte/Machine%20Learning%20-%202%20sur%203.md) · [3/3](carte/Machine%20Learning%20-%203%20sur%203.md)
   - Apprentissage par renforcement — 6 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
   - Apprentissage profond — 8 briques · 33 notions → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
-  - Détection d'anomalies — 3 briques · 10 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
-  - Embeddings & encodeurs — 6 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Détection d'anomalies — 7 briques · 14 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Embeddings & encodeurs — 6 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
   - Interprétabilité — 7 briques · 6 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
   - Monitoring de modèles — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
   - NLP — 6 briques · 7 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
@@ -56,7 +56,7 @@
   - Recherche d'hyperparamètres — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
   - Serving — 11 briques · 2 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
   - Socle — 2 briques · 23 notions → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Suivi d'expériences — 7 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Suivi d'expériences — 7 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
   - Séries temporelles — 6 briques · 11 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
   - Tabulaire — 6 briques · 15 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
   - Vision — 9 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
