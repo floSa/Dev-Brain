@@ -50,6 +50,7 @@ tags: [notebook, reproducibility, version-control]
 - [[uv]] — l'environnement épinglé (lockfile) qui rend l'exécution reproductible.
 - [[Ruff]] / [[pytest]] — appliqués au pendant `.py` du notebook.
 - [[ELT vs ETL & idempotence]] — même exigence d'idempotence, côté pipelines de données.
+- Voir aussi : [[mypy]], [[Pyright]], [[pre-commit]], [[Qualité du code]].
 
 ## Pour aller plus loin
 
