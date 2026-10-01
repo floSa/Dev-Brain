@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 976 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 978 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -399,6 +399,7 @@
 ### llm/rag
 - **bge-reranker** — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - **Cohere Rerank** — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
+- **ColPali** — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 - **FlashRank** — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 - **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
@@ -844,6 +845,7 @@
 - **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
 - **RAG documentaire on-prem - clé en main ou assemblé** — domaines : ai-eng · alias : RAG documentaire on-prem, RAG on-prem, RAG documentaire on-prem : clé en main ou assemblé, moteur RAG clé en main, RAG clé en main ou assemblé, RAG interne
+- **RAG visuel - retrouver des documents sans OCR** — domaines : ai-eng, data-eng · alias : RAG visuel : retrouver des documents sans OCR, RAG visuel, visual RAG, visual document retrieval, recherche de pages par image
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
 
 ### llm/runtime

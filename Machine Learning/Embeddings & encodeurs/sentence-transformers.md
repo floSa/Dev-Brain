@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[FastEmbed]]", "[[Text Embeddings Inference]]", "[[Infinity]]"]
+alternatives: ["[[FastEmbed]]", "[[Text Embeddings Inference]]", "[[Infinity]]", "[[ColPali]]"]
 complements: ["[[HuggingFace]]", "[[SetFit]]", "[[txtai]]", "[[bge-reranker]]", "[[Jina Reranker]]", "[[bge-m3]]", "[[Qwen3-Embedding]]"]
 tags: [embeddings, semantic-search, retrieval, reranking, nlp]
 url_docs: https://www.sbert.net
@@ -70,6 +70,7 @@ jours, relevés le 2026-09-30.
 - [[Text Embeddings Inference]] — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026. — le service partagé : la même tâche, derrière une API.
 - [[Infinity]] — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique. — le service qui couvre aussi CLIP et ColPali.
 - Embeddings managés par API — OpenAI, Cohere, Voyage : une alternative d'infrastructure, pas de bibliothèque (pas en fiche, et hors du critère on-prem).
+- [[ColPali]] — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 
 ### Compléments
 

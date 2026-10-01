@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[LangChain]]", "[[Haystack]]", "[[DSPy]]", "[[RAGFlow]]"]
-complements: ["[[LlamaIndex NLSQLTableQueryEngine]]"]
+complements: ["[[LlamaIndex NLSQLTableQueryEngine]]", "[[ColPali]]"]
 tags: [llm, rag, embeddings, agents]
 url_docs: https://developers.llamaindex.ai/python/framework/
 url_repo: https://github.com/run-llama/llama_index
@@ -65,6 +65,7 @@ côté, les intégrations de l'autre.
 ### Compléments
 
 - [[LlamaIndex NLSQLTableQueryEngine]] — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante SQLTableRetrieverQueryEngine pour récupérer les tables pertinentes des gros schémas ; brique intégrée, à privilégier si LlamaIndex est déjà le socle. — son module text-to-SQL, qui ne s'utilise pas sans lui.
+- [[ColPali]] — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 
 ## Ressources
 

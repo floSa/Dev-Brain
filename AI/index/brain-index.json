@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 976,
+  "count": 978,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1072,6 +1072,7 @@
       "PaddleOCR",
       "Parsing",
       "PyMuPDF",
+      "RAG visuel - retrouver des documents sans OCR",
       "RAGFlow",
       "Tesseract",
       "Unstructured",
@@ -1130,6 +1131,7 @@
     "embeddings": [
       "Bases de données vectorielles",
       "Choisir un modèle d'embedding",
+      "ColPali",
       "Comparatif - Embeddings",
       "Embeddings & encodeurs",
       "FastEmbed",
@@ -1141,6 +1143,7 @@
       "LlamaIndex",
       "Qwen3-Embedding",
       "RAG",
+      "RAG visuel - retrouver des documents sans OCR",
       "Recherche sémantique",
       "Systèmes de recommandation",
       "Text Embeddings Inference",
@@ -1592,11 +1595,13 @@
     ],
     "information-retrieval": [
       "BM25",
+      "ColPali",
       "Comparatif - NLP",
       "Fuzzy matching & similarité de chaînes",
       "Index inversé",
       "Late-interaction retrieval",
       "NLP",
+      "RAG visuel - retrouver des documents sans OCR",
       "Recherche d'information",
       "TF-IDF",
       "bm25s",
@@ -2363,10 +2368,12 @@
     ],
     "multimodal": [
       "Claude Video",
+      "ColPali",
       "Image generation",
       "LanceDB",
       "Marqo",
       "Médias",
+      "RAG visuel - retrouver des documents sans OCR",
       "Speech models",
       "Superwhisper",
       "Video generation",
@@ -2537,6 +2544,7 @@
       "OCR classique vs modèles vision-langage pour documents",
       "PaddleOCR",
       "Parsing",
+      "RAG visuel - retrouver des documents sans OCR",
       "Stirling PDF",
       "Tesseract",
       "Unstructured",
@@ -2822,6 +2830,7 @@
       "Chunking strategies",
       "Cognee",
       "Cohere Rerank",
+      "ColPali",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
       "Comparatif - Parsing de documents",
@@ -2859,6 +2868,7 @@
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
+      "RAG visuel - retrouver des documents sans OCR",
       "RAGChecker",
       "RAGFlow",
       "RAGatouille",
@@ -3068,6 +3078,7 @@
       "Choisir un modèle d'embedding",
       "Chunking strategies",
       "Cohere Rerank",
+      "ColPali",
       "Comparatif - Mémoire pour agents",
       "Comparatif - Rerankers",
       "Deep research",
@@ -3089,6 +3100,7 @@
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
+      "RAG visuel - retrouver des documents sans OCR",
       "RAGFlow",
       "RAGatouille",
       "Recherche d'information",
@@ -3876,12 +3888,14 @@
       "Video generation"
     ],
     "vision-language": [
+      "ColPali",
       "Gemma",
       "MinerU",
       "Mistral",
       "Modèles de fondation vision",
       "OCR classique vs modèles vision-langage pour documents",
       "Qwen",
+      "RAG visuel - retrouver des documents sans OCR",
       "Vision Language Models",
       "olmOCR"
     ],
@@ -6149,7 +6163,8 @@
       "complements": [
         "[[FastEmbed]]",
         "[[AnythingLLM]]",
-        "[[Mem0]]"
+        "[[Mem0]]",
+        "[[ColPali]]"
       ],
       "maturite": "production"
     },
@@ -6222,7 +6237,9 @@
         "[[Milvus]]",
         "[[Pinecone]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[ColPali]]"
+      ],
       "maturite": "production"
     },
     {
@@ -14584,6 +14601,42 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/ColPali.md",
+      "nom": "ColPali",
+      "alias": [
+        "colpali",
+        "colqwen",
+        "colqwen2",
+        "colqwen2.5",
+        "colpali-engine",
+        "vidore",
+        "colsmol"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.",
+      "tags": [
+        "retrieval",
+        "embeddings",
+        "vision-language",
+        "multimodal",
+        "rag",
+        "information-retrieval"
+      ],
+      "alternatives": [
+        "[[sentence-transformers]]"
+      ],
+      "complements": [
+        "[[Qdrant]]",
+        "[[Weaviate]]",
+        "[[LlamaIndex]]"
+      ],
+      "maturite": "deprecated"
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/Comparatif - Rerankers.md",
       "nom": "Comparatif - Rerankers",
       "alias": null,
@@ -14833,7 +14886,8 @@
         "[[RAGFlow]]"
       ],
       "complements": [
-        "[[LlamaIndex NLSQLTableQueryEngine]]"
+        "[[LlamaIndex NLSQLTableQueryEngine]]",
+        "[[ColPali]]"
       ],
       "maturite": "production"
     },
@@ -14921,6 +14975,39 @@
         "retrieval",
         "local-llm",
         "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAG visuel - retrouver des documents sans OCR.md",
+      "nom": "RAG visuel - retrouver des documents sans OCR",
+      "alias": [
+        "RAG visuel : retrouver des documents sans OCR",
+        "RAG visuel",
+        "visual RAG",
+        "visual document retrieval",
+        "recherche de pages par image"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "retrieval",
+        "embeddings",
+        "vision-language",
+        "multimodal",
+        "ocr",
+        "document-parsing",
+        "information-retrieval"
       ],
       "alternatives": null,
       "complements": null,
@@ -18861,7 +18948,8 @@
       "alternatives": [
         "[[FastEmbed]]",
         "[[Text Embeddings Inference]]",
-        "[[Infinity]]"
+        "[[Infinity]]",
+        "[[ColPali]]"
       ],
       "complements": [
         "[[HuggingFace]]",

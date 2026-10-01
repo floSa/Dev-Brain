@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 976 pages actives.
+> 978 pages actives.
 
 ## Par page
 
@@ -218,7 +218,7 @@
 ### bge-m3  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `hybrid-search`, `transformers`
 - liens sortants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[FastEmbed]], [[Qwen3-Embedding]], [[Text Embeddings Inference]], [[bge-reranker]], [[sentence-transformers]]
-- liens entrants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[Embeddings & encodeurs]], [[FastEmbed]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Text Embeddings Inference]], [[bge-reranker]], [[sentence-transformers]]
+- liens entrants : [[Choisir un modèle d'embedding]], [[ColPali]], [[Comparatif - Embeddings]], [[Embeddings & encodeurs]], [[FastEmbed]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[Text Embeddings Inference]], [[bge-reranker]], [[sentence-transformers]]
 
 ### bge-reranker  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `embeddings`
@@ -339,6 +339,11 @@
 - tags : `retrieval`, `reranking`, `rag`
 - liens sortants : [[Advanced RAG]], [[Comparatif - Rerankers]], [[FlashRank]], [[Hybrid retrieval]], [[Jina Reranker]], [[RAG]], [[Reranking]], [[bge-reranker]]
 - liens entrants : [[Comparatif - Rerankers]], [[FlashRank]], [[Jina Reranker]], [[RAG & retrieval]], [[bge-reranker]]
+
+### ColPali  ·  brique
+- tags : `retrieval`, `embeddings`, `vision-language`, `multimodal`, `rag`, `information-retrieval`
+- liens sortants : [[Docling]], [[Gemma]], [[Late-interaction retrieval]], [[LlamaIndex]], [[MinerU]], [[Qdrant]], [[Qwen]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGatouille]], [[Weaviate]], [[bge-m3]], [[sentence-transformers]]
+- liens entrants : [[LlamaIndex]], [[Qdrant]], [[RAG & retrieval]], [[RAG visuel - retrouver des documents sans OCR]], [[Weaviate]], [[sentence-transformers]]
 
 ### Comet  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -523,7 +528,7 @@
 ### Docling  ·  brique
 - tags : `document-parsing`, `rag`, `table-extraction`, `layout-analysis`
 - liens sortants : [[Cognee]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[Open WebUI]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAGFlow]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]]
-- liens entrants : [[AnythingLLM]], [[Chunking strategies]], [[Cognee]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[Open WebUI]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
+- liens entrants : [[AnythingLLM]], [[Chunking strategies]], [[Cognee]], [[ColPali]], [[Comparatif - Parsing de documents]], [[EasyOCR]], [[LlamaIndex]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[Open WebUI]], [[OpenDataLoader PDF]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
@@ -698,7 +703,7 @@
 ### Gemma  ·  brique
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`, `vision-language`
 - liens sortants : [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Ollama]], [[Qwen]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[TRL]], [[Unsloth]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[SGLang]], [[TRL]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[ColPali]], [[Comparatif - Modèles de langage open weights]], [[LM Studio]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen]], [[RAG visuel - retrouver des documents sans OCR]], [[SGLang]], [[TRL]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
 
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
@@ -1077,8 +1082,8 @@
 
 ### LlamaIndex  ·  brique
 - tags : `llm`, `rag`, `embeddings`, `agents`
-- liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Docling]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[LlamaParse]], [[Qdrant]], [[RAG]], [[RAGFlow]], [[Reranking]], [[Text-to-SQL]], [[Unstructured]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGChecker]], [[RAGFlow]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]]
+- liens sortants : [[Advanced RAG]], [[Chroma]], [[Chunking strategies]], [[ColPali]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Docling]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[LlamaParse]], [[Qdrant]], [[RAG]], [[RAGFlow]], [[Reranking]], [[Text-to-SQL]], [[Unstructured]], [[Weaviate]], [[pgvector]]
+- liens entrants : [[Advanced RAG]], [[Agent memory]], [[Chunking strategies]], [[ColPali]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[DSPy]], [[GraphRAG]], [[Haystack]], [[LangChain]], [[LiteLLM]], [[LlamaIndex NLSQLTableQueryEngine]], [[OpenRouter]], [[Phoenix Arize]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGChecker]], [[RAGFlow]], [[RAGatouille]], [[Ragas]], [[Reranking]], [[Text-to-SQL]]
 
 ### LlamaIndex NLSQLTableQueryEngine  ·  brique
 - tags : `text-to-sql`, `llm`, `rag`, `retrieval`
@@ -1218,7 +1223,7 @@
 ### MinerU  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `layout-analysis`, `table-extraction`, `vision-language`, `rag`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAGFlow]], [[Vision Language Models]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[Tesseract]], [[olmOCR]]
+- liens entrants : [[ColPali]], [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[Tesseract]], [[olmOCR]]
 
 ### minim  ·  brique
 - tags : `web-scraping`
@@ -1378,7 +1383,7 @@
 ### olmOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`, `markdown-conversion`, `vision-language`, `gpu`, `self-hosted`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]]
 
 ### OmniRoute  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `reliability`, `context-engineering`
@@ -1513,7 +1518,7 @@
 ### PaddleOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `table-extraction`, `computer-vision`, `deep-learning`
 - liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1787,8 +1792,8 @@
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
-- liens sortants : [[AnythingLLM]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[FastEmbed]], [[Index ANN — internes]], [[Mem0]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
-- liens entrants : [[AnythingLLM]], [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Embeddings]], [[DSPy]], [[FastEmbed]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Mem0]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Vanna]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
+- liens sortants : [[AnythingLLM]], [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[FastEmbed]], [[Index ANN — internes]], [[Mem0]], [[Milvus]], [[Pinecone]], [[Weaviate]], [[pgvector]]
+- liens entrants : [[AnythingLLM]], [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[Comparatif - Embeddings]], [[DSPy]], [[FastEmbed]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Mem0]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[Vanna]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -1798,12 +1803,12 @@
 ### Qwen  ·  brique
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`, `vision-language`
 - liens sortants : [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LLaMA-Factory]], [[Licences de modèles open weights]], [[Mistral]], [[Ollama]], [[Qwen3-Embedding]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Unsloth]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LLaMA-Factory]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen3-Embedding]], [[SGLang]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[ColPali]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[LLaMA-Factory]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Qwen3-Embedding]], [[RAG visuel - retrouver des documents sans OCR]], [[SGLang]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
 
 ### Qwen3-Embedding  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `transformers`, `reranking`
 - liens sortants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[Qwen]], [[Text Embeddings Inference]], [[bge-m3]], [[sentence-transformers]]
-- liens entrants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[Embeddings & encodeurs]], [[Qwen]], [[Text Embeddings Inference]], [[bge-m3]], [[sentence-transformers]]
+- liens entrants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[Embeddings & encodeurs]], [[Qwen]], [[RAG visuel - retrouver des documents sans OCR]], [[Text Embeddings Inference]], [[bge-m3]], [[sentence-transformers]]
 
 ### RabbitMQ  ·  brique
 - tags : `message-broker`, `distributed`, `self-hosted`
@@ -1818,7 +1823,7 @@
 ### RAGatouille  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `nlp`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[PyTorch]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[sentence-transformers]]
-- liens entrants : [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[Late-interaction retrieval]], [[RAG & retrieval]]
+- liens entrants : [[ColPali]], [[Comparatif - Frameworks LLM]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[Late-interaction retrieval]], [[RAG & retrieval]], [[RAG visuel - retrouver des documents sans OCR]]
 
 ### RAGChecker  ·  brique
 - tags : `llm`, `llm-eval`, `rag-eval`, `llm-as-judge`, `rag`
@@ -1967,8 +1972,8 @@
 
 ### sentence-transformers  ·  brique
 - tags : `embeddings`, `semantic-search`, `retrieval`, `reranking`, `nlp`
-- liens sortants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[Comparatif - NLP]], [[Elasticsearch]], [[FastEmbed]], [[HuggingFace]], [[Infinity]], [[Jina Reranker]], [[PyTorch]], [[Qwen3-Embedding]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[Text Embeddings Inference]], [[bge-m3]], [[bge-reranker]], [[embeddings]], [[rank-bm25]], [[txtai]]
-- liens entrants : [[Choisir un modèle d'embedding]], [[Classification de texte]], [[Comparatif - Embeddings]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[Embeddings & encodeurs]], [[FastEmbed]], [[FlashRank]], [[HuggingFace]], [[Infinity]], [[Jina Reranker]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGatouille]], [[Recherche sémantique]], [[SetFit]], [[Text Embeddings Inference]], [[Traitement du langage naturel]], [[bge-m3]], [[bge-reranker]], [[bm25s]], [[rank-bm25]], [[txtai]]
+- liens sortants : [[Choisir un modèle d'embedding]], [[ColPali]], [[Comparatif - Embeddings]], [[Comparatif - NLP]], [[Elasticsearch]], [[FastEmbed]], [[HuggingFace]], [[Infinity]], [[Jina Reranker]], [[PyTorch]], [[Qwen3-Embedding]], [[RAG]], [[Recherche d'information]], [[Reranking]], [[SetFit]], [[Text Embeddings Inference]], [[bge-m3]], [[bge-reranker]], [[embeddings]], [[rank-bm25]], [[txtai]]
+- liens entrants : [[Choisir un modèle d'embedding]], [[Classification de texte]], [[ColPali]], [[Comparatif - Embeddings]], [[Comparatif - NLP]], [[Comparatif - Rerankers]], [[Embeddings & encodeurs]], [[FastEmbed]], [[FlashRank]], [[HuggingFace]], [[Infinity]], [[Jina Reranker]], [[Machine Learning]], [[NLP]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Qwen3-Embedding]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGatouille]], [[Recherche sémantique]], [[SetFit]], [[Text Embeddings Inference]], [[Traitement du langage naturel]], [[bge-m3]], [[bge-reranker]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
 ### sentencepiece  ·  brique
 - tags : `tokenization`, `nlp`
@@ -2322,8 +2327,8 @@
 
 ### Weaviate  ·  brique
 - tags : `vector-db`, `rag`, `hybrid-search`
-- liens sortants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
-- liens entrants : [[Bases de données vectorielles]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[Vectoriel]], [[Vespa]], [[pgvector]]
+- liens sortants : [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[pgvector]]
+- liens entrants : [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[Haystack]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Milvus]], [[Pinecone]], [[Qdrant]], [[RAG visuel - retrouver des documents sans OCR]], [[Vectoriel]], [[Vespa]], [[pgvector]]
 
 ### Web-Check  ·  brique
 - tags : `recon`, `networking`, `osint`, `self-hosted`
@@ -2837,7 +2842,7 @@
 
 ### Data Engineering  ·  hub
 - tags : —
-- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[MLOps]], [[Machine Learning]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]], [[Web & API]]
+- liens sortants : [[Bases de données]], [[Calcul distribué]], [[Data & pipelines]], [[LLM & IA générative]], [[MLOps]], [[Machine Learning]], [[Orchestration]], [[Outils de développement]], [[Parsing]], [[Relationnel]], [[Scraping]], [[Stockage]], [[Vectoriel]], [[Web & API]]
 - liens entrants : [[MLOps]]
 
 ### Data Science  ·  hub
@@ -2923,7 +2928,7 @@
 ### LLM & IA générative  ·  hub
 - tags : `llm`, `rag`, `agents`, `llm-eval`, `llm-observability`, `mcp`, `structured-output`, `llm-gateway`
 - liens sortants : [[AI security]], [[Advanced RAG]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Assistants]], [[Chain-of-Thought]], [[Chunking strategies]], [[Cognee]], [[Comparatif - Modèles de langage open weights]], [[Construction de graphes de connaissances]], [[Context engineering]], [[DSPy]], [[Decoding strategies]], [[Dify]], [[Fine-tuning]], [[Flowise]], [[GraphRAG]], [[Graphiti]], [[Guardrails]], [[Guidance]], [[Headroom]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM benchmarks]], [[LLM caching]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[LangChain]], [[Langflow]], [[Late-interaction retrieval]], [[Letta]], [[Licences de modèles open weights]], [[LiteLLM]], [[Machine Learning]], [[Mem0]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[OpenViking]], [[Outlines]], [[Passerelles]], [[Perplexity]], [[Prompt engineering]], [[Prompt injection]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG eval]], [[Reasoning models]], [[Reliability patterns]], [[Reranking]], [[Routing and cascading]], [[Runtimes]], [[SFT]], [[Sandboxing de code généré]], [[Scaling laws]], [[Small Language Models]], [[Sortie typée]], [[Structured outputs]], [[Synthetic data generation]], [[Systèmes IA]], [[Sécurité]], [[Text-to-SQL]], [[Tokenization]], [[a2a-protocol]], [[fastmcp]], [[llmfit]], [[mcp-protocol]], [[mcpjam]], [[prompt-caching]], [[tool-use]], [[Évaluation]]
-- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[DSPy]], [[Dify]], [[Embeddings & encodeurs]], [[Flowise]], [[Headroom]], [[LangChain]], [[Langflow]], [[Letta]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[OpenViking]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]], [[fastmcp]], [[llmfit]], [[mcpjam]], [[Évaluation de modèles]]
+- liens entrants : [[AI Engineering]], [[Apprentissage profond]], [[DSPy]], [[Data Engineering]], [[Dify]], [[Embeddings & encodeurs]], [[Flowise]], [[Headroom]], [[LangChain]], [[Langflow]], [[Letta]], [[ML Engineering]], [[MLOps]], [[Machine Learning]], [[NLP]], [[OpenViking]], [[Suivi d'expériences]], [[Sécurité]], [[Vision]], [[fastmcp]], [[llmfit]], [[mcpjam]], [[Évaluation de modèles]]
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
@@ -3042,8 +3047,8 @@
 
 ### RAG & retrieval  ·  hub
 - tags : `rag`, `retrieval`, `chunking`, `reranking`, `semantic-search`, `knowledge-graph`
-- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Cohere Rerank]], [[Comparatif - Rerankers]], [[Construction de graphes de connaissances]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG eval]], [[RAGFlow]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[bge-reranker]], [[Évaluation]]
-- liens entrants : [[LLM & IA générative]], [[RAGFlow]]
+- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Cohere Rerank]], [[ColPali]], [[Comparatif - Rerankers]], [[Construction de graphes de connaissances]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG eval]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[bge-reranker]], [[sentence-transformers]], [[Évaluation]]
+- liens entrants : [[ColPali]], [[LLM & IA générative]], [[RAGFlow]]
 
 ### Recherche  ·  hub
 - tags : —
@@ -3823,7 +3828,7 @@
 ### Hybrid retrieval  ·  notion
 - tags : `retrieval`, `hybrid-search`, `semantic-search`, `search`, `rag`
 - liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Haystack]], [[Index inversé]], [[Meilisearch]], [[OpenSearch]], [[Qdrant]], [[RAG]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[TF-IDF]], [[Typesense]], [[Weaviate]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Cohere Rerank]], [[Elasticsearch]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Index inversé]], [[Jina Reranker]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Meilisearch]], [[OpenSearch]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Traitement du langage naturel]], [[Typesense]], [[Vespa]], [[ai-memory]], [[bge-reranker]], [[bm25s]], [[rank-bm25]]
+- liens entrants : [[Advanced RAG]], [[BM25]], [[Chunking strategies]], [[Cohere Rerank]], [[Elasticsearch]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Index inversé]], [[Jina Reranker]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Meilisearch]], [[OpenSearch]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Reranking]], [[Traitement du langage naturel]], [[Typesense]], [[Vespa]], [[ai-memory]], [[bge-reranker]], [[bm25s]], [[rank-bm25]]
 
 ### ICA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -3953,7 +3958,7 @@
 ### Late-interaction retrieval  ·  notion
 - tags : `retrieval`, `reranking`, `embeddings`, `semantic-search`, `information-retrieval`, `rag`
 - liens sortants : [[Hybrid retrieval]], [[Qdrant]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]], [[Weaviate]], [[embeddings]]
-- liens entrants : [[Comparatif - Rerankers]], [[Jina Reranker]], [[LLM & IA générative]], [[RAG & retrieval]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]]
+- liens entrants : [[ColPali]], [[Comparatif - Rerankers]], [[Jina Reranker]], [[LLM & IA générative]], [[RAG & retrieval]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGatouille]], [[Recherche d'information]], [[Reranking]], [[Vespa]]
 
 ### Learning rate schedules  ·  notion
 - tags : `optimization`, `learning-rate`
@@ -4398,12 +4403,17 @@
 ### RAG documentaire on-prem - clé en main ou assemblé  ·  notion
 - tags : `rag`, `llm`, `retrieval`, `local-llm`, `self-hosted`
 - liens sortants : [[Advanced RAG]], [[AnythingLLM]], [[Authentik]], [[Chunking strategies]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Dify]], [[Docling]], [[Elasticsearch]], [[Flowise]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Keycloak]], [[Langflow]], [[LibreChat]], [[Licences de modèles open weights]], [[LlamaIndex]], [[Marker]], [[Milvus]], [[MinIO]], [[MinerU]], [[MongoDB]], [[Open WebUI]], [[Postgres]], [[Qdrant]], [[RAG]], [[RAG eval]], [[RAGFlow]], [[Reranking]], [[Text Embeddings Inference]], [[bge-m3]], [[bge-reranker]], [[pgvector]], [[sentence-transformers]]
-- liens entrants : [[AnythingLLM]], [[Dify]], [[LibreChat]], [[Open WebUI]], [[RAG & retrieval]], [[RAGFlow]]
+- liens entrants : [[AnythingLLM]], [[ColPali]], [[Dify]], [[LibreChat]], [[Open WebUI]], [[RAG & retrieval]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]]
 
 ### RAG eval  ·  notion
 - tags : `rag-eval`, `llm-eval`, `rag`, `retrieval`
 - liens sortants : [[Advanced RAG]], [[DeepEval]], [[LLM eval metrics]], [[LLM-as-judge]], [[Query transformations]], [[RAG]], [[RAG benchmarks]], [[Ragas]], [[Reranking]], [[Routing and cascading]], [[TruLens]]
 - liens entrants : [[ARES]], [[Advanced RAG]], [[Agent evaluation]], [[DeepEval]], [[FlashRank]], [[GraphRAG]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG benchmarks]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGChecker]], [[Ragas]], [[Routing and cascading]], [[TruLens]], [[promptfoo]], [[Évaluation]]
+
+### RAG visuel - retrouver des documents sans OCR  ·  notion
+- tags : `rag`, `retrieval`, `embeddings`, `vision-language`, `multimodal`, `ocr`, `document-parsing`, `information-retrieval`
+- liens sortants : [[ColPali]], [[Docling]], [[Gemma]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[MinerU]], [[PaddleOCR]], [[Qdrant]], [[Qwen]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGatouille]], [[Weaviate]], [[bge-m3]], [[olmOCR]], [[sentence-transformers]]
+- liens entrants : [[ColPali]], [[RAG & retrieval]]
 
 ### Random Forest  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `bagging`
@@ -4975,7 +4985,7 @@
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
+- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
@@ -4983,7 +4993,7 @@
 - `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
 - `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
-- `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Qwen3-Embedding, RAG, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
+- `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, ColPali, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Qwen3-Embedding, RAG, RAG visuel - retrouver des documents sans OCR, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `entropy` : Shannon entropy, Théorie de l'information
 - `event-driven` : Architecture pilotée par les événements  — pas de page concept dédiée
@@ -5028,7 +5038,7 @@
 - `in-memory` : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
 - `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, KServe, LM Studio, LiteLLM, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
-- `information-retrieval` : BM25, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, NLP, Recherche d'information, TF-IDF, bm25s, rank-bm25
+- `information-retrieval` : BM25, ColPali, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, NLP, RAG visuel - retrouver des documents sans OCR, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
 - `infrastructure-as-code` : Ansible, Infrastructure as code — configuration, provisionnement et idempotence, OpenTofu
 - `interactive-viz` : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
@@ -5089,7 +5099,7 @@
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
 - `multi-armed-bandit` : Exploration vs exploitation, Multi-armed bandits  — pas de page concept dédiée
 - `multi-output` : Régression et classification multi-sorties
-- `multimodal` : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
+- `multimodal` : Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
 - `multiple-testing` : Correction des tests multiples
 - `multivariate` : MANOVA et tests multivariés  — pas de page concept dédiée
 - `mutual-information` : Mutual information, Théorie de l'information
@@ -5106,7 +5116,7 @@
 - `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
-- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
+- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
 - `opc-ua` : Données industrielles, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541
@@ -5145,7 +5155,7 @@
 - `query-engine` : OLTP, OLAP et lakehouse, Trino  — pas de page concept dédiée
 - `query-transformation` : Query transformations
 - `rademacher-complexity` : Rademacher complexity, Théorie de l'apprentissage
-- `rag` : ARES, Advanced RAG, AnythingLLM, Bases de données vectorielles, Chroma, Chunking strategies, Cognee, Cohere Rerank, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Rerankers, DB-GPT, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LibreChat, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, MinerU, Open WebUI, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAGChecker, RAGFlow, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
+- `rag` : ARES, Advanced RAG, AnythingLLM, Bases de données vectorielles, Chroma, Chunking strategies, Cognee, Cohere Rerank, ColPali, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Rerankers, DB-GPT, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LibreChat, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, MinerU, Open WebUI, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGChecker, RAGFlow, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
 - `rag-eval` : ARES, Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, RAGChecker, Ragas, Évaluation
 - `ranking` : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
 - `re-identification` : Metric learning & ré-identification
@@ -5163,7 +5173,7 @@
 - `reproducibility` : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill  — pas de page concept dédiée
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
-- `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
+- `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
 - `reverse-proxy` : Authelia, Caddy, Comparatif - Reverse proxies, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
@@ -5236,7 +5246,7 @@
 - `version-control` : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
-- `vision-language` : Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, Vision Language Models, olmOCR  — pas de page concept dédiée
+- `vision-language` : ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `vulnerability-scanning` : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy  — pas de page concept dédiée
 - `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
@@ -5300,7 +5310,7 @@
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : ArangoDB, MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
+- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
@@ -5370,7 +5380,7 @@
 - `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits)
-- `multimodal` (porté par : Claude Video, Image generation, LanceDB, Marqo, Médias, Speech models, Superwhisper, Video generation, Vision Language Models)
+- `multimodal` (porté par : Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models)
 - `multivariate` (porté par : MANOVA et tests multivariés)
 - `networking` (porté par : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
@@ -5409,7 +5419,7 @@
 - `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill)
-- `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
+- `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
 - `rule` (porté par : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses, Llama Guard, NeMo Guardrails)
 - `sast` (porté par : Analyse de vulnérabilités, Semgrep, Sécurité)
@@ -5454,7 +5464,7 @@
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
-- `vision-language` (porté par : Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, Vision Language Models, olmOCR)
+- `vision-language` (porté par : ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)
 - `vulnerability-scanning` (porté par : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy)
 - `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
