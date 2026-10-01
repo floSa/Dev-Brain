@@ -10,7 +10,7 @@ maturite: production
 langage: TypeScript
 alternatives: ["[[DeepEval]]", "[[Ragas]]", "[[TruLens]]", "[[Inspect AI]]", "[[garak]]"]
 complements: []
-tags: [llm, llm-eval, testing, ai-security]
+tags: [llm, llm-eval, testing, ai-security, red-teaming]
 url_docs: https://www.promptfoo.dev/docs/intro/
 url_repo: https://github.com/promptfoo/promptfoo
 ---

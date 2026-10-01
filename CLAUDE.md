@@ -22,17 +22,17 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
 > **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
-> à la clôture du lot 4, le 2026-09-05. Les 337 briques, les **297 notions**, les 47
-> comparatifs, les 5 patterns et les 5 règles vivent dans l'arbre des 20 domaines — une
+> à la clôture du lot 4, le 2026-09-05. Les 479 briques, les **331 notions**, les 72
+> comparatifs (comptes mesurés dans l'index le 2026-10-01), les 5 patterns et les 5 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range — plus « Comparatifs/ » depuis le
-> 2026-09-06, qui ne porte **que son hub** : les 47 comparatifs, eux, restent rangés par
+> 2026-09-06, qui ne porte **que son hub** : les 72 comparatifs, eux, restent rangés par
 > leur `categorie:`, dans le dossier des briques qu'ils départagent. Ce qui suit décrit
 > l'état réel.
 >
-> **Plus rien n'est ouvert : la migration v3 est CLOSE depuis le 2026-09-06.** Les 337 fiches
-> sont au nouveau gabarit (lot 6), les 47 comparatifs sont des pages `role: comparatif` à côté
+> **Plus rien n'est ouvert : la migration v3 est CLOSE depuis le 2026-09-06.** Les 337 fiches de l'époque
+> sont au nouveau gabarit (lot 6), les 47 comparatifs d'alors sont des pages `role: comparatif` à côté
 > du `.base` qu'elles embarquent (lot 5), et les dix règles du validateur sont écrites et
 > mesurées (lot 8) — sept dures, trois en avertissement avec un motif écrit. Le compte de
 > chacune est dans `AI/migration/lot-8-durcissement.md`, *Journal du lot 8*.
@@ -151,10 +151,11 @@ ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : les **297** notions sont rangées, réparties comme les briques par leur domaine —
-« Machine Learning/ » (155), « LLM & IA générative/ » (56), « Statistiques & inférence/ » (36),
-« Mathématiques/ » (26), « Data & pipelines/ » (9), « Sécurité/ » (5), « Signal & audio/ » (5),
-« Bases de données/ » (4), « Outils de développement/ » (1). Il n'y a plus de lieu d'attente,
+État actuel : les **331** notions (mesuré le 2026-10-01) sont rangées, réparties comme les briques par leur domaine —
+« Machine Learning/ » (160), « LLM & IA générative/ » (62), « Statistiques & inférence/ » (36),
+« Mathématiques/ » (26), « Data & pipelines/ » (15), « Bases de données/ » (9), « Sécurité/ » (9),
+« Signal & audio/ » (5), « DevOps/ » (3), « Observabilité/ » (2), « Outils de développement/ » (2),
+« Stockage/ » (1), « Web & API/ » (1). Il n'y a plus de lieu d'attente,
 plus de vocabulaire de galaxie, et plus d'exception à « le dossier porte le domaine ».
 
 > Une nuance de méthode qui vaut d'être gardée : cinq notions ont d'abord été **remontées**
@@ -166,7 +167,7 @@ plus de vocabulaire de galaxie, et plus d'exception à « le dossier porte le do
 
 Écrire une notion :
 1. Gabarit `Templates/Concept-Wiki.md`, frontmatter complet (`role: notion`, `categorie:` prise dans le vocabulaire des domaines — le **même** que pour une brique, cf. taxonomie).
-2. **Aucun dossier à choisir** : le rangement d'une notion se dérive de sa `categorie:`, comme pour une brique (`AI/scripts/arbo.py` le calcule, `check_arbo.py` le vérifie). Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
+2. **Aucun dossier à choisir** : le rangement d'une notion se dérive de sa `categorie:`, comme pour une brique (le kit `AI/scripts/brainkit/` le calcule — `AI/scripts/arbo.py` n'en est que le pont —, `check_arbo.py` le vérifie ; libellés des sous-dossiers et seuil sont dans `brain.yml`). Une nouvelle famille se pose dans `Documentation/general/taxonomie.md`, pas dans l'arborescence.
 3. La notion se câble à ses briques dans les deux sens — c'est la règle de propagation, pas une politesse.
 
 Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/design/brain-v2.md` §5.2 et §6 pour la philosophie d'ensemble des notions.
@@ -174,9 +175,9 @@ Voir `AI/design/brain-v3.md` §2, §3 et §7 pour l'axe rôle / domaine, et `AI/
 ## Structure du vault (rappel)
 
 **Un dossier par domaine, à la racine, et c'est tout.** Le domaine se dérive de
-`categorie:` — personne ne choisit un dossier (`AI/scripts/arbo.py` porte la dérivation,
+`categorie:` — personne ne choisit un dossier (le kit `AI/scripts/brainkit/` porte la dérivation — `AI/scripts/arbo.py` n'en est que le pont —,
 `check_arbo.py` la vérifie, et depuis le 2026-09-05 **aucune page n'échappe à ce
-contrôle** : `arbo.LEGACY` est vide). Un sous-dossier apparaît dès qu'un sous-domaine
+contrôle** ; libellés des sous-dossiers et seuil sont dans `brain.yml`). Un sous-dossier apparaît dès qu'un sous-domaine
 atteint 5 pages, sauf s'il ne laisserait aucune page au niveau du domaine. Tout dossier
 porte une page à son nom, `role: hub`, dont la zone `<!-- AUTO -->` est générée depuis le
 contenu du dossier.
@@ -239,7 +240,7 @@ AI/                          ← TON espace agent
 **Frontières fermes** — la première se lit sur un **chemin**, la seconde sur un **champ** :
 - **L'arbre des domaines**, `Patterns/`, `Rules/`, `Comparatifs/` → modifiables en mode brain seulement (selon `CLAUDE-build.md`). Depuis un projet, **aucune écriture**.
 - **Les pages `role: notion`** → création libre en mode brain ; **modification d'une notion existante sur demande explicite** (cf. section dédiée). **Aucun dossier ne les rassemble** : elles sont dispersées dans l'arbre, mêlées aux briques. Cette frontière ne se déduit donc jamais d'un chemin — elle se lit dans le frontmatter, page par page, avant d'écrire.
-- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `Comparatifs/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py` puis `build_mocs.py` / `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
+- **Les zones `<!-- AUTO -->` des hubs**, `Métiers/`, `Comparatifs/`, `AI/index/` → générés par script, ne pas éditer à la main (relancer `AI/scripts/build_index.py`, `build_mocs.py`, `build_bandeau.py` puis `build_links.py`). Le **corps** d'un hub, hors zone AUTO, s'écrit à la main.
 - `AI/` (hors index/) → ton espace, tu peux y écrire librement.
 - `Documentation/` → modifiable en mode brain, toujours avec prudence (c'est la gouvernance du brain).
 - `Inbox.md` → modifiable dans les deux modes (écriture par l'utilisateur seulement)
@@ -263,7 +264,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
 
 **Deux axes de rangement, pas un.** Une brique porte `categorie:` (le **domaine** — de
-quoi ça parle, 94 valeurs en 20 préfixes) *et* `famille:` (la **nature** — ce que c'est, 9
+quoi ça parle, 114 valeurs en 20 préfixes, plus 6 sous `skill/*`) *et* `famille:` (la **nature** — ce que c'est, 9
 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
 `specification`, `modele`, `annuaire`). Ne jamais choisir ces deux valeurs à l'intuition :
 `Documentation/general/taxonomie.md` porte un arbre de décision déterministe, questions
@@ -324,10 +325,14 @@ pour le nom de chaque hub à créer.
    git log HEAD..origin/main --oneline   # commits distants absents en local
    git merge-base HEAD origin/main       # doit renvoyer un ancêtre commun
    ```
-   Si `origin/main` contient des commits absents en local, ou si `merge-base` ne trouve
-   **aucun** ancêtre commun (historiques divergents ou republiés), **s'arrêter et signaler
-   l'écart à l'utilisateur** avant d'écrire ou de committer quoi que ce soit — ne jamais
-   travailler ni pousser sur une base potentiellement obsolète.
+   Si `origin/main` porte des commits absents en local et que rien n'a encore été écrit,
+   les intégrer par `git merge --ff-only origin/main` (inoffensif : c'est le cas normal quand
+   une autre conversation vient de clore). Si `merge-base` ne trouve **aucun** ancêtre commun
+   (historiques divergents ou republiés), ou si des commits locaux non poussés divergent déjà,
+   **s'arrêter et signaler l'écart à l'utilisateur** avant d'écrire ou de committer quoi que
+   ce soit — ne jamais travailler ni pousser sur une base potentiellement obsolète. Une
+   divergence apparue en cours de travail se règle à la clôture, par la procédure écrite dans
+   `cloturer-brain`.
    > Cause de la règle : le 2026-07-29, une session a travaillé plusieurs heures sur un
    > `main` local vieux de trois semaines sans vérifier que `origin/main` avait été
    > republié entre-temps (repo republié en snapshot, historiques sans ancêtre commun,
@@ -350,7 +355,7 @@ Si le hook Stop est configuré (cf. `AI/scripts/session_to_devbrain.py`), un ré
 Skills custom dans `.claude/skills/` :
 
 - **`enrichir-brain`** — capture une techno/concept. Porte la **règle de propagation** de la v3 : le rayon d'une insertion est le **dossier d'accueil plus ses hubs parents**, et le voisinage d'une page est `ls` de son dossier — plus rien à deviner. Crée la page demandée, met à jour le comparatif, la notion et les briques pairs **du dossier**, câble les liens dans les deux sens. Couvre la brique **et** la notion. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage).
-- **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_links`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite** — à la seule exception de la règle d'identité ci-dessus, qui doit être lue avant lui.
+- **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_bandeau` / `build_links`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite** — à la seule exception de la règle d'identité ci-dessus, qui doit être lue avant lui.
 - **`planifier-projet`** — au démarrage d'un projet, identifie l'archétype (cf. `Documentation/perso/archetypes.md`), interroge `AI/index/brain-index.json` et produit un cahier des charges sourcé. N'écrit rien dans le brain.
 
 Skills officiels Obsidian (`kepano/obsidian-skills`) — apprend la syntaxe Obsidian (wikilinks, callouts, frontmatter, Bases, Canvas).

@@ -10,7 +10,7 @@ maturite: beta
 langage: Python
 alternatives: ["[[promptfoo]]"]
 complements: ["[[NeMo Guardrails]]"]
-tags: [ai-security, prompt-injection, jailbreak, llm-eval]
+tags: [ai-security, prompt-injection, jailbreak, llm-eval, red-teaming]
 url_docs: https://reference.garak.ai/
 url_repo: https://github.com/NVIDIA/garak
 ---
