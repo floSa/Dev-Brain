@@ -28,9 +28,9 @@ Axe métier **MLOps** (`mlops`) — explorer par sous-domaine, puis descendre vi
 - [[DevOps]] — 3 page(s)
 - [[LLM & IA générative]] — 2 page(s)
 - [[Observabilité]] — 2 page(s)
+- [[Outils de développement]] — 2 page(s)
 - [[Sécurité]] — 2 page(s)
 - [[Data & pipelines]] — 1 page(s)
-- [[Outils de développement]] — 1 page(s)
 - [[Stockage]] — 1 page(s)
 - [[Web & API]] — 1 page(s)
 <!-- AUTO:END -->
