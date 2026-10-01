@@ -48,6 +48,7 @@ tags: [vision-language, multimodal, transformers, llm]
 - [[SFT]] / [[PEFT]] — l'instruction-tuning multimodal (et LoRA) adapte le LLM à la vision.
 - [[Self-attention]] — le mécanisme qui mêle tokens d'image et de texte.
 - [[Vision par ordinateur]] — le champ d'ensemble ; l'encodeur visuel d'un VLM (ViT) prolonge l'héritage des [[CNN]] et des [[Architectures CNN]].
+- Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[Qwen]], [[Gemma]], [[Mistral]].
 
 ## Pour aller plus loin
 

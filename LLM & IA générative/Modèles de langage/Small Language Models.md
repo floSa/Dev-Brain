@@ -52,6 +52,7 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 - Runtimes locaux : [[Ollama]], [[llama.cpp]], [[LM Studio]].
 - Modèle spécialisé pour l'edge : [[needle]] — 45 M paramètres en 2 bits, dédié à l'appel d'outils et à l'extraction structurée.
 - Choix du modèle selon la machine : [[llmfit]] — classe les modèles par tenue en mémoire, vitesse estimée, qualité et contexte, sur le matériel réellement disponible.
+- Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[Mistral]], [[Qwen]].
 
 ## Pour aller plus loin
 
