@@ -82,22 +82,17 @@ Quatre jeux appellent une lecture plus fine :
 ## Ressources
 
 - Documentation — dépôt PCoE de la NASA (C-MAPSS, IMS, batteries, FEMTO, 21 jeux) : https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/
-- Données — C-MAPSS : https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data
-- Papier — C-MAPSS, Saxena et al. (PHM 2008) : https://ntrs.nasa.gov/citations/20090029214
+- Documentation — C-MAPSS : https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data ; Papier — C-MAPSS, Saxena et al. (PHM 2008) : https://ntrs.nasa.gov/citations/20090029214
 - Papier — N-CMAPSS, Arias Chao et al. (Data, 2021) : https://ntrs.nasa.gov/citations/20210020068
 - Dépôt — PRONOSTIA/FEMTO (miroir tiers) : https://github.com/wkzs111/phm-ieee-2012-data-challenge-dataset
 - Papier — PRONOSTIA, Nectoux et al. (2012) : https://hal.science/hal-00719503
-- Documentation — CWRU : https://engineering.case.edu/bearingdatacenter (fichiers : https://engineering.case.edu/bearingdatacenter/download-data-file)
-- Papier — Smith et Randall, étude de référence sur CWRU (MSSP, 2015) : https://doi.org/10.1016/j.ymssp.2015.04.021
-- Données — IMS : https://catalog.data.gov/dataset/ims-bearings
+- Documentation — CWRU : https://engineering.case.edu/bearingdatacenter (fichiers : https://engineering.case.edu/bearingdatacenter/download-data-file) ; Papier — Smith et Randall, étude de référence sur CWRU (MSSP, 2015) : https://doi.org/10.1016/j.ymssp.2015.04.021
+- Documentation — IMS : https://catalog.data.gov/dataset/ims-bearings
 - Documentation — XJTU-SY : https://biaowang.tech/xjtu-sy-bearing-datasets/
-- Données — batteries NASA : https://catalog.data.gov/dataset/li-ion-battery-aging-datasets (description : https://c3.ndc.nasa.gov/dashlink/resources/133/)
-- Documentation — Paderborn : https://mb.uni-paderborn.de/kat/forschung/bearing-datacenter/
-- Papier — Lessmeier et al., Paderborn (PHME 2016) : https://papers.phmsociety.org/index.php/phme/article/view/1577
-- Données — MIMII : https://zenodo.org/records/3384388 (article : https://arxiv.org/abs/1909.09347)
-- Données — DCASE 2020 tâche 2, développement (reprend MIMII) : https://zenodo.org/records/3678171
-- Papier — Hendriks et al., fuite de données sur CWRU (MSSP, 2022) : https://doi.org/10.1016/j.ymssp.2021.108732 (page d'éditeur non lue ; énoncé repris du résumé de Rosa et al.)
-- Papier — Rosa et al., CWRU en multi-étiquettes (2024) : https://arxiv.org/abs/2407.14625
+- Documentation — batteries NASA : https://catalog.data.gov/dataset/li-ion-battery-aging-datasets (description : https://c3.ndc.nasa.gov/dashlink/resources/133/)
+- Documentation — Paderborn : https://mb.uni-paderborn.de/kat/forschung/bearing-datacenter/ ; Papier — Lessmeier et al., Paderborn (PHME 2016) : https://papers.phmsociety.org/index.php/phme/article/view/1577
+- Documentation — MIMII : https://zenodo.org/records/3384388 (article : https://arxiv.org/abs/1909.09347) ; Documentation — DCASE 2020 tâche 2, développement (reprend MIMII) : https://zenodo.org/records/3678171
+- Papier — Hendriks et al., fuite de données sur CWRU (MSSP, 2022) : https://doi.org/10.1016/j.ymssp.2021.108732 (page d'éditeur non lue ; énoncé repris du résumé de Rosa et al.) ; Papier — Rosa et al., CWRU en multi-étiquettes (2024) : https://arxiv.org/abs/2407.14625
 - Papier — Knap et al., évaluation sans fuite sur CWRU et Paderborn (PHME, 2026) : https://papers.phmsociety.org/index.php/phme/article/view/4924
 
 ## Voir aussi
