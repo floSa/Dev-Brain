@@ -8,9 +8,9 @@ famille: paquet
 licence_type: proprietary
 maturite: production
 langage: C++
-alternatives: ["[[ONNX Runtime]]"]
+alternatives: ["[[ONNX Runtime]]", "[[OpenVINO]]"]
 complements: ["[[NVIDIA Triton]]"]
-tags: [inference, inference-optimization, model-serving, gpu, quantization]
+tags: [inference, edge-inference, inference-optimization, model-serving, gpu, quantization]
 url_docs: https://docs.nvidia.com/deeplearning/tensorrt/
 url_repo: https://github.com/NVIDIA/TensorRT
 ---
@@ -57,6 +57,7 @@ langage — paged attention, in-flight batching, décodage spéculatif.
 ### Alternatives
 
 - [[ONNX Runtime]] — Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.
+- [[OpenVINO]] — Boîte à outils d'inférence d'Intel en C++, API Python, C et Node.js : lit ONNX, PyTorch, TensorFlow et TFLite, optimise pour CPU, GPU intégré et NPU Intel, avec un plug-in CPU ARM listé comme supporté mais sans support AMD ; quantification NNCF et serveur OpenVINO Model Server ; Apache-2.0. — l'équivalent côté Intel : un compilateur propre à un fabricant, pour du matériel sans GPU NVIDIA.
 
 ### Compléments
 
@@ -71,4 +72,5 @@ langage — paged attention, in-flight batching, décodage spéculatif.
 
 - [[Déploiement de modèles]] — la notion du dossier
 - [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[Comparatif - Runtimes d'inférence CPU et edge]] — ce qui départage les moteurs d'exécution, TensorRT étant le seul à exiger un GPU NVIDIA
 - [[PyTorch]] — `torch-tensorrt` compile un moteur directement depuis PyTorch
