@@ -128,6 +128,8 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `container` | Conteneurisation / images OCI (packaging d'applications isolées et portables) |
 | `ci-cd` | Intégration et déploiement continus (pipelines automatisés déclenchés sur événements) |
 | `gitops` | GitOps — l'état voulu d'un système vit dans Git, un agent le tire et le réconcilie en continu (distinct de `ci-cd`, qui pousse depuis un pipeline) |
+| `container-registry` | Registre d'images OCI auto-hébergé — stocker, distribuer et contrôler l'accès aux images (Harbor, Zot) ; à distinguer de `container` (le packaging et le moteur) et de `model-registry` (modèles ML versionnés) |
+| `infrastructure-as-code` | Infrastructure décrite en fichiers versionnés — configuration d'un serveur ou provisionnement d'un parc, rejouables (Ansible, OpenTofu) ; à distinguer de `config` (configuration applicative) et de `gitops` (réconciliation continue depuis Git) |
 | `object-storage` | Stockage objet (buckets, accès par clé, API type S3) |
 | `s3-compatible` | Implémente l'API Amazon S3 (interopérable avec l'écosystème et les outils S3) |
 | `observability` | Observabilité d'infrastructure / d'applications (métriques, logs, traces) |

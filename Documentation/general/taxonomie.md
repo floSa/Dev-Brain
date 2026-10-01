@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 113 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 114 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (113 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (114 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -201,7 +201,7 @@ web/{backend, frontend, api, proxy}
 ui/{data-app}
 network/{analyse, transfert}
 security/{recon, auth, secrets, analyse, ia}
-devops/{ci, conteneur}
+devops/{ci, conteneur, infrastructure}
 observability/{supervision}
 automation/{no-code}
 docs/{capture, pdf}
@@ -579,6 +579,24 @@ valeurs disparues et ne sont pas reconduites.
   un sous-sujet de l'IA générative. Distinct de `security/recon` (inspecter une cible du
   dehors) et de `llm/observabilite` (mesurer ce qui est envoyé au modèle, sans jugement de
   sécurité).
+- `devops/conteneur` — **frontière élargie le 2026-10-01**, arbitrage de floSa, au **registre
+  d'images** : le moteur (Docker, Podman), la pile d'une machine (Docker Compose), l'orchestrateur
+  (Kubernetes, k3s), le chart (Helm) **et l'endroit où l'image est stockée et distribuée**
+  ([[Harbor]], [[Zot]]). Aucune valeur n'avait le registre pour sujet ; celle-ci est la plus
+  proche, et `storage/*` (stockage brut d'objets) n'est pas le sujet d'un registre, qui range des
+  images adressées par empreinte avec des droits d'accès. Le registre **intégré à une forge**
+  (celui de [[GitLab CE]] ou de [[Forgejo]]) reste dans la fiche de la forge. Distinct de
+  `devops/infrastructure`, qui décrit la machine, pas ce qu'elle exécute.
+- `devops/infrastructure` — **ouvert le 2026-10-01**, arbitrage de floSa. **Décrire et reproduire**
+  un serveur ou un parc dans des fichiers versionnés : gestion de configuration ([[Ansible]]),
+  provisionnement avec un état ([[OpenTofu]]). Rangé sous `devops/` par D10 (déployer du logiciel en
+  production), et non sous `devops/ci` bien que ces outils s'exécutent souvent dans un pipeline :
+  `ci` héberge le code et exécute ce qui le construit, `infrastructure` décrit ce qui l'accueille.
+  Distinct de `devops/conteneur` (exécuter, orchestrer et héberger des images : un conteneur est
+  la charge, pas la machine), de `security/secrets` (stocker et chiffrer les secrets que ces fichiers
+  référencent) et de `devtools/config` (configuration **applicative**, pas celle d'un serveur).
+  Libellé du dossier : « Infrastructure as code ». Sous le seuil de promotion à l'ouverture : les pages
+  restent dans `DevOps/`.
 - `observability/supervision` — surveiller du logiciel **déployé** : métriques, journaux, état
   des machines et des conteneurs, tableaux de bord, alertes. L'ancien découpage
   `log` / `metric` / `trace` / `infra` n'a jamais dépassé une page par valeur ; il est fusionné.
