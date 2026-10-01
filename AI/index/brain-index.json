@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 950,
+  "count": 952,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1580,6 +1580,10 @@
       "Théorie de l'information",
       "Wasserstein distance"
     ],
+    "infrastructure-as-code": [
+      "Ansible",
+      "OpenTofu"
+    ],
     "interactive-viz": [
       "Comparatif - Visualisation",
       "Interfaces & apps data",
@@ -2959,6 +2963,7 @@
       "embeddings"
     ],
     "reproducibility": [
+      "Ansible",
       "CI-CD pour le ML",
       "Comparatif - Gestionnaires de paquets Python",
       "Comparatif - Orchestrateurs ML",
@@ -2966,6 +2971,7 @@
       "Marimo",
       "Notebooks",
       "Notebooks-as-code",
+      "OpenTofu",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Quarto",
       "Rule - Packaging démo",
@@ -10204,6 +10210,33 @@
       "maturite": null
     },
     {
+      "path": "DevOps/Ansible.md",
+      "nom": "Ansible",
+      "alias": [
+        "ansible",
+        "ansible-core",
+        "ansible-playbook"
+      ],
+      "role": "brique",
+      "categorie": "devops/infrastructure",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil.",
+      "tags": [
+        "infrastructure-as-code",
+        "reproducibility"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[OpenTofu]]",
+        "[[Docker]]",
+        "[[Kubernetes]]",
+        "[[SOPS]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "DevOps/Conteneurs & orchestration/Comparatif - Orchestration de conteneurs.md",
       "nom": "Comparatif - Orchestration de conteneurs",
       "alias": null,
@@ -10305,7 +10338,8 @@
         "[[GitLab CE]]",
         "[[Forgejo]]",
         "[[Jenkins]]",
-        "[[Woodpecker CI]]"
+        "[[Woodpecker CI]]",
+        "[[Ansible]]"
       ],
       "maturite": "production"
     },
@@ -10412,7 +10446,9 @@
         "[[EMQX]]",
         "[[GitLab CE]]",
         "[[Jenkins]]",
-        "[[Woodpecker CI]]"
+        "[[Woodpecker CI]]",
+        "[[Ansible]]",
+        "[[OpenTofu]]"
       ],
       "maturite": "production"
     },
@@ -10761,6 +10797,33 @@
       "complements": [
         "[[Forgejo]]",
         "[[Docker]]",
+        "[[Kubernetes]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "DevOps/OpenTofu.md",
+      "nom": "OpenTofu",
+      "alias": [
+        "opentofu",
+        "tofu",
+        "terraform open source",
+        "fork de terraform"
+      ],
+      "role": "brique",
+      "categorie": "devops/infrastructure",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Provisionnement d'infrastructure déclaratif avec un état (MPL-2.0, Go, fork de Terraform 1.5 sous la Linux Foundation, CNCF sandbox) : des fichiers HCL, un plan avant chaque changement, des fournisseurs pour VMware, Proxmox, libvirt, Kubernetes ; chiffrement d'état natif, miroir de fournisseurs pour le réseau fermé — Terraform, lui, est sous BUSL depuis 2023.",
+      "tags": [
+        "infrastructure-as-code",
+        "reproducibility"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Ansible]]",
+        "[[OpenBao]]",
         "[[Kubernetes]]"
       ],
       "maturite": "production"
@@ -29284,7 +29347,8 @@
         "[[SOPS]]"
       ],
       "complements": [
-        "[[Kubernetes]]"
+        "[[Kubernetes]]",
+        "[[OpenTofu]]"
       ],
       "maturite": "production"
     },
@@ -29311,7 +29375,8 @@
         "[[OpenBao]]"
       ],
       "complements": [
-        "[[Kubernetes]]"
+        "[[Kubernetes]]",
+        "[[Ansible]]"
       ],
       "maturite": "production"
     },
