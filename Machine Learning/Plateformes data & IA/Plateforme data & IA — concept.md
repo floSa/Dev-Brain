@@ -78,6 +78,7 @@ Les trois s'annoncent « on-premise » en avant-vente. Il faut demander lequel d
 - [[ZenML]] · [[Metaflow]] · [[Flyte]] — l'alternative « assembler » : un pipeline portable, sans le catalogue ni les droits.
 - [[Feature store — concept]] — un étage qu'une plateforme intègre et qu'on outille autrement quand on assemble.
 - [[Monitoring de modèle en production]] — ce que la moitié MLOps de ces suites automatise.
+- Voir aussi : [[Kubeflow]].
 
 ## Pour aller plus loin
 
