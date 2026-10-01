@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 952 pages actives.
+> 955 pages actives.
 
 ## Par page
 
@@ -173,7 +173,7 @@
 ### Authentik  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
 - liens sortants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[Traefik]]
-- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Sécurité]], [[Traefik]]
+- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Harbor]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Sécurité]], [[Traefik]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -507,8 +507,8 @@
 
 ### Docker  ·  brique
 - tags : `container`
-- liens sortants : [[Ansible]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Jenkins]], [[Podman]], [[Trivy]], [[Woodpecker CI]]
-- liens entrants : [[Ansible]], [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Jenkins]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Trivy]], [[Web-Check]], [[Woodpecker CI]]
+- liens sortants : [[Ansible]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Jenkins]], [[Podman]], [[Trivy]], [[Woodpecker CI]], [[Zot]]
+- liens entrants : [[Ansible]], [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Jenkins]], [[KServe]], [[Metaflow]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Trivy]], [[Web-Check]], [[Woodpecker CI]], [[Zot]]
 
 ### Docker Compose  ·  brique
 - tags : `container`
@@ -668,7 +668,7 @@
 ### Forgejo  ·  brique
 - tags : `ci-cd`, `version-control`, `self-hosted`
 - liens sortants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Keycloak]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Woodpecker CI]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Keycloak]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Woodpecker CI]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Harbor]], [[Jenkins]], [[Keycloak]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Woodpecker CI]], [[Zot]]
 
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
@@ -703,7 +703,7 @@
 ### GitLab CE  ·  brique
 - tags : `ci-cd`, `version-control`, `self-hosted`
 - liens sortants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[Forgejo]], [[GitHub Actions]], [[Helm]], [[Jenkins]], [[Keycloak]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Woodpecker CI]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[Helm]], [[Jenkins]], [[Keycloak]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Woodpecker CI]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[Harbor]], [[Helm]], [[Jenkins]], [[Keycloak]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Woodpecker CI]], [[Zot]]
 
 ### Gitleaks  ·  brique
 - tags : `secret-scanning`, `supply-chain`, `ci-cd`
@@ -733,7 +733,7 @@
 ### Grafana  ·  brique
 - tags : `observability`, `metrics`, `dashboard`, `dataviz`
 - liens sortants : [[Beszel]], [[Dash]], [[InfluxDB]], [[Keycloak]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Netdata]], [[Observabilité]], [[Prometheus]], [[RabbitMQ]], [[Redpanda]], [[SLO et alerting]], [[Streamlit]], [[Tempo]], [[VictoriaMetrics]], [[Zabbix]]
-- liens entrants : [[Alertmanager]], [[Apache Superset]], [[Beszel]], [[Comparatif - BI auto-hébergée]], [[Evidently]], [[Keycloak]], [[Kibana]], [[Loki]], [[Metabase]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[Netdata]], [[OAuth2 et OpenID Connect]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]]
+- liens entrants : [[Alertmanager]], [[Apache Superset]], [[Beszel]], [[Comparatif - BI auto-hébergée]], [[Evidently]], [[Harbor]], [[Keycloak]], [[Kibana]], [[Loki]], [[Metabase]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[Netdata]], [[OAuth2 et OpenID Connect]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Tempo]], [[VictoriaMetrics]]
 
 ### Graphify  ·  brique
 - tags : `code-assistant`, `knowledge-graph`, `mcp`, `context-engineering`
@@ -770,6 +770,11 @@
 - liens sortants : [[Caddy]], [[Comparatif - Reverse proxies]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]]
 - liens entrants : [[Caddy]], [[Comparatif - Reverse proxies]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Traefik]], [[Web & API]]
 
+### Harbor  ·  brique
+- tags : `container-registry`, `self-hosted`, `supply-chain`
+- liens sortants : [[Authentik]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Grafana]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Postgres]], [[Prometheus]], [[Trivy]], [[Zot]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Trivy]], [[Zot]]
+
 ### Haystack  ·  brique
 - tags : `llm`, `rag`, `semantic-search`, `hybrid-search`, `agents`
 - liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Elasticsearch]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[LiteLLM]], [[LlamaIndex]], [[Qdrant]], [[RAG]], [[RAGFlow]], [[Reranking]], [[Weaviate]], [[pgvector]]
@@ -797,8 +802,8 @@
 
 ### Helm  ·  brique
 - tags : `kubernetes`
-- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitLab CE]], [[Kubernetes]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitLab CE]], [[Kubernetes]], [[Trino]], [[k3s]]
+- liens sortants : [[Argo CD]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitLab CE]], [[Harbor]], [[Kubernetes]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[GitLab CE]], [[Harbor]], [[Kubernetes]], [[Trino]], [[k3s]]
 
 ### Hermes Agent  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -922,8 +927,8 @@
 
 ### Keycloak  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
-- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Forgejo]], [[GitLab CE]], [[Grafana]], [[Kubernetes]], [[Langfuse]], [[LibreChat]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]]
-- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Forgejo]], [[Gestion des secrets]], [[GitLab CE]], [[Grafana]], [[Kubeflow]], [[Kubernetes]], [[Langfuse]], [[LibreChat]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Sécurité]]
+- liens sortants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Forgejo]], [[GitLab CE]], [[Grafana]], [[Harbor]], [[Kubernetes]], [[Langfuse]], [[LibreChat]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]]
+- liens entrants : [[Airflow]], [[Argo CD]], [[Authelia]], [[Authentification]], [[Authentik]], [[CVAT]], [[Comparatif - Fournisseurs d'identité]], [[DataHub]], [[Forgejo]], [[Gestion des secrets]], [[GitLab CE]], [[Grafana]], [[Harbor]], [[Kubeflow]], [[Kubernetes]], [[Langfuse]], [[LibreChat]], [[OAuth2 et OpenID Connect]], [[OpenMetadata]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Sécurité]]
 
 ### Kibana  ·  brique
 - tags : `observability`, `logging`, `dashboard`
@@ -947,8 +952,8 @@
 
 ### Kubernetes  ·  brique
 - tags : `container`, `kubernetes`, `self-hosted`
-- liens sortants : [[Ansible]], [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[EMQX]], [[GitLab CE]], [[HAProxy]], [[Helm]], [[Jenkins]], [[KServe]], [[Keycloak]], [[Kubeflow]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[OpenTofu]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[Woodpecker CI]], [[k3s]], [[lakeFS]]
-- liens entrants : [[Ansible]], [[Apache Superset]], [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[EMQX]], [[Gestion des secrets]], [[GitLab CE]], [[HAProxy]], [[Helm]], [[Jenkins]], [[KServe]], [[Keycloak]], [[Kubeflow]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[OpenTofu]], [[Plateformes data & IA]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trino]], [[Trivy]], [[Woodpecker CI]], [[k3s]], [[lakeFS]]
+- liens sortants : [[Ansible]], [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[EMQX]], [[GitLab CE]], [[HAProxy]], [[Harbor]], [[Helm]], [[Jenkins]], [[KServe]], [[Keycloak]], [[Kubeflow]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[OpenTofu]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trivy]], [[Woodpecker CI]], [[Zot]], [[k3s]], [[lakeFS]]
+- liens entrants : [[Ansible]], [[Apache Superset]], [[Argo CD]], [[BentoML]], [[CVAT]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DataHub]], [[DevOps]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[EMQX]], [[Gestion des secrets]], [[GitLab CE]], [[HAProxy]], [[Harbor]], [[Helm]], [[Jenkins]], [[KServe]], [[Keycloak]], [[Kubeflow]], [[Label Studio]], [[NATS]], [[Nginx]], [[OpenBao]], [[OpenMetadata]], [[OpenTofu]], [[Plateformes data & IA]], [[RabbitMQ]], [[Ray Serve]], [[Redpanda]], [[Reverse proxy et TLS]], [[SOPS]], [[Seldon Core]], [[Traefik]], [[Trino]], [[Trivy]], [[Woodpecker CI]], [[Zot]], [[k3s]], [[lakeFS]]
 
 ### Label Studio  ·  brique
 - tags : `annotation`, `human-in-the-loop`, `self-hosted`, `computer-vision`, `ner`
@@ -1432,8 +1437,8 @@
 
 ### OpenTofu  ·  brique
 - tags : `infrastructure-as-code`, `reproducibility`
-- liens sortants : [[Ansible]], [[DevOps]], [[Gestion des secrets]], [[Kubernetes]], [[OpenBao]]
-- liens entrants : [[Ansible]], [[DevOps]], [[Kubernetes]], [[OpenBao]]
+- liens sortants : [[Ansible]], [[DevOps]], [[Gestion des secrets]], [[Harbor]], [[Kubernetes]], [[OpenBao]]
+- liens entrants : [[Ansible]], [[DevOps]], [[Harbor]], [[Kubernetes]], [[OpenBao]]
 
 ### OpenViking  ·  brique
 - tags : `agent-memory`, `rag`, `context-engineering`, `agents`, `retrieval`, `mcp`
@@ -1573,7 +1578,7 @@
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
 - liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Apache Superset]], [[Bases de données]], [[CVAT]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Forgejo]], [[GitLab CE]], [[Great Expectations]], [[Label Studio]], [[MariaDB]], [[Metabase]], [[Microsoft SQL Server]], [[MySQL]], [[Open WebUI]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Apache Superset]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[Comparatif - Plateformes LLM auto-hébergées]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Forgejo]], [[GitLab CE]], [[Great Expectations]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[Langflow]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Metabase]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[Open WebUI]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[Trino]], [[Woodpecker CI]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Apache Superset]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[Comparatif - Plateformes LLM auto-hébergées]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Forgejo]], [[GitLab CE]], [[Great Expectations]], [[Harbor]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[Langflow]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Metabase]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[Open WebUI]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Redis]], [[Relationnel]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[Trino]], [[Woodpecker CI]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1603,7 +1608,7 @@
 ### Prometheus  ·  brique
 - tags : `observability`, `metrics`, `alerting`, `self-hosted`
 - liens sortants : [[Alertmanager]], [[Caddy]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Loki]], [[Métriques, logs et traces]], [[NATS]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[Prometheus-Eval]], [[RabbitMQ]], [[Redpanda]], [[SLO et alerting]], [[Tempo]], [[Traefik]], [[VictoriaMetrics]], [[Zabbix]]
-- liens entrants : [[Alertmanager]], [[Caddy]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NATS]], [[Netdata]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Traefik]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
+- liens entrants : [[Alertmanager]], [[Caddy]], [[EMQX]], [[Grafana]], [[HAProxy]], [[Harbor]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NATS]], [[Netdata]], [[Nginx]], [[Observabilité]], [[OpenTelemetry]], [[RabbitMQ]], [[Redpanda]], [[Reverse proxy et TLS]], [[SLO et alerting]], [[Traefik]], [[Uptime Kuma]], [[VictoriaMetrics]], [[Zabbix]]
 
 ### Prometheus-Eval  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `local-llm`
@@ -2162,8 +2167,8 @@
 
 ### Trivy  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `secret-scanning`, `supply-chain`, `container`, `ci-cd`
-- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Kubernetes]], [[Podman]], [[Supply chain logicielle et SBOM]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
+- liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Kubernetes]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Zot]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Zot]]
 
 ### TRL  ·  brique
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `transformers`, `llm`
@@ -2310,6 +2315,11 @@
 - liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Metaflow]]
 - liens entrants : [[AWS SageMaker]], [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Google Cloud Vertex AI]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]]
 
+### Zot  ·  brique
+- tags : `container-registry`, `self-hosted`, `supply-chain`
+- liens sortants : [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Kubernetes]], [[Trivy]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Harbor]], [[Kubernetes]], [[Trivy]]
+
 ### Comparatif - Apps data & démos ML  ·  comparatif
 - tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML.base]], [[Comparatifs]], [[Dash]], [[Gradio]], [[Shiny for Python]], [[Streamlit]]
@@ -2387,7 +2397,7 @@
 
 ### Comparatif - CI-CD auto-hébergé  ·  comparatif
 - tags : `ci-cd`, `self-hosted`
-- liens sortants : [[Comparatif - CI-CD auto-hébergé.base]], [[Comparatifs]], [[DevOps]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Woodpecker CI]]
+- liens sortants : [[Comparatif - CI-CD auto-hébergé.base]], [[Comparatif - Registres d'images]], [[Comparatifs]], [[DevOps]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Harbor]], [[Jenkins]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Woodpecker CI]], [[Zot]]
 - liens entrants : [[Comparatifs]], [[DevOps]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Woodpecker CI]]
 
 ### Comparatif - Clients d'API  ·  comparatif
@@ -2570,6 +2580,11 @@
 - liens sortants : [[Airflow]], [[Architecture médaillon]], [[Comparatif - Qualité de données.base]], [[Comparatifs]], [[Contrats de données & qualité]], [[Evidently]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[dbt Core]], [[pandera]]
 - liens entrants : [[Comparatif - Catalogues et lignage de données]], [[Comparatifs]], [[Fiabilité des données]], [[Great Expectations]], [[Soda Core]], [[pandera]]
 
+### Comparatif - Registres d'images  ·  comparatif
+- tags : `container-registry`, `self-hosted`
+- liens sortants : [[Comparatif - Registres d'images.base]], [[Comparatifs]], [[Conteneurs & orchestration]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Zot]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatifs]], [[Conteneurs & orchestration]], [[DevOps]], [[Harbor]], [[Zot]]
+
 ### Comparatif - Reinforcement learning  ·  comparatif
 - tags : `reinforcement-learning`, `self-play`
 - liens sortants : [[Acme]], [[Comparatif - Reinforcement learning.base]], [[Comparatifs]], [[Gymnasium]], [[OpenSpiel]], [[RLax]], [[Stable-Baselines3]], [[TF-Agents]]
@@ -2727,13 +2742,13 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
-- liens sortants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Seldon Core]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[DevOps]], [[Docker]], [[Docker Compose]], [[Helm]], [[Kubernetes]], [[Podman]], [[k3s]]
+- liens sortants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Registres d'images]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Seldon Core]], [[Zot]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Registres d'images]], [[DevOps]], [[Docker]], [[Docker Compose]], [[Harbor]], [[Helm]], [[Kubernetes]], [[Podman]], [[Zot]], [[k3s]]
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
@@ -2762,7 +2777,7 @@
 
 ### DevOps  ·  hub
 - tags : `container`, `ci-cd`, `deployment-strategy`
-- liens sortants : [[Ansible]], [[Argo CD]], [[Comparatif - CI-CD auto-hébergé]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Kubernetes]], [[OpenTofu]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxies]], [[Woodpecker CI]], [[testcontainers]]
+- liens sortants : [[Ansible]], [[Argo CD]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Harbor]], [[Jenkins]], [[Kubernetes]], [[OpenTofu]], [[Outils de développement]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxies]], [[Woodpecker CI]], [[Zot]], [[testcontainers]]
 - liens entrants : [[Ansible]], [[Argo CD]], [[Comparatif - CI-CD auto-hébergé]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Infrastructure & Ops]], [[Jenkins]], [[MLOps]], [[OpenTofu]], [[Outils de développement]], [[Woodpecker CI]]
 
 ### Diagrammes  ·  hub
@@ -4814,6 +4829,7 @@
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
 - `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers  — pas de page concept dédiée
+- `container-registry` : Comparatif - Registres d'images, Harbor, Zot  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
@@ -5057,7 +5073,7 @@
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -5080,7 +5096,7 @@
 - `string-matching` : Fuzzy matching & similarité de chaînes, NLP, Pattern - Pipeline scraping → matching → optimisation
 - `structured-output` : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use  — pas de page concept dédiée
 - `supervised` : AdaBoost, Analyse discriminante, Annotation de données, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN  — pas de page concept dédiée
-- `supply-chain` : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy  — pas de page concept dédiée
+- `supply-chain` : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Harbor, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy, Zot  — pas de page concept dédiée
 - `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, Tests & estimation, lifelines
 - `synthetic-data` : Distillation, Faker, Fine-tuning, Mimesis, SDV, Synthetic data generation
 - `table-extraction` : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber  — pas de page concept dédiée
@@ -5151,6 +5167,7 @@
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers)
+- `container-registry` (porté par : Comparatif - Registres d'images, Harbor, Zot)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc)
 - `dashboard` (porté par : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
@@ -5292,7 +5309,7 @@
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
-- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, croc, k3s, lakeFS, olmOCR)
+- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : Apache Arrow, Avro)
@@ -5307,7 +5324,7 @@
 - `streaming` (porté par : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use)
 - `supervised` (porté par : AdaBoost, Analyse discriminante, Annotation de données, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, LightGBM, Machine Learning, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN)
-- `supply-chain` (porté par : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy)
+- `supply-chain` (porté par : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Harbor, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy, Zot)
 - `table-extraction` (porté par : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber)
 - `task-queue` (porté par : Celery, Comparatif - Brokers de messages, Messagerie)
 - `templating` (porté par : Jinja2, Web & API)
