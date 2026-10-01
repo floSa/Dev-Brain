@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: ["[[Trivy]]"]
-complements: ["[[GitHub Actions]]"]
+complements: ["[[GitHub Actions]]", "[[pre-commit]]"]
 tags: [secret-scanning, supply-chain, ci-cd]
 url_docs: https://github.com/gitleaks/gitleaks#readme
 url_repo: https://github.com/gitleaks/gitleaks
@@ -63,6 +63,7 @@ Outil en ligne de commande qui cherche des **secrets en dur** — mots de passe,
 ### Compléments
 
 - [[GitHub Actions]] — CI/CD intégrée à GitHub : workflows YAML déclenchés sur événements du dépôt, runners hébergés ou auto-hébergés, large marketplace d'actions. — l'action `gitleaks/gitleaks-action` sous licence à clé pour les organisations ; à épingler par SHA comme toute action tierce.
+- [[pre-commit]] — Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent. — le dépôt de Gitleaks publie lui-même le `.pre-commit-hooks.yaml` (ids `gitleaks`, `gitleaks-docker`, `gitleaks-system`) ; le hook `gitleaks` compile du Go à l'installation, `gitleaks-system` réutilise le binaire du poste.
 
 ## Ressources
 
