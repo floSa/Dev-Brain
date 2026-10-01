@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 978 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 982 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -87,7 +87,7 @@
 
 ### data/parsing
 - **Docling** — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
-- **docTR** — Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.
+- **docTR** — Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.
 - **EasyOCR** — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
 - **LlamaParse** — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - **Marker** — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
@@ -550,8 +550,10 @@
 ### ml/serving
 - **BentoML** — Framework Python de packaging et de service de modèles — transforme n'importe quel modèle (ML, LLM, pipelines multi-modèles) en API d'inférence, du prototype au déploiement scalable (BentoCloud / Kubernetes).
 - **KServe** — Plateforme d'inférence standard sur Kubernetes (CNCF) — déploiement déclaratif via la CRD InferenceService, autoscaling serverless jusqu'à zéro (Knative), multi-framework, prédictif et génératif.
+- **LiteRT** — Runtime d'inférence de Google pour modèles .tflite (ex TensorFlow Lite, renommé en 2024), cœur C++ avec API Python, Kotlin, JavaScript et Swift : CPU via XNNPACK, GPU et NPU selon la plate-forme, conversion PyTorch par litert-torch encore en bêta, aucun serveur intégré ; Apache-2.0.
 - **NVIDIA Triton** — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo.
 - **ONNX Runtime** — Moteur d'inférence cross-plateforme de Microsoft pour modèles au format ONNX — un même modèle exporté tourne sur CPU, GPU et accélérateurs variés via des Execution Providers (CUDA, TensorRT, OpenVINO, DirectML…), du serveur à l'edge.
+- **OpenVINO** — Boîte à outils d'inférence d'Intel en C++, API Python, C et Node.js : lit ONNX, PyTorch, TensorFlow et TFLite, optimise pour CPU, GPU intégré et NPU Intel, avec un plug-in CPU ARM listé comme supporté mais sans support AMD ; quantification NNCF et serveur OpenVINO Model Server ; Apache-2.0.
 - **Ray Serve** — Bibliothèque de serving scalable bâtie sur Ray : déploiements Python framework-agnostiques, composition multi-modèles (deployment graphs) et autoscaling, du prototype au cluster.
 - **Seldon Core** — Plateforme de serving et d'orchestration d'inférence sur Kubernetes — graphes d'inférence multi-étapes, explicabilité et monitoring ; passée en licence source-available (BSL) depuis 2024.
 - **TensorFlow Serving** — Serveur d'inférence haute performance pour modèles TensorFlow/Keras — API REST et gRPC, versionnage et batching de modèles, cœur C++ éprouvé ; intégré à TFX.
@@ -1030,6 +1032,7 @@
 
 ### ml/serving
 - **Déploiement de modèles** — domaines : mlops · alias : model deployment, déploiement de modèle, canary, blue-green, shadow deployment, progressive delivery, déploiement progressif, rollout
+- **Inférence en bordure - modèles sur du matériel d'atelier** — domaines : mlops, infra-ops · alias : Inférence en bordure : modèles sur du matériel d'atelier, inférence en bordure, inférence edge, edge inference, edge AI, inférence sur site, IA en bordure
 
 ### ml/socle
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
@@ -1343,6 +1346,7 @@
 - **Comparatif - Forecasting** — —
 
 ### ml/serving
+- **Comparatif - Runtimes d'inférence CPU et edge** — —
 - **Comparatif - Serving de modèles** — —
 
 ### ml/tabulaire
