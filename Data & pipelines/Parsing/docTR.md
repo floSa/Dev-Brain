@@ -2,7 +2,7 @@
 role: brique
 nom: docTR
 alias: [doctr, python-doctr, Document Text Recognition, mindee docTR]
-pitch: "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents."
+pitch: "Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents."
 categorie: data/parsing
 famille: paquet
 licence_type: open-source
@@ -18,7 +18,7 @@ url_repo: https://github.com/mindee/doctr
 # docTR
 
 <!-- AUTO:BANDEAU:START -->
-> Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.
+> Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
@@ -31,29 +31,30 @@ Bibliothèque d'OCR de Mindee qui implémente le pipeline **en deux étages**, p
 **détection de texte** — DBNet, LinkNet — pour localiser les mots, puis **reconnaissance** —
 CRNN, SAR, ViTSTR — pour lire les caractères, avec des modèles pré-entraînés de chaque côté.
 Une seule fonction, `ocr_predictor`, enchaîne les deux et restitue le texte **avec sa
-position** et sa structure : pages, blocs, lignes, mots. Le backend se choisit explicitement à
-l'installation, PyTorch ou TensorFlow, et les deux étages se fine-tunent sur un corpus propre.
-Elle s'arrête à la lecture : l'extraction métier — champs, tableaux structurés — n'est pas
-dans son périmètre.
+position** et sa structure : pages, blocs, lignes, mots. PyTorch est le seul backend
+(TensorFlow a été retiré en 1.0.0, le 2025-07-09), et les deux étages se fine-tunent sur un
+corpus propre. La 1.1.0 (2026-08-21) y ajoute l'analyse de mise en page (`LW-DETR`), la
+reconnaissance de structure de tableaux (`TableCenterNet`) et des exports Markdown,
+AsciiDoc, HTML et XML. L'extraction métier de champs n'est pas dans son périmètre.
 
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
 |---|---|
-| Extraire le texte de documents — PDF, scans, photos — avec sa position et sa structure | Ordre de lecture non garanti en mise en page complexe (multi-colonnes, tableaux) : la reconstruction de structure reste un post-traitement |
-| OCR open-source hors ligne, sans API cloud ni coût à la page | Ne couvre pas l'extraction métier — champs, tableaux structurés — qui est le périmètre payant de Mindee |
-| Choisir le backend, PyTorch ou TensorFlow, ou fine-tuner détection et reconnaissance sur son corpus | Texte de scène très varié, multilingue ou manuscrit difficile : les moteurs spécialisés valent mieux, voir [[OCR]] |
+| Extraire le texte de documents — PDF, scans, photos — avec sa position et sa structure | Mise en page complexe (multi-colonnes, tableaux) : l'analyse de mise en page et la structure de tableaux n'existent que depuis la 1.1.0 (2026-08-21), modules récents à éprouver sur ses propres documents |
+| OCR open-source hors ligne, sans API cloud ni coût à la page | Ne couvre pas l'extraction métier de champs, qui est le périmètre payant de Mindee |
+| Fine-tuner détection et reconnaissance sur son corpus, ou ajouter la mise en page, les tableaux et l'export Markdown (depuis la 1.1.0) | Texte de scène très varié, multilingue ou manuscrit difficile : les moteurs spécialisés valent mieux, voir [[OCR]] |
 | Brique d'un pipeline RAG ou d'extraction documentaire : OCR, puis texte, puis indexation | Compréhension de document de bout en bout — questions-réponses, extraction sémantique → [[Vision Language Models]] |
-| | Le choix du backend est explicite à l'installation : se tromper d'extra casse l'import des modèles |
+| | Python 3.11 minimum depuis la 1.1.0 |
 | | Qualité d'entrée déterminante : résolution, contraste, redressement — un document penché ou bruité dégrade la détection |
 
 ## Mise en œuvre
 
-- Installation — `uv add python-doctr` avec l'extra du backend voulu ; import `doctr`
-- Point d'entrée — `ocr_predictor`, qui enchaîne détection et reconnaissance
-- Prérequis — PyTorch ou TensorFlow selon l'extra choisi ; modèles pré-entraînés téléchargés au premier usage
+- Installation — `uv add python-doctr` (plus d'extra de backend depuis la 1.0.0) ; import `doctr`
+- Point d'entrée — `ocr_predictor`, qui enchaîne détection et reconnaissance ; `detect_layout=True` et `detect_tables=True` ajoutent la mise en page et les tableaux, `result.export_as_markdown()` l'export, et `doctr-cli` l'exécution en ligne de commande
+- Prérequis — PyTorch, seul backend ; modèles pré-entraînés téléchargés au premier usage
 - Exécution — CPU ou GPU, mono-nœud, rien à héberger
-- Coût — gratuit, Apache-2.0 ; l'extraction structurée est le périmètre payant de Mindee
+- Coût — gratuit, Apache-2.0 ; l'extraction métier de champs est le périmètre payant de Mindee
 
 ## Écosystème
 

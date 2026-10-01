@@ -46,7 +46,7 @@ environ 13 170 étoiles, dernier commit du 2026-09-28. Le projet a rejoint la Co
 |---|---|
 | Répliquer une base transactionnelle sans la recharger et capter les suppressions, à faible latence et sans requêter les tables | Une source sans journal accessible ou sans droit de lecture du log : le CDC par interrogation d'une colonne témoin est un repli, pas Debezium |
 | Un Kafka déjà en place : les connecteurs Kafka Connect sont le mode historique | Aucun broker et aucune équipe pour l'exploiter : prendre Debezium Server, ou [[Airbyte]] qui embarque la capture |
-| Aucun broker : Debezium Server écrit vers Redis, NATS, RabbitMQ, HTTP ou directement vers une base par le puits JDBC | Charger des API, des fichiers ou des bases sans journal : Debezium ne lit que les journaux de bases |
+| Aucun broker : Debezium Server écrit vers Redis, NATS, RabbitMQ Streams (puits `rabbitmqstream`, pas les files AMQP classiques), HTTP ou directement vers une base par le puits JDBC | Charger des API, des fichiers ou des bases sans journal : Debezium ne lit que les journaux de bases |
 | Une base Postgres, MySQL, MariaDB, SQL Server, Oracle ou MongoDB dont on contrôle la configuration (`wal_level`, `binlog_format`) | Des transformations lourdes : les SMT de Kafka Connect ne remplacent pas un traitement de flux ([[Flink]]) |
 
 ## Mise en œuvre

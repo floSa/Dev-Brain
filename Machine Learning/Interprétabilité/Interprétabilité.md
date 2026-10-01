@@ -29,7 +29,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 - Lire et manipuler les internes d'un Transformer en notation canonique → [[TransformerLens]].
 - Intervenir sur les activations d'un réseau, y compris à distance sur un gros modèle → [[nnsight]].
 - Entraîner ou réutiliser des sparse autoencoders → [[SAELens]].
-- Surveiller la dérive plutôt qu'expliquer une prédiction → [[Evidently]], au niveau du domaine.
+- Surveiller la dérive plutôt qu'expliquer une prédiction → [[Evidently]], dans [[Monitoring de modèles]].
 
 <!-- AUTO:START -->
 ### Notions

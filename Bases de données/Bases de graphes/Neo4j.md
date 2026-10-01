@@ -1,7 +1,7 @@
 ---
 role: brique
 nom: Neo4j
-alias: [neo4j, neo4J, neo 4j]
+alias: [neo4j, neo 4j]
 pitch: "SGBD de graphes natif, référence du modèle propriété-graphe et de Cypher — Community en GPLv3 et mono-instance, cluster et sauvegarde en ligne réservés à Enterprise (licence commerciale)."
 categorie: database/graphe
 famille: plateforme

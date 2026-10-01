@@ -51,7 +51,7 @@ entre services à partir des traces. Une trace n'a pas de « fin » : interroger
 
 - Installation — mode monolithique : un processus, aucun Kafka requis ; mode microservices, qui exige en production un système compatible Kafka ; Grafana Cloud Traces pour l'offre managée
 - Point d'entrée — ingestion OTLP, Jaeger, Zipkin ou Kafka ; requêtes TraceQL depuis [[Grafana]]
-- Prérequis — un stockage objet, sur site compatible S3 avec [[MinIO]], [[Garage]] ou [[Ceph]] — celui-là même que demande [[Loki]] ; des services instrumentés, par exemple par [[OpenTelemetry]] ; durée de rétention à fixer explicitement, la documentation d'architecture n'en donne pas de défaut
+- Prérequis — un stockage objet, sur site compatible S3 avec [[MinIO]] (projet archivé, voir sa fiche), [[Garage]] ou [[Ceph]] — celui-là même que demande [[Loki]] ; des services instrumentés, par exemple par [[OpenTelemetry]] ; durée de rétention à fixer explicitement, la documentation d'architecture n'en donne pas de défaut
 - Exécution — auto-hébergé ou managé ; monolithique pour commencer, microservices pour monter en charge
 - Coût — gratuit, AGPL-3.0-only ; le poste de dépense est le stockage objet ; Grafana Cloud Traces propose des paliers gratuit et payant
 

@@ -95,8 +95,7 @@ Relevé le 2026-09-30 : **Delta 4.4.0** du 2026-08-20 (9 000 étoiles, dernier c
 
 - Documentation — https://docs.delta.io/
 - Documentation — https://github.com/delta-io/delta/blob/master/PROTOCOL.md
-- Dépôt — https://github.com/delta-io/delta
-- Dépôt — https://github.com/delta-io/delta-rs
+- Dépôt — https://github.com/delta-io/delta ; https://github.com/delta-io/delta-rs
 
 ## Voir aussi
 

@@ -48,7 +48,7 @@ et les produits payants.
 | Prendre si | Écarter si |
 |---|---|
 | Packager une application ou un service avec ses dépendances, pour un déploiement reproductible | Isolation plus forte que le partage de noyau, multi-tenant hostile : il faut une VM ou une micro-VM (Firecracker, hors brain) |
-| Lancer des dépendances jetables en local et en CI — Postgres, MinIO, Redis — sans les installer sur l'hôte | Orchestration multi-nœuds — mise à l'échelle, self-healing, rollout : l'Engine seul n'orchestre rien ; le mode Swarm intégré n'est pas déprécié mais le projet autonome Classic Swarm n'est plus développé (hors brain) |
+| Lancer des dépendances jetables en local et en CI — Postgres, MinIO (projet archivé, voir sa fiche ; [[SeaweedFS]] ou [[Garage]] comme alternatives), Redis — sans les installer sur l'hôte | Orchestration multi-nœuds — mise à l'échelle, self-healing, rollout : l'Engine seul n'orchestre rien ; le mode Swarm intégré n'est pas déprécié mais le projet autonome Classic Swarm n'est plus développé (hors brain) |
 | Standardiser l'environnement entre dev, CI et production | Poste de travail en entreprise où la licence Docker Desktop est exclue : c'est **Desktop** qui est soumis à abonnement, pas le moteur — sur serveur Linux on installe l'Engine, ou [[Podman]] |
 | Servir de base à une chaîne CI/CD et à un déploiement orchestré : Kubernetes consomme des images OCI | |
 

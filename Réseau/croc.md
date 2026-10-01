@@ -44,7 +44,7 @@ arrivé gagne.
 | Prendre si | Écarter si |
 |---|---|
 | Déplacer une fois un jeu de données, un modèle entraîné ou une archive entre poste de dev et serveur, sans monter de tuyau permanent | Synchronisation récurrente ou différentielle de dossiers : ce n'est pas un synchroniseur — `rsync`, Syncthing (hors brain) |
-| Sortir un artefact d'une machine cliente où l'on n'a ni droits d'installation durables ni accès SFTP | Copie vers un stockage objet ou entre fournisseurs : `rclone`, ou un client S3 → [[MinIO]] |
+| Sortir un artefact d'une machine cliente où l'on n'a ni droits d'installation durables ni accès SFTP | Copie vers un stockage objet ou entre fournisseurs : `rclone`, ou un client S3 → [[MinIO]] (projet archivé, voir sa fiche ; [[SeaweedFS]], [[Garage]] ou [[Ceph]] comme alternatives) |
 | Transférer entre deux réseaux séparés, en interposant son propre relais dans une zone joignable des deux côtés | Transfert automatisé dans un pipeline : le modèle repose sur une phrase échangée hors bande, mal adapté à l'ordonnancement |
 | Dépanner : un binaire téléchargeable, rien à configurer, utilisable dans les deux sens | Archivage ou distribution à plusieurs destinataires : le modèle est point à point |
 | | Transfert réglementé exigeant une preuve d'audit : la clarté du protocole ne remplace pas l'audit externe indépendant, qui n'existe pas |

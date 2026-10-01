@@ -4743,7 +4743,6 @@
       "nom": "Neo4j",
       "alias": [
         "neo4j",
-        "neo4J",
         "neo 4j"
       ],
       "role": "brique",
@@ -9261,7 +9260,7 @@
       "famille": "paquet",
       "langage": "Python",
       "domaines": null,
-      "pitch": "Bibliothèque OCR de bout en bout de Mindee (écosystème PyTorch, backend TF aussi) — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés ; l'OCR open-source clé en main pour documents.",
+      "pitch": "Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.",
       "tags": [
         "ocr",
         "document-parsing",
