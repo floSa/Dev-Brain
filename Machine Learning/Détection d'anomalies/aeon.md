@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Kats]]", "[[Merlion]]", "[[DeepOD]]"]
+alternatives: ["[[Kats]]", "[[Merlion]]", "[[DeepOD]]", "[[sktime]]"]
 complements: []
 tags: [timeseries, classification, clustering, forecasting]
 url_docs: https://www.aeon-toolkit.org/
@@ -83,6 +83,7 @@ c'est l'entrée pour les ruptures dans la même API.
 - [[Kats]] — Boîte à outils Python de Meta pour l'analyse de séries temporelles — détection (CUSUM, BOCPD, statistiques robustes, outliers), prévision, extraction de features — mais dernière version publiée en 2022 et paquet PyPI aux dépendances épinglées, classé alpha.
 - [[Merlion]] — Bibliothèque Python de Salesforce « time series intelligence » — prévision, détection d'anomalies et de ruptures sous une interface commune, avec ensembles, post-traitement des scores, AutoML et benchmark — dépôt archivé, plus maintenu depuis la 2.0.4 (juin 2024).
 - [[DeepOD]] — Bibliothèque Python de détecteurs d'anomalies profonds, tabulaires et séries temporelles (Deep SVDD, REPEN, RDP, GOAD, USAD, TimesNet, Anomaly Transformer, DCdetector…), sous une API fit / decision_function à la PyOD, avec un banc d'essai de recherche ; PyTorch, dépendances épinglées anciennes et dernière release en 2023.
+- [[sktime]] — Interface unifiée, façon scikit-learn, pour toutes les tâches d'apprentissage sur séries temporelles — prévision, classification, régression, clustering, détection — avec pipelines, réglage et réduction, et des adaptateurs vers statsmodels, tsfresh, PyOD ou Prophet ; plus de 500 estimateurs.
 
 ## Ressources
 
