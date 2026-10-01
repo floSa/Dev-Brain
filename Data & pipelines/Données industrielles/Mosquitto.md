@@ -11,7 +11,7 @@ maturite: production
 langage: C
 scaling: single-node
 alternatives: ["[[EMQX]]", "[[NATS]]", "[[RabbitMQ]]"]
-complements: ["[[Node-RED]]"]
+complements: ["[[Node-RED]]", "[[Telegraf]]"]
 tags: [mqtt, message-broker, iiot, self-hosted]
 url_docs: https://mosquitto.org/documentation/
 url_repo: https://github.com/eclipse-mosquitto/mosquitto
@@ -85,6 +85,7 @@ sont tous du même auteur.
 
 ### Compléments
 - [[Node-RED]] — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut. — [[Node-RED]] lit et publie sur Mosquitto par ses nœuds MQTT du cœur : le montage courant d'une passerelle d'atelier.
+- [[Telegraf]] — Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental. — `inputs.mqtt_consumer` s'y abonne et `outputs.mqtt` y publie ; `outputs.mqtt` exige un `keep_alive` non nul avec Mosquitto 2.0.12 ou plus.
 
 ## Ressources
 
