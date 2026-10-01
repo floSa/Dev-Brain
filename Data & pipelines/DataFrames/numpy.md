@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C / Python
 alternatives: ["[[xarray]]", "[[Dask]]", "[[CuPy]]"]
-complements: []
+complements: ["[[Hypothesis]]"]
 tags: [array, in-memory]
 url_docs: https://numpy.org/doc/stable/
 url_repo: https://github.com/numpy/numpy
@@ -61,6 +61,10 @@ matplotlib.
 - [[xarray]] — Tableaux N-dimensionnels étiquetés : ajoute dimensions, coordonnées et attributs au-dessus de numpy — le pandas des données multidimensionnelles (NetCDF, climat, géospatial).
 - [[Dask]] — Calcul parallèle et distribué Python natif : collections imitant numpy et pandas (dask.array / dask.dataframe), exécutées en graphes de tâches paresseux, du portable au cluster.
 - [[CuPy]] — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
+
+### Compléments
+
+- [[Hypothesis]] — Test par propriétés pour Python : on décrit les entrées valides, la bibliothèque en génère des centaines, cherche un contre-exemple et le réduit au plus petit cas qui échoue. — `hypothesis.extra.numpy` génère tableaux, formes et formes compatibles en diffusion (`arrays`, `array_shapes`, `broadcastable_shapes`) ; un tableau de flottants sans `elements` borné contient des NaN.
 
 ## Ressources
 
