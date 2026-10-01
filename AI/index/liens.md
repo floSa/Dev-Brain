@@ -27,7 +27,7 @@
 
 ### Agno  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
 - liens entrants : [[Agents]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[Letta]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[PraisonAI]], [[smolagents]]
 
 ### ai-memory  ·  brique
@@ -177,8 +177,8 @@
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
-- liens entrants : [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]], [[Semantic Kernel]], [[Sous-agents et isolation du contexte]], [[smolagents]], [[swarm-forge]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
+- liens entrants : [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]], [[Semantic Kernel]], [[Sous-agents et isolation du contexte]], [[smolagents]], [[swarm-forge]]
 
 ### Avro  ·  brique
 - tags : `file-format`, `serialization`, `schema-evolution`
@@ -367,7 +367,7 @@
 
 ### CrewAI  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[LangChain]], [[Letta]], [[Mem0]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[LangChain]], [[Mem0]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
 - liens entrants : [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[Human-in-the-loop]], [[Letta]], [[Mem0]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[OpenMAIC]], [[PraisonAI]], [[Tool use patterns]], [[a2a-protocol]], [[smolagents]], [[swarm-forge]]
 
 ### croc  ·  brique
@@ -693,10 +693,10 @@
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[Parquet]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]]
 
 ### garak  ·  brique
-- tags : `ai-security`, `prompt-injection`, `jailbreak`, `llm-eval`
+- tags : `ai-security`, `prompt-injection`, `jailbreak`, `llm-eval`, `red-teaming`
 - liens sortants : [[AI security]], [[Jailbreaking and defenses]], [[NeMo Guardrails]], [[Ollama]], [[Prompt injection]], [[Systèmes IA]], [[promptfoo]]
 - liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Jailbreaking and defenses]], [[Llama Guard]], [[NeMo Guardrails]], [[Prompt injection]], [[Sandboxing de code généré]], [[Systèmes IA]], [[promptfoo]]
 
@@ -1027,8 +1027,8 @@
 
 ### Letta  ·  brique
 - tags : `llm`, `agents`, `tool-use`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[AutoGen]], [[Cognee]], [[CrewAI]], [[Graphiti]], [[LLM & IA générative]], [[LangGraph]], [[Mem0]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenViking]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agent memory]], [[Agno]], [[Assistants]], [[AutoGen]], [[Cognee]], [[Comparatif - Mémoire pour agents]], [[CrewAI]], [[Graphiti]], [[Hermes Agent]], [[LLM & IA générative]], [[Mem0]], [[Mémoire des agents]], [[OpenAI Agents SDK]], [[OpenViking]], [[ai-memory]], [[smolagents]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agno]], [[Cognee]], [[CrewAI]], [[Graphiti]], [[LLM & IA générative]], [[LangGraph]], [[Mem0]], [[Multi-agent systems]], [[OpenViking]], [[Tool use patterns]], [[agent-loops]]
+- liens entrants : [[Agent memory]], [[Assistants]], [[Cognee]], [[Comparatif - Mémoire pour agents]], [[Graphiti]], [[Hermes Agent]], [[LLM & IA générative]], [[Mem0]], [[Mémoire des agents]], [[OpenAI Agents SDK]], [[OpenViking]], [[ai-memory]]
 
 ### LibreChat  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `agents`, `mcp`, `self-hosted`
@@ -1418,7 +1418,7 @@
 ### OpenAI Agents SDK  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[Tool use patterns]], [[agent-loops]], [[smolagents]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[Letta]], [[OpenClaw]], [[OpenHands]], [[smolagents]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Claude Agent SDK]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[LM Studio Bionic]], [[OpenClaw]], [[OpenHands]], [[smolagents]]
 
 ### OpenBao  ·  brique
 - tags : `secrets-management`, `cryptography`, `self-hosted`, `kubernetes`
@@ -1661,7 +1661,7 @@
 - liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Temporal]], [[Windmill]], [[dbt Core]], [[n8n]]
 
 ### Presidio  ·  brique
-- tags : `privacy`, `ner`, `ai-security`
+- tags : `privacy`, `ner`, `ai-security`, `pii`
 - liens sortants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[GLiNER]], [[Guardrails]], [[LiteLLM]], [[NeMo Guardrails]], [[Systèmes IA]], [[spaCy]]
 - liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[GLiNER]], [[Guardrails]], [[LiteLLM]], [[Llama Guard]], [[NeMo Guardrails]], [[Sandboxing de code généré]], [[Systèmes IA]], [[spaCy]]
 
@@ -1686,7 +1686,7 @@
 - liens entrants : [[Comparatif - Évaluation LLM]], [[DeepEval]], [[LLM-as-judge]], [[Observabilité]], [[Prometheus]], [[Évaluation]]
 
 ### promptfoo  ·  brique
-- tags : `llm`, `llm-eval`, `testing`, `ai-security`
+- tags : `llm`, `llm-eval`, `testing`, `ai-security`, `red-teaming`
 - liens sortants : [[AI security]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[LLM eval metrics]], [[LLM-as-judge]], [[Langfuse]], [[Phoenix Arize]], [[RAG eval]], [[Ragas]], [[TruLens]], [[garak]]
 - liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Évaluation LLM]], [[DeepEval]], [[Inspect AI]], [[Prometheus-Eval]], [[Ragas]], [[Systèmes IA]], [[TruLens]], [[garak]], [[Évaluation]]
 
@@ -1953,7 +1953,7 @@
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2022,8 +2022,8 @@
 
 ### smolagents  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
-- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Letta]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[Letta]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]]
+- liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[LiteLLM]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]]
+- liens entrants : [[Agents]], [[Agno]], [[AutoGen]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Hermes Agent]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]]
 
 ### Sniffnet  ·  brique
 - tags : `networking`, `traffic-analysis`
@@ -2723,7 +2723,7 @@
 ### Comparatif - Stockage objet  ·  comparatif
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet.base]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### Comparatif - Suivi d'expériences ML  ·  comparatif
 - tags : `experiment-tracking`, `model-registry`
@@ -4887,7 +4887,7 @@
 
 ### Pattern - Stack démo ML locale multi-services  ·  pattern
 - tags : `pattern`, `ml-demo`, `data-app`, `container`, `object-storage`
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Bases NoSQL]], [[Comparatif - Frontends web légers]], [[Docker]], [[FastAPI]], [[MinIO]], [[MongoDB]], [[Postgres]], [[Streamlit]], [[Uvicorn]], [[testcontainers]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Bases NoSQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Stockage objet]], [[Docker]], [[FastAPI]], [[Garage]], [[MinIO]], [[MongoDB]], [[Postgres]], [[SeaweedFS]], [[Streamlit]], [[Uvicorn]], [[testcontainers]]
 - liens entrants : [[Patterns]], [[Rule - Packaging démo]]
 
 ### Rule - Config typée  ·  rule
@@ -5156,6 +5156,7 @@
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
 - `perplexity` : Perplexity
+- `pii` : Presidio
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
 - `point-estimation` : Bayésien, Estimation MAP, Maximum de vraisemblance  — pas de page concept dédiée
 - `policy-gradient` : Actor-Critic methods, Apprentissage par renforcement, PPO, Policy gradient
@@ -5183,6 +5184,7 @@
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss  — pas de page concept dédiée
 - `recommender-systems` : Systèmes de recommandation
 - `recon` : Sécurité, Web-Check  — pas de page concept dédiée
+- `red-teaming` : garak, promptfoo  — pas de page concept dédiée
 - `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
 - `regularization` : Augmentation d'images, Régularisation, Vector norms
@@ -5434,6 +5436,7 @@
 - `ranking` (porté par : BM25, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles)
 - `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss)
 - `recon` (porté par : Sécurité, Web-Check)
+- `red-teaming` (porté par : garak, promptfoo)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
 - `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
