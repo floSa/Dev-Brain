@@ -1,0 +1,23 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du même dossier.
+    - role == "brique"
+    - categorie == "devops/conteneur"
+    # Le dossier porte aussi le moteur, l'orchestrateur et le chart : seul le
+    # tag distingue un registre d'images d'un concurrent de Docker ou de Kubernetes.
+    - tags.contains("container-registry")
+views:
+  - type: table
+    name: Registres d'images
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - scaling
+      - langage
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
