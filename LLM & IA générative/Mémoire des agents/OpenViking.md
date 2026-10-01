@@ -10,7 +10,7 @@ hosted: [self]
 maturite: beta
 langage: Python
 scaling: single-node
-alternatives: ["[[Letta]]", "[[Hermes Agent]]", "[[ai-memory]]"]
+alternatives: ["[[Letta]]", "[[Hermes Agent]]", "[[ai-memory]]", "[[Mem0]]", "[[Cognee]]"]
 complements: []
 tags: [agent-memory, rag, context-engineering, agents, retrieval, mcp]
 url_docs: https://docs.openviking.ai/
@@ -24,7 +24,7 @@ url_repo: https://github.com/volcengine/OpenViking
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Plateforme Python | open-source | self-hébergé · mono-nœud | beta | à jour · 2026-09-08 |
+| Plateforme Python | open-source | self-hébergé · mono-nœud | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -48,12 +48,12 @@ principalement, avec des composants Rust.
 |---|---|
 | Donner à un agent une mémoire persistante dont on peut **auditer les accès**, et pas seulement mesurer la pertinence | Produit fermé ou service réseau propriétaire : le cœur est en AGPL-3.0 et le copyleft s'étend à l'usage en service → [[Letta]], sous Apache-2.0 |
 | Maîtriser finement le budget de tokens sur un gros corpus : charger un résumé, puis descendre seulement si nécessaire | Besoin d'une base vectorielle brute, sans couche de mémoire par-dessus → [[Qdrant]], [[pgvector]] |
-| Unifier mémoire, RAG et skills derrière un seul serveur, au lieu d'assembler trois systèmes | API et formats de données encore mouvants — la 0.3.x l'annonce elle-même : verrouiller la version |
+| Unifier mémoire, RAG et skills derrière un seul serveur, au lieu d'assembler trois systèmes | API et formats de données encore mouvants — v0.4.x, classifieur PyPI « 3 - Alpha » : verrouiller la version |
 | | Aucune offre managée et pas de chemin d'installation clé en main : tout est à exploiter soi-même |
 
 ## Mise en œuvre
 
-- Installation — `pip install openviking`, puis `openviking-server init` et `openviking-server doctor` ; image Docker officielle et CLI standalone
+- Installation — `pip install openviking`, puis `openviking-server init` et `openviking-server doctor` ; image Docker officielle et CLI standalone ; constat du 2026-10-01 : v0.4.22 du 2026-09-28 (PyPI), 39,1 k étoiles, une version par semaine environ
 - Point d'entrée — serveur exposant l'arborescence `viking://` ; intégrations annoncées avec Claude Code, Codex, Cursor, OpenCode, LangChain/LangGraph et MCP
 - Prérequis — Python 3.10+ ; Linux, macOS (ARM et Intel), Windows x64 ; une application desktop compagnon est en beta
 - Exécution — self-hébergé uniquement, mono-nœud : aucune offre managée n'est documentée dans le dépôt, malgré l'éditeur
@@ -63,9 +63,11 @@ principalement, avec des composants Rust.
 
 ### Alternatives
 
-- [[Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- [[Letta]] — Harnais d'agents à état (ex-MemGPT, Apache-2.0) — agents à mémoire persistante qui réécrivent eux-mêmes leur contexte et leurs skills, pilotés par CLI, application de bureau ou serveur d'application ; l'ancien serveur d'API V1 est retiré, Letta Cloud est le mode par défaut mais le mode local se passe de compte.
 - [[Hermes Agent]] — Agent IA auto-hébergé de Nous Research (MIT) doté d'une boucle d'apprentissage fermée — mémoire persistante entre sessions et création autonome de skills réutilisables ; 40+ outils, serveurs MCP et une vingtaine de canaux de discussion, du VPS à 5 $ au cluster GPU.
 - [[ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
+- [[Mem0]] — Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.
+- [[Cognee]] — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
 
 ## Ressources
 

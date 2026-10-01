@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 969,
+  "count": 974,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -39,6 +39,11 @@
     "agent-memory": [
       "Agents",
       "Assistants",
+      "Cognee",
+      "Comparatif - Mémoire pour agents",
+      "Graphiti",
+      "Mem0",
+      "Mémoire des agents",
       "OpenViking",
       "ai-memory"
     ],
@@ -66,10 +71,12 @@
       "BMAD",
       "Claude Agent SDK",
       "Cline",
+      "Cognee",
       "Comparatif - Assistants de code IA",
       "Comparatif - Automatisation no-code",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
+      "Comparatif - Mémoire pour agents",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Context engineering",
       "Continue",
@@ -80,6 +87,7 @@
       "Dify",
       "E2B",
       "Flowise",
+      "Graphiti",
       "Harnais d'agent",
       "Haystack",
       "Hermes Agent",
@@ -95,8 +103,10 @@
       "LibreChat",
       "LlamaIndex",
       "Maka",
+      "Mem0",
       "Modal",
       "Multi-agent systems",
+      "Mémoire des agents",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
@@ -581,6 +591,7 @@
       "Graphify",
       "Harnais d'agent",
       "Headroom",
+      "Mémoire des agents",
       "OmniRoute",
       "OpenViking",
       "Sous-agents et isolation du contexte",
@@ -1636,9 +1647,12 @@
     ],
     "knowledge-graph": [
       "Bases graphe — modèles et langages de requête",
+      "Cognee",
       "Construction de graphes de connaissances",
       "GraphRAG",
       "Graphify",
+      "Graphiti",
+      "Mémoire des agents",
       "Obsidian",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "RAG & retrieval"
@@ -1959,15 +1973,18 @@
     "local-llm": [
       "AnythingLLM",
       "Assistants",
+      "Cognee",
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Gemma",
+      "Graphiti",
       "LM Studio",
       "LM Studio Bionic",
       "LibreChat",
       "Licences de modèles open weights",
       "Llama Guard",
+      "Mem0",
       "Mistral",
       "Ollama",
       "Open WebUI",
@@ -2796,6 +2813,7 @@
       "Bases de données vectorielles",
       "Chroma",
       "Chunking strategies",
+      "Cognee",
       "Cohere Rerank",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
@@ -3043,15 +3061,19 @@
       "Choisir un modèle d'embedding",
       "Chunking strategies",
       "Cohere Rerank",
+      "Comparatif - Mémoire pour agents",
       "Comparatif - Rerankers",
       "Deep research",
       "Embeddings & encodeurs",
       "FlashRank",
       "GraphRAG",
+      "Graphiti",
       "Hybrid retrieval",
       "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex NLSQLTableQueryEngine",
+      "Mem0",
+      "Mémoire des agents",
       "OpenViking",
       "Query transformations",
       "Qwen3-Embedding",
@@ -4699,7 +4721,10 @@
         "[[ArangoDB]]",
         "[[Apache AGE]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Graphiti]]",
+        "[[Cognee]]"
+      ],
       "maturite": "production"
     },
     {
@@ -6032,7 +6057,8 @@
         "[[Chroma]]"
       ],
       "complements": [
-        "[[AnythingLLM]]"
+        "[[AnythingLLM]]",
+        "[[Cognee]]"
       ],
       "maturite": "production"
     },
@@ -6113,7 +6139,8 @@
       ],
       "complements": [
         "[[FastEmbed]]",
-        "[[AnythingLLM]]"
+        "[[AnythingLLM]]",
+        "[[Mem0]]"
       ],
       "maturite": "production"
     },
@@ -6243,7 +6270,9 @@
       ],
       "complements": [
         "[[Postgres]]",
-        "[[LibreChat]]"
+        "[[LibreChat]]",
+        "[[Mem0]]",
+        "[[Cognee]]"
       ],
       "maturite": "production"
     },
@@ -8757,7 +8786,8 @@
         "[[Tesseract]]",
         "[[EasyOCR]]",
         "[[Open WebUI]]",
-        "[[RAGFlow]]"
+        "[[RAGFlow]]",
+        "[[Cognee]]"
       ],
       "maturite": "production"
     },
@@ -11245,31 +11275,6 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/Agent memory.md",
-      "nom": "Agent memory",
-      "alias": [
-        "mémoire d'agent",
-        "agent memory",
-        "mémoire LLM"
-      ],
-      "role": "notion",
-      "categorie": "llm/memoire",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "ai-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "agents",
-        "llm",
-        "retrieval"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "LLM & IA générative/Agents de code/Agents de code.md",
       "nom": "Agents de code",
       "alias": [
@@ -11959,7 +11964,9 @@
         "[[swarm-forge]]",
         "[[PraisonAI]]"
       ],
-      "complements": [],
+      "complements": [
+        "[[Mem0]]"
+      ],
       "maturite": "production"
     },
     {
@@ -12099,7 +12106,9 @@
       "alternatives": [],
       "complements": [
         "[[Deep Agents]]",
-        "[[open_deep_research]]"
+        "[[open_deep_research]]",
+        "[[Mem0]]",
+        "[[Cognee]]"
       ],
       "maturite": "production"
     },
@@ -13283,31 +13292,6 @@
       "maturite": "deprecated"
     },
     {
-      "path": "LLM & IA générative/Headroom.md",
-      "nom": "Headroom",
-      "alias": [
-        "headroom",
-        "headroom-ai",
-        "headroomlabs"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "paquet",
-      "langage": "Python, TypeScript, Rust",
-      "domaines": null,
-      "pitch": "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.",
-      "tags": [
-        "llm",
-        "context-engineering",
-        "token-optimization",
-        "caching",
-        "mcp"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "beta"
-    },
-    {
       "path": "LLM & IA générative/LLM & IA générative.md",
       "nom": "LLM & IA générative",
       "alias": [
@@ -13390,36 +13374,6 @@
       "alternatives": [
         "[[Dify]]",
         "[[Flowise]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Letta.md",
-      "nom": "Letta",
-      "alias": [
-        "letta",
-        "memgpt",
-        "mem-gpt"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "plateforme",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.",
-      "tags": [
-        "llm",
-        "agents",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[Agno]]",
-        "[[CrewAI]]",
-        "[[AutoGen]]",
-        "[[OpenAI Agents SDK]]",
-        "[[smolagents]]",
-        "[[OpenViking]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -13850,6 +13804,269 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Mémoire des agents/Agent memory.md",
+      "nom": "Agent memory",
+      "alias": [
+        "mémoire d'agent",
+        "agent memory",
+        "mémoire LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/memoire",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "llm",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Cognee.md",
+      "nom": "Cognee",
+      "alias": [
+        "cognee",
+        "topoteretes"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.",
+      "tags": [
+        "agent-memory",
+        "knowledge-graph",
+        "rag",
+        "agents",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[Mem0]]",
+        "[[Graphiti]]",
+        "[[Letta]]",
+        "[[OpenViking]]"
+      ],
+      "complements": [
+        "[[Neo4j]]",
+        "[[pgvector]]",
+        "[[LanceDB]]",
+        "[[Ollama]]",
+        "[[Docling]]",
+        "[[LangGraph]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Comparatif - Mémoire pour agents.md",
+      "nom": "Comparatif - Mémoire pour agents",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/memoire",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "agent-memory",
+        "agents",
+        "retrieval"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Graphiti.md",
+      "nom": "Graphiti",
+      "alias": [
+        "graphiti",
+        "graphiti-core",
+        "zep graphiti"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework de graphe de connaissances temporel pour agents (Zep, Apache-2.0) — extrait par LLM entités et faits d'épisodes, chaque fait portant sa fenêtre de validité ; recherche hybride vecteur, BM25 et graphe sur Neo4j, FalkorDB ou Neptune. La plateforme Zep n'existe plus que dans le cloud.",
+      "tags": [
+        "agent-memory",
+        "knowledge-graph",
+        "agents",
+        "retrieval",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[Mem0]]",
+        "[[Cognee]]",
+        "[[Letta]]"
+      ],
+      "complements": [
+        "[[Neo4j]]",
+        "[[Ollama]]",
+        "[[vLLM]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Headroom.md",
+      "nom": "Headroom",
+      "alias": [
+        "headroom",
+        "headroom-ai",
+        "headroomlabs"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "paquet",
+      "langage": "Python, TypeScript, Rust",
+      "domaines": null,
+      "pitch": "Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.",
+      "tags": [
+        "llm",
+        "context-engineering",
+        "token-optimization",
+        "caching",
+        "mcp"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Letta.md",
+      "nom": "Letta",
+      "alias": [
+        "letta",
+        "memgpt",
+        "mem-gpt",
+        "letta-code"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Harnais d'agents à état (ex-MemGPT, Apache-2.0) — agents à mémoire persistante qui réécrivent eux-mêmes leur contexte et leurs skills, pilotés par CLI, application de bureau ou serveur d'application ; l'ancien serveur d'API V1 est retiré, Letta Cloud est le mode par défaut mais le mode local se passe de compte.",
+      "tags": [
+        "llm",
+        "agents",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[Agno]]",
+        "[[CrewAI]]",
+        "[[AutoGen]]",
+        "[[OpenAI Agents SDK]]",
+        "[[smolagents]]",
+        "[[OpenViking]]",
+        "[[Mem0]]",
+        "[[Graphiti]]",
+        "[[Cognee]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Mem0.md",
+      "nom": "Mem0",
+      "alias": [
+        "mem0",
+        "mem0ai"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.",
+      "tags": [
+        "agent-memory",
+        "agents",
+        "retrieval",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[Letta]]",
+        "[[Graphiti]]",
+        "[[Cognee]]",
+        "[[OpenViking]]"
+      ],
+      "complements": [
+        "[[Qdrant]]",
+        "[[pgvector]]",
+        "[[Ollama]]",
+        "[[LangGraph]]",
+        "[[CrewAI]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/Mémoire des agents.md",
+      "nom": "Mémoire des agents",
+      "alias": [
+        "mémoire des agents",
+        "mémoire d'agent persistante"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Garder ce qu'un agent a appris d'une session à l'autre — faits, graphe daté, contexte comprimé — sans envoyer les données chez un tiers.",
+      "tags": [
+        "agent-memory",
+        "agents",
+        "context-engineering",
+        "retrieval",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Mémoire des agents/OpenViking.md",
+      "nom": "OpenViking",
+      "alias": [
+        "openviking",
+        "viking"
+      ],
+      "role": "brique",
+      "categorie": "llm/memoire",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.",
+      "tags": [
+        "agent-memory",
+        "rag",
+        "context-engineering",
+        "agents",
+        "retrieval",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Letta]]",
+        "[[Hermes Agent]]",
+        "[[ai-memory]]",
+        "[[Mem0]]",
+        "[[Cognee]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md",
       "nom": "Comparatif - Observabilité LLM",
       "alias": null,
@@ -14029,35 +14246,6 @@
       ],
       "complements": [],
       "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/OpenViking.md",
-      "nom": "OpenViking",
-      "alias": [
-        "openviking",
-        "viking"
-      ],
-      "role": "brique",
-      "categorie": "llm/memoire",
-      "famille": "plateforme",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.",
-      "tags": [
-        "agent-memory",
-        "rag",
-        "context-engineering",
-        "agents",
-        "retrieval",
-        "mcp"
-      ],
-      "alternatives": [
-        "[[Letta]]",
-        "[[Hermes Agent]]",
-        "[[ai-memory]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/Passerelles/LLM caching.md",
@@ -14974,7 +15162,10 @@
         "[[LibreChat]]",
         "[[AnythingLLM]]",
         "[[RAGFlow]]",
-        "[[Llama Guard]]"
+        "[[Llama Guard]]",
+        "[[Mem0]]",
+        "[[Graphiti]]",
+        "[[Cognee]]"
       ],
       "maturite": "production"
     },
@@ -15328,7 +15519,8 @@
         "[[Gemma]]",
         "[[gpt-oss]]",
         "[[Open WebUI]]",
-        "[[Llama Guard]]"
+        "[[Llama Guard]]",
+        "[[Graphiti]]"
       ],
       "maturite": "production"
     },

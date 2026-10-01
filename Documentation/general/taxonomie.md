@@ -531,7 +531,9 @@ valeurs disparues et ne sont pas reconduites.
 - `llm/memoire` — mémoire et **contexte** persistants d'un agent : compression du contexte
   envoyé au modèle, élagage, réinjection à la demande, base de faits qui survit à la session.
   Distinct de `llm/observabilite` (mesurer ce qui est envoyé) et de `database/vecteur` (l'index
-  qui la stocke éventuellement).
+  qui la stocke éventuellement). **Promue le 2026-10-01** (5 pages, arbitrage de floSa) :
+  dossier « Mémoire des agents » — et non « Agent memory », nom de fichier de la notion qu'il
+  contient.
 - `web/proxy` — **ouvert le 2026-09-30**, arbitrage de floSa. L'intermédiaire qui se place *devant* des
   services pour les exposer : reverse proxy, terminaison TLS, certificats (ACME ou autorité interne),
   répartition de charge, routage par nom d'hôte ou par chemin ([[Traefik]], [[Caddy]], [[Nginx]],
