@@ -1,0 +1,21 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du sous-domaine.
+    - role == "brique"
+    # devtools/qualite rassemble aussi Ruff et pre-commit, qui ne vérifient aucun
+    # type : la catégorie ne dit pas ce que ce comparatif compare, le tag oui.
+    - file.hasTag("type-checker")
+views:
+  - type: table
+    name: Vérificateurs de types Python
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
