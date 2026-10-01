@@ -151,6 +151,6 @@ Six pages.
 - [x] Lot 1 — ouverture et socle
 - [ ] Lot 2 — anomalie visuelle
 - [ ] Lot 3 — séries temporelles
-- [ ] Lot 4 — maintenance, concepts
+- [x] Lot 4 — maintenance, concepts
 - [ ] Lot 5 — maintenance, outils et offres
 - [ ] Lot 6 — patterns, rules, bord d'usine
