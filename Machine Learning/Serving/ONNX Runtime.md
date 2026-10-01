@@ -8,9 +8,9 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: C++
-alternatives: ["[[TensorRT]]"]
+alternatives: ["[[TensorRT]]", "[[OpenVINO]]", "[[LiteRT]]"]
 complements: ["[[NVIDIA Triton]]"]
-tags: [inference, model-serving, inference-optimization, gpu, quantization]
+tags: [inference, edge-inference, model-serving, inference-optimization, gpu, quantization]
 url_docs: https://onnxruntime.ai/docs/
 url_repo: https://github.com/microsoft/onnxruntime
 ---
@@ -36,6 +36,8 @@ DirectML, CoreML, ROCm, NNAPI) sans toucher au code applicatif — à quoi s'ajo
 optimisations de graphe (fusion d'opérateurs, constant folding) et la quantization INT8. Ce
 n'est pas un serveur : ni API gérée, ni batching dynamique, ni gestion multi-modèles.
 
+Relevé le 2026-10-01 : **1.30.0** du 2026-09-10 sur PyPI, licence MIT (fichier `LICENSE`). Les roues `onnxruntime` couvrent Linux x86_64 et aarch64, Windows amd64 et ARM64, macOS ARM64 (Python 3.11 ou plus). Pour le CPU et le matériel modeste, la page officielle des fournisseurs liste XNNPACK, oneDNN et OpenVINO (Intel), ainsi que Arm ACL et Arm NN, maintenus par la communauté.
+
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
@@ -44,6 +46,7 @@ n'est pas un serveur : ni API gérée, ni batching dynamique, ni gestion multi-m
 | Accélérer l'inférence CPU ou GPU sans réécrire le modèle | Installer le mauvais paquet (`onnxruntime` au lieu d'`onnxruntime-gpu`) fait tourner sur CPU sans le dire |
 | Cible matérielle variable ou non-NVIDIA : DirectML, OpenVINO, CoreML via le bon Execution Provider | Un Execution Provider listé ne garantit pas que tout le modèle y tourne : les opérateurs non couverts retombent sur CPU, et le gain avec |
 | Embarquer un runtime d'inférence derrière un serveur de modèles | Les versions de l'EP TensorRT/CUDA sont à appairer précisément avec le driver |
+| Un parc CPU x86_64 ou ARM64 sans GPU : les roues `onnxruntime` suffisent, XNNPACK en complément | Le fournisseur OpenVINO est un paquet à part (`onnxruntime-openvino`, 1.24.1 du 2026-02-26, quand le cœur est à 1.30.0), réservé à Intel : pour un parc Intel, comparer avec [[OpenVINO]] en direct |
 
 ## Mise en œuvre
 
@@ -58,6 +61,8 @@ n'est pas un serveur : ni API gérée, ni batching dynamique, ni gestion multi-m
 ### Alternatives
 
 - [[TensorRT]] — SDK NVIDIA d'optimisation et d'exécution d'inférence sur GPU NVIDIA — compile un réseau en moteur optimisé (fusion de couches, quantization FP8/INT8, sélection de kernels) pour une latence et un débit maximaux ; cœur propriétaire, composants OSS Apache-2.0, décliné en TensorRT-LLM.
+- [[OpenVINO]] — Boîte à outils d'inférence d'Intel en C++, API Python, C et Node.js : lit ONNX, PyTorch, TensorFlow et TFLite, optimise pour CPU, GPU intégré et NPU Intel, avec un plug-in CPU ARM listé comme supporté mais sans support AMD ; quantification NNCF et serveur OpenVINO Model Server ; Apache-2.0. — le même objectif sur matériel Intel, avec ses propres conversion, quantification et serveur ; ONNX Runtime peut aussi lui déléguer.
+- [[LiteRT]] — Runtime d'inférence de Google pour modèles .tflite (ex TensorFlow Lite, renommé en 2024), cœur C++ avec API Python, Kotlin, JavaScript et Swift : CPU via XNNPACK, GPU et NPU selon la plate-forme, conversion PyTorch par litert-torch encore en bêta, aucun serveur intégré ; Apache-2.0. — le format `.tflite` et une bibliothèque plus petite, mais sans lecture directe d'ONNX.
 
 ### Compléments
 
@@ -72,4 +77,6 @@ n'est pas un serveur : ni API gérée, ni batching dynamique, ni gestion multi-m
 
 - [[Déploiement de modèles]] — la notion du dossier
 - [[Comparatif - Serving de modèles]] — ce qui départage les serveurs du dossier
+- [[Comparatif - Runtimes d'inférence CPU et edge]] — ce qui départage les moteurs d'exécution pour CPU et matériel d'atelier
+- [[Inférence en bordure - modèles sur du matériel d'atelier]] — la notion : inférer sur place, avec ce moteur ou un autre
 - [[PyTorch]], [[TensorFlow]] — les frameworks d'entraînement qui exportent vers ONNX
