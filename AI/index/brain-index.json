@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1021,
+  "count": 1032,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -204,6 +204,7 @@
       "Détection hors distribution (OOD)",
       "Isolation Forest",
       "Local Outlier Factor",
+      "Maintenance prédictive avec peu de pannes",
       "Non supervisé",
       "One-Class SVM",
       "PyOD",
@@ -308,7 +309,9 @@
     "benchmark": [
       "Choisir un modèle d'embedding",
       "Code and math benchmarks",
+      "Diagnostic de défauts de roulements",
       "Inspect AI",
+      "Jeux de données PHM",
       "Jeux de données d'anomalies",
       "LLM benchmarks",
       "OCR classique vs modèles vision-langage pour documents",
@@ -391,6 +394,7 @@
     "class-imbalance": [
       "Classification de texte",
       "Imbalanced classification",
+      "Maintenance prédictive avec peu de pannes",
       "Tabulaire",
       "imbalanced-learn",
       "Évaluer une détection d'anomalies"
@@ -451,6 +455,7 @@
       "CNN",
       "Classification audio par spectrogramme",
       "Classification d'images",
+      "RUL par apprentissage profond",
       "Vision",
       "Vision par ordinateur",
       "timm",
@@ -559,6 +564,12 @@
       "Monitoring de modèles",
       "NannyML",
       "River"
+    ],
+    "condition-monitoring": [
+      "Analyse vibratoire",
+      "Diagnostic de défauts de roulements",
+      "Indicateurs de santé",
+      "Surveillance conditionnelle et modes de défaillance"
     ],
     "confidence-interval": [
       "Bootstrap",
@@ -730,7 +741,8 @@
       "dlt"
     ],
     "data-leakage": [
-      "Data leakage"
+      "Data leakage",
+      "Diagnostic de défauts de roulements"
     ],
     "data-lineage": [
       "Catalogue de données et lignage",
@@ -935,6 +947,7 @@
       "PyTorch Lightning",
       "Q-learning and DQN",
       "Quantization",
+      "RUL par apprentissage profond",
       "Rendu neuronal 3D & estimation de profondeur",
       "Rétropropagation et différentiation automatique",
       "Scaling laws",
@@ -1008,6 +1021,9 @@
       "Traitement",
       "scipy.signal"
     ],
+    "digital-twin": [
+      "Jumeau numérique et modèles hybrides"
+    ],
     "dimensionality-reduction": [
       "Analyse factorielle",
       "Autoencodeurs",
@@ -1017,6 +1033,7 @@
       "Fanalysis",
       "GPA",
       "ICA",
+      "Indicateurs de santé",
       "MCA",
       "MFA",
       "Manifold learning",
@@ -1285,6 +1302,7 @@
       "Featuretools",
       "Fuzzy matching & similarité de chaînes",
       "Imputation des valeurs manquantes",
+      "Indicateurs de santé",
       "Ingénierie des caractéristiques",
       "Machine Learning",
       "Mise à l'échelle",
@@ -1369,6 +1387,7 @@
       "segment-anything"
     ],
     "fourier": [
+      "Analyse vibratoire",
       "Comparatif - Traitement du signal",
       "STFT et spectrogramme",
       "Signal & audio",
@@ -2469,6 +2488,7 @@
       "Correction des tests multiples"
     ],
     "multivariate": [
+      "Indicateurs de santé",
       "MANOVA et tests multivariés"
     ],
     "mutual-information": [
@@ -2684,6 +2704,7 @@
       "Optimisation bayésienne",
       "Optimisation combinatoire",
       "Optimisation sous contrainte",
+      "Politique de maintenance et coût",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP",
       "Théorie des jeux"
@@ -2838,6 +2859,18 @@
       "pgAdmin",
       "pgvector",
       "psycopg2"
+    ],
+    "predictive-maintenance": [
+      "Diagnostic de défauts de roulements",
+      "Indicateurs de santé",
+      "Jeux de données PHM",
+      "Jumeau numérique et modèles hybrides",
+      "Maintenance prédictive",
+      "Maintenance prédictive avec peu de pannes",
+      "Politique de maintenance et coût",
+      "RUL par analyse de survie",
+      "RUL par apprentissage profond",
+      "Surveillance conditionnelle et modes de défaillance"
     ],
     "prior": [
       "A priori conjugués",
@@ -3054,6 +3087,7 @@
       "Modélisation d'uplift",
       "Méthodes à noyau",
       "Perceptron et MLP",
+      "RUL par analyse de survie",
       "Regression metrics",
       "Régression",
       "Régression et classification multi-sorties",
@@ -3255,6 +3289,14 @@
       "OpenRouter",
       "Passerelles",
       "Routing and cascading"
+    ],
+    "rul": [
+      "Indicateurs de santé",
+      "Jeux de données PHM",
+      "Jumeau numérique et modèles hybrides",
+      "Politique de maintenance et coût",
+      "RUL par analyse de survie",
+      "RUL par apprentissage profond"
     ],
     "rule": [
       "Rule - Config typée",
@@ -3497,6 +3539,7 @@
       "Avro"
     ],
     "signal-processing": [
+      "Analyse vibratoire",
       "Comparatif - Traitement du signal",
       "Filtrage numérique",
       "Ondelettes",
@@ -3690,6 +3733,7 @@
     "survival-analysis": [
       "Analyse de survie",
       "Maintenance prédictive et RUL",
+      "RUL par analyse de survie",
       "Tests & estimation",
       "lifelines"
     ],
@@ -3697,6 +3741,7 @@
       "Distillation",
       "Faker",
       "Fine-tuning",
+      "Maintenance prédictive avec peu de pannes",
       "Mimesis",
       "SDV",
       "Synthetic data generation"
@@ -3755,6 +3800,7 @@
       "WrenAI"
     ],
     "thresholding": [
+      "Politique de maintenance et coût",
       "Score et seuil d'alerte"
     ],
     "timeseries": [
@@ -3774,6 +3820,7 @@
       "Intermittent demand",
       "Maintenance prédictive et RUL",
       "Prophet",
+      "RUL par apprentissage profond",
       "STUMPY",
       "Stationarity",
       "Séries temporelles",
@@ -3867,6 +3914,7 @@
     ],
     "transfer-learning": [
       "Fusion de modèles",
+      "Maintenance prédictive avec peu de pannes",
       "Méta-apprentissage et few-shot learning",
       "Transfer learning vision",
       "Vision",
@@ -3891,6 +3939,7 @@
       "Multi-head Latent Attention",
       "Positional encoding",
       "Qwen3-Embedding",
+      "RUL par apprentissage profond",
       "Segment Anything (SAM)",
       "Self-attention",
       "TRL",
@@ -4028,6 +4077,10 @@
       "Notebooks-as-code",
       "jupytext",
       "swarm-forge"
+    ],
+    "vibration-analysis": [
+      "Analyse vibratoire",
+      "Diagnostic de défauts de roulements"
     ],
     "video-editing": [
       "Médias",
@@ -20440,11 +20493,153 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Maintenance prédictive et RUL.md",
+      "path": "Machine Learning/Maintenance prédictive/Diagnostic de défauts de roulements.md",
+      "nom": "Diagnostic de défauts de roulements",
+      "alias": [
+        "Diagnostic de roulements",
+        "Défauts de roulements",
+        "Bearing fault diagnosis",
+        "Spectre d'enveloppe",
+        "Kurtogramme"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "condition-monitoring",
+        "vibration-analysis",
+        "data-leakage",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Indicateurs de santé.md",
+      "nom": "Indicateurs de santé",
+      "alias": [
+        "Health indicator",
+        "Health index",
+        "Indice de santé",
+        "Indicateur de santé"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "rul",
+        "condition-monitoring",
+        "dimensionality-reduction",
+        "multivariate",
+        "feature-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Jeux de données PHM.md",
+      "nom": "Jeux de données PHM",
+      "alias": [
+        "Datasets PHM",
+        "Benchmarks de maintenance prédictive",
+        "Jeux de données de pronostic"
+      ],
+      "role": "brique",
+      "categorie": "ml/maintenance",
+      "famille": "annuaire",
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": "Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.",
+      "tags": [
+        "benchmark",
+        "predictive-maintenance",
+        "rul"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Jumeau numérique et modèles hybrides.md",
+      "nom": "Jumeau numérique et modèles hybrides",
+      "alias": [
+        "Jumeau numérique",
+        "Digital twin",
+        "Modèle hybride",
+        "Modèles hybrides physique-données"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "digital-twin",
+        "predictive-maintenance",
+        "rul"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Maintenance prédictive avec peu de pannes.md",
+      "nom": "Maintenance prédictive avec peu de pannes",
+      "alias": [
+        "PdM avec peu de pannes",
+        "Pannes rares",
+        "Peu de données de défaillance",
+        "Few failure data"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "class-imbalance",
+        "anomaly-detection",
+        "transfer-learning",
+        "synthetic-data"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Maintenance prédictive et RUL.md",
       "nom": "Maintenance prédictive et RUL",
       "alias": [
         "Maintenance prédictive / RUL",
-        "Maintenance prédictive",
         "RUL",
         "Remaining useful life",
         "Durée de vie résiduelle",
@@ -20465,6 +20660,140 @@
         "timeseries",
         "survival-analysis",
         "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Maintenance prédictive.md",
+      "nom": "Maintenance prédictive",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": "Estimer l'état de santé d'une machine et décider quand intervenir — surveillance, indicateurs, diagnostic de défauts, durée de vie résiduelle, coût.",
+      "tags": [
+        "predictive-maintenance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Politique de maintenance et coût.md",
+      "nom": "Politique de maintenance et coût",
+      "alias": [
+        "Politique de maintenance",
+        "Maintenance conditionnelle à seuil",
+        "Politique d'âge",
+        "Politique de bloc",
+        "Coût de maintenance"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "rul",
+        "thresholding",
+        "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/RUL par analyse de survie.md",
+      "nom": "RUL par analyse de survie",
+      "alias": [
+        "RUL par survie",
+        "Survie et RUL",
+        "Weibull et RUL"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "rul",
+        "predictive-maintenance",
+        "survival-analysis",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/RUL par apprentissage profond.md",
+      "nom": "RUL par apprentissage profond",
+      "alias": [
+        "RUL deep learning",
+        "Deep RUL",
+        "Pronostic par apprentissage profond"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rul",
+        "predictive-maintenance",
+        "deep-learning",
+        "timeseries",
+        "cnn",
+        "transformers"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Surveillance conditionnelle et modes de défaillance.md",
+      "nom": "Surveillance conditionnelle et modes de défaillance",
+      "alias": [
+        "CBM",
+        "Condition-based maintenance",
+        "Courbe P-F",
+        "Intervalle P-F",
+        "AMDEC",
+        "FMEA"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "condition-monitoring"
       ],
       "alternatives": null,
       "complements": null,
@@ -28863,6 +29192,35 @@
         "spectrogram",
         "fourier",
         "audio-classification"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Signal & audio/Traitement/Analyse vibratoire.md",
+      "nom": "Analyse vibratoire",
+      "alias": [
+        "Vibration analysis",
+        "Analyse de vibrations",
+        "Suivi d'ordres",
+        "Order tracking",
+        "Facteur de crête"
+      ],
+      "role": "notion",
+      "categorie": "signal/traitement",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "vibration-analysis",
+        "signal-processing",
+        "fourier",
+        "condition-monitoring"
       ],
       "alternatives": null,
       "complements": null,
