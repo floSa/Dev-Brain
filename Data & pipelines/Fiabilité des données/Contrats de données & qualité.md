@@ -51,6 +51,7 @@ tags: [data-contract, data-quality, data-validation, schema-evolution]
 - [[Data drift]] — versant monitoring statistique de la qualité.
 - [[EDA automatisée & profiling]] — profiler un jeu de données pour *dériver* les attentes.
 - Orchestrateurs où s'exécutent les contrôles : [[Airflow]], [[Dagster]].
+- Voir aussi : [[Great Expectations]], [[pandera]], [[Soda Core]], [[dbt Core]], [[Comparatif - Qualité de données]], [[Catalogue de données et lignage]].
 
 ## Pour aller plus loin
 
