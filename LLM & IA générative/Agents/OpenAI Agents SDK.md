@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: "Python, TypeScript"
-alternatives: ["[[CrewAI]]", "[[AutoGen]]", "[[Agno]]", "[[smolagents]]", "[[Letta]]"]
+alternatives: ["[[CrewAI]]", "[[AutoGen]]", "[[Agno]]", "[[smolagents]]"]
 complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://openai.github.io/openai-agents-python/
@@ -61,7 +61,6 @@ l'API Chat Completions ou [[LiteLLM]]. Disponible en Python et en TypeScript.
 - [[AutoGen]] — Framework multi-agents de Microsoft Research — agents conversationnels qui collaborent et appellent des outils ; en maintenance depuis fin 2025 (successeur : Microsoft Agent Framework ; fork communautaire : AG2).
 - [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
 - [[smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
-- [[Letta]] — Harnais d'agents à état (ex-MemGPT, Apache-2.0) — agents à mémoire persistante qui réécrivent eux-mêmes leur contexte et leurs skills, pilotés par CLI, application de bureau ou serveur d'application ; l'ancien serveur d'API V1 est retiré, Letta Cloud est le mode par défaut mais le mode local se passe de compte.
 
 ## Ressources
 

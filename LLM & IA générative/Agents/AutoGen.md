@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: deprecated
 langage: "Python, .NET"
-alternatives: ["[[CrewAI]]", "[[OpenAI Agents SDK]]", "[[Agno]]", "[[smolagents]]", "[[Letta]]", "[[swarm-forge]]", "[[PraisonAI]]"]
+alternatives: ["[[CrewAI]]", "[[OpenAI Agents SDK]]", "[[Agno]]", "[[smolagents]]", "[[swarm-forge]]", "[[PraisonAI]]"]
 complements: []
 tags: [llm, agents, tool-use, multi-agent]
 url_docs: https://microsoft.github.io/autogen/
@@ -63,7 +63,6 @@ nouveaux projets.
 - [[OpenAI Agents SDK]] — SDK d'agents léger d'OpenAI (MIT), successeur de Swarm passé en production — primitives minimales (agents, handoffs, guardrails, sessions, tracing intégré) ; Python et TypeScript, agnostique du fournisseur.
 - [[Agno]] — Framework d'agents Python haute performance (ex-phidata, Apache-2.0) — instanciation d'agent ultra-légère, mémoire/connaissance/raisonnement intégrés ; livré avec AgentOS, runtime self-host pour exécuter des systèmes multi-agents en production.
 - [[smolagents]] — Bibliothèque d'agents minimaliste de Hugging Face (Apache-2.0) — l'agent écrit ses actions en code Python plutôt qu'en JSON (CodeAgent) ; cœur en ~1000 lignes, agnostique du LLM (LiteLLM) et compatible MCP, mais l'exécution de code est à isoler en sandbox.
-- [[Letta]] — Harnais d'agents à état (ex-MemGPT, Apache-2.0) — agents à mémoire persistante qui réécrivent eux-mêmes leur contexte et leurs skills, pilotés par CLI, application de bureau ou serveur d'application ; l'ancien serveur d'API V1 est retiré, Letta Cloud est le mode par défaut mais le mode local se passe de compte.
 - [[swarm-forge]] — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - [[PraisonAI]] — Framework multi-agents low-code Python (MIT) — un fichier YAML déclare agents, tâches et processus sans écrire de code ; auto-réflexion des agents, mémoire et RAG intégrés, ~100 outils fournis et clients MCP (stdio, HTTP, SSE, WebSocket).
 
