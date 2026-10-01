@@ -11,7 +11,7 @@ maturite: production
 langage: Java
 scaling: single-node
 alternatives: ["[[Nebula Graph]]", "[[Memgraph]]", "[[ArangoDB]]", "[[Apache AGE]]"]
-complements: []
+complements: ["[[Graphiti]]", "[[Cognee]]"]
 tags: [graph-db]
 url_docs: https://neo4j.com/docs/
 url_repo: https://github.com/neo4j/neo4j
@@ -69,6 +69,11 @@ session et de transaction en langage manque encore.
 - [[Memgraph]] — Base de graphes en mémoire, compatible Cypher et Bolt (C++, BSL 1.1) — temps réel et flux Kafka, mono-nœud ; haute disponibilité automatique, RBAC et SSO réservés à l'édition Enterprise.
 - [[ArangoDB]] — Base multi-modèle (documents, graphes, clé-valeur, recherche) interrogée en AQL (C++, BSL 1.1) — cluster complet, mais binaires Community limités à un usage interne sous 100 Go de données, licence commerciale au-delà.
 - [[Apache AGE]] — Extension PostgreSQL qui ajoute un graphe de propriétés interrogé en openCypher depuis SQL (Apache-2.0, projet de premier niveau de l'ASF) — aucune base de plus à opérer, mais pas de bibliothèque d'algorithmes ni de scale-out propre.
+
+### Compléments
+
+- [[Graphiti]] — Framework de graphe de connaissances temporel pour agents (Zep, Apache-2.0) — extrait par LLM entités et faits d'épisodes, chaque fait portant sa fenêtre de validité ; recherche hybride vecteur, BM25 et graphe sur Neo4j, FalkorDB ou Neptune. La plateforme Zep n'existe plus que dans le cloud.
+- [[Cognee]] — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
 
 ## Ressources
 
