@@ -55,6 +55,7 @@ tags: [rag, llm, retrieval, embeddings, semantic-search]
 - [[Context engineering]] — le RAG est un levier d'ingénierie de contexte : il décide quoi injecter dans la fenêtre.
 - Frameworks : [[LlamaIndex]], [[Haystack]], [[LangChain]].
 - Alternative au RAG : le [[SFT|fine-tuning]] (apprendre la connaissance dans les poids) — coûteux et statique ; le RAG reste préférable pour des données qui changent.
+- Voir aussi : [[RAG documentaire on-prem - clé en main ou assemblé]].
 
 ## Pour aller plus loin
 

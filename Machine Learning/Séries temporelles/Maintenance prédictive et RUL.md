@@ -56,6 +56,7 @@ tags: [timeseries, survival-analysis, regression]
 - [[Regression metrics]] — le RUL se pose souvent en régression ; ici une métrique asymétrique dédiée s'y ajoute.
 - [[Détection d'outliers multivariée]] — fusion de capteurs et health index, repérage d'états anormaux.
 - [[Walk-forward CV]] — protocole d'évaluation honnête en série temporelle.
+- Voir aussi : [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
 
 ## Pour aller plus loin
 

@@ -50,6 +50,7 @@ tags: [agents, llm, retrieval]
 - [[mcp-protocol]] — les *resources* MCP sont un canal d'alimentation de la mémoire long terme.
 - Alternative : **tout garder dans le contexte** (fenêtres longues) — simple, mais coûteux et plafonné ; la récupération reste préférable au-delà d'un certain volume.
 - Implémentations fichées : [[OpenViking]] (contexte exposé en système de fichiers parcourable), [[ai-memory]] (mémoire partagée entre CLI de code).
+- Voir aussi : [[Graphiti]], [[Mem0]], [[Cognee]], [[Comparatif - Mémoire pour agents]].
 
 ## Pour aller plus loin
 

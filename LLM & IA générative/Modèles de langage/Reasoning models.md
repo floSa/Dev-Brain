@@ -50,6 +50,7 @@ tags: [reasoning, llm, alignment]
 - [[Calculs adaptatifs]] — l'autre échelle d'adaptation du calcul : profondeur variable **dans** une passe, contre nombre de tokens de réflexion **entre** les passes. C'est le second qui a percé industriellement.
 - [[GRPO]], [[RL for LLMs]], [[Reward modeling]] — la mécanique d'entraînement détaillée.
 - Servir ces modèles : [[vLLM]], [[SGLang]] (débit sur longues sorties).
+- Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[gpt-oss]], [[Qwen]], [[Mistral]].
 
 ## Pour aller plus loin
 

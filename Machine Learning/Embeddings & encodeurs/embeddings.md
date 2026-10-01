@@ -52,6 +52,7 @@ tags: [embeddings, semantic-search, representation-learning]
 - [[Metric learning & ré-identification]] — comment entraîner ces espaces (triplet, ArcFace) pour la similarité et la ré-identification.
 - [[Modèles de fondation vision]] — CLIP produit des embeddings **image-texte alignés** dans un espace commun (recherche multimodale, zero-shot).
 - [[TF-IDF]] — la représentation sparse / lexicale, alternative historique aux embeddings denses.
+- Voir aussi : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[sentence-transformers]].
 
 ## Pour aller plus loin
 

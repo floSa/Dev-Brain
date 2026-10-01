@@ -50,6 +50,7 @@ tags: [ocr, computer-vision, deep-learning]
 - Routage en amont : [[pdf-inspector]] — décide page par page si l'OCR est nécessaire, pour ne pas l'appliquer à tout un corpus.
 - Parsing sans OCR quand le texte est déjà présent : [[OpenDataLoader PDF]] — extraction déterministe du texte natif, l'OCR n'intervenant qu'en mode hybride.
 - OCR appliqué à un document sortant : [[Stirling PDF]] — rend un PDF scanné cherchable, côté manipulation de fichier plutôt que côté pipeline de données.
+- Voir aussi : [[Tesseract]], [[PaddleOCR]], [[EasyOCR]], [[olmOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]].
 
 ## Pour aller plus loin
 

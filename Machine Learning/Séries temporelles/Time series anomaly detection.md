@@ -59,6 +59,7 @@ tags: [timeseries, anomaly-detection]
 - [[Stationarity]] / [[Autocorrelation]] — saisonnalité et dérive à retirer avant de juger l'écart.
 - [[Imbalanced classification]] — anomalies = classe rare, mêmes pièges d'évaluation.
 - [[DBSCAN]] — détection d'outliers par densité, transposable aux sous-séquences.
+- Voir aussi : [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
 
 ## Pour aller plus loin
 

@@ -53,6 +53,7 @@ tags: [deployment-strategy, model-serving, inference]
 - [[A-B testing]] — cadre statistique de comparaison des cohortes (canary, champion-challenger).
 - [[Data drift]] — raison fréquente de redéployer (ré-entraînement déclenché par la dérive).
 - [[MLflow]] — format de modèle + déploiement multi-cibles depuis le registre.
+- Voir aussi : [[CI-CD pour le ML]], [[Inférence en bordure - modèles sur du matériel d'atelier]].
 
 ## Pour aller plus loin
 
