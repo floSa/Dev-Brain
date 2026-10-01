@@ -16,7 +16,7 @@ Démo ou POC ML qui doit montrer un bout de chaîne réaliste : données structu
 
 - [[Postgres]] — données structurées et métadonnées (jointures, intégrité)
 - [[MongoDB]] — documents / payloads au schéma souple
-- [[MinIO]] — stockage objet S3-compatible (modèles, datasets, images)
+- [[MinIO]] — stockage objet S3-compatible (modèles, datasets, images) ; dépôt archivé depuis le 2026-04-25 (voir sa fiche) : pour une nouvelle démo, [[SeaweedFS]] ou [[Garage]] offrent la même API S3, cf. [[Comparatif - Stockage objet]]
 - [[FastAPI]] (+ [[Uvicorn]]) — API d'inférence / service
 - [[Streamlit]] — UI de démonstration
 - [[Docker]] / docker-compose — graphe de services local
