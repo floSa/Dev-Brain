@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1036 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1056 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -451,12 +451,16 @@
 
 ### ml/anomalie
 - **aeon** — Boîte à outils Python compatible scikit-learn pour l'apprentissage sur séries temporelles — classification, régression, clustering, prévision, segmentation et anomalies ; son module d'anomalies est modeste (une quinzaine de détecteurs fenêtrés ou à distance, aucun réseau profond) : l'intérêt est de rester dans la même API que le reste.
+- **anomalib** — Bibliothèque Python (Intel, Open Edge Platform) de détection d'anomalies visuelles — une trentaine de modèles d'images (PatchCore, PaDiM, STFPM, EfficientAD, FastFlow, CFlow, DRAEM, Dinomaly, WinCLIP…) sous PyTorch Lightning, CLI et API Python, jeux MVTec AD, VisA ou dossier maison, export ONNX et OpenVINO ; Apache-2.0.
+- **AnomalyCLIP** — Code d'AnomalyCLIP (ICLR 2024) — détection d'anomalies visuelles zero-shot : CLIP ViT-L/14@336px gelé, deux prompts apprenables indépendants de l'objet (normal, anormal), entraînés sur un jeu auxiliaire puis testés sur des catégories jamais vues ; 91,5 % d'AUROC image annoncés sur MVTec AD ; code sous licence MIT.
 - **Azure AI Anomaly Detector** — Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.
 - **DeepOD** — Bibliothèque Python de détecteurs d'anomalies profonds, tabulaires et séries temporelles (Deep SVDD, REPEN, RDP, GOAD, USAD, TimesNet, Anomaly Transformer, DCdetector…), sous une API fit / decision_function à la PyOD, avec un banc d'essai de recherche ; PyTorch, dépendances épinglées anciennes et dernière release en 2023.
+- **Dinomaly** — Code de Dinomaly (CVPR 2025) — détection d'anomalies visuelles multi-classe avec un seul modèle pour toutes les catégories : encodeur DINOv2 à registres gelé, goulot bruité, décodeur à attention linéaire ; 99,6 % d'AUROC image annoncés sur MVTec AD, 98,7 % sur VisA, 89,3 % sur Real-IAD ; points de contrôle fournis, Apache-2.0.
 - **Jeux de données d'anomalies** — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
 - **Kats** — Boîte à outils Python de Meta pour l'analyse de séries temporelles — détection (CUSUM, BOCPD, statistiques robustes, outliers), prévision, extraction de features — mais dernière version publiée en 2022 et paquet PyPI aux dépendances épinglées, classé alpha.
 - **Merlion** — Bibliothèque Python de Salesforce « time series intelligence » — prévision, détection d'anomalies et de ruptures sous une interface commune, avec ensembles, post-traitement des scores, AutoML et benchmark — dépôt archivé, plus maintenu depuis la 2.0.4 (juin 2024).
 - **Orion** — Bibliothèque Python du Data to AI Lab (MIT) de détection d'anomalies non supervisée sur séries temporelles — pipelines « vérifiés » prêts à l'emploi (AER, TadGAN, LSTM à seuil dynamique, autoencodeurs, matrix profile…), benchmark intégré, statut officiel pre-alpha.
+- **patchcore-inspection** — Implémentation de référence d'Amazon Science de PatchCore (CVPR 2022) — banque de mémoire de patchs d'un WideResNet50, réduite par coreset, puis plus proche voisin (Faiss) au test ; scripts d'entraînement et d'évaluation sur MVTec AD, 99,6 % d'AUROC image annoncés pour l'ensemble ; Apache-2.0, dernier commit de la branche principale en mars 2023.
 - **PyOD** — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 - **ruptures** — Bibliothèque Python de détection de ruptures hors ligne — segmente un signal en régimes avec des algorithmes de recherche (PELT, Binseg, BottomUp, Window, Dynp, KernelCPD) combinables à des fonctions de coût (L2, RBF, normale, rang…) ; elle rend des points de changement, pas des scores d'anomalie.
 - **STUMPY** — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
@@ -508,6 +512,9 @@
 - **SAELens** — Écosystème dédié aux sparse autoencoders sur modèles de langage — entraînement, catalogue de SAE pré-entraînés et outillage d'analyse des features, en intégration étroite avec TransformerLens.
 - **SHAP** — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
 - **TransformerLens** — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
+
+### ml/maintenance
+- **Jeux de données PHM** — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
 
 ### ml/monitoring
 - **Deepchecks** — Bibliothèque Python de validation continue pour le ML — suites de checks sur données et modèles tabulaires, NLP et vision, avec conditions pass/fail rejouables en CI ; cœur AGPL-3.0, monitoring auto-hébergé limité à un modèle, évaluation de LLM et fonctions premium commerciales.
@@ -921,9 +928,13 @@
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
 ### ml/anomalie
+- **Anomalie visuelle par banque de mémoire** — domaines : data-sci, ml-eng · alias : SPADE, PaDiM, PatchCore, Détection d'anomalies par plus proche voisin, Memory bank anomaly detection, Coreset
+- **Anomalie visuelle par reconstruction, distillation et flux** — domaines : data-sci, ml-eng · alias : DRAEM, RD4AD, Reverse Distillation, STFPM, EfficientAD, UniAD, FastFlow, CFlow, CFlow-AD, Détection d'anomalies multi-classe, Anomalie visuelle par réseau appris
+- **Anomalie visuelle zero-shot et few-shot** — domaines : data-sci, ml-eng · alias : WinCLIP, AnomalyCLIP, AnomalyDINO, AdaCLIP, Détection d'anomalies zero-shot, Few-shot anomaly detection, Anomalie visuelle avec modèle vision-langage
 - **Anomalies multivariées par apprentissage profond** — domaines : data-sci, ml-eng · alias : Deep learning pour anomalies multivariées, USAD, TranAD, Anomaly Transformer, LSTM-AE, TimesNet
 - **Contrôle statistique de procédé (SPC)** — domaines : data-sci, ml-eng · alias : SPC, Statistical process control, Maîtrise statistique des procédés, Cartes de contrôle, Control charts, Carte de Shewhart, Cartes EWMA, Capabilité de procédé, Cpk, Western Electric, Average run length
 - **Détection d'anomalies en ligne** — domaines : data-sci, ml-eng, mlops · alias : Online anomaly detection, Streaming anomaly detection, Détection d'anomalies sur flux, Détection d'anomalies en streaming, Half-Space Trees, Random Cut Forest, RRCF
+- **Détection d'anomalies visuelle** — domaines : data-sci, ml-eng · alias : Visual anomaly detection, Inspection visuelle par IA, Détection de défauts non supervisée, Industrial anomaly detection, Contrôle qualité visuel non supervisé
 - **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
 - **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **Détection de ruptures** — domaines : data-sci, ml-eng · alias : Change point detection, Changepoint detection, Détection de points de rupture, Segmentation de séries temporelles, CUSUM, PELT, BOCPD
@@ -1003,7 +1014,15 @@
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
 
 ### ml/maintenance
-- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+- **Diagnostic de défauts de roulements** — domaines : data-sci, mlops · alias : Diagnostic de roulements, Défauts de roulements, Bearing fault diagnosis, Spectre d'enveloppe, Kurtogramme
+- **Indicateurs de santé** — domaines : data-sci, mlops · alias : Health indicator, Health index, Indice de santé, Indicateur de santé
+- **Jumeau numérique et modèles hybrides** — domaines : data-sci, ml-eng · alias : Jumeau numérique, Digital twin, Modèle hybride, Modèles hybrides physique-données
+- **Maintenance prédictive avec peu de pannes** — domaines : data-sci, ml-eng, mlops · alias : PdM avec peu de pannes, Pannes rares, Peu de données de défaillance, Few failure data
+- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+- **Politique de maintenance et coût** — domaines : data-sci, mlops · alias : Politique de maintenance, Maintenance conditionnelle à seuil, Politique d'âge, Politique de bloc, Coût de maintenance
+- **RUL par analyse de survie** — domaines : data-sci, mlops · alias : RUL par survie, Survie et RUL, Weibull et RUL
+- **RUL par apprentissage profond** — domaines : data-sci, ml-eng · alias : RUL deep learning, Deep RUL, Pronostic par apprentissage profond
+- **Surveillance conditionnelle et modes de défaillance** — domaines : data-sci, infra-ops · alias : CBM, Condition-based maintenance, Courbe P-F, Intervalle P-F, AMDEC, FMEA
 
 ### ml/monitoring
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
@@ -1162,6 +1181,7 @@
 - **Gestion des secrets** — domaines : infra-ops, mlops · alias : secrets management, gestion de secrets, coffre à secrets, secret zéro, rotation des secrets
 
 ### signal/traitement
+- **Analyse vibratoire** — domaines : data-sci, ml-eng · alias : Vibration analysis, Analyse de vibrations, Suivi d'ordres, Order tracking, Facteur de crête
 - **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
 - **Ondelettes** — domaines : data-sci, ml-eng · alias : wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme
 - **STFT et spectrogramme** — domaines : data-sci, ml-eng · alias : STFT, spectrogramme, short-time Fourier transform, mel-spectrogramme, MFCC, mel spectrogram
@@ -1379,6 +1399,7 @@
 ### ml/anomalie
 - **Comparatif - Détection d'anomalies** — —
 - **Comparatif - Détection d'anomalies en séries temporelles** — —
+- **Comparatif - Détection d'anomalies visuelles** — —
 
 ### ml/embeddings
 - **Comparatif - Embeddings** — —
@@ -1508,6 +1529,7 @@
 - **Interprétabilité** — Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
 - **Machine Learning** — Apprendre une fonction à partir de données — la cadrer, l'entraîner, mesurer ce qu'elle vaut, puis la tenir en production.
+- **Maintenance prédictive** — Estimer l'état de santé d'une machine et décider quand intervenir — surveillance, indicateurs, diagnostic de défauts, durée de vie résiduelle, coût.
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
 - **Messagerie** — Transporter des événements et des tâches entre services sans les interpréter — brokers en journal ou en file, file de tâches Python par-dessus — et savoir ce que chacun garantit à la livraison.
 - **ML Engineering** — Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.

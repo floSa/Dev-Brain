@@ -67,4 +67,5 @@ log-rank et les diagnostics d'hypothèse. API homogène proche de statsmodels �
 ## Voir aussi
 
 - [[Analyse de survie]] — la notion du dossier
+- [[RUL par analyse de survie]] — l'usage en maintenance prédictive : durée de vie résiduelle, censure des unités encore en service
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
