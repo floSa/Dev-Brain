@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[GLiNER]]", "[[NLTK]]"]
-complements: ["[[HuggingFace]]", "[[Label Studio]]"]
+complements: ["[[HuggingFace]]", "[[Label Studio]]", "[[Presidio]]"]
 tags: [nlp, ner, sequence-labeling, tokenization]
 url_docs: https://spacy.io
 url_repo: https://github.com/explosion/spaCy
@@ -65,6 +65,7 @@ directement le compromis vitesse / précision.
 
 - [[HuggingFace]] — Hub et bibliothèques au-dessus des frameworks DL — 1M+ modèles/datasets pré-entraînés, transformers/datasets/accelerate/PEFT ; charger, fine-tuner et partager un modèle en quelques lignes — le fine-tuning de transformeurs, complément plus que substitut, branché via `spacy-transformers`.
 - [[Label Studio]] — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes. — exemple officiel `spacy` pour pré-annoter des entités, et export au format spaCy.
+- [[Presidio]] — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France. — moteur de NER par défaut de l'analyseur de Presidio : ses pipelines (`en_core_web_*`, `fr_core_news_*`) se déclarent dans la configuration du moteur de langage, et le français n'y est pas livré par défaut.
 
 ## Ressources
 
