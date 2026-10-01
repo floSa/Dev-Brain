@@ -18,6 +18,7 @@ tags: [container, kubernetes]
 - **La bascule se décide sur des besoins, pas sur un nombre de conteneurs.** [[Du Compose à Kubernetes — quand changer d'échelle]] dit ce que Compose ne fait pas, ce que coûte un cluster, les critères que les sources avancent et le GitOps en une section.
 - **k3s est Kubernetes, pas un concurrent de son API.** Même API, mêmes manifestes, mêmes charts ; la différence tient à ce qui est déjà choisi pour soi (réseau, ingress, stockage local, stockage du cluster) et à l'empreinte : un binaire, 2 Go de RAM. En on-prem isolé, c'est le chemin le plus court.
 - **La licence à surveiller n'est pas celle du moteur.** Docker Engine et Podman sont en Apache-2.0. C'est **Docker Desktop**, le client de bureau, qui demande un abonnement au-delà de 250 salariés ou 10 M$ de chiffre d'affaires ; Podman Desktop n'affiche pas de restriction.
+- **Un registre d'images est le cinquième objet, et il est à soi.** Sur site, surtout en réseau fermé, les images ne viennent plus de Docker Hub : un registre interne les héberge, miroite celles dont on dépend et, selon l'outil, scanne et signe. [[Harbor]] est le registre complet (projets, quotas, SSO, réplication, proxy cache ; PostgreSQL et un cache à exploiter) ; [[Zot]] est le léger (un binaire, sans base de données). [[Comparatif - Registres d'images]] dit ce qui les départage ; le registre déjà livré par une forge ([[GitLab CE]], [[Forgejo]]) suffit souvent à une petite équipe.
 - **HashiCorp Nomad n'a pas de fiche.** Il est activement maintenu (v2.0.7, 2026-09-17) mais sous licence BSL 1.1, dont le titulaire est IBM depuis le rachat de HashiCorp, sans fork communautaire, et sa place dans les enquêtes est faible. Le motif est développé dans [[Comparatif - Orchestration de conteneurs]].
 
 ## Choisir
@@ -26,6 +27,7 @@ tags: [container, kubernetes]
 - Un serveur Linux où tout doit repartir seul après un redémarrage, sans démon root → [[Podman]] et ses fichiers Quadlet.
 - Plusieurs machines, une bascule si l'une tombe, des déploiements sans coupure, peu de monde pour l'opérer → [[k3s]].
 - Plusieurs équipes, des dizaines de services, des règles d'accès fines → [[Kubernetes]].
+- Héberger ses propres images, en miroir de Docker Hub ou en réseau fermé → [[Harbor]] pour plusieurs équipes et des droits par projet, [[Zot]] pour une machine et peu d'exploitation.
 - Installer un logiciel tiers sur un cluster, ou le décliner par environnement → [[Helm]] ; le piloter depuis Git → [[Argo CD]] (dossier voisin, « Forges & CI-CD »).
 - Servir un modèle sur un cluster → [[KServe]] ou [[Seldon Core]], dans « Machine Learning/Serving ».
 
@@ -36,11 +38,14 @@ tags: [container, kubernetes]
 ### Briques
 - [[Docker]] — Conteneurisation standard : packaging d'applications en images OCI reproductibles, isolées et portables d'un environnement à l'autre.
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo).
 - [[Helm]] — Gestionnaire de paquets de Kubernetes : un chart décrit, versionne et installe un ensemble de ressources (Apache-2.0, Go, CNCF diplômé).
 - [[k3s]] — Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem.
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter.
 - [[Podman]] — Moteur de conteneurs sans démon et rootless par défaut (Apache-2.0, Go), compatible OCI et API Docker — `podman compose` exécute un `compose.yaml`.
+- [[Zot]] — Registre OCI léger en un seul binaire (Apache-2.0, Go, CNCF sandbox) : stockage sur disque ou S3 compatible, sans base de données externe, synchronisation et miroir à la demande, scan Trivy embarqué ; interface et recherche en extensions, contrôle d'accès par dépôt et non par projet.
 
 ### Comparatifs
 - [[Comparatif - Orchestration de conteneurs]]
+- [[Comparatif - Registres d'images]]
 <!-- AUTO:END -->

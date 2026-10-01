@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Go
 alternatives: []
-complements: ["[[Kubernetes]]", "[[k3s]]", "[[Argo CD]]", "[[GitLab CE]]"]
+complements: ["[[Kubernetes]]", "[[k3s]]", "[[Argo CD]]", "[[GitLab CE]]", "[[Harbor]]"]
 tags: [kubernetes]
 url_docs: https://helm.sh/docs/
 url_repo: https://github.com/helm/helm
@@ -71,6 +71,7 @@ Environ 30 300 étoiles, Apache-2.0, projet CNCF diplômé (graduated) le 2020-0
 - [[k3s]] — Distribution Kubernetes certifiée en un binaire de moins de 100 Mo (Apache-2.0, Go, SUSE) — Traefik, CoreDNS et stockage local livrés, SQLite ou etcd embarqué, air-gap pris en charge ; le chemin le plus court vers Kubernetes on-prem. — un contrôleur Helm y est intégré
 - [[Argo CD]] — Contrôleur GitOps pour Kubernetes : compare en continu un dépôt Git à l'état du cluster et le réconcilie (Apache-2.0, Go, CNCF diplômé). — rend les charts depuis Git
 - [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — son chart officiel, l'une des méthodes d'installation décrites.
+- [[Harbor]] — Registre d'images OCI complet (Apache-2.0, Go, CNCF gradué) : projets avec droits et quotas, SSO LDAP et OIDC, réplication et proxy cache vers d'autres registres, scan Trivy, signatures Cosign et Notation — lourd à exploiter (PostgreSQL, un cache Redis ou Valkey, 4 Go de RAM au minimum, installateur hors ligne de 700 Mo). — héberge les charts comme artefacts OCI, à côté des images.
 
 ## Ressources
 
