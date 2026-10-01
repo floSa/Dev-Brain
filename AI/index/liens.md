@@ -88,7 +88,7 @@
 ### Ansible  ·  brique
 - tags : `infrastructure-as-code`, `reproducibility`
 - liens sortants : [[DevOps]], [[Docker]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
-- liens entrants : [[DevOps]], [[Docker]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
+- liens entrants : [[DevOps]], [[Docker]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Kubernetes]], [[OpenTofu]], [[SOPS]]
 
 ### AnythingLLM  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `agents`, `mcp`, `self-hosted`
@@ -168,12 +168,12 @@
 ### Authelia  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`, `reverse-proxy`
 - liens sortants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Traefik]]
-- liens entrants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Sécurité]], [[Traefik]]
+- liens entrants : [[Authentification]], [[Authentik]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[Reverse proxy et TLS]], [[Sécurité]], [[Traefik]]
 
 ### Authentik  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`
 - liens sortants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[Traefik]]
-- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Harbor]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Sécurité]], [[Traefik]]
+- liens entrants : [[Airflow]], [[Authelia]], [[Authentification]], [[Caddy]], [[Comparatif - Fournisseurs d'identité]], [[Gestion des secrets]], [[Harbor]], [[Keycloak]], [[Langfuse]], [[LibreChat]], [[Nginx]], [[Node-RED]], [[OAuth2 et OpenID Connect]], [[PyJWT]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Reverse proxy et TLS]], [[Sécurité]], [[Traefik]]
 
 ### AutoGen  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -698,7 +698,7 @@
 ### garak  ·  brique
 - tags : `ai-security`, `prompt-injection`, `jailbreak`, `llm-eval`
 - liens sortants : [[AI security]], [[Jailbreaking and defenses]], [[NeMo Guardrails]], [[Ollama]], [[Prompt injection]], [[Systèmes IA]], [[promptfoo]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Llama Guard]], [[NeMo Guardrails]], [[Systèmes IA]], [[promptfoo]]
+- liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Jailbreaking and defenses]], [[Llama Guard]], [[NeMo Guardrails]], [[Prompt injection]], [[Sandboxing de code généré]], [[Systèmes IA]], [[promptfoo]]
 
 ### Gemma  ·  brique
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`, `vision-language`
@@ -723,7 +723,7 @@
 ### Gitleaks  ·  brique
 - tags : `secret-scanning`, `supply-chain`, `ci-cd`
 - liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Supply chain logicielle et SBOM]], [[Trivy]], [[pre-commit]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]], [[pre-commit]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]], [[pre-commit]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -793,7 +793,7 @@
 ### Harbor  ·  brique
 - tags : `container-registry`, `self-hosted`, `supply-chain`
 - liens sortants : [[Authentik]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Grafana]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Postgres]], [[Prometheus]], [[Trivy]], [[Zot]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Trivy]], [[Zot]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Trivy]], [[Zot]]
 
 ### Haystack  ·  brique
 - tags : `llm`, `rag`, `semantic-search`, `hybrid-search`, `agents`
@@ -1073,7 +1073,7 @@
 ### Llama Guard  ·  brique
 - tags : `guardrails`, `safety`, `ai-security`, `local-llm`
 - liens sortants : [[Comparatif - Garde-fous pour LLM]], [[Guardrails]], [[Licences de modèles open weights]], [[NeMo Guardrails]], [[Ollama]], [[Presidio]], [[Prompt injection]], [[Systèmes IA]], [[garak]], [[vLLM]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[NeMo Guardrails]], [[Ollama]], [[Systèmes IA]], [[vLLM]]
+- liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Guardrails]], [[NeMo Guardrails]], [[Ollama]], [[Sandboxing de code généré]], [[Systèmes IA]], [[vLLM]]
 
 ### LLaMA-Factory  ·  brique
 - tags : `fine-tuning`, `declarative-config`, `low-code`, `distributed-training`, `llm`
@@ -1283,7 +1283,7 @@
 ### mypy  ·  brique
 - tags : `type-checker`, `type-hints`
 - liens sortants : [[Comparatif - Vérificateurs de types Python]], [[Outils de développement]], [[Pydantic]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[SQLAlchemy]], [[Typage statique en Python]], [[pre-commit]]
-- liens entrants : [[Comparatif - Vérificateurs de types Python]], [[Outils de développement]], [[Pydantic]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[pre-commit]]
+- liens entrants : [[Comparatif - Vérificateurs de types Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Pydantic]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[pre-commit]]
 
 ### MySQL  ·  brique
 - tags : `relational`
@@ -1323,7 +1323,7 @@
 ### NeMo Guardrails  ·  brique
 - tags : `guardrails`, `ai-security`, `safety`, `llm`
 - liens sortants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[Guardrails]], [[Instructor]], [[Llama Guard]], [[Presidio]], [[Prompt injection]], [[Systèmes IA]], [[garak]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[Llama Guard]], [[Presidio]], [[Systèmes IA]], [[garak]]
+- liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[Guardrails]], [[Jailbreaking and defenses]], [[Llama Guard]], [[Presidio]], [[Prompt injection]], [[Sandboxing de code généré]], [[Systèmes IA]], [[garak]]
 
 ### Neo4j  ·  brique
 - tags : `graph-db`
@@ -1423,7 +1423,7 @@
 ### OpenBao  ·  brique
 - tags : `secrets-management`, `cryptography`, `self-hosted`, `kubernetes`
 - liens sortants : [[Gestion des secrets]], [[Kubernetes]], [[OpenTofu]], [[SOPS]], [[Sécurité]]
-- liens entrants : [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[SOPS]], [[Sécurité]]
+- liens entrants : [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[SOPS]], [[Sécurité]]
 
 ### OpenClaw  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -1493,7 +1493,7 @@
 ### OpenTofu  ·  brique
 - tags : `infrastructure-as-code`, `reproducibility`
 - liens sortants : [[Ansible]], [[DevOps]], [[Gestion des secrets]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenBao]]
-- liens entrants : [[Ansible]], [[DevOps]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenBao]]
+- liens entrants : [[Ansible]], [[DevOps]], [[Gestion des secrets]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenBao]]
 
 ### OpenViking  ·  brique
 - tags : `agent-memory`, `rag`, `context-engineering`, `agents`, `retrieval`, `mcp`
@@ -1653,7 +1653,7 @@
 ### pre-commit  ·  brique
 - tags : `git-hooks`
 - liens sortants : [[Gitleaks]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Semgrep]], [[mypy]]
-- liens entrants : [[Gitleaks]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Semgrep]], [[Typage statique en Python]], [[mypy]]
+- liens entrants : [[Gitleaks]], [[Notebooks-as-code]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Semgrep]], [[Typage statique en Python]], [[mypy]]
 
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
@@ -1663,7 +1663,7 @@
 ### Presidio  ·  brique
 - tags : `privacy`, `ner`, `ai-security`
 - liens sortants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[GLiNER]], [[Guardrails]], [[LiteLLM]], [[NeMo Guardrails]], [[Systèmes IA]], [[spaCy]]
-- liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[GLiNER]], [[LiteLLM]], [[Llama Guard]], [[NeMo Guardrails]], [[Systèmes IA]], [[spaCy]]
+- liens entrants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[GLiNER]], [[Guardrails]], [[LiteLLM]], [[Llama Guard]], [[NeMo Guardrails]], [[Sandboxing de code généré]], [[Systèmes IA]], [[spaCy]]
 
 ### Prince  ·  brique
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
@@ -1763,7 +1763,7 @@
 ### Pyright  ·  brique
 - tags : `type-checker`, `type-hints`
 - liens sortants : [[Comparatif - Vérificateurs de types Python]], [[Outils de développement]], [[Pydantic]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]]
-- liens entrants : [[Comparatif - Vérificateurs de types Python]], [[Outils de développement]], [[Pydantic]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]]
+- liens entrants : [[Comparatif - Vérificateurs de types Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Pydantic]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]]
 
 ### pytest  ·  brique
 - tags : `testing`
@@ -2233,7 +2233,7 @@
 ### Traefik  ·  brique
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `container`, `kubernetes`, `self-hosted`
 - liens sortants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[k3s]]
-- liens entrants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Web & API]], [[k3s]]
+- liens entrants : [[Argo CD]], [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[FastAPI]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[OAuth2 et OpenID Connect]], [[Prometheus]], [[Reverse proxies]], [[Reverse proxy et TLS]], [[Web & API]], [[k3s]]
 
 ### TransformerLens  ·  brique
 - tags : `explainability`, `llm`
@@ -2398,7 +2398,7 @@
 ### Zot  ·  brique
 - tags : `container-registry`, `self-hosted`, `supply-chain`
 - liens sortants : [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Kubernetes]], [[Trivy]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[Trivy]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Trivy]]
 
 ### Comparatif - Apps data & démos ML  ·  comparatif
 - tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
@@ -2563,7 +2563,7 @@
 ### Comparatif - Garde-fous pour LLM  ·  comparatif
 - tags : `guardrails`
 - liens sortants : [[AI security]], [[Comparatif - Garde-fous pour LLM.base]], [[Comparatifs]], [[Guardrails]], [[Llama Guard]], [[NeMo Guardrails]], [[Presidio]], [[Prompt injection]], [[Qwen]], [[Sandboxing de code généré]], [[Systèmes IA]], [[garak]], [[gpt-oss]], [[promptfoo]]
-- liens entrants : [[Comparatifs]], [[Llama Guard]], [[NeMo Guardrails]], [[Presidio]], [[Systèmes IA]]
+- liens entrants : [[AI security]], [[Comparatifs]], [[Guardrails]], [[Llama Guard]], [[NeMo Guardrails]], [[Presidio]], [[Sandboxing de code généré]], [[Systèmes IA]]
 
 ### Comparatif - Gestionnaires de paquets Python  ·  comparatif
 - tags : `package-manager`, `reproducibility`
@@ -2673,7 +2673,7 @@
 ### Comparatif - Registres d'images  ·  comparatif
 - tags : `container-registry`, `self-hosted`
 - liens sortants : [[Comparatif - Registres d'images.base]], [[Comparatifs]], [[Conteneurs & orchestration]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Zot]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatifs]], [[Conteneurs & orchestration]], [[DevOps]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Zot]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatifs]], [[Conteneurs & orchestration]], [[DevOps]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Zot]]
 
 ### Comparatif - Reinforcement learning  ·  comparatif
 - tags : `reinforcement-learning`, `self-play`
@@ -3058,7 +3058,7 @@
 ### Qualité du code  ·  hub
 - tags : `linter`, `formatter`, `type-checker`, `git-hooks`
 - liens sortants : [[Comparatif - Vérificateurs de types Python]], [[Hypothesis]], [[Outils de développement]], [[Pyright]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]], [[pytest]]
-- liens entrants : [[Outils de développement]], [[Pyright]], [[Ruff]], [[mypy]], [[pre-commit]]
+- liens entrants : [[Notebooks-as-code]], [[Outils de développement]], [[Pyright]], [[Ruff]], [[mypy]], [[pre-commit]]
 
 ### RAG & retrieval  ·  hub
 - tags : `rag`, `retrieval`, `chunking`, `reranking`, `semantic-search`, `knowledge-graph`
@@ -3272,7 +3272,7 @@
 
 ### AI security  ·  notion
 - tags : `ai-security`, `safety`, `llm`
-- liens sortants : [[Guardrails]], [[Jailbreaking and defenses]], [[LLM observability]], [[Prompt injection]], [[Reliability patterns]], [[mcp-protocol]]
+- liens sortants : [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[Guardrails]], [[Jailbreaking and defenses]], [[LLM observability]], [[Llama Guard]], [[NeMo Guardrails]], [[Presidio]], [[Prompt injection]], [[Reliability patterns]], [[garak]], [[mcp-protocol]]
 - liens entrants : [[Comparatif - Garde-fous pour LLM]], [[Daytona]], [[Données personnelles et anonymisation pour LLM]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[LM Studio Bionic]], [[OpenClaw]], [[Prompt injection]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Sécurité]], [[garak]], [[promptfoo]]
 
 ### AlphaZero and self-play  ·  notion
@@ -3613,11 +3613,11 @@
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
 - liens sortants : [[AI security]], [[GLiNER]], [[Guardrails]], [[Langfuse]], [[LiteLLM]], [[NeMo Guardrails]], [[Ollama]], [[Phoenix Arize]], [[Presidio]], [[Prompt injection]], [[vLLM]]
-- liens entrants : [[NeMo Guardrails]], [[Presidio]], [[Systèmes IA]]
+- liens entrants : [[AI security]], [[NeMo Guardrails]], [[Presidio]], [[Systèmes IA]]
 
 ### Du Compose à Kubernetes — quand changer d'échelle  ·  notion
 - tags : `container`, `kubernetes`, `gitops`, `ci-cd`
-- liens sortants : [[Argo CD]], [[BentoML]], [[Docker Compose]], [[GitHub Actions]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Ray Serve]], [[Seldon Core]], [[k3s]]
+- liens sortants : [[Argo CD]], [[BentoML]], [[Comparatif - Registres d'images]], [[Docker Compose]], [[GitHub Actions]], [[Harbor]], [[Helm]], [[KServe]], [[Kubernetes]], [[Podman]], [[Ray Serve]], [[Reverse proxy et TLS]], [[Seldon Core]], [[Traefik]], [[Zot]], [[k3s]]
 - liens entrants : [[Argo CD]], [[CI-CD pour le ML]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubeflow]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[k3s]]
 
 ### Déploiement de modèles  ·  notion
@@ -3772,8 +3772,8 @@
 
 ### Gestion des secrets  ·  notion
 - tags : `secrets-management`, `cryptography`, `self-hosted`
-- liens sortants : [[Authentik]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[Pydantic Settings]], [[Reverse proxy et TLS]], [[SOPS]], [[python-dotenv]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Ansible]], [[Authentification]], [[Gitleaks]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[SOPS]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
+- liens sortants : [[Ansible]], [[Authentik]], [[Docker Compose]], [[Gitleaks]], [[Keycloak]], [[Kubernetes]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Pydantic Settings]], [[Reverse proxy et TLS]], [[SOPS]], [[python-dotenv]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Ansible]], [[Authentification]], [[Gitleaks]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[SOPS]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
 
 ### GLM  ·  notion
 - tags : `regression`, `linear-model`, `supervised`, `maximum-likelihood`
@@ -3817,7 +3817,7 @@
 
 ### Guardrails  ·  notion
 - tags : `guardrails`, `safety`, `llm`
-- liens sortants : [[AI security]], [[Human-in-the-loop]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM observability]], [[LLM-as-judge]], [[LiteLLM]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]]
+- liens sortants : [[AI security]], [[Comparatif - Garde-fous pour LLM]], [[Human-in-the-loop]], [[Instructor]], [[Jailbreaking and defenses]], [[LLM observability]], [[LLM-as-judge]], [[LiteLLM]], [[Llama Guard]], [[NeMo Guardrails]], [[Presidio]], [[Prompt injection]], [[PydanticAI]], [[Reliability patterns]], [[Structured outputs]]
 - liens entrants : [[AI security]], [[Assistants]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]], [[Human-in-the-loop]], [[Instructor]], [[Interprétabilité mécaniste]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[LiteLLM]], [[Llama Guard]], [[NeMo Guardrails]], [[OpenClaw]], [[Presidio]], [[Probing]], [[Prompt injection]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Sécurité]], [[fastmcp]]
 
 ### Harnais d'agent  ·  notion
@@ -3942,7 +3942,7 @@
 
 ### Jailbreaking and defenses  ·  notion
 - tags : `jailbreak`, `safety`, `llm`
-- liens sortants : [[AI security]], [[Guardrails]], [[LLM observability]], [[Prompt injection]], [[RLHF and DPO]], [[Reasoning models]]
+- liens sortants : [[AI security]], [[Guardrails]], [[LLM observability]], [[NeMo Guardrails]], [[Prompt injection]], [[RLHF and DPO]], [[Reasoning models]], [[garak]]
 - liens entrants : [[AI security]], [[Guardrails]], [[LLM & IA générative]], [[Prompt injection]], [[Systèmes IA]], [[Sécurité]], [[garak]]
 
 ### Jensen-Shannon divergence  ·  notion
@@ -4222,7 +4222,7 @@
 
 ### Notebooks-as-code  ·  notion
 - tags : `notebook`, `reproducibility`, `version-control`
-- liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[papermill]], [[pytest]], [[uv]]
+- liens sortants : [[ELT vs ETL & idempotence]], [[Marimo]], [[Pyright]], [[Qualité du code]], [[Quarto]], [[Ruff]], [[Versionnage de données]], [[jupytext]], [[mypy]], [[papermill]], [[pre-commit]], [[pytest]], [[uv]]
 - liens entrants : [[Data & pipelines]], [[Marimo]], [[Notebooks]], [[Quarto]], [[Versionnage de données]], [[jupytext]], [[papermill]]
 
 ### OAuth2 et OpenID Connect  ·  notion
@@ -4322,8 +4322,8 @@
 
 ### Pipelines CI-CD on-prem — runners, secrets et artefacts  ·  notion
 - tags : `ci-cd`, `self-hosted`, `container`, `supply-chain`, `reproducibility`
-- liens sortants : [[Airflow]], [[Argo CD]], [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - CI-CD auto-hébergé]], [[DVC]], [[Dependency-Track]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[Garage]], [[Gestion des secrets]], [[GitHub Actions]], [[GitLab CE]], [[Gitleaks]], [[Grype]], [[Jenkins]], [[MinIO]], [[OpenBao]], [[Ruff]], [[SOPS]], [[SeaweedFS]], [[Semgrep]], [[Trivy]], [[Woodpecker CI]], [[pytest]], [[uv]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[Woodpecker CI]]
+- liens sortants : [[Airflow]], [[Argo CD]], [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[DVC]], [[Dependency-Track]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[Garage]], [[Gestion des secrets]], [[GitHub Actions]], [[GitLab CE]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Jenkins]], [[MinIO]], [[OpenBao]], [[Ruff]], [[SOPS]], [[SeaweedFS]], [[Semgrep]], [[Trivy]], [[Woodpecker CI]], [[Zot]], [[pytest]], [[uv]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Forgejo]], [[Forges & CI-CD]], [[Gestion des secrets]], [[GitHub Actions]], [[GitLab CE]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[Woodpecker CI]]
 
 ### Plateforme data & IA — concept  ·  notion
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`, `ml-pipeline`
@@ -4372,7 +4372,7 @@
 
 ### Prompt injection  ·  notion
 - tags : `prompt-injection`, `ai-security`, `llm`
-- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[RAG]], [[Reliability patterns]], [[Sandboxing de code généré]], [[mcp-protocol]], [[tool-use]]
+- liens sortants : [[AI security]], [[Guardrails]], [[Jailbreaking and defenses]], [[NeMo Guardrails]], [[RAG]], [[Reliability patterns]], [[Sandboxing de code généré]], [[garak]], [[mcp-protocol]], [[tool-use]]
 - liens entrants : [[AI security]], [[Assistants]], [[Comparatif - Garde-fous pour LLM]], [[Daytona]], [[Données personnelles et anonymisation pour LLM]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Jailbreaking and defenses]], [[LLM & IA générative]], [[LM Studio Bionic]], [[Llama Guard]], [[NeMo Guardrails]], [[OpenClaw]], [[Sandboxing de code généré]], [[Systèmes IA]], [[Sécurité]], [[a2a-protocol]], [[garak]], [[mcp-protocol]]
 
 ### prompt-caching  ·  notion
@@ -4492,8 +4492,8 @@
 
 ### Reverse proxy et TLS  ·  notion
 - tags : `reverse-proxy`, `tls`, `load-balancer`, `kubernetes`, `self-hosted`
-- liens sortants : [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[Grafana]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[k3s]]
-- liens entrants : [[Authentification]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Gestion des secrets]], [[HAProxy]], [[Nginx]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
+- liens sortants : [[Authelia]], [[Authentik]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Docker Compose]], [[FastAPI]], [[Flask]], [[Gestion des secrets]], [[Grafana]], [[HAProxy]], [[Kubernetes]], [[Nginx]], [[OpenBao]], [[Prometheus]], [[Traefik]], [[Uvicorn]], [[k3s]]
+- liens entrants : [[Authentification]], [[Caddy]], [[Comparatif - Reverse proxies]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[HAProxy]], [[Nginx]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Reverse proxies]], [[Traefik]], [[Web & API]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -4562,7 +4562,7 @@
 
 ### Sandboxing de code généré  ·  notion
 - tags : `agents`, `llm`, `ai-security`, `container`
-- liens sortants : [[AI security]], [[Agent evaluation]], [[Agent skills]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[Modal]], [[Prompt injection]], [[agent-loops]]
+- liens sortants : [[AI security]], [[Agent evaluation]], [[Agent skills]], [[Comparatif - Garde-fous pour LLM]], [[Daytona]], [[E2B]], [[Guardrails]], [[Hermes Agent]], [[Human-in-the-loop]], [[Llama Guard]], [[Modal]], [[NeMo Guardrails]], [[Presidio]], [[Prompt injection]], [[agent-loops]], [[garak]]
 - liens entrants : [[Agents de code]], [[Comparatif - Garde-fous pour LLM]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[Hermes Agent]], [[LLM & IA générative]], [[LM Studio Bionic]], [[Maka]], [[Modal]], [[OpenHands]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Systèmes IA]], [[Sécurité]], [[pi]], [[smolagents]]
 
 ### Scaling laws  ·  notion
