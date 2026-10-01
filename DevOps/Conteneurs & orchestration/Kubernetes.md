@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: distributed
 alternatives: ["[[k3s]]", "[[Docker Compose]]"]
-complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]", "[[EMQX]]", "[[GitLab CE]]", "[[Jenkins]]", "[[Woodpecker CI]]"]
+complements: ["[[Helm]]", "[[Argo CD]]", "[[KServe]]", "[[Seldon Core]]", "[[Ray Serve]]", "[[BentoML]]", "[[Traefik]]", "[[Nginx]]", "[[HAProxy]]", "[[Keycloak]]", "[[OpenBao]]", "[[SOPS]]", "[[Trivy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[OpenMetadata]]", "[[DataHub]]", "[[Label Studio]]", "[[CVAT]]", "[[lakeFS]]", "[[Kubeflow]]", "[[EMQX]]", "[[GitLab CE]]", "[[Jenkins]]", "[[Woodpecker CI]]", "[[Ansible]]", "[[OpenTofu]]"]
 tags: [container, kubernetes, self-hosted]
 url_docs: https://kubernetes.io/docs/
 url_repo: https://github.com/kubernetes/kubernetes
@@ -100,6 +100,8 @@ CNCF diplômé (graduated) le 2018-03-06.
 - [[GitLab CE]] — Forge Git complète en édition Community (cœur MIT, dossier ee/ propriétaire) : dépôts, revues, CI/CD, registre de conteneurs et de paquets — lourde à exploiter (PostgreSQL, Redis, Gitaly, 8 vCPU et 16 Go conseillés) ; approbations obligatoires et SAST avancé réservés aux éditions payantes. — l'exécuteur Kubernetes de ses runners, et la cible de son chart Helm.
 - [[Jenkins]] — Serveur d'automatisation historique (MIT, Java) : pipelines en Jenkinsfile Groovy, agents permanents ou éphémères, plus de 2 000 plugins — mais chaque plugin est du code tiers à patcher, avec un avis de sécurité sur les plugins presque chaque mois. — le plugin Kubernetes y lance un pod éphémère par build.
 - [[Woodpecker CI]] — CI légère pilotée par une forge (Apache-2.0, Go, fork de Drone 0.8) : chaque étape tourne dans un conteneur, environ 100 Mo de RAM pour le serveur, Forgejo, Gitea, GitLab, GitHub et Bitbucket comme forges — pas d'authentification propre, les comptes viennent de la forge. — un moteur d'exécution des étapes en pods.
+- [[Ansible]] — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil. — la collection `kubernetes.core` de son paquet applique des manifestes et des charts sur un cluster.
+- [[OpenTofu]] — Provisionnement d'infrastructure déclaratif avec un état (MPL-2.0, Go, fork de Terraform 1.5 sous la Linux Foundation, CNCF sandbox) : des fichiers HCL, un plan avant chaque changement, des fournisseurs pour VMware, Proxmox, libvirt, Kubernetes ; chiffrement d'état natif, miroir de fournisseurs pour le réseau fermé — Terraform, lui, est sous BUSL depuis 2023. — les fournisseurs `hashicorp/kubernetes` et `hashicorp/helm` créent des ressources d'un cluster, mais l'état dérive vite si un outil GitOps agit aussi dessus.
 
 ## Ressources
 
