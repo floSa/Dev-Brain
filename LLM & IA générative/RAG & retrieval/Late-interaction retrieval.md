@@ -47,6 +47,7 @@ tags: [retrieval, reranking, embeddings, semantic-search, information-retrieval,
 - [[embeddings]] — le dense mono-vecteur que la late-interaction raffine en multi-vecteur.
 - [[Hybrid retrieval]] — autre manière de dépasser le dense seul (fusion dense + lexical) ; SPLADE (sparse appris) en est un cousin.
 - [[RAGatouille]] · [[Vespa]] — les implémentations côté Dev.
+- Voir aussi : [[ColPali]], [[RAG visuel - retrouver des documents sans OCR]].
 
 ## Pour aller plus loin
 
