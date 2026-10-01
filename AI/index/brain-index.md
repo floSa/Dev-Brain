@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 975 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 982 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -365,8 +365,11 @@
 - **Langflow** — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
 
 ### llm/memoire
+- **Cognee** — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
+- **Graphiti** — Framework de graphe de connaissances temporel pour agents (Zep, Apache-2.0) — extrait par LLM entités et faits d'épisodes, chaque fait portant sa fenêtre de validité ; recherche hybride vecteur, BM25 et graphe sur Neo4j, FalkorDB ou Neptune. La plateforme Zep n'existe plus que dans le cloud.
 - **Headroom** — Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
-- **Letta** — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
+- **Letta** — Harnais d'agents à état (ex-MemGPT, Apache-2.0) — agents à mémoire persistante qui réécrivent eux-mêmes leur contexte et leurs skills, pilotés par CLI, application de bureau ou serveur d'application ; l'ancien serveur d'API V1 est retiré, Letta Cloud est le mode par défaut mais le mode local se passe de compte.
+- **Mem0** — Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.
 - **OpenViking** — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ### llm/modele
@@ -396,6 +399,7 @@
 ### llm/rag
 - **bge-reranker** — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - **Cohere Rerank** — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
+- **ColPali** — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 - **FlashRank** — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 - **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
@@ -843,6 +847,7 @@
 - **Query transformations** — domaines : ai-eng · alias : query transformation, réécriture de requête, query rewriting, query expansion, query decomposition, multi-query, HyDE, step-back prompting
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
 - **RAG documentaire on-prem - clé en main ou assemblé** — domaines : ai-eng · alias : RAG documentaire on-prem, RAG on-prem, RAG documentaire on-prem : clé en main ou assemblé, moteur RAG clé en main, RAG clé en main ou assemblé, RAG interne
+- **RAG visuel - retrouver des documents sans OCR** — domaines : ai-eng, data-eng · alias : RAG visuel : retrouver des documents sans OCR, RAG visuel, visual RAG, visual document retrieval, recherche de pages par image
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
 
 ### llm/runtime
@@ -1288,6 +1293,9 @@
 ### llm/finetuning
 - **Comparatif - Fine-tuning LLM** — —
 
+### llm/memoire
+- **Comparatif - Mémoire pour agents** — —
+
 ### llm/modele
 - **Comparatif - Modèles de langage open weights** — —
 
@@ -1441,6 +1449,7 @@
 - **Modèles de langage** — Ce qu'est un modèle de langage avant toute application — ce qu'il lit, ce qu'il produit, ce que sa taille achète.
 - **Monitoring de modèles** — Savoir qu'un modèle déployé se dégrade avant que ses utilisateurs ne le disent — dérive, performance sans étiquettes, tests avant mise en production.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
+- **Mémoire des agents** — Garder ce qu'un agent a appris d'une session à l'autre — faits, graphe daté, contexte comprimé — sans envoyer les données chez un tiers.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Non supervisé** — Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.

@@ -22,7 +22,7 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - **Sans éval, il n'y a pas de progrès mesurable** — c'est la faiblesse la plus répandue des applications LLM, et elle ne se voit pas de l'intérieur. [[LLM eval metrics]] et [[LLM benchmarks]] jugent le modèle, [[RAG eval]] et [[RAG benchmarks]] jugent le pipeline, [[LLM-as-judge]] permet de noter à l'échelle — en assumant qu'un juge est lui-même un modèle biaisé, à calibrer contre des annotations humaines.
 - L'**observabilité** n'est pas l'éval : elle regarde la production, pas un jeu de tests. [[LLM observability]] — traces imbriquées d'appels et d'outils, latence, tokens, coût par requête. Le premier critère de choix entre les plateformes est l'auto-hébergement, le second l'attachement à un framework.
 - Une application qui parle à un seul fournisseur est un point de rupture unique. La **passerelle** unifie le format d'appel, route, et permet le repli : c'est le préalable matériel des [[Reliability patterns]], au même titre que les délais, les reprises et la dégradation gracieuse. Et l'action irréversible se fait valider par quelqu'un — [[Human-in-the-loop]].
-- La **mémoire** est le manque structurel du modèle : son contexte s'arrête à la fin de la conversation. [[Agent memory]] décrit ce qu'on remet en jeu d'une session à l'autre, et les trois briques du domaine attaquent le problème par trois bouts : [[Letta]] en fait une hiérarchie que l'agent s'auto-édite, [[Headroom]] comprime le contexte de façon réversible, [[OpenViking]] l'expose en système de fichiers parcourable.
+- La **mémoire** est le manque structurel du modèle : son contexte s'arrête à la fin de la conversation. [[Agent memory]] décrit ce qu'on remet en jeu d'une session à l'autre, et le dossier [[Mémoire des agents]] range six outils qui attaquent le problème par autant de bouts : [[Mem0]] retient des faits par utilisateur, [[Graphiti]] les date dans un graphe, [[Cognee]] y joint les documents avec des droits par jeu de données, [[Letta]] laisse l'agent réécrire sa mémoire, [[Headroom]] comprime le contexte de façon réversible, [[OpenViking]] l'expose en système de fichiers parcourable.
 - **MCP est devenu la prise standard** entre un modèle et des outils, et c'est ce qui rend un outil réutilisable d'un agent à l'autre : [[mcp-protocol]] pour le protocole, [[fastmcp]] pour écrire un serveur, [[mcpjam]] pour le déboguer. Le pendant entre agents est [[a2a-protocol]] — découverte et délégation entre agents construits séparément. Les deux portent `llm/protocole`, ouverte au lot 4 : `llm/mcp` nommait un protocole et ne pouvait pas accueillir le second.
 - Fabriquer ses données d'entraînement avec un modèle est devenu la norme du post-training : [[Synthetic data generation]], à lire avec [[Fine-tuning]].
 - La **sécurité de ces systèmes** est un sujet entier, et elle n'est pas rangée ici : [[AI security]], [[Prompt injection]], [[Jailbreaking and defenses]], [[Guardrails]] et [[Sandboxing de code généré]] sont descendues dans [[Sécurité]] au lot 4, où elles tiennent désormais leur propre dossier — [[Systèmes IA]]. L'arbitrage tient en une phrase — la sécurité est une pratique qui traverse les modèles, pas un sous-sujet de l'IA générative — et il va contre l'ordre de l'arbre de décision du domaine, où D1 (« a besoin d'un LLM ») passe avant D9 (« porte sur la sécurité »). Ce qui reste ici est l'**outillage** que ces notions emploient : [[Guardrails|la validation de sortie]] par [[Instructor]] et [[Outlines]], les garde-fous de passerelle de [[LiteLLM]], la détection d'abus par [[LLM observability]].
@@ -44,17 +44,16 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - Le socle générique pour composer chaînes et agents → [[LangChain]] ; optimiser les prompts au lieu de les écrire → [[DSPy]].
 - Assembler un workflow sans écrire de code → [[Dify]] pour la plateforme complète, [[Langflow]] ou [[Flowise]] pour un canvas exportable.
 - Exposer mes outils à n'importe quel agent → [[fastmcp]], puis [[mcpjam]] pour vérifier.
-- Garder de la mémoire entre les sessions → [[Letta]] ; réduire le contexte sans le perdre → [[Headroom]].
+- Garder de la mémoire entre les sessions → [[Mémoire des agents]] (faits par utilisateur : [[Mem0]] ; faits datés : [[Graphiti]] ; agent qui réécrit sa mémoire : [[Letta]]) ; réduire le contexte sans le perdre → [[Headroom]].
 - Savoir quel modèle local tient sur ma machine → [[llmfit]].
 - Entraîner un modèle depuis zéro, ou produire autre chose que du texte → [[Machine Learning]], pas ce domaine.
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Agents]] · [[Agents de code]] · [[Assistants]] · [[Fine-tuning]] · [[Modèles de langage]] · [[Observabilité des LLM]] · [[Passerelles]] · [[RAG & retrieval]] · [[Runtimes]] · [[Sortie typée]] · [[Text-to-SQL]] · [[Évaluation]]
+- [[Agents]] · [[Agents de code]] · [[Assistants]] · [[Fine-tuning]] · [[Modèles de langage]] · [[Mémoire des agents]] · [[Observabilité des LLM]] · [[Passerelles]] · [[RAG & retrieval]] · [[Runtimes]] · [[Sortie typée]] · [[Text-to-SQL]] · [[Évaluation]]
 
 ### Notions
 - [[a2a-protocol]] — domaines : ai-eng
-- [[Agent memory]] — domaines : ai-eng
 - [[Chain-of-Thought]] — domaines : ai-eng
 - [[Context engineering]] — domaines : ai-eng
 - [[mcp-protocol]] — domaines : ai-eng
@@ -65,11 +64,8 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - [[DSPy]] — Framework de Stanford pour programmer — non prompter — les LLM : modules déclaratifs à signatures typées qu'un optimiseur compile en prompts (ou fine-tune) jusqu'à convergence des métriques.
 - [[fastmcp]] — La façon rapide et pythonique de construire des serveurs (et clients) MCP : on décore une fonction, FastMCP gère le protocole, le transport et la génération de schéma.
 - [[Flowise]] — Constructeur visuel d'agents et de chaînes LLM (Apache-2.0 hors dossier enterprise, FlowiseAI, bâti sur LangChain.js) — drag-and-drop de nœuds sur un canvas pour assembler chatbots, RAG et agents, exposés en API ; dépôt archivé depuis le 2026-08-13, sans correctifs à attendre.
-- [[Headroom]] — Couche de compression de contexte locale et réversible (Apache-2.0) — comprime sorties d'outils, logs, fichiers et chunks RAG avant le modèle, en bibliothèque, en proxy, en enrobage d'agent ou en serveur MCP ; l'outil `headroom_retrieve` rend l'original récupérable à la demande.
 - [[LangChain]] — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 - [[Langflow]] — Constructeur visuel low-code d'applications agentiques et RAG (MIT, Langflow/IBM-DataStax) — canvas drag-and-drop de composants connectés, exposable en API ou exportable en code Python ; self-host ou Langflow Desktop/cloud.
-- [[Letta]] — Framework d'agents stateful (ex-MemGPT, Apache-2.0) — mémoire persistante hiérarchique façon OS qui s'auto-édite entre sessions ; l'agent apprend dans la durée, via API et serveur self-host ou Letta Cloud.
 - [[llmfit]] — CLI Rust (MIT) qui détecte le matériel — RAM, CPU, GPU, VRAM, backend d'accélération — puis classe des centaines de modèles locaux sur quatre axes : tenue en mémoire, vitesse estimée, qualité et contexte ; TUI interactive, mode script et benchmarks communautaires.
 - [[mcpjam]] — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
-- [[OpenViking]] — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 <!-- AUTO:END -->

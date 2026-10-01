@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[Deep Agents]]", "[[open_deep_research]]"]
+complements: ["[[Deep Agents]]", "[[open_deep_research]]", "[[Mem0]]", "[[Cognee]]"]
 tags: [llm, agents, tool-use]
 url_docs: https://docs.langchain.com/oss/python/langgraph/overview
 url_repo: https://github.com/langchain-ai/langgraph
@@ -63,6 +63,8 @@ NetworkX, elle se situe **au-dessus de** LangChain dans le stack — LangChain f
 
 - [[Deep Agents]] — Harnais d'agent « batteries incluses » de l'équipe LangChain (MIT), construit sur LangGraph — système de fichiers à backends interchangeables, sous-agents à contexte isolé (outil `task`), résumé et déport du contexte sur disque, planification en option (`write_todos`) ; agnostique du modèle, Python et TypeScript. — se pose au-dessus de LangGraph : le runtime reste LangGraph, le harnais fournit fichiers, sous-agents et gestion du contexte tout faits.
 - [[open_deep_research]] — Agent de recherche approfondie open source de LangChain (MIT) — clarifie la demande, rédige un brief, délègue à des chercheurs parallèles pilotés par un superviseur LangGraph, puis produit le rapport ; modèles, moteurs de recherche et MCP configurables ; dépôt archivé (dernier commit 2026-08-10). — un exemple complet de graphe LangGraph à sous-graphes, lisible de bout en bout ; dépôt archivé.
+- [[Mem0]] — Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.
+- [[Cognee]] — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
 
 ## Ressources
 

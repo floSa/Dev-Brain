@@ -11,7 +11,7 @@ langage: "Python, TypeScript, Rust"
 alternatives: []
 complements: []
 tags: [llm, context-engineering, token-optimization, caching, mcp]
-url_docs: https://headroom-docs.vercel.app/docs
+url_docs: https://docs.headroomlabs.ai/docs
 url_repo: https://github.com/headroomlabs-ai/headroom
 ---
 
@@ -22,7 +22,7 @@ url_repo: https://github.com/headroomlabs-ai/headroom
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Librairie Python, TypeScript, Rust | open-source | en bibliothèque, rien à héberger | beta | à jour · 2026-08-27 |
+| Librairie Python, TypeScript, Rust | open-source | en bibliothèque, rien à héberger | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -52,7 +52,7 @@ propre charge avant d'en faire une hypothèse de budget.
 
 ## Mise en œuvre
 
-- Installation — `pip install "headroom-ai[all]"`, `uv tool install`, `npm install headroom-ai`, ou l'image `ghcr.io/headroomlabs-ai/headroom`
+- Installation — `pip install "headroom-ai[all]"`, `uv tool install`, `npm install headroom-ai`, ou l'image `ghcr.io/headroomlabs-ai/headroom` ; constat du 2026-10-01 : v0.39.1 du 2026-09-26 (PyPI, classifieur « 4 - Beta »), 74,2 k étoiles, trois versions entre le 21 et le 26 septembre
 - Point d'entrée — quatre modes : bibliothèque `compress(messages)` en Python ou TypeScript, proxy transparent `headroom proxy --port 8787`, enrobage `headroom wrap <assistant>` (la matrice d'assistants reconnus bouge, se référer au dépôt), serveur MCP exposant compression, récupération et statistiques
 - Prérequis — le cache des originaux occupe du disque et contient le contexte brut : à traiter comme une donnée sensible
 - Exécution — en local, aucune donnée sortante ajoutée par la brique elle-même ; le mode proxy est un processus à superviser, mono-nœud
@@ -67,7 +67,7 @@ réversible de contexte n'y a pas d'autre représentant.
 
 ## Ressources
 
-- Documentation — https://headroom-docs.vercel.app/docs
+- Documentation — https://docs.headroomlabs.ai/docs
 - Dépôt — https://github.com/headroomlabs-ai/headroom
 
 ## Voir aussi

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Rust
 alternatives: ["[[Chroma]]"]
-complements: ["[[AnythingLLM]]"]
+complements: ["[[AnythingLLM]]", "[[Cognee]]"]
 tags: [vector-db, embedded, multimodal, columnar]
 url_docs: https://lancedb.com/documentation/
 url_repo: https://github.com/lancedb/lancedb
@@ -60,6 +60,7 @@ multimodal, où vecteurs et données brutes se requêtent côte à côte.
 ### Compléments
 
 - [[AnythingLLM]] — Application de chat et de RAG par espaces de travail (MIT, Mintplex Labs) — bureau en un clic ou Docker multi-utilisateur, LanceDB embarqué, nombreux fournisseurs de modèles locaux, agents et MCP ; le SSO standard n'existe que dans l'offre Enterprise.
+- [[Cognee]] — Moteur de mémoire pour agents (Topoteretes, Apache-2.0) — ingère documents et conversations, en tire un graphe de connaissances et un index vectoriel, puis les interroge ; pile locale SQLite, LanceDB et Kuzu par défaut, accès par jeu de données avec rôles ; version 1.x classée beta.
 
 ## Ressources
 

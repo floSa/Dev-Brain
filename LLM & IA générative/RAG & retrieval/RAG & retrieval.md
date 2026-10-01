@@ -26,6 +26,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - Partir d'un pipeline complet, orienté indexation de documents → [[LlamaIndex]].
 - Un pipeline explicite, composant par composant, plutôt qu'une abstraction → [[Haystack]].
 - Ajouter du ColBERT à un pipeline qui existe déjà → [[RAGatouille]].
+- Des schémas, tableaux ou plans que l'OCR défigure, et un GPU pour indexer → [[RAG visuel - retrouver des documents sans OCR]] ; la brique est [[ColPali]], dont la bibliothèque n'est plus recommandée (préférer [[sentence-transformers]]) et dont la licence des poids se lit modèle par modèle.
 - Les réponses sont plausibles mais fausses sur les termes rares → [[Hybrid retrieval]].
 - Le bon passage est récupéré mais mal classé → [[Reranking]], puis un reranker : [[bge-reranker]] en local et ouvert, [[FlashRank]] sans GPU, [[Cohere Rerank]] en API, [[Jina Reranker]] pour le contexte long (poids non commerciaux) — départagés dans [[Comparatif - Rerankers]].
 - Les questions sont mal posées, ambiguës ou conversationnelles → [[Query transformations]].
@@ -44,11 +45,13 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - [[Query transformations]] — domaines : ai-eng
 - [[RAG]] — domaines : ai-eng
 - [[RAG documentaire on-prem - clé en main ou assemblé]] — domaines : ai-eng
+- [[RAG visuel - retrouver des documents sans OCR]] — domaines : ai-eng, data-eng
 - [[Reranking]] — domaines : ai-eng
 
 ### Briques
 - [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - [[Cohere Rerank]] — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
+- [[ColPali]] — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 - [[FlashRank]] — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 - [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
