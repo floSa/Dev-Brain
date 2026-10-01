@@ -19,6 +19,7 @@ tags: [forecasting, timeseries]
 - [[darts]] — une **API unique** `fit`/`predict` de l'ARIMA aux réseaux (N-BEATS, TFT, TiDE), donc le seul lieu où comparer les trois familles sans changer d'interface. Tout transite par l'objet `TimeSeries`, et la distinction `past_covariates` / `future_covariates` est la source d'erreurs.
 - [[neuralforecast]] — le **catalogue neuronal** le plus large et le plus récent (NHITS, PatchTST, iTransformer, TimesNet), avec sélection automatique `Auto*` via Ray/Optuna. Exige assez d'historique et assez de séries : sur petits jeux, il perd contre les modèles statistiques.
 - [[Chronos]] — **modèle de fondation** : il prévoit une série jamais vue en zero-shot, sans pipeline par série, quantiles compris ; Chronos-2 gère le multivarié et les covariables par *in-context learning*. Le pari ne bat pas toujours un modèle dédié, et les scores de leaderboard sont exposés à la fuite de pré-entraînement.
+- [[sktime]] — la même idée d'**API unique**, étendue au-delà de la prévision : classification, régression et clustering de séries passent par les mêmes pipelines et le même réglage, avec des adaptateurs vers statsmodels et Prophet. Le bon choix quand la prévision n'est qu'une des tâches du projet (classer des fenêtres de capteurs, régresser un RUL) ; son catalogue, plus large que celui de darts, est aussi plus long à apprendre.
 
 ## Voir aussi
 
