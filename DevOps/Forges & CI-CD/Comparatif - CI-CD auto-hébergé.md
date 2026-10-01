@@ -35,7 +35,7 @@ Comparaison par critère, en une ligne chacun :
 - **Tekton** (Apache-2.0, v1.16.0 du 2026-08-31, environ 9 100 étoiles) — un cadre Kubernetes, sans interface ni déclencheur de forge inclus ; pertinent seulement sur un cluster déjà là.
 - **Buildbot** (GPL-2.0) — configuration en Python, dépôt actif, mais la dernière release relevée date de mai 2025 : contradiction à vérifier.
 - **SourceHut** (builds.sr.ht, AGPL) — lié à son écosystème, écarté.
-- **Harbor** — registre d'images, à traiter dans le bloc suivant.
+- **Harbor** — registre d'images, pas une CI : il a sa fiche, [[Harbor]], et le comparatif [[Comparatif - Registres d'images]] le départage de [[Zot]].
 
 ## Voir aussi
 
