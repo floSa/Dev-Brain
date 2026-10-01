@@ -83,6 +83,7 @@ tags: [event-driven, message-broker, idempotence]
 - [[Temporal]] — l'exécution durable, qui remplace le broker pour un appel dont il faut reprendre l'état exactement.
 - [[Postgres]] — la table de file avec `SKIP LOCKED`.
 - [[Debezium]] et [[Flink]] — l'outbox lue par le journal, et le traitement de ce qui est publié.
+- Voir aussi : [[Données industrielles]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
 
 ## Pour aller plus loin
 
