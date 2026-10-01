@@ -95,3 +95,4 @@ OVMS 2026.4.0 (2026-09-17), 940 étoiles.
 - [[Inférence en bordure - modèles sur du matériel d'atelier]] — la notion : pourquoi et comment inférer sur place
 - [[Comparatif - Runtimes d'inférence CPU et edge]] — ce qui départage les runtimes pour CPU et matériel d'atelier
 - [[Quantization]] — la notion derrière NNCF
+- [[anomalib]] — la bibliothèque de détection d'anomalies visuelles dont l'export `ExportType.OPENVINO` cible ce runtime

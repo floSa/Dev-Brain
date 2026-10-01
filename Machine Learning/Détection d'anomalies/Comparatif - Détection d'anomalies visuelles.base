@@ -1,0 +1,21 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions qui portent le meme tag.
+    # Le tag `industrial-inspection` (et non `anomaly-detection`) : il laisse a
+    # `Comparatif - Détection d'anomalies` ses deux membres tabulaires et séries.
+    - role == "brique"
+    - file.hasTag("industrial-inspection")
+views:
+  - type: table
+    name: Détection d'anomalies visuelles
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
