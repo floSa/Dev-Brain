@@ -11,7 +11,7 @@ maturite: production
 langage: Go
 scaling: single-node
 alternatives: ["[[VictoriaMetrics]]", "[[Zabbix]]"]
-complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[HAProxy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[EMQX]]"]
+complements: ["[[Alertmanager]]", "[[Grafana]]", "[[OpenTelemetry]]", "[[Traefik]]", "[[Caddy]]", "[[Nginx]]", "[[HAProxy]]", "[[Redpanda]]", "[[NATS]]", "[[RabbitMQ]]", "[[EMQX]]", "[[Telegraf]]"]
 tags: [observability, metrics, alerting, self-hosted]
 url_docs: https://prometheus.io/docs/introduction/overview/
 url_repo: https://github.com/prometheus/prometheus
@@ -76,6 +76,7 @@ de valeurs de chaque label.
 - [[NATS]] — Serveur de messagerie en un seul binaire Go : pub/sub et requête/réponse en mémoire (Core NATS), persistance avec rejeu, key-value et object store (JetStream), MQTT 3.1.1 natif ; serveur Apache-2.0 sous la CNCF. — collecté par `prometheus-nats-exporter`, la supervision JSON du serveur n'étant pas au format Prometheus.
 - [[RabbitMQ]] — Broker de messages à routage riche (exchanges, files, quorum queues Raft, streams en journal), AMQP 0-9-1 et 1.0 natifs, MQTT et STOMP par plugins ; MPL-2.0, copyright Broadcom, support communautaire limité à la dernière série. — plugin natif livré avec le broker, port 15692.
 - [[EMQX]] — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale). — EMQX expose ses métriques au format Prometheus, en pull ou par Pushgateway ; depuis la 6.3.0 le scrape demande une authentification par défaut.
+- [[Telegraf]] — Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental. — `outputs.prometheus_client` expose les mesures collectées sur `:9273/metrics`, qu'il vient lire.
 
 ## Ressources
 
