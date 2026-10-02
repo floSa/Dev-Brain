@@ -48,6 +48,7 @@ tags: [learning-theory, vc-dimension]
 - [[Generalization bounds]] — où la VC s'injecte comme terme de pénalité de complexité.
 - [[Compromis biais-variance]] — capacité élevée ↔ variance ; la VC en est la quantification formelle.
 - [[No Free Lunch theorem]] — pourquoi restreindre la capacité (donc $d_{VC}$) est nécessaire pour apprendre.
+- [[Double descente et généralisation des grands modèles]] — la capacité mesurée par la VC ne localise pas le pic d'interpolation.
 
 ## Pour aller plus loin
 
