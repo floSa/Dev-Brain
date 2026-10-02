@@ -69,3 +69,4 @@ s'appuient dessus pour leurs schémas.
 ## Voir aussi
 
 - [[Outils de développement]] — le hub du domaine
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
