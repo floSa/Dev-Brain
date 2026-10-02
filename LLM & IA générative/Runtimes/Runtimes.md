@@ -42,6 +42,7 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - [[Inference optimization]] — domaines : ai-eng, mlops
 - [[Multi-Token Prediction]] — domaines : ml-eng, ai-eng
 - [[prompt-caching]] — domaines : ai-eng
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — domaines : ai-eng, mlops, ml-eng
 - [[Server-Sent Events & streaming LLM]] — domaines : ai-eng
 - [[Speculative decoding]] — domaines : ai-eng
 

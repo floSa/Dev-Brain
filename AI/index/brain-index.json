@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1006,
+  "count": 1011,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -116,6 +116,7 @@
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PraisonAI",
       "PydanticAI",
+      "RAG agentique",
       "Reliability patterns",
       "Sandboxing de code généré",
       "Semantic Kernel",
@@ -229,6 +230,7 @@
       "Architectures hybrides LLM",
       "Attention Residuals",
       "Attention linéaire",
+      "Contexte long",
       "Flash Attention and efficient attention",
       "Multi-head Latent Attention",
       "Positional encoding",
@@ -336,6 +338,7 @@
     ],
     "calibration": [
       "Calibration",
+      "Hallucinations des LLM",
       "Évaluation de modèles"
     ],
     "causal-inference": [
@@ -602,6 +605,7 @@
       "Architecture deep agent",
       "Claude Video",
       "Context engineering",
+      "Contexte long",
       "Deep Agents",
       "Deep research",
       "Graphify",
@@ -1311,6 +1315,7 @@
       "DB-GPT",
       "Distillation",
       "Fine-tuning",
+      "Fusion de modèles",
       "HuggingFace",
       "LLaMA-Factory",
       "LoRA et QLoRA",
@@ -1422,6 +1427,7 @@
       "PyTorch",
       "PyTorch Geometric",
       "PyTorch Lightning",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Ray",
       "SGLang",
       "Serving",
@@ -1623,12 +1629,14 @@
       "Architectures hybrides LLM",
       "Attention linéaire",
       "Calculs adaptatifs",
+      "Contexte long",
       "Flash Attention and efficient attention",
       "Inference optimization",
       "Multi-Token Prediction",
       "Multi-head Latent Attention",
       "ONNX Runtime",
       "Pruning",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Quantization",
       "Runtimes",
       "Serving",
@@ -1832,6 +1840,7 @@
       "Comparatif - Modèles de langage open weights",
       "Construction de graphes de connaissances",
       "Context engineering",
+      "Contexte long",
       "Continue",
       "CrewAI",
       "DB-GPT",
@@ -1844,6 +1853,7 @@
       "Dify",
       "E2B",
       "Flowise",
+      "Fusion de modèles",
       "GRPO",
       "Gemma",
       "GitDiagram",
@@ -1851,6 +1861,7 @@
       "GraphRAG",
       "Guardrails",
       "Guidance",
+      "Hallucinations des LLM",
       "Harnais d'agent",
       "Haystack",
       "Headroom",
@@ -1910,9 +1921,11 @@
       "Prompt engineering",
       "Prompt injection",
       "PydanticAI",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Query transformations",
       "Qwen",
       "RAG",
+      "RAG agentique",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAGChecker",
       "RAGFlow",
@@ -1983,6 +1996,7 @@
       "Code and math benchmarks",
       "Comparatif - Évaluation LLM",
       "DeepEval",
+      "Hallucinations des LLM",
       "Inspect AI",
       "LLM & IA générative",
       "LLM benchmarks",
@@ -2046,6 +2060,7 @@
       "Open WebUI",
       "Pattern - Agent sur LLM auto-hébergé",
       "Prometheus-Eval",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Qwen",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "Runtimes",
@@ -2283,6 +2298,7 @@
       "Apprentissage profond",
       "Distillation",
       "Pruning",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Quantization"
     ],
     "model-evaluation": [
@@ -2795,6 +2811,7 @@
       "Ultralytics YOLO"
     ],
     "positional-encoding": [
+      "Contexte long",
       "Positional encoding"
     ],
     "postgres": [
@@ -2874,6 +2891,7 @@
       "ONNX Runtime",
       "Ollama",
       "OpenVINO",
+      "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Quantization",
       "Runtimes",
       "TensorRT",
@@ -2939,6 +2957,7 @@
       "Query transformations",
       "RAG",
       "RAG & retrieval",
+      "RAG agentique",
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
@@ -3099,6 +3118,7 @@
       "psycopg2"
     ],
     "reliability": [
+      "Hallucinations des LLM",
       "Human-in-the-loop",
       "OmniRoute",
       "Reliability patterns",
@@ -3183,6 +3203,7 @@
       "Qwen3-Embedding",
       "RAG",
       "RAG & retrieval",
+      "RAG agentique",
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
@@ -3821,6 +3842,7 @@
       "Sniffnet"
     ],
     "transfer-learning": [
+      "Fusion de modèles",
       "Méta-apprentissage et few-shot learning",
       "Transfer learning vision",
       "Vision",
@@ -13092,6 +13114,43 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Fine-tuning/Fusion de modèles.md",
+      "nom": "Fusion de modèles",
+      "alias": [
+        "model merging",
+        "merge de modèles",
+        "model soups",
+        "soupe de modèles",
+        "Task Arithmetic",
+        "task vectors",
+        "TIES-Merging",
+        "DARE",
+        "SLERP",
+        "mergekit",
+        "frankenmerge",
+        "depth up-scaling",
+        "fusion de poids",
+        "weight averaging"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "fine-tuning",
+        "transfer-learning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Fine-tuning/GRPO.md",
       "nom": "GRPO",
       "alias": [
@@ -13579,6 +13638,46 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/Contexte long.md",
+      "nom": "Contexte long",
+      "alias": [
+        "fenêtre de contexte",
+        "longueur de contexte",
+        "long context",
+        "context window",
+        "contexte étendu",
+        "lost in the middle",
+        "needle in a haystack",
+        "NIAH",
+        "RULER",
+        "longueur effective",
+        "context rot",
+        "extension de contexte",
+        "RoPE scaling",
+        "YaRN",
+        "interpolation de positions"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "context-engineering",
+        "attention",
+        "inference-optimization",
+        "positional-encoding"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Modèles de langage/Decoding strategies.md",
       "nom": "Decoding strategies",
       "alias": [
@@ -13646,6 +13745,40 @@
         "[[TRL]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Hallucinations des LLM.md",
+      "nom": "Hallucinations des LLM",
+      "alias": [
+        "hallucination",
+        "hallucinations",
+        "confabulation",
+        "confabulations",
+        "factualité",
+        "fidélité au contexte",
+        "faithfulness hallucination",
+        "factuality hallucination",
+        "SelfCheckGPT",
+        "FActScore",
+        "entropie sémantique"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "llm-eval",
+        "reliability",
+        "calibration"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Modèles de langage/Licences de modèles open weights.md",
@@ -15042,6 +15175,41 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/RAG agentique.md",
+      "nom": "RAG agentique",
+      "alias": [
+        "agentic RAG",
+        "RAG agentique",
+        "récupération adaptative",
+        "adaptive retrieval",
+        "Self-RAG",
+        "corrective RAG",
+        "recherche agentique",
+        "agentic search",
+        "active retrieval",
+        "FLARE",
+        "IRCoT",
+        "Search-R1"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "agents",
+        "retrieval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/RAG documentaire on-prem - clé en main ou assemblé.md",
       "nom": "RAG documentaire on-prem - clé en main ou assemblé",
       "alias": [
@@ -15414,6 +15582,45 @@
         "[[Cognee]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Quantification des LLM - GGUF, AWQ, GPTQ.md",
+      "nom": "Quantification des LLM - GGUF, AWQ, GPTQ",
+      "alias": [
+        "Quantification des LLM : GGUF, AWQ, GPTQ",
+        "quantification de modèles de langage",
+        "quantification pour le serving",
+        "Q4_K_M",
+        "imatrix",
+        "SmoothQuant",
+        "NF4",
+        "W4A16",
+        "W8A8",
+        "quantification du cache KV",
+        "LLM.int8",
+        "bitsandbytes"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "quantization",
+        "model-compression",
+        "inference-optimization",
+        "llm",
+        "gpu",
+        "local-llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/Runtimes.md",
