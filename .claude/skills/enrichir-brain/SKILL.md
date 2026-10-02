@@ -393,7 +393,7 @@ donc changer de rayon.
 8. **Régénérer, puis contrôler que la régénération a bien pris** — ne pas la croire sur
    parole :
    ```bash
-   uv run AI/scripts/build_index.py && uv run AI/scripts/build_mocs.py && uv run AI/scripts/build_bandeau.py && uv run AI/scripts/build_links.py   # l'ordre de cloturer-brain
+   uv run AI/scripts/build_index.py && uv run AI/scripts/build_mocs.py && uv run AI/scripts/build_bandeau.py && uv run AI/scripts/build_links.py && uv run AI/scripts/build_carte.py   # l'ordre de cloturer-brain
    uv run AI/scripts/query_index.py --name "<X>" --fields nom,path,pitch,categorie,famille,role,maturite
    grep -rln "<X>" --include="*.md" . | grep -v "^\./\.git/"   # dont les hubs qui la citent
    ```
