@@ -69,5 +69,6 @@ paraît lent : c'est la compilation, pas le modèle.
 
 - [[ARIMA SARIMA]] — la notion derrière AutoARIMA, son modèle phare
 - [[Exponential smoothing]] — le cadre ETS qu'implémente AutoETS
+- [[Prédiction conforme]] — la garantie de couverture derrière ses intervalles conformes (`ConformalIntervals`)
 - [[Forecasting framing]] — cadrer horizon, covariables et évaluation en amont
 - [[Comparatif - Forecasting]] — ce qui départage les briques du dossier
