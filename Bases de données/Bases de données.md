@@ -40,7 +40,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 - Stocke des embeddings et retrouve les plus proches par recherche ANN. Détail : [[Bases de données vectorielles]].
 
 ### Temporel
-- Séries temporelles et métriques, optimisé pour l'écriture séquentielle et les fenêtres temporelles. Implémentations Dev : [[TimescaleDB]] (extension Postgres) et [[InfluxDB]] (serveur autonome, métriques + IoT).
+- Séries temporelles et métriques, optimisé pour l'écriture séquentielle et les fenêtres temporelles. Implémentations Dev : [[TimescaleDB]] (extension Postgres) et [[InfluxDB]] (serveur autonome, métriques + IoT). Un historien industriel propriétaire, déjà en place dans beaucoup d'ateliers : [[AVEVA PI System]].
 
 ### Recherche / full-text
 - Indexation de documents pour la recherche plein texte (pertinence, agrégations, logs), souvent en complément d'une base primaire plutôt qu'à sa place. Implémentation Dev : [[Elasticsearch]].
