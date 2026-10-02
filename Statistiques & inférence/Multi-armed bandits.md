@@ -52,6 +52,7 @@ tags: [experimentation, multi-armed-bandit]
 - [[Inégalités de concentration]] — Hoeffding/Chernoff fournissent la borne d'incertitude de l'UCB.
 - [[Exploration vs exploitation]] — le dilemme que le bandit incarne sous sa forme la plus pure ($\varepsilon$-greedy, UCB, Thompson).
 - [[Reinforcement learning]] — généralisation avec états et transitions ; le bandit en est le cas sans état.
+- Voir aussi : [[Optimisation bayésienne]]
 
 ## Pour aller plus loin
 
