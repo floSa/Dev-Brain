@@ -76,3 +76,4 @@ fait exploser l'index et la facture ; les labels se modélisent avec parcimonie.
 
 - [[Observabilité]] — le hub du domaine
 - [[Métriques, logs et traces]] — la notion : ce que le log dit que la métrique et la trace ne disent pas, et ce qu'il coûte
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

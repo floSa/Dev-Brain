@@ -91,3 +91,4 @@ de valeurs de chaque label.
 - [[Métriques, logs et traces]] — la notion : ce que mesure une métrique, et ce qu'elle ne dit pas
 - [[SLO et alerting]] — la notion : de la règle d'alerte au budget d'erreur
 - [[Prometheus-Eval]] — homonyme sans rapport : un modèle juge de LLM, pas ce système de supervision
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

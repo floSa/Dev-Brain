@@ -78,3 +78,6 @@ branche ailleurs. Créé par Sebastián Ramírez (tiangolo), ligne 0.13x en 2026
 - [[Web & API]] — le hub du domaine
 - [[Comparatif - Frontends web légers]] — ce qui départage FastAPI + HTMX de Streamlit, Gradio et Dash
 - [[Pydantic]] — la validation dont FastAPI dérive tout son typage
+- [[Programmation asynchrone en Python]] — la notion : coroutines, tâches, annulation, bloquer la boucle, GIL
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

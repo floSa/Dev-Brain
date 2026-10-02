@@ -90,3 +90,4 @@ et les produits payants.
 - [[Conteneurs & orchestration]] — le hub du sous-domaine
 - [[Comparatif - Orchestration de conteneurs]] — ce qui départage les moteurs, la pile locale et les orchestrateurs du dossier
 - [[Du Compose à Kubernetes — quand changer d'échelle]] — la notion : ce que Compose ne fait pas, ce que coûte un cluster, le critère de bascule et le GitOps
+- [[Packaging Python et environnements reproductibles]] — la notion : pyproject.toml, verrouillage, miroir interne, image Docker reproductible

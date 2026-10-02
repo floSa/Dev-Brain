@@ -78,6 +78,7 @@ Aucun de ces quatre besoins n'est atteint par le seul fait d'avoir « beaucoup d
 - **Les distributions Kubernetes** autres que k3s : RKE2, Talos Linux, MicroK8s, OKD.
 - Pour les modèles : [[KServe]] et [[Seldon Core]] présupposent un cluster ; [[Ray Serve]] et [[BentoML]] se déploient aussi sur une machine seule.
 - Voir aussi : [[Reverse proxy et TLS]], [[Traefik]], [[Harbor]], [[Zot]], [[Comparatif - Registres d'images]].
+- [[Packaging Python et environnements reproductibles]] — l'image reproductible : verrou, empreinte de l'image de base, réseau fermé.
 
 ## Pour aller plus loin
 

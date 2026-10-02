@@ -72,3 +72,6 @@ ni routage L7, ni supervision multi-processus avancée. Maintenu par Marcelo Try
 ## Voir aussi
 
 - [[Web & API]] — le hub du domaine
+- [[Programmation asynchrone en Python]] — la notion : coroutines, tâches, annulation, bloquer la boucle, GIL
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

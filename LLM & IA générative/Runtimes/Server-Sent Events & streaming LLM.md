@@ -46,6 +46,7 @@ tags: [streaming, llm, web-framework]
 - **WebSocket** (pas de page) — canal **bidirectionnel** ; à préférer si le client doit aussi pousser pendant la génération (voix, interruptions). Plus lourd que SSE pour un simple flux serveur → client.
 - **HTTP chunked / NDJSON / gRPC streaming** (pas de page) — autres transports de flux côté serveur.
 - [[Inference optimization]] — continuous batching et KV-cache alimentent plusieurs flux SSE en parallèle côté serveur.
+- [[Programmation asynchrone en Python]] — la boucle d'événements, l'annulation et le blocage derrière un générateur asynchrone.
 
 ## Pour aller plus loin
 

@@ -76,3 +76,4 @@ l'autre : `ruff check` lint, `ruff format` formate. Version 0.16.9 du 2026-09-24
 - [[Qualité du code]] — le hub du sous-domaine
 - [[Typage statique en Python]] — ce que le typage graduel apporte et ce qu'il ne garantit pas
 - [[Outils de développement]] — le hub du domaine
+- [[Packaging Python et environnements reproductibles]] — la notion : pyproject.toml, verrouillage, miroir interne, image Docker reproductible

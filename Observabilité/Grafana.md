@@ -85,3 +85,4 @@ distribution.
 - [[Beszel]] — l'échelon en dessous : l'état des hôtes sans pile à opérer
 - [[Métriques, logs et traces]] — la notion : les trois sources que Grafana réunit sur un tableau de bord
 - [[SLO et alerting]] — la notion : ce que l'alerting intégré évalue, et à quelle condition il doit réveiller quelqu'un
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

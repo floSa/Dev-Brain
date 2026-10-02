@@ -87,3 +87,4 @@ Reverse proxy en Go dont la configuration se scinde en deux : la partie **statiq
 - [[Reverse proxies]] — le hub du sous-domaine
 - [[Comparatif - Reverse proxies]] — ce qui départage les quatre proxys : configuration, découverte, certificats, performance, exploitation
 - [[Reverse proxy et TLS]] — la notion : terminaison TLS, ACME contre autorité interne, en-têtes, Ingress et Gateway API
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage

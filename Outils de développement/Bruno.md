@@ -68,3 +68,4 @@ intégration continue.
 
 - [[Outils de développement]] — le hub du domaine
 - [[Comparatif - Clients d'API]] — ce qui départage les clients du dossier
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage

@@ -72,3 +72,4 @@ Elastic License 2.0, le dossier `x-pack` sous Elastic License 2.0 seule.
 - [[Logstash]] — le pipeline qui alimente Elasticsearch
 - [[Beats]] — les agents qui expédient logs et métriques
 - [[Loki]] — voisin côté logs, qui n'indexe que des labels
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

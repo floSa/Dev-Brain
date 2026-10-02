@@ -69,3 +69,4 @@ exercice, sans monter de backend.
 ## Voir aussi
 
 - [[Web & API]] — le hub du domaine
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
