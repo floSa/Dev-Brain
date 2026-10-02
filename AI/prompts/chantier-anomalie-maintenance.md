@@ -152,5 +152,5 @@ Six pages.
 - [x] Lot 2 — anomalie visuelle
 - [x] Lot 3 — séries temporelles
 - [x] Lot 4 — maintenance, concepts
-- [ ] Lot 5 — maintenance, outils et offres
+- [x] Lot 5 — maintenance, outils et offres
 - [ ] Lot 6 — patterns, rules, bord d'usine
