@@ -1,8 +1,19 @@
 # Machine Learning — carte (2 sur 3)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 93 pages, chacune avec son chemin et une ligne.
-> Couvre : Interprétabilité, Maintenance prédictive, Monitoring de modèles, NLP, Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving.
+> 102 pages, chacune avec son chemin et une ligne.
+> Couvre : Embeddings & encodeurs, Interprétabilité, Maintenance prédictive, Monitoring de modèles, NLP, Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving.
+
+## Embeddings & encodeurs
+- [[bge-m3]] · brique · `Machine Learning/Embeddings & encodeurs/bge-m3.md` — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.
+- [[FastEmbed]] · brique · `Machine Learning/Embeddings & encodeurs/FastEmbed.md` — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.
+- [[Infinity]] · brique · `Machine Learning/Embeddings & encodeurs/Infinity.md` — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture…
+- [[Qwen3-Embedding]] · brique · `Machine Learning/Embeddings & encodeurs/Qwen3-Embedding.md` — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.
+- [[sentence-transformers]] · brique · `Machine Learning/Embeddings & encodeurs/sentence-transformers.md` — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et…
+- [[Text Embeddings Inference]] · brique · `Machine Learning/Embeddings & encodeurs/Text Embeddings Inference.md` — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et…
+- [[Choisir un modèle d'embedding]] · notion · `Machine Learning/Embeddings & encodeurs/Choisir un modèle d'embedding.md` — Choisir un modèle d'embeddings revient à fixer des contraintes qui éliminent, puis à mesurer sur ses propres documents ceux qui restent.
+- [[embeddings]] · notion · `Machine Learning/Embeddings & encodeurs/embeddings.md` — Représentation d'un objet — mot, phrase, image, utilisateur, nœud de graphe — par un vecteur dense de réels, appris pour que la géométrie reflète le sens…
+- [[Comparatif - Embeddings]] · comparatif · `Machine Learning/Embeddings & encodeurs/Comparatif - Embeddings.md` — la nature de la brique d'abord — bibliothèque en process, serveur partagé ou jeu de poids —, puis, pour un outil, ce qu'il sait servir (dense, sparse…
 
 ## Interprétabilité
 - [[Captum]] · brique · `Machine Learning/Interprétabilité/Captum.md` — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM…
