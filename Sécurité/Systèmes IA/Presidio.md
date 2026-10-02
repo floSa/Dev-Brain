@@ -88,3 +88,4 @@ Relevé le 2026-10-01 : **v2.2.364** (2026-07-22), 11 120 étoiles, dernier comm
 - [[Systèmes IA]] — le hub du dossier
 - [[Guardrails]] — la notion : la couche de contrôle autour des appels LLM, dont le filtrage des données personnelles
 - [[Comparatif - Garde-fous pour LLM]] — les outils qui filtrent entrées et sorties
+- [[Confidentialité différentielle]] — la garantie formelle que l'anonymisation par détection de données personnelles n'offre pas

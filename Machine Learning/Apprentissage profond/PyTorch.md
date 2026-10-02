@@ -79,3 +79,5 @@ Le type `Tensor` — un tableau N-dimensionnel à la NumPy, sur CPU ou GPU — e
 - [[Méta-apprentissage et few-shot learning]] — `backward(create_graph=True)` permet de différencier à travers une mise à jour de gradient (MAML)
 - [[Optuna]] — optimisation d'hyperparamètres, avec pruning intégré à PyTorch
 - [[TorchServe]] — serveur de modèles PyTorch dédié, désormais non maintenu ; pour servir en prod, voir [[NVIDIA Triton]] et [[BentoML]]
+- [[Apprentissage fédéré]] — OpenFL accepte PyTorch comme moteur d'entraînement local des clients (d'après son résumé)
+- [[Confidentialité différentielle]] — Opacus, la bibliothèque DP-SGD, se branche sur PyTorch ; l'écrêtage par exemple demande des gradients par exemple

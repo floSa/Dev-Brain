@@ -62,3 +62,4 @@ url_repo: https://github.com/marcotcr/lime
 
 - [[Explicabilité des modèles]] — le cadre qu'il outille : le surrogate local, et ses limites
 - [[Comparatif - Explicabilité|Comparatif — Explicabilité]] — ce qui départage les outils du dossier
+- [[Équité et biais algorithmique]] — un surrogate local explique une prédiction, il ne mesure aucun critère d'équité

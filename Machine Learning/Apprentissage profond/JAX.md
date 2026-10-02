@@ -71,3 +71,4 @@ Versionné en 0.x : l'amont prévient « expect sharp edges », les dépréciati
 - [[Rétropropagation et différentiation automatique]] — `grad`, `jvp`, `vjp` et `jit` comme transformations composables de fonctions pures
 - [[Méta-apprentissage et few-shot learning]] — `grad` s'applique à sa propre sortie, ce qui permet de différencier à travers une mise à jour de gradient (MAML)
 - [[HuggingFace]] — hub de modèles ; le backend JAX/Flax y est historiquement supporté, désormais minoritaire face à PyTorch
+- [[Confidentialité différentielle]] — JAX Privacy, utilisé pour l'écrêtage et le bruit de VaultGemma (DP-SGD)
