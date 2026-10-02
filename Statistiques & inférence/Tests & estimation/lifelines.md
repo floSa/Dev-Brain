@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: []
+alternatives: ["[[scikit-survival]]"]
 complements: []
 tags: [survival-analysis, regression]
 url_docs: https://lifelines.readthedocs.io/
@@ -43,7 +43,7 @@ log-rank et les diagnostics d'hypothèse. API homogène proche de statsmodels �
 | Estimer une courbe de survie et comparer des groupes — Kaplan-Meier plus test du log-rank | La censure doit être encodée correctement (colonne événement 0/1) : mal posée, elle biaise l'ensemble |
 | Mesurer l'effet de covariables sur le risque instantané — régression de Cox | L'hypothèse des risques proportionnels se vérifie (`check_assumptions`, résidus de Schoenfeld) ; sinon, modèle stratifié ou AFT |
 | Prévoir une durée de vie ou un temps de panne par un modèle paramétrique AFT | Le format des données change selon le modèle : durée plus événement, ou format long pour covariables variant dans le temps |
-| Analyser le churn ou la durée de rétention avec données censurées | Ni gros volume ni GPU — et la survie « machine learning » (Random Survival Forests, boosting de survie) est hors périmètre, côté scikit-survival, absent du brain |
+| Analyser le churn ou la durée de rétention avec données censurées | Ni gros volume ni GPU — et la survie « machine learning » (Random Survival Forests, boosting de survie) est hors périmètre : [[scikit-survival]], sous licence GPL-3.0 |
 
 ## Mise en œuvre
 
@@ -57,7 +57,7 @@ log-rank et les diagnostics d'hypothèse. API homogène proche de statsmodels �
 
 ### Alternatives
 
-- Aucune dans le brain : lifelines est la seule bibliothèque d'analyse de survie répertoriée, et son pendant ML, scikit-survival, n'y figure pas encore.
+- [[scikit-survival]] — Analyse de survie « machine learning » au-dessus de scikit-learn — Cox pénalisé, forêts de survie aléatoires, gradient boosting et SVM de survie, avec les métriques adaptées à la censure (indice de concordance, AUC dynamique, score de Brier) ; licence GPL-3.0.
 
 ## Ressources
 
