@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Rust
 scaling: single-node
-alternatives: ["[[TimescaleDB]]"]
+alternatives: ["[[TimescaleDB]]", "[[AVEVA PI System]]"]
 complements: ["[[EMQX]]", "[[Telegraf]]"]
 tags: [timeseries]
 url_docs: https://docs.influxdata.com/
@@ -59,6 +59,7 @@ sur la pile Apache Arrow, DataFusion et Parquet.
 ### Alternatives
 
 - [[TimescaleDB]] — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
+- [[AVEVA PI System]] — Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.
 
 ### Compléments
 
