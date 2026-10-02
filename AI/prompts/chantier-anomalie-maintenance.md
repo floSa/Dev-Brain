@@ -7,7 +7,7 @@ tags: [meta, backlog]
 
 # Chantier — détection d'anomalies et maintenance prédictive
 
-Plan unique du chantier, six lots numérotés de 1 à 6. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, huit lots numérotés de 1 à 8. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -48,6 +48,7 @@ on-prem industriel, ESN.
 | 2 | Lots 2, 3, 4 (en parallèle) | Lot 1 clos et poussé |
 | 3 | Lot 5 | Lot 4 |
 | 4 | Lot 6 | Lots 2, 3, 4, 5 |
+| 5 | Lots 7, 8 (en parallèle) | Lots 1 à 6 clos |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -154,6 +155,31 @@ Six pages.
 - **Vérifie** que les filtres `.base` des trois comparatifs de `ml/anomalie` ne se recouvrent pas ; s'ils se recouvrent, propose le correctif sans l'appliquer.
 - **À proposer seulement, ne pas faire** (modifient du texte de page existante) : phrase sur le point-adjust de TimesNet (0,963 de F1 ajusté contre 0,218 aléatoire sur SWaT, Sarfraz et al.) dans « Évaluer une détection d'anomalies » ; puce `CoxTimeVaryingFitter` dans lifelines ; ISO 13381 dans « Maintenance prédictive et RUL ; notions à créer plus tard : adaptation de domaine hors vision, LSTM ; tags manquants (`domain-adaptation`, `conformal-prediction`, `uncertainty`, `lstm`).
 
+## Lot 7 — Notions transverses laissées par les lots 1 à 6 (vague 5)
+
+Trois notions, que les pages du chantier appellent sans les trouver. Domaines à dériver par l'arbre D1→D14 et à justifier dans chaque page.
+
+- **LSTM et réseaux récurrents** (notion) : RNN, LSTM, GRU ; cellule et portes, gradient qui s'évanouit, séquences longues contre Transformers et modèles à espace d'états ; usages vus dans le chantier (RUL, anomalies multivariées). Citer : Apprentissage profond, State Space Models, Self-attention, RUL par apprentissage profond, Anomalies multivariées par apprentissage profond.
+- **Adaptation de domaine** (notion) : décalage de covariables, entre machines, entre lignes, entre capteurs ; adaptation supervisée, non supervisée, par features invariantes, par ré-étiquetage ; ce qui marche avec peu de pannes. Citer : Transfer learning vision, Maintenance prédictive avec peu de pannes, Data drift, Détection hors distribution (OOD).
+- **Prédiction conforme** (notion) : garantie de couverture sans hypothèse de loi, split conformal, intervalles et ensembles de prédiction, application au seuil d'alerte et à l'incertitude du RUL ; limites (échangeabilité, séries temporelles). Citer : Score et seuil d'alerte, RUL par apprentissage profond, Calibration, Forecasting metrics.
+- **Tags** : crée `lstm`, `domain-adaptation`, `conformal-prediction`, `uncertainty` s'ils manquent, un commit.
+- **Liens retour, liens seulement** : depuis les notions du chantier qui les appellent (RUL par apprentissage profond, Anomalies multivariées par apprentissage profond, Maintenance prédictive avec peu de pannes, Score et seuil d'alerte), vers les trois nouvelles notions. Ne touche à aucune autre page existante.
+- Vérifie l'amont et cite des sources pour tout chiffre ; un fait non vérifié se signale.
+
+## Lot 8 — Correctif BrainKit : les fichiers orphelins de la carte (vague 5)
+
+Ce lot ne touche **pas** les pages du brain. Il travaille dans le dépôt BrainKit.
+
+- **Problème.** Quand un fichier de la carte (`AI/index/carte/<Dossier>.md`) se scinde en « - 1 sur 2 », « - 2 sur 2 », l'ancien fichier devient orphelin. `build_carte.py` ne supprime jamais, et son `--check` échoue tant que l'orphelin existe. Deux lots du chantier ont dû faire un `git rm` à la main.
+- **Étapes.**
+  1. Clone `git@github.com-perso:floSa/BrainKit.git` dans `~/Projets/BrainKit` s'il est absent. Vérifie sa config git locale : même identité (gmail), mêmes règles de commit (petits commits, aucun co-auteur, push régulier).
+  2. Lis seulement le générateur de la carte (grep, pas de lecture entière) et ses tests.
+  3. Écris d'abord un test qui échoue : un orphelin dans le dossier généré, qui doit être supprimé en écriture, et signalé par `--check` (code 2) sans être supprimé.
+  4. Corrige le générateur : en écriture, il supprime les fichiers du dossier généré qu'il ne produit plus. Il ne touche **jamais** un fichier hors de ce dossier ni un fichier qui ne porte pas sa marque « Généré par ». Décide si la suppression est opt-in ; justifie ton choix dans le commit.
+  5. Fais passer toute la batterie du kit. Commit et push dans BrainKit.
+  6. Reporte à la main les fichiers modifiés dans la copie figée `AI/scripts/brainkit/generer/` du DevBrain, et consigne-le dans `AI/scripts/brainkit/FIGE.md` comme les reports précédents. Vérifie que la copie est identique au kit. Clôture avec `cloturer-brain`.
+- Aucune page du brain n'est modifiée. Si tu dois en toucher une, arrête-toi et demande.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -162,3 +188,5 @@ Six pages.
 - [x] Lot 4 — maintenance, concepts
 - [x] Lot 5 — maintenance, outils et offres
 - [x] Lot 6 — patterns, rules, bord d'usine
+- [ ] Lot 7 — notions transverses (LSTM, adaptation de domaine, prédiction conforme)
+- [ ] Lot 8 — correctif BrainKit, fichiers orphelins de la carte
