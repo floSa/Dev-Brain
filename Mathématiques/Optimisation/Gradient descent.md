@@ -51,6 +51,7 @@ tags: [optimization, gradient-descent]
 - [[Régularisation]] — l'objectif pénalisé se minimise par descente de (sous-)gradient.
 - [[Régression linéaire]] — alternative itérative aux équations normales quand $X$ est grand.
 - [[Gradient Boosting (GBDT)]] — descente de gradient dans l'espace des fonctions (boosting).
+- [[Rétropropagation et différentiation automatique]] — le calcul du gradient lui-même, en une passe arrière, sur des millions de paramètres.
 
 ## Pour aller plus loin
 
