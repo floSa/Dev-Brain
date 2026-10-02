@@ -40,6 +40,7 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 <!-- AUTO:START -->
 ### Notions
 - [[Adam optimizer]] — domaines : data-sci, ml-eng
+- [[Apprentissage contrastif]] — domaines : ml-eng, ai-eng
 - [[Architectures hybrides LLM]] — domaines : ml-eng, ai-eng
 - [[Attention linéaire]] — domaines : ml-eng, ai-eng
 - [[Attention Residuals]] — domaines : ml-eng, ai-eng
@@ -60,9 +61,12 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - [[Mixed precision]] — domaines : ml-eng
 - [[Mixture of Experts]] — domaines : ml-eng, ai-eng
 - [[Multi-head Latent Attention]] — domaines : ml-eng, ai-eng
+- [[Méta-apprentissage et few-shot learning]] — domaines : ml-eng, ai-eng
+- [[Normalisation et initialisation des réseaux]] — domaines : ml-eng
 - [[Positional encoding]] — domaines : ml-eng, ai-eng
 - [[Pruning]] — domaines : ml-eng, ai-eng
 - [[Quantization]] — domaines : ml-eng, ai-eng
+- [[Rétropropagation et différentiation automatique]] — domaines : ml-eng, data-sci
 - [[Self-attention]] — domaines : ml-eng, ai-eng
 - [[Speech models]] — domaines : ml-eng, ai-eng
 - [[State Space Models]] — domaines : ml-eng, ai-eng

@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 982,
+  "count": 987,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -252,6 +252,7 @@
       "JAX",
       "Kornia",
       "PyTorch",
+      "Rétropropagation et différentiation automatique",
       "TensorFlow"
     ],
     "automl": [
@@ -875,6 +876,7 @@
       "Detectron2",
       "Diffusion models",
       "Distillation",
+      "Double descente et généralisation des grands modèles",
       "Détection d'objets",
       "EasyOCR",
       "Entraînement distribué",
@@ -894,6 +896,8 @@
       "Metric learning & ré-identification",
       "Mixed precision",
       "Mixture of Experts",
+      "Méta-apprentissage et few-shot learning",
+      "Normalisation et initialisation des réseaux",
       "OCR",
       "PaddleOCR",
       "Perceptron et MLP",
@@ -905,6 +909,7 @@
       "Q-learning and DQN",
       "Quantization",
       "Rendu neuronal 3D & estimation de profondeur",
+      "Rétropropagation et différentiation automatique",
       "Scaling laws",
       "Segment Anything (SAM)",
       "Segmentation",
@@ -1420,7 +1425,8 @@
     "gradient-descent": [
       "Adam optimizer",
       "Gradient descent",
-      "Optimisation"
+      "Optimisation",
+      "Rétropropagation et différentiation automatique"
     ],
     "graph-db": [
       "Apache AGE",
@@ -1733,6 +1739,7 @@
       "Optimisation"
     ],
     "learning-theory": [
+      "Double descente et généralisation des grands modèles",
       "Generalization bounds",
       "Mathématiques",
       "No Free Lunch theorem",
@@ -1857,6 +1864,7 @@
       "Modèles de langage",
       "Multi-Token Prediction",
       "Multi-agent systems",
+      "Méta-apprentissage et few-shot learning",
       "NeMo Guardrails",
       "Ollama",
       "OmniRoute",
@@ -2162,6 +2170,7 @@
       "Redpanda"
     ],
     "metric-learning": [
+      "Apprentissage contrastif",
       "Metric learning & ré-identification"
     ],
     "metrics": [
@@ -2194,6 +2203,7 @@
       "Apprentissage profond",
       "DeepSpeed",
       "Mixed precision",
+      "Normalisation et initialisation des réseaux",
       "accelerate"
     ],
     "mixture-of-experts": [
@@ -2383,6 +2393,7 @@
       "Régression et classification multi-sorties"
     ],
     "multimodal": [
+      "Apprentissage contrastif",
       "Claude Video",
       "ColPali",
       "Image generation",
@@ -2606,6 +2617,7 @@
       "Mathématiques",
       "Maximal Update Parametrization",
       "Newton & quasi-Newton",
+      "Normalisation et initialisation des réseaux",
       "Optimal transport",
       "Optimisation",
       "Optimisation combinatoire",
@@ -2978,6 +2990,7 @@
     ],
     "regularization": [
       "Augmentation d'images",
+      "Double descente et généralisation des grands modèles",
       "Régularisation",
       "Vector norms"
     ],
@@ -3047,6 +3060,7 @@
     ],
     "representation-learning": [
       "Apprentissage auto-supervisé en vision",
+      "Apprentissage contrastif",
       "Autoencodeurs",
       "Graph Neural Networks",
       "Metric learning & ré-identification",
@@ -3350,6 +3364,7 @@
     ],
     "self-supervised": [
       "Apprentissage auto-supervisé en vision",
+      "Apprentissage contrastif",
       "Modèles de fondation vision"
     ],
     "semantic-search": [
@@ -3747,6 +3762,7 @@
       "Sniffnet"
     ],
     "transfer-learning": [
+      "Méta-apprentissage et few-shot learning",
       "Transfer learning vision",
       "Vision",
       "timm",
@@ -17407,6 +17423,45 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage profond/Apprentissage contrastif.md",
+      "nom": "Apprentissage contrastif",
+      "alias": [
+        "Contrastive learning",
+        "apprentissage par contraste",
+        "perte contrastive",
+        "InfoNCE",
+        "NT-Xent",
+        "SimCLR",
+        "MoCo",
+        "CLIP",
+        "BYOL",
+        "VICReg",
+        "SimSiam",
+        "SigLIP",
+        "négatifs",
+        "collapse de représentation",
+        "température"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "self-supervised",
+        "representation-learning",
+        "metric-learning",
+        "multimodal"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage profond/Apprentissage profond.md",
       "nom": "Apprentissage profond",
       "alias": [
@@ -18170,6 +18225,86 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage profond/Méta-apprentissage et few-shot learning.md",
+      "nom": "Méta-apprentissage et few-shot learning",
+      "alias": [
+        "Méta-apprentissage",
+        "meta-learning",
+        "learning to learn",
+        "apprendre à apprendre",
+        "few-shot learning",
+        "apprentissage à partir de peu d'exemples",
+        "one-shot learning",
+        "MAML",
+        "Reptile",
+        "réseaux prototypiques",
+        "prototypical networks",
+        "matching networks",
+        "apprentissage en contexte",
+        "in-context learning",
+        "épisodes",
+        "N-way K-shot"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "transfer-learning",
+        "deep-learning",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Normalisation et initialisation des réseaux.md",
+      "nom": "Normalisation et initialisation des réseaux",
+      "alias": [
+        "Normalisation des réseaux",
+        "initialisation des poids",
+        "BatchNorm",
+        "batch normalization",
+        "LayerNorm",
+        "layer normalization",
+        "GroupNorm",
+        "group normalization",
+        "RMSNorm",
+        "pré-norme",
+        "post-norme",
+        "pre-LN",
+        "post-LN",
+        "Xavier",
+        "Glorot",
+        "initialisation de He",
+        "Kaiming",
+        "internal covariate shift",
+        "QK-norm"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "deep-learning",
+        "mixed-precision",
+        "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage profond/Positional encoding.md",
       "nom": "Positional encoding",
       "alias": [
@@ -18333,6 +18468,50 @@
         "model-compression",
         "deep-learning",
         "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Rétropropagation et différentiation automatique.md",
+      "nom": "Rétropropagation et différentiation automatique",
+      "alias": [
+        "Rétropropagation",
+        "rétropropagation du gradient",
+        "backpropagation",
+        "backprop",
+        "différentiation automatique",
+        "automatic differentiation",
+        "autodiff",
+        "mode inverse",
+        "reverse-mode AD",
+        "mode avant",
+        "forward-mode AD",
+        "gradients qui disparaissent",
+        "gradients qui explosent",
+        "vanishing gradient",
+        "exploding gradient",
+        "gradient clipping",
+        "torch.autograd",
+        "jax.grad",
+        "no_grad",
+        "detach",
+        "produit hessienne-vecteur"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "autograd",
+        "deep-learning",
+        "gradient-descent"
       ],
       "alternatives": null,
       "complements": null,
@@ -25660,6 +25839,42 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Théorie de l'apprentissage/Double descente et généralisation des grands modèles.md",
+      "nom": "Double descente et généralisation des grands modèles",
+      "alias": [
+        "Double descente",
+        "double descent",
+        "deep double descent",
+        "model-wise double descent",
+        "epoch-wise double descent",
+        "seuil d'interpolation",
+        "interpolation threshold",
+        "surparamétrisation",
+        "overparameterization",
+        "benign overfitting",
+        "surapprentissage bénin",
+        "interpolation",
+        "multiple descent"
+      ],
+      "role": "notion",
+      "categorie": "math/theorie-apprentissage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "learning-theory",
+        "deep-learning",
+        "regularization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Mathématiques/Théorie de l'apprentissage/Generalization bounds.md",
