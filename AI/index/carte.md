@@ -1,0 +1,90 @@
+# Carte — DevBrain
+
+> Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
+> 923 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+
+- **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
+- **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
+  - Administration — 7 briques · 1 comparatif
+  - Bases de graphes — 7 briques · 1 notion · 1 comparatif
+  - Recherche — 11 briques · 3 notions · 1 comparatif
+  - Relationnel — 6 briques · 1 comparatif
+  - Vectoriel — 11 briques · 2 notions · 1 comparatif
+- **Calcul distribué** — 7 briques · 1 comparatif → [détail](carte/Calcul%20distribu%C3%A9.md)
+- **Data & pipelines** — 85 briques · 15 notions · 14 comparatifs → [détail](carte/Data%20%26%20pipelines.md)
+  - DataFrames — 5 briques · 1 comparatif
+  - Données industrielles — 6 briques · 1 notion · 1 comparatif
+  - Fiabilité des données — 5 briques · 5 notions · 2 comparatifs
+  - Formats de fichiers et de tables — 5 briques · 1 notion
+  - Ingestion de données — 7 briques · 2 notions · 1 comparatif
+  - Messagerie — 5 briques · 1 notion · 1 comparatif
+  - Orchestration — 6 briques · 1 comparatif
+  - Parsing — 17 briques · 1 notion · 1 comparatif
+  - Scraping — 10 briques · 1 notion · 1 comparatif
+  - Visualisation — 5 briques · 1 comparatif
+- **Design & diagrammes** — 8 briques · 2 comparatifs → [détail](carte/Design%20%26%20diagrammes.md)
+  - Diagrammes — 6 briques · 1 comparatif
+- **DevOps** — 16 briques · 3 notions · 3 comparatifs → [détail](carte/DevOps.md)
+  - Conteneurs & orchestration — 8 briques · 1 notion · 2 comparatifs
+  - Forges & CI-CD — 6 briques · 1 notion · 1 comparatif
+- **Documents** — 2 briques → [détail](carte/Documents.md)
+- **Interfaces & apps data** — 4 briques · 2 comparatifs → [détail](carte/Interfaces%20%26%20apps%20data.md)
+- **LLM & IA générative** — 97 briques · 67 notions · 11 comparatifs → [1/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md) · [2/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+  - Agents — 12 briques · 12 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Agents de code — 13 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Assistants — 8 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Fine-tuning — 5 briques · 9 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Modèles de langage — 4 briques · 10 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Mémoire des agents — 6 briques · 1 notion · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Observabilité des LLM — 4 briques · 1 notion · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Passerelles — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - RAG & retrieval — 9 briques · 12 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+  - Runtimes — 9 briques · 6 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+  - Sortie typée — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+  - Text-to-SQL — 5 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+  - Évaluation — 8 briques · 7 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+- **Machine Learning** — 105 briques · 172 notions · 16 comparatifs → [1/3](carte/Machine%20Learning%20-%201%20sur%203.md) · [2/3](carte/Machine%20Learning%20-%202%20sur%203.md) · [3/3](carte/Machine%20Learning%20-%203%20sur%203.md)
+  - Apprentissage par renforcement — 6 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Apprentissage profond — 8 briques · 33 notions → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Embeddings & encodeurs — 6 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Interprétabilité — 7 briques · 6 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - Monitoring de modèles — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
+  - NLP — 6 briques · 7 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Non supervisé — 4 briques · 18 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Plateformes data & IA — 9 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Recherche d'hyperparamètres — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Serving — 11 briques · 2 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Socle — 2 briques · 23 notions → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Suivi d'expériences — 7 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
+  - Séries temporelles — 7 briques · 13 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
+  - Tabulaire — 6 briques · 15 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
+  - Vision — 9 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
+  - Évaluation de modèles — 2 briques · 9 notions → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
+- **Mathématiques** — 1 brique · 27 notions · 1 comparatif → [détail](carte/Math%C3%A9matiques.md)
+  - Algèbre linéaire — 6 notions
+  - Optimisation — 1 brique · 8 notions · 1 comparatif
+  - Théorie de l'apprentissage — 6 notions
+  - Théorie de l'information — 7 notions
+- **Médias** — 4 briques → [détail](carte/M%C3%A9dias.md)
+- **Observabilité** — 12 briques · 3 notions → [détail](carte/Observabilit%C3%A9.md)
+- **Outils de développement** — 24 briques · 3 notions · 4 comparatifs → [détail](carte/Outils%20de%20d%C3%A9veloppement.md)
+  - Notebooks — 5 briques · 1 notion
+  - Qualité du code — 4 briques · 1 notion · 1 comparatif
+- **Patterns** — 5 patterns → [détail](carte/Patterns.md)
+- **Rules** — 5 règles → [détail](carte/Rules.md)
+- **Réseau** — 2 briques → [détail](carte/R%C3%A9seau.md)
+- **Signal & audio** — 3 briques · 5 notions · 1 comparatif → [détail](carte/Signal%20%26%20audio.md)
+  - Traitement — 2 briques · 5 notions · 1 comparatif
+- **Statistiques & inférence** — 10 briques · 45 notions · 1 comparatif → [détail](carte/Statistiques%20%26%20inf%C3%A9rence.md)
+  - Analyse factorielle — 2 briques · 9 notions
+  - Bayésien — 3 briques · 6 notions
+  - Méthodes causales — 1 brique · 4 notions
+  - Probabilités — 8 notions
+  - Tests & estimation — 4 briques · 14 notions · 1 comparatif
+- **Stockage** — 9 briques · 1 notion · 1 comparatif → [détail](carte/Stockage.md)
+- **Sécurité** — 17 briques · 9 notions · 3 comparatifs → [détail](carte/S%C3%A9curit%C3%A9.md)
+  - Analyse de vulnérabilités — 5 briques · 1 notion · 1 comparatif
+  - Authentification — 4 briques · 1 notion · 1 comparatif
+  - Systèmes IA — 4 briques · 6 notions · 1 comparatif
+- **Web & API** — 10 briques · 3 notions · 1 comparatif → [détail](carte/Web%20%26%20API.md)
+  - Reverse proxies — 4 briques · 1 notion · 1 comparatif
