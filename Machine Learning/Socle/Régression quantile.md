@@ -75,6 +75,7 @@ tags: [regression, supervised, linear-model, non-parametric]
 - [[GLM]] — l'autre extension de la régression linéaire, côté lois non normales plutôt que côté quantiles.
 - [[Détection d'outliers univariée]] — les quantiles comme outil de détection (règle de l'IQR).
 - [[Intervalles de confiance]] — à ne pas confondre : incertitude sur un **paramètre**, pas sur une prédiction future.
+- [[Prédiction conforme]] — CQR part de deux régressions quantiles et leur ajoute une correction conforme pour une couverture garantie à taille finie.
 
 ## Pour aller plus loin
 

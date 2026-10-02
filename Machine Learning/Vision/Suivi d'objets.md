@@ -46,6 +46,7 @@ tags: [object-tracking, object-detection, computer-vision, deep-learning]
 - [[Metric learning & ré-identification]] — fournit l'embedding d'apparence qui rend DeepSORT robuste.
 - [[Estimation de pose]] — le *pose tracking* applique la même logique d'association aux squelettes.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
+- [[Modèles de Markov cachés et filtre de Kalman]] — le filtre de Kalman qui prédit la position de chaque piste : état, dynamique et bruits y sont posés.
 
 ## Pour aller plus loin
 
