@@ -100,6 +100,7 @@ Ne pas confondre ces **modèles d'état profonds** avec les « state-space model
 - [[statsmodels]] — `tsa.statespace` et régimes de Markov.
 - [[pmdarima]] — AutoARIMA qui enveloppe `SARIMAX` de statsmodels, donc ajusté par filtre de Kalman.
 - [[darts]] — propose un `KalmanFilter` dans `darts.models.filtering`.
+- [[Modèles graphiques probabilistes]] — le HMM en est le cas particulier à structure de chaîne ; la page décrit les graphes généraux.
 
 ## Pour aller plus loin
 
