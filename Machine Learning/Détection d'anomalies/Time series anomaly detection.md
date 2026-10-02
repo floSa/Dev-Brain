@@ -60,6 +60,14 @@ tags: [timeseries, anomaly-detection]
 - [[Imbalanced classification]] — anomalies = classe rare, mêmes pièges d'évaluation.
 - [[DBSCAN]] — détection d'outliers par densité, transposable aux sous-séquences.
 - Voir aussi : [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
+- [[Évaluer une détection d'anomalies]] — métriques, point-adjust et son biais, VUS-PR.
+- [[Jeux de données d'anomalies]] — les jeux de séries (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et leur licence.
+- [[Détection de ruptures]] — changement de régime, à distinguer de l'anomalie et de la dérive.
+- [[Contrôle statistique de procédé (SPC)]] — les cartes de contrôle, ancêtres de la détection sur séries.
+- [[Détection d'anomalies en ligne]] — scorer chaque point à son arrivée, avec une mémoire bornée.
+- [[Anomalies multivariées par apprentissage profond]] — LSTM-AE, USAD, TranAD, Anomaly Transformer, et ce que TSB-AD en dit.
+- [[Foundation models et anomalies de séries]] — résidus de prévision zero-shot.
+- Offres d'éditeur : [[Siemens Insights Hub]] (module Predict), [[Amazon Lookout for Equipment]] (arrêt annoncé le 2026-10-07), [[Cognite Data Fusion]] (source de séries contextualisées ; sa fiche ne décrit pas de détection d'anomalies native).
 - [[Modèles de Markov cachés et filtre de Kalman]] — un état latent donne un score d'anomalie (innovation du filtre, vraisemblance d'un HMM) ; la page cible présente cet usage comme un raisonnement, non appuyé par une source lue.
 
 ## Pour aller plus loin
