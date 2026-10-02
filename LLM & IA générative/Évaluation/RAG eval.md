@@ -60,6 +60,8 @@ tags: [rag-eval, llm-eval, rag, retrieval]
 - [[LLM-as-judge]] — le mécanisme sous-jacent des métriques reference-free.
 - [[LLM eval metrics]] — l'éval LLM générale, dont le RAG eval est la spécialisation retrieval.
 - [[RAG benchmarks]] — les suites standardisées (RGB, CRAG, RAGBench, RAGTruth…) qui appliquent ces métriques à un jeu figé et stressent les modes de défaillance.
+- [[Hallucinations des LLM]] — typologie, mesure et limites des détecteurs derrière la fidélité
+- [[RAG agentique]] — évaluer résultat, trajectoire et coût d'un système multi-étapes
 
 ## Pour aller plus loin
 

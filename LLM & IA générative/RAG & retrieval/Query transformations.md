@@ -55,6 +55,7 @@ tags: [query-transformation, rag, retrieval, llm]
 - [[Routing and cascading]] — souvent enchaîné : transformer puis aiguiller.
 - [[RAG eval]] — pour décider si une transformation aide vraiment.
 - [[embeddings]] — ce que HyDE manipule (embedding d'une réponse hypothétique).
+- [[RAG agentique]] — la reformulation décidée par le modèle en cours de recherche, avec ses pièges
 
 ## Pour aller plus loin
 

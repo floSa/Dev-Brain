@@ -56,6 +56,7 @@ tags: [llm-eval, model-evaluation, llm, nlp]
 - [[Code and math benchmarks]] — le cas « éval par exécution ».
 - [[Perplexity]] — la métrique intrinsèque, complémentaire.
 - [[LLM observability]] — les mêmes métriques, mais en ligne sur le trafic réel.
+- [[Hallucinations des LLM]] — les métriques de factualité et de fidélité, et les limites des détecteurs
 
 ## Pour aller plus loin
 
