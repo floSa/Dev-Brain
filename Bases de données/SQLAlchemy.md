@@ -72,3 +72,4 @@ Chaque SGBD est piloté par un dialecte et un driver. Écrit par Mike Bayer.
 
 - [[ORM]] — la notion du dossier
 - [[Comparatif - ORM]] — ce qui départage les ORM du dossier
+- [[Programmation asynchrone en Python]] — la notion : coroutines, tâches, annulation, bloquer la boucle, GIL

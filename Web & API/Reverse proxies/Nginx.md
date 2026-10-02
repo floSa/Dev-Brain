@@ -96,3 +96,4 @@ Serveur web et reverse proxy en C, piloté par des fichiers texte (`nginx.conf`)
 - [[Reverse proxies]] — le hub du sous-domaine
 - [[Comparatif - Reverse proxies]] — ce qui départage les quatre proxys : configuration, découverte, certificats, performance, exploitation
 - [[Reverse proxy et TLS]] — la notion : terminaison TLS, ACME contre autorité interne, en-têtes, Ingress et Gateway API
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
