@@ -50,6 +50,7 @@ tags: [vit, transformers, computer-vision, deep-learning]
 - [[Modèles de fondation vision]] — CLIP et DINOv2 reposent sur un backbone ViT.
 - [[Apprentissage auto-supervisé en vision]] — MAE et DINO pré-entraînent précisément des ViT sans étiquettes.
 - [[Vision par ordinateur]] — le cadre d'ensemble, où ViT et CNN sont les deux ossatures.
+- [[Détection d'anomalies visuelle]] — Dinomaly reconstruit les features d'un encodeur ViT gelé, et son coût de calcul est celui du ViT ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 
