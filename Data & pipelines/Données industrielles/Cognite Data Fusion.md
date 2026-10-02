@@ -36,7 +36,7 @@ et expertise métier pour relier ces données entre elles. Tout sort par une API
 SDK (Python, JavaScript, Spark), des connecteurs OData pour Excel et Power BI et une intégration
 Grafana ; un service de fonctions héberge du code Python. La plateforme « tourne dans le
 cloud » chez un fournisseur public, en locataire partagé ou en cluster dédié. Le SDK Python
-est ouvert (licence Apache-2.0) ; la plateforme, elle, est propriétaire.
+est ouvert (licence Apache-2.0) ; la plateforme, elle, reste fermée.
 
 ## Prendre si / Écarter si
 

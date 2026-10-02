@@ -23,7 +23,7 @@ url_repo:
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Application | propriétaire | auto-hébergeable ou managé | production | amont non sondé |
+| Application | propriétaire | self-hébergé ou managé | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -37,7 +37,7 @@ usuels sont inclus dans la licence. L'utilisateur nettoie, rapproche et annote l
 dans l'interface, puis publie des analyses. Seeq propose aussi **Data Lab**, un espace de
 notebooks Python, et met en avant la surveillance d'état (santé de pompes et de vannes,
 détection précoce de dérive de capteurs sur turbines à gaz). L'éditeur se présente comme une
-« plateforme d'IA industrielle ». Propriétaire, vendu sur contrat.
+« plateforme d'IA industrielle ». Vendu sur contrat.
 
 ## Prendre si / Écarter si
 
