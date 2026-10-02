@@ -20,6 +20,7 @@ tags: [model-evaluation, classification, regression, ranking, calibration, resam
 - **Ordonner et chiffrer ne sont pas la même compétence** : un modèle peut très bien classer et produire des probabilités fausses. [[Calibration]] est la vérification à faire dès qu'un score devient une décision chiffrée — un seuil, un coût, une priorisation. C'est le contrôle le plus souvent omis du dossier.
 - **Le déséquilibre des classes casse les métriques avant de casser les modèles** : [[Imbalanced classification]], rangé dans [[Tabulaire]] parce que son traitement est un travail de pipeline, pose le problème que ce dossier mesure.
 - **Ce dossier mesure un modèle donné ; il ne le borne pas a priori.** C'est la frontière avec [[Théorie de l'apprentissage]], qui répond à « de quoi la généralisation dépend-elle » avec des bornes trop lâches pour dimensionner quoi que ce soit. Et il ne mesure pas non plus une *application* LLM, qui relève de [[Évaluation]] dans [[LLM & IA générative]] — juger une réponse par un juge n'a rien à voir avec compter des vrais positifs.
+- **Un bon chiffre moyen peut cacher un groupe sacrifié.** [[Équité et biais algorithmique]] n'ajoute pas une métrique : ses trois définitions courantes (parité démographique, égalité des chances, calibration par groupe) sont incompatibles entre elles hors cas particuliers, donc la première décision est un choix de société avant d'être un réglage. La page porte aussi, en une section, ce que l'AI Act exige des données, sans conseil juridique.
 
 ## Choisir
 
@@ -32,6 +33,7 @@ tags: [model-evaluation, classification, regression, ranking, calibration, resam
 - Un score qu'on va transformer en euros, en priorité ou en alerte → [[Calibration]].
 - Calculer une métrique standard sans la réimplémenter → [[evaluate]] ; scorer un étiquetage de séquence au niveau entité → [[seqeval]].
 - Comparer des centaines de configurations plutôt qu'une → [[Optimisation d'hyperparamètres]] et [[Suivi d'expériences]].
+- Un écart de performance ou de décisions entre groupes de personnes → [[Équité et biais algorithmique]].
 
 <!-- AUTO:START -->
 ### Notions
