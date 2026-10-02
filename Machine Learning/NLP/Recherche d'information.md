@@ -53,6 +53,7 @@ tags: [nlp, information-retrieval, retrieval, hybrid-search, ranking, semantic-s
 - [[RAG]] / [[Advanced RAG]] — l'application phare en IA générative.
 - [[Ranking metrics]] — l'évaluation d'un ordre de pertinence.
 - [[Traitement du langage naturel]] — page chapeau du sous-domaine.
+- Voir aussi : [[Learning to rank]]
 
 ## Pour aller plus loin
 
