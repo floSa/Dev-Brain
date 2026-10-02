@@ -58,6 +58,8 @@ tags: [inference-optimization, inference, llm, gpu]
 - [[Architectures hybrides LLM]] — attaque le même goulot à l'**architecture** : la majorité des couches ne portent plus de cache croissant.
 - [[Calculs adaptatifs]] — moduler la profondeur traversée selon la difficulté ; prometteur mais peu déployé (variance de latence).
 - Runtimes qui implémentent tout ceci : [[vLLM]] (PagedAttention), [[SGLang]] (RadixAttention), [[TGI]] (continuous batching), [[TensorRT-LLM]].
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel et pièges de la quantification pour servir un LLM
+- [[Contexte long]] — le coût mémoire du cache KV selon la longueur et ce que valent les longueurs annoncées
 
 ## Pour aller plus loin
 

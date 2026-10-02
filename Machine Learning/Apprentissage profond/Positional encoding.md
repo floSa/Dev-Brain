@@ -46,6 +46,7 @@ tags: [positional-encoding, transformers, attention]
 - [[Multi-head Latent Attention]] — RoPE est incompatible avec la compression latente telle quelle, d'où le **découplage** d'une partie des dimensions.
 - [[State Space Models]] — un état récurrent encode la position implicitement ; Mamba-3 établit le pont entre SSM à état complexe et RoPE dépendant des données.
 - [[Attention linéaire]] — même remarque : la position vient de l'ordre des mises à jour, pas d'un encodage explicite.
+- [[Contexte long]] — étendre la longueur (interpolation de positions, YaRN) et ce que valent les longueurs annoncées
 
 ## Pour aller plus loin
 

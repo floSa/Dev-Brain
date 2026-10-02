@@ -56,6 +56,7 @@ tags: [context-engineering, llm, agents]
 - [[Prompt engineering]] — travaille la formulation ; complémentaire de la gestion du contexte.
 - [[prompt-caching]], [[Reliability patterns]] — leviers complémentaires.
 - Mise en œuvre fichée : [[Headroom]] — comprime sorties d'outils, logs et chunks avant l'appel, en gardant l'original récupérable à la demande ; la compression comme alternative à la sélection.
+- [[Contexte long]] — le coût mémoire de la fenêtre et ce que valent les longueurs annoncées (RULER, NoLiMa)
 
 ## Pour aller plus loin
 

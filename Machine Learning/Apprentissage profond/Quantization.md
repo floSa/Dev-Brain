@@ -67,6 +67,7 @@ tags: [quantization, model-compression, deep-learning, inference-optimization]
 - [[vLLM]] — serving GPU haut débit avec quantization AWQ/GPTQ/FP8.
 - [[llama.cpp]] — quantization agressive GGUF/K-quants pour l'inférence locale.
 - Voir aussi : [[OpenVINO]], [[Inférence en bordure - modèles sur du matériel d'atelier]].
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — la version pour le serving de LLM : poids, activations et cache KV, GGUF, support par les moteurs, pièges
 
 ## Pour aller plus loin
 
