@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1021 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1036 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -450,9 +450,18 @@
 - **Label Studio** — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes.
 
 ### ml/anomalie
+- **aeon** — Boîte à outils Python compatible scikit-learn pour l'apprentissage sur séries temporelles — classification, régression, clustering, prévision, segmentation et anomalies ; son module d'anomalies est modeste (une quinzaine de détecteurs fenêtrés ou à distance, aucun réseau profond) : l'intérêt est de rester dans la même API que le reste.
+- **Azure AI Anomaly Detector** — Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.
+- **DeepOD** — Bibliothèque Python de détecteurs d'anomalies profonds, tabulaires et séries temporelles (Deep SVDD, REPEN, RDP, GOAD, USAD, TimesNet, Anomaly Transformer, DCdetector…), sous une API fit / decision_function à la PyOD, avec un banc d'essai de recherche ; PyTorch, dépendances épinglées anciennes et dernière release en 2023.
 - **Jeux de données d'anomalies** — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
+- **Kats** — Boîte à outils Python de Meta pour l'analyse de séries temporelles — détection (CUSUM, BOCPD, statistiques robustes, outliers), prévision, extraction de features — mais dernière version publiée en 2022 et paquet PyPI aux dépendances épinglées, classé alpha.
+- **Merlion** — Bibliothèque Python de Salesforce « time series intelligence » — prévision, détection d'anomalies et de ruptures sous une interface commune, avec ensembles, post-traitement des scores, AutoML et benchmark — dépôt archivé, plus maintenu depuis la 2.0.4 (juin 2024).
+- **Orion** — Bibliothèque Python du Data to AI Lab (MIT) de détection d'anomalies non supervisée sur séries temporelles — pipelines « vérifiés » prêts à l'emploi (AER, TadGAN, LSTM à seuil dynamique, autoencodeurs, matrix profile…), benchmark intégré, statut officiel pre-alpha.
 - **PyOD** — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
+- **ruptures** — Bibliothèque Python de détection de ruptures hors ligne — segmente un signal en régimes avec des algorithmes de recherche (PELT, Binseg, BottomUp, Window, Dynp, KernelCPD) combinables à des fonctions de coût (L2, RBF, normale, rang…) ; elle rend des points de changement, pas des scores d'anomalie.
 - **STUMPY** — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
+- **time-series-anomaly-detector** — Bibliothèque Python open source de Microsoft, issue des algorithmes du service Azure AI Anomaly Detector — détecteurs univariés (résidu spectral, ESD, z-score) et détecteur multivarié à attention sur graphe, exécutés en local ; la voie de sortie que Microsoft recommande après le retrait du service.
+- **TSB-AD** — Banc d'essai et bibliothèque Python de détection d'anomalies en séries temporelles (NeurIPS 2024) — 1 070 séries univariées et multivariées tirées de 40 jeux, une quarantaine d'algorithmes statistiques, neuronaux et modèles de fondation sous une même fonction, et VUS-PR comme métrique de référence ; sert à comparer et à évaluer, pas à déployer.
 
 ### ml/apprentissage-profond
 - **accelerate** — Couche HuggingFace qui rend une boucle PyTorch distribuée sans la réécrire — même script du laptop au cluster multi-GPU/multi-nœuds, précision mixte (jusqu'à fp8), FSDP et DeepSpeed à la config.
@@ -912,9 +921,14 @@
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
 ### ml/anomalie
+- **Anomalies multivariées par apprentissage profond** — domaines : data-sci, ml-eng · alias : Deep learning pour anomalies multivariées, USAD, TranAD, Anomaly Transformer, LSTM-AE, TimesNet
+- **Contrôle statistique de procédé (SPC)** — domaines : data-sci, ml-eng · alias : SPC, Statistical process control, Maîtrise statistique des procédés, Cartes de contrôle, Control charts, Carte de Shewhart, Cartes EWMA, Capabilité de procédé, Cpk, Western Electric, Average run length
+- **Détection d'anomalies en ligne** — domaines : data-sci, ml-eng, mlops · alias : Online anomaly detection, Streaming anomaly detection, Détection d'anomalies sur flux, Détection d'anomalies en streaming, Half-Space Trees, Random Cut Forest, RRCF
 - **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
 - **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
+- **Détection de ruptures** — domaines : data-sci, ml-eng · alias : Change point detection, Changepoint detection, Détection de points de rupture, Segmentation de séries temporelles, CUSUM, PELT, BOCPD
 - **Détection hors distribution (OOD)** — domaines : ml-eng, mlops, data-sci · alias : OOD, Out-of-distribution detection, Détection OOD, Entrée hors distribution
+- **Foundation models et anomalies de séries** — domaines : data-sci, ml-eng · alias : Détection d'anomalies zero-shot, Résidus de prévision zero-shot, TSFM pour anomalies, MOMENT, TimesFM
 - **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
 - **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
 - **One-Class SVM** — domaines : data-sci, ml-eng · alias : OCSVM, SVM à une classe, OneClassSVM, SGDOneClassSVM, Novelty detection
@@ -1364,6 +1378,7 @@
 
 ### ml/anomalie
 - **Comparatif - Détection d'anomalies** — —
+- **Comparatif - Détection d'anomalies en séries temporelles** — —
 
 ### ml/embeddings
 - **Comparatif - Embeddings** — —
