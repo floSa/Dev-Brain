@@ -2,7 +2,7 @@
 role: notion
 nom: Time series anomaly detection
 alias: [Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord]
-categorie: ml/series-temporelles
+categorie: ml/anomalie
 domaines: [data-sci, mlops]
 tags: [timeseries, anomaly-detection]
 ---
