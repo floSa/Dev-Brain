@@ -58,6 +58,7 @@ tags: [streaming, data-pipeline, idempotence]
 - [[Partitionnement & layout de données]] — gérer les petits fichiers générés en sortie de flux.
 - Alternative : batch incrémental planifié — plus simple à opérer quand la latence de quelques minutes est tolérable.
 - Voir aussi : [[Kafka]].
+- [[Détection d'anomalies en ligne]] — scorer chaque événement d'un flux à son arrivée, avec une mémoire bornée.
 
 ## Pour aller plus loin
 
