@@ -70,4 +70,5 @@ mais chaque modification repaie le coût de compilation. Depuis Python, l'accès
 ## Voir aussi
 
 - [[Inférence bayésienne]] · [[MCMC]] — les notions implémentées
+- [[Modèles à effets mixtes]] — la version bayésienne hiérarchique d'un modèle à effets aléatoires
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier

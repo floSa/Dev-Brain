@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 992 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 998 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1139,7 +1139,9 @@
 
 ### stats/causal
 - **Diff-in-Diff** — domaines : data-sci · alias : DiD, difference-in-differences, différence des différences, doubles différences
+- **Découverte causale** — domaines : data-sci · alias : causal discovery, structure learning causale, apprentissage de structure causale, causal structure learning, PC algorithm, algorithme PC, FCI, GES, greedy equivalence search, LiNGAM, NOTEARS, d-séparation, d-separation, CPDAG, classe d'équivalence de Markov, Markov equivalence class, varsortability, fidélité, faithfulness, suffisance causale
 - **Inférence causale** — domaines : data-sci · alias : causal inference, inférence causale, causalité, DAG, confounding, confondeur, backdoor, propensity score, score de propension
+- **Modélisation d'uplift** — domaines : data-sci · alias : uplift modeling, uplift, modélisation de l'uplift, effet incrémental, CATE, conditional average treatment effect, effet de traitement hétérogène, heterogeneous treatment effects, HTE, meta-learner, S-learner, T-learner, X-learner, R-learner, DR-learner, causal tree, arbre causal, causal forest, forêt causale, courbe de Qini, Qini, AUUC, ciblage marketing
 
 ### stats/experimentation
 - **A/B testing** — domaines : data-sci · alias : AB testing, test A/B, split testing, online controlled experiment, OCE, randomized experiment
@@ -1166,6 +1168,8 @@
 - **Intervalles de confiance** — domaines : data-sci · alias : confidence interval, confidence intervals, IC
 - **MANOVA et tests multivariés** — domaines : data-sci · alias : MANOVA, tests multivariés, multivariate analysis of variance, Hotelling, Hotelling T2, Wilks lambda, trace de Pillai
 - **Maximum de vraisemblance** — domaines : data-sci · alias : MLE, maximum likelihood estimation, maximum likelihood, vraisemblance maximale
+- **Modèles à effets mixtes** — domaines : data-sci · alias : mixed effects models, mixed models, modèles mixtes, modèles linéaires mixtes, LMM, linear mixed model, multilevel model, modèle multiniveau, modèle hiérarchique, random effects, effets aléatoires, random intercept, intercept aléatoire, random slope, pente aléatoire, REML, pseudo-réplication, pseudoreplication, partial pooling, lme4, MixedLM
+- **Prédiction conforme** — domaines : data-sci · alias : conformal prediction, conformal inference, inférence conforme, split conformal, conformal split, jackknife+, CV+, full conformal, ensembles de prédiction, prediction sets, intervalle de prédiction, distribution-free, couverture marginale, couverture conditionnelle, conformal risk control, adaptive conformal inference, ACI, MAPIE
 - **Test du khi-deux** — domaines : data-sci · alias : chi-squared, chi-square, khi2, test d'indépendance
 - **Test t et ANOVA** — domaines : data-sci · alias : t-test, ANOVA, test de Student, comparaison de moyennes
 - **Tests d'hypothèse** — domaines : data-sci · alias : hypothesis testing, test statistique, H0, significativité
@@ -1175,6 +1179,7 @@
 - **Chaînes de Markov** — domaines : data-sci · alias : Markov chains, propriété de Markov, Markov property
 - **Inégalités de concentration** — domaines : data-sci · alias : Concentration inequalities, Hoeffding, Chebyshev, inégalité de Markov
 - **Loi des grands nombres** — domaines : data-sci · alias : Law of large numbers, LGN, LLN
+- **Modèles de Markov cachés et filtre de Kalman** — domaines : data-sci · alias : HMM, hidden Markov model, modèle de Markov caché, Kalman filter, filtre de Kalman, state-space model, modèle à espace d'états, modèle d'état latent, Baum-Welch, Viterbi, forward-backward, EKF, UKF, extended Kalman filter, unscented Kalman filter, particle filter, filtre particulaire, RTS smoother, lisseur de Kalman, HSMM, linear Gaussian state-space model, LGSSM
 - **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
 - **Processus de Poisson** — domaines : data-sci · alias : Poisson process, processus ponctuel de Poisson
 - **Théorème central limite** — domaines : data-sci · alias : Central limit theorem, CLT, TCL
@@ -1460,6 +1465,7 @@
 - **Monitoring de modèles** — Savoir qu'un modèle déployé se dégrade avant que ses utilisateurs ne le disent — dérive, performance sans étiquettes, tests avant mise en production.
 - **Médias** — Produire, consommer et donner à lire des médias — de la dictée vocale au montage vidéo, jusqu'à la vidéo qu'un agent regarde.
 - **Mémoire des agents** — Garder ce qu'un agent a appris d'une session à l'autre — faits, graphe daté, contexte comprimé — sans envoyer les données chez un tiers.
+- **Méthodes causales** — Passer de « ces deux choses varient ensemble » à « celle-ci fait varier celle-là » — estimer un effet sans randomisation simple, par individu, ou retrouver le graphe qui le porte.
 - **NLP** — Les bibliothèques dont l'entrée est du texte sans génération — découper, étiqueter, classer, extraire, retrouver.
 - **Non supervisé** — Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.

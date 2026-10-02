@@ -3869,7 +3869,7 @@
   "release_tag": "CmdStanPy v1.3.0",
   "sonde_le": "2026-09-08"
  },
- "Statistiques & inférence/CausalImpact.md": {
+ "Statistiques & inférence/Méthodes causales/CausalImpact.md": {
   "amont": "github:WillianFuks/tfcausalimpact",
   "archive": false,
   "commit_le": "2025-01-13",

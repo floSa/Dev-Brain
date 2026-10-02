@@ -50,7 +50,7 @@ tags: [stochastic-process, markov, probability]
 - [[Processus de Poisson]] — chaîne de Markov à temps continu, à sauts (comptage).
 - [[Mouvement brownien]] — processus de Markov à temps et espace continus (diffusion).
 - [[Markov Decision Process]] — chaîne de Markov enrichie d'actions et de récompenses ; le cadre formel du reinforcement learning.
-- Modèles de Markov cachés (HMM) — états non observés derrière des émissions.
+- [[Modèles de Markov cachés et filtre de Kalman|Modèles de Markov cachés (HMM)]] — états non observés derrière des émissions.
 
 ## Pour aller plus loin
 
