@@ -410,6 +410,13 @@ valeurs disparues et ne sont pas reconduites.
   sous `math/` parce que ces pages se justifient toutes par l'inférence — et parce que les
   quatre piliers de « Mathématiques » sont l'algèbre linéaire, l'optimisation, la théorie de
   l'information et la théorie de l'apprentissage, pas la probabilité.
+- `stats/causal` — **dossier « Méthodes causales » ouvert le 2026-10-02** (5 pages pesantes,
+  libellé retenu par floSa ; « Causalité » écarté, alias de la notion « Inférence causale »).
+  Estimer ou retrouver un effet causal quand l'expérience randomisée simple ne suffit pas :
+  identification (DAG, backdoor), quasi-expériences (Diff-in-Diff, CausalImpact), effet
+  hétérogène par individu (uplift), graphe causal appris des données (découverte causale).
+  Distinct de `stats/experimentation` (concevoir et arrêter une expérience contrôlée) et de
+  `stats/inference` (conclure d'un échantillon déjà collecté, sans question d'intervention).
 - `stats/experimentation` — **ouvert au lot 4.** Concevoir une expérience contrôlée et décider
   quand l'arrêter : randomisation, réduction de variance, arrêt séquentiel, allocation
   dynamique. Distinct de `stats/inference`, qui teste une hypothèse sur un échantillon **déjà

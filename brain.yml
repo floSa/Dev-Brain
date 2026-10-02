@@ -1144,7 +1144,23 @@ axes:
               AVANCE la ou le manifold learning l APPREND. Les deux familles
               partagent le tag `dimensionality-reduction`.
           causal:
-            frontiere: "Sous le seuil : 3 pages, pas de dossier, donc pas de libelle."
+            libelle: "Méthodes causales"
+            motif: >
+              Ouvert au seuil le 2026-10-02 : 5 pages pesantes (Inference causale,
+              Diff-in-Diff, CausalImpact, plus les notions « Modelisation d uplift »
+              et « Decouverte causale »). Libelle retenu par floSa (conversation 86)
+              parmi « Methodes causales » et « Causalite » : le second est un alias
+              de la notion « Inference causale » (collision R5) et redoublerait le
+              nom d une page du dossier. « Methodes causales » ne redouble aucun nom
+              de page (verifie, insensible a la casse).
+            frontiere: >
+              Estimer ou retrouver un effet causal quand l experience randomisee
+              simple ne suffit pas : identification (DAG, backdoor), quasi-experiences
+              (Diff-in-Diff, CausalImpact), effet heterogene par individu (uplift),
+              graphe causal appris des donnees (decouverte causale). Distinct de
+              stats/experimentation (concevoir et arreter une experience controlee :
+              A/B, CUPED, bandits) et de stats/inference (conclure d un echantillon
+              deja collecte, sans question d intervention).
           probabilite:
             libelle: "Probabilités"
             motif: >
