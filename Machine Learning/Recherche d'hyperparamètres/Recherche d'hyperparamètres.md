@@ -28,6 +28,7 @@ tags: [hyperparameter-tuning, bayesian]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Optimisation bayésienne]] — domaines : data-sci, ml-eng
 - [[Optimisation d'hyperparamètres]] — domaines : data-sci, ml-eng
 
 ### Briques

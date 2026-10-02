@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 998 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1002 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -954,6 +954,7 @@
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
 
 ### ml/hyperopt
+- **Optimisation bayésienne** — domaines : data-sci, ml-eng · alias : Bayesian optimization, BO, Optimisation bayesienne, Optimisation de boîte noire, Black-box optimization, Expected improvement, GP-UCB, SMBO, Sequential model-based optimization, Tree-structured Parzen Estimator
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
 
 ### ml/interpretabilite
@@ -1052,6 +1053,8 @@
 - **Gaussian Process** — domaines : data-sci, ml-eng · alias : GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging
 - **GLM** — domaines : data-sci, ml-eng · alias : Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé
 - **k-NN** — domaines : data-sci, ml-eng · alias : KNN, k plus proches voisins, k-Nearest Neighbors, Plus proches voisins, KNeighborsClassifier, Apprentissage paresseux, Lazy learning
+- **Learning to rank** — domaines : data-sci, ml-eng · alias : LTR, Apprentissage du classement, Classement supervisé, LambdaMART, LambdaRank, RankNet, ListNet, RankSVM, pointwise, pairwise, listwise, Unbiased learning to rank, ULTR
+- **Méthodes à noyau** — domaines : data-sci, ml-eng · alias : Kernel methods, Méthodes à noyaux, Fonction noyau, Kernel ridge regression, Régression ridge à noyau, KRR, Random Fourier Features, Nyström, RKHS, Neural Tangent Kernel, NTK
 - **Naive Bayes** — domaines : data-sci, ml-eng · alias : Bayésien naïf, Classifieur bayésien naïf, GaussianNB, MultinomialNB, BernoulliNB, ComplementNB
 - **Perceptron et MLP** — domaines : data-sci, ml-eng · alias : Perceptron, MLP, Multi-Layer Perceptron, Perceptron multicouche, Réseau de neurones, Feedforward network, MLPClassifier
 - **Régression** — domaines : data-sci, ml-eng · alias : Regression, Régression supervisée, Modélisation de cible continue
@@ -1482,6 +1485,7 @@
 - **Qualité du code** — Contrôler du code Python sans l'exécuter, ou avant qu'il n'entre dans l'historique — style, types, hooks — par opposition au tester, qui exécute le code.
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
+- **Recherche d'hyperparamètres** — Régler un modèle en connaissant le coût d'un essai — grille, hasard, substitut bayésien, arrêt précoce, et les bibliothèques qui les exécutent.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.

@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 998,
+  "count": 1002,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -285,10 +285,12 @@
       "Inférence bayésienne",
       "MCMC",
       "Naive Bayes",
+      "Optimisation bayésienne",
       "Optimisation d'hyperparamètres",
       "Optuna",
       "PyMC",
       "Ray Tune",
+      "Recherche d'hyperparamètres",
       "Stan",
       "Statistiques & inférence"
     ],
@@ -391,6 +393,7 @@
       "Cross-entropy",
       "Extra Trees",
       "Imbalanced classification",
+      "Méthodes à noyau",
       "Naive Bayes",
       "Perceptron et MLP",
       "ROC-AUC / courbe PR",
@@ -1498,9 +1501,11 @@
       "Kubeflow",
       "Machine Learning",
       "Maximal Update Parametrization",
+      "Optimisation bayésienne",
       "Optimisation d'hyperparamètres",
       "Optuna",
       "Ray Tune",
+      "Recherche d'hyperparamètres",
       "Suivi d'expériences"
     ],
     "hypothesis-testing": [
@@ -1633,6 +1638,7 @@
       "Fuzzy matching & similarité de chaînes",
       "Index inversé",
       "Late-interaction retrieval",
+      "Learning to rank",
       "NLP",
       "RAG visuel - retrouver des documents sans OCR",
       "Recherche d'information",
@@ -2404,7 +2410,8 @@
     ],
     "multi-armed-bandit": [
       "Exploration vs exploitation",
-      "Multi-armed bandits"
+      "Multi-armed bandits",
+      "Optimisation bayésienne"
     ],
     "multi-output": [
       "Régression et classification multi-sorties"
@@ -2493,6 +2500,7 @@
       "Analyse de survie",
       "Bootstrap",
       "Gaussian Process",
+      "Méthodes à noyau",
       "Régression quantile",
       "Tests & estimation",
       "Tests non paramétriques",
@@ -2637,6 +2645,7 @@
       "Normalisation et initialisation des réseaux",
       "Optimal transport",
       "Optimisation",
+      "Optimisation bayésienne",
       "Optimisation combinatoire",
       "Optimisation sous contrainte",
       "Programmation linéaire en nombres entiers (MIP)",
@@ -2947,6 +2956,7 @@
     ],
     "ranking": [
       "BM25",
+      "Learning to rank",
       "Ranking metrics",
       "Recherche d'information",
       "Reranking",
@@ -2972,6 +2982,7 @@
       "gpt-oss"
     ],
     "recommender-systems": [
+      "Learning to rank",
       "Systèmes de recommandation"
     ],
     "recon": [
@@ -2993,6 +3004,7 @@
       "Maintenance prédictive et RUL",
       "Modèles à effets mixtes",
       "Modélisation d'uplift",
+      "Méthodes à noyau",
       "Perceptron et MLP",
       "Regression metrics",
       "Régression",
@@ -3577,8 +3589,10 @@
       "Imbalanced classification",
       "Imitation learning",
       "LIME",
+      "Learning to rank",
       "LightGBM",
       "Machine Learning",
+      "Méthodes à noyau",
       "NER et étiquetage de séquence",
       "Naive Bayes",
       "Perceptron et MLP",
@@ -18889,23 +18903,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Comparatif - Optimisation d'hyperparamètres.md",
-      "nom": "Comparatif - Optimisation d'hyperparamètres",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "ml/hyperopt",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "hyperparameter-tuning"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Machine Learning/Comparatif - Orchestrateurs ML.md",
       "nom": "Comparatif - Orchestrateurs ML",
       "alias": null,
@@ -19329,32 +19326,6 @@
         "[[sentence-transformers]]",
         "[[spaCy]]"
       ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Hyperopt.md",
-      "nom": "Hyperopt",
-      "alias": [
-        "hyperopt",
-        "TPE",
-        "tree-structured Parzen estimator"
-      ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.",
-      "tags": [
-        "hyperparameter-tuning",
-        "bayesian",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Optuna]]",
-        "[[Ray Tune]]"
-      ],
-      "complements": [],
       "maturite": "production"
     },
     {
@@ -21092,61 +21063,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Optimisation d'hyperparamètres.md",
-      "nom": "Optimisation d'hyperparamètres",
-      "alias": [
-        "Hyperparameter tuning",
-        "GridSearch",
-        "RandomSearch",
-        "Optimisation bayésienne",
-        "HPO",
-        "Réglage des hyperparamètres"
-      ],
-      "role": "notion",
-      "categorie": "ml/hyperopt",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "hyperparameter-tuning",
-        "model-evaluation",
-        "bayesian"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Optuna.md",
-      "nom": "Optuna",
-      "alias": [
-        "optuna",
-        "TPESampler"
-      ],
-      "role": "brique",
-      "categorie": "ml/hyperopt",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
-      "tags": [
-        "hyperparameter-tuning",
-        "bayesian",
-        "distributed"
-      ],
-      "alternatives": [
-        "[[Scikit-Learn]]",
-        "[[Hyperopt]]",
-        "[[Ray Tune]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Plateformes data & IA/AWS SageMaker.md",
       "nom": "AWS SageMaker",
       "alias": [
@@ -21576,7 +21492,139 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Ray Tune.md",
+      "path": "Machine Learning/Recherche d'hyperparamètres/Comparatif - Optimisation d'hyperparamètres.md",
+      "nom": "Comparatif - Optimisation d'hyperparamètres",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/hyperopt",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "hyperparameter-tuning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Hyperopt.md",
+      "nom": "Hyperopt",
+      "alias": [
+        "hyperopt",
+        "TPE",
+        "tree-structured Parzen estimator"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres distribuée historique : recherche TPE (Parzen) sur espaces conditionnels, parallélisable via MongoDB/Spark ; mature mais peu maintenu.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Optuna]]",
+        "[[Ray Tune]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Optimisation bayésienne.md",
+      "nom": "Optimisation bayésienne",
+      "alias": [
+        "Bayesian optimization",
+        "BO",
+        "Optimisation bayesienne",
+        "Optimisation de boîte noire",
+        "Black-box optimization",
+        "Expected improvement",
+        "GP-UCB",
+        "SMBO",
+        "Sequential model-based optimization",
+        "Tree-structured Parzen Estimator"
+      ],
+      "role": "notion",
+      "categorie": "ml/hyperopt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "optimization",
+        "multi-armed-bandit"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Optimisation d'hyperparamètres.md",
+      "nom": "Optimisation d'hyperparamètres",
+      "alias": [
+        "Hyperparameter tuning",
+        "GridSearch",
+        "RandomSearch",
+        "Optimisation bayésienne",
+        "HPO",
+        "Réglage des hyperparamètres"
+      ],
+      "role": "notion",
+      "categorie": "ml/hyperopt",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "hyperparameter-tuning",
+        "model-evaluation",
+        "bayesian"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Optuna.md",
+      "nom": "Optuna",
+      "alias": [
+        "optuna",
+        "TPESampler"
+      ],
+      "role": "brique",
+      "categorie": "ml/hyperopt",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Optimisation d'hyperparamètres define-by-run : recherche bayésienne (TPE, GP) et élagage des essais (Hyperband, median), parallélisable.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian",
+        "distributed"
+      ],
+      "alternatives": [
+        "[[Scikit-Learn]]",
+        "[[Hyperopt]]",
+        "[[Ray Tune]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Ray Tune.md",
       "nom": "Ray Tune",
       "alias": [
         "ray tune",
@@ -21600,6 +21648,27 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Recherche d'hyperparamètres/Recherche d'hyperparamètres.md",
+      "nom": "Recherche d'hyperparamètres",
+      "alias": [],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Régler un modèle en connaissant le coût d'un essai — grille, hasard, substitut bayésien, arrêt précoce, et les bibliothèques qui les exécutent.",
+      "tags": [
+        "hyperparameter-tuning",
+        "bayesian"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Serving/BentoML.md",
@@ -22360,6 +22429,78 @@
         "regression",
         "bayesian",
         "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Learning to rank.md",
+      "nom": "Learning to rank",
+      "alias": [
+        "LTR",
+        "Apprentissage du classement",
+        "Classement supervisé",
+        "LambdaMART",
+        "LambdaRank",
+        "RankNet",
+        "ListNet",
+        "RankSVM",
+        "pointwise",
+        "pairwise",
+        "listwise",
+        "Unbiased learning to rank",
+        "ULTR"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "ranking",
+        "information-retrieval",
+        "recommender-systems"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Méthodes à noyau.md",
+      "nom": "Méthodes à noyau",
+      "alias": [
+        "Kernel methods",
+        "Méthodes à noyaux",
+        "Fonction noyau",
+        "Kernel ridge regression",
+        "Régression ridge à noyau",
+        "KRR",
+        "Random Fourier Features",
+        "Nyström",
+        "RKHS",
+        "Neural Tangent Kernel",
+        "NTK"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "supervised",
+        "non-parametric",
+        "regression",
+        "classification"
       ],
       "alternatives": null,
       "complements": null,
