@@ -265,7 +265,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
 
 **Deux axes de rangement, pas un.** Une brique porte `categorie:` (le **domaine** — de
-quoi ça parle, 114 valeurs en 20 préfixes, plus 6 sous `skill/*`) *et* `famille:` (la **nature** — ce que c'est, 9
+quoi ça parle, 116 valeurs en 20 préfixes, plus 6 sous `skill/*`) *et* `famille:` (la **nature** — ce que c'est, 9
 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
 `specification`, `modele`, `annuaire`). Ne jamais choisir ces deux valeurs à l'intuition :
 `Documentation/general/taxonomie.md` porte un arbre de décision déterministe, questions
