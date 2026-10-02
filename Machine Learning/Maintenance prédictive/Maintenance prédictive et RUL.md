@@ -57,9 +57,17 @@ tags: [timeseries, survival-analysis, regression]
 - [[Détection d'outliers multivariée]] — fusion de capteurs et health index, repérage d'états anormaux.
 - [[Walk-forward CV]] — protocole d'évaluation honnête en série temporelle.
 - Voir aussi : [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
+- [[Indicateurs de santé]] — fusion de capteurs et seuil de panne, avant toute prévision.
+- [[Diagnostic de défauts de roulements]] — fréquences caractéristiques et spectre d'enveloppe.
+- [[Politique de maintenance et coût]] — du score ou du RUL à la décision d'intervenir.
+- [[RUL par apprentissage profond]] — CNN 1D, LSTM et Transformers sur C-MAPSS.
+- [[RUL par analyse de survie]] — Weibull, Cox, AFT et censure.
+- [[Maintenance prédictive avec peu de pannes]] — anomalie non supervisée, transfert, simulation.
+- Outils : [[scikit-survival]] (GPL-3.0), [[tsfresh]], [[sktime]].
 
 ## Pour aller plus loin
 
+- [[Jeux de données PHM]] — C-MAPSS, PRONOSTIA, CWRU, IMS et les autres, avec leur licence.
 - Saxena, Goebel, Simon & Eklund (2008) — *Damage propagation modeling for aircraft engine run-to-failure simulation* (dataset C-MAPSS, défi PHM08).
 - Si, Wang, Hu & Zhou (2011) — *Remaining useful life estimation – A review on the statistical data driven approaches* (EJOR).
 - Lei et al. (2018) — *Machinery health prognostics: A systematic review* (Mechanical Systems and Signal Processing).
