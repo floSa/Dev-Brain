@@ -47,7 +47,7 @@ tags: [observability, metrics, logging, tracing]
 ## En pratique
 
 - Une règle de la documentation de Prometheus pour ne pas doubler le travail : pour chaque ligne de code qui écrit un log, incrémenter aussi un compteur. Le compteur est bon marché et agrégeable ; le log garde le détail.
-- Une chaîne sur site : instrumenter avec [[OpenTelemetry]], stocker les métriques dans [[Prometheus]] ou [[VictoriaMetrics]], les logs dans [[Loki]], les traces dans [[Tempo]], et regarder le tout dans [[Grafana]]. [[Loki]] et [[Tempo]] demandent le même stockage objet ([[MinIO]], [[Garage]] ou [[Ceph]] sur site).
+- Une chaîne sur site : instrumenter avec [[OpenTelemetry]], stocker les métriques dans [[Prometheus]] ou [[VictoriaMetrics]], les logs dans [[Loki]], les traces dans [[Tempo]], et regarder le tout dans [[Grafana]]. [[Loki]] et [[Tempo]] demandent le même stockage objet ([[Garage]], [[SeaweedFS]] ou [[Ceph]] sur site ; [[MinIO]] est archivé depuis le 2026-04-25).
 - Pour les traces, le choix est ouvert. Jaeger v2 est bâti sur le Collector OpenTelemetry, sous Apache-2.0, avec Elasticsearch, OpenSearch, Cassandra ou ClickHouse en stockage ; Jaeger v1 est en fin de vie depuis le 2025-12-31. Tempo demande un stockage objet, s'interroge depuis Grafana, et est sous AGPL-3.0. Les faits relevés ne les départagent pas sur la technique : la décision porte sur le stockage déjà disponible, l'interface et la licence.
 - Alerter sur une métrique quand elle suffit : alerter sur des logs quand une métrique le fait aussi bien fait exploser le coût, puisque le log suit le trafic.
 - Ne pas confondre cette pile avec le suivi d'un modèle : la dérive de données et la dégradation d'un modèle ne se voient pas dans le processeur — c'est [[Monitoring de modèle en production]].
