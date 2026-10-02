@@ -32,6 +32,7 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - Apprendre un format ou un ton → [[SFT]] ; aligner sur des préférences → [[RLHF and DPO]] ; optimiser un signal vérifiable → [[GRPO]].
 - Injecter de la connaissance à jour → [[RAG]], pas ce dossier.
 - Changer seulement le comportement, sans entraînement → [[Prompt engineering]] d'abord.
+- Combiner des modèles ou des adaptateurs déjà ajustés, sans réentraîner → [[Fusion de modèles]].
 
 <!-- AUTO:START -->
 ### Notions

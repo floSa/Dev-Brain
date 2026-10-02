@@ -33,6 +33,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - La question demande de croiser plusieurs documents → [[GraphRAG]].
 - Rien ne marche et on n'a pas encore regardé le découpage → [[Chunking strategies]], d'abord.
 - Stocker et interroger les vecteurs → [[Vectoriel]] ; un moteur qui indexe aussi du texte → [[Recherche]].
+- Le modèle doit décider quand chercher, relancer ou vérifier, sur des questions à plusieurs sauts → [[RAG agentique]].
 
 <!-- AUTO:START -->
 ### Notions

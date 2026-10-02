@@ -35,6 +35,7 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - De l'appel d'outils et de l'extraction structurée sur un appareil contraint → [[needle]].
 - Savoir ce que ma machine peut faire tourner avant de télécharger → [[llmfit]].
 - Appeler des modèles hébergés par d'autres plutôt que les héberger → [[LiteLLM]] ou [[OpenRouter]], et non ce dossier.
+- Choisir un format de quantification pour servir un LLM (GGUF, AWQ, GPTQ, FP8) et savoir ce qu'il coûte en qualité → [[Quantification des LLM - GGUF, AWQ, GPTQ]].
 
 <!-- AUTO:START -->
 ### Notions
