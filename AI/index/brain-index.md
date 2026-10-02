@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1021 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1030 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -450,7 +450,11 @@
 - **Label Studio** — Plateforme d'annotation web multimodale — images, texte, audio, vidéo, séries temporelles — configurée par un gabarit XML, avec pré-annotation par un backend ML ; l'édition Community est sous Apache-2.0, rôles, SSO SAML, métriques d'accord et boucle d'active learning automatique sont réservés aux éditions payantes.
 
 ### ml/anomalie
+- **anomalib** — Bibliothèque Python (Intel, Open Edge Platform) de détection d'anomalies visuelles — une trentaine de modèles d'images (PatchCore, PaDiM, STFPM, EfficientAD, FastFlow, CFlow, DRAEM, Dinomaly, WinCLIP…) sous PyTorch Lightning, CLI et API Python, jeux MVTec AD, VisA ou dossier maison, export ONNX et OpenVINO ; Apache-2.0.
+- **AnomalyCLIP** — Code d'AnomalyCLIP (ICLR 2024) — détection d'anomalies visuelles zero-shot : CLIP ViT-L/14@336px gelé, deux prompts apprenables indépendants de l'objet (normal, anormal), entraînés sur un jeu auxiliaire puis testés sur des catégories jamais vues ; 91,5 % d'AUROC image annoncés sur MVTec AD ; code sous licence MIT.
+- **Dinomaly** — Code de Dinomaly (CVPR 2025) — détection d'anomalies visuelles multi-classe avec un seul modèle pour toutes les catégories : encodeur DINOv2 à registres gelé, goulot bruité, décodeur à attention linéaire ; 99,6 % d'AUROC image annoncés sur MVTec AD, 98,7 % sur VisA, 89,3 % sur Real-IAD ; points de contrôle fournis, Apache-2.0.
 - **Jeux de données d'anomalies** — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
+- **patchcore-inspection** — Implémentation de référence d'Amazon Science de PatchCore (CVPR 2022) — banque de mémoire de patchs d'un WideResNet50, réduite par coreset, puis plus proche voisin (Faiss) au test ; scripts d'entraînement et d'évaluation sur MVTec AD, 99,6 % d'AUROC image annoncés pour l'ensemble ; Apache-2.0, dernier commit de la branche principale en mars 2023.
 - **PyOD** — Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.
 - **STUMPY** — Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.
 
@@ -912,6 +916,10 @@
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
 ### ml/anomalie
+- **Anomalie visuelle par banque de mémoire** — domaines : data-sci, ml-eng · alias : SPADE, PaDiM, PatchCore, Détection d'anomalies par plus proche voisin, Memory bank anomaly detection, Coreset
+- **Anomalie visuelle par reconstruction, distillation et flux** — domaines : data-sci, ml-eng · alias : DRAEM, RD4AD, Reverse Distillation, STFPM, EfficientAD, UniAD, FastFlow, CFlow, CFlow-AD, Détection d'anomalies multi-classe, Anomalie visuelle par réseau appris
+- **Anomalie visuelle zero-shot et few-shot** — domaines : data-sci, ml-eng · alias : WinCLIP, AnomalyCLIP, AnomalyDINO, AdaCLIP, Détection d'anomalies zero-shot, Few-shot anomaly detection, Anomalie visuelle avec modèle vision-langage
+- **Détection d'anomalies visuelle** — domaines : data-sci, ml-eng · alias : Visual anomaly detection, Inspection visuelle par IA, Détection de défauts non supervisée, Industrial anomaly detection, Contrôle qualité visuel non supervisé
 - **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
 - **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **Détection hors distribution (OOD)** — domaines : ml-eng, mlops, data-sci · alias : OOD, Out-of-distribution detection, Détection OOD, Entrée hors distribution
@@ -1364,6 +1372,7 @@
 
 ### ml/anomalie
 - **Comparatif - Détection d'anomalies** — —
+- **Comparatif - Détection d'anomalies visuelles** — —
 
 ### ml/embeddings
 - **Comparatif - Embeddings** — —

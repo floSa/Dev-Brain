@@ -1,8 +1,19 @@
 # Machine Learning — carte (3 sur 3)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 78 pages, chacune avec son chemin et une ligne.
-> Couvre : Séries temporelles, Tabulaire, Vision, Évaluation de modèles.
+> 87 pages, chacune avec son chemin et une ligne.
+> Couvre : Suivi d'expériences, Séries temporelles, Tabulaire, Vision, Évaluation de modèles.
+
+## Suivi d'expériences
+- [[Aim]] · brique · `Machine Learning/Suivi d'expériences/Aim.md` — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
+- [[ClearML]] · brique · `Machine Learning/Suivi d'expériences/ClearML.md` — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
+- [[Comet]] · brique · `Machine Learning/Suivi d'expériences/Comet.md` — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
+- [[MLflow]] · brique · `Machine Learning/Suivi d'expériences/MLflow.md` — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework…
+- [[Neptune]] · brique · `Machine Learning/Suivi d'expériences/Neptune.md` — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- [[TensorBoard]] · brique · `Machine Learning/Suivi d'expériences/TensorBoard.md` — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis…
+- [[Weights & Biases]] · brique · `Machine Learning/Suivi d'expériences/Weights & Biases.md` — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D…
+- [[Model registry & versioning]] · notion · `Machine Learning/Suivi d'expériences/Model registry & versioning.md` — Un point de vérité unique pour les modèles entraînés : chaque modèle y est versionné, daté, traçable jusqu'à son run d'entraînement, et promu par déplacement…
+- [[Comparatif - Suivi d'expériences ML]] · comparatif · `Machine Learning/Suivi d'expériences/Comparatif - Suivi d'expériences ML.md` — où partent les données — self-host ou cloud —, et jusqu'où va l'outil au-delà des courbes : registre de modèles, orchestration, ou rien.
 
 ## Séries temporelles
 - [[Chronos]] · brique · `Machine Learning/Séries temporelles/Chronos.md` — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2…
