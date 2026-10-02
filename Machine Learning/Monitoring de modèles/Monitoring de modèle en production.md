@@ -40,7 +40,7 @@ tags: [model-monitoring, data-drift, concept-drift]
 - Logger entrées, scores et version de modèle (du [[Model registry & versioning|registre]]) pour relier une dégradation à une version précise.
 - Surveiller features **et** sorties : le drift des scores est mesurable immédiatement, sans attendre les labels.
 - Tracer drift et performance dans le suivi d'expériences ([[MLflow]]).
-- Outillage spécialisé : [[Evidently]] (en fiche), NannyML, WhyLabs, Arize.
+- Outillage spécialisé : [[Evidently]], [[NannyML]], [[Deepchecks]] (en fiche) ; WhyLabs a fermé, et Arize Phoenix, tourné vers les LLM, n'analyse plus la dérive d'embeddings depuis la 13.3.0.
 
 ## Approches voisines & alternatives
 
