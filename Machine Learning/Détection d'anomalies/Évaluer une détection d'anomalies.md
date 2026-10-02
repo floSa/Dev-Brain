@@ -85,6 +85,7 @@ Une anomalie de série est un **segment**, pas un point. Compter par point favor
 - [[Data leakage]] — la fuite d'information du train vers l'évaluation, au sens large.
 - [[Score et seuil d'alerte]] — comment le seuil est fixé, donc ce que les métriques à seuil mesurent.
 - [[Time series anomaly detection]] — la notion qui rencontre le plus ces métriques.
+- [[Anomalies multivariées par apprentissage profond]] — le cas SWaT : un score aléatoire atteint 0,963 de F1 ajusté, contre 0,218 sans ajustement (Sarfraz et al., ICML 2024).
 - [[Jeux de données d'anomalies]] — les terrains d'essai, et leurs défauts connus.
 - [[Types d'anomalies et régimes de supervision]] — ce que le jeu d'évaluation suppose.
 - [[Détection hors distribution (OOD)]] — la même évaluation, sur les entrées d'un modèle entraîné.
