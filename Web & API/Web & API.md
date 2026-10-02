@@ -27,6 +27,7 @@ tags: [web-framework, api-client, hypermedia, templating]
 - Rendre du HTML côté serveur → [[Jinja2]] ; le rendre interactif sans JavaScript de build → [[HTMX]].
 - Une démo à monter en une heure plutôt qu'une API → [[Streamlit]] ou [[Gradio]], pas ce domaine.
 - Chercher une API publique à consommer → [[public-apis]].
+- Comprendre un service qui se fige sous charge, ou trancher entre REST, GraphQL et gRPC → [[Programmation asynchrone en Python]] (bloquer la boucle, annulation, GIL) et [[API REST, GraphQL et gRPC]] (contrat, erreurs, pagination, versionnage).
 
 <!-- AUTO:START -->
 ### Sous-domaines
