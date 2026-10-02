@@ -73,3 +73,5 @@ Armin Ronacher), ligne 3.1.x, et de loin le framework web Python le plus téléc
 
 - [[Web & API]] — le hub du domaine
 - [[Jinja2]] — le moteur de gabarits que Flask embarque par défaut
+- [[Programmation asynchrone en Python]] — la notion : coroutines, tâches, annulation, bloquer la boucle, GIL
+- [[API REST, GraphQL et gRPC]] — la notion : trois styles d'API, OpenAPI, erreurs, pagination, versionnage
