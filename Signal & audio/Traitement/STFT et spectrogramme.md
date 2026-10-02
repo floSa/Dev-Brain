@@ -48,6 +48,7 @@ tags: [signal-processing, spectrogram, fourier]
 - [[Time series feature engineering]] — les features spectrales/MFCC alimentent les modèles ML.
 - [[Stationarity]] — la STFT existe précisément parce que le signal n'est pas stationnaire.
 - [[Traitement du signal]] — page chapeau.
+- [[Analyse vibratoire]] — régime variable ou démarrage, quand le suivi d'ordres n'est pas disponible.
 
 ## Pour aller plus loin
 

@@ -54,6 +54,7 @@ tags: [signal-processing]
 - [[Stationarity]] — la stationnarité (ou son absence) décide entre Fourier global et analyse temps-fréquence.
 - [[Time series feature engineering]] — les features spectrales alimentent les modèles de séries temporelles.
 - [[Time series anomaly detection]] — filtrage et ondelettes servent à isoler transitoires et ruptures.
+- [[Analyse vibratoire]] — la déclinaison sur machine tournante : indicateurs, spectre, suivi d'ordres, enveloppe.
 
 ## Pour aller plus loin
 

@@ -46,6 +46,7 @@ tags: [signal-processing, wavelet]
 - [[Filtrage numérique]] — la DWT *est* un banc de filtres passe-bas / passe-haut itéré.
 - [[Time series anomaly detection]] — les ondelettes repèrent transitoires et ruptures dans une série.
 - [[Traitement du signal]] — page chapeau.
+- [[Analyse vibratoire]] — les chocs transitoires d'un défaut local d'une machine tournante.
 
 ## Pour aller plus loin
 

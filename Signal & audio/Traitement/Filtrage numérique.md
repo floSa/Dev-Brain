@@ -52,6 +52,7 @@ tags: [signal-processing, digital-filter]
 - [[STFT et spectrogramme]] — le fenêtrage d'apodisation y est central.
 - [[Time series feature engineering]] — lissage et débruitage comme prétraitement avant modèle.
 - [[Traitement du signal]] — page chapeau.
+- [[Analyse vibratoire]] — sur une machine tournante : décimation avant l'analyse, filtre passe-bas du spectre d'enveloppe.
 
 ## Pour aller plus loin
 
