@@ -139,12 +139,20 @@ Six pages.
 - **Rule - Évaluer une anomalie par événement, pas par point**.
 - **ML en bord d'usine** (notion) : latence, CPU contre GPU, mise à jour des modèles, air-gap, quantification ; domaine à dériver.
 - Les patterns citent les briques réelles du vault, pas de nom inventé.
-- **Accord de floSa, câblage final** : ajoute des liens seulement (aucun texte réécrit), un commit par page, dans :
-  - la notion « Time series anomaly detection » : liens vers « Évaluer une détection d'anomalies » et « Jeux de données d'anomalies » ;
-  - la notion « Data drift » : lien vers « Détection hors distribution (OOD) » ;
-  - la notion « Apprentissage non supervisé » : corrige la mention des « trois usages » pour y inclure le lien vers le dossier « Détection d'anomalies » ;
-  - les briques Evidently et NannyML : lien retour vers « Détection hors distribution (OOD) ».
-- Reprends aussi, depuis les synthèses des lots 2 à 5, les ajouts de liens proposés sur des notions existantes : applique-les s'ils sont de simples liens, demande sinon.
+- **Accord de floSa, câblage final.** Liste complète, issue des synthèses des lots 1 à 5. Ajoute des **liens seulement** (aucun texte réécrit), un commit par groupe de 5 fichiers au plus, regroupés par sous-dossier. Ne réécris rien d'autre dans ces pages.
+  1. Notion « Time series anomaly detection » : liens vers Évaluer une détection d'anomalies, Jeux de données d'anomalies, Détection de ruptures, Contrôle statistique de procédé (SPC), Détection d'anomalies en ligne, Anomalies multivariées par apprentissage profond, Foundation models et anomalies de séries. Ajoute aussi des liens vers Insights Hub, Cognite Data Fusion et Amazon Lookout for Equipment si le contexte s'y prête.
+  2. Notion « Data drift » : lien vers Détection hors distribution (OOD).
+  3. Notion « Apprentissage non supervisé » : la mention des « trois usages » renvoie aussi au dossier Détection d'anomalies.
+  4. Briques Evidently et NannyML : lien retour vers Détection hors distribution (OOD).
+  5. Vers « Détection d'anomalies visuelle » et ses trois notions de méthode, depuis : Vision par ordinateur, Segmentation, Transfer learning vision, Modèles de fondation vision, Autoencodeurs, Métriques vision, Apprentissage auto-supervisé en vision, Vision Transformers (ViT).
+  6. Notion « Foundation models pour séries temporelles » : renvoi vers Foundation models et anomalies de séries. Notions « Stream processing » et « Forecasting metrics » : renvoi vers Détection d'anomalies en ligne.
+  7. Notion « Maintenance prédictive et RUL » : en « Approches voisines », liens vers Indicateurs de santé, Diagnostic de défauts de roulements, Politique de maintenance et coût, RUL par apprentissage profond, RUL par analyse de survie, Maintenance prédictive avec peu de pannes ; en « Pour aller plus loin », lien vers Jeux de données PHM ; une puce « Outils » vers scikit-survival, tsfresh, sktime. Ne touche pas à sa mention ISO 13381.
+  8. Notion « Score et seuil d'alerte » : renvoi vers Politique de maintenance et coût.
+  9. Liens retour vers Analyse vibratoire, en « Approches voisines » : Filtrage numérique, Transformée de Fourier, STFT et spectrogramme, Ondelettes, Traitement du signal, brique scipy.signal.
+  10. Notion « RUL par analyse de survie » : remplace la phrase qui dit que scikit-survival n'a pas de fiche par un lien. Notion « Time series feature engineering » : lien vers tsfresh. Notion « Surveillance conditionnelle et modes de défaillance » : lien vers Amazon Monitron. Notion « Politique de maintenance et coût » : lien vers Comparatif - Offres de maintenance prédictive. Notion « Protocoles de l'atelier - MQTT, OPC UA et Modbus » : liens vers Insights Hub et Cognite Data Fusion.
+- **Avertissements.** Le compte est passé de 148 à 158 depuis le lot 1 (R8e et R20 sur les briques ajoutées : tsfresh, scikit-survival, Seeq, Amazon Lookout for Equipment, Amazon Monitron, TSB-AD, Jeux de données d'anomalies). Pour chacune, déclare les `alternatives:` ou `complements:` évidents entre briques du même dossier, ou ajuste le filtre de la vue concernée. Sinon, liste-la dans ta synthèse avec le motif. Le compte final ne doit pas dépasser 158.
+- **Vérifie** que les filtres `.base` des trois comparatifs de `ml/anomalie` ne se recouvrent pas ; s'ils se recouvrent, propose le correctif sans l'appliquer.
+- **À proposer seulement, ne pas faire** (modifient du texte de page existante) : phrase sur le point-adjust de TimesNet (0,963 de F1 ajusté contre 0,218 aléatoire sur SWaT, Sarfraz et al.) dans « Évaluer une détection d'anomalies » ; puce `CoxTimeVaryingFitter` dans lifelines ; ISO 13381 dans « Maintenance prédictive et RUL ; notions à créer plus tard : adaptation de domaine hors vision, LSTM ; tags manquants (`domain-adaptation`, `conformal-prediction`, `uncertainty`, `lstm`).
 
 ## Suivi
 
