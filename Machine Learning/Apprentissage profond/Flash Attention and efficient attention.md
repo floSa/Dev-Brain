@@ -22,7 +22,7 @@ tags: [attention, inference-optimization, gpu, transformers]
 
 ### Réduire les têtes Key/Value : MQA / GQA
 - **Multi-Query Attention** (MQA) : toutes les têtes partagent **une seule** Key/Value → KV-cache bien plus petit, decode plus rapide.
-- **Grouped-Query Attention** (GQA) : compromis — des **groupes** de têtes partagent leurs K/V. Standard des LLM récents (Llama 2/3, Mistral) : presque la qualité du multi-head, le coût du multi-query.
+- **Grouped-Query Attention** (GQA) : compromis — des **groupes** de têtes partagent leurs K/V. Standard des LLM récents (Llama 3, Mistral, gpt-oss, Ministral 3, Gemma 4, Qwen3.8) : presque la qualité du multi-head, le coût du multi-query.
 
 ### Casser la quadratique : attention creuse
 - **Fenêtre glissante** (Longformer, Mistral) : chaque token n'attend que ses voisins proches → coût linéaire. **Block-sparse**, attention dilatée, et **approximations linéaires** (Performer, [[Attention linéaire|Linear Attention]]) visent le même but avec une perte de qualité variable.

@@ -27,7 +27,7 @@ tags: [reasoning, llm, alignment]
 - Le [[Chain-of-Thought|chain-of-thought]] *prompté* demande à un LLM standard de détailler ses étapes ; un modèle de raisonnement l'a **internalisé** par entraînement et produit souvent une trace **cachée**.
 
 ### Exemples
-- o1 / o3 (OpenAI, trace cachée), DeepSeek-R1 (ouvert, trace visible, janvier 2025), Qwen QwQ, Gemini « thinking ».
+- o1 / o3 (OpenAI, trace cachée), DeepSeek-R1 (ouvert, trace visible, janvier 2025) ; en poids ouverts aujourd'hui : [[gpt-oss]] (raisonnement réglable low / medium / high), Qwen3.8 (`reasoning_effort` xhigh / medium / low), Mistral Small 4 (`reasoning_effort` none / high) et Ministral 3 Reasoning, Gemma 4 (mode pensée activable). Voir [[Qwen]], [[Mistral]], [[Gemma]].
 
 ## Les maths, simplement
 
@@ -37,7 +37,7 @@ tags: [reasoning, llm, alignment]
 ## En pratique
 
 - À réserver aux tâches à **forte valeur de raisonnement** (maths, code, planification) ; sur des requêtes simples, c'est plus **lent et cher** sans gain, voire de l'*overthinking*.
-- Régler le **budget de réflexion** (effort / longueur) selon la difficulté ; ne pas traiter la trace cachée comme une sortie fiable à parser.
+- Régler le **budget de réflexion** (effort / longueur) selon la difficulté ; ne pas traiter la trace cachée comme une sortie fiable à parser. Les réglages diffèrent par famille : `Reasoning: high` dans le prompt système (gpt-oss, trois niveaux), paramètre `reasoning_effort` par requête (Qwen3.8 : xhigh par défaut, medium, low ; Mistral Small 4 : none ou high), bascule `<|think|>` / `enable_thinking` sur Gemma 4, sans niveaux.
 - Servir un modèle de raisonnement = générer **beaucoup** de tokens → l'[[Inference optimization|optimisation d'inférence]] (KV-cache, batching) devient critique pour le coût.
 - Surveiller la latence *time-to-answer* : la trace précède la réponse finale.
 

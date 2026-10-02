@@ -28,7 +28,7 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 - Moins de **connaissances** encyclopédiques, raisonnement complexe plus fragile, fenêtre de contexte souvent plus courte. À réserver à des tâches **cadrées**.
 
 ### Exemples de familles
-- Phi (Microsoft), Gemma (Google), Qwen (petites tailles), Llama 3.2 1B/3B, SmolLM (Hugging Face). Souvent **quantizés** (GGUF, AWQ) pour l'edge.
+- Gemma 4 (Google : E2B, E4B, 12 B), Qwen3.5 (0,8 à 9 B), Ministral 3 (Mistral : 3, 8, 14 B), gpt-oss-20b (OpenAI), Phi (Microsoft), SmolLM3 (Hugging Face) ; la licence se lit dépôt par dépôt, cf. [[Licences de modèles open weights]]. Souvent **quantizés** (GGUF, AWQ) pour l'edge.
 
 ## Les maths, simplement
 
@@ -57,4 +57,4 @@ tags: [small-language-model, scaling-laws, llm, local-llm]
 ## Pour aller plus loin
 
 - Gunasekar et al. (2023) — *Textbooks Are All You Need* (Phi).
-- Rapports techniques Gemma, Qwen, Llama 3.2, SmolLM.
+- Rapports techniques Gemma, Qwen, Ministral 3, SmolLM3.

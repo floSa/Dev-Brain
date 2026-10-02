@@ -23,10 +23,10 @@ tags: [vision-language, multimodal, transformers, llm]
 - Le projecteur apprend la correspondance entre l'espace **visuel** (p. ex. 1408-d) et l'espace du **LLM** (p. ex. 4096-d). Entraînement en deux temps : **pré-alignement** (paires image-légende) puis [[SFT|fine-tuning supervisé]] sur **instructions multimodales**.
 
 ### Encodeurs et compression de tokens
-- **SigLIP 2** est devenu l'encodeur de référence (Qwen3-VL, Gemma 3). Une image produit **beaucoup de tokens** → compression (merger de Qwen, *token pruning*) pour tenir le budget de contexte.
+- Qwen3-VL utilise **SigLIP 2** ; Gemma 3 en utilise la version 1 (SigLIP, 400 M) ; Ministral 3 branche un ViT de 410 M gelé, de type Pixtral ; le 12 B de Gemma 4 **supprime** l'encodeur et projette directement les patchs d'image dans le LLM. Une image produit **beaucoup de tokens** → compression (merger de Qwen, *token pruning*) pour tenir le budget de contexte.
 
 ### Modèles
-- LLaVA (référence open-weight), Qwen-VL, GPT-4o, Gemini, Claude — la plupart des grands LLM sont aujourd'hui **nativement multimodaux**.
+- Open weights nativement multimodaux : [[Qwen]] (3.5 de 0,8 B à 9 B, et 3.8), [[Gemma]] 4 (toutes tailles, audio en plus sur E2B, E4B et 12 B), [[Mistral]] (Ministral 3, Small 4) ; LLaVA reste la référence historique de l'architecture. Fermés : GPT-4o, Gemini, Claude. [[gpt-oss]] est texte seul.
 
 ## Les maths, simplement
 

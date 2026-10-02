@@ -43,7 +43,7 @@ tags: [data-drift, concept-drift, model-monitoring]
 - Suivre la **performance réelle** dès que les labels arrivent — souvent **retardés** : sans labels, le drift des inputs/scores sert de proxy d'alerte précoce.
 - Réagir, ne pas sur-réagir : alerte → investigation → ré-entraînement ciblé ou rollback. Un drift saisonnier connu n'est pas un incident.
 - Tracer les métriques de drift et de perf dans le suivi d'expériences ([[MLflow]]) pour relier dérive observée et version de modèle.
-- Outillage spécialisé : [[Evidently]] (en fiche), NannyML, WhyLabs.
+- Outillage spécialisé : [[Evidently]], [[NannyML]], [[Deepchecks]] (en fiche) ; WhyLabs a fermé.
 
 ## Approches voisines & alternatives
 
