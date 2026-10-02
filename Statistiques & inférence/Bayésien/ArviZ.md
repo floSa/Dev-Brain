@@ -72,3 +72,4 @@ sampler qui précède.
 
 - [[MCMC]] · [[Inférence bayésienne]] — les notions implémentées
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Monte Carlo et inférence variationnelle]] — les diagnostics du MCMC ($\hat R$, ESS) dans le panorama de l'inférence approchée
