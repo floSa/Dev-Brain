@@ -51,6 +51,7 @@ tags: [forecasting, timeseries, model-evaluation]
 - [[Walk-forward CV]] — le protocole sur lequel ces métriques sont agrégées.
 - [[Intermittent demand]] — le cas où MAPE s'effondre et où MASE/RMSSE s'imposent.
 - [[Hierarchical forecasting]] — métriques à évaluer à chaque niveau d'agrégation.
+- [[Détection d'anomalies en ligne]] — le détecteur de flux dont le score est souvent un résidu de prévision, évalué en *prequential*.
 
 ## Pour aller plus loin
 

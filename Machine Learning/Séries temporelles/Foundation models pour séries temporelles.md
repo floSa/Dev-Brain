@@ -62,6 +62,7 @@ tags: [timeseries, forecasting, transformers, deep-learning]
 - [[Transformer architectures]] / [[Self-attention]] — le socle technique de la plupart de ces modèles.
 - [[Scaling laws]] — le pari d'échelle hérité des LLM, transposé au temporel.
 - [[Forecasting metrics]] / [[Walk-forward CV]] — l'évaluation honnête, indispensable face au battage des leaderboards.
+- [[Foundation models et anomalies de séries]] — l'usage de ces modèles en détection : résidus de prévision zero-shot, et ce que TSB-AD en mesure.
 
 ## Pour aller plus loin
 
