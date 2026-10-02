@@ -52,6 +52,7 @@ tags: [prompting, llm]
 - [[Structured outputs]] — contraindre le format de sortie, prolongement naturel du prompt.
 - [[SFT]] — quand le prompting plafonne, entraîner le modèle sur des exemples ; plus coûteux, plus durable.
 - [[DSPy]] — Programmation et optimisation de prompts — déclare des signatures et compile les prompts (ou un fine-tune) à partir d'exemples et d'une métrique, plutôt que de bricoler des chaînes de caractères.
+- [[Méta-apprentissage et few-shot learning]] — l'apprentissage en contexte (démonstrations dans le prompt) lu comme du méta-apprentissage, et la discussion apprentissage ou reconnaissance.
 
 ## Pour aller plus loin
 

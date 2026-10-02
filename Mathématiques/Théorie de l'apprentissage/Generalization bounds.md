@@ -47,6 +47,7 @@ tags: [learning-theory, generalization-bound]
 - [[Rademacher complexity]] — terme data-dependent, bornes plus fines.
 - [[Inégalités de concentration]] — la machinerie probabiliste qui produit ces bornes.
 - [[Compromis biais-variance]] — la borne est la version quantifiée de ce compromis (empirique = biais+bruit, pénalité = variance).
+- [[Double descente et généralisation des grands modèles]] — pourquoi ces bornes n'expliquent pas la généralisation des réseaux surparamétrés (Zhang et al. 2017, Nagarajan et Kolter 2019).
 
 ## Pour aller plus loin
 
