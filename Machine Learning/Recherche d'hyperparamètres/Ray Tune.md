@@ -71,3 +71,4 @@ checkpointing est donc la pièce maîtresse : mal géré, il n'y a ni reprise ni
 - [[Optimisation d'hyperparamètres]] — la notion qu'il implémente
 - [[Ray]] — le cœur distribué dont il dépend ; [[Ray Serve]] pour le serving de la même famille
 - [[Comparatif - Optimisation d'hyperparamètres]] — ce qui départage les moteurs de réglage
+- [[Optimisation bayésienne]] — le mécanisme des moteurs de recherche qu'il enveloppe (Optuna, Hyperopt), et ses limites
