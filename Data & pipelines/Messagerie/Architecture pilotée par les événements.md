@@ -84,6 +84,7 @@ tags: [event-driven, message-broker, idempotence]
 - [[Postgres]] — la table de file avec `SKIP LOCKED`.
 - [[Debezium]] et [[Flink]] — l'outbox lue par le journal, et le traitement de ce qui est publié.
 - Voir aussi : [[Données industrielles]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
+- [[Programmation asynchrone en Python]] — la concurrence côté consommateur Python ; [[API REST, GraphQL et gRPC]] — le contraste requête-réponse.
 
 ## Pour aller plus loin
 

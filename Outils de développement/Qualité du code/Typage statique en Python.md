@@ -72,6 +72,7 @@ tags: [type-checker, type-hints]
 - [[pytest]] et [[Hypothesis]] — les tests exécutent le code, ce que le typage statique ne fait jamais ; un test par propriétés couvre ce qu'une annotation ne dit pas.
 - [[pre-commit]] — rejouer le vérificateur avant chaque commit.
 - [[Pydantic]] — la validation à l'exécution, couche complémentaire du typage statique.
+- [[Programmation asynchrone en Python]] — l'exécution des coroutines : tâches, annulation, blocage de la boucle.
 
 ## Pour aller plus loin
 
