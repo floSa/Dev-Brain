@@ -30,7 +30,7 @@ tags: [olap, columnar, lakehouse, query-engine, federation]
 ### Moteur de requête séparé du stockage
 - L'idée : le moteur **ne possède pas** les données, il les lit en place. Dremel (Google, VLDB 2010) présente l'analyse *in situ* : pas de phase de chargement, que le papier tient pour un frein majeur à l'usage des bases pour l'analytique. Presto (Facebook, ICDE 2019) généralise : une API de **connecteurs** donne accès à HDFS et S3, aux bases relationnelles, au NoSQL et à Kafka, et ses métadonnées sont dans un service séparé du stockage.
 - Conséquence pratique : on peut **fédérer** — joindre dans une requête une table de lac et une table d'une base métier — et changer de moteur sans migrer les données. [[Trino]] est le descendant de Presto.
-- Prix : un catalogue de tables à héberger (Hive Metastore, JDBC, REST, Nessie), un stockage objet ([[MinIO]], [[Ceph]], [[SeaweedFS]]) et une JVM distribuée à exploiter. Un moteur embarqué n'a rien de tout cela.
+- Prix : un catalogue de tables à héberger (Hive Metastore, JDBC, REST, Nessie), un stockage objet ([[Ceph]], [[SeaweedFS]], [[MinIO]] archivé depuis le 2026-04-25) et une JVM distribuée à exploiter. Un moteur embarqué n'a rien de tout cela.
 
 ### Pourquoi ne pas interroger la base de production
 - Les requêtes analytiques sont longues et gourmandes en CPU et en I/O, sur une base pensée pour des transactions courtes. La documentation PostgreSQL établit que, grâce au MVCC, la lecture ne bloque jamais l'écriture : le verrouillage n'est donc pas le vrai coût, mais la charge reste sur le primaire, et les anciennes versions de lignes s'accumulent pendant la requête.
