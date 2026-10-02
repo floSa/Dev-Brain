@@ -616,8 +616,58 @@ axes:
               database/recherche (D-R3).
           series-temporelles:
             libelle: "Séries temporelles"
+            frontiere: >
+              La serie temporelle comme objet : prevoir (forecasting), la
+              decrire (stationnarite, autocorrelation), l outiller (darts,
+              statsforecast). Depuis le 2026-10-02, la maintenance predictive
+              n en fait plus partie : elle a sa valeur, ml/maintenance, au
+              departage D-R11. Une page de methode generale
+              qui traite une serie sans viser une panne reste ici.
           rl:
             libelle: "Apprentissage par renforcement"
+          anomalie:
+            libelle: "Détection d'anomalies"
+            motif: >
+              Ouvert le 2026-10-02 sur accord de floSa (chantier anomalie et
+              maintenance predictive, lot 1). Repere l anormal ne tenait que
+              par une phrase de la frontiere de ml/non-supervise : avec PyOD,
+              STUMPY, six notions et un comparatif, la population etait deja
+              la, eparpillee entre deux dossiers. Libelle « Détection
+              d'anomalies » : nom de fichier verifie unique a la casse pres
+              (seuls existent « Comparatif - Détection d'anomalies » et
+              l alias « anomaly detection » de Time series anomaly detection,
+              qui ne sont pas des noms de fichier de hub).
+            frontiere: >
+              Repérer ce qui s ecarte du normal, quelle que soit la donnee :
+              ponctuel, contextuel, collectif ; outlier, novelty, hors
+              distribution ; score, seuil, evaluation. Depart contre
+              ml/non-supervise (D-R10) : ml/anomalie des que la page a pour
+              SUJET l ecart au normal (le score, la decision, le jeu de test) ;
+              ml/non-supervise des que l anomalie n est qu un usage possible
+              d une methode dont le sujet est autre (clustering, densite,
+              reduction de dimension). Une methode d isolement ou de densite
+              locale pensee pour l anomalie (Isolation Forest, LOF) est ici.
+          maintenance:
+            libelle: "Maintenance prédictive"
+            motif: >
+              Ouvert le 2026-10-02 sur accord de floSa (chantier anomalie et
+              maintenance predictive, lot 1). Libelle « Maintenance
+              prédictive » : aucun fichier de ce nom (la notion existante
+              s appelle « Maintenance prédictive et RUL »). Elle porte pourtant
+              l alias « Maintenance prédictive » : un lien nu [[Maintenance
+              prédictive]] resout vers le fichier avant l alias, donc vers le
+              hub ; aucun lien de ce genre n existe a ce jour (mesure le
+              2026-10-02), et la notion n est pas modifiee par ce lot.
+            frontiere: >
+              Estimer l etat de sante d une machine et decider quand
+              intervenir : surveillance conditionnelle, indicateurs de sante,
+              diagnostic de defauts, duree de vie residuelle (RUL), politique de
+              maintenance et cout. Departage contre ml/series-temporelles
+              (D-R11) : la page a pour but une PANNE ou une DECISION DE
+              MAINTENANCE, pas une serie. La detection d anomalies sur la meme
+              serie reste en ml/anomalie : la maintenance l emploie, elle ne la
+              contient pas. L analyse vibratoire, qui traite un signal et non
+              une panne, va en signal/traitement.
           non-supervise:
             libelle: "Non supervisé"
             motif: >
@@ -625,14 +675,16 @@ axes:
               vivant dans le dossier (ensemble n° 4 de la remontee 26) — un lien
               nu ne resoudrait plus de facon deterministe.
             frontiere: >
-              L apprentissage SANS cible, et ses trois usages ensemble : regrouper
-              (clustering, densite, hierarchie, melanges), representer (t-SNE/UMAP,
-              manifold learning, ICA, NMF), reperer l anormal (outliers,
-              isolement, densite locale, enveloppe). Un seul dossier plutot que
-              trois valeurs : les separer aurait recategorise des briques sans
-              rien gagner en navigation. Ce qui definit la valeur n est pas une
+              L apprentissage SANS cible : regrouper (clustering, densite, hierarchie,
+              melanges) et representer (t-SNE/UMAP, manifold learning, ICA, NMF).
+              Une troisieme famille, reperer l anormal
+              (outliers, isolement, densite locale, enveloppe), a quitte cette
+              valeur le 2026-10-02 pour ml/anomalie (departage D-R10) : un
+              dossier qui reunit tout ce qui parle de l ecart au normal, du
+              score a la decision. Ce qui definit la valeur n est pas une
               technique, c est l absence de cible. Distincte de stats/exploratoire
-              (interpreter des axes).
+              (interpreter des axes) et de ml/anomalie (l ecart au normal comme
+              sujet, et non comme usage possible d une methode).
           graphe: {}
           embeddings:
             libelle: "Embeddings & encodeurs"
@@ -1627,6 +1679,24 @@ axes:
           Sans ce departage, les huit suites seraient tombees en
           ml/orchestration, ou elles auraient noye les trois frameworks que
           floSa y range et fausse le comparatif des orchestrateurs.
+      - n: D-R10
+        regle: "Une page dont le SUJET est l'écart au normal (le score, le seuil, l'évaluation, le jeu de test, une méthode conçue pour l'anomalie) est ml/anomalie. Une page dont le sujet est autre (clustering, densité, réduction de dimension) et pour laquelle l'anomalie n'est qu'un usage possible reste ml/non-supervise."
+        cas: "Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD, Score et seuil d'alerte -> ml/anomalie ; DBSCAN, hdbscan, Gaussian Mixture Models -> ml/non-supervise"
+        motif: >
+          La question fermee est « la page parle-t-elle de l ecart au normal,
+          ou de la structure des donnees ? ». DBSCAN marque du bruit, une
+          melange gaussien donne une vraisemblance basse : tous deux savent
+          signaler l anormal, aucun n est ne pour ca. Ouverte le 2026-10-02
+          avec ml/anomalie, qui n avait avant elle qu une phrase dans la
+          frontiere de ml/non-supervise.
+      - n: D-R11
+        regle: "Une page de ml/* dont le but est une panne ou une décision de maintenance (état de santé, durée de vie résiduelle, diagnostic de défaut, politique et coût) est ml/maintenance, même quand son entrée est une série temporelle. Une page qui traite une série sans viser une panne est ml/series-temporelles ; une page qui détecte l'anormal sur cette série est ml/anomalie."
+        cas: "Maintenance prédictive et RUL -> ml/maintenance ; ARIMA SARIMA, Prophet -> ml/series-temporelles ; Time series anomaly detection, STUMPY -> ml/anomalie"
+        motif: >
+          La question fermee est « que veut-on a la fin : une prevision, un
+          ecart, ou une decision d intervenir ? ». La serie est l entree dans
+          les trois cas, ce n est donc pas elle qui range. Ouverte le
+          2026-10-02 avec ml/maintenance.
 
     # ------------------------------------------------------------------------
     # frontieres — NEUF frontieres disputees, ecrites une fois. Distinctes des
@@ -1652,6 +1722,8 @@ axes:
           distinction: "Le sujet est la base, pas la fabrication de logiciel." }
       - { entre: "ml/plateforme", et: ["ml/orchestration", "database/analytique"],
           distinction: "ml/plateforme : la suite couvre tout le cycle — préparation, entraînement, déploiement, gouvernance — sous une console unique. ml/orchestration : le pipeline seul, l'infrastructure et les droits restent au dehors (D-R9). database/analytique : le moteur, quand son concurrent réel est un autre moteur et non une plateforme (D-R8)." }
+      - { entre: "ml/anomalie", et: ["ml/non-supervise", "ml/series-temporelles", "ml/maintenance"],
+          distinction: "ml/anomalie : l'écart au normal est le sujet (D-R10). ml/non-supervise : la structure des données, l'anomalie n'étant qu'un usage possible. ml/series-temporelles : la série comme objet, prévoir ou décrire. ml/maintenance : le but est une panne ou une décision d'intervenir (D-R11)." }
 
     # ------------------------------------------------------------------------
     # journal — le vocabulaire de galaxie `concept/*` a ete CLOS le 2026-09-05,

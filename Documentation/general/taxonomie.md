@@ -2,7 +2,7 @@
 nom: taxonomie
 role: gouvernance
 created: 2026-06-04
-modified: 2026-09-05
+modified: 2026-10-02
 tags: [meta, gouvernance, taxonomie]
 ---
 
@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 114 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 116 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (114 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (116 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -182,7 +182,7 @@ le sous-domaine se lit dans le bloc, à l'intérieur de la branche retenue.
 
 ```domaine
 ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl,
-    non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
+    anomalie, maintenance, non-supervise, graphe, embeddings, interpretabilite, eval, hyperopt,
     orchestration, plateforme, tracking, serving, monitoring, feature-store, annotation, hub}
 llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
      sortie-structuree, text-to-sql, low-code, protocole, passerelle, runtime,
@@ -246,6 +246,8 @@ WrenAI ne produit aucun SQL.
 | D-R7 | `famille: annuaire` n'exonère pas du domaine (cf. section *famille*). Un annuaire multi-domaines prend le domaine de l'**intention de recherche** qui le fait ouvrir, et l'arbitrage s'écrit en clair dans le corps de la fiche. | public-apis → `web/api` |
 | D-R8 | Un moteur analytique dont le **concurrent réel est une plateforme**, et non un autre moteur, se range en `ml/plateforme` et non en `database/analytique`. Le critère est la question que l'arbitrage tranche devant le client, pas la technologie du stockage. | Snowflake → `ml/plateforme` ; ClickHouse et DuckDB restent en `database/analytique` |
 | D-R9 | Après D2, une brique `ml/*` qui couvre **à elle seule** la préparation des données, l'entraînement, le déploiement **et** la gouvernance, sous une console et un modèle de droits uniques, est `ml/plateforme`. Si elle ne décrit qu'un **pipeline** et laisse l'infrastructure, le catalogue et les droits au dehors, elle est `ml/orchestration`. | Dataiku, Databricks, DataRobot → `ml/plateforme` ; ZenML, Metaflow, Flyte → `ml/orchestration` |
+| D-R10 | Une page dont le **sujet est l'écart au normal** (le score, le seuil, l'évaluation, le jeu de test, une méthode conçue pour l'anomalie) est `ml/anomalie`. Une page dont le sujet est autre (clustering, densité, réduction de dimension) et pour laquelle l'anomalie n'est qu'un **usage possible** reste `ml/non-supervise`. | Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD → `ml/anomalie` ; DBSCAN, hdbscan, Gaussian Mixture Models → `ml/non-supervise` |
+| D-R11 | Une page de `ml/*` dont le **but est une panne ou une décision de maintenance** (état de santé, durée de vie résiduelle, diagnostic de défaut, politique et coût) est `ml/maintenance`, même quand son entrée est une série temporelle. Une page qui traite une série sans viser une panne est `ml/series-temporelles` ; une page qui détecte l'anormal sur cette série est `ml/anomalie`. | Maintenance prédictive et RUL → `ml/maintenance` ; ARIMA SARIMA, Prophet → `ml/series-temporelles` ; Time series anomaly detection, STUMPY → `ml/anomalie` |
 
 ### Frontières disputées, écrites une fois
 
@@ -257,6 +259,11 @@ WrenAI ne produit aucun SQL.
   l'infrastructure, le catalogue et les droits restent au dehors — règle D-R9) et de
   `database/analytique` (le **moteur**, tant que son concurrent réel est un autre moteur — règle
   D-R8).
+- `ml/anomalie` (l'**écart au normal** est le sujet : score, seuil, évaluation, méthode conçue pour
+  l'anomalie — règle D-R10) **distinct de** `ml/non-supervise` (la **structure** des données ;
+  l'anomalie n'y est qu'un usage possible), de `ml/series-temporelles` (la série comme objet :
+  prévoir, décrire) et de `ml/maintenance` (le but est une **panne** ou une décision
+  d'intervenir — règle D-R11).
 - `llm/socle` (LangChain, DSPy — on **assemble**) **distinct de** `llm/agents` (on orchestre une
   boucle d'outils) et de `llm/rag` (on indexe et on récupère).
 - `llm/runtime` (**servir** le modèle) **distinct de** `llm/passerelle` (**router** vers des
@@ -495,11 +502,12 @@ valeurs disparues et ne sont pas reconduites.
   non. Distinct de `ml/apprentissage-profond`, qui range le **réseau** comme objet ;
   `Perceptron et MLP` est ici parce que c'est la porte d'entrée classique, pas une
   architecture qu'on entraîne à l'échelle.
-- `ml/non-supervise` — **élargi au lot 4.** L'apprentissage **sans cible**, et ses trois
-  usages ensemble : regrouper (clustering, partition, densité, hiérarchie, mélanges, et
+- `ml/non-supervise` — **élargi au lot 4, délesté de l'anomalie le 2026-10-02.** L'apprentissage
+  **sans cible**, et ses trois usages ensemble : regrouper (clustering, partition, densité, hiérarchie, mélanges, et
   l'évaluation d'un partitionnement), représenter (réduction de dimension du ML — t-SNE/UMAP,
   manifold learning, ICA, NMF), repérer l'anormal (outliers univariés et multivariés,
-  isolement, densité locale, enveloppe). La valeur n'était décrite qu'en creux, par la
+  isolement, densité locale, enveloppe — ce troisième usage a **quitté la valeur** le 2026-10-02
+  pour `ml/anomalie`, voir plus bas, et le texte qui suit décrit l'état du lot 4). La valeur n'était décrite qu'en creux, par la
   frontière de `stats/exploratoire`, et n'y était nommée que par ses méthodes de réduction ;
   ses quatre briques couvraient déjà les trois familles (hdbscan, PyOD, umap-learn, PaCMAP).
   Un seul dossier plutôt que trois valeurs, pour cette raison : les séparer aurait
@@ -507,6 +515,31 @@ valeurs disparues et ne sont pas reconduites.
   une technique, c'est l'absence de cible — donc l'absence de preuve du même type. Distinct
   de `stats/exploratoire` (interpréter des axes) ; la frontière est écrite là-bas et n'a pas
   bougé, seul son tracé est désormais net : les cinq pages qu'elle nommait du côté ML y sont.
+- `ml/anomalie` — **ouvert le 2026-10-02**, sur accord de floSa (chantier détection d'anomalies et
+  maintenance prédictive, lot 1). Repérer ce qui **s'écarte du normal**, quelle que soit la
+  donnée : ponctuel, contextuel, collectif ; outlier, novelty, hors distribution ; du score à la
+  décision, et de la décision à l'évaluation. La population existait déjà, éparpillée entre deux
+  dossiers : [[PyOD]], [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]] et les
+  deux notions d'outliers dans `ml/non-supervise` ; [[STUMPY]] et [[Time series anomaly detection]]
+  dans `ml/series-temporelles`. **Le départage est la règle D-R10** : la question fermée est *la
+  page parle-t-elle de l'écart au normal, ou de la structure des données ?* DBSCAN marque du
+  bruit et un mélange gaussien donne une vraisemblance basse : tous deux savent signaler
+  l'anormal, aucun n'est né pour ça — ils restent en `ml/non-supervise`. Une méthode d'isolement
+  ou de densité locale **pensée pour l'anomalie** est ici. Distinct aussi de `ml/series-temporelles`
+  (la série comme objet) et de `ml/maintenance` (règle D-R11). Libellé du dossier : « Détection
+  d'anomalies », nom unique dans le vault (seuls existent `Comparatif - Détection d'anomalies` et
+  l'alias `anomaly detection`).
+- `ml/maintenance` — **ouvert le 2026-10-02**, même accord, même chantier. Estimer l'état de santé
+  d'une machine et décider quand intervenir : surveillance conditionnelle, indicateurs de santé,
+  diagnostic de défauts, durée de vie résiduelle (RUL), politique de maintenance et coût.
+  **Le départage est la règle D-R11** : la question fermée est *que veut-on à la fin : une
+  prévision, un écart, ou une décision d'intervenir ?* La série temporelle est l'entrée dans les
+  trois cas, ce n'est donc pas elle qui range. [[Maintenance prédictive et RUL]] quitte
+  `ml/series-temporelles` pour ici. L'**analyse vibratoire**, qui traite un signal et non une
+  panne, va en `signal/traitement`. Libellé du dossier : « Maintenance prédictive ». Point à
+  noter : la notion [[Maintenance prédictive et RUL]] porte l'alias `Maintenance prédictive`,
+  identique au nom du futur hub ; aucun lien nu de ce nom n'existe, la notion n'est pas
+  modifiée, et la suppression de cet alias est proposée à floSa.
 - `llm/modele` — **ouvert au lot 4.** Ce qu'**est** un modèle de langage, avant toute
   application : ce qu'il ingère ([[Tokenization]]), comment il choisit ce qu'il produit
   ([[Decoding strategies]]), ce qui se mesure sur lui sans tâche applicative
