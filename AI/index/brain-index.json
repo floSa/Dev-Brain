@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1015,
+  "count": 1021,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -198,17 +198,22 @@
     ],
     "anomaly-detection": [
       "Comparatif - Détection d'anomalies",
+      "Détection d'anomalies",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
+      "Détection hors distribution (OOD)",
       "Isolation Forest",
       "Local Outlier Factor",
       "Non supervisé",
       "One-Class SVM",
       "PyOD",
       "STUMPY",
+      "Score et seuil d'alerte",
       "Séries temporelles",
       "Théorie des valeurs extrêmes",
-      "Time series anomaly detection"
+      "Time series anomaly detection",
+      "Types d'anomalies et régimes de supervision",
+      "Évaluer une détection d'anomalies"
     ],
     "api-client": [
       "Bruno",
@@ -304,6 +309,7 @@
       "Choisir un modèle d'embedding",
       "Code and math benchmarks",
       "Inspect AI",
+      "Jeux de données d'anomalies",
       "LLM benchmarks",
       "OCR classique vs modèles vision-langage pour documents",
       "RAG benchmarks",
@@ -386,7 +392,8 @@
       "Classification de texte",
       "Imbalanced classification",
       "Tabulaire",
-      "imbalanced-learn"
+      "imbalanced-learn",
+      "Évaluer une détection d'anomalies"
     ],
     "classification": [
       "AdaBoost",
@@ -2334,7 +2341,8 @@
       "seqeval",
       "Équité et biais algorithmique",
       "Évaluation",
-      "Évaluation de modèles"
+      "Évaluation de modèles",
+      "Évaluer une détection d'anomalies"
     ],
     "model-hub": [
       "HuggingFace",
@@ -2345,6 +2353,7 @@
       "Data drift",
       "DataRobot",
       "Deepchecks",
+      "Détection hors distribution (OOD)",
       "Evidently",
       "Machine Learning",
       "Monitoring de modèle en production",
@@ -2724,6 +2733,9 @@
       "Spark",
       "datasets",
       "xarray"
+    ],
+    "out-of-distribution": [
+      "Détection hors distribution (OOD)"
     ],
     "p-value": [
       "Correction des tests multiples",
@@ -3742,6 +3754,9 @@
       "Vanna",
       "WrenAI"
     ],
+    "thresholding": [
+      "Score et seuil d'alerte"
+    ],
     "timeseries": [
       "ARIMA SARIMA",
       "Autocorrelation",
@@ -3953,6 +3968,7 @@
       "Réduction de dimension",
       "Scikit-Learn",
       "Sparse autoencoders",
+      "Types d'anomalies et régimes de supervision",
       "Types de données et choix de modèle",
       "hdbscan",
       "k-médoïds (PAM)",
@@ -19156,6 +19172,388 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies.md",
+      "nom": "Comparatif - Détection d'anomalies",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection d'anomalies.md",
+      "nom": "Détection d'anomalies",
+      "alias": null,
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": "Repérer ce qui s'écarte du normal — points, motifs, images — et décider à partir de quel écart on alerte.",
+      "tags": [
+        "anomaly-detection"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection d'outliers multivariée.md",
+      "nom": "Détection d'outliers multivariée",
+      "alias": [
+        "outliers multivarié",
+        "LOF",
+        "Isolation Forest",
+        "Elliptic Envelope",
+        "ECOD",
+        "COPOD",
+        "Mahalanobis"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection d'outliers univariée.md",
+      "nom": "Détection d'outliers univariée",
+      "alias": [
+        "outliers univarié",
+        "Z-score",
+        "IQR",
+        "MAD",
+        "règle de Tukey",
+        "modified Z-score"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Détection hors distribution (OOD).md",
+      "nom": "Détection hors distribution (OOD)",
+      "alias": [
+        "OOD",
+        "Out-of-distribution detection",
+        "Détection OOD",
+        "Entrée hors distribution"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "mlops",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "out-of-distribution",
+        "anomaly-detection",
+        "model-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Isolation Forest.md",
+      "nom": "Isolation Forest",
+      "alias": [
+        "iForest",
+        "Forêt d'isolement",
+        "IsolationForest"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised",
+        "tree-based",
+        "ensemble"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Jeux de données d'anomalies.md",
+      "nom": "Jeux de données d'anomalies",
+      "alias": [
+        "Datasets d'anomalies",
+        "Benchmarks d'anomalies"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "annuaire",
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.",
+      "tags": [
+        "benchmark"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Local Outlier Factor.md",
+      "nom": "Local Outlier Factor",
+      "alias": [
+        "LOF",
+        "Facteur d'aberration locale",
+        "LocalOutlierFactor",
+        "Densité locale"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/One-Class SVM.md",
+      "nom": "One-Class SVM",
+      "alias": [
+        "OCSVM",
+        "SVM à une classe",
+        "OneClassSVM",
+        "SGDOneClassSVM",
+        "Novelty detection"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/PyOD.md",
+      "nom": "PyOD",
+      "alias": [
+        "Python Outlier Detection",
+        "pyod"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.",
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": [
+        "[[STUMPY]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/STUMPY.md",
+      "nom": "STUMPY",
+      "alias": [
+        "stumpy",
+        "matrix profile python"
+      ],
+      "role": "brique",
+      "categorie": "ml/anomalie",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.",
+      "tags": [
+        "anomaly-detection",
+        "timeseries"
+      ],
+      "alternatives": [
+        "[[PyOD]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Score et seuil d'alerte.md",
+      "nom": "Score et seuil d'alerte",
+      "alias": [
+        "Seuil d'alerte",
+        "Seuillage des scores d'anomalie",
+        "Fatigue d'alerte",
+        "Taux de fausses alertes"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "thresholding"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Time series anomaly detection.md",
+      "nom": "Time series anomaly detection",
+      "alias": [
+        "Détection d'anomalies temporelles",
+        "Outliers temporels",
+        "Time series anomaly",
+        "anomaly detection",
+        "matrix profile",
+        "discord"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "timeseries",
+        "anomaly-detection"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Types d'anomalies et régimes de supervision.md",
+      "nom": "Types d'anomalies et régimes de supervision",
+      "alias": [
+        "Typologie des anomalies",
+        "Anomalie ponctuelle contextuelle collective",
+        "Outlier novelty OOD",
+        "Contamination"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Évaluer une détection d'anomalies.md",
+      "nom": "Évaluer une détection d'anomalies",
+      "alias": [
+        "Évaluation de la détection d'anomalies",
+        "Point-adjust",
+        "Métriques d'anomalies",
+        "VUS-PR",
+        "AU-PRO"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "model-evaluation",
+        "class-imbalance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Embeddings & encodeurs/Choisir un modèle d'embedding.md",
       "nom": "Choisir un modèle d'embedding",
       "alias": [
@@ -20042,6 +20440,37 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Maintenance prédictive et RUL.md",
+      "nom": "Maintenance prédictive et RUL",
+      "alias": [
+        "Maintenance prédictive / RUL",
+        "Maintenance prédictive",
+        "RUL",
+        "Remaining useful life",
+        "Durée de vie résiduelle",
+        "Pronostic",
+        "Predictive maintenance",
+        "PdM"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "timeseries",
+        "survival-analysis",
+        "regression"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Metaflow.md",
       "nom": "Metaflow",
       "alias": [
@@ -20785,24 +21214,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Non supervisé/Comparatif - Détection d'anomalies.md",
-      "nom": "Comparatif - Détection d'anomalies",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Machine Learning/Non supervisé/Comparatif - Réduction de dimension.md",
       "nom": "Comparatif - Réduction de dimension",
       "alias": null,
@@ -20838,63 +21249,6 @@
       "pitch": null,
       "tags": [
         "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Non supervisé/Détection d'outliers multivariée.md",
-      "nom": "Détection d'outliers multivariée",
-      "alias": [
-        "outliers multivarié",
-        "LOF",
-        "Isolation Forest",
-        "Elliptic Envelope",
-        "ECOD",
-        "COPOD",
-        "Mahalanobis"
-      ],
-      "role": "notion",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Non supervisé/Détection d'outliers univariée.md",
-      "nom": "Détection d'outliers univariée",
-      "alias": [
-        "outliers univarié",
-        "Z-score",
-        "IQR",
-        "MAD",
-        "règle de Tukey",
-        "modified Z-score"
-      ],
-      "role": "notion",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
         "unsupervised"
       ],
       "alternatives": null,
@@ -20957,33 +21311,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Non supervisé/Isolation Forest.md",
-      "nom": "Isolation Forest",
-      "alias": [
-        "iForest",
-        "Forêt d'isolement",
-        "IsolationForest"
-      ],
-      "role": "notion",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised",
-        "tree-based",
-        "ensemble"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Machine Learning/Non supervisé/K-Means.md",
       "nom": "K-Means",
       "alias": [
@@ -21003,32 +21330,6 @@
       "pitch": null,
       "tags": [
         "clustering",
-        "unsupervised"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Non supervisé/Local Outlier Factor.md",
-      "nom": "Local Outlier Factor",
-      "alias": [
-        "LOF",
-        "Facteur d'aberration locale",
-        "LocalOutlierFactor",
-        "Densité locale"
-      ],
-      "role": "notion",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
         "unsupervised"
       ],
       "alternatives": null,
@@ -21107,40 +21408,13 @@
         "data-sci",
         "ml-eng"
       ],
-      "pitch": "Chercher une structure sans cible — regrouper, réduire, repérer l'anormal — sans plus rien qui dise qu'on a raison.",
+      "pitch": "Chercher une structure sans cible — regrouper, réduire — sans plus rien qui dise qu'on a raison.",
       "tags": [
         "unsupervised",
         "clustering",
         "dimensionality-reduction",
         "anomaly-detection",
         "manifold"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Non supervisé/One-Class SVM.md",
-      "nom": "One-Class SVM",
-      "alias": [
-        "OCSVM",
-        "SVM à une classe",
-        "OneClassSVM",
-        "SGDOneClassSVM",
-        "Novelty detection"
-      ],
-      "role": "notion",
-      "categorie": "ml/non-supervise",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "ml-eng"
-      ],
-      "pitch": null,
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -21169,29 +21443,6 @@
       ],
       "complements": [],
       "maturite": "beta"
-    },
-    {
-      "path": "Machine Learning/Non supervisé/PyOD.md",
-      "nom": "PyOD",
-      "alias": [
-        "Python Outlier Detection",
-        "pyod"
-      ],
-      "role": "brique",
-      "categorie": "ml/non-supervise",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Boîte à outils Python unifiée pour la détection d'outliers multivariés — 50+ détecteurs (LOF, Isolation Forest, ECOD, COPOD, autoencodeurs…) sous une API scikit-learn, pour comparer les méthodes au lieu d'en parier une.",
-      "tags": [
-        "anomaly-detection",
-        "unsupervised"
-      ],
-      "alternatives": [
-        "[[STUMPY]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Machine Learning/Non supervisé/hdbscan.md",
@@ -23709,37 +23960,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Séries temporelles/Maintenance prédictive et RUL.md",
-      "nom": "Maintenance prédictive et RUL",
-      "alias": [
-        "Maintenance prédictive / RUL",
-        "Maintenance prédictive",
-        "RUL",
-        "Remaining useful life",
-        "Durée de vie résiduelle",
-        "Pronostic",
-        "Predictive maintenance",
-        "PdM"
-      ],
-      "role": "notion",
-      "categorie": "ml/series-temporelles",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "timeseries",
-        "survival-analysis",
-        "regression"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "Machine Learning/Séries temporelles/Prophet.md",
       "nom": "Prophet",
       "alias": [
@@ -23761,29 +23981,6 @@
         "[[neuralforecast]]",
         "[[darts]]",
         "[[Chronos]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Séries temporelles/STUMPY.md",
-      "nom": "STUMPY",
-      "alias": [
-        "stumpy",
-        "matrix profile python"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "paquet",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Bibliothèque Python de matrix profile pour l'analyse de séries temporelles — calcul efficace (Numba, parallèle, Dask, GPU) des motifs et des discords (anomalies de forme), de la segmentation et des chaînes temporelles.",
-      "tags": [
-        "anomaly-detection",
-        "timeseries"
-      ],
-      "alternatives": [
-        "[[PyOD]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -23834,34 +24031,6 @@
         "forecasting",
         "anomaly-detection",
         "foundation-model"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Séries temporelles/Time series anomaly detection.md",
-      "nom": "Time series anomaly detection",
-      "alias": [
-        "Détection d'anomalies temporelles",
-        "Outliers temporels",
-        "Time series anomaly",
-        "anomaly detection",
-        "matrix profile",
-        "discord"
-      ],
-      "role": "notion",
-      "categorie": "ml/series-temporelles",
-      "famille": null,
-      "langage": null,
-      "domaines": [
-        "data-sci",
-        "mlops"
-      ],
-      "pitch": null,
-      "tags": [
-        "timeseries",
-        "anomaly-detection"
       ],
       "alternatives": null,
       "complements": null,
