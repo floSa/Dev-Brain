@@ -33,6 +33,10 @@ tags: [web-framework, api-client, hypermedia, templating]
 ### Sous-domaines
 - [[Reverse proxies]]
 
+### Notions
+- [[API REST, GraphQL et gRPC]] — domaines : ai-eng, data-eng, mlops
+- [[Programmation asynchrone en Python]] — domaines : ai-eng, mlops, data-eng
+
 ### Briques
 - [[FastAPI]] — Framework web Python asynchrone : API typées sur Starlette + Pydantic, doc OpenAPI générée automatiquement.
 - [[Flask]] — Micro-framework web Python (WSGI) minimaliste et extensible : noyau réduit (routage Werkzeug + templates Jinja2), tout le reste ajouté à la carte par extensions.
