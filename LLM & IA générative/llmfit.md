@@ -79,3 +79,5 @@ créneau — décider quel modèle une machine peut tenir, sans le servir.
 - [[Comparatif - Exécution & serving LLM]] — ce qui départage les runtimes qui, eux, servent le modèle
 - [[LM Studio]] — autre runtime détecté comme environnement cible
 - [[LLM & IA générative]] — le hub du domaine
+- [[Contexte long]] — le cache KV, que les estimations de mémoire ignorent souvent à long contexte
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — le format de quantification change ce qui tient en mémoire et la qualité obtenue

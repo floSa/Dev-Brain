@@ -80,3 +80,4 @@ l'export GGUF pour servir le modèle en local ensuite.
 - [[Quantization]] — le 4-bit dynamique qui rend QLoRA possible sur petit GPU
 - [[SFT]] · [[RLHF and DPO]] · [[GRPO]] · [[RL for LLMs]] — les méthodes supportées
 - [[HuggingFace]] — l'API et les trainers qu'il optimise
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — GGUF, imatrice et les revendications des GGUF « Dynamic », avec les mesures indépendantes disponibles

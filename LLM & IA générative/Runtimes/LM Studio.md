@@ -83,3 +83,4 @@ aussi en version **headless** (`llmster`) et en **CLI** (`lms`), pour les serveu
 - [[Comparatif - Exécution & serving LLM]] — ce qui départage les moteurs du dossier
 - [[Pattern - Agent sur LLM auto-hébergé]] — le montage complet, où ce runtime tient la couche modèle
 - [[HuggingFace]] — d'où viennent les poids
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — choisir un format GGUF et mesurer ce qu'il coûte en qualité
