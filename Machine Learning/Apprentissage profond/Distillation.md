@@ -46,6 +46,7 @@ tags: [model-compression, deep-learning, small-language-model, synthetic-data, f
 - [[Synthetic data generation]] — la distillation au niveau séquence en est un cas (apprendre des générations du professeur).
 - [[PEFT]] — réduit le **coût d'adaptation** (LoRA) sans changer la taille ; complémentaire.
 - [[Cross-entropy]] / [[KL divergence]] — les pertes qui mesurent l'écart élève↔professeur.
+- [[Confidentialité différentielle]] — la garantie formelle quand un modèle est entraîné sur des données personnelles : DP-SGD y est la méthode de référence en apprentissage.
 
 ## Pour aller plus loin
 

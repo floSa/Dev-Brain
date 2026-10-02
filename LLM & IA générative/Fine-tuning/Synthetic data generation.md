@@ -58,6 +58,7 @@ tags: [synthetic-data, fine-tuning, llm]
 - [[SDV]] — synthèse **tabulaire par modèles** (GaussianCopula, CTGAN, TVAE) : apprend la distribution d'un vrai jeu et l'émule (table unique, relationnel, séquentiel).
 - [[Faker]] — génération de **données factices par règles** (providers, locales) pour tests, fixtures, démos.
 - [[Mimesis]] — même usage que Faker, **plus rapide** et entièrement typé.
+- [[Confidentialité différentielle]] — la garantie formelle de confidentialité ; une donnée synthétique n'en porte pas d'office (raisonnement de la page, sans source lue).
 
 ## Pour aller plus loin
 

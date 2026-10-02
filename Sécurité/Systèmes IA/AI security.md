@@ -49,6 +49,7 @@ tags: [ai-security, safety, llm]
 - [[Reliability patterns]] — moindre privilège, idempotence, bornage des boucles : recoupe la sécurité côté agents.
 - [[LLM observability]] — détecter abus et anomalies en production.
 - Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[garak]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]].
+- [[Confidentialité différentielle]] — une garantie formelle sur la participation d'un individu aux données d'entraînement, là où la confidentialité est vue ici côté exfiltration.
 
 ## Pour aller plus loin
 
