@@ -78,3 +78,4 @@ Le socle du machine learning sur données tabulaires en mémoire, au-dessus de N
 - `metrics` — [[ROC-AUC & courbe PR]]
 - [[Prince]] — l'analyse factorielle écrite sur l'API scikit-learn
 - [[Comparatif - Réduction de dimension]] — PCA et t-SNE face à UMAP et PaCMAP
+- [[Apprentissage semi-supervisé]] — `SelfTrainingClassifier`, `LabelPropagation` et `LabelSpreading` du module `semi_supervised`, et ce que le non-étiqueté apporte ou non

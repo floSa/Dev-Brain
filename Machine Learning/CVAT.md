@@ -98,3 +98,4 @@ voisines.
 - [[Machine Learning]] — le hub du domaine
 - [[Annotation de données]] — la notion : types de tâches, guides, accord entre annotateurs, pré-annotation et ses biais, active learning, annotation sur site
 - [[Vision]] — le hub de la vision par ordinateur, où se consomment les jeux annotés ici
+- [[Active learning]] — la notion : choisir quoi étiqueter ; la documentation lue pour cette fiche ne décrit pas de boucle active
