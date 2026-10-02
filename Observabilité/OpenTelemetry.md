@@ -76,3 +76,4 @@ changer de backend sans réécrire le code.
 - [[Observabilité]] — le hub du domaine
 - [[Métriques, logs et traces]] — la notion : les trois signaux que le cadre transporte
 - [[LLM observability]] — la même instrumentation appliquée aux applications LLM
+- [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser
