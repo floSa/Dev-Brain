@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Prophet]]", "[[statsforecast]]", "[[neuralforecast]]", "[[pmdarima]]", "[[Chronos]]"]
+alternatives: ["[[Prophet]]", "[[statsforecast]]", "[[neuralforecast]]", "[[pmdarima]]", "[[Chronos]]", "[[sktime]]"]
 complements: []
 tags: [forecasting, timeseries, deep-learning]
 url_docs: https://unit8co.github.io/darts/
@@ -61,6 +61,7 @@ réconciliation hiérarchique et détection d'anomalies.
 - [[neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - [[pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 - [[Chronos]] — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params). Approche voisine, que darts peut d'ailleurs intégrer comme modèle.
+- [[sktime]] — Interface unifiée, façon scikit-learn, pour toutes les tâches d'apprentissage sur séries temporelles — prévision, classification, régression, clustering, détection — avec pipelines, réglage et réduction, et des adaptateurs vers statsmodels, tsfresh, PyOD ou Prophet ; plus de 500 estimateurs.
 
 ## Ressources
 
