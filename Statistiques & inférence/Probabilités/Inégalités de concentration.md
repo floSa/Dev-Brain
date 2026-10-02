@@ -51,6 +51,7 @@ tags: [probability, concentration]
 - [[Théorème central limite]] — asymptotique mais avec loi limite (gaussienne) ; complémentaire des bornes à $n$ fini.
 - [[Multi-armed bandits]] — Hoeffding/Chernoff fondent les intervalles de confiance des bras (UCB).
 - [[Analyse de puissance]] — autre façon de relier taille d'échantillon et garantie statistique.
+- [[Théorie des valeurs extrêmes]] — modéliser la queue par une loi paramétrique plutôt que la borner sans modèle.
 
 ## Pour aller plus loin
 
