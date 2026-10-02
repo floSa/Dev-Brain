@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1036 pages actives.
+> 1056 pages actives.
 
 ## Par page
 
@@ -89,6 +89,16 @@
 - tags : `vector-db`, `ann`, `embedded`
 - liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[hnswlib]]
 - liens entrants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[Vectoriel]], [[hnswlib]], [[k-NN]]
+
+### anomalib  ·  brique
+- tags : `industrial-inspection`, `computer-vision`, `edge-inference`
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies visuelle]], [[Jeux de données d'anomalies]], [[OpenVINO]], [[patchcore-inspection]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[OpenVINO]], [[patchcore-inspection]]
+
+### AnomalyCLIP  ·  brique
+- tags : `industrial-inspection`, `computer-vision`, `zero-shot`, `vision-language`
+- liens sortants : [[Anomalie visuelle zero-shot et few-shot]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies visuelle]], [[Jeux de données d'anomalies]], [[Modèles de fondation vision]], [[anomalib]], [[patchcore-inspection]]
+- liens entrants : [[Anomalie visuelle zero-shot et few-shot]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies]], [[anomalib]], [[patchcore-inspection]]
 
 ### Ansible  ·  brique
 - tags : `infrastructure-as-code`, `reproducibility`
@@ -525,6 +535,11 @@
 - liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Context engineering]], [[Flowise]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]], [[RAG documentaire on-prem - clé en main ou assemblé]]
 - liens entrants : [[Comparatif - Plateformes LLM auto-hébergées]], [[Flowise]], [[LLM & IA générative]], [[Langflow]], [[OAuth2 et OpenID Connect]], [[OpenRouter]], [[PraisonAI]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]]
 
+### Dinomaly  ·  brique
+- tags : `industrial-inspection`, `computer-vision`, `self-supervised`
+- liens sortants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Détection d'anomalies visuelle]], [[Jeux de données d'anomalies]], [[Modèles de fondation vision]], [[anomalib]], [[patchcore-inspection]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Détection d'anomalies]], [[anomalib]], [[patchcore-inspection]]
+
 ### dlt  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `schema-evolution`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Apache NiFi]], [[ClickHouse]], [[Comparatif - Ingestion de données]], [[Dagster]], [[DuckDB]], [[ELT vs ETL & idempotence]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kestra]], [[MinIO]], [[Parquet]], [[Postgres]], [[SQLMesh]], [[connectorx]], [[dbt Core]]
@@ -927,8 +942,13 @@
 
 ### Jeux de données d'anomalies  ·  brique
 - tags : `benchmark`
-- liens sortants : [[Détection d'anomalies]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Merlion]], [[Orion]], [[PyOD]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Détection d'anomalies]], [[Jeux de données PHM]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Jeux de données PHM]], [[Merlion]], [[Orion]], [[PyOD]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[Évaluer une détection d'anomalies]]
+
+### Jeux de données PHM  ·  brique
+- tags : `benchmark`, `predictive-maintenance`, `rul`
+- liens sortants : [[Diagnostic de défauts de roulements]], [[Jeux de données d'anomalies]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[RUL par apprentissage profond]]
 
 ### Jina Reranker  ·  brique
 - tags : `retrieval`, `reranking`, `rag`, `embeddings`
@@ -1067,8 +1087,8 @@
 
 ### lifelines  ·  brique
 - tags : `survival-analysis`, `regression`
-- liens sortants : [[Analyse de survie]], [[Comparatif - Outils stats]]
-- liens entrants : [[Analyse de survie]], [[Comparatif - Outils stats]], [[Maintenance prédictive et RUL]], [[Statistiques & inférence]], [[Tests & estimation]]
+- liens sortants : [[Analyse de survie]], [[Comparatif - Outils stats]], [[RUL par analyse de survie]]
+- liens entrants : [[Analyse de survie]], [[Comparatif - Outils stats]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### LightGBM  ·  brique
 - tags : `supervised`, `tree-based`, `ensemble`, `boosting`, `distributed`
@@ -1532,8 +1552,8 @@
 
 ### OpenVINO  ·  brique
 - tags : `inference`, `edge-inference`, `model-serving`, `quantization`
-- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Quantization]], [[TensorRT]], [[Ultralytics YOLO]]
-- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Quantization]], [[Serving]], [[TensorRT]], [[Ultralytics YOLO]]
+- liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Quantization]], [[TensorRT]], [[Ultralytics YOLO]], [[anomalib]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Détection d'anomalies visuelle]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[ONNX Runtime]], [[Quantization]], [[Serving]], [[TensorRT]], [[Ultralytics YOLO]], [[anomalib]]
 
 ### Optuna  ·  brique
 - tags : `hyperparameter-tuning`, `bayesian`, `distributed`
@@ -1589,6 +1609,11 @@
 - tags : `file-format`, `columnar`, `olap`
 - liens sortants : [[Airbyte]], [[Apache Arrow]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Ceph]], [[Delta Lake]], [[DuckDB]], [[Garage]], [[MinIO]], [[Partitionnement & layout de données]], [[Polars]], [[Postgres]], [[SeaweedFS]], [[Spark]], [[dbt Core]], [[dlt]]
 - liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache Iceberg]], [[Architecture médaillon]], [[Avro]], [[Data & pipelines]], [[Delta Lake]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Partitionnement & layout de données]], [[Spark]], [[Trino]], [[dbt Core]], [[dlt]]
+
+### patchcore-inspection  ·  brique
+- tags : `industrial-inspection`, `computer-vision`
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies visuelle]], [[Jeux de données d'anomalies]], [[anomalib]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles]], [[Dinomaly]], [[Détection d'anomalies]], [[anomalib]]
 
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
@@ -1833,7 +1858,7 @@
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Analyse vibratoire]], [[Comparatif - Traitement du signal]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### Qdrant  ·  brique
 - tags : `vector-db`, `rag`, `ann`
@@ -1963,7 +1988,7 @@
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
 - liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[numpy]]
-- liens entrants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
+- liens entrants : [[Analyse vibratoire]], [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[ICA]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]]
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
@@ -2565,6 +2590,11 @@
 - liens sortants : [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles.base]], [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[STUMPY]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
 - liens entrants : [[Azure AI Anomaly Detector]], [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
 
+### Comparatif - Détection d'anomalies visuelles  ·  comparatif
+- tags : `industrial-inspection`, `computer-vision`
+- liens sortants : [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies visuelles.base]], [[Comparatifs]], [[Dinomaly]], [[Détection d'anomalies]], [[anomalib]], [[patchcore-inspection]]
+- liens entrants : [[AnomalyCLIP]], [[Comparatifs]], [[Dinomaly]], [[Détection d'anomalies]], [[anomalib]], [[patchcore-inspection]]
+
 ### Comparatif - Embeddings  ·  comparatif
 - tags : `embeddings`, `semantic-search`
 - liens sortants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings.base]], [[Comparatifs]], [[Embeddings & encodeurs]], [[FastEmbed]], [[Infinity]], [[Qdrant]], [[Qwen3-Embedding]], [[Text Embeddings Inference]], [[bge-m3]], [[sentence-transformers]]
@@ -2853,7 +2883,7 @@
 ### Apprentissage par renforcement  ·  hub
 - tags : `reinforcement-learning`, `markov-decision-process`, `policy-gradient`, `value-function`, `exploration-exploitation`, `offline-rl`, `imitation-learning`, `game-theory`, `self-play`
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[Agents]], [[AlphaZero and self-play]], [[Bellman equations]], [[Comparatif - Reinforcement learning]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Fine-tuning]], [[Gymnasium]], [[Imitation learning]], [[Markov Decision Process]], [[Model-based RL]], [[Monte Carlo Tree Search]], [[Offline RL]], [[OpenSpiel]], [[PPO]], [[Policy gradient]], [[Q-learning and DQN]], [[RLax]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Stable-Baselines3]], [[TF-Agents]], [[Théorie des jeux]], [[Value functions]]
-- liens entrants : [[Apprentissage profond]], [[Machine Learning]]
+- liens entrants : [[Apprentissage profond]], [[Machine Learning]], [[Politique de maintenance et coût]]
 
 ### Apprentissage profond  ·  hub
 - tags : `deep-learning`, `gpu`, `autograd`, `transformers`, `attention`, `distributed-training`, `mixed-precision`, `quantization`, `model-compression`
@@ -2897,8 +2927,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -2952,8 +2982,8 @@
 
 ### Détection d'anomalies  ·  hub
 - tags : `anomaly-detection`
-- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Kats]], [[Local Outlier Factor]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Orion]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[Non supervisé]], [[Séries temporelles]], [[TSB-AD]], [[aeon]], [[ruptures]]
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Kats]], [[Local Outlier Factor]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Orion]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[DeepOD]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[Maintenance prédictive]], [[Non supervisé]], [[Séries temporelles]], [[TSB-AD]], [[aeon]], [[ruptures]]
 
 ### Embeddings & encodeurs  ·  hub
 - tags : `embeddings`, `semantic-search`, `retrieval`, `model-serving`, `inference`
@@ -3007,8 +3037,13 @@
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[Active learning]], [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage fédéré]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Confidentialité différentielle]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Maintenance prédictive et RUL]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types d'anomalies et régimes de supervision]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Active learning]], [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage fédéré]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Confidentialité différentielle]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Diagnostic de défauts de roulements]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[Jeux de données PHM]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[Politique de maintenance et coût]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types d'anomalies et régimes de supervision]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
+
+### Maintenance prédictive  ·  hub
+- tags : `predictive-maintenance`
+- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]]
+- liens entrants : [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -3247,7 +3282,7 @@
 
 ### Traitement  ·  hub
 - tags : `signal-processing`, `fourier`, `spectrogram`, `wavelet`, `digital-filter`
-- liens sortants : [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Machine Learning]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens sortants : [[Analyse vibratoire]], [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Machine Learning]], [[Maintenance prédictive]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 - liens entrants : [[Signal & audio]]
 
 ### Vectoriel  ·  hub
@@ -3363,17 +3398,37 @@
 ### Analyse de survie  ·  notion
 - tags : `survival-analysis`, `regression`, `non-parametric`
 - liens sortants : [[GLM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[lifelines]]
-- liens entrants : [[Modèles à effets mixtes]], [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Théorie des valeurs extrêmes]], [[Types de données et choix de modèle]], [[lifelines]]
+- liens entrants : [[Maintenance prédictive]], [[Modèles à effets mixtes]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Régression]], [[Statistiques & inférence]], [[Surveillance conditionnelle et modes de défaillance]], [[Tests & estimation]], [[Théorie des valeurs extrêmes]], [[Types de données et choix de modèle]], [[lifelines]]
 
 ### Analyse discriminante  ·  notion
 - tags : `supervised`, `classification`, `bayesian`, `linear-model`
 - liens sortants : [[Classification]], [[Compromis biais-variance]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[MANOVA et tests multivariés]], [[Mise à l'échelle]], [[Naive Bayes]], [[PCA]], [[Réduction de dimension]], [[Régression logistique]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
 - liens entrants : [[Apprentissage supervisé]], [[Classification]], [[MANOVA et tests multivariés]], [[Machine Learning]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
 
+### Analyse vibratoire  ·  notion
+- tags : `vibration-analysis`, `signal-processing`, `fourier`, `condition-monitoring`
+- liens sortants : [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyWavelets]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types d'anomalies et régimes de supervision]], [[scipy.signal]]
+- liens entrants : [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]]
+
 ### Annotation de données  ·  notion
 - tags : `annotation`, `human-in-the-loop`, `supervised`, `self-hosted`
 - liens sortants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Augmentation d'images]], [[CVAT]], [[Data leakage]], [[Detectron2]], [[GLiNER]], [[Label Studio]], [[NER et étiquetage de séquence]], [[Ultralytics YOLO]], [[Validation croisée]], [[Versionnage de données]], [[segment-anything]], [[spaCy]]
 - liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[CVAT]], [[Label Studio]], [[Machine Learning]], [[NER et étiquetage de séquence]], [[Équité et biais algorithmique]]
+
+### Anomalie visuelle par banque de mémoire  ·  notion
+- tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `transfer-learning`
+- liens sortants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Détection d'anomalies visuelle]], [[Local Outlier Factor]], [[Modèles de fondation vision]], [[Transfer learning vision]], [[Types d'anomalies et régimes de supervision]], [[anomalib]], [[patchcore-inspection]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[anomalib]], [[patchcore-inspection]]
+
+### Anomalie visuelle par reconstruction, distillation et flux  ·  notion
+- tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `normalizing-flow`, `deep-learning`
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle zero-shot et few-shot]], [[Autoencodeurs]], [[Dinomaly]], [[Détection d'anomalies visuelle]], [[Isolation Forest]], [[Modèles de fondation vision]], [[OpenVINO]], [[Vision Transformers (ViT)]], [[anomalib]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle zero-shot et few-shot]], [[Dinomaly]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[anomalib]]
+
+### Anomalie visuelle zero-shot et few-shot  ·  notion
+- tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `zero-shot`, `vision-language`, `foundation-model`
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[AnomalyCLIP]], [[Apprentissage auto-supervisé en vision]], [[Détection d'anomalies visuelle]], [[Détection hors distribution (OOD)]], [[Modèles de fondation vision]], [[Transfer learning vision]], [[anomalib]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[AnomalyCLIP]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[anomalib]]
 
 ### Anomalies multivariées par apprentissage profond  ·  notion
 - tags : `anomaly-detection`, `timeseries`, `deep-learning`, `transformers`, `benchmark`
@@ -3388,7 +3443,7 @@
 ### Apprentissage auto-supervisé en vision  ·  notion
 - tags : `self-supervised`, `representation-learning`, `computer-vision`, `deep-learning`
 - liens sortants : [[Apprentissage contrastif]], [[Augmentation d'images]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Transfer learning vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Active learning]], [[Apprentissage contrastif]], [[Apprentissage semi-supervisé]], [[Autoencodeurs]], [[Modèles de fondation vision]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
+- liens entrants : [[Active learning]], [[Anomalie visuelle zero-shot et few-shot]], [[Apprentissage contrastif]], [[Apprentissage semi-supervisé]], [[Autoencodeurs]], [[Détection d'anomalies visuelle]], [[Modèles de fondation vision]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]]
 
 ### Apprentissage contrastif  ·  notion
 - tags : `self-supervised`, `representation-learning`, `metric-learning`, `multimodal`
@@ -3398,7 +3453,7 @@
 ### Apprentissage fédéré  ·  notion
 - tags : `privacy`, `distributed`, `ai-security`
 - liens sortants : [[AI security]], [[Apprentissage supervisé]], [[Confidentialité différentielle]], [[Data drift]], [[Données personnelles et anonymisation pour LLM]], [[Entraînement distribué]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[PyTorch]], [[Synthetic data generation]]
-- liens entrants : [[Confidentialité différentielle]], [[Machine Learning]], [[PyTorch]], [[Socle]]
+- liens entrants : [[Confidentialité différentielle]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[PyTorch]], [[Socle]]
 
 ### Apprentissage non supervisé  ·  notion
 - tags : `unsupervised`, `clustering`
@@ -3478,7 +3533,7 @@
 ### Autoencodeurs  ·  notion
 - tags : `deep-learning`, `unsupervised`, `representation-learning`, `dimensionality-reduction`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Diffusion models]], [[Détection d'outliers multivariée]], [[GANs]], [[KL divergence]], [[Keras]], [[Manifold learning]], [[PCA]], [[PyOD]], [[PyTorch]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Time series anomaly detection]], [[embeddings]], [[t-SNE and UMAP]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[DeepOD]], [[Diffusion models]], [[Détection hors distribution (OOD)]], [[Monte Carlo et inférence variationnelle]], [[Orion]], [[PCA]], [[PGA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[DeepOD]], [[Diagnostic de défauts de roulements]], [[Diffusion models]], [[Détection d'anomalies visuelle]], [[Détection hors distribution (OOD)]], [[Indicateurs de santé]], [[Maintenance prédictive avec peu de pannes]], [[Monte Carlo et inférence variationnelle]], [[Orion]], [[PCA]], [[PGA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
 
 ### Bagging  ·  notion
 - tags : `supervised`, `ensemble`, `bagging`
@@ -3528,7 +3583,7 @@
 ### Calibration  ·  notion
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[Hallucinations des LLM]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[SVM]], [[Score et seuil d'alerte]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
+- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[RUL par apprentissage profond]], [[SVM]], [[Score et seuil d'alerte]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
 
 ### Catalogue de données et lignage  ·  notion
 - tags : `data-catalog`, `data-lineage`, `data-governance`
@@ -3578,7 +3633,7 @@
 ### Classification d'images  ·  notion
 - tags : `image-classification`, `computer-vision`, `cnn`, `deep-learning`
 - liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Calibration]], [[Classification metrics]], [[Cross-entropy]], [[Détection d'objets]], [[HuggingFace]], [[Imbalanced classification]], [[PyTorch]], [[Segmentation]], [[Transfer learning vision]], [[Vision par ordinateur]]
-- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Détection d'objets]], [[Vision]], [[Vision par ordinateur]], [[timm]]
+- liens entrants : [[CNN]], [[Classification audio par spectrogramme]], [[Détection d'anomalies visuelle]], [[Détection d'objets]], [[Vision]], [[Vision par ordinateur]], [[timm]]
 
 ### Classification de texte  ·  notion
 - tags : `nlp`, `text-classification`, `classification`, `supervised`, `class-imbalance`
@@ -3613,7 +3668,7 @@
 ### CNN  ·  notion
 - tags : `cnn`, `computer-vision`, `deep-learning`
 - liens sortants : [[Adam optimizer]], [[Architectures CNN]], [[Augmentation d'images]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Cross-entropy]], [[Détection d'objets]], [[Gradient descent]], [[Keras]], [[Perceptron et MLP]], [[PyTorch]], [[Segmentation]], [[Self-attention]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Attribution par gradient]], [[Augmentation d'images]], [[Captum]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Graph Neural Networks]], [[Kornia]], [[Metric learning & ré-identification]], [[Perceptron et MLP]], [[Segmentation]], [[Transfer learning vision]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
+- liens entrants : [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Attribution par gradient]], [[Augmentation d'images]], [[Captum]], [[Classification]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Graph Neural Networks]], [[Kornia]], [[Metric learning & ré-identification]], [[Perceptron et MLP]], [[RUL par apprentissage profond]], [[Segmentation]], [[Transfer learning vision]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
 
 ### Code and math benchmarks  ·  notion
 - tags : `benchmark`, `code-generation`, `reasoning`, `llm-eval`, `llm`
@@ -3688,12 +3743,12 @@
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
 - liens sortants : [[Calibration]], [[Comparatif - Monitoring de modèles]], [[Data leakage]], [[Deepchecks]], [[Evidently]], [[Jensen-Shannon divergence]], [[KL divergence]], [[MLflow]], [[Monitoring de modèle en production]], [[NannyML]], [[River]], [[Wasserstein distance]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage fédéré]], [[Apprentissage supervisé]], [[CI-CD pour le ML]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Evidently]], [[Explicabilité des modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Score et seuil d'alerte]], [[Serving]], [[Suivi d'expériences]], [[Types d'anomalies et régimes de supervision]], [[ruptures]], [[Équité et biais algorithmique]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage fédéré]], [[Apprentissage supervisé]], [[CI-CD pour le ML]], [[Contrats de données & qualité]], [[Deepchecks]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Evidently]], [[Explicabilité des modèles]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[NannyML]], [[River]], [[Score et seuil d'alerte]], [[Serving]], [[Suivi d'expériences]], [[Types d'anomalies et régimes de supervision]], [[ruptures]], [[Équité et biais algorithmique]]
 
 ### Data leakage  ·  notion
 - tags : `model-evaluation`, `supervised`, `data-leakage`
 - liens sortants : [[Encodage des variables catégorielles]], [[Imbalanced classification]], [[Ingénierie des caractéristiques]], [[Mise à l'échelle]], [[Validation croisée]]
-- liens entrants : [[Active learning]], [[Annotation de données]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Featuretools]], [[Imbalanced classification]], [[Interprétabilité]], [[Learning to rank]], [[Machine Learning]], [[Mécanismes de données manquantes]], [[Plateforme data & IA — concept]], [[Probing]], [[Score et seuil d'alerte]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[category_encoders]], [[imbalanced-learn]], [[ydata-profiling]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Active learning]], [[Annotation de données]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Classification de texte]], [[Data drift]], [[Diagnostic de défauts de roulements]], [[EDA automatisée & profiling]], [[Ensembling]], [[Feature store — concept]], [[Featuretools]], [[Imbalanced classification]], [[Indicateurs de santé]], [[Interprétabilité]], [[Learning to rank]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Mécanismes de données manquantes]], [[Plateforme data & IA — concept]], [[Probing]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Séries temporelles]], [[TF-IDF]], [[Tabulaire]], [[Traitement du langage naturel]], [[Transfer learning vision]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[category_encoders]], [[imbalanced-learn]], [[ydata-profiling]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
 
 ### DBSCAN  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -3709,6 +3764,11 @@
 - tags : `agents`, `llm`, `multi-agent`, `retrieval`, `context-engineering`
 - liens sortants : [[Advanced RAG]], [[Agent evaluation]], [[Agent patterns]], [[Architecture deep agent]], [[Context engineering]], [[Deep Agents]], [[Multi-agent systems]], [[RAG]], [[RAG agentique]], [[Sous-agents et isolation du contexte]], [[mcp-protocol]], [[open_deep_research]]
 - liens entrants : [[Agents]], [[Architecture deep agent]], [[Deep Agents]], [[RAG agentique]], [[open_deep_research]]
+
+### Diagnostic de défauts de roulements  ·  notion
+- tags : `predictive-maintenance`, `condition-monitoring`, `vibration-analysis`, `data-leakage`, `benchmark`
+- liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Filtrage numérique]], [[Imbalanced classification]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Validation croisée]]
+- liens entrants : [[Analyse vibratoire]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Diff-in-Diff  ·  notion
 - tags : `causal-inference`, `hypothesis-testing`
@@ -3755,15 +3815,20 @@
 - liens sortants : [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Forecasting framing]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[River]], [[Score et seuil d'alerte]], [[Stream processing]], [[Théorie des valeurs extrêmes]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Kats]], [[River]], [[ruptures]]
 
+### Détection d'anomalies visuelle  ·  notion
+- tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `unsupervised`
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Apprentissage auto-supervisé en vision]], [[Autoencodeurs]], [[Classification d'images]], [[Data drift]], [[Détection d'objets]], [[Détection hors distribution (OOD)]], [[Imbalanced classification]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Modèles de fondation vision]], [[Métriques vision]], [[One-Class SVM]], [[OpenVINO]], [[Score et seuil d'alerte]], [[Segmentation]], [[Types d'anomalies et régimes de supervision]], [[Vision par ordinateur]], [[anomalib]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[AnomalyCLIP]], [[Dinomaly]], [[Détection d'anomalies]], [[anomalib]], [[patchcore-inspection]]
+
 ### Détection d'objets  ·  notion
 - tags : `object-detection`, `computer-vision`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Detectron2]], [[Estimation de pose]], [[HuggingFace]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Ultralytics YOLO]], [[Vision par ordinateur]], [[supervision]], [[torchvision]]
-- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[supervision]]
+- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Détection d'anomalies visuelle]], [[Estimation de pose]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[Segmentation]], [[Suivi d'objets]], [[Ultralytics YOLO]], [[Vision]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[supervision]]
 
 ### Détection d'outliers multivariée  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Clustering]], [[DBSCAN]], [[Data drift]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Mise à l'échelle]], [[PyOD]], [[Time series anomaly detection]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Non supervisé]], [[One-Class SVM]], [[PyOD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Indicateurs de santé]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Non supervisé]], [[One-Class SVM]], [[PyOD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
 
 ### Détection d'outliers univariée  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
@@ -3778,7 +3843,7 @@
 ### Détection hors distribution (OOD)  ·  notion
 - tags : `out-of-distribution`, `anomaly-detection`, `model-monitoring`
 - liens sortants : [[Autoencodeurs]], [[Calibration]], [[Data drift]], [[Détection d'outliers multivariée]], [[Evidently]], [[Isolation Forest]], [[Monitoring de modèles]], [[NannyML]], [[One-Class SVM]], [[Prédiction conforme]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]], [[embeddings]], [[k-NN]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Machine Learning]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Anomalie visuelle zero-shot et few-shot]], [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 
 ### EDA automatisée & profiling  ·  notion
 - tags : `eda`, `feature-engineering`, `missing-data`
@@ -3863,7 +3928,7 @@
 ### Filtrage numérique  ·  notion
 - tags : `signal-processing`, `digital-filter`
 - liens sortants : [[Ondelettes]], [[STFT et spectrogramme]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
-- liens entrants : [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
 
 ### Flash Attention and efficient attention  ·  notion
 - tags : `attention`, `inference-optimization`, `gpu`, `transformers`
@@ -3888,7 +3953,7 @@
 ### Foundation models pour séries temporelles  ·  notion
 - tags : `timeseries`, `forecasting`, `transformers`, `deep-learning`
 - liens sortants : [[ARIMA SARIMA]], [[Chronos]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[HuggingFace]], [[Scaling laws]], [[Self-attention]], [[Time series feature engineering]], [[Tokenization]], [[Transformer architectures]], [[Walk-forward CV]], [[darts]], [[neuralforecast]]
-- liens entrants : [[Chronos]], [[Foundation models et anomalies de séries]], [[Séries temporelles]], [[TSB-AD]]
+- liens entrants : [[Chronos]], [[Foundation models et anomalies de séries]], [[Maintenance prédictive avec peu de pannes]], [[Séries temporelles]], [[TSB-AD]]
 
 ### Fusion de modèles  ·  notion
 - tags : `llm`, `fine-tuning`, `transfer-learning`
@@ -3908,7 +3973,7 @@
 ### GANs  ·  notion
 - tags : `gan`, `generative-model`, `image-generation`, `deep-learning`
 - liens sortants : [[Diffusion models]], [[Image generation]], [[Jensen-Shannon divergence]], [[Vision par ordinateur]]
-- liens entrants : [[Apprentissage profond]], [[Autoencodeurs]], [[Diffusion models]], [[Image generation]], [[Théorie des jeux]], [[Vision par ordinateur]]
+- liens entrants : [[Apprentissage profond]], [[Autoencodeurs]], [[Diffusion models]], [[Image generation]], [[Maintenance prédictive avec peu de pannes]], [[Théorie des jeux]], [[Vision par ordinateur]]
 
 ### Gaussian Mixture Models (GMM)  ·  notion
 - tags : `clustering`, `unsupervised`, `maximum-likelihood`
@@ -4018,7 +4083,7 @@
 ### Imbalanced classification  ·  notion
 - tags : `classification`, `supervised`, `class-imbalance`
 - liens sortants : [[Calibration]], [[Classification]], [[Classification metrics]], [[Data leakage]], [[Isolation Forest]], [[LightGBM]], [[ROC-AUC / courbe PR]], [[Validation croisée]], [[XGBoost]], [[imbalanced-learn]], [[k-NN]], [[Équité et biais algorithmique]]
-- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Augmentation d'images]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Data leakage]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Machine Learning]], [[Random Forest]], [[Régression et classification multi-sorties]], [[Score et seuil d'alerte]], [[SetFit]], [[Tabulaire]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types d'anomalies et régimes de supervision]], [[imbalanced-learn]], [[k-NN]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Active learning]], [[Apprentissage semi-supervisé]], [[Augmentation d'images]], [[Classification]], [[Classification d'images]], [[Classification de texte]], [[Cross-entropy]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies visuelle]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Random Forest]], [[Régression et classification multi-sorties]], [[Score et seuil d'alerte]], [[SetFit]], [[Tabulaire]], [[Time series anomaly detection]], [[Traitement du langage naturel]], [[Types d'anomalies et régimes de supervision]], [[imbalanced-learn]], [[k-NN]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
 
 ### Imitation learning  ·  notion
 - tags : `reinforcement-learning`, `imitation-learning`, `supervised`
@@ -4039,6 +4104,11 @@
 - tags : `search`, `information-retrieval`
 - liens sortants : [[Apache Solr]], [[BM25]], [[Elasticsearch]], [[Hybrid retrieval]], [[Index ANN — internes]], [[Lucene]], [[Meilisearch]], [[OpenSearch]], [[Recherche d'information]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[TF-IDF]], [[Typesense]], [[bm25s]]
 - liens entrants : [[Apache Solr]], [[Elasticsearch]], [[Hybrid retrieval]], [[Lucene]], [[Meilisearch]], [[OpenSearch]], [[Recherche]], [[Recherche sémantique]], [[Recherche vectorielle approximative]], [[Typesense]]
+
+### Indicateurs de santé  ·  notion
+- tags : `predictive-maintenance`, `rul`, `condition-monitoring`, `dimensionality-reduction`, `multivariate`, `feature-engineering`
+- liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mise à l'échelle]], [[PCA]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series feature engineering]], [[Types d'anomalies et régimes de supervision]], [[Walk-forward CV]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -4063,7 +4133,7 @@
 ### Inférence en bordure - modèles sur du matériel d'atelier  ·  notion
 - tags : `edge-inference`, `inference`, `iiot`, `model-serving`
 - liens sortants : [[Ansible]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Data drift]], [[Distillation]], [[Docker Compose]], [[Déploiement de modèles]], [[LiteRT]], [[Maintenance prédictive et RUL]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[ONNX Runtime]], [[OpenVINO]], [[Podman]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Pruning]], [[Quantization]], [[Serving]], [[Telegraf]], [[TensorRT]], [[k3s]], [[open62541]]
-- liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Déploiement de modèles]], [[LiteRT]], [[Maintenance prédictive et RUL]], [[ONNX Runtime]], [[OpenVINO]], [[Quantization]], [[Serving]]
+- liens entrants : [[Analyse vibratoire]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Données industrielles]], [[Déploiement de modèles]], [[Jumeau numérique et modèles hybrides]], [[LiteRT]], [[Maintenance prédictive et RUL]], [[ONNX Runtime]], [[OpenVINO]], [[Quantization]], [[Serving]]
 
 ### Ingestion incrémentale et curseurs  ·  notion
 - tags : `data-ingestion`, `data-pipeline`, `idempotence`
@@ -4098,7 +4168,7 @@
 ### Isolation Forest  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `tree-based`, `ensemble`
 - liens sortants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Extra Trees]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Mise à l'échelle]], [[One-Class SVM]], [[PyOD]], [[Random Forest]], [[River]], [[Scikit-Learn]], [[Sélection de variables]], [[Time series anomaly detection]], [[Types de données et choix de modèle]], [[k-NN]]
-- liens entrants : [[Apprentissage non supervisé]], [[Arbres de décision]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection hors distribution (OOD)]], [[Extra Trees]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Random Forest]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Apprentissage non supervisé]], [[Arbres de décision]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection d'outliers multivariée]], [[Détection hors distribution (OOD)]], [[Extra Trees]], [[Imbalanced classification]], [[Local Outlier Factor]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Random Forest]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
 
 ### Jailbreaking and defenses  ·  notion
 - tags : `jailbreak`, `safety`, `llm`
@@ -4114,6 +4184,11 @@
 - tags : `observability`, `logging`, `tracing`
 - liens sortants : [[API REST, GraphQL et gRPC]], [[FastAPI]], [[Gestion des secrets]], [[Grafana]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[OpenTelemetry]], [[Programmation asynchrone en Python]], [[Prometheus]], [[SLO et alerting]], [[Tempo]], [[Uvicorn]]
 - liens entrants : [[API REST, GraphQL et gRPC]], [[FastAPI]], [[Gestion des secrets]], [[Grafana]], [[Kibana]], [[Loki]], [[Métriques, logs et traces]], [[Observabilité]], [[OpenTelemetry]], [[Programmation asynchrone en Python]], [[Prometheus]], [[Tempo]], [[Uvicorn]]
+
+### Jumeau numérique et modèles hybrides  ·  notion
+- tags : `digital-twin`, `predictive-maintenance`, `rul`
+- liens sortants : [[Data drift]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]]
+- liens entrants : [[Diagnostic de défauts de roulements]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### K-Means  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -4188,7 +4263,7 @@
 ### Local Outlier Factor  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Mise à l'échelle]], [[One-Class SVM]], [[PCA]], [[PyOD]], [[Scikit-Learn]], [[embeddings]], [[k-NN]]
-- liens entrants : [[Apprentissage non supervisé]], [[Détection d'anomalies]], [[Isolation Forest]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Apprentissage non supervisé]], [[Détection d'anomalies]], [[Isolation Forest]], [[Machine Learning]], [[Non supervisé]], [[One-Class SVM]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
 
 ### Loi des grands nombres  ·  notion
 - tags : `probability`, `convergence`
@@ -4205,10 +4280,15 @@
 - liens sortants : [[Compromis biais-variance]], [[Convexity]], [[Eigendecomposition]], [[Gradient descent]], [[Learning rate schedules]], [[Newton & quasi-Newton]], [[Rétropropagation et différentiation automatique]]
 - liens entrants : [[Adam optimizer]], [[Attention Residuals]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Maximal Update Parametrization]], [[Newton & quasi-Newton]], [[Optimisation]], [[Rétropropagation et différentiation automatique]]
 
+### Maintenance prédictive avec peu de pannes  ·  notion
+- tags : `predictive-maintenance`, `class-imbalance`, `anomaly-detection`, `transfer-learning`, `synthetic-data`
+- liens sortants : [[Apprentissage fédéré]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Détection hors distribution (OOD)]], [[Foundation models pour séries temporelles]], [[GANs]], [[Imbalanced classification]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Méta-apprentissage et few-shot learning]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Synthetic data generation]], [[Time series anomaly detection]], [[Transfer learning vision]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Politique de maintenance et coût]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]]
+
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
 - liens sortants : [[Détection d'outliers multivariée]], [[Forecasting framing]], [[Imputation des valeurs manquantes]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Regression metrics]], [[STUMPY]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[lifelines]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Machine Learning]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Séries temporelles]], [[Time series anomaly detection]], [[time-series-anomaly-detector]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Time series anomaly detection]], [[time-series-anomaly-detector]]
 
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -4223,7 +4303,7 @@
 ### Markov Decision Process  ·  notion
 - tags : `reinforcement-learning`, `markov-decision-process`, `markov`
 - liens sortants : [[Bellman equations]], [[Chaînes de Markov]], [[Reinforcement learning]], [[Value functions]]
-- liens entrants : [[Apprentissage par renforcement]], [[Bellman equations]], [[Chaînes de Markov]], [[Gymnasium]], [[Model-based RL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Value functions]]
+- liens entrants : [[Apprentissage par renforcement]], [[Bellman equations]], [[Chaînes de Markov]], [[Gymnasium]], [[Model-based RL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Politique de maintenance et coût]], [[Reinforcement learning]], [[Reward shaping and hacking]], [[Value functions]]
 
 ### Matrix decompositions  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`
@@ -4243,7 +4323,7 @@
 ### Maximum de vraisemblance  ·  notion
 - tags : `maximum-likelihood`, `point-estimation`, `statistical-inference`
 - liens sortants : [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Régression linéaire]], [[Régression logistique]], [[Tests d'hypothèse]]
-- liens entrants : [[Analyse de survie]], [[Bayésien]], [[Cross-entropy]], [[Détection de ruptures]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Modèles graphiques probabilistes]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Tests & estimation]], [[Théorie de l'information]], [[Théorie des valeurs extrêmes]]
+- liens entrants : [[Analyse de survie]], [[Bayésien]], [[Cross-entropy]], [[Détection de ruptures]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Modèles graphiques probabilistes]], [[Newton & quasi-Newton]], [[RUL par analyse de survie]], [[Régression linéaire]], [[Régression logistique]], [[Tests & estimation]], [[Théorie de l'information]], [[Théorie des valeurs extrêmes]]
 
 ### MCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -4278,7 +4358,7 @@
 ### Mise à l'échelle  ·  notion
 - tags : `feature-engineering`
 - liens sortants : [[Clustering]], [[Ingénierie des caractéristiques]], [[K-Means]], [[PCA]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[k-NN]]
-- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Clustering]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Gaussian Process]], [[Imputation des valeurs manquantes]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Méthodes à noyau]], [[One-Class SVM]], [[Perceptron et MLP]], [[SVM]], [[Scikit-Learn]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[k-NN]]
+- liens entrants : [[Analyse discriminante]], [[Apprentissage non supervisé]], [[Clustering]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[EDA automatisée & profiling]], [[Encodage des variables catégorielles]], [[Gaussian Process]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Ingénierie des caractéristiques]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Méthodes à noyau]], [[One-Class SVM]], [[Perceptron et MLP]], [[SVM]], [[Scikit-Learn]], [[Tabulaire]], [[Types de données et choix de modèle]], [[Validation croisée]], [[k-NN]]
 
 ### Mixed precision  ·  notion
 - tags : `mixed-precision`, `deep-learning`, `gpu`, `memory-optimization`
@@ -4303,12 +4383,12 @@
 ### Modèles de fondation vision  ·  notion
 - tags : `foundation-model`, `vision-language`, `self-supervised`, `representation-learning`, `computer-vision`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[HuggingFace]], [[Segment Anything (SAM)]], [[Transfer learning vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[embeddings]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[segment-anything]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[AnomalyCLIP]], [[Apprentissage auto-supervisé en vision]], [[Dinomaly]], [[Détection d'anomalies visuelle]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[segment-anything]]
 
 ### Modèles de Markov cachés et filtre de Kalman  ·  notion
 - tags : `stochastic-process`, `markov`, `forecasting`
 - liens sortants : [[Chaînes de Markov]], [[Inférence bayésienne]], [[MCMC]], [[Markov Decision Process]], [[Modèles graphiques probabilistes]], [[Stationarity]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
-- liens entrants : [[Chaînes de Markov]], [[Détection de ruptures]], [[Modèles graphiques probabilistes]], [[Probabilités]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
+- liens entrants : [[Chaînes de Markov]], [[Détection de ruptures]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Modèles graphiques probabilistes]], [[Probabilités]], [[RUL par analyse de survie]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
 
 ### Modèles graphiques probabilistes  ·  notion
 - tags : `bayesian`, `probability`, `markov`, `statistical-inference`
@@ -4348,7 +4428,7 @@
 ### Mouvement brownien  ·  notion
 - tags : `stochastic-process`, `probability`
 - liens sortants : [[Chaînes de Markov]], [[Processus de Poisson]], [[Théorème central limite]]
-- liens entrants : [[Chaînes de Markov]], [[Gaussian Process]], [[Probabilités]], [[Processus de Poisson]], [[Théorème central limite]]
+- liens entrants : [[Chaînes de Markov]], [[Gaussian Process]], [[Jumeau numérique et modèles hybrides]], [[Probabilités]], [[Processus de Poisson]], [[Théorème central limite]]
 
 ### Multi-agent systems  ·  notion
 - tags : `multi-agent`, `agents`, `llm`
@@ -4383,7 +4463,7 @@
 ### Méta-apprentissage et few-shot learning  ·  notion
 - tags : `transfer-learning`, `deep-learning`, `llm`
 - liens sortants : [[Apprentissage contrastif]], [[Chain-of-Thought]], [[Distillation]], [[Gradient descent]], [[JAX]], [[Metric learning & ré-identification]], [[Prompt engineering]], [[PyTorch]], [[Régularisation]], [[Rétropropagation et différentiation automatique]], [[Self-attention]], [[SetFit]], [[Transfer learning vision]], [[Transformer architectures]], [[sentence-transformers]]
-- liens entrants : [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[JAX]], [[Prompt engineering]], [[PyTorch]], [[Rétropropagation et différentiation automatique]], [[SetFit]], [[Transfer learning vision]], [[sentence-transformers]]
+- liens entrants : [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[JAX]], [[Maintenance prédictive avec peu de pannes]], [[Prompt engineering]], [[PyTorch]], [[Rétropropagation et différentiation automatique]], [[SetFit]], [[Transfer learning vision]], [[sentence-transformers]]
 
 ### Méthodes à noyau  ·  notion
 - tags : `supervised`, `non-parametric`, `regression`, `classification`
@@ -4393,7 +4473,7 @@
 ### Métriques vision  ·  notion
 - tags : `model-evaluation`, `object-detection`, `segmentation`, `computer-vision`
 - liens sortants : [[Classification metrics]], [[Détection d'objets]], [[Segmentation]], [[Vision par ordinateur]]
-- liens entrants : [[Attribution par gradient]], [[Classification metrics]], [[Détection d'objets]], [[Estimation de pose]], [[OCR]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Vision]], [[Vision par ordinateur]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Attribution par gradient]], [[Classification metrics]], [[Détection d'anomalies visuelle]], [[Détection d'objets]], [[Estimation de pose]], [[OCR]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Vision]], [[Vision par ordinateur]], [[Évaluer une détection d'anomalies]]
 
 ### Métriques, logs et traces  ·  notion
 - tags : `observability`, `metrics`, `logging`, `tracing`
@@ -4463,12 +4543,12 @@
 ### Ondelettes  ·  notion
 - tags : `signal-processing`, `wavelet`
 - liens sortants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Time series anomaly detection]], [[Traitement du signal]], [[Transformée de Fourier]]
-- liens entrants : [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]]
+- liens entrants : [[Analyse vibratoire]], [[Filtrage numérique]], [[PyWavelets]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]]
 
 ### One-Class SVM  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Gaussian Mixture Models (GMM)]], [[Isolation Forest]], [[Local Outlier Factor]], [[Mise à l'échelle]], [[PyOD]], [[SVM]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]]
-- liens entrants : [[Apprentissage non supervisé]], [[Détection d'anomalies]], [[Détection hors distribution (OOD)]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Méthodes à noyau]], [[Non supervisé]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Apprentissage non supervisé]], [[Détection d'anomalies]], [[Détection d'anomalies visuelle]], [[Détection hors distribution (OOD)]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Méthodes à noyau]], [[Non supervisé]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]]
 
 ### Optimal transport  ·  notion
 - tags : `optimization`, `optimal-transport`
@@ -4518,7 +4598,7 @@
 ### PCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Autoencodeurs]], [[CA]], [[Eigendecomposition]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[NMF]], [[PGA]], [[Prince]], [[Réduction de dimension]], [[SVD]], [[Scikit-Learn]], [[t-SNE and UMAP]]
-- liens entrants : [[Algèbre linéaire]], [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
+- liens entrants : [[Algèbre linéaire]], [[Analyse discriminante]], [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[Clustering]], [[Eigendecomposition]], [[FAMD]], [[Fanalysis]], [[GPA]], [[HCPC]], [[ICA]], [[Indicateurs de santé]], [[Ingénierie des caractéristiques]], [[Local Outlier Factor]], [[MCA]], [[MFA]], [[Manifold learning]], [[Mathématiques]], [[Mise à l'échelle]], [[NMF]], [[PGA]], [[PaCMAP]], [[Prince]], [[Projections]], [[Réduction de dimension]], [[Régularisation]], [[SVD]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Statistiques & inférence]], [[Sélection de variables]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
 
 ### PEFT  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -4528,7 +4608,7 @@
 ### Perceptron et MLP  ·  notion
 - tags : `supervised`, `deep-learning`, `classification`, `regression`
 - liens sortants : [[Adam optimizer]], [[CNN]], [[Explicabilité des modèles]], [[GAM]], [[Gradient Boosting (GBDT)]], [[Gradient descent]], [[Ingénierie des caractéristiques]], [[Keras]], [[Kolmogorov-Arnold Networks]], [[Learning rate schedules]], [[Mise à l'échelle]], [[PyTorch]], [[Régression logistique]], [[Régularisation]], [[Rétropropagation et différentiation automatique]], [[Scikit-Learn]], [[Transformer architectures]], [[Types de données et choix de modèle]], [[embeddings]]
-- liens entrants : [[Apprentissage supervisé]], [[CNN]], [[Double descente et généralisation des grands modèles]], [[Gradient Boosting (GBDT)]], [[Machine Learning]], [[Méthodes à noyau]], [[Normalisation et initialisation des réseaux]], [[Régression]], [[Régression logistique]], [[Régularisation]], [[Rétropropagation et différentiation automatique]], [[Socle]], [[Types de données et choix de modèle]]
+- liens entrants : [[Apprentissage supervisé]], [[CNN]], [[Double descente et généralisation des grands modèles]], [[Gradient Boosting (GBDT)]], [[Machine Learning]], [[Méthodes à noyau]], [[Normalisation et initialisation des réseaux]], [[RUL par apprentissage profond]], [[Régression]], [[Régression logistique]], [[Régularisation]], [[Rétropropagation et différentiation automatique]], [[Socle]], [[Types de données et choix de modèle]]
 
 ### Perplexity  ·  notion
 - tags : `perplexity`, `llm`, `model-evaluation`, `nlp`
@@ -4555,6 +4635,11 @@
 - liens sortants : [[Acme]], [[Actor-Critic methods]], [[GRPO]], [[PPO]], [[Q-learning and DQN]], [[RL for LLMs]], [[RLax]], [[TF-Agents]], [[Value functions]]
 - liens entrants : [[Acme]], [[Actor-Critic methods]], [[AlphaZero and self-play]], [[Apprentissage par renforcement]], [[Imitation learning]], [[Model-based RL]], [[PPO]], [[Q-learning and DQN]], [[RL for LLMs]], [[RLax]], [[Reinforcement learning]], [[TF-Agents]], [[Value functions]]
 
+### Politique de maintenance et coût  ·  notion
+- tags : `predictive-maintenance`, `rul`, `thresholding`, `optimization`
+- liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]]
+
 ### Positional encoding  ·  notion
 - tags : `positional-encoding`, `transformers`, `attention`
 - liens sortants : [[Attention linéaire]], [[Context engineering]], [[Contexte long]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]]
@@ -4573,7 +4658,7 @@
 ### Processus de Poisson  ·  notion
 - tags : `stochastic-process`, `probability`
 - liens sortants : [[Chaînes de Markov]], [[Mouvement brownien]]
-- liens entrants : [[Chaînes de Markov]], [[Mouvement brownien]], [[Probabilités]]
+- liens entrants : [[Chaînes de Markov]], [[Mouvement brownien]], [[Politique de maintenance et coût]], [[Probabilités]]
 
 ### Programmation asynchrone en Python  ·  notion
 - tags : `parallel`, `web-framework`
@@ -4608,7 +4693,7 @@
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
 - liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]], [[open62541]]
+- liens entrants : [[Analyse vibratoire]], [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]], [[open62541]]
 
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
@@ -4618,7 +4703,7 @@
 ### Prédiction conforme  ·  notion
 - tags : `statistical-inference`, `confidence-interval`, `model-evaluation`
 - liens sortants : [[Bootstrap]], [[Calibration]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[darts]], [[statsforecast]]
-- liens entrants : [[Bootstrap]], [[Calibration]], [[Détection hors distribution (OOD)]], [[Intervalles de confiance]], [[Monte Carlo et inférence variationnelle]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Statistiques & inférence]], [[Tests & estimation]], [[darts]], [[statsforecast]]
+- liens entrants : [[Bootstrap]], [[Calibration]], [[Détection hors distribution (OOD)]], [[Intervalles de confiance]], [[Monte Carlo et inférence variationnelle]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Statistiques & inférence]], [[Tests & estimation]], [[darts]], [[statsforecast]]
 
 ### Q-learning and DQN  ·  notion
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
@@ -4708,7 +4793,7 @@
 ### Regression metrics  ·  notion
 - tags : `model-evaluation`, `regression`, `supervised`
 - liens sortants : [[Compromis biais-variance]], [[Forecasting metrics]], [[GLM]], [[Régression]], [[Régression linéaire]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Forecasting metrics]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression quantile]], [[Validation croisée]], [[Évaluation de modèles]]
+- liens entrants : [[Forecasting metrics]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression quantile]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Reinforcement learning  ·  notion
 - tags : `reinforcement-learning`, `markov-decision-process`
@@ -4765,6 +4850,16 @@
 - liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
 - liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG eval]], [[needle]]
 
+### RUL par analyse de survie  ·  notion
+- tags : `rul`, `predictive-maintenance`, `survival-analysis`, `regression`
+- liens sortants : [[Analyse de survie]], [[Data leakage]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[RUL par apprentissage profond]], [[Walk-forward CV]], [[lifelines]]
+- liens entrants : [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Politique de maintenance et coût]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]]
+
+### RUL par apprentissage profond  ·  notion
+- tags : `rul`, `predictive-maintenance`, `deep-learning`, `timeseries`, `cnn`, `transformers`
+- liens sortants : [[CNN]], [[Calibration]], [[Data leakage]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Perceptron et MLP]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Regression metrics]], [[Régression quantile]], [[Self-attention]], [[Time series feature engineering]], [[Transformer architectures]], [[Walk-forward CV]]
+- liens entrants : [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[RUL par analyse de survie]]
+
 ### Réduction de dimension  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Autoencodeurs]], [[CA]], [[FAMD]], [[GPA]], [[HCPC]], [[ICA]], [[MCA]], [[MFA]], [[Manifold learning]], [[NMF]], [[PCA]], [[PGA]], [[k-NN]], [[t-SNE and UMAP]], [[umap-learn]]
@@ -4793,7 +4888,7 @@
 ### Régression quantile  ·  notion
 - tags : `regression`, `supervised`, `linear-model`, `non-parametric`
 - liens sortants : [[Bootstrap]], [[Détection d'outliers univariée]], [[GLM]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[Intervalles de confiance]], [[LightGBM]], [[Programmation linéaire en nombres entiers (MIP)]], [[Prédiction conforme]], [[Regression metrics]], [[Régression]], [[Régression linéaire]], [[Régularisation]], [[Scikit-Learn]], [[statsmodels]]
-- liens entrants : [[Gaussian Process]], [[Machine Learning]], [[Prédiction conforme]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
+- liens entrants : [[Gaussian Process]], [[Machine Learning]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[RUL par apprentissage profond]], [[Régression]], [[Socle]], [[Types de données et choix de modèle]]
 
 ### Régularisation  ·  notion
 - tags : `regularization`, `linear-model`, `supervised`
@@ -4818,7 +4913,7 @@
 ### Score et seuil d'alerte  ·  notion
 - tags : `anomaly-detection`, `thresholding`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Data drift]], [[Data leakage]], [[Imbalanced classification]], [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Machine Learning]], [[Merlion]], [[Orion]], [[PyOD]], [[Types d'anomalies et régimes de supervision]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Indicateurs de santé]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Merlion]], [[Orion]], [[Politique de maintenance et coût]], [[PyOD]], [[Surveillance conditionnelle et modes de défaillance]], [[Types d'anomalies et régimes de supervision]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### Segment Anything (SAM)  ·  notion
 - tags : `segmentation`, `computer-vision`, `transformers`, `deep-learning`
@@ -4828,12 +4923,12 @@
 ### Segmentation  ·  notion
 - tags : `segmentation`, `computer-vision`, `deep-learning`
 - liens sortants : [[Augmentation d'images]], [[CNN]], [[Cross-entropy]], [[Détection d'objets]], [[Métriques vision]], [[Segment Anything (SAM)]], [[Transfer learning vision]], [[Vision par ordinateur]]
-- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Détection d'objets]], [[Estimation de pose]], [[Métriques vision]], [[OCR]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[segment-anything]], [[supervision]]
+- liens entrants : [[CNN]], [[Classification d'images]], [[Detectron2]], [[Détection d'anomalies visuelle]], [[Détection d'objets]], [[Estimation de pose]], [[Métriques vision]], [[OCR]], [[Segment Anything (SAM)]], [[Ultralytics YOLO]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[albumentations]], [[docTR]], [[segment-anything]], [[supervision]]
 
 ### Self-attention  ·  notion
 - tags : `attention`, `transformers`, `deep-learning`
 - liens sortants : [[Attention Residuals]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Positional encoding]], [[PyTorch]], [[Tokenization]], [[Transformer architectures]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Kolmogorov-Arnold Networks]], [[Multi-head Latent Attention]], [[Méta-apprentissage et few-shot learning]], [[NER et étiquetage de séquence]], [[Normalisation et initialisation des réseaux]], [[Positional encoding]], [[State Space Models]], [[Transformer architectures]], [[TransformerLens]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Kolmogorov-Arnold Networks]], [[Multi-head Latent Attention]], [[Méta-apprentissage et few-shot learning]], [[NER et étiquetage de séquence]], [[Normalisation et initialisation des réseaux]], [[Positional encoding]], [[RUL par apprentissage profond]], [[State Space Models]], [[Transformer architectures]], [[TransformerLens]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]]
 
 ### Sequential testing  ·  notion
 - tags : `experimentation`, `sequential-analysis`, `hypothesis-testing`
@@ -4898,7 +4993,7 @@
 ### STFT et spectrogramme  ·  notion
 - tags : `signal-processing`, `spectrogram`, `fourier`
 - liens sortants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[Ondelettes]], [[Stationarity]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Analyse vibratoire]], [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[NMF]], [[Ondelettes]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types de données et choix de modèle]], [[librosa]], [[scipy.signal]]
 
 ### Stockage objet et API S3  ·  notion
 - tags : `object-storage`, `s3-compatible`
@@ -4930,6 +5025,11 @@
 - liens sortants : [[Dependency-Track]], [[Gestion des secrets]], [[Gitleaks]], [[Grype]], [[Semgrep]], [[Trivy]]
 - liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Gitleaks]], [[Grype]], [[Semgrep]], [[Sécurité]], [[Trivy]]
 
+### Surveillance conditionnelle et modes de défaillance  ·  notion
+- tags : `predictive-maintenance`, `condition-monitoring`
+- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Politique de maintenance et coût]]
+
 ### SVD  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`, `dimensionality-reduction`
 - liens sortants : [[Eigendecomposition]], [[Matrix decompositions]], [[PCA]], [[Réduction de dimension]], [[Scikit-Learn]], [[numpy]]
@@ -4943,7 +5043,7 @@
 ### Synthetic data generation  ·  notion
 - tags : `synthetic-data`, `fine-tuning`, `llm`
 - liens sortants : [[Confidentialité différentielle]], [[Faker]], [[LLM-as-judge]], [[Mimesis]], [[RLHF and DPO]], [[Reasoning models]], [[Reward modeling]], [[SDV]], [[SFT]]
-- liens entrants : [[Active learning]], [[Apprentissage fédéré]], [[Apprentissage semi-supervisé]], [[Data & pipelines]], [[Distillation]], [[Faker]], [[Fine-tuning]], [[LLM & IA générative]], [[Mimesis]], [[SDV]], [[SFT]], [[Équité et biais algorithmique]]
+- liens entrants : [[Active learning]], [[Apprentissage fédéré]], [[Apprentissage semi-supervisé]], [[Data & pipelines]], [[Distillation]], [[Faker]], [[Fine-tuning]], [[LLM & IA générative]], [[Maintenance prédictive avec peu de pannes]], [[Mimesis]], [[SDV]], [[SFT]], [[Équité et biais algorithmique]]
 
 ### Systèmes de recommandation  ·  notion
 - tags : `recommender-systems`, `ranking`, `embeddings`, `retrieval`
@@ -5003,12 +5103,12 @@
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Autoencodeurs]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Forecasting framing]], [[Imbalanced classification]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Kats]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Orion]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Jumeau numérique et modèles hybrides]], [[Kats]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Orion]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
 - liens sortants : [[Autocorrelation]], [[Forecasting framing]], [[Ingénierie des caractéristiques]], [[Walk-forward CV]], [[neuralforecast]]
-- liens entrants : [[Filtrage numérique]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Time series anomaly detection]], [[Traitement du signal]], [[Types de données et choix de modèle]]
+- liens entrants : [[Analyse vibratoire]], [[Filtrage numérique]], [[Foundation models pour séries temporelles]], [[Indicateurs de santé]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Time series anomaly detection]], [[Traitement du signal]], [[Types de données et choix de modèle]]
 
 ### Tokenization  ·  notion
 - tags : `tokenization`, `llm`, `nlp`
@@ -5033,22 +5133,22 @@
 ### Traitement du signal  ·  notion
 - tags : `signal-processing`
 - liens sortants : [[Autocorrelation]], [[Comparatif - Traitement du signal]], [[Filtrage numérique]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Stationarity]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
-- liens entrants : [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
+- liens entrants : [[Analyse vibratoire]], [[Classification audio par spectrogramme]], [[Filtrage numérique]], [[ICA]], [[Ondelettes]], [[PyWavelets]], [[STFT et spectrogramme]], [[Traitement]], [[Transformée de Fourier]], [[librosa]], [[scipy.signal]]
 
 ### Transfer learning vision  ·  notion
 - tags : `transfer-learning`, `fine-tuning`, `computer-vision`, `deep-learning`
 - liens sortants : [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Data leakage]], [[Distillation]], [[HuggingFace]], [[Learning rate schedules]], [[Modèles de fondation vision]], [[Méta-apprentissage et few-shot learning]], [[PEFT]], [[PyTorch]], [[SFT]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage contrastif]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Modèles de fondation vision]], [[Méta-apprentissage et few-shot learning]], [[Probing]], [[Segmentation]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
+- liens entrants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle zero-shot et few-shot]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage contrastif]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification audio par spectrogramme]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[Maintenance prédictive avec peu de pannes]], [[Modèles de fondation vision]], [[Méta-apprentissage et few-shot learning]], [[Probing]], [[Segmentation]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[timm]], [[torchvision]]
 
 ### Transformer architectures  ·  notion
 - tags : `transformers`, `deep-learning`, `attention`, `nlp`
 - liens sortants : [[Architectures hybrides LLM]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Calculs adaptatifs]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[PEFT]], [[Positional encoding]], [[PyTorch]], [[Scaling laws]], [[Self-attention]], [[Small Language Models]], [[State Space Models]], [[Tokenization]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Calculs adaptatifs]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Méta-apprentissage et few-shot learning]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Normalisation et initialisation des réseaux]], [[Perceptron et MLP]], [[Positional encoding]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[TransformerLens]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]], [[nnsight]], [[pykan]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage profond]], [[Apprentissage supervisé]], [[Architectures CNN]], [[Attention Residuals]], [[Attention linéaire]], [[CNN]], [[Calculs adaptatifs]], [[Classification]], [[Diffusion models]], [[Détection d'objets]], [[Flash Attention and efficient attention]], [[Foundation models pour séries temporelles]], [[Graph Neural Networks]], [[Interprétabilité mécaniste]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Méta-apprentissage et few-shot learning]], [[NER et étiquetage de séquence]], [[Naive Bayes]], [[Normalisation et initialisation des réseaux]], [[Perceptron et MLP]], [[Positional encoding]], [[RUL par apprentissage profond]], [[Scaling laws]], [[Self-attention]], [[Speech models]], [[State Space Models]], [[Traitement du langage naturel]], [[TransformerLens]], [[Video generation]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[interpreto]], [[nnsight]], [[pykan]]
 
 ### Transformée de Fourier  ·  notion
 - tags : `signal-processing`, `fourier`
 - liens sortants : [[Autocorrelation]], [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Traitement du signal]], [[scipy.signal]]
-- liens entrants : [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
+- liens entrants : [[Analyse vibratoire]], [[Filtrage numérique]], [[Ondelettes]], [[STFT et spectrogramme]], [[Signal & audio]], [[Traitement]], [[Traitement du signal]], [[scipy.signal]]
 
 ### Typage statique en Python  ·  notion
 - tags : `type-checker`, `type-hints`
@@ -5058,7 +5158,7 @@
 ### Types d'anomalies et régimes de supervision  ·  notion
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Autoencodeurs]], [[Data drift]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[Imbalanced classification]], [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[PyOD]], [[Score et seuil d'alerte]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalie visuelle par banque de mémoire]], [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Indicateurs de santé]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[PyOD]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
 
 ### Types de données et choix de modèle  ·  notion
 - tags : `supervised`, `unsupervised`, `classification`, `regression`, `feature-engineering`
@@ -5068,7 +5168,7 @@
 ### Validation croisée  ·  notion
 - tags : `model-evaluation`, `resampling`, `supervised`
 - liens sortants : [[Apprentissage supervisé]], [[Bootstrap]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[ROC-AUC / courbe PR]], [[Regression metrics]], [[Scikit-Learn]], [[Walk-forward CV]]
-- liens entrants : [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[Méthodes à noyau]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Plateforme data & IA — concept]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]], [[Évaluation de modèles]]
+- liens entrants : [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage supervisé]], [[Bootstrap]], [[Calibration]], [[Classification]], [[Classification metrics]], [[Clustering evaluation]], [[Compromis biais-variance]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Forecasting framing]], [[Gaussian Process]], [[Generalization bounds]], [[Imbalanced classification]], [[Learning rate schedules]], [[Machine Learning]], [[Méthodes à noyau]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PAC learning]], [[Plateforme data & IA — concept]], [[Probing]], [[ROC-AUC / courbe PR]], [[Ranking metrics]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Théorie de l'apprentissage]], [[Types de données et choix de modèle]], [[VC dimension]], [[Walk-forward CV]], [[k-NN]], [[Évaluation de modèles]]
 
 ### Value functions  ·  notion
 - tags : `reinforcement-learning`, `value-function`
@@ -5103,17 +5203,17 @@
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Diffusion models]], [[Distillation]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Keras]], [[Metric learning & ré-identification]], [[Modèles de fondation vision]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[PyTorch]], [[Quantization]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Self-attention]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[timm]], [[torchvision]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Kornia]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[supervision]], [[torchvision]]
+- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[Augmentation d'images]], [[CNN]], [[Classification d'images]], [[Détection d'anomalies visuelle]], [[Détection d'objets]], [[Estimation de pose]], [[GANs]], [[Image generation]], [[Kornia]], [[Metric learning & ré-identification]], [[Métriques vision]], [[OCR]], [[OpenCV]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Suivi d'objets]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision Transformers (ViT)]], [[supervision]], [[torchvision]]
 
 ### Vision Transformers (ViT)  ·  notion
 - tags : `vit`, `transformers`, `computer-vision`, `deep-learning`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Architectures CNN]], [[CNN]], [[Distillation]], [[Flash Attention and efficient attention]], [[HuggingFace]], [[Modèles de fondation vision]], [[Positional encoding]], [[Rendu neuronal 3D & estimation de profondeur]], [[Segment Anything (SAM)]], [[Segmentation]], [[Self-attention]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision Language Models]], [[Vision par ordinateur]]
-- liens entrants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Modèles de fondation vision]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision par ordinateur]], [[timm]]
+- liens entrants : [[Anomalie visuelle par reconstruction, distillation et flux]], [[Apprentissage auto-supervisé en vision]], [[Apprentissage profond]], [[Modèles de fondation vision]], [[Rendu neuronal 3D & estimation de profondeur]], [[Transfer learning vision]], [[Transformer architectures]], [[Vision]], [[Vision Language Models]], [[Vision par ordinateur]], [[timm]]
 
 ### Walk-forward CV  ·  notion
 - tags : `timeseries`, `model-evaluation`, `resampling`
 - liens sortants : [[Data leakage]], [[Forecasting framing]], [[Forecasting metrics]], [[Scikit-Learn]], [[Validation croisée]], [[darts]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Régression]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Évaluation de modèles]]
+- liens entrants : [[Chronos]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Indicateurs de santé]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Régression]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Wasserstein distance  ·  notion
 - tags : `information-theory`, `optimal-transport`
@@ -5133,7 +5233,7 @@
 ### Évaluer une détection d'anomalies  ·  notion
 - tags : `anomaly-detection`, `model-evaluation`, `class-imbalance`
 - liens sortants : [[Classification metrics]], [[Data leakage]], [[Détection hors distribution (OOD)]], [[Forecasting metrics]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[Kats]], [[Machine Learning]], [[Merlion]], [[Orion]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Séries temporelles]], [[TSB-AD]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données PHM]], [[Jeux de données d'anomalies]], [[Kats]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Merlion]], [[Orion]], [[Politique de maintenance et coût]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Séries temporelles]], [[TSB-AD]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
 
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
@@ -5197,7 +5297,7 @@
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
 - `annotation` : Active learning, Annotation de données, CVAT, Label Studio
-- `anomaly-detection` : Anomalies multivariées par apprentissage profond, Comparatif - Détection d'anomalies, Contrôle statistique de procédé (SPC), Détection d'anomalies, Détection d'anomalies en ligne, Détection d'outliers multivariée, Détection d'outliers univariée, Détection de ruptures, Détection hors distribution (OOD), Foundation models et anomalies de séries, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Score et seuil d'alerte, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection, Types d'anomalies et régimes de supervision, Évaluer une détection d'anomalies
+- `anomaly-detection` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, Anomalies multivariées par apprentissage profond, Comparatif - Détection d'anomalies, Contrôle statistique de procédé (SPC), Détection d'anomalies, Détection d'anomalies en ligne, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Détection de ruptures, Détection hors distribution (OOD), Foundation models et anomalies de séries, Isolation Forest, Local Outlier Factor, Maintenance prédictive avec peu de pannes, Non supervisé, One-Class SVM, PyOD, STUMPY, Score et seuil d'alerte, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection, Types d'anomalies et régimes de supervision, Évaluer une détection d'anomalies
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
@@ -5208,7 +5308,7 @@
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence  — pas de page concept dédiée
-- `benchmark` : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Foundation models et anomalies de séries, Inspect AI, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
+- `benchmark` : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
 - `bi` : Apache Superset, Comparatif - BI auto-hébergée, Metabase  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
@@ -5219,18 +5319,19 @@
 - `change-point` : Azure AI Anomaly Detector, Détection de ruptures, Kats, Merlion, ruptures  — pas de page concept dédiée
 - `chunking` : Chunking strategies, RAG & retrieval, RAGFlow
 - `ci-cd` : Argo CD, CI-CD pour le ML, Comparatif - CI-CD auto-hébergé, DevOps, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI  — pas de page concept dédiée
-- `class-imbalance` : Classification de texte, Imbalanced classification, Tabulaire, imbalanced-learn, Évaluer une détection d'anomalies
+- `class-imbalance` : Classification de texte, Imbalanced classification, Maintenance prédictive avec peu de pannes, Tabulaire, imbalanced-learn, Évaluer une détection d'anomalies
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Méthodes à noyau, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, aeon, imbalanced-learn, k-NN, Équité et biais algorithmique, Évaluation de modèles
 - `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
 - `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, Non supervisé, aeon, hdbscan, k-médoïds (PAM)
-- `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, Vision, Vision par ordinateur, timm, torchvision
+- `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, RUL par apprentissage profond, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, LM Studio Bionic, OpenHands, Spec Kit, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, Optimisation, Optimisation combinatoire, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP
-- `computer-vision` : Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, docTR, segment-anything, supervision, timm, torchvision
+- `computer-vision` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Comparatif - Détection d'anomalies visuelles, Detectron2, Dinomaly, Détection d'anomalies visuelle, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, anomalib, docTR, patchcore-inspection, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River  — pas de page concept dédiée
+- `condition-monitoring` : Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Prédiction conforme, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
@@ -5249,7 +5350,7 @@
 - `data-drift` : Comparatif - Monitoring de modèles, Data drift, Deepchecks, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `data-governance` : Catalogue de données et lignage, Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `data-ingestion` : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, Telegraf, asyncua, dlt  — pas de page concept dédiée
-- `data-leakage` : Data leakage
+- `data-leakage` : Data leakage, Diagnostic de défauts de roulements
 - `data-lineage` : Catalogue de données et lignage, Comparatif - Catalogues et lignage de données, DataHub, OpenLineage, OpenMetadata
 - `data-modeling` : Architecture médaillon, Modélisation dimensionnelle  — pas de page concept dédiée
 - `data-pipeline` : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt  — pas de page concept dédiée
@@ -5264,7 +5365,7 @@
 - `declarative-config` : Axolotl, Kestra, LLaMA-Factory  — pas de page concept dédiée
 - `declarative-viz` : Comparatif - Visualisation, altair  — pas de page concept dédiée
 - `decoding` : Constrained decoding, Decoding strategies, Guidance, Modèles de langage, Multi-Token Prediction, Outlines, Sortie typée, Speculative decoding  — pas de page concept dédiée
-- `deep-learning` : Adam optimizer, AlphaZero and self-play, Anomalies multivariées par apprentissage profond, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, Confidentialité différentielle, DeepOD, DeepSpeed, Detectron2, Diffusion models, Distillation, Double descente et généralisation des grands modèles, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, Méta-apprentissage et few-shot learning, Normalisation et initialisation des réseaux, OCR, Orion, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Rétropropagation et différentiation automatique, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, time-series-anomaly-detector, timm, torchvision  — pas de page concept dédiée
+- `deep-learning` : Adam optimizer, AlphaZero and self-play, Anomalie visuelle par reconstruction, distillation et flux, Anomalies multivariées par apprentissage profond, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, Confidentialité différentielle, DeepOD, DeepSpeed, Detectron2, Diffusion models, Distillation, Double descente et généralisation des grands modèles, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, Méta-apprentissage et few-shot learning, Normalisation et initialisation des réseaux, OCR, Orion, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, RUL par apprentissage profond, Rendu neuronal 3D & estimation de profondeur, Rétropropagation et différentiation automatique, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, time-series-anomaly-detector, timm, torchvision  — pas de page concept dédiée
 - `deployment-strategy` : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
 - `design-tool` : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
@@ -5272,7 +5373,8 @@
 - `diagram-as-code` : Archify, Comparatif - Diagrammes, Diagrammes, Mermaid  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
-- `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
+- `digital-twin` : Jumeau numérique et modèles hybrides
+- `dimensionality-reduction` : Analyse factorielle, Autoencodeurs, CA, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, ICA, Indicateurs de santé, MCA, MFA, Manifold learning, NMF, Non supervisé, PCA, PGA, PaCMAP, Prince, Réduction de dimension, SVD, Scikit-Learn, t-SNE and UMAP, umap-learn
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, Apprentissage fédéré, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
@@ -5280,7 +5382,7 @@
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
-- `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, TensorRT
+- `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, TensorRT, anomalib
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
@@ -5294,7 +5396,7 @@
 - `explainability` : Attribution par gradient, Captum, Comparatif - Explicabilité, Explicabilité des modèles, Interprétabilité, Interprétabilité mécaniste, LIME, Machine Learning, Probing, SAELens, SHAP, Sparse autoencoders, Superposition, TransformerLens, interpreto, nnsight
 - `exploration-exploitation` : Apprentissage par renforcement, Exploration vs exploitation
 - `factor-analysis` : Analyse factorielle, CA, Comparatif - Outils stats, Comparatif - Réduction de dimension, FAMD, Fanalysis, GPA, HCPC, ICA, MCA, MFA, NMF, PCA, Prince, Réduction de dimension, Statistiques & inférence  — pas de page concept dédiée
-- `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Ingénierie des caractéristiques, Machine Learning, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Tabulaire, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
+- `feature-engineering` : EDA automatisée & profiling, Encodage des variables catégorielles, Feature store — concept, Featuretools, Fuzzy matching & similarité de chaînes, Imputation des valeurs manquantes, Indicateurs de santé, Ingénierie des caractéristiques, Machine Learning, Mise à l'échelle, Mécanismes de données manquantes, Sélection de variables, TF-IDF, Tabulaire, Time series feature engineering, Types de données et choix de modèle, category_encoders, librosa
 - `feature-store` : Feast, Feature store — concept
 - `federation` : OLTP, OLAP et lakehouse, Trino  — pas de page concept dédiée
 - `file-format` : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
@@ -5302,8 +5404,8 @@
 - `fine-tuning` : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, Fusion de modèles, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
 - `forecasting` : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Prophet, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, statsforecast  — pas de page concept dédiée
 - `formatter` : Qualité du code, Ruff, Rule - Toolchain Python  — pas de page concept dédiée
-- `foundation-model` : Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
-- `fourier` : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
+- `foundation-model` : Anomalie visuelle zero-shot et few-shot, Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
+- `fourier` : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
 - `game-theory` : Apprentissage par renforcement, Counterfactual Regret Minimization, OpenSpiel, Pattern - Moteur de jeu pur + IA séparée, Théorie des jeux
 - `gan` : GANs, Orion, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
@@ -5328,6 +5430,7 @@
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
 - `in-memory` : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
+- `industrial-inspection` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Comparatif - Détection d'anomalies visuelles, Dinomaly, Détection d'anomalies visuelle, anomalib, patchcore-inspection  — pas de page concept dédiée
 - `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM  — pas de page concept dédiée
 - `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Contexte long, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
 - `information-retrieval` : BM25, ColPali, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, Learning to rank, NLP, RAG visuel - retrouver des documents sans OCR, Recherche d'information, TF-IDF, bm25s, rank-bm25
@@ -5393,7 +5496,7 @@
 - `multi-output` : Régression et classification multi-sorties
 - `multimodal` : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
 - `multiple-testing` : Correction des tests multiples
-- `multivariate` : Azure AI Anomaly Detector, Kats, MANOVA et tests multivariés, time-series-anomaly-detector  — pas de page concept dédiée
+- `multivariate` : Azure AI Anomaly Detector, Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector  — pas de page concept dédiée
 - `mutual-information` : Mutual information, Théorie de l'information
 - `ner` : Comparatif - NLP, Construction de graphes de connaissances, Données personnelles et anonymisation pour LLM, GLiNER, Label Studio, NER et étiquetage de séquence, NLP, Presidio, pytorch-crf, seqeval, spaCy
 - `networking` : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
@@ -5401,6 +5504,7 @@
 - `nlp` : BM25, Classification de texte, Comparatif - NLP, DSPy, Decoding strategies, Fuzzy matching & similarité de chaînes, GLiNER, HuggingFace, LLM eval metrics, NER et étiquetage de séquence, NLP, NLTK, Perplexity, RAGatouille, Recherche d'information, SetFit, TF-IDF, Tokenization, Traitement du langage naturel, Transformer architectures, datasets, evaluate, interpreto, sentence-transformers, sentencepiece, seqeval, spaCy
 - `no-free-lunch` : No Free Lunch theorem, Théorie de l'apprentissage
 - `non-parametric` : Analyse de survie, Bootstrap, Gaussian Process, Méthodes à noyau, Régression quantile, Tests & estimation, Tests non paramétriques, pingouin, scipy.stats
+- `normalizing-flow` : Anomalie visuelle par reconstruction, distillation et flux  — pas de page concept dédiée
 - `nosql` : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis  — pas de page concept dédiée
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Kubeflow, Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
@@ -5413,7 +5517,7 @@
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
 - `opc-ua` : Données industrielles, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
-- `optimization` : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
+- `optimization` : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : Comparatif - ORM, ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
@@ -5435,6 +5539,7 @@
 - `pose-estimation` : Estimation de pose, Ultralytics YOLO
 - `positional-encoding` : Contexte long, Positional encoding
 - `postgres` : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
+- `predictive-maintenance` : Diagnostic de défauts de roulements, Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Maintenance prédictive, Maintenance prédictive avec peu de pannes, Politique de maintenance et coût, RUL par analyse de survie, RUL par apprentissage profond, Surveillance conditionnelle et modes de défaillance
 - `prior` : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube  — pas de page concept dédiée
 - `probabilistic-programming` : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan  — pas de page concept dédiée
@@ -5457,7 +5562,7 @@
 - `recommender-systems` : Learning to rank, Systèmes de recommandation
 - `recon` : Sécurité, Web-Check  — pas de page concept dédiée
 - `red-teaming` : garak, promptfoo  — pas de page concept dédiée
-- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Modèles à effets mixtes, Modélisation d'uplift, Méthodes à noyau, Perceptron et MLP, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
+- `regression` : Analyse de survie, Apprentissage supervisé, Arbres de décision, Extra Trees, GAM, GLM, Gaussian Process, Maintenance prédictive et RUL, Modèles à effets mixtes, Modélisation d'uplift, Méthodes à noyau, Perceptron et MLP, RUL par analyse de survie, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression quantile, SVM, Socle, Types de données et choix de modèle, k-NN, lifelines, Évaluation de modèles
 - `regret-minimization` : Counterfactual Regret Minimization  — pas de page concept dédiée
 - `regularization` : Augmentation d'images, Double descente et généralisation des grands modèles, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Comparatif - Reinforcement learning, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
@@ -5472,6 +5577,7 @@
 - `reverse-proxy` : Authelia, Caddy, Comparatif - Reverse proxies, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
+- `rul` : Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Politique de maintenance et coût, RUL par analyse de survie, RUL par apprentissage profond
 - `rule` : Rule - Config typée, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python  — pas de page concept dédiée
 - `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS
 - `safety` : AI security, Guardrails, Jailbreaking and defenses, Llama Guard, NeMo Guardrails  — pas de page concept dédiée
@@ -5487,12 +5593,12 @@
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
 - `self-hosted` : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
-- `self-supervised` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Modèles de fondation vision  — pas de page concept dédiée
+- `self-supervised` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
 - `sequence-labeling` : Comparatif - NLP, NER et étiquetage de séquence, NLP, pytorch-crf, seqeval, spaCy
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : API REST, GraphQL et gRPC, Apache Arrow, Avro  — pas de page concept dédiée
-- `signal-processing` : Comparatif - Traitement du signal, Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
+- `signal-processing` : Analyse vibratoire, Comparatif - Traitement du signal, Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
 - `spectrogram` : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
@@ -5510,8 +5616,8 @@
 - `structured-output` : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use  — pas de page concept dédiée
 - `supervised` : Active learning, AdaBoost, Analyse discriminante, Annotation de données, Apprentissage semi-supervisé, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, Learning to rank, LightGBM, Machine Learning, Méthodes à noyau, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN, Équité et biais algorithmique  — pas de page concept dédiée
 - `supply-chain` : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Harbor, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy, Zot  — pas de page concept dédiée
-- `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, Tests & estimation, lifelines
-- `synthetic-data` : Distillation, Faker, Fine-tuning, Mimesis, SDV, Synthetic data generation
+- `survival-analysis` : Analyse de survie, Maintenance prédictive et RUL, RUL par analyse de survie, Tests & estimation, lifelines
+- `synthetic-data` : Distillation, Faker, Fine-tuning, Maintenance prédictive avec peu de pannes, Mimesis, SDV, Synthetic data generation
 - `table-extraction` : Docling, MinerU, OpenDataLoader PDF, PaddleOCR, pdfplumber  — pas de page concept dédiée
 - `task-queue` : Celery, Comparatif - Brokers de messages, Messagerie  — pas de page concept dédiée
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
@@ -5520,20 +5626,20 @@
 - `testing` : DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
-- `thresholding` : Merlion, Score et seuil d'alerte, time-series-anomaly-detector  — pas de page concept dédiée
-- `timeseries` : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, Maintenance prédictive et RUL, Merlion, Orion, Prophet, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, statsforecast, time-series-anomaly-detector  — pas de page concept dédiée
+- `thresholding` : Merlion, Politique de maintenance et coût, Score et seuil d'alerte, time-series-anomaly-detector  — pas de page concept dédiée
+- `timeseries` : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, statsforecast, time-series-anomaly-detector  — pas de page concept dédiée
 - `tls` : Caddy, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik  — pas de page concept dédiée
 - `token-optimization` : Headroom  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, Modèles de langage, NLP, NLTK, Tokenization, sentencepiece, spaCy
 - `tool-use` : Agent patterns, Agent skills, Agents, Agno, Architecture deep agent, AutoGen, Claude Agent SDK, CrewAI, Deep Agents, Gemma, Harnais d'agent, Hermes Agent, LangChain, LangChain SQL agent, LangGraph, Letta, Maka, Mistral, OpenAI Agents SDK, OpenClaw, OpenHands, Pattern - Agent sur LLM auto-hébergé, PraisonAI, PydanticAI, Qwen, Semantic Kernel, Sous-agents et isolation du contexte, Structured outputs, Tool use patterns, a2a-protocol, agent-loops, fastmcp, gpt-oss, mcp-protocol, mcpjam, needle, pi, smolagents, tool-use
 - `tracing` : Comparatif - Observabilité LLM, Helicone, Journalisation structurée et traçabilité, LLM observability, LangSmith, Langfuse, Métriques, logs et traces, Observabilité des LLM, OpenTelemetry, Phoenix Arize, Tempo, TruLens  — pas de page concept dédiée
 - `traffic-analysis` : Réseau, Sniffnet  — pas de page concept dédiée
-- `transfer-learning` : Fusion de modèles, Méta-apprentissage et few-shot learning, Transfer learning vision, Vision, timm, torchvision
-- `transformers` : Anomalies multivariées par apprentissage profond, Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Comparatif - Explicabilité, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Qwen3-Embedding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), bge-m3, segment-anything  — pas de page concept dédiée
+- `transfer-learning` : Anomalie visuelle par banque de mémoire, Fusion de modèles, Maintenance prédictive avec peu de pannes, Méta-apprentissage et few-shot learning, Transfer learning vision, Vision, timm, torchvision
+- `transformers` : Anomalies multivariées par apprentissage profond, Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Comparatif - Explicabilité, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Qwen3-Embedding, RUL par apprentissage profond, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), bge-m3, segment-anything  — pas de page concept dédiée
 - `tree-based` : AdaBoost, Arbres de décision, CatBoost, Comparatif - Boosting, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost  — pas de page concept dédiée
 - `type-checker` : Comparatif - Vérificateurs de types Python, Pyright, Qualité du code, Typage statique en Python, mypy  — pas de page concept dédiée
 - `type-hints` : Comparatif - Vérificateurs de types Python, FastAPI, Instructor, Pydantic, PydanticAI, Pyright, Rule - Config typée, Rule - Qualité stricte, SQLAlchemy, SQLModel, Typage statique en Python, Typer, mypy
-- `unsupervised` : Analyse factorielle, Apprentissage non supervisé, Apprentissage semi-supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, DeepOD, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, Orion, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types d'anomalies et régimes de supervision, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
+- `unsupervised` : Analyse factorielle, Apprentissage non supervisé, Apprentissage semi-supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, DeepOD, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, Orion, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types d'anomalies et régimes de supervision, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `uptime` : Uptime Kuma  — pas de page concept dédiée
 - `value-function` : Actor-Critic methods, Apprentissage par renforcement, Bellman equations, Offline RL, Q-learning and DQN, Value functions
 - `variance-reduction` : CUPED
@@ -5541,9 +5647,10 @@
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Comparatif - Bases vectorielles, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Algèbre linéaire, Vector norms  — pas de page concept dédiée
 - `version-control` : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
+- `vibration-analysis` : Analyse vibratoire, Diagnostic de défauts de roulements
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
-- `vision-language` : ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR  — pas de page concept dédiée
+- `vision-language` : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `vulnerability-scanning` : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy  — pas de page concept dédiée
 - `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
@@ -5551,7 +5658,7 @@
 - `web-scraping` : Comparatif - Scraping, Crawlee, Data & pipelines, Documents, Firecrawl, Maxun, Pattern - Pipeline scraping → matching → optimisation, Playwright, Scraping, Scrapling, Scrapy, Web scraping, cloudscraper, curl_cffi, minim, selectolax
 - `whiteboard` : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw  — pas de page concept dédiée
 - `wide-column` : Apache Cassandra  — pas de page concept dédiée
-- `zero-shot` : Foundation models et anomalies de séries  — pas de page concept dédiée
+- `zero-shot` : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Foundation models et anomalies de séries  — pas de page concept dédiée
 
 ## À créer (gaps)
 
@@ -5570,7 +5677,7 @@
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, Rétropropagation et différentiation automatique, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence)
-- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Foundation models et anomalies de séries, Inspect AI, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation)
+- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `bi` (porté par : Apache Superset, Comparatif - BI auto-hébergée, Metabase)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
@@ -5582,6 +5689,7 @@
 - `columnar` (porté par : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River)
+- `condition-monitoring` (porté par : Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers)
 - `container-registry` (porté par : Comparatif - Registres d'images, Harbor, Zot)
@@ -5602,7 +5710,7 @@
 - `declarative-config` (porté par : Axolotl, Kestra, LLaMA-Factory)
 - `declarative-viz` (porté par : Comparatif - Visualisation, altair)
 - `decoding` (porté par : Constrained decoding, Decoding strategies, Guidance, Modèles de langage, Multi-Token Prediction, Outlines, Sortie typée, Speculative decoding)
-- `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Anomalies multivariées par apprentissage profond, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, Confidentialité différentielle, DeepOD, DeepSpeed, Detectron2, Diffusion models, Distillation, Double descente et généralisation des grands modèles, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, Méta-apprentissage et few-shot learning, Normalisation et initialisation des réseaux, OCR, Orion, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, Rendu neuronal 3D & estimation de profondeur, Rétropropagation et différentiation automatique, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, time-series-anomaly-detector, timm, torchvision)
+- `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Anomalie visuelle par reconstruction, distillation et flux, Anomalies multivariées par apprentissage profond, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, Confidentialité différentielle, DeepOD, DeepSpeed, Detectron2, Diffusion models, Distillation, Double descente et généralisation des grands modèles, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, Méta-apprentissage et few-shot learning, Normalisation et initialisation des réseaux, OCR, Orion, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, RUL par apprentissage profond, Rendu neuronal 3D & estimation de profondeur, Rétropropagation et différentiation automatique, Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, time-series-anomaly-detector, timm, torchvision)
 - `deployment-strategy` (porté par : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving)
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
 - `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, draw.io)
@@ -5626,8 +5734,8 @@
 - `fine-tuning` (porté par : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, Fusion de modèles, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
 - `forecasting` (porté par : ARIMA SARIMA, Chronos, Comparatif - Forecasting, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Prophet, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, statsforecast)
 - `formatter` (porté par : Qualité du code, Ruff, Rule - Toolchain Python)
-- `foundation-model` (porté par : Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything)
-- `fourier` (porté par : Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
+- `foundation-model` (porté par : Anomalie visuelle zero-shot et few-shot, Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything)
+- `fourier` (porté par : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `git-hooks` (porté par : Qualité du code, pre-commit)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
@@ -5637,6 +5745,7 @@
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
 - `iiot` (porté par : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
 - `in-memory` (porté par : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
+- `industrial-inspection` (porté par : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Comparatif - Détection d'anomalies visuelles, Dinomaly, Détection d'anomalies visuelle, anomalib, patchcore-inspection)
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
 - `interactive-viz` (porté par : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly)
@@ -5678,15 +5787,16 @@
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits, Optimisation bayésienne)
 - `multimodal` (porté par : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models)
-- `multivariate` (porté par : Azure AI Anomaly Detector, Kats, MANOVA et tests multivariés, time-series-anomaly-detector)
+- `multivariate` (porté par : Azure AI Anomaly Detector, Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector)
 - `networking` (porté par : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
+- `normalizing-flow` (porté par : Anomalie visuelle par reconstruction, distillation et flux)
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Kubeflow, Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Journalisation structurée et traçabilité, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
-- `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
+- `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Programmation linéaire en nombres entiers (MIP), PuLP, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray)
@@ -5728,7 +5838,7 @@
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
 - `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
-- `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Modèles de fondation vision)
+- `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : API REST, GraphQL et gRPC, Apache Arrow, Avro)
 - `spectrogram` (porté par : Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
@@ -5749,24 +5859,24 @@
 - `terminal-ui` (porté par : Comparatif - Frameworks CLI, Rich, llmfit, pi)
 - `testing` (porté par : DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
-- `thresholding` (porté par : Merlion, Score et seuil d'alerte, time-series-anomaly-detector)
-- `timeseries` (porté par : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, Maintenance prédictive et RUL, Merlion, Orion, Prophet, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, statsforecast, time-series-anomaly-detector)
+- `thresholding` (porté par : Merlion, Politique de maintenance et coût, Score et seuil d'alerte, time-series-anomaly-detector)
+- `timeseries` (porté par : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, statsforecast, time-series-anomaly-detector)
 - `tls` (porté par : Caddy, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Comparatif - Observabilité LLM, Helicone, Journalisation structurée et traçabilité, LLM observability, LangSmith, Langfuse, Métriques, logs et traces, Observabilité des LLM, OpenTelemetry, Phoenix Arize, Tempo, TruLens)
 - `traffic-analysis` (porté par : Réseau, Sniffnet)
-- `transformers` (porté par : Anomalies multivariées par apprentissage profond, Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Comparatif - Explicabilité, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Qwen3-Embedding, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), bge-m3, segment-anything)
+- `transformers` (porté par : Anomalies multivariées par apprentissage profond, Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Calculs adaptatifs, Chronos, Comparatif - Explicabilité, Flash Attention and efficient attention, Foundation models pour séries temporelles, GLiNER, HuggingFace, Interprétabilité, Mixture of Experts, Multi-Token Prediction, Multi-head Latent Attention, Positional encoding, Qwen3-Embedding, RUL par apprentissage profond, Segment Anything (SAM), Self-attention, TRL, Transformer architectures, Vision Language Models, Vision Transformers (ViT), bge-m3, segment-anything)
 - `tree-based` (porté par : AdaBoost, Arbres de décision, CatBoost, Comparatif - Boosting, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Random Forest, Tabulaire, XGBoost)
 - `type-checker` (porté par : Comparatif - Vérificateurs de types Python, Pyright, Qualité du code, Typage statique en Python, mypy)
-- `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Apprentissage semi-supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, DeepOD, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, Orion, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types d'anomalies et régimes de supervision, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
+- `unsupervised` (porté par : Analyse factorielle, Apprentissage non supervisé, Apprentissage semi-supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, DeepOD, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, Orion, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types d'anomalies et régimes de supervision, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `uptime` (porté par : Uptime Kuma)
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
-- `vision-language` (porté par : ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)
+- `vision-language` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)
 - `vulnerability-scanning` (porté par : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy)
 - `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : API REST, GraphQL et gRPC, Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Programmation asynchrone en Python, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)
 - `whiteboard` (porté par : Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw)
 - `wide-column` (porté par : Apache Cassandra)
-- `zero-shot` (porté par : Foundation models et anomalies de séries)
+- `zero-shot` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Foundation models et anomalies de séries)

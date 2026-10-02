@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 943 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 962 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -43,24 +43,25 @@
   - Sortie typée — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Text-to-SQL — 5 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Évaluation — 8 briques · 7 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
-- **Machine Learning** — 115 briques · 181 notions · 17 comparatifs → [1/3](carte/Machine%20Learning%20-%201%20sur%203.md) · [2/3](carte/Machine%20Learning%20-%202%20sur%203.md) · [3/3](carte/Machine%20Learning%20-%203%20sur%203.md)
-  - Apprentissage par renforcement — 6 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
-  - Apprentissage profond — 8 briques · 33 notions → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
-  - Détection d'anomalies — 12 briques · 15 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%201%20sur%203.md)
-  - Embeddings & encodeurs — 6 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Interprétabilité — 7 briques · 6 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Monitoring de modèles — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - NLP — 6 briques · 7 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Non supervisé — 3 briques · 13 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Plateformes data & IA — 9 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Recherche d'hyperparamètres — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Serving — 11 briques · 2 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Socle — 2 briques · 23 notions → [détail](carte/Machine%20Learning%20-%202%20sur%203.md)
-  - Suivi d'expériences — 7 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
-  - Séries temporelles — 6 briques · 11 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
-  - Tabulaire — 6 briques · 15 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
-  - Vision — 9 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
-  - Évaluation de modèles — 2 briques · 9 notions → [détail](carte/Machine%20Learning%20-%203%20sur%203.md)
+- **Machine Learning** — 120 briques · 193 notions · 18 comparatifs → [1/4](carte/Machine%20Learning%20-%201%20sur%204.md) · [2/4](carte/Machine%20Learning%20-%202%20sur%204.md) · [3/4](carte/Machine%20Learning%20-%203%20sur%204.md) · [4/4](carte/Machine%20Learning%20-%204%20sur%204.md)
+  - Apprentissage par renforcement — 6 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%204.md)
+  - Apprentissage profond — 8 briques · 33 notions → [détail](carte/Machine%20Learning%20-%201%20sur%204.md)
+  - Détection d'anomalies — 16 briques · 19 notions · 3 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Embeddings & encodeurs — 6 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Interprétabilité — 7 briques · 6 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Maintenance prédictive — 1 brique · 9 notions → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Monitoring de modèles — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - NLP — 6 briques · 7 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Non supervisé — 3 briques · 13 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
+  - Plateformes data & IA — 9 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Recherche d'hyperparamètres — 3 briques · 2 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Serving — 11 briques · 2 notions · 2 comparatifs → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Socle — 2 briques · 23 notions → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Suivi d'expériences — 7 briques · 1 notion · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Séries temporelles — 6 briques · 11 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Tabulaire — 6 briques · 15 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%203%20sur%204.md)
+  - Vision — 9 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%204%20sur%204.md)
+  - Évaluation de modèles — 2 briques · 9 notions → [détail](carte/Machine%20Learning%20-%204%20sur%204.md)
 - **Mathématiques** — 1 brique · 27 notions · 1 comparatif → [détail](carte/Math%C3%A9matiques.md)
   - Algèbre linéaire — 6 notions
   - Optimisation — 1 brique · 8 notions · 1 comparatif
@@ -74,8 +75,8 @@
 - **Patterns** — 5 patterns → [détail](carte/Patterns.md)
 - **Rules** — 5 règles → [détail](carte/Rules.md)
 - **Réseau** — 2 briques → [détail](carte/R%C3%A9seau.md)
-- **Signal & audio** — 3 briques · 5 notions · 1 comparatif → [détail](carte/Signal%20%26%20audio.md)
-  - Traitement — 2 briques · 5 notions · 1 comparatif
+- **Signal & audio** — 3 briques · 6 notions · 1 comparatif → [détail](carte/Signal%20%26%20audio.md)
+  - Traitement — 2 briques · 6 notions · 1 comparatif
 - **Statistiques & inférence** — 10 briques · 45 notions · 1 comparatif → [détail](carte/Statistiques%20%26%20inf%C3%A9rence.md)
   - Analyse factorielle — 2 briques · 9 notions
   - Bayésien — 3 briques · 6 notions

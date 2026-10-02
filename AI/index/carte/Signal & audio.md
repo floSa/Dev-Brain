@@ -1,7 +1,7 @@
 # Signal & audio — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 9 pages, chacune avec son chemin et une ligne.
+> 10 pages, chacune avec son chemin et une ligne.
 > Couvre : Traitement.
 
 ## Au niveau du dossier
@@ -10,6 +10,7 @@
 ## Traitement
 - [[PyWavelets]] · brique · `Signal & audio/Traitement/PyWavelets.md` — Transformées en ondelettes en Python — DWT/IDWT, CWT, décomposition multiniveau et seuillage, avec une large famille d'ondelettes (Daubechies, Morlet, Haar…)…
 - [[scipy.signal]] · brique · `Signal & audio/Traitement/scipy.signal.md` — Module de traitement du signal de SciPy : filtres FIR/IIR (Butterworth…), analyse spectrale (périodogramme, Welch, STFT/spectrogramme), convolution…
+- [[Analyse vibratoire]] · notion · `Signal & audio/Traitement/Analyse vibratoire.md` — Lire le signal d'un accéléromètre posé sur une machine tournante pour en déduire son état.
 - [[Filtrage numérique]] · notion · `Signal & audio/Traitement/Filtrage numérique.md` — Atténuer ou renforcer des composantes d'un signal selon leur fréquence : passe-bas, passe-haut, passe-bande, coupe-bande.
 - [[Ondelettes]] · notion · `Signal & audio/Traitement/Ondelettes.md` — Analyse temps-échelle : décompose un signal sur des fonctions localisées (les ondelettes), obtenues en dilatant et translatant une ondelette mère.
 - [[STFT et spectrogramme]] · notion · `Signal & audio/Traitement/STFT et spectrogramme.md` — STFT (Short-Time Fourier Transform) : découpe le signal en fenêtres courtes qui se chevauchent et applique une Transformée de Fourier sur chacune → le contenu…
