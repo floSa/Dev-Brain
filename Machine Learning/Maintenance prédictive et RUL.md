@@ -2,7 +2,7 @@
 role: notion
 nom: Maintenance prédictive et RUL
 alias: [Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM]
-categorie: ml/series-temporelles
+categorie: ml/maintenance
 domaines: [data-sci, mlops]
 tags: [timeseries, survival-analysis, regression]
 ---
