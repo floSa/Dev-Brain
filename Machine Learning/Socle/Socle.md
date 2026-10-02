@@ -40,8 +40,11 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 <!-- AUTO:START -->
 ### Notions
 - [[Analyse discriminante]] — domaines : data-sci, ml-eng
+- [[Apprentissage fédéré]] — domaines : ml-eng, mlops
+- [[Apprentissage semi-supervisé]] — domaines : data-sci, ml-eng
 - [[Apprentissage supervisé]] — domaines : data-sci, ml-eng
 - [[Classification]] — domaines : data-sci, ml-eng
+- [[Confidentialité différentielle]] — domaines : data-sci, ml-eng
 - [[GAM]] — domaines : data-sci, ml-eng
 - [[Gaussian Process]] — domaines : data-sci, ml-eng
 - [[GLM]] — domaines : data-sci, ml-eng

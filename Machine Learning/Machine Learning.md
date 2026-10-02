@@ -57,6 +57,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - [[Apprentissage par renforcement]] · [[Apprentissage profond]] · [[Embeddings & encodeurs]] · [[Interprétabilité]] · [[Monitoring de modèles]] · [[NLP]] · [[Non supervisé]] · [[Plateformes data & IA]] · [[Serving]] · [[Socle]] · [[Suivi d'expériences]] · [[Séries temporelles]] · [[Tabulaire]] · [[Vision]] · [[Évaluation de modèles]]
 
 ### Notions
+- [[Active learning]] — domaines : data-sci, ml-eng
 - [[Annotation de données]] — domaines : data-sci, ml-eng
 - [[CI-CD pour le ML]] — domaines : mlops
 - [[Feature store — concept]] — domaines : mlops, data-eng

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 987 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 992 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -897,6 +897,7 @@
 - **VC dimension** — domaines : data-sci, ml-eng · alias : Dimension VC, Vapnik-Chervonenkis dimension, dimension de Vapnik-Chervonenkis, VC dim, shattering
 
 ### ml/annotation
+- **Active learning** — domaines : data-sci, ml-eng · alias : Apprentissage actif, active learning, apprentissage actif profond, deep active learning, échantillonnage par incertitude, uncertainty sampling, query by committee, requête par comité, pool-based sampling, sélection d'exemples à étiqueter, core-set, BADGE, BALD, TypiClust, démarrage à froid en apprentissage actif, oracle d'annotation
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
 ### ml/apprentissage-profond
@@ -947,6 +948,7 @@
 - **Regression metrics** — domaines : data-sci, ml-eng · alias : Métriques de régression, MSE, RMSE, MAE, R2, R², R² ajusté, coefficient de détermination, erreur quadratique moyenne, Huber, régression quantile
 - **ROC-AUC / courbe PR** — domaines : data-sci, ml-eng · alias : ROC, AUC, courbe ROC, courbe PR, precision-recall, AUC-ROC, AUC-PR, ROC-AUC
 - **Validation croisée** — domaines : data-sci, ml-eng · alias : Cross-validation, K-Fold, Validation croisée stratifiée, TimeSeriesSplit, CV
+- **Équité et biais algorithmique** — domaines : data-sci, ml-eng · alias : Fairness, équité algorithmique, fairness in machine learning, biais algorithmique, algorithmic bias, parité démographique, demographic parity, parité statistique, statistical parity, égalité des chances, equal opportunity, equalized odds, odds égalisées, parité prédictive, predictive parity, calibration par groupe, disparate impact, règle des quatre cinquièmes, règle des 80 %, théorème d'impossibilité de l'équité, anti-classification, COMPAS, attribut sensible, reweighing, AI Act et biais
 
 ### ml/feature-store
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
@@ -1041,8 +1043,11 @@
 
 ### ml/socle
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
+- **Apprentissage fédéré** — domaines : ml-eng, mlops · alias : Federated learning, FL, apprentissage fédéré, entraînement fédéré, FedAvg, Federated Averaging, FedProx, FedSGD, cross-device, cross-silo, inter-appareils, inter-silos, non-IID, hétérogénéité des clients, fuite de gradients, gradient inversion, deep leakage from gradients, agrégation sécurisée, secure aggregation, apprentissage collaboratif sans partage de données
+- **Apprentissage semi-supervisé** — domaines : data-sci, ml-eng · alias : Semi-supervised learning, SSL, apprentissage semi supervisé, peu d'étiquettes, données non étiquetées, auto-apprentissage, self-training, pseudo-étiquettes, pseudo-labels, pseudo-labeling, régularisation par cohérence, consistency regularization, Mean Teacher, FixMatch, propagation de labels, label propagation, label spreading, hypothèse de cluster, hypothèse de la variété, apprentissage transductif
 - **Apprentissage supervisé** — domaines : data-sci, ml-eng · alias : Supervised learning, Apprentissage supervise, Modélisation supervisée
 - **Classification** — domaines : data-sci, ml-eng · alias : Classification supervisée, Classifieur, Classifier, Classement
+- **Confidentialité différentielle** — domaines : data-sci, ml-eng · alias : Differential privacy, DP, ε-DP, (ε, δ)-DP, budget de confidentialité, privacy budget, mécanisme de Laplace, mécanisme gaussien, sensibilité, composition, DP-SGD, moments accountant, écrêtage des gradients, Opacus, JAX Privacy, TensorFlow Privacy, VaultGemma, unité de confidentialité
 - **GAM** — domaines : data-sci, ml-eng · alias : Modèles additifs généralisés, Generalized Additive Model, Modèle additif généralisé
 - **Gaussian Process** — domaines : data-sci, ml-eng · alias : GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging
 - **GLM** — domaines : data-sci, ml-eng · alias : Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé
@@ -1080,7 +1085,7 @@
 - **Model registry & versioning** — domaines : mlops · alias : model registry, registre de modèles, model versioning, versioning de modèles, lignage de modèle, model lineage, champion-challenger
 
 ### ml/vision
-- **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder, apprentissage contrastif
+- **Apprentissage auto-supervisé en vision** — domaines : data-sci, ml-eng · alias : self-supervised learning, SSL, auto-supervisé, SimCLR, MoCo, BYOL, DINO, MAE, masked autoencoder
 - **Architectures CNN** — domaines : ml-eng · alias : ResNet, MobileNet, EfficientNet, ConvNeXt, backbone vision, CNN architectures
 - **Augmentation d'images** — domaines : data-sci, ml-eng · alias : data augmentation, augmentation de données, Mixup, CutMix, RandAugment
 - **Classification d'images** — domaines : data-sci, ml-eng · alias : image classification, classification d'image, top-1, top-5, ImageNet
