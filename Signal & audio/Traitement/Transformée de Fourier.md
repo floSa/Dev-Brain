@@ -48,6 +48,7 @@ tags: [signal-processing, fourier]
 - [[Filtrage numérique]] — la transformée explique l'action d'un filtre via sa réponse en fréquence.
 - [[Autocorrelation]] — équivalent temporel du spectre (Wiener-Khinchin).
 - [[Traitement du signal]] — page chapeau.
+- [[Analyse vibratoire]] — sur une machine tournante : raies liées à la rotation et spectre d'enveloppe.
 
 ## Pour aller plus loin
 
