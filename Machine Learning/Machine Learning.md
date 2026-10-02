@@ -22,7 +22,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - **La préparation des données pèse plus lourd que le choix du modèle.** [[EDA automatisée & profiling]] pour la première passe — elle est rangée dans [[Data & pipelines]] avec son outillage, parce qu'elle décrit un jeu de données et non un modèle —, puis [[Ingénierie des caractéristiques]], [[Encodage des variables catégorielles]], [[Mise à l'échelle]], [[Sélection de variables]]. Les valeurs manquantes se traitent en deux temps : comprendre d'abord les [[Mécanismes de données manquantes]] — pourquoi elles manquent conditionne ce qu'on a le droit d'en faire — puis [[Imputation des valeurs manquantes]].
 - **Sans cible, la validation n'existe plus** : c'est ce qui rend le non-supervisé exigeant. [[Clustering]] pose le cadre, [[K-Means]] et [[k-médoïds (PAM)]] partitionnent, [[DBSCAN]] et [[Clustering hiérarchique par densité]] trouvent des formes quelconques et laissent du bruit dehors, [[Classification hiérarchique (CAH)]] produit un arbre plutôt qu'une partition, [[Gaussian Mixture Models (GMM)]] une affectation probabiliste. [[Clustering evaluation]] est la page à lire avant d'annoncer un résultat.
 - **Réduire la dimension sert à deux choses opposées** — visualiser, ou compresser avant un modèle — et les outils ne sont pas interchangeables. [[t-SNE and UMAP]] préservent le voisinage local et servent à voir, pas à alimenter un classifieur ; [[ICA]] sépare des sources, [[NMF]] impose la positivité et donne des parties additives. Les [[embeddings]] sont la version apprise du même problème.
-- **La détection d'anomalies est un problème de définition avant d'être un problème d'algorithme.** [[Détection d'outliers univariée]] et [[Détection d'outliers multivariée]] ne visent pas la même chose ; [[Isolation Forest]], [[Local Outlier Factor]] et [[One-Class SVM]] traduisent trois hypothèses différentes sur ce qu'« anormal » veut dire.
+- **La détection d'anomalies a son dossier, [[Détection d'anomalies]], et c'est un problème de définition avant d'être un problème d'algorithme.** [[Types d'anomalies et régimes de supervision]] pose le cadre, [[Score et seuil d'alerte]] le passage à la décision, [[Évaluer une détection d'anomalies]] les pièges de la mesure. [[Détection d'outliers univariée]] et [[Détection d'outliers multivariée]] ne visent pas la même chose ; [[Isolation Forest]], [[Local Outlier Factor]] et [[One-Class SVM]] traduisent trois hypothèses différentes sur ce qu'« anormal » veut dire.
 - **Un modèle en production est un système, pas un fichier.** [[Déploiement de modèles]] et [[Model registry & versioning]] posent la traçabilité, [[CI-CD pour le ML]] ce qui change dans le pipeline qui les enchaîne, [[Monitoring de modèle en production]] et [[Data drift]] la surveillance, outillée dans [[Monitoring de modèles]] — un modèle ne tombe pas en panne, il se dégrade en silence. [[Feature store — concept]] règle le décalage entre les features d'entraînement et celles servies à l'inférence. [[Explicabilité des modèles]] est ce qu'on doit au métier, [[Optimisation d'hyperparamètres]] ce qu'on doit au modèle.
 
 ## Choisir
@@ -43,7 +43,7 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 - Surveiller un modèle en production → [[Evidently]], le seul des trois outils fichés encore maintenu ; estimer la performance sans étiquettes → [[NannyML]] ; valider avant déploiement → [[Deepchecks]]. Cf. [[Comparatif - Monitoring de modèles]]. Servir les mêmes features à l'entraînement et à l'inférence → [[Feast]].
 - Apprendre en flux, sur une donnée qui n'entre pas en mémoire → [[River]].
 - Visualiser un nuage en deux dimensions → [[umap-learn]] ou [[PaCMAP]], dans [[Non supervisé]] ; regrouper sans fixer le nombre de groupes → [[hdbscan]]. Cf. [[Comparatif - Réduction de dimension]], descendu dans [[Non supervisé]] au lot 5 : ses membres enjambent trois dossiers, et c'est la `categorie:` de sa page qui décide désormais du sien.
-- Détecter des anomalies sur du tabulaire → [[PyOD]], dans [[Non supervisé]] ; sur une série temporelle → [[STUMPY]]. Cf. [[Comparatif - Détection d'anomalies]].
+- Détecter des anomalies sur du tabulaire → [[PyOD]] ; sur une série temporelle → [[STUMPY]] ; sur les entrées d'un réseau de neurones → [[Détection hors distribution (OOD)]]. Tout est dans [[Détection d'anomalies]] ; cf. [[Comparatif - Détection d'anomalies]].
 - Un graphe en entrée → [[PyTorch Geometric]].
 - Représenter des phrases par des vecteurs → [[sentence-transformers]], et [[Embeddings & encodeurs]] pour choisir le modèle et l'outil qui le sert (cf. [[Comparatif - Embeddings]]) ; charger un jeu de données public → [[datasets]] ; calculer une métrique standard → [[evaluate]], ou [[seqeval]] pour l'étiquetage de séquence.
 - Récupérer un modèle ou un jeu de données déjà publié → [[HuggingFace]].
@@ -54,13 +54,14 @@ tags: [supervised, unsupervised, model-evaluation, feature-engineering, hyperpar
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Apprentissage par renforcement]] · [[Apprentissage profond]] · [[Embeddings & encodeurs]] · [[Interprétabilité]] · [[Monitoring de modèles]] · [[NLP]] · [[Non supervisé]] · [[Plateformes data & IA]] · [[Recherche d'hyperparamètres]] · [[Serving]] · [[Socle]] · [[Suivi d'expériences]] · [[Séries temporelles]] · [[Tabulaire]] · [[Vision]] · [[Évaluation de modèles]]
+- [[Apprentissage par renforcement]] · [[Apprentissage profond]] · [[Détection d'anomalies]] · [[Embeddings & encodeurs]] · [[Interprétabilité]] · [[Monitoring de modèles]] · [[NLP]] · [[Non supervisé]] · [[Plateformes data & IA]] · [[Recherche d'hyperparamètres]] · [[Serving]] · [[Socle]] · [[Suivi d'expériences]] · [[Séries temporelles]] · [[Tabulaire]] · [[Vision]] · [[Évaluation de modèles]]
 
 ### Notions
 - [[Active learning]] — domaines : data-sci, ml-eng
 - [[Annotation de données]] — domaines : data-sci, ml-eng
 - [[CI-CD pour le ML]] — domaines : mlops
 - [[Feature store — concept]] — domaines : mlops, data-eng
+- [[Maintenance prédictive et RUL]] — domaines : data-sci, mlops
 
 ### Briques
 - [[CVAT]] — Outil d'annotation pour la vision — images, vidéo, nuages de points 3D — avec boîtes, polygones, masques, squelettes, cuboïdes et suivi d'objets par interpolation, 27 formats d'export et pré-annotation par fonctions serverless (SAM, YOLOv7, Detectron2) ; MIT, mais SSO, contrôle qualité automatique, analytics et agents sont réservés à l'édition Enterprise.
