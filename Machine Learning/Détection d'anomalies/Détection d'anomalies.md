@@ -37,6 +37,7 @@ tags: [anomaly-detection]
 - Mesurer honnêtement un détecteur → [[Évaluer une détection d'anomalies]] avant d'annoncer un chiffre.
 - Choisir un jeu de test public, et savoir ce que sa licence permet → [[Jeux de données d'anomalies]].
 - Savoir si un modèle de classification doit refuser une entrée → [[Détection hors distribution (OOD)]].
+- Monter une chaîne complète → [[Pattern - Inspection visuelle en ligne de production]] pour des images, [[Pattern - Détection d'anomalies en deux étages]] pour des capteurs ; les deux règles de méthode sont [[Rule - Entraîner sur du normal vérifié]] et [[Rule - Évaluer une anomalie par événement, pas par point]].
 
 <!-- AUTO:START -->
 ### Notions

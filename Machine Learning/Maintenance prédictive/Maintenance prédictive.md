@@ -33,6 +33,7 @@ tags: [predictive-maintenance]
 - Transformer des fenêtres de capteurs en table pour un classifieur ou une régression → [[tsfresh]], ou [[sktime]] pour une interface commune.
 - Un service ou une plateforme du marché, ou un historien déjà en place → [[Comparatif - Offres de maintenance prédictive]] : [[Siemens Insights Hub]], [[Cognite Data Fusion]], [[Seeq]], [[AVEVA PI System]], [[Amazon Lookout for Equipment]], [[Amazon Monitron]].
 - Mesurer sur un terrain public → [[Jeux de données PHM]].
+- Monter la chaîne sur site, de l'automate à l'alerte → [[Pattern - Pipeline de maintenance prédictive on-prem]], avec [[Pattern - Détection d'anomalies en deux étages]] pour le modèle.
 
 <!-- AUTO:START -->
 ### Notions
