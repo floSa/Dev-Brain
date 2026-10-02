@@ -88,3 +88,4 @@ mars et septembre 2026.
 - [[Comparatif - Monitoring de modèles]] — ce qui le départage de NannyML et de Deepchecks
 - [[Grafana]] — des exemples du dépôt montent Evidently, PostgreSQL et Grafana en docker-compose ; Prometheus n'est documenté nulle part
 - [[Airflow]] — cité par la documentation comme orchestrateur possible d'un job de monitoring batch
+- [[Détection hors distribution (OOD)]] — la même question posée à l'entrée isolée plutôt qu'au flux : frontière avec la dérive de données

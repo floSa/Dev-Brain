@@ -82,3 +82,4 @@ restent sans réponse.
 - [[Monitoring de modèle en production]] — la couche « performance » que CBPE et DLE estiment sans étiquettes
 - [[Data drift]] — la dérive de données qu'il détecte, par feature et en multivarié
 - [[Comparatif - Monitoring de modèles]] — ce qui départage les trois outils du dossier
+- [[Détection hors distribution (OOD)]] — la même question posée à l'entrée isolée plutôt qu'au flux : frontière avec la dérive de données

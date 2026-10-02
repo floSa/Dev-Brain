@@ -55,6 +55,7 @@ tags: [data-drift, concept-drift, model-monitoring]
 - [[Evidently]] — outillage de détection de drift et de monitoring (PSI, KS, 20+ méthodes, rapports et dashboards).
 - [[River]] — apprentissage en ligne qui s'adapte à la dérive en continu (détecteurs ADWIN / Page-Hinkley intégrés), plutôt que de la détecter pour ré-entraîner en batch.
 - Voir aussi : [[NannyML]], [[Deepchecks]], [[Comparatif - Monitoring de modèles]].
+- [[Détection hors distribution (OOD)]] — juger qu'une entrée isolée sort du domaine du modèle ; la dérive juge la distribution d'un flux.
 
 ## Pour aller plus loin
 
