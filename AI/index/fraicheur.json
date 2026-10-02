@@ -2519,20 +2519,6 @@
   "release_tag": "Release v5.16.1",
   "sonde_le": "2026-09-08"
  },
- "Machine Learning/Hyperopt.md": {
-  "amont": "github:hyperopt/hyperopt",
-  "archive": false,
-  "commit_le": "2026-07-15",
-  "date": "2026-07-24",
-  "etat": "recente",
-  "http": 200,
-  "registre": "hyperopt",
-  "registre_le": "2026-07-24",
-  "registre_version": "0.3.0",
-  "release_le": "2026-07-24",
-  "release_tag": "0.3.0",
-  "sonde_le": "2026-09-08"
- },
  "Machine Learning/Interprétabilité/Captum.md": {
   "amont": "github:pytorch/captum",
   "archive": false,
@@ -2773,20 +2759,6 @@
   "release_tag": "release-0.5.12",
   "sonde_le": "2026-09-08"
  },
- "Machine Learning/Optuna.md": {
-  "amont": "github:optuna/optuna",
-  "archive": false,
-  "commit_le": "2026-09-07",
-  "date": "2026-09-07",
-  "etat": "recente",
-  "http": 200,
-  "registre": "optuna",
-  "registre_le": "2026-09-07",
-  "registre_version": "5.0.0",
-  "release_le": "2026-09-07",
-  "release_tag": "v5.0.0",
-  "sonde_le": "2026-09-08"
- },
  "Machine Learning/Plateformes data & IA/AWS SageMaker.md": {
   "date": "",
   "etat": "sans_amont",
@@ -2841,7 +2813,35 @@
   "release_tag": "Prepare for `2.8.0.post1` (#10749)",
   "sonde_le": "2026-09-08"
  },
- "Machine Learning/Ray Tune.md": {
+ "Machine Learning/Recherche d'hyperparamètres/Hyperopt.md": {
+  "amont": "github:hyperopt/hyperopt",
+  "archive": false,
+  "commit_le": "2026-07-15",
+  "date": "2026-07-24",
+  "etat": "recente",
+  "http": 200,
+  "registre": "hyperopt",
+  "registre_le": "2026-07-24",
+  "registre_version": "0.3.0",
+  "release_le": "2026-07-24",
+  "release_tag": "0.3.0",
+  "sonde_le": "2026-09-08"
+ },
+ "Machine Learning/Recherche d'hyperparamètres/Optuna.md": {
+  "amont": "github:optuna/optuna",
+  "archive": false,
+  "commit_le": "2026-09-07",
+  "date": "2026-09-07",
+  "etat": "recente",
+  "http": 200,
+  "registre": "optuna",
+  "registre_le": "2026-09-07",
+  "registre_version": "5.0.0",
+  "release_le": "2026-09-07",
+  "release_tag": "v5.0.0",
+  "sonde_le": "2026-09-08"
+ },
+ "Machine Learning/Recherche d'hyperparamètres/Ray Tune.md": {
   "amont": "github:ray-project/ray",
   "archive": false,
   "commit_le": "2026-09-08",
