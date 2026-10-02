@@ -52,6 +52,7 @@ tags: [model-evaluation, calibration, classification]
 - [[Régression logistique]] — exemple type de modèle naturellement calibré.
 - [[Validation croisée]] — recalibrer dans les plis pour éviter la fuite d'information.
 - [[Prédiction conforme]] — une garantie de couverture qui n'exige pas de probabilités fiables ; à ne pas confondre avec la calibration, qui rend les probabilités prédites fiables.
+- [[Hallucinations des LLM]] — la calibration comme hypothèse de la borne de Kalai et Vempala, et l'abstention
 
 ## Pour aller plus loin
 

@@ -90,6 +90,7 @@ tags: [llm-as-judge, llm-eval, llm]
 - [[LLM benchmarks]] — MT-Bench et les arènes reposent sur le jugement (LLM ou humain).
 - [[LLM observability]] — le juge sert aussi à scorer en ligne le trafic de production.
 - [[Chain-of-Thought]] — G-Eval fait raisonner le juge avant qu'il note.
+- [[Hallucinations des LLM]] — le juge appliqué à la factualité : auto-préférence mesurée, alignement avec l'humain
 
 ## Pour aller plus loin
 
