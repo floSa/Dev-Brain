@@ -56,7 +56,7 @@ brain:
 git:
   identite:
     name: floSa
-    email: florian_horellou@laposte.net
+    email: florian.horellou@gmail.com
   domaines_refuses: [aosis.net]
   trailers_refuses: [Co-Authored-By]
   branche_principale: main
