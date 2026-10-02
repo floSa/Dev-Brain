@@ -25,8 +25,10 @@ pitch: Les contraintes qui tiennent quelle que soit la stack — outillage, stru
 <!-- AUTO:START -->
 ### Rules
 - [[Rule - Config typée]]
+- [[Rule - Entraîner sur du normal vérifié]]
 - [[Rule - Packaging démo]]
 - [[Rule - Qualité stricte]]
 - [[Rule - Structure de projet]]
 - [[Rule - Toolchain Python]]
+- [[Rule - Évaluer une anomalie par événement, pas par point]]
 <!-- AUTO:END -->
