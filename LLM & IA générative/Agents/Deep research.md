@@ -65,6 +65,7 @@ La trame se retrouve d'une implémentation à l'autre. [[open_deep_research]] l'
 - [[Context engineering]] — compresser avant de remonter est une opération de contexte.
 - [[mcp-protocol]] — brancher des sources de recherche spécialisées.
 - Alternative : **une requête unique à un modèle avec recherche intégrée** — plus rapide et bien moins chère, suffisante quand la réponse tient en quelques faits.
+- [[RAG agentique]] — le même mécanisme à l'échelle d'une question : méthodes, évaluation multi-étapes, coût
 
 ## Pour aller plus loin
 

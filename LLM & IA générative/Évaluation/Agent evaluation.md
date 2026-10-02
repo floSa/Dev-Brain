@@ -54,6 +54,7 @@ tags: [agents, llm-eval, llm]
 - [[Agent patterns]] / [[agent-loops]] — ce qu'on évalue ; la boucle produit la trajectoire notée.
 - [[Multi-agent systems]] — l'éval se complique : à qui imputer l'échec dans une équipe d'agents ?
 - [[LLM observability]] — l'observabilité de prod alimente l'éval (cas réels → jeux de tests).
+- [[RAG agentique]] — évaluer la trajectoire d'un agent de recherche : preuves, arrêt, coût
 
 ## Pour aller plus loin
 
