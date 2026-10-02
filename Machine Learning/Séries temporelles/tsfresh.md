@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: []
+complements: ["[[sktime]]"]
 tags: [timeseries, feature-engineering, supervised]
 url_docs: https://tsfresh.readthedocs.io/
 url_repo: https://github.com/blue-yonder/tsfresh
@@ -62,8 +62,11 @@ Version 0.21.2 publiée le 2026-05-31 ; dernier push du dépôt le 2026-07-06.
 
 ### Alternatives
 
-- voisin : [[sktime]] — l'interface unifiée pour l'apprentissage sur séries temporelles ; son extraction de caractéristiques est un module parmi d'autres, là où tsfresh en fait tout son objet.
 - voisin : [[aeon]] — la boîte à outils de séries temporelles compatible scikit-learn ; tsfresh figure parmi les extras optionnels de son installation complète.
+
+### Compléments
+
+- [[sktime]] — Interface unifiée, façon scikit-learn, pour toutes les tâches d'apprentissage sur séries temporelles — prévision, classification, régression, clustering, détection — avec pipelines, réglage et réduction, et des adaptateurs vers statsmodels, tsfresh, PyOD ou Prophet ; plus de 500 estimateurs.
 
 ## Ressources
 
