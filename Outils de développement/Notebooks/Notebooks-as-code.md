@@ -51,6 +51,7 @@ tags: [notebook, reproducibility, version-control]
 - [[Ruff]] / [[pytest]] — appliqués au pendant `.py` du notebook.
 - [[ELT vs ETL & idempotence]] — même exigence d'idempotence, côté pipelines de données.
 - Voir aussi : [[mypy]], [[Pyright]], [[pre-commit]], [[Qualité du code]].
+- [[Packaging Python et environnements reproductibles]] — les métadonnées dans un script (PEP 723) et le verrouillage.
 
 ## Pour aller plus loin
 
