@@ -72,3 +72,4 @@ documents semi-structurés (JSON). Rien à télécharger.
 - [[Hybrid retrieval]] — l'étage amont qui fournit le top-k
 - [[RAG]] · [[Advanced RAG]] — le pipeline où il s'insère
 - [[Comparatif - Rerankers]] — ce qui départage les rerankers du dossier
+- [[Learning to rank]] — le cadre d'apprentissage du classement, dont le reranking est le second étage

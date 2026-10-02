@@ -75,3 +75,4 @@ modèles v1 restent sous Apache-2.0.
 - [[Late-interaction retrieval]] — `jina-colbert-v2`, l'autre approche de la famille Jina
 - [[Hybrid retrieval]] — l'étage amont qui fournit le top-k
 - [[Comparatif - Rerankers]] — ce qui départage les rerankers du dossier
+- [[Learning to rank]] — le cadre d'apprentissage ; ses variantes listwise et cross-encoder y trouvent leur place
