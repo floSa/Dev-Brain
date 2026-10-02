@@ -23,7 +23,7 @@ tags: [data-contract, data-quality, data-validation, schema-evolution]
 
 ### Validation de schéma
 - Contrôle structurel à l'exécution : types, présence des colonnes, contraintes (plages, regex, valeurs admises, clés uniques).
-- Outils Python : **Pandera** (schémas typés sur DataFrames pandas/polars, intégrable dans le code) et **Great Expectations** (suites d'« expectations », documentation et *data docs* générées). Côté transformation, **dbt tests** et **Soda** posent les contrôles en SQL.
+- Outils Python : **Pandera** (schémas typés sur DataFrames pandas/polars, intégrable dans le code) et **Great Expectations** (suites d'« expectations », documentation et *data docs* générées). Côté transformation, les tests de [[dbt Core]] posent les contrôles en SQL ; [[Soda Core]] les écrit en contrats YAML (v4, qui a remplacé SodaCL) et les exécute dans la source, en SQL.
 
 ### Dimensions de qualité
 - **Fraîcheur** : la donnée est-elle à jour ? (délai depuis la dernière mise à jour vs SLA).
@@ -55,5 +55,5 @@ tags: [data-contract, data-quality, data-validation, schema-evolution]
 
 ## Pour aller plus loin
 
-- Outils non encore fichés : **Great Expectations**, **Pandera**, **Soda**, **dbt tests** — candidats à des fiches `Dev/Services/` (`data/quality`).
+- Outils fichés : [[Great Expectations]] (cœur Apache-2.0 ; GX Cloud racheté par FICO et fermé au public le 2026-06-01), [[pandera]], [[Soda Core]] (Elastic 2.0 depuis la v4) et [[dbt Core]] (tests).
 - Lecture : *Data Contracts* (Chad Sanderson) — le contrat comme produit, géré côté producteur.
