@@ -46,6 +46,7 @@ tags: [segmentation, computer-vision, deep-learning]
 - [[Détection d'objets]] — boîtes plutôt que masques ; brique de la segmentation d'instance.
 - [[Métriques vision]] — IoU, mIoU, Dice.
 - [[Vision par ordinateur]] / [[CNN]] — cadre et backbones.
+- [[Détection d'anomalies visuelle]] — la carte d'anomalie au pixel, obtenue sans masques de défauts étiquetés ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 

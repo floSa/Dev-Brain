@@ -46,6 +46,7 @@ tags: [transfer-learning, fine-tuning, computer-vision, deep-learning]
 - [[Distillation]] — transférer le savoir d'un gros modèle vers un petit, complémentaire du transfert de poids.
 - [[Architectures CNN]] / [[CNN]] — ce que l'on transfère ; [[Vision par ordinateur]] — le cadre d'ensemble.
 - [[Méta-apprentissage et few-shot learning]] — le cas peu d'exemples : un embedding pré-entraîné et un classifieur simple rivalisent avec les méthodes de méta-apprentissage (Chen et al. 2019, Tian et al. 2020).
+- [[Détection d'anomalies visuelle]] — les méthodes à banque de mémoire reposent sur des features pré-entraînées et gelées ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 

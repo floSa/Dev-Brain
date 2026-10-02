@@ -53,6 +53,7 @@ tags: [computer-vision, cnn, deep-learning]
 - [[Vision Language Models]] — relier image et texte (VLM).
 - [[Image generation]] / [[Diffusion models]] / [[GANs]] — le versant génératif de la vision.
 - [[Rendu neuronal 3D & estimation de profondeur]] — le versant 3D : reconstruction de scènes et profondeur.
+- [[Détection d'anomalies visuelle]] — un usage industriel : repérer un défaut sur une image à partir du seul « bon », avec un score d'image et une carte au pixel ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 

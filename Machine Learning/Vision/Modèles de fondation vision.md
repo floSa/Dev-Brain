@@ -46,6 +46,7 @@ tags: [foundation-model, vision-language, self-supervised, representation-learni
 - [[Apprentissage auto-supervisé en vision]] — la **méthode** d'entraînement de DINOv2 (DINO, MAE) ; la fondation en est le produit passé à l'échelle.
 - [[Transfer learning vision]] — l'usage gelé / par transfert de ces backbones.
 - [[Segment Anything (SAM)]] — autre fondation vision, dédiée à la segmentation promptable.
+- [[Détection d'anomalies visuelle]] — des backbones de fondation (DINOv2) et des modèles vision-langage (CLIP) servent la détection zero-shot et few-shot ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 
