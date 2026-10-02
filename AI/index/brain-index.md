@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1021 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1032 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -500,6 +500,9 @@
 - **SHAP** — Bibliothèque d'explicabilité fondée sur les valeurs de Shapley — attributions locales cohérentes (qui somment à la prédiction) pour n'importe quel modèle, avec un TreeSHAP exact et rapide pour les ensembles d'arbres.
 - **TransformerLens** — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
 
+### ml/maintenance
+- **Jeux de données PHM** — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
+
 ### ml/monitoring
 - **Deepchecks** — Bibliothèque Python de validation continue pour le ML — suites de checks sur données et modèles tabulaires, NLP et vision, avec conditions pass/fail rejouables en CI ; cœur AGPL-3.0, monitoring auto-hébergé limité à un modèle, évaluation de LLM et fonctions premium commerciales.
 - **Evidently** — Framework open-source d'évaluation et de monitoring ML/LLM en Python — 100+ métriques pour détecter la dérive de données, mesurer qualité et performance et générer rapports et tableaux de bord, de l'expérimentation à la production.
@@ -989,7 +992,15 @@
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
 
 ### ml/maintenance
-- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, Maintenance prédictive, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+- **Diagnostic de défauts de roulements** — domaines : data-sci, mlops · alias : Diagnostic de roulements, Défauts de roulements, Bearing fault diagnosis, Spectre d'enveloppe, Kurtogramme
+- **Indicateurs de santé** — domaines : data-sci, mlops · alias : Health indicator, Health index, Indice de santé, Indicateur de santé
+- **Jumeau numérique et modèles hybrides** — domaines : data-sci, ml-eng · alias : Jumeau numérique, Digital twin, Modèle hybride, Modèles hybrides physique-données
+- **Maintenance prédictive avec peu de pannes** — domaines : data-sci, ml-eng, mlops · alias : PdM avec peu de pannes, Pannes rares, Peu de données de défaillance, Few failure data
+- **Maintenance prédictive et RUL** — domaines : data-sci, mlops · alias : Maintenance prédictive / RUL, RUL, Remaining useful life, Durée de vie résiduelle, Pronostic, Predictive maintenance, PdM
+- **Politique de maintenance et coût** — domaines : data-sci, mlops · alias : Politique de maintenance, Maintenance conditionnelle à seuil, Politique d'âge, Politique de bloc, Coût de maintenance
+- **RUL par analyse de survie** — domaines : data-sci, mlops · alias : RUL par survie, Survie et RUL, Weibull et RUL
+- **RUL par apprentissage profond** — domaines : data-sci, ml-eng · alias : RUL deep learning, Deep RUL, Pronostic par apprentissage profond
+- **Surveillance conditionnelle et modes de défaillance** — domaines : data-sci, infra-ops · alias : CBM, Condition-based maintenance, Courbe P-F, Intervalle P-F, AMDEC, FMEA
 
 ### ml/monitoring
 - **Data drift** — domaines : mlops, data-sci · alias : dérive de données, distribution shift, drift, dérive de distribution
@@ -1148,6 +1159,7 @@
 - **Gestion des secrets** — domaines : infra-ops, mlops · alias : secrets management, gestion de secrets, coffre à secrets, secret zéro, rotation des secrets
 
 ### signal/traitement
+- **Analyse vibratoire** — domaines : data-sci, ml-eng · alias : Vibration analysis, Analyse de vibrations, Suivi d'ordres, Order tracking, Facteur de crête
 - **Filtrage numérique** — domaines : data-sci, ml-eng · alias : filtre numérique, Butterworth, fenêtrage, apodisation, FIR, IIR, transformée de Hilbert, digital filter
 - **Ondelettes** — domaines : data-sci, ml-eng · alias : wavelets, DWT, CWT, transformée en ondelettes, multirésolution, scalogramme
 - **STFT et spectrogramme** — domaines : data-sci, ml-eng · alias : STFT, spectrogramme, short-time Fourier transform, mel-spectrogramme, MFCC, mel spectrogram
@@ -1493,6 +1505,7 @@
 - **Interprétabilité** — Rendre compte d'une prédiction — ce qui l'a causée pour le métier, et ce qui se passe à l'intérieur du réseau pour le chercheur.
 - **LLM & IA générative** — Construire avec des modèles de langage — les faire tourner, les brancher sur de la donnée, leur donner des outils, et mesurer ce qu'ils valent.
 - **Machine Learning** — Apprendre une fonction à partir de données — la cadrer, l'entraîner, mesurer ce qu'elle vaut, puis la tenir en production.
+- **Maintenance prédictive** — Estimer l'état de santé d'une machine et décider quand intervenir — surveillance, indicateurs, diagnostic de défauts, durée de vie résiduelle, coût.
 - **Mathématiques** — Les quatre socles mathématiques sur lesquels le ML repose — algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage.
 - **Messagerie** — Transporter des événements et des tâches entre services sans les interpréter — brokers en journal ou en file, file de tâches Python par-dessus — et savoir ce que chacun garantit à la livraison.
 - **ML Engineering** — Faire tenir un entraînement à l'échelle — données, mémoire, temps de calcul — et le rendre reproductible.

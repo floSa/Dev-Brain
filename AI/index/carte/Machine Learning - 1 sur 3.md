@@ -1,7 +1,7 @@
 # Machine Learning — carte (1 sur 3)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 103 pages, chacune avec son chemin et une ligne.
+> 102 pages, chacune avec son chemin et une ligne.
 > Couvre : Apprentissage par renforcement, Apprentissage profond, Détection d'anomalies, Embeddings & encodeurs.
 
 ## Au niveau du dossier
@@ -18,7 +18,6 @@
 - [[Annotation de données]] · notion · `Machine Learning/Annotation de données.md` — Produire à la main, ou corriger à la main, les étiquettes d'un jeu de données : la classe d'une image, les boîtes d'une scène, les entités d'un texte, les…
 - [[CI-CD pour le ML]] · notion · `Machine Learning/CI-CD pour le ML.md` — Étendre la livraison continue du logiciel à ce qui change dans un système ML : le code, les données et le modèle.
 - [[Feature store — concept]] · notion · `Machine Learning/Feature store — concept.md` — Couche qui centralise, stocke et sert les features ML afin qu'elles soient identiques à l'entraînement et à l'inférence — la raison d'être d'un feature store…
-- [[Maintenance prédictive et RUL]] · notion · `Machine Learning/Maintenance prédictive et RUL.md` — Maintenance prédictive (PdM) : anticiper la défaillance d'un équipement à partir de données de capteurs / de condition, pour intervenir juste avant la panne —…
 - [[Comparatif - Orchestrateurs ML]] · comparatif · `Machine Learning/Comparatif - Orchestrateurs ML.md` — l'infrastructure qu'on accepte d'opérer — un cluster Kubernetes, un compte AWS, ou aucune des deux.
 
 ## Apprentissage par renforcement

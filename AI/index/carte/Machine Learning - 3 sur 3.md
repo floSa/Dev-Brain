@@ -1,8 +1,46 @@
 # Machine Learning — carte (3 sur 3)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 78 pages, chacune avec son chemin et une ligne.
-> Couvre : Séries temporelles, Tabulaire, Vision, Évaluation de modèles.
+> 112 pages, chacune avec son chemin et une ligne.
+> Couvre : Socle, Suivi d'expériences, Séries temporelles, Tabulaire, Vision, Évaluation de modèles.
+
+## Socle
+- [[River]] · brique · `Machine Learning/Socle/River.md` — ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learnone/predictone) couvrant classification, régression…
+- [[Scikit-Learn]] · brique · `Machine Learning/Socle/Scikit-Learn.md` — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[Analyse discriminante]] · notion · `Machine Learning/Socle/Analyse discriminante.md` — Classifieur génératif qui suppose que, dans chaque classe, les données suivent une loi normale multivariée.
+- [[Apprentissage fédéré]] · notion · `Machine Learning/Socle/Apprentissage fédéré.md` — Entraîner un seul modèle à partir de données qui ne quittent pas leur propriétaire.
+- [[Apprentissage semi-supervisé]] · notion · `Machine Learning/Socle/Apprentissage semi-supervisé.md` — Situation : quelques exemples étiquetés, beaucoup d'exemples bruts.
+- [[Apprentissage supervisé]] · notion · `Machine Learning/Socle/Apprentissage supervisé.md` — Famille de méthodes qui apprennent une fonction $f : X \to y$ à partir d'exemples déjà étiquetés : on connaît la réponse sur les données d'entraînement, on…
+- [[Classification]] · notion · `Machine Learning/Socle/Classification.md` — Branche de l'Apprentissage supervisé où la cible est catégorielle : prédire à quelle classe appartient une observation (spam / non-spam, défaut / sain, une…
+- [[Confidentialité différentielle]] · notion · `Machine Learning/Socle/Confidentialité différentielle.md` — Une garantie sur une procédure, pas sur une donnée : le résultat d'un calcul change très peu, en probabilité, que l'on ajoute ou retire un individu du jeu de…
+- [[GAM]] · notion · `Machine Learning/Socle/GAM.md` — Étend le GLM en remplaçant chaque effet linéaire par une fonction lisse (spline) apprise sur les données.
+- [[Gaussian Process]] · notion · `Machine Learning/Socle/Gaussian Process.md` — Modèle bayésien non paramétrique qui ne cherche pas une fonction, mais définit une distribution sur les fonctions : à chaque prédiction il rend une moyenne et…
+- [[GLM]] · notion · `Machine Learning/Socle/GLM.md` — Étend la régression linéaire aux cibles non normales : comptages, proportions, durées, montants positifs.
+- [[k-NN]] · notion · `Machine Learning/Socle/k-NN.md` — Le modèle supervisé le plus simple qui soit : pour prédire, on cherche les k observations les plus proches dans les données d'entraînement et on prend leur…
+- [[Learning to rank]] · notion · `Machine Learning/Socle/Learning to rank.md` — Apprentissage supervisé d'une fonction de score $f(q, d)$ dont le tri décroissant sur une liste de candidats donne le bon ordre.
+- [[Méthodes à noyau]] · notion · `Machine Learning/Socle/Méthodes à noyau.md` — Famille d'algorithmes qui n'ont jamais besoin des coordonnées des points, seulement d'une mesure de similarité $k(x, x')$ entre deux points : le noyau.
+- [[Naive Bayes]] · notion · `Machine Learning/Socle/Naive Bayes.md` — Classifieur probabiliste qui applique le théorème de Bayes en supposant que toutes les variables sont indépendantes conditionnellement à la classe.
+- [[Perceptron et MLP]] · notion · `Machine Learning/Socle/Perceptron et MLP.md` — Le perceptron est le neurone artificiel originel (1958) : une somme pondérée des entrées passée dans une fonction seuil.
+- [[Régression]] · notion · `Machine Learning/Socle/Régression.md` — Branche de l'Apprentissage supervisé où la cible est continue : prédire une quantité (prix, durée, consommation, température) plutôt qu'une étiquette.
+- [[Régression et classification multi-sorties]] · notion · `Machine Learning/Socle/Régression et classification multi-sorties.md` — Prédire plusieurs cibles à la fois à partir des mêmes variables : régression multi-cibles (sorties continues) ou classification multi-étiquettes /…
+- [[Régression linéaire]] · notion · `Machine Learning/Socle/Régression linéaire.md` — Modèle supervisé : prédit une cible continue $y$ comme combinaison linéaire des variables explicatives.
+- [[Régression logistique]] · notion · `Machine Learning/Socle/Régression logistique.md` — Modèle linéaire pour cible catégorielle : prédit la probabilité d'un événement (classification).
+- [[Régression quantile]] · notion · `Machine Learning/Socle/Régression quantile.md` — Au lieu de prédire la moyenne conditionnelle $\mathbb{E}[y \mid x]$ comme toute régression ordinaire, elle prédit un quantile conditionnel : la médiane, le 5ᵉ…
+- [[Régularisation]] · notion · `Machine Learning/Socle/Régularisation.md` — Ajoute une pénalité sur la taille des coefficients d'un modèle linéaire pour combattre le surapprentissage et la colinéarité.
+- [[SVM]] · notion · `Machine Learning/Socle/SVM.md` — Modèle supervisé qui sépare deux classes par l'hyperplan le plus éloigné possible des points des deux camps : on ne cherche pas n'importe quelle frontière…
+- [[Systèmes de recommandation]] · notion · `Machine Learning/Socle/Systèmes de recommandation.md` — Prédire l'affinité entre un utilisateur et un item (produit, vidéo, article) pour ordonner ce qui sera proposé.
+- [[Types de données et choix de modèle]] · notion · `Machine Learning/Socle/Types de données et choix de modèle.md` — Page d'aiguillage : quelle tâche et quel modèle selon la donnée disponible.
+
+## Suivi d'expériences
+- [[Aim]] · brique · `Machine Learning/Suivi d'expériences/Aim.md` — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
+- [[ClearML]] · brique · `Machine Learning/Suivi d'expériences/ClearML.md` — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
+- [[Comet]] · brique · `Machine Learning/Suivi d'expériences/Comet.md` — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
+- [[MLflow]] · brique · `Machine Learning/Suivi d'expériences/MLflow.md` — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework…
+- [[Neptune]] · brique · `Machine Learning/Suivi d'expériences/Neptune.md` — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- [[TensorBoard]] · brique · `Machine Learning/Suivi d'expériences/TensorBoard.md` — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis…
+- [[Weights & Biases]] · brique · `Machine Learning/Suivi d'expériences/Weights & Biases.md` — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D…
+- [[Model registry & versioning]] · notion · `Machine Learning/Suivi d'expériences/Model registry & versioning.md` — Un point de vérité unique pour les modèles entraînés : chaque modèle y est versionné, daté, traçable jusqu'à son run d'entraînement, et promu par déplacement…
+- [[Comparatif - Suivi d'expériences ML]] · comparatif · `Machine Learning/Suivi d'expériences/Comparatif - Suivi d'expériences ML.md` — où partent les données — self-host ou cloud —, et jusqu'où va l'outil au-delà des courbes : registre de modèles, orchestration, ou rien.
 
 ## Séries temporelles
 - [[Chronos]] · brique · `Machine Learning/Séries temporelles/Chronos.md` — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2…
