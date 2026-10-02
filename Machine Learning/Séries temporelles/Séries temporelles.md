@@ -55,7 +55,9 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - [[neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - [[pmdarima]] — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
 - [[Prophet]] — Modèle de prévision additif (tendance + saisonnalités + effets calendaires) de Meta — robuste aux données manquantes et aux ruptures de tendance, exploitable sans expertise séries temporelles.
+- [[sktime]] — Interface unifiée, façon scikit-learn, pour toutes les tâches d'apprentissage sur séries temporelles — prévision, classification, régression, clustering, détection — avec pipelines, réglage et réduction, et des adaptateurs vers statsmodels, tsfresh, PyOD ou Prophet ; plus de 500 estimateurs.
 - [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
+- [[tsfresh]] — Extraction automatique de centaines de caractéristiques d'une série temporelle (statistiques, spectre, dynamique non linéaire), suivie d'un filtrage par tests d'hypothèse à contrôle du taux de fausses découvertes — la table de features qui nourrit un modèle de classification ou de régression.
 
 ### Comparatifs
 - [[Comparatif - Forecasting]]

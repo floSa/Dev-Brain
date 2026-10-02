@@ -94,6 +94,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Forecasting]]
 - [[Comparatif - Monitoring de modèles]]
 - [[Comparatif - NLP]]
+- [[Comparatif - Offres de maintenance prédictive]]
 - [[Comparatif - Optimisation d'hyperparamètres]]
 - [[Comparatif - Orchestrateurs ML]]
 - [[Comparatif - Plateformes data & IA]]
