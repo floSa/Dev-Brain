@@ -85,3 +85,5 @@ l'écosystème PyTorch depuis mars 2025, avec un support « day-one » des modè
 - [[Reasoning models]] — la famille de modèles qu'il sert en priorité
 - [[PyTorch]] — l'écosystème qui l'héberge
 - [[HuggingFace]] — d'où viennent les poids
+- [[Contexte long]] — le coût mémoire du cache KV par séquence et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel pris en charge et pièges de la quantification pour servir un LLM
