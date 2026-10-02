@@ -70,7 +70,7 @@ tags: [rul, predictive-maintenance, survival-analysis, regression]
 - **Commencer par `KaplanMeierFitter` et `WeibullFitter`** sur la flotte, regarder $\rho$ : si $\rho\approx1$, l'âge est inutile et seule la condition informe.
 - **Évaluer sur des métriques de survie**, pas le RMSE sur le RUL des seules unités en panne : une évaluation sur les seules pannes ignore justement les censurées. scikit-survival, mentionnée plus bas, propose justement des outils d'évaluation sous censure (JMLR 2020).
 - **Séparer par unité** à l'évaluation, comme pour le profond ([[Data leakage]], [[Walk-forward CV]]).
-- **Autre bibliothèque** : scikit-survival (Pölsterl, JMLR 21(212), 2020) apporte la survie « machine learning » — Cox pénalisé, forêts de survie aléatoires, SVM de survie — compatible scikit-learn. Elle n'a pas de fiche dans le brain à ce jour.
+- **Autre bibliothèque** : scikit-survival (Pölsterl, JMLR 21(212), 2020) apporte la survie « machine learning » — Cox pénalisé, forêts de survie aléatoires, SVM de survie — compatible scikit-learn. Fiche : [[scikit-survival]] (licence GPL-3.0).
 
 ## Approches voisines & alternatives
 
