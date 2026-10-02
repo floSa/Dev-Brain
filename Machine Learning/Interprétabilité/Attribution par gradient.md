@@ -75,6 +75,7 @@ tags: [explainability, deep-learning]
 - [[CNN]] — le terrain d'origine des cartes de saillance (Grad-CAM).
 - [[Métriques vision]] — pour évaluer une carte d'attribution face à une vérité terrain de segmentation.
 - [[Calibration]] — une attribution sur un modèle mal calibré explique une confiance qui n'a pas de sens.
+- [[Rétropropagation et différentiation automatique]] — le moteur sous-jacent, ici dérivé par rapport à l'entrée plutôt qu'aux poids.
 
 ## Pour aller plus loin
 
