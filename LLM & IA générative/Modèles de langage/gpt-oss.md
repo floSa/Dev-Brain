@@ -79,3 +79,5 @@ Les deux modèles à poids ouverts d'OpenAI, dépôts Hugging Face créés le 20
 - [[Licences de modèles open weights]] — la notion : une licence sans seuil ni clause d'usage, l'autre extrémité de l'échelle
 - [[Comparatif - Modèles de langage open weights]] — ce qui départage les familles du dossier
 - [[Reasoning models]] — trois niveaux de raisonnement dans le prompt système
+- [[Contexte long]] — le coût du cache KV et ce que valent les longueurs annoncées
+- [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats quantifiés, matériel et pièges pour servir ce modèle
