@@ -69,3 +69,4 @@ probabiliste : les quantiles donnent les intervalles sans calibration.
 - [[Foundation models pour séries temporelles]] — la notion dont Chronos est l'un des modèles phares
 - [[Forecasting framing]] — cadrer horizon, fuite et covariables reste nécessaire, même en zero-shot
 - [[Comparatif - Forecasting]] — ce qui départage les briques du dossier
+- [[Foundation models et anomalies de séries]] — son usage zero-shot comme détecteur, par les résidus de prévision

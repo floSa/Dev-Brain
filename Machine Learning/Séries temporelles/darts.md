@@ -75,3 +75,4 @@ réconciliation hiérarchique et détection d'anomalies.
 - [[PyTorch]] — le backend (Lightning) de ses modèles neuronaux
 - [[LightGBM]] · [[XGBoost]] · [[CatBoost]] — les gradient boostings qu'il enveloppe comme modèles de prévision
 - [[Comparatif - Forecasting]] — ce qui départage les briques du dossier
+- [[Foundation models et anomalies de séries]] — l'enveloppe d'un modèle de prévision en détecteur, par ses résidus

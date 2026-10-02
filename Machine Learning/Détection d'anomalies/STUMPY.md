@@ -72,3 +72,4 @@ sur le niveau. Une autre implémentation Python existe, `matrixprofile`, netteme
 - [[Comparatif - Détection d'anomalies]] — ce qui le départage des détecteurs tabulaires
 - [[Évaluer une détection d'anomalies]] — point-adjust et métriques par événement, pour juger ses discords
 - [[Jeux de données d'anomalies]] — les jeux de séries (NAB, SMD, SMAP/MSL, TSB-AD) et leurs défauts connus
+- [[Comparatif - Détection d'anomalies en séries temporelles]] — ce qui le départage des autres outils de séries
