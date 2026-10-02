@@ -12,7 +12,7 @@ tags: [unsupervised, clustering]
 ## Aperçu
 
 - Famille de méthodes qui cherchent une **structure dans les données sans variable cible** : aucun $y$, aucune bonne réponse connue. On ne prédit pas, on organise.
-- Trois usages dominants : **regrouper** ([[Clustering]]), **compresser / représenter** ([[Réduction de dimension]]), **repérer l'anormal** ([[Détection d'outliers multivariée]]).
+- Trois usages dominants : **regrouper** ([[Clustering]]), **compresser / représenter** ([[Réduction de dimension]]), **repérer l'anormal** ([[Détection d'outliers multivariée]], et le dossier [[Détection d'anomalies]]).
 
 ## Concepts clés
 
