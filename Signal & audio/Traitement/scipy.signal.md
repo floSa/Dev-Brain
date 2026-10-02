@@ -73,3 +73,4 @@ stable que le couple `(b, a)` dès que l'ordre du filtre monte. Ses fonctions d'
 - [[Transformée de Fourier]] — la notion derrière `periodogram` et `welch`
 - [[STFT et spectrogramme]] — la notion derrière `stft` et `spectrogram`
 - [[Comparatif - Traitement du signal]] — ce qui départage les outils du dossier
+- [[Analyse vibratoire]] — `hilbert`, `welch` et `decimate` y servent l'analyse d'une machine tournante
