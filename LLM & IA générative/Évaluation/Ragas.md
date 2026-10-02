@@ -72,3 +72,5 @@ ou de [[Phoenix Arize]]. Référence open-source de l'éval RAG, avec un papier 
 - [[RAG eval]] — la notion qu'il met en œuvre
 - [[LLM eval metrics]] — la notion du dossier
 - [[Comparatif - Évaluation LLM]] — ce qui départage les outils du dossier
+- [[Hallucinations des LLM]] — la typologie, la mesure de la fidélité et les limites des détecteurs d'hallucination
+- [[RAG agentique]] — mesurer résultat, trajectoire et coût d'un système de récupération multi-étapes

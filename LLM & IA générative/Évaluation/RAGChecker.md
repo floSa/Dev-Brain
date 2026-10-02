@@ -77,3 +77,4 @@ voisin : [[Ragas]] — métriques sans référence par LLM généraliste, plus r
 - [[LLM-as-judge]] — le mécanisme : un modèle extrait et vérifie les claims
 - [[Ranking metrics]] — les métriques d'ordre du retriever, quand un golden set de passages existe
 - [[Comparatif - Évaluation LLM]] — ce qui départage les outils du dossier
+- [[Hallucinations des LLM]] — ce que mesure la fidélité au contexte et ce que la mesure ne dit pas
