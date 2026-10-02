@@ -2,7 +2,7 @@
 role: notion
 nom: Détection d'outliers multivariée
 alias: [outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis]
-categorie: ml/non-supervise
+categorie: ml/anomalie
 domaines: [data-sci, ml-eng]
 tags: [anomaly-detection, unsupervised]
 ---

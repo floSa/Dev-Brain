@@ -2,7 +2,7 @@
 role: notion
 nom: Détection d'outliers univariée
 alias: [outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score]
-categorie: ml/non-supervise
+categorie: ml/anomalie
 domaines: [data-sci, ml-eng]
 tags: [anomaly-detection, unsupervised]
 ---
