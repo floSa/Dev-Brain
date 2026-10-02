@@ -65,5 +65,6 @@ Le framework de deep learning de Google, pensé dès l'origine pour le **passage
 ## Voir aussi
 
 - [[Apprentissage profond]] — le hub du domaine
+- [[Rétropropagation et différentiation automatique]] — le principe de la différentiation automatique, partagé avec PyTorch et JAX
 - [[TensorFlow Serving]] — le serveur d'inférence dédié aux `SavedModel` TensorFlow/Keras
 - [[HuggingFace]] — hub de modèles ; le support natif TensorFlow y est désormais minoritaire, `transformers` étant passé PyTorch-first

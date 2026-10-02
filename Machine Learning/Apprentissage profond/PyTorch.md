@@ -74,5 +74,8 @@ Le type `Tensor` — un tableau N-dimensionnel à la NumPy, sur CPU ou GPU — e
 - [[Gradient checkpointing]] — `torch.utils.checkpoint` pour échanger du calcul contre de la mémoire d'activations
 - [[Pruning]] — `torch.nn.utils.prune` pour l'élagage structuré ou non
 - [[HuggingFace]] — hub de modèles et bibliothèques au-dessus de PyTorch (backend principal de transformers, diffusers, PEFT)
+- [[Rétropropagation et différentiation automatique]] — ce que fait `torch.autograd`, et ce que `no_grad`, `inference_mode` et `detach` changent au graphe
+- [[Normalisation et initialisation des réseaux]] — `nn.BatchNorm2d`, `nn.LayerNorm`, `nn.RMSNorm` et les initialisations de `torch.nn.init`
+- [[Méta-apprentissage et few-shot learning]] — `backward(create_graph=True)` permet de différencier à travers une mise à jour de gradient (MAML)
 - [[Optuna]] — optimisation d'hyperparamètres, avec pruning intégré à PyTorch
 - [[TorchServe]] — serveur de modèles PyTorch dédié, désormais non maintenu ; pour servir en prod, voir [[NVIDIA Triton]] et [[BentoML]]
