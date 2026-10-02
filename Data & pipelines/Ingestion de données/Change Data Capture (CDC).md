@@ -36,7 +36,7 @@ tags: [cdc, streaming, data-pipeline]
 
 - Préférer le **log-based** (Debezium) quand on a la main sur la base source et qu'on vise faible latence + capture des suppressions ; le **query-based** comme repli simple quand l'accès au log est impossible.
 - CDC alimente le *Load* d'un pipeline incrémental : la couche de transformation reste de l'[[ELT vs ETL & idempotence|ELT]] côté cible.
-- Souvent posé sur un bus de streaming (Kafka) entre la source et la cible ; l'orchestration ([[Airflow]], [[Dagster]]) pilote les snapshots, le monitoring et les transformations aval plutôt que le flux lui-même.
+- Souvent posé sur un bus de streaming ([[Kafka]]) entre la source et la cible, mais pas obligatoirement : Debezium Server écrit sans Kafka vers Redis, NATS, Pulsar, Kinesis, HTTP ou une base (JDBC) ; l'orchestration ([[Airflow]], [[Dagster]]) pilote les snapshots, le monitoring et les transformations aval plutôt que le flux lui-même.
 - Poser un [[Contrats de données & qualité|contrat]] sur le flux : un changement de schéma à la source ne doit pas casser silencieusement l'aval.
 - Pièges : WAL non purgé qui sature le disque source, `DELETE` perdus en query-based, drift de schéma à la source, retraitement non idempotent à la cible.
 
@@ -51,5 +51,5 @@ tags: [cdc, streaming, data-pipeline]
 
 ## Pour aller plus loin
 
-- Outils non encore fichés : **Debezium** (log-based, connecteurs Kafka), Fivetran / Airbyte (CDC managé/intégré) — candidats `Dev/Services/` (`data/ingestion`).
+- Outils fichés : [[Debezium]] (log-based, via Kafka Connect ou en serveur autonome) et [[Airbyte]] (CDC intégré). Fivetran (CDC managé) n'a pas de fiche.
 - Notion connexe : *outbox pattern* — publier les changements applicatifs de façon transactionnelle.
