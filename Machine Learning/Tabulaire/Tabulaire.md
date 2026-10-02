@@ -29,6 +29,7 @@ tags: [tree-based, boosting, ensemble, feature-engineering, class-imbalance, sup
 - Encoder des catégorielles à forte cardinalité, hors des trois précédents → [[category_encoders]].
 - Générer automatiquement des variables depuis plusieurs tables liées → [[Featuretools]].
 - Traiter un déséquilibre de classes dans un pipeline scikit-learn → [[imbalanced-learn]].
+- Un temps jusqu'à un événement (panne, départ), avec des observations censurées → [[scikit-survival]], sous GPL-3.0 ; [[lifelines]] pour l'inférence.
 - Un modèle de référence avant tout ça, ou un cadrage à poser → [[Socle]] et [[Scikit-Learn]].
 - Comprendre pourquoi une valeur manque avant de la remplacer → [[Mécanismes de données manquantes]], puis [[Imputation des valeurs manquantes]].
 
