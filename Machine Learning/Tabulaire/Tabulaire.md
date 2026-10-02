@@ -57,6 +57,7 @@ tags: [tree-based, boosting, ensemble, feature-engineering, class-imbalance, sup
 - [[Featuretools]] — Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données relationnelles/temporelles pour générer des centaines de variables.
 - [[imbalanced-learn]] — Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés, dans un Pipeline qui cantonne le resampling au pli d'entraînement.
 - [[LightGBM]] — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
+- [[scikit-survival]] — Analyse de survie « machine learning » au-dessus de scikit-learn — Cox pénalisé, forêts de survie aléatoires, gradient boosting et SVM de survie, avec les métriques adaptées à la censure (indice de concordance, AUC dynamique, score de Brier) ; licence GPL-3.0.
 - [[XGBoost]] — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données tabulaires.
 
 ### Comparatifs

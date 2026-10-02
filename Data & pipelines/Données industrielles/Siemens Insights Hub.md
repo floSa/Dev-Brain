@@ -23,7 +23,7 @@ url_repo:
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Plateforme | propriétaire | auto-hébergeable ou managé | production | amont non sondé |
+| Plateforme | propriétaire | self-hébergé ou managé | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
