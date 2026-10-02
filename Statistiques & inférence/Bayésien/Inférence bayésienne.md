@@ -54,6 +54,9 @@ tags: [bayesian, statistical-inference, prior]
 - [[KL divergence]] — l'inférence variationnelle remplace l'échantillonnage par la minimisation d'une divergence KL à l'a posteriori.
 - [[Tests d'hypothèse]] — le cadre fréquentiste dual ; ici on compare via facteurs de Bayes plutôt que p-values.
 - [[Intervalles de confiance]] — l'analogue fréquentiste de l'intervalle de crédibilité, sans l'interprétation probabiliste directe.
+- [[Modèles graphiques probabilistes]] — le graphe qui factorise la loi jointe, et l'inférence exacte ou approchée dessus.
+- [[Monte Carlo et inférence variationnelle]] — Monte Carlo simple, échantillonnage préférentiel et inférence variationnelle : approcher l'a posteriori sans chaîne de Markov.
+- [[Facteurs de Bayes et tailles d'effet]] — comparer deux hypothèses par le rapport de leurs vraisemblances marginales, et le coût de l'a priori dans ce calcul.
 
 ## Pour aller plus loin
 

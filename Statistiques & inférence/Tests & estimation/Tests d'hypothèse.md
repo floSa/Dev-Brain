@@ -60,6 +60,7 @@ tags: [statistical-inference, hypothesis-testing, p-value]
 - [[Théorème central limite]] — fonde la normalité asymptotique des statistiques de test (t, z).
 - [[A-B testing|A/B testing]] — application décisionnelle directe : trancher entre deux variantes produit.
 - [[Inférence bayésienne]] — raisonne sur $P(H \mid \text{données})$ via un a priori ; alternative au cadre fréquentiste ci-dessus.
+- [[Facteurs de Bayes et tailles d'effet]] — taille d'effet, facteur de Bayes et critiques de la significativité statistique.
 
 ## Pour aller plus loin
 

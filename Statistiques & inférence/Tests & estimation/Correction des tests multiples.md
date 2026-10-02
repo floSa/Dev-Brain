@@ -51,6 +51,7 @@ tags: [hypothesis-testing, multiple-testing, p-value]
 - [[Test t et ANOVA]] — les post-hoc sont le cas typique de multiplicité.
 - [[Analyse de puissance]] — la correction abaisse la puissance, à anticiper.
 - [[Sequential testing]] — même problème décalé dans le temps (peeking) : la multiplicité y est sur les regards répétés.
+- [[Facteurs de Bayes et tailles d'effet]] — taille d'effet et facteur de Bayes, qui ne dispensent pas de se demander combien de tests ont été faits.
 
 ## Pour aller plus loin
 

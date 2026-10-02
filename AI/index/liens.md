@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1002 pages actives.
+> 1006 pages actives.
 
 ## Par page
 
@@ -157,8 +157,8 @@
 
 ### ArviZ  ·  brique
 - tags : `bayesian`, `monte-carlo`
-- liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]]
-- liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+- liens sortants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Stan]]
+- liens entrants : [[Bayésien]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### asyncua  ·  brique
 - tags : `opc-ua`, `iiot`, `data-ingestion`
@@ -1602,8 +1602,8 @@
 
 ### pingouin  ·  brique
 - tags : `hypothesis-testing`, `effect-size`, `statistical-power`, `non-parametric`, `parametric-test`
-- liens sortants : [[Analyse de puissance]], [[Comparatif - Outils stats]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[scipy.stats]], [[statsmodels]]
-- liens entrants : [[Comparatif - Outils stats]], [[Statistiques & inférence]], [[Tests & estimation]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[Analyse de puissance]], [[Comparatif - Outils stats]], [[Facteurs de Bayes et tailles d'effet]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[scipy.stats]], [[statsmodels]]
+- liens entrants : [[Comparatif - Outils stats]], [[Facteurs de Bayes et tailles d'effet]], [[Statistiques & inférence]], [[Tests & estimation]], [[scipy.stats]], [[statsmodels]]
 
 ### pip  ·  brique
 - tags : `package-manager`
@@ -1737,8 +1737,8 @@
 
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
-- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Modèles à effets mixtes]], [[Stan]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[Stan]], [[Statistiques & inférence]]
+- liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Modèles graphiques probabilistes]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[Stan]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles graphiques probabilistes]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[Stan]], [[Statistiques & inférence]]
 
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
@@ -1927,8 +1927,8 @@
 
 ### scipy.stats  ·  brique
 - tags : `hypothesis-testing`, `p-value`, `confidence-interval`, `parametric-test`, `non-parametric`
-- liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[statsmodels]]
-- liens entrants : [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Probabilités]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests & estimation]], [[Wasserstein distance]], [[pingouin]], [[statsmodels]]
+- liens sortants : [[Classification hiérarchique (CAH)]], [[Comparatif - Outils stats]], [[Facteurs de Bayes et tailles d'effet]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorie des valeurs extrêmes]], [[pingouin]], [[statsmodels]]
+- liens entrants : [[Comparatif - Outils stats]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[KL divergence]], [[Mathématiques]], [[Probabilités]], [[Scikit-Learn]], [[Shannon entropy]], [[Statistiques & inférence]], [[Tests & estimation]], [[Théorie des valeurs extrêmes]], [[Wasserstein distance]], [[pingouin]], [[statsmodels]]
 
 ### Scrapling  ·  brique
 - tags : `web-scraping`
@@ -2087,8 +2087,8 @@
 
 ### Stan  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`
-- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[PyMC]]
-- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[PyMC]], [[Statistiques & inférence]]
+- liens sortants : [[ArviZ]], [[Comparatif - Outils stats]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[PyMC]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Gaussian Process]], [[Inférence bayésienne]], [[MCMC]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Statistiques & inférence]]
 
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
@@ -2832,7 +2832,7 @@
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
-- liens sortants : [[A priori conjugués]], [[ArviZ]], [[CausalImpact]], [[Chaînes de Markov]], [[Estimation MAP]], [[Inférence bayésienne]], [[Inférence causale]], [[MCMC]], [[Maximum de vraisemblance]], [[PyMC]], [[Stan]], [[Tests & estimation]]
+- liens sortants : [[A priori conjugués]], [[ArviZ]], [[CausalImpact]], [[Chaînes de Markov]], [[Estimation MAP]], [[Inférence bayésienne]], [[Inférence causale]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles graphiques probabilistes]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Stan]], [[Tests & estimation]]
 - liens entrants : [[Probabilités]], [[Statistiques & inférence]], [[Tests & estimation]]
 
 ### Calcul distribué  ·  hub
@@ -3057,7 +3057,7 @@
 
 ### Probabilités  ·  hub
 - tags : `probability`, `convergence`, `concentration`, `stochastic-process`, `markov`, `monte-carlo`
-- liens sortants : [[Bayésien]], [[Chaînes de Markov]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[MCMC]], [[Mathématiques]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Processus de Poisson]], [[Tests & estimation]], [[Théorème central limite]], [[scipy.stats]]
+- liens sortants : [[Bayésien]], [[Chaînes de Markov]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[MCMC]], [[Mathématiques]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Processus de Poisson]], [[Tests & estimation]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]], [[scipy.stats]]
 - liens entrants : [[Mathématiques]], [[Statistiques & inférence]]
 
 ### Qualité du code  ·  hub
@@ -3167,7 +3167,7 @@
 
 ### Tests & estimation  ·  hub
 - tags : `statistical-inference`, `hypothesis-testing`, `confidence-interval`, `p-value`, `non-parametric`, `parametric-test`, `effect-size`, `maximum-likelihood`, `resampling`, `survival-analysis`
-- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Bayésien]], [[Bootstrap]], [[CUPED]], [[Comparatif - Outils stats]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Modèles à effets mixtes]], [[Multi-armed bandits]], [[Prédiction conforme]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Analyse de survie]], [[Bayésien]], [[Bootstrap]], [[CUPED]], [[Comparatif - Outils stats]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Modèles à effets mixtes]], [[Multi-armed bandits]], [[Prédiction conforme]], [[Sequential testing]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[lifelines]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 - liens entrants : [[Bayésien]], [[Probabilités]], [[Statistiques & inférence]]
 
 ### Text-to-SQL  ·  hub
@@ -3223,7 +3223,7 @@
 ### A priori conjugués  ·  notion
 - tags : `bayesian`, `prior`
 - liens sortants : [[A/B testing]], [[Estimation MAP]], [[Inférence bayésienne]], [[MCMC]], [[Multi-armed bandits]]
-- liens entrants : [[Bayésien]], [[Estimation MAP]], [[Inférence bayésienne]], [[MCMC]]
+- liens entrants : [[Bayésien]], [[Estimation MAP]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[MCMC]], [[Modèles graphiques probabilistes]], [[Monte Carlo et inférence variationnelle]]
 
 ### A/B testing  ·  notion
 - tags : `experimentation`, `ab-testing`, `hypothesis-testing`
@@ -3297,13 +3297,13 @@
 
 ### Analyse de puissance  ·  notion
 - tags : `statistical-power`, `hypothesis-testing`, `effect-size`
-- liens sortants : [[A/B testing]], [[Bootstrap]], [[Correction des tests multiples]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Modélisation d'uplift]], [[Sequential testing]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]]
+- liens sortants : [[A/B testing]], [[Bootstrap]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Modélisation d'uplift]], [[Sequential testing]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]]
 
 ### Analyse de survie  ·  notion
 - tags : `survival-analysis`, `regression`, `non-parametric`
 - liens sortants : [[GLM]], [[Maximum de vraisemblance]], [[Régression linéaire]], [[Régression logistique]], [[lifelines]]
-- liens entrants : [[Modèles à effets mixtes]], [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Types de données et choix de modèle]], [[lifelines]]
+- liens entrants : [[Modèles à effets mixtes]], [[Régression]], [[Statistiques & inférence]], [[Tests & estimation]], [[Théorie des valeurs extrêmes]], [[Types de données et choix de modèle]], [[lifelines]]
 
 ### Analyse discriminante  ·  notion
 - tags : `supervised`, `classification`, `bayesian`, `linear-model`
@@ -3408,7 +3408,7 @@
 ### Autoencodeurs  ·  notion
 - tags : `deep-learning`, `unsupervised`, `representation-learning`, `dimensionality-reduction`
 - liens sortants : [[Apprentissage auto-supervisé en vision]], [[Apprentissage non supervisé]], [[Diffusion models]], [[Détection d'outliers multivariée]], [[GANs]], [[KL divergence]], [[Keras]], [[Manifold learning]], [[PCA]], [[PyOD]], [[PyTorch]], [[Réduction de dimension]], [[Sparse autoencoders]], [[Time series anomaly detection]], [[embeddings]], [[t-SNE and UMAP]]
-- liens entrants : [[Apprentissage profond]], [[Diffusion models]], [[PCA]], [[PGA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]]
+- liens entrants : [[Apprentissage profond]], [[Diffusion models]], [[Monte Carlo et inférence variationnelle]], [[PCA]], [[PGA]], [[Réduction de dimension]], [[SAELens]], [[Sparse autoencoders]], [[Time series anomaly detection]]
 
 ### Bagging  ·  notion
 - tags : `supervised`, `ensemble`, `bagging`
@@ -3443,7 +3443,7 @@
 ### Bootstrap  ·  notion
 - tags : `resampling`, `confidence-interval`, `non-parametric`
 - liens sortants : [[Analyse de puissance]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Prédiction conforme]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
-- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Prédiction conforme]], [[Régression]], [[Régression quantile]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorème central limite]], [[Validation croisée]]
+- liens entrants : [[Analyse de puissance]], [[CUPED]], [[Gaussian Process]], [[Intervalles de confiance]], [[Loi des grands nombres]], [[Prédiction conforme]], [[Régression]], [[Régression quantile]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]], [[Validation croisée]]
 
 ### CA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -3478,7 +3478,7 @@
 ### Chaînes de Markov  ·  notion
 - tags : `stochastic-process`, `markov`, `probability`
 - liens sortants : [[MCMC]], [[Markov Decision Process]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Processus de Poisson]], [[PyMC]], [[Stan]]
-- liens entrants : [[Bayésien]], [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Probabilités]], [[Processus de Poisson]], [[PyMC]]
+- liens entrants : [[Bayésien]], [[Eigendecomposition]], [[Inégalités de concentration]], [[MCMC]], [[Markov Decision Process]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles graphiques probabilistes]], [[Mouvement brownien]], [[Probabilités]], [[Processus de Poisson]], [[PyMC]]
 
 ### Choisir un modèle d'embedding  ·  notion
 - tags : `embeddings`, `semantic-search`, `retrieval`, `hybrid-search`, `benchmark`, `quantization`, `self-hosted`
@@ -3587,8 +3587,8 @@
 
 ### Correction des tests multiples  ·  notion
 - tags : `hypothesis-testing`, `multiple-testing`, `p-value`
-- liens sortants : [[Analyse de puissance]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
-- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[MANOVA et tests multivariés]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]]
+- liens sortants : [[Analyse de puissance]], [[Facteurs de Bayes et tailles d'effet]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
+- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Facteurs de Bayes et tailles d'effet]], [[MANOVA et tests multivariés]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]]
 
 ### Counterfactual Regret Minimization  ·  notion
 - tags : `game-theory`, `regret-minimization`, `self-play`
@@ -3662,8 +3662,8 @@
 
 ### Découverte causale  ·  notion
 - tags : `causal-inference`, `statistical-inference`
-- liens sortants : [[A/B testing]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Modélisation d'uplift]]
-- liens entrants : [[Inférence causale]], [[Méthodes causales]], [[Statistiques & inférence]]
+- liens sortants : [[A/B testing]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Modèles graphiques probabilistes]], [[Modélisation d'uplift]]
+- liens entrants : [[Inférence causale]], [[Modèles graphiques probabilistes]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Déploiement de modèles  ·  notion
 - tags : `deployment-strategy`, `model-serving`, `inference`
@@ -3728,7 +3728,7 @@
 ### Estimation MAP  ·  notion
 - tags : `bayesian`, `point-estimation`, `prior`
 - liens sortants : [[A priori conjugués]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[PyMC]], [[Régularisation]]
-- liens entrants : [[A priori conjugués]], [[Bayésien]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[Naive Bayes]], [[PyMC]], [[Régularisation]]
+- liens entrants : [[A priori conjugués]], [[Bayésien]], [[Inférence bayésienne]], [[Maximum de vraisemblance]], [[Monte Carlo et inférence variationnelle]], [[Naive Bayes]], [[PyMC]], [[Régularisation]]
 
 ### Explicabilité des modèles  ·  notion
 - tags : `explainability`, `supervised`
@@ -3749,6 +3749,11 @@
 - tags : `supervised`, `tree-based`, `ensemble`, `classification`, `regression`
 - liens sortants : [[Arbres de décision]], [[Bagging]], [[Compromis biais-variance]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[Isolation Forest]], [[Random Forest]], [[Scikit-Learn]], [[Types de données et choix de modèle]]
 - liens entrants : [[Bagging]], [[Classification]], [[Ensembling]], [[Isolation Forest]], [[Machine Learning]], [[Tabulaire]]
+
+### Facteurs de Bayes et tailles d'effet  ·  notion
+- tags : `effect-size`, `hypothesis-testing`, `bayesian`, `p-value`
+- liens sortants : [[A priori conjugués]], [[Analyse de puissance]], [[Correction des tests multiples]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Monte Carlo et inférence variationnelle]], [[Test t et ANOVA]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
+- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[pingouin]], [[scipy.stats]]
 
 ### FAMD  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -3937,13 +3942,13 @@
 
 ### Inférence bayésienne  ·  notion
 - tags : `bayesian`, `statistical-inference`, `prior`
-- liens sortants : [[A priori conjugués]], [[A/B testing]], [[ArviZ]], [[CausalImpact]], [[Estimation MAP]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[PyMC]], [[Stan]], [[Tests d'hypothèse]], [[scipy.stats]]
-- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[Bayésien]], [[CausalImpact]], [[Classification metrics]], [[Découverte causale]], [[Estimation MAP]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles à effets mixtes]], [[Naive Bayes]], [[Optimisation bayésienne]], [[Prédiction conforme]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
+- liens sortants : [[A priori conjugués]], [[A/B testing]], [[ArviZ]], [[CausalImpact]], [[Estimation MAP]], [[Facteurs de Bayes et tailles d'effet]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles graphiques probabilistes]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Stan]], [[Tests d'hypothèse]], [[scipy.stats]]
+- liens entrants : [[A priori conjugués]], [[Apprentissage supervisé]], [[ArviZ]], [[Bayésien]], [[CausalImpact]], [[Classification metrics]], [[Découverte causale]], [[Estimation MAP]], [[Facteurs de Bayes et tailles d'effet]], [[Gaussian Process]], [[Intervalles de confiance]], [[KL divergence]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles graphiques probabilistes]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[Naive Bayes]], [[Optimisation bayésienne]], [[Prédiction conforme]], [[PyMC]], [[Stan]], [[Statistiques & inférence]], [[Tests d'hypothèse]]
 
 ### Inférence causale  ·  notion
 - tags : `causal-inference`, `statistical-inference`
 - liens sortants : [[A/B testing]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Modélisation d'uplift]], [[statsmodels]]
-- liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Modélisation d'uplift]], [[Méthodes causales]], [[Statistiques & inférence]]
+- liens entrants : [[Bayésien]], [[CUPED]], [[CausalImpact]], [[Diff-in-Diff]], [[Découverte causale]], [[Modèles graphiques probabilistes]], [[Modélisation d'uplift]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Inférence en bordure - modèles sur du matériel d'atelier  ·  notion
 - tags : `edge-inference`, `inference`, `iiot`, `model-serving`
@@ -3972,13 +3977,13 @@
 
 ### Intervalles de confiance  ·  notion
 - tags : `statistical-inference`, `confidence-interval`
-- liens sortants : [[Analyse de puissance]], [[Bootstrap]], [[Inférence bayésienne]], [[Prédiction conforme]], [[Tests d'hypothèse]], [[Théorème central limite]]
-- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Inférence bayésienne]], [[Probabilités]], [[Prédiction conforme]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Théorème central limite]], [[scipy.stats]]
+- liens sortants : [[Analyse de puissance]], [[Bootstrap]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[Prédiction conforme]], [[Tests d'hypothèse]], [[Théorème central limite]]
+- liens entrants : [[A/B testing]], [[Bootstrap]], [[CUPED]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[Probabilités]], [[Prédiction conforme]], [[Régression quantile]], [[Statistiques & inférence]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]], [[scipy.stats]]
 
 ### Inégalités de concentration  ·  notion
 - tags : `probability`, `concentration`
-- liens sortants : [[Analyse de puissance]], [[Chaînes de Markov]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[Théorème central limite]]
-- liens entrants : [[Exploration vs exploitation]], [[Generalization bounds]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[PAC learning]], [[Probabilités]], [[Rademacher complexity]], [[Théorème central limite]]
+- liens sortants : [[Analyse de puissance]], [[Chaînes de Markov]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]]
+- liens entrants : [[Exploration vs exploitation]], [[Generalization bounds]], [[Loi des grands nombres]], [[Multi-armed bandits]], [[PAC learning]], [[Probabilités]], [[Rademacher complexity]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]]
 
 ### Isolation Forest  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `tree-based`, `ensemble`
@@ -4012,8 +4017,8 @@
 
 ### KL divergence  ·  notion
 - tags : `information-theory`, `kl-divergence`
-- liens sortants : [[Cross-entropy]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Mutual information]], [[PyTorch]], [[RLHF and DPO]], [[Shannon entropy]], [[Wasserstein distance]], [[scipy.stats]]
-- liens entrants : [[Autoencodeurs]], [[Cross-entropy]], [[Data drift]], [[Diffusion models]], [[Distillation]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Mutual information]], [[Optimal transport]], [[Shannon entropy]], [[Théorie de l'information]], [[Wasserstein distance]]
+- liens sortants : [[Cross-entropy]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Monte Carlo et inférence variationnelle]], [[Mutual information]], [[PyTorch]], [[RLHF and DPO]], [[Shannon entropy]], [[Wasserstein distance]], [[scipy.stats]]
+- liens entrants : [[Autoencodeurs]], [[Cross-entropy]], [[Data drift]], [[Diffusion models]], [[Distillation]], [[Inférence bayésienne]], [[Jensen-Shannon divergence]], [[Monte Carlo et inférence variationnelle]], [[Mutual information]], [[Optimal transport]], [[Shannon entropy]], [[Théorie de l'information]], [[Wasserstein distance]]
 
 ### Kolmogorov-Arnold Networks  ·  notion
 - tags : `deep-learning`
@@ -4073,7 +4078,7 @@
 ### Loi des grands nombres  ·  notion
 - tags : `probability`, `convergence`
 - liens sortants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Théorème central limite]]
-- liens entrants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Probabilités]], [[Théorème central limite]]
+- liens entrants : [[Bootstrap]], [[Inégalités de concentration]], [[MCMC]], [[Monte Carlo et inférence variationnelle]], [[Probabilités]], [[Théorie des valeurs extrêmes]], [[Théorème central limite]]
 
 ### LoRA et QLoRA  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -4123,7 +4128,7 @@
 ### Maximum de vraisemblance  ·  notion
 - tags : `maximum-likelihood`, `point-estimation`, `statistical-inference`
 - liens sortants : [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Régression linéaire]], [[Régression logistique]], [[Tests d'hypothèse]]
-- liens entrants : [[Analyse de survie]], [[Bayésien]], [[Cross-entropy]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Tests & estimation]], [[Théorie de l'information]]
+- liens entrants : [[Analyse de survie]], [[Bayésien]], [[Cross-entropy]], [[Estimation MAP]], [[GLM]], [[Inférence bayésienne]], [[Modèles graphiques probabilistes]], [[Newton & quasi-Newton]], [[Régression linéaire]], [[Régression logistique]], [[Tests & estimation]], [[Théorie de l'information]], [[Théorie des valeurs extrêmes]]
 
 ### MCA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -4132,8 +4137,8 @@
 
 ### MCMC  ·  notion
 - tags : `monte-carlo`, `markov`, `bayesian`
-- liens sortants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[PyMC]], [[Stan]]
-- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Modèles de Markov cachés et filtre de Kalman]], [[Probabilités]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
+- liens sortants : [[A priori conjugués]], [[ArviZ]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Modèles graphiques probabilistes]], [[Monte Carlo et inférence variationnelle]], [[PyMC]], [[Stan]]
+- liens entrants : [[A priori conjugués]], [[ArviZ]], [[Bayésien]], [[Chaînes de Markov]], [[Inférence bayésienne]], [[Loi des grands nombres]], [[Modèles de Markov cachés et filtre de Kalman]], [[Modèles graphiques probabilistes]], [[Monte Carlo et inférence variationnelle]], [[Probabilités]], [[PyMC]], [[Stan]], [[Statistiques & inférence]]
 
 ### mcp-protocol  ·  notion
 - tags : `mcp`, `tool-use`, `llm`, `agents`
@@ -4187,8 +4192,13 @@
 
 ### Modèles de Markov cachés et filtre de Kalman  ·  notion
 - tags : `stochastic-process`, `markov`, `forecasting`
-- liens sortants : [[Chaînes de Markov]], [[Inférence bayésienne]], [[MCMC]], [[Markov Decision Process]], [[Stationarity]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
-- liens entrants : [[Chaînes de Markov]], [[Probabilités]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
+- liens sortants : [[Chaînes de Markov]], [[Inférence bayésienne]], [[MCMC]], [[Markov Decision Process]], [[Modèles graphiques probabilistes]], [[Stationarity]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
+- liens entrants : [[Chaînes de Markov]], [[Modèles graphiques probabilistes]], [[Probabilités]], [[Suivi d'objets]], [[Time series anomaly detection]], [[darts]], [[pmdarima]], [[statsmodels]]
+
+### Modèles graphiques probabilistes  ·  notion
+- tags : `bayesian`, `probability`, `markov`, `statistical-inference`
+- liens sortants : [[A priori conjugués]], [[Chaînes de Markov]], [[Découverte causale]], [[Inférence bayésienne]], [[Inférence causale]], [[MCMC]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Monte Carlo et inférence variationnelle]], [[PyMC]]
+- liens entrants : [[Bayésien]], [[Découverte causale]], [[Inférence bayésienne]], [[MCMC]], [[Modèles de Markov cachés et filtre de Kalman]], [[PyMC]]
 
 ### Modèles à effets mixtes  ·  notion
 - tags : `statistical-inference`, `regression`, `linear-model`
@@ -4209,6 +4219,11 @@
 - tags : `model-monitoring`, `data-drift`, `concept-drift`
 - liens sortants : [[CI-CD pour le ML]], [[Calibration]], [[Classification metrics]], [[Comparatif - Monitoring de modèles]], [[Data drift]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[MLflow]], [[Model registry & versioning]], [[NannyML]]
 - liens entrants : [[Apprentissage fédéré]], [[CI-CD pour le ML]], [[Data drift]], [[DataRobot]], [[Deepchecks]], [[Déploiement de modèles]], [[Evidently]], [[Feature store — concept]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[MLflow]], [[Machine Learning]], [[Model registry & versioning]], [[Monitoring de modèles]], [[Métriques, logs et traces]], [[NannyML]], [[Plateforme data & IA — concept]], [[SLO et alerting]], [[Serving]], [[Suivi d'expériences]], [[Équité et biais algorithmique]]
+
+### Monte Carlo et inférence variationnelle  ·  notion
+- tags : `monte-carlo`, `bayesian`, `probabilistic-programming`, `statistical-inference`
+- liens sortants : [[A priori conjugués]], [[ArviZ]], [[Autoencodeurs]], [[Estimation MAP]], [[Inférence bayésienne]], [[KL divergence]], [[Loi des grands nombres]], [[MCMC]], [[Prédiction conforme]], [[PyMC]], [[Stan]], [[Théorème central limite]]
+- liens entrants : [[ArviZ]], [[Bayésien]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[KL divergence]], [[MCMC]], [[Modèles graphiques probabilistes]], [[PyMC]], [[Stan]]
 
 ### Monte Carlo Tree Search  ·  notion
 - tags : `planning`, `monte-carlo`, `model-based-rl`
@@ -4478,7 +4493,7 @@
 ### Prédiction conforme  ·  notion
 - tags : `statistical-inference`, `confidence-interval`, `model-evaluation`
 - liens sortants : [[Bootstrap]], [[Calibration]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[darts]], [[statsforecast]]
-- liens entrants : [[Bootstrap]], [[Calibration]], [[Intervalles de confiance]], [[Régression quantile]], [[Statistiques & inférence]], [[Tests & estimation]], [[darts]], [[statsforecast]]
+- liens entrants : [[Bootstrap]], [[Calibration]], [[Intervalles de confiance]], [[Monte Carlo et inférence variationnelle]], [[Régression quantile]], [[Statistiques & inférence]], [[Tests & estimation]], [[darts]], [[statsforecast]]
 
 ### Q-learning and DQN  ·  notion
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
@@ -4738,7 +4753,7 @@
 ### Stationarity  ·  notion
 - tags : `timeseries`, `stochastic-process`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[darts]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prédiction conforme]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Time series anomaly detection]], [[Traitement du signal]], [[pmdarima]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prédiction conforme]], [[STFT et spectrogramme]], [[Séries temporelles]], [[Théorie des valeurs extrêmes]], [[Time series anomaly detection]], [[Traitement du signal]], [[pmdarima]]
 
 ### STFT et spectrogramme  ·  notion
 - tags : `signal-processing`, `spectrogram`, `fourier`
@@ -4812,13 +4827,13 @@
 
 ### Test t et ANOVA  ·  notion
 - tags : `hypothesis-testing`, `parametric-test`, `effect-size`
-- liens sortants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests d'hypothèse]], [[Tests non paramétriques]]
-- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[MANOVA et tests multivariés]], [[Modèles à effets mixtes]], [[Test du khi-deux]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Test du khi-deux]], [[Tests d'hypothèse]], [[Tests non paramétriques]]
+- liens entrants : [[Analyse de puissance]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[MANOVA et tests multivariés]], [[Modèles à effets mixtes]], [[Test du khi-deux]], [[Tests & estimation]], [[Tests d'hypothèse]], [[Tests non paramétriques]], [[pingouin]], [[scipy.stats]], [[statsmodels]]
 
 ### Tests d'hypothèse  ·  notion
 - tags : `statistical-inference`, `hypothesis-testing`, `p-value`
-- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[Théorème central limite]]
-- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests non paramétriques]], [[Théorie de l'information]], [[Théorème central limite]], [[scipy.stats]], [[statsmodels]]
+- liens sortants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests non paramétriques]], [[Théorème central limite]]
+- liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Bootstrap]], [[Correction des tests multiples]], [[Diff-in-Diff]], [[Facteurs de Bayes et tailles d'effet]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[MANOVA et tests multivariés]], [[Maximum de vraisemblance]], [[Statistiques & inférence]], [[Test du khi-deux]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests non paramétriques]], [[Théorie de l'information]], [[Théorème central limite]], [[scipy.stats]], [[statsmodels]]
 
 ### Tests non paramétriques  ·  notion
 - tags : `non-parametric`, `hypothesis-testing`
@@ -4835,15 +4850,20 @@
 - liens sortants : [[AlphaZero and self-play]], [[Counterfactual Regret Minimization]], [[GANs]], [[Monte Carlo Tree Search]], [[Multi-armed bandits]], [[OpenSpiel]], [[Reinforcement learning]]
 - liens entrants : [[AlphaZero and self-play]], [[Apprentissage par renforcement]], [[Counterfactual Regret Minimization]], [[Monte Carlo Tree Search]], [[OpenSpiel]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Reinforcement learning]]
 
+### Théorie des valeurs extrêmes  ·  notion
+- tags : `probability`, `statistical-inference`, `anomaly-detection`, `reliability`
+- liens sortants : [[Analyse de survie]], [[Bootstrap]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Maximum de vraisemblance]], [[Stationarity]], [[Théorème central limite]], [[Time series anomaly detection]], [[scipy.stats]]
+- liens entrants : [[Inégalités de concentration]], [[Probabilités]], [[Théorème central limite]], [[scipy.stats]]
+
 ### Théorème central limite  ·  notion
 - tags : `probability`, `convergence`
-- liens sortants : [[Bootstrap]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Tests d'hypothèse]]
-- liens entrants : [[Bootstrap]], [[ICA]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Probabilités]], [[Tests d'hypothèse]]
+- liens sortants : [[Bootstrap]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Mouvement brownien]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]]
+- liens entrants : [[Bootstrap]], [[ICA]], [[Intervalles de confiance]], [[Inégalités de concentration]], [[Loi des grands nombres]], [[Monte Carlo et inférence variationnelle]], [[Mouvement brownien]], [[Probabilités]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]]
 
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
 - liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Autoencodeurs]], [[DBSCAN]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Forecasting framing]], [[Imbalanced classification]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]]
-- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[Traitement du signal]]
+- liens entrants : [[Autoencodeurs]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Isolation Forest]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Séries temporelles]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
@@ -5027,7 +5047,7 @@
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
 - `annotation` : Active learning, Annotation de données, CVAT, Label Studio
-- `anomaly-detection` : Comparatif - Détection d'anomalies, Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Time series anomaly detection
+- `anomaly-detection` : Comparatif - Détection d'anomalies, Détection d'outliers multivariée, Détection d'outliers univariée, Isolation Forest, Local Outlier Factor, Non supervisé, One-Class SVM, PyOD, STUMPY, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
@@ -5037,7 +5057,7 @@
 - `autograd` : Apprentissage profond, JAX, Kornia, PyTorch, Rétropropagation et différentiation automatique, TensorFlow  — pas de page concept dédiée
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
-- `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence  — pas de page concept dédiée
+- `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence  — pas de page concept dédiée
 - `benchmark` : Choisir un modèle d'embedding, Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
 - `bi` : Apache Superset, Comparatif - BI auto-hébergée, Metabase  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
@@ -5111,7 +5131,7 @@
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
 - `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, TensorRT
 - `education` : OpenMAIC  — pas de page concept dédiée
-- `effect-size` : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin  — pas de page concept dédiée
+- `effect-size` : Analyse de puissance, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
 - `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
 - `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, ColPali, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Qwen3-Embedding, RAG, RAG visuel - retrouver des documents sans OCR, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
@@ -5149,7 +5169,7 @@
 - `hybrid-search` : Choisir un modèle d'embedding, FastEmbed, Haystack, Hybrid retrieval, Meilisearch, OpenSearch, Recherche d'information, Typesense, Vespa, Weaviate, bge-m3
 - `hypermedia` : Comparatif - Frontends web légers, HTMX, Web & API  — pas de page concept dédiée
 - `hyperparameter-tuning` : Comparatif - Optimisation d'hyperparamètres, Hyperopt, Kubeflow, Machine Learning, Maximal Update Parametrization, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, Ray Tune, Recherche d'hyperparamètres, Suivi d'expériences
-- `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
+- `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : Architecture pilotée par les événements, ELT vs ETL & idempotence, Fiabilité des données, Ingestion incrémentale et curseurs, Orchestration, Stream processing
 - `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
 - `iiot` : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
@@ -5191,7 +5211,7 @@
 - `low-code` : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `manifold` : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn  — pas de page concept dédiée
 - `markdown-conversion` : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector  — pas de page concept dédiée
-- `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Probabilités, PyMC, Stan  — pas de page concept dédiée
+- `markov` : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Modèles graphiques probabilistes, Probabilités, PyMC, Stan  — pas de page concept dédiée
 - `markov-decision-process` : Apprentissage par renforcement, Markov Decision Process, Reinforcement learning
 - `matrix-decomposition` : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD  — pas de page concept dédiée
 - `maximum-likelihood` : GLM, Gaussian Mixture Models (GMM), Maximum de vraisemblance, Régression logistique, Tests & estimation
@@ -5215,7 +5235,7 @@
 - `model-monitoring` : Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Neptune, Suivi d'expériences, Weights & Biases
 - `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
-- `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan  — pas de page concept dédiée
+- `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Monte Carlo et inférence variationnelle, Probabilités, PyMC, Stan
 - `mqtt` : Comparatif - Brokers MQTT, Données industrielles, EMQX, Mosquitto, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
 - `multi-armed-bandit` : Exploration vs exploitation, Multi-armed bandits, Optimisation bayésienne  — pas de page concept dédiée
@@ -5247,7 +5267,7 @@
 - `orm` : Comparatif - ORM, ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
 - `out-of-core` : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray  — pas de page concept dédiée
-- `p-value` : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
+- `p-value` : Correction des tests multiples, Facteurs de Bayes et tailles d'effet, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels  — pas de page concept dédiée
 - `pac-learning` : PAC learning, Théorie de l'apprentissage
 - `package-manager` : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv  — pas de page concept dédiée
 - `parallel` : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray  — pas de page concept dédiée
@@ -5265,8 +5285,8 @@
 - `postgres` : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
 - `prior` : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube  — pas de page concept dédiée
-- `probabilistic-programming` : Bayésien, PyMC, Stan  — pas de page concept dédiée
-- `probability` : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite  — pas de page concept dédiée
+- `probabilistic-programming` : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan  — pas de page concept dédiée
+- `probability` : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Modèles graphiques probabilistes, Mouvement brownien, Probabilités, Processus de Poisson, Théorie des valeurs extrêmes, Théorème central limite  — pas de page concept dédiée
 - `projection` : Algèbre linéaire, Analyse factorielle, Projections
 - `prompt-injection` : Prompt injection, Systèmes IA, Sécurité, garak
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
@@ -5291,7 +5311,7 @@
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Comparatif - Reinforcement learning, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
 - `relation-extraction` : Construction de graphes de connaissances  — pas de page concept dédiée
 - `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
-- `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns  — pas de page concept dédiée
+- `reliability` : Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill  — pas de page concept dédiée
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
@@ -5328,7 +5348,7 @@
 - `sso` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
 - `state-space-model` : Architectures hybrides LLM, Attention linéaire, State Space Models
 - `static-viz` : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn  — pas de page concept dédiée
-- `statistical-inference` : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles à effets mixtes, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels  — pas de page concept dédiée
+- `statistical-inference` : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles graphiques probabilistes, Modèles à effets mixtes, Monte Carlo et inférence variationnelle, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, Théorie des valeurs extrêmes, statsmodels  — pas de page concept dédiée
 - `statistical-power` : Analyse de puissance, pingouin
 - `statistical-viz` : Visualisation, seaborn, sweetviz  — pas de page concept dédiée
 - `stochastic-process` : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity  — pas de page concept dédiée
@@ -5394,7 +5414,7 @@
 - `authentication` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, PyJWT, Sécurité)
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, Rétropropagation et différentiation automatique, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
-- `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence)
+- `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence)
 - `benchmark` (porté par : Choisir un modèle d'embedding, Code and math benchmarks, Inspect AI, LLM benchmarks, OCR classique vs modèles vision-langage pour documents, RAG benchmarks, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `bi` (porté par : Apache Superset, Comparatif - BI auto-hébergée, Metabase)
 - `browser-extension` (porté par : Page to Markdown)
@@ -5437,7 +5457,6 @@
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire)
 - `education` (porté par : OpenMAIC)
-- `effect-size` (porté par : Analyse de puissance, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin)
 - `eigenvalue` (porté par : Algèbre linéaire, Eigendecomposition, SVD)
 - `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost)
@@ -5486,7 +5505,7 @@
 - `low-code` (porté par : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector)
-- `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Probabilités, PyMC, Stan)
+- `markov` (porté par : Bayésien, Chaînes de Markov, MCMC, Markov Decision Process, Modèles de Markov cachés et filtre de Kalman, Modèles graphiques probabilistes, Probabilités, PyMC, Stan)
 - `matrix-decomposition` (porté par : Algèbre linéaire, Eigendecomposition, Matrix decompositions, SVD)
 - `media-player` (porté par : Médias, SmartTube)
 - `memory-optimization` (porté par : DeepSpeed, Entraînement distribué, Gradient checkpointing, Mixed precision, Unsloth)
@@ -5500,7 +5519,6 @@
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Scikit-Learn, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles)
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
-- `monte-carlo` (porté par : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Probabilités, PyMC, Stan)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits, Optimisation bayésienne)
 - `multimodal` (porté par : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models)
@@ -5516,7 +5534,7 @@
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray)
-- `p-value` (porté par : Correction des tests multiples, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels)
+- `p-value` (porté par : Correction des tests multiples, Facteurs de Bayes et tailles d'effet, Test du khi-deux, Tests & estimation, Tests d'hypothèse, scipy.stats, statsmodels)
 - `package-manager` (porté par : Comparatif - Gestionnaires de paquets Python, Outils de développement, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
@@ -5527,8 +5545,8 @@
 - `postgres` (porté par : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
 - `prior` (porté par : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC)
 - `privacy` (porté par : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube)
-- `probabilistic-programming` (porté par : Bayésien, PyMC, Stan)
-- `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Mouvement brownien, Probabilités, Processus de Poisson, Théorème central limite)
+- `probabilistic-programming` (porté par : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan)
+- `probability` (porté par : Chaînes de Markov, Inégalités de concentration, Loi des grands nombres, Modèles graphiques probabilistes, Mouvement brownien, Probabilités, Processus de Poisson, Théorie des valeurs extrêmes, Théorème central limite)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
 - `property-based-testing` (porté par : Hypothesis)
@@ -5540,7 +5558,7 @@
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
 - `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
-- `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns)
+- `reliability` (porté par : Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
@@ -5560,7 +5578,7 @@
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `sso` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité)
 - `static-viz` (porté par : Comparatif - Visualisation, Visualisation, matplotlib, missingno, seaborn)
-- `statistical-inference` (porté par : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles à effets mixtes, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, statsmodels)
+- `statistical-inference` (porté par : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles graphiques probabilistes, Modèles à effets mixtes, Monte Carlo et inférence variationnelle, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, Théorie des valeurs extrêmes, statsmodels)
 - `statistical-viz` (porté par : Visualisation, seaborn, sweetviz)
 - `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
 - `streaming` (porté par : Change Data Capture (CDC), Debezium, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
