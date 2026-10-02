@@ -66,6 +66,7 @@ tags: [supervised, classification, regression]
 - [[Régularisation]] — le terme $\lVert w \rVert^2$ du SVM **est** une pénalité L2 ; `C` en est l'inverse de $\lambda$.
 - [[Classification]] — le chapeau de la tâche.
 - [[Types de données et choix de modèle]] — quand le SVM est le bon choix.
+- Voir aussi : [[Méthodes à noyau]]
 
 ## Pour aller plus loin
 
