@@ -673,11 +673,20 @@ axes:
               positifs) et de math/theorie-apprentissage (qui BORNE a priori la
               ou ces pages MESURENT sur un modele donne).
           hyperopt:
+            libelle: "Recherche d'hyperparamètres"
+            motif: >
+              Promu le 2026-10-02 sur arbitrage de floSa (conversation 88,
+              notion « Optimisation bayesienne ») : avec Hyperopt, Optuna,
+              Ray Tune et la notion « Optimisation d'hyperparametres », le
+              sous-domaine atteint 5 pages pesantes. Et NON « Optimisation
+              d'hyperparametres », nom de fichier de la notion : le hub du
+              dossier ne peut pas reprendre un nom de page existante ; nom
+              verifie unique, a la casse pres.
             frontiere: >
               Chercher des hyperparametres, meme si le moteur d execution est
               distribue : le distribue est le moyen, pas le sujet (D-R5, Ray Tune).
               Distinct de math/optimisation, qui minimise une fonction connue.
-              Sous le seuil : 4 pages, pas de dossier, donc pas de libelle.
+              Promu a 5 pages pesantes le 2026-10-02.
           orchestration: {}
           plateforme:
             libelle: "Plateformes data & IA"

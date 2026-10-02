@@ -611,6 +611,7 @@ valeurs disparues et ne sont pas reconduites.
   `log` / `metric` / `trace` / `infra` n'a jamais dépassé une page par valeur ; il est fusionné.
   Distinct de `ml/monitoring` (dérive de modèle).
 - `ml/monitoring` — **promu le 2026-09-30** en dossier « Monitoring de modèles » (5 pages pesantes : Evidently, NannyML, Deepchecks et les notions « Data drift » et « Monitoring de modèle en production »). Dérive de données et de concept, estimation de performance sans vérité terrain, suites de tests de validation avant déploiement. Distinct de `observability/supervision` (le logiciel déployé) et de `llm/observabilite` (les appels à un LLM).
+- `ml/hyperopt` — **promu le 2026-10-02 sur arbitrage de floSa** en dossier « Recherche d'hyperparamètres » (5 pages pesantes : Hyperopt, Optuna, Ray Tune et les notions « Optimisation d'hyperparamètres » et « Optimisation bayésienne »). Chercher des hyperparamètres, même si le moteur d'exécution est distribué (D-R5). Le libellé ne reprend pas « Optimisation d'hyperparamètres », nom de la notion. Distinct de `math/optimisation` (minimiser une fonction connue).
 - `devtools/client-api` — clients d'API : composer, envoyer et tester des requêtes
   HTTP/REST/GraphQL/gRPC, gérer collections et environnements. Distinct de `devtools/test`
   (frameworks de test de code, type pytest).
