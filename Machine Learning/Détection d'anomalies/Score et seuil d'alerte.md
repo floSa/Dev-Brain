@@ -77,6 +77,7 @@ tags: [anomaly-detection, thresholding]
 - [[Imbalanced classification]] — le cadre de la classe rare, où le taux de base pèse.
 - [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]] — trois détecteurs dont la sortie est un score, seuillé par `contamination`.
 - [[Types d'anomalies et régimes de supervision]] — la contamination et le « normal propre », dont dépend la fiabilité du quantile.
+- [[Politique de maintenance et coût]] — du score à la décision d'intervenir : le seuil qui minimise le coût.
 
 ## Pour aller plus loin
 
