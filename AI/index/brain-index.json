@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1066,
+  "count": 1071,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -217,7 +217,12 @@
       "Maintenance prédictive avec peu de pannes",
       "Non supervisé",
       "One-Class SVM",
+      "Pattern - Détection d'anomalies en deux étages",
+      "Pattern - Inspection visuelle en ligne de production",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "PyOD",
+      "Rule - Entraîner sur du normal vérifié",
+      "Rule - Évaluer une anomalie par événement, pas par point",
       "STUMPY",
       "Score et seuil d'alerte",
       "Siemens Insights Hub",
@@ -572,6 +577,7 @@
       "OCR",
       "OpenCV",
       "PaddleOCR",
+      "Pattern - Inspection visuelle en ligne de production",
       "Rendu neuronal 3D & estimation de profondeur",
       "Segment Anything (SAM)",
       "Segmentation",
@@ -782,7 +788,8 @@
     ],
     "data-leakage": [
       "Data leakage",
-      "Diagnostic de défauts de roulements"
+      "Diagnostic de défauts de roulements",
+      "Rule - Entraîner sur du normal vérifié"
     ],
     "data-lineage": [
       "Catalogue de données et lignage",
@@ -1203,6 +1210,7 @@
       "LiteRT",
       "ONNX Runtime",
       "OpenVINO",
+      "Pattern - Inspection visuelle en ligne de production",
       "TensorRT",
       "anomalib"
     ],
@@ -1647,6 +1655,7 @@
       "Inférence en bordure - modèles sur du matériel d'atelier",
       "Mosquitto",
       "Node-RED",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Seeq",
       "Siemens Insights Hub",
@@ -1686,6 +1695,7 @@
       "Comparatif - Détection d'anomalies visuelles",
       "Dinomaly",
       "Détection d'anomalies visuelle",
+      "Pattern - Inspection visuelle en ligne de production",
       "anomalib",
       "patchcore-inspection"
     ],
@@ -2427,6 +2437,7 @@
       "ROC-AUC / courbe PR",
       "Ranking metrics",
       "Regression metrics",
+      "Rule - Évaluer une anomalie par événement, pas par point",
       "Scikit-Learn",
       "TSB-AD",
       "Validation croisée",
@@ -2512,6 +2523,7 @@
       "Données industrielles",
       "EMQX",
       "Mosquitto",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Telegraf"
     ],
@@ -2759,6 +2771,7 @@
     ],
     "opc-ua": [
       "Données industrielles",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Telegraf",
       "asyncua",
@@ -2881,7 +2894,10 @@
     ],
     "pattern": [
       "Pattern - Agent sur LLM auto-hébergé",
+      "Pattern - Détection d'anomalies en deux étages",
+      "Pattern - Inspection visuelle en ligne de production",
       "Pattern - Moteur de jeu pur + IA séparée",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Pattern - Stack démo ML locale multi-services"
@@ -2953,6 +2969,8 @@
       "Jumeau numérique et modèles hybrides",
       "Maintenance prédictive",
       "Maintenance prédictive avec peu de pannes",
+      "Pattern - Détection d'anomalies en deux étages",
+      "Pattern - Pipeline de maintenance prédictive on-prem",
       "Politique de maintenance et coût",
       "RUL par analyse de survie",
       "RUL par apprentissage profond",
@@ -3389,10 +3407,12 @@
     ],
     "rule": [
       "Rule - Config typée",
+      "Rule - Entraîner sur du normal vérifié",
       "Rule - Packaging démo",
       "Rule - Qualité stricte",
       "Rule - Structure de projet",
-      "Rule - Toolchain Python"
+      "Rule - Toolchain Python",
+      "Rule - Évaluer une anomalie par événement, pas par point"
     ],
     "s3-compatible": [
       "Apache Ozone",
@@ -3710,7 +3730,8 @@
       "pingouin"
     ],
     "statistical-process-control": [
-      "Contrôle statistique de procédé (SPC)"
+      "Contrôle statistique de procédé (SPC)",
+      "Pattern - Détection d'anomalies en deux étages"
     ],
     "statistical-viz": [
       "Visualisation",
@@ -3900,7 +3921,10 @@
     ],
     "thresholding": [
       "Merlion",
+      "Pattern - Détection d'anomalies en deux étages",
       "Politique de maintenance et coût",
+      "Rule - Entraîner sur du normal vérifié",
+      "Rule - Évaluer une anomalie par événement, pas par point",
       "Score et seuil d'alerte",
       "time-series-anomaly-detector"
     ],
@@ -29940,6 +29964,48 @@
       "maturite": null
     },
     {
+      "path": "Patterns/Pattern - Détection d'anomalies en deux étages.md",
+      "nom": "Pattern - Détection d'anomalies en deux étages",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "anomaly-detection",
+        "statistical-process-control",
+        "thresholding",
+        "predictive-maintenance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Inspection visuelle en ligne de production.md",
+      "nom": "Pattern - Inspection visuelle en ligne de production",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "industrial-inspection",
+        "anomaly-detection",
+        "computer-vision",
+        "edge-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Patterns/Pattern - Moteur de jeu pur + IA séparée.md",
       "nom": "Pattern - Moteur de jeu pur + IA séparée",
       "alias": null,
@@ -29955,6 +30021,28 @@
         "self-play",
         "game-theory",
         "planning"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Pipeline de maintenance prédictive on-prem.md",
+      "nom": "Pattern - Pipeline de maintenance prédictive on-prem",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "predictive-maintenance",
+        "iiot",
+        "opc-ua",
+        "mqtt",
+        "anomaly-detection"
       ],
       "alternatives": null,
       "complements": null,
@@ -30061,6 +30149,26 @@
       "maturite": null
     },
     {
+      "path": "Rules/Rule - Entraîner sur du normal vérifié.md",
+      "nom": "Rule - Entraîner sur du normal vérifié",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "anomaly-detection",
+        "data-leakage",
+        "thresholding"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Rules/Rule - Packaging démo.md",
       "nom": "Rule - Packaging démo",
       "alias": null,
@@ -30134,6 +30242,26 @@
         "package-manager",
         "linter",
         "formatter"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Évaluer une anomalie par événement, pas par point.md",
+      "nom": "Rule - Évaluer une anomalie par événement, pas par point",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "anomaly-detection",
+        "model-evaluation",
+        "thresholding"
       ],
       "alternatives": null,
       "complements": null,

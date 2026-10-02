@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1066 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1071 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1485,7 +1485,10 @@
 
 ### (sans catégorie)
 - **Pattern - Agent sur LLM auto-hébergé** — —
+- **Pattern - Détection d'anomalies en deux étages** — —
+- **Pattern - Inspection visuelle en ligne de production** — —
 - **Pattern - Moteur de jeu pur + IA séparée** — —
+- **Pattern - Pipeline de maintenance prédictive on-prem** — —
 - **Pattern - Pipeline scraping → matching → optimisation** — —
 - **Pattern - RAG structuré graphe + human-in-the-loop** — —
 - **Pattern - Stack démo ML locale multi-services** — —
@@ -1494,10 +1497,12 @@
 
 ### (sans catégorie)
 - **Rule - Config typée** — —
+- **Rule - Entraîner sur du normal vérifié** — —
 - **Rule - Packaging démo** — —
 - **Rule - Qualité stricte** — —
 - **Rule - Structure de projet** — —
 - **Rule - Toolchain Python** — —
+- **Rule - Évaluer une anomalie par événement, pas par point** — —
 
 ## hub
 
