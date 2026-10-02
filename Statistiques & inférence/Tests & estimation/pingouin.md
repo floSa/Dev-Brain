@@ -67,3 +67,4 @@ une surcouche de SciPy, pensée pour des jeux de taille recherche.
 
 - [[Test t et ANOVA]] · [[Tests non paramétriques]] · [[Analyse de puissance]] — les notions implémentées
 - [[Comparatif - Outils stats]] — ce qui départage les outils du dossier
+- [[Facteurs de Bayes et tailles d'effet]] — `compute_effsize`, `compute_esci` et `bayesfactor_ttest`
