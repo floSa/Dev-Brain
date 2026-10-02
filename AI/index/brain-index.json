@@ -21591,7 +21591,6 @@
         "Hyperparameter tuning",
         "GridSearch",
         "RandomSearch",
-        "Optimisation bayésienne",
         "HPO",
         "Réglage des hyperparamètres"
       ],

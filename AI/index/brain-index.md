@@ -955,7 +955,7 @@
 
 ### ml/hyperopt
 - **Optimisation bayésienne** — domaines : data-sci, ml-eng · alias : Bayesian optimization, BO, Optimisation bayesienne, Optimisation de boîte noire, Black-box optimization, Expected improvement, GP-UCB, SMBO, Sequential model-based optimization, Tree-structured Parzen Estimator
-- **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, Optimisation bayésienne, HPO, Réglage des hyperparamètres
+- **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, HPO, Réglage des hyperparamètres
 
 ### ml/interpretabilite
 - **Attribution par gradient** — domaines : data-sci, ml-eng · alias : Saliency, Saliency map, Carte de saillance, Integrated Gradients, IntegratedGradients, SmoothGrad, InputxGradient, Grad-CAM, GradientShap, Attribution methods

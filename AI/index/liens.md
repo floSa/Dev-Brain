@@ -3812,7 +3812,7 @@
 
 ### Gaussian Process  ·  notion
 - tags : `supervised`, `regression`, `bayesian`, `non-parametric`
-- liens sortants : [[Bootstrap]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Inférence bayésienne]], [[Mise à l'échelle]], [[Mouvement brownien]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PyMC]], [[Régression]], [[Régression quantile]], [[SVM]], [[Scikit-Learn]], [[Stan]], [[Validation croisée]], [[k-NN]]
+- liens sortants : [[Bootstrap]], [[Gaussian Mixture Models (GMM)]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Inférence bayésienne]], [[Mise à l'échelle]], [[Mouvement brownien]], [[Méthodes à noyau]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PyMC]], [[Régression]], [[Régression quantile]], [[SVM]], [[Scikit-Learn]], [[Stan]], [[Validation croisée]], [[k-NN]]
 - liens entrants : [[Apprentissage supervisé]], [[Machine Learning]], [[Méthodes à noyau]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Régression]], [[Régression quantile]], [[Socle]], [[Types de données et choix de modèle]]
 
 ### Generalization bounds  ·  notion
@@ -4038,7 +4038,7 @@
 ### Learning to rank  ·  notion
 - tags : `supervised`, `ranking`, `information-retrieval`, `recommender-systems`
 - liens sortants : [[BM25]], [[CatBoost]], [[Classification]], [[Cohere Rerank]], [[Data leakage]], [[Gradient Boosting (GBDT)]], [[Jina Reranker]], [[LightGBM]], [[Multi-armed bandits]], [[Ranking metrics]], [[Recherche d'information]], [[Reranking]], [[Systèmes de recommandation]], [[XGBoost]], [[bge-reranker]]
-- liens entrants : [[CatBoost]], [[Cohere Rerank]], [[Jina Reranker]], [[LightGBM]], [[Socle]], [[XGBoost]], [[bge-reranker]]
+- liens entrants : [[CatBoost]], [[Cohere Rerank]], [[Jina Reranker]], [[LightGBM]], [[Ranking metrics]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[XGBoost]], [[bge-reranker]]
 
 ### Licences de modèles open weights  ·  notion
 - tags : `llm`, `local-llm`, `self-hosted`
@@ -4242,7 +4242,7 @@
 
 ### Multi-armed bandits  ·  notion
 - tags : `experimentation`, `multi-armed-bandit`
-- liens sortants : [[A/B testing]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Reinforcement learning]], [[Sequential testing]]
+- liens sortants : [[A/B testing]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Optimisation bayésienne]], [[Reinforcement learning]], [[Sequential testing]]
 - liens entrants : [[A priori conjugués]], [[A/B testing]], [[Counterfactual Regret Minimization]], [[Exploration vs exploitation]], [[Inégalités de concentration]], [[Learning to rank]], [[Modélisation d'uplift]], [[Monte Carlo Tree Search]], [[Méthodes causales]], [[Optimisation bayésienne]], [[Reinforcement learning]], [[Sequential testing]], [[Statistiques & inférence]], [[Systèmes de recommandation]], [[Tests & estimation]], [[Théorie des jeux]]
 
 ### Multi-head Latent Attention  ·  notion
@@ -4273,7 +4273,7 @@
 ### Méthodes à noyau  ·  notion
 - tags : `supervised`, `non-parametric`, `regression`, `classification`
 - liens sortants : [[Apprentissage profond]], [[Attention linéaire]], [[Double descente et généralisation des grands modèles]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[Mise à l'échelle]], [[One-Class SVM]], [[Optimisation d'hyperparamètres]], [[Perceptron et MLP]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Validation croisée]], [[k-NN]]
-- liens entrants : [[Optimisation bayésienne]], [[Scikit-Learn]], [[Socle]]
+- liens entrants : [[Gaussian Process]], [[Optimisation bayésienne]], [[Régularisation]], [[SVM]], [[Scikit-Learn]], [[Socle]]
 
 ### Métriques vision  ·  notion
 - tags : `model-evaluation`, `object-detection`, `segmentation`, `computer-vision`
@@ -4363,7 +4363,7 @@
 ### Optimisation bayésienne  ·  notion
 - tags : `hyperparameter-tuning`, `bayesian`, `optimization`, `multi-armed-bandit`
 - liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Convexity]], [[Gaussian Process]], [[Gradient descent]], [[Hyperopt]], [[Inférence bayésienne]], [[Multi-armed bandits]], [[Méthodes à noyau]], [[Optimisation d'hyperparamètres]], [[Optimisation sous contrainte]], [[Optuna]], [[Ray Tune]]
-- liens entrants : [[Hyperopt]], [[Machine Learning]], [[Optuna]], [[Ray Tune]], [[Recherche d'hyperparamètres]]
+- liens entrants : [[Gaussian Process]], [[Hyperopt]], [[Machine Learning]], [[Multi-armed bandits]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray Tune]], [[Recherche d'hyperparamètres]]
 
 ### Optimisation combinatoire  ·  notion
 - tags : `optimization`, `combinatorial-optimization`, `dynamic-programming`
@@ -4372,7 +4372,7 @@
 
 ### Optimisation d'hyperparamètres  ·  notion
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
-- liens sortants : [[Compromis biais-variance]], [[Gaussian Process]], [[Hyperopt]], [[Maximal Update Parametrization]], [[Optuna]], [[Ray Tune]], [[Régularisation]], [[Scikit-Learn]], [[Validation croisée]]
+- liens sortants : [[Compromis biais-variance]], [[Gaussian Process]], [[Hyperopt]], [[Maximal Update Parametrization]], [[Optimisation bayésienne]], [[Optuna]], [[Ray Tune]], [[Régularisation]], [[Scikit-Learn]], [[Validation croisée]]
 - liens entrants : [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Gaussian Process]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Hyperopt]], [[Learning rate schedules]], [[Machine Learning]], [[Maximal Update Parametrization]], [[Méthodes à noyau]], [[Optimisation]], [[Optimisation bayésienne]], [[Optuna]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[SVM]], [[Scikit-Learn]], [[Suivi d'expériences]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Évaluation de modèles]]
 
 ### Optimisation sous contrainte  ·  notion
@@ -4547,7 +4547,7 @@
 
 ### Ranking metrics  ·  notion
 - tags : `model-evaluation`, `ranking`
-- liens sortants : [[Classification metrics]], [[ROC-AUC / courbe PR]], [[Scikit-Learn]], [[Validation croisée]]
+- liens sortants : [[Classification metrics]], [[Learning to rank]], [[ROC-AUC / courbe PR]], [[Scikit-Learn]], [[Validation croisée]]
 - liens entrants : [[BM25]], [[Classification metrics]], [[Learning to rank]], [[Machine Learning]], [[RAGChecker]], [[ROC-AUC / courbe PR]], [[Recherche d'information]], [[Reranking]], [[Socle]], [[Systèmes de recommandation]], [[bm25s]], [[evaluate]], [[Évaluation de modèles]]
 
 ### Reasoning models  ·  notion
@@ -4557,7 +4557,7 @@
 
 ### Recherche d'information  ·  notion
 - tags : `nlp`, `information-retrieval`, `retrieval`, `hybrid-search`, `ranking`, `semantic-search`
-- liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Query transformations]], [[RAG]], [[Ranking metrics]], [[Reranking]], [[TF-IDF]], [[Traitement du langage naturel]], [[embeddings]]
+- liens sortants : [[Advanced RAG]], [[BM25]], [[Bases de données vectorielles]], [[Elasticsearch]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[Learning to rank]], [[Query transformations]], [[RAG]], [[Ranking metrics]], [[Reranking]], [[TF-IDF]], [[Traitement du langage naturel]], [[embeddings]]
 - liens entrants : [[BM25]], [[Bases de données vectorielles]], [[Construction de graphes de connaissances]], [[Elasticsearch]], [[Fuzzy matching & similarité de chaînes]], [[Hybrid retrieval]], [[Index inversé]], [[Late-interaction retrieval]], [[Learning to rank]], [[Marqo]], [[NLP]], [[OCR]], [[RAGatouille]], [[Recherche sémantique]], [[Reranking]], [[Systèmes de recommandation]], [[TF-IDF]], [[Traitement du langage naturel]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[sentence-transformers]], [[txtai]]
 
 ### Recherche sémantique  ·  notion
@@ -4592,7 +4592,7 @@
 
 ### Reranking  ·  notion
 - tags : `retrieval`, `reranking`, `ranking`, `rag`
-- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[RAG]], [[Ranking metrics]], [[Recherche d'information]], [[embeddings]]
+- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Haystack]], [[HuggingFace]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[Learning to rank]], [[LlamaIndex]], [[RAG]], [[Ranking metrics]], [[Recherche d'information]], [[embeddings]]
 - liens entrants : [[Advanced RAG]], [[BM25]], [[Choisir un modèle d'embedding]], [[Chunking strategies]], [[Cohere Rerank]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[LLM & IA générative]], [[LangChain]], [[Late-interaction retrieval]], [[Learning to rank]], [[LlamaIndex]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG eval]], [[RAGChecker]], [[RAGatouille]], [[Recherche d'information]], [[Recherche sémantique]], [[Traitement du langage naturel]], [[Vespa]], [[bge-reranker]], [[sentence-transformers]]
 
 ### Reverse proxy et TLS  ·  notion
@@ -4662,7 +4662,7 @@
 
 ### Régularisation  ·  notion
 - tags : `regularization`, `linear-model`, `supervised`
-- liens sortants : [[Compromis biais-variance]], [[Double descente et généralisation des grands modèles]], [[Estimation MAP]], [[GLM]], [[Gradient descent]], [[Optimisation sous contrainte]], [[PCA]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[SVM]], [[Scikit-Learn]], [[Sélection de variables]], [[Validation croisée]]
+- liens sortants : [[Compromis biais-variance]], [[Double descente et généralisation des grands modèles]], [[Estimation MAP]], [[GLM]], [[Gradient descent]], [[Méthodes à noyau]], [[Optimisation sous contrainte]], [[PCA]], [[Perceptron et MLP]], [[Régression linéaire]], [[Régression logistique]], [[SVM]], [[Scikit-Learn]], [[Sélection de variables]], [[Validation croisée]]
 - liens entrants : [[Adam optimizer]], [[Apprentissage contrastif]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Compromis biais-variance]], [[Convexity]], [[Double descente et généralisation des grands modèles]], [[Estimation MAP]], [[GLM]], [[Generalization bounds]], [[Gradient Boosting (GBDT)]], [[Gradient descent]], [[Machine Learning]], [[Mise à l'échelle]], [[Méta-apprentissage et few-shot learning]], [[Méthodes à noyau]], [[NMF]], [[Normalisation et initialisation des réseaux]], [[Optimisation d'hyperparamètres]], [[Optimisation sous contrainte]], [[Perceptron et MLP]], [[Rademacher complexity]], [[Régression]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[SVM]], [[Scikit-Learn]], [[Socle]], [[Sparse autoencoders]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Types de données et choix de modèle]], [[VC dimension]], [[Vector norms]]
 
 ### Rétropropagation et différentiation automatique  ·  notion
@@ -4797,7 +4797,7 @@
 
 ### SVM  ·  notion
 - tags : `supervised`, `classification`, `regression`
-- liens sortants : [[Calibration]], [[Classification]], [[Compromis biais-variance]], [[Gradient Boosting (GBDT)]], [[Mise à l'échelle]], [[Optimisation d'hyperparamètres]], [[Random Forest]], [[Régression logistique]], [[Régularisation]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]], [[k-NN]]
+- liens sortants : [[Calibration]], [[Classification]], [[Compromis biais-variance]], [[Gradient Boosting (GBDT)]], [[Mise à l'échelle]], [[Méthodes à noyau]], [[Optimisation d'hyperparamètres]], [[Random Forest]], [[Régression logistique]], [[Régularisation]], [[Scikit-Learn]], [[Types de données et choix de modèle]], [[Validation croisée]], [[k-NN]]
 - liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Classification]], [[Classification de texte]], [[Gaussian Process]], [[Machine Learning]], [[Mise à l'échelle]], [[Méthodes à noyau]], [[Naive Bayes]], [[One-Class SVM]], [[Régression]], [[Régression logistique]], [[Régularisation]], [[Socle]], [[Types de données et choix de modèle]], [[k-NN]]
 
 ### Synthetic data generation  ·  notion
