@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1056,
+  "count": 1066,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,6 +197,7 @@
       "Label Studio"
     ],
     "anomaly-detection": [
+      "Amazon Lookout for Equipment",
       "Anomalie visuelle par banque de mémoire",
       "Anomalie visuelle par reconstruction, distillation et flux",
       "Anomalie visuelle zero-shot et few-shot",
@@ -219,6 +220,7 @@
       "PyOD",
       "STUMPY",
       "Score et seuil d'alerte",
+      "Siemens Insights Hub",
       "Séries temporelles",
       "Théorie des valeurs extrêmes",
       "Time series anomaly detection",
@@ -445,6 +447,7 @@
       "aeon",
       "imbalanced-learn",
       "k-NN",
+      "sktime",
       "Équité et biais algorithmique",
       "Évaluation de modèles"
     ],
@@ -472,7 +475,8 @@
       "Non supervisé",
       "aeon",
       "hdbscan",
-      "k-médoïds (PAM)"
+      "k-médoïds (PAM)",
+      "sktime"
     ],
     "cnn": [
       "Architectures CNN",
@@ -599,6 +603,8 @@
       "River"
     ],
     "condition-monitoring": [
+      "Amazon Lookout for Equipment",
+      "Amazon Monitron",
       "Analyse vibratoire",
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
@@ -703,6 +709,7 @@
       "Metabase",
       "Netdata",
       "Observabilité",
+      "Seeq",
       "Shiny for Python",
       "Uptime Kuma",
       "WrenAI",
@@ -1266,7 +1273,8 @@
       "Machine Learning",
       "Random Forest",
       "Tabulaire",
-      "XGBoost"
+      "XGBoost",
+      "scikit-survival"
     ],
     "entropy": [
       "Shannon entropy",
@@ -1352,7 +1360,8 @@
       "Time series feature engineering",
       "Types de données et choix de modèle",
       "category_encoders",
-      "librosa"
+      "librosa",
+      "tsfresh"
     ],
     "feature-store": [
       "Feast",
@@ -1416,6 +1425,7 @@
       "darts",
       "neuralforecast",
       "pmdarima",
+      "sktime",
       "statsforecast"
     ],
     "formatter": [
@@ -1628,12 +1638,18 @@
       "Sécurité"
     ],
     "iiot": [
+      "AVEVA PI System",
+      "Amazon Monitron",
+      "Cognite Data Fusion",
+      "Comparatif - Offres de maintenance prédictive",
       "Données industrielles",
       "EMQX",
       "Inférence en bordure - modèles sur du matériel d'atelier",
       "Mosquitto",
       "Node-RED",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
+      "Seeq",
+      "Siemens Insights Hub",
       "Telegraf",
       "asyncua",
       "open62541"
@@ -1793,6 +1809,7 @@
     "knowledge-graph": [
       "Bases graphe — modèles et langages de requête",
       "Cognee",
+      "Cognite Data Fusion",
       "Construction de graphes de connaissances",
       "GraphRAG",
       "Graphify",
@@ -2925,6 +2942,11 @@
       "psycopg2"
     ],
     "predictive-maintenance": [
+      "AVEVA PI System",
+      "Amazon Lookout for Equipment",
+      "Amazon Monitron",
+      "Cognite Data Fusion",
+      "Comparatif - Offres de maintenance prédictive",
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
       "Jeux de données PHM",
@@ -2934,6 +2956,8 @@
       "Politique de maintenance et coût",
       "RUL par analyse de survie",
       "RUL par apprentissage profond",
+      "Seeq",
+      "Siemens Insights Hub",
       "Surveillance conditionnelle et modes de défaillance"
     ],
     "prior": [
@@ -3360,7 +3384,8 @@
       "Jumeau numérique et modèles hybrides",
       "Politique de maintenance et coût",
       "RUL par analyse de survie",
-      "RUL par apprentissage profond"
+      "RUL par apprentissage profond",
+      "scikit-survival"
     ],
     "rule": [
       "Rule - Config typée",
@@ -3472,6 +3497,7 @@
       "segment-anything"
     ],
     "self-hosted": [
+      "AVEVA PI System",
       "Airbyte",
       "Alertmanager",
       "Annotation de données",
@@ -3785,6 +3811,8 @@
       "XGBoost",
       "imbalanced-learn",
       "k-NN",
+      "scikit-survival",
+      "tsfresh",
       "Équité et biais algorithmique"
     ],
     "supply-chain": [
@@ -3805,7 +3833,8 @@
       "Maintenance prédictive et RUL",
       "RUL par analyse de survie",
       "Tests & estimation",
-      "lifelines"
+      "lifelines",
+      "scikit-survival"
     ],
     "synthetic-data": [
       "Distillation",
@@ -3877,12 +3906,16 @@
     ],
     "timeseries": [
       "ARIMA SARIMA",
+      "AVEVA PI System",
+      "Amazon Lookout for Equipment",
+      "Amazon Monitron",
       "Anomalies multivariées par apprentissage profond",
       "Autocorrelation",
       "Azure AI Anomaly Detector",
       "Bases de données",
       "CausalImpact",
       "Chronos",
+      "Cognite Data Fusion",
       "Comparatif - Bases temporelles",
       "Comparatif - Détection d'anomalies en séries temporelles",
       "Comparatif - Forecasting",
@@ -3905,6 +3938,8 @@
       "Prophet",
       "RUL par apprentissage profond",
       "STUMPY",
+      "Seeq",
+      "Siemens Insights Hub",
       "Stationarity",
       "Séries temporelles",
       "TSB-AD",
@@ -3917,8 +3952,10 @@
       "neuralforecast",
       "pmdarima",
       "ruptures",
+      "sktime",
       "statsforecast",
-      "time-series-anomaly-detector"
+      "time-series-anomaly-detector",
+      "tsfresh"
     ],
     "tls": [
       "Caddy",
@@ -4470,6 +4507,36 @@
       "complements": [
         "[[Polars]]",
         "[[Apache Arrow]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/AVEVA PI System.md",
+      "nom": "AVEVA PI System",
+      "alias": [
+        "PI System",
+        "PI Server",
+        "PI Data Archive",
+        "AVEVA PI Server"
+      ],
+      "role": "brique",
+      "categorie": "database/series-temporelles",
+      "famille": "plateforme",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.",
+      "tags": [
+        "timeseries",
+        "iiot",
+        "predictive-maintenance",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[InfluxDB]]",
+        "[[TimescaleDB]]"
+      ],
+      "complements": [
+        "[[Seeq]]"
       ],
       "maturite": "production"
     },
@@ -5245,7 +5312,8 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[TimescaleDB]]"
+        "[[TimescaleDB]]",
+        "[[AVEVA PI System]]"
       ],
       "complements": [
         "[[EMQX]]",
@@ -6159,7 +6227,8 @@
         "postgres"
       ],
       "alternatives": [
-        "[[InfluxDB]]"
+        "[[InfluxDB]]",
+        "[[AVEVA PI System]]"
       ],
       "complements": [
         "[[Postgres]]",
@@ -7284,6 +7353,32 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Données industrielles/Cognite Data Fusion.md",
+      "nom": "Cognite Data Fusion",
+      "alias": [
+        "CDF",
+        "Cognite",
+        "Cognite Data Fusion CDF"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Plateforme de données industrielles de Cognite — modèle de données en graphe, extracteurs (OPC UA, PostgreSQL), contextualisation et API REST avec SDK Python ouvert ; service cloud, sans offre sur site décrite dans la documentation consultée.",
+      "tags": [
+        "iiot",
+        "timeseries",
+        "predictive-maintenance",
+        "knowledge-graph"
+      ],
+      "alternatives": [
+        "[[Siemens Insights Hub]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Data & pipelines/Données industrielles/Comparatif - Brokers MQTT.md",
       "nom": "Comparatif - Brokers MQTT",
       "alias": null,
@@ -7462,6 +7557,32 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Données industrielles/Siemens Insights Hub.md",
+      "nom": "Siemens Insights Hub",
+      "alias": [
+        "Insights Hub",
+        "MindSphere",
+        "Siemens MindSphere"
+      ],
+      "role": "brique",
+      "categorie": "data/industrie",
+      "famille": "plateforme",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Plateforme IoT industrielle de Siemens (ex-MindSphere) — collecte des données de machines, modèle d'actifs, tableaux de bord, applications low-code (Mendix) et module Predict de prévision et de détection d'anomalies ; en cloud public, en cloud privé virtuel ou en cloud privé local géré par Siemens.",
+      "tags": [
+        "iiot",
+        "predictive-maintenance",
+        "timeseries",
+        "anomaly-detection"
+      ],
+      "alternatives": [
+        "[[Cognite Data Fusion]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Données industrielles/Telegraf.md",
@@ -10086,6 +10207,32 @@
         "[[curl_cffi]]",
         "[[Playwright]]",
         "[[Scrapy]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Seeq.md",
+      "nom": "Seeq",
+      "alias": [
+        "Seeq Corporation",
+        "Seeq Workbench",
+        "Seeq Server"
+      ],
+      "role": "brique",
+      "categorie": "data/bi",
+      "famille": "application",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Application d'analyse en libre-service de séries temporelles de procédé — se branche sur des historiens dont PI System, sans copier les données ; installable sur site ou en cloud, propriétaire.",
+      "tags": [
+        "timeseries",
+        "predictive-maintenance",
+        "iiot",
+        "dashboard"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[AVEVA PI System]]"
       ],
       "maturite": "production"
     },
@@ -20234,7 +20381,8 @@
       "alternatives": [
         "[[Kats]]",
         "[[Merlion]]",
-        "[[DeepOD]]"
+        "[[DeepOD]]",
+        "[[sktime]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -21252,6 +21400,70 @@
         "explainability",
         "ensemble",
         "clustering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Amazon Lookout for Equipment.md",
+      "nom": "Amazon Lookout for Equipment",
+      "alias": [
+        "AWS Lookout for Equipment",
+        "Lookout for Equipment"
+      ],
+      "role": "brique",
+      "categorie": "ml/maintenance",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Service managé AWS de détection d'anomalies sur capteurs d'équipements industriels — un modèle entraîné sur l'historique de jusqu'à 300 capteurs, déposé dans S3, puis appliqué en temps réel — fermé aux nouveaux clients depuis le 2025-10-07 et arrêté le 2026-10-07.",
+      "tags": [
+        "predictive-maintenance",
+        "anomaly-detection",
+        "timeseries",
+        "condition-monitoring"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Amazon Monitron.md",
+      "nom": "Amazon Monitron",
+      "alias": [
+        "AWS Monitron",
+        "Monitron"
+      ],
+      "role": "brique",
+      "categorie": "ml/maintenance",
+      "famille": "saas",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Système AWS de surveillance conditionnelle livré de bout en bout — capteurs de vibration et de température, passerelle, analyse dans le cloud AWS (seuils ISO 20816 et modèles d'apprentissage) et application mobile — fermé aux nouveaux clients depuis le 2024-10-31, sans nouvelle fonctionnalité.",
+      "tags": [
+        "predictive-maintenance",
+        "condition-monitoring",
+        "iiot",
+        "timeseries"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Comparatif - Offres de maintenance prédictive.md",
+      "nom": "Comparatif - Offres de maintenance prédictive",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "iiot"
       ],
       "alternatives": null,
       "complements": null,
@@ -25211,7 +25423,8 @@
         "[[statsforecast]]",
         "[[neuralforecast]]",
         "[[pmdarima]]",
-        "[[Chronos]]"
+        "[[Chronos]]",
+        "[[sktime]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -25268,6 +25481,35 @@
       "maturite": "production"
     },
     {
+      "path": "Machine Learning/Séries temporelles/sktime.md",
+      "nom": "sktime",
+      "alias": [
+        "sktime-ai",
+        "scikit-time",
+        "sktime forecasting"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Interface unifiée, façon scikit-learn, pour toutes les tâches d'apprentissage sur séries temporelles — prévision, classification, régression, clustering, détection — avec pipelines, réglage et réduction, et des adaptateurs vers statsmodels, tsfresh, PyOD ou Prophet ; plus de 500 estimateurs.",
+      "tags": [
+        "timeseries",
+        "forecasting",
+        "classification",
+        "clustering"
+      ],
+      "alternatives": [
+        "[[darts]]",
+        "[[aeon]]"
+      ],
+      "complements": [
+        "[[tsfresh]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Séries temporelles/statsforecast.md",
       "nom": "statsforecast",
       "alias": [
@@ -25291,6 +25533,31 @@
         "[[pmdarima]]"
       ],
       "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/tsfresh.md",
+      "nom": "tsfresh",
+      "alias": [
+        "Time Series FeatuRe Extraction",
+        "blue-yonder tsfresh",
+        "FRESH"
+      ],
+      "role": "brique",
+      "categorie": "ml/series-temporelles",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Extraction automatique de centaines de caractéristiques d'une série temporelle (statistiques, spectre, dynamique non linéaire), suivie d'un filtrage par tests d'hypothèse à contrôle du taux de fausses découvertes — la table de features qui nourrit un modèle de classification ou de régression.",
+      "tags": [
+        "timeseries",
+        "feature-engineering",
+        "supervised"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[sktime]]"
+      ],
       "maturite": "production"
     },
     {
@@ -25895,6 +26162,32 @@
         "supervised"
       ],
       "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Tabulaire/scikit-survival.md",
+      "nom": "scikit-survival",
+      "alias": [
+        "sksurv",
+        "scikit survival",
+        "survival analysis scikit-learn"
+      ],
+      "role": "brique",
+      "categorie": "ml/tabulaire",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Analyse de survie « machine learning » au-dessus de scikit-learn — Cox pénalisé, forêts de survie aléatoires, gradient boosting et SVM de survie, avec les métriques adaptées à la censure (indice de concordance, AUC dynamique, score de Brier) ; licence GPL-3.0.",
+      "tags": [
+        "survival-analysis",
+        "rul",
+        "supervised",
+        "ensemble"
+      ],
+      "alternatives": [
+        "[[lifelines]]"
+      ],
       "complements": [],
       "maturite": "production"
     },
@@ -31928,7 +32221,9 @@
         "survival-analysis",
         "regression"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[scikit-survival]]"
+      ],
       "complements": [],
       "maturite": "production"
     },
