@@ -73,6 +73,7 @@ tags: [deep-learning, unsupervised, representation-learning, dimensionality-redu
 - [[GANs]] — l'autre famille générative historique, adversariale plutôt que reconstructive.
 - [[KL divergence]] — le terme qui régularise le latent d'un VAE.
 - [[Apprentissage non supervisé]] — le cadre englobant.
+- [[Détection d'anomalies visuelle]] — la reconstruction comme détecteur d'anomalie visuelle ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 

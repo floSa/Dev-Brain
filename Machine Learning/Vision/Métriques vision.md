@@ -43,6 +43,7 @@ tags: [model-evaluation, object-detection, segmentation, computer-vision]
 - [[Détection d'objets]] — produit ce que mAP évalue.
 - [[Segmentation]] — produit ce que mIoU / Dice évaluent.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
+- [[Détection d'anomalies visuelle]] — l'AUROC image, l'AUROC pixel et l'AU-PRO mesurent cette tâche, que mAP et IoU ne couvrent pas ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 

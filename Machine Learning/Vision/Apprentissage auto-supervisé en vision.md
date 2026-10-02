@@ -48,6 +48,7 @@ tags: [self-supervised, representation-learning, computer-vision, deep-learning]
 - [[Transfer learning vision]] — l'usage en aval des backbones auto-supervisés.
 - [[Vision par ordinateur]] — le cadre d'ensemble.
 - [[Apprentissage contrastif]] — la **perte** (InfoNCE, NT-Xent) et ses réglages (négatifs, température) ; cette page-ci porte le domaine vision.
+- [[Détection d'anomalies visuelle]] — des features pré-entraînées sans étiquettes (DINOv2) servent de base à plusieurs détecteurs d'anomalies visuelles ; méthodes : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]].
 
 ## Pour aller plus loin
 
