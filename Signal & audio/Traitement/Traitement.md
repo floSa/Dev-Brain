@@ -26,6 +26,7 @@ tags: [signal-processing, fourier, spectrogram, wavelet, digital-filter]
 - Un signal non stationnaire, un transitoire, une rupture → [[Ondelettes]], et [[PyWavelets]] pour le calculer.
 - Retirer du bruit, borner une bande, ré-échantillonner → [[Filtrage numérique]], et [[scipy.signal]] pour le calculer.
 - Le vocabulaire de base, l'échantillonnage, le repliement → [[Traitement du signal]].
+- Surveiller une machine tournante : RMS, enveloppe, suivi d'ordres → [[Analyse vibratoire]] ; le diagnostic qui en découle est dans [[Maintenance prédictive]], au domaine [[Machine Learning]].
 - Des descripteurs audio — MFCC, chroma, tempo → [[librosa]], au niveau du domaine.
 - Modéliser une série économique ou métier plutôt qu'un signal physique → [[Séries temporelles]], au domaine [[Machine Learning]].
 
