@@ -72,4 +72,4 @@ documenté en premier — règle R3 de la taxonomie.
 - [[Plateformes data & IA]] — le hub du dossier
 - [[Plateforme data & IA — concept]] — ce qu'une plateforme intègre, et ce qu'elle enferme
 - [[Featuretools]] — l'ingénierie de variables automatique, maintenue par Alteryx et publiée en open-source
-- [[Comparatif - Plateformes data & IA]] — ce qui départage les huit suites
+- [[Comparatif - Plateformes data & IA]] — ce qui départage les neuf suites (les huit commerciales et Kubeflow, seule suite open source)
