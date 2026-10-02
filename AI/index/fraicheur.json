@@ -2472,6 +2472,34 @@
   "release_tag": "v0.2.8",
   "sonde_le": "2026-09-08"
  },
+ "Machine Learning/Détection d'anomalies/PyOD.md": {
+  "amont": "github:yzhao062/pyod",
+  "archive": false,
+  "commit_le": "2026-09-08",
+  "date": "2026-08-17",
+  "etat": "recente",
+  "http": 200,
+  "registre": "pyod",
+  "registre_le": "2026-08-17",
+  "registre_version": "3.6.5",
+  "release_le": "2026-08-17",
+  "release_tag": "v3.6.5",
+  "sonde_le": "2026-09-08"
+ },
+ "Machine Learning/Détection d'anomalies/STUMPY.md": {
+  "amont": "github:stumpy-dev/stumpy",
+  "archive": false,
+  "commit_le": "2026-08-29",
+  "date": "2026-02-08",
+  "etat": "recente",
+  "http": 200,
+  "registre": "stumpy",
+  "registre_le": "2026-02-08",
+  "registre_version": "1.14.1",
+  "release_le": "2026-02-08",
+  "release_tag": "v1.14.1",
+  "sonde_le": "2026-09-08"
+ },
  "Machine Learning/Evidently.md": {
   "amont": "github:evidentlyai/evidently",
   "archive": false,
@@ -2715,20 +2743,6 @@
   "registre_version": "0.9.1",
   "release_le": "2026-03-02",
   "release_tag": "v0.9.1",
-  "sonde_le": "2026-09-08"
- },
- "Machine Learning/Non supervisé/PyOD.md": {
-  "amont": "github:yzhao062/pyod",
-  "archive": false,
-  "commit_le": "2026-09-08",
-  "date": "2026-08-17",
-  "etat": "recente",
-  "http": 200,
-  "registre": "pyod",
-  "registre_le": "2026-08-17",
-  "registre_version": "3.6.5",
-  "release_le": "2026-08-17",
-  "release_tag": "v3.6.5",
   "sonde_le": "2026-09-08"
  },
  "Machine Learning/Non supervisé/hdbscan.md": {
@@ -3078,20 +3092,6 @@
   "registre_version": "1.4.0",
   "release_le": "2026-08-15",
   "release_tag": "v1.4.0 patched",
-  "sonde_le": "2026-09-08"
- },
- "Machine Learning/Séries temporelles/STUMPY.md": {
-  "amont": "github:stumpy-dev/stumpy",
-  "archive": false,
-  "commit_le": "2026-08-29",
-  "date": "2026-02-08",
-  "etat": "recente",
-  "http": 200,
-  "registre": "stumpy",
-  "registre_le": "2026-02-08",
-  "registre_version": "1.14.1",
-  "release_le": "2026-02-08",
-  "release_tag": "v1.14.1",
   "sonde_le": "2026-09-08"
  },
  "Machine Learning/Séries temporelles/darts.md": {
