@@ -35,6 +35,8 @@ tags: [bayesian, prior, probabilistic-programming, monte-carlo, markov, point-es
 - [[Estimation MAP]] — domaines : data-sci
 - [[Inférence bayésienne]] — domaines : data-sci
 - [[MCMC]] — domaines : data-sci
+- [[Modèles graphiques probabilistes]] — domaines : data-sci
+- [[Monte Carlo et inférence variationnelle]] — domaines : data-sci
 
 ### Briques
 - [[ArviZ]] — Analyse exploratoire et diagnostics des modèles bayésiens, indépendant du moteur — trace plots, R̂, ESS, comparaison LOO/WAIC.
