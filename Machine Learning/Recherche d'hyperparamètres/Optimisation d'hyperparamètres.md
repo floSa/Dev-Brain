@@ -52,6 +52,7 @@ tags: [hyperparameter-tuning, model-evaluation, bayesian]
 - [[Compromis biais-variance]] — ce que le réglage navigue concrètement.
 - [[Régularisation]] — son $\lambda$ est l'hyperparamètre le plus emblématique à régler.
 - [[Maximal Update Parametrization]] — sur les gros réseaux, déplace la recherche vers un **proxy étroit** dont l'optimum se transfère à la cible, au lieu de chercher à l'échelle réelle.
+- Voir aussi : [[Optimisation bayésienne]]
 
 ## Pour aller plus loin
 
