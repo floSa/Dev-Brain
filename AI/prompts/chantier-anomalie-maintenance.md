@@ -117,7 +117,7 @@ Dix pages, `ml/maintenance` (sauf l'analyse vibratoire).
 - **Politique de maintenance et coût** (notion) : du score à la décision, seuil qui minimise le coût, asymétrie tôt / tard.
 - **Jumeau numérique et modèles hybrides** (notion) : physique + données, filtre de Kalman, résidus ; sans le battage.
 - **Jeux de données PHM** (brique, `famille: annuaire`) : C-MAPSS, PRONOSTIA/FEMTO, CWRU, IMS, XJTU-SY, batteries NASA, Paderborn, MIMII. Licences à vérifier.
-- Ne modifie pas « Maintenance prédictive et RUL » : propose ses ajouts dans ta synthèse.
+- **Accord de floSa, en premier geste (avant de créer le hub « Maintenance prédictive »)** : retire de la notion « Maintenance prédictive et RUL » l'alias « Maintenance prédictive », qui porte le nom du hub. Ne change rien d'autre dans cette notion ; propose ses autres ajouts dans ta synthèse. Un commit.
 
 ## Lot 5 — Maintenance prédictive : outils et offres (vague 3)
 
@@ -139,6 +139,12 @@ Six pages.
 - **Rule - Évaluer une anomalie par événement, pas par point**.
 - **ML en bord d'usine** (notion) : latence, CPU contre GPU, mise à jour des modèles, air-gap, quantification ; domaine à dériver.
 - Les patterns citent les briques réelles du vault, pas de nom inventé.
+- **Accord de floSa, câblage final** : ajoute des liens seulement (aucun texte réécrit), un commit par page, dans :
+  - la notion « Time series anomaly detection » : liens vers « Évaluer une détection d'anomalies » et « Jeux de données d'anomalies » ;
+  - la notion « Data drift » : lien vers « Détection hors distribution (OOD) » ;
+  - la notion « Apprentissage non supervisé » : corrige la mention des « trois usages » pour y inclure le lien vers le dossier « Détection d'anomalies » ;
+  - les briques Evidently et NannyML : lien retour vers « Détection hors distribution (OOD) ».
+- Reprends aussi, depuis les synthèses des lots 2 à 5, les ajouts de liens proposés sur des notions existantes : applique-les s'ils sont de simples liens, demande sinon.
 
 ## Suivi
 
