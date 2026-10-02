@@ -94,6 +94,7 @@ tags: [mqtt, opc-ua, iiot, networking]
 - [[Maintenance prédictive et RUL]] et [[Time series anomaly detection]] — ce que l'on fait des séries une fois stockées.
 - [[Apache NiFi]] — l'ingestion de fichiers et de protocoles, hors du périmètre d'atelier.
 - Voir aussi : [[Telegraf]], [[open62541]].
+- Plateformes d'éditeur qui collectent ces protocoles : [[Siemens Insights Hub]], [[Cognite Data Fusion]] (extracteur OPC UA).
 
 ## Pour aller plus loin
 
