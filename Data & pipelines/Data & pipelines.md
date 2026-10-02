@@ -34,6 +34,7 @@ tags: [data-pipeline, dataframe, web-scraping, document-parsing, dataviz, data-t
 - Faire tourner tout ça chaque nuit, avec dépendances et reprises → [[Orchestration]].
 - En faire un graphique → [[Visualisation]].
 - Donner à des équipes métier des tableaux de bord et des requêtes libres, sur site → [[Comparatif - BI auto-hébergée]] : [[Metabase]] (sans code, open-core AGPL) ou [[Apache Superset]] (Apache-2.0, plus de pièces à exploiter).
+- Analyser en libre-service des séries de procédé branchées sur un historien, sans copier les données → [[Seeq]] (propriétaire, sur site ou cloud).
 - Traiter au fil de l'eau plutôt que par lots → [[Flink]], et [[Stream processing]] pour la théorie.
 - Faire circuler des événements ou des tâches entre services, sur site → [[Messagerie]] : [[Kafka]] (journal rejouable), [[NATS]] (un binaire léger), [[RabbitMQ]] (files et routage), [[Redpanda]] (protocole Kafka, licence BSL), et [[Celery]] pour les tâches Python.
 - Recevoir les mesures de capteurs et d'automates par MQTT, sur site : un nœud léger sous licence libre → [[Mosquitto]] ; un cluster, sous licence BSL → [[EMQX]] ; le reste de l'atelier (OPC UA, Modbus, flux) est dans [[Données industrielles]]. Cf. [[Comparatif - Brokers MQTT]].
