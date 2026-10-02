@@ -1,8 +1,33 @@
 # Machine Learning — carte (4 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 38 pages, chacune avec son chemin et une ligne.
-> Couvre : Vision, Évaluation de modèles.
+> 61 pages, chacune avec son chemin et une ligne.
+> Couvre : Tabulaire, Vision, Évaluation de modèles.
+
+## Tabulaire
+- [[CatBoost]] · brique · `Machine Learning/Tabulaire/CatBoost.md` — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
+- [[category_encoders]] · brique · `Machine Learning/Tabulaire/category_encoders.md` — Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.
+- [[Featuretools]] · brique · `Machine Learning/Tabulaire/Featuretools.md` — Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données…
+- [[imbalanced-learn]] · brique · `Machine Learning/Tabulaire/imbalanced-learn.md` — Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés…
+- [[LightGBM]] · brique · `Machine Learning/Tabulaire/LightGBM.md` — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
+- [[scikit-survival]] · brique · `Machine Learning/Tabulaire/scikit-survival.md` — Analyse de survie « machine learning » au-dessus de scikit-learn — Cox pénalisé, forêts de survie aléatoires, gradient boosting et SVM de survie, avec les…
+- [[XGBoost]] · brique · `Machine Learning/Tabulaire/XGBoost.md` — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données…
+- [[AdaBoost]] · notion · `Machine Learning/Tabulaire/AdaBoost.md` — Le premier algorithme de boosting qui ait vraiment fonctionné (1995), et la réponse positive à une question théorique ouverte : peut-on transformer un…
+- [[Arbres de décision]] · notion · `Machine Learning/Tabulaire/Arbres de décision.md` — Modèle supervisé non paramétrique : segmente l'espace des variables par une suite de tests binaires, jusqu'à des feuilles qui portent une prédiction.
+- [[Bagging]] · notion · `Machine Learning/Tabulaire/Bagging.md` — Bootstrap aggregating : technique d'ensemble parallèle.
+- [[Boosting]] · notion · `Machine Learning/Tabulaire/Boosting.md` — Technique d'ensemble séquentielle : empiler des apprenants faibles, chacun corrigeant les erreurs du modèle courant.
+- [[Encodage des variables catégorielles]] · notion · `Machine Learning/Tabulaire/Encodage des variables catégorielles.md` — Convertir des variables qualitatives (texte, modalités) en numérique, seul format que la plupart des modèles acceptent.
+- [[Ensembling]] · notion · `Machine Learning/Tabulaire/Ensembling.md` — Combiner plusieurs modèles en un seul prédicteur, plus performant et plus robuste qu'aucun pris isolément.
+- [[Extra Trees]] · notion · `Machine Learning/Tabulaire/Extra Trees.md` — Variante du Random Forest qui pousse l'aléatoire un cran plus loin : au lieu de chercher le meilleur seuil de découpage pour chaque variable, elle en tire un…
+- [[Gradient Boosting (GBDT)]] · notion · `Machine Learning/Tabulaire/Gradient Boosting (GBDT).md` — Ensemble supervisé séquentiel (une instance de Boosting) : ajoute des Arbres de décision les uns après les autres, chacun corrigeant les erreurs résiduelles du…
+- [[Imbalanced classification]] · notion · `Machine Learning/Tabulaire/Imbalanced classification.md` — Classification où une classe — souvent celle d'intérêt — est rare : fraude, panne, maladie, churn.
+- [[Imputation des valeurs manquantes]] · notion · `Machine Learning/Tabulaire/Imputation des valeurs manquantes.md` — Remplacer les valeurs absentes par des valeurs plausibles, pour qu'un modèle qui n'accepte pas les NaN puisse s'entraîner.
+- [[Ingénierie des caractéristiques]] · notion · `Machine Learning/Tabulaire/Ingénierie des caractéristiques.md` — Construire et transformer les variables d'entrée (features) d'un modèle à partir des données brutes : imputer, encoder, mettre à l'échelle, combiner…
+- [[Mise à l'échelle]] · notion · `Machine Learning/Tabulaire/Mise à l'échelle.md` — Ramener les variables numériques à des amplitudes comparables, pour qu'aucune ne domine par sa seule unité.
+- [[Mécanismes de données manquantes]] · notion · `Machine Learning/Tabulaire/Mécanismes de données manquantes.md` — Classification de Rubin du pourquoi une valeur manque : MCAR, MAR, MNAR.
+- [[Random Forest]] · notion · `Machine Learning/Tabulaire/Random Forest.md` — Ensemble supervisé : agrège de nombreux Arbres de décision entraînés indépendamment, puis moyenne (régression) ou vote (classification).
+- [[Sélection de variables]] · notion · `Machine Learning/Tabulaire/Sélection de variables.md` — Garder un sous-ensemble des variables existantes, sans les transformer, pour réduire le surapprentissage et le coût et améliorer l'interprétabilité.
+- [[Comparatif - Boosting]] · comparatif · `Machine Learning/Tabulaire/Comparatif - Boosting.md` — la nature des colonnes — catégorielles ou numériques —, le temps d'entraînement, et la taille du jeu.
 
 ## Vision
 - [[albumentations]] · brique · `Machine Learning/Vision/albumentations.md` — Bibliothèque d'augmentation d'images rapide — 70+ transformations gérant nativement boîtes, masques et keypoints (détection, segmentation), au-dessus d'OpenCV…
