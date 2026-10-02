@@ -20,6 +20,7 @@ pitch: Les contraintes qui tiennent quelle que soit la stack — outillage, stru
 - Poser la barre de qualité et la CI → [[Rule - Qualité stricte]].
 - Manipuler de la configuration ou des secrets → [[Rule - Config typée]].
 - Livrer une démo à quelqu'un d'autre → [[Rule - Packaging démo]].
+- Entraîner un détecteur d'anomalies → [[Rule - Entraîner sur du normal vérifié]] ; en mesurer le résultat → [[Rule - Évaluer une anomalie par événement, pas par point]].
 
 <!-- AUTO:START -->
 ### Rules
