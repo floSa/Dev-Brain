@@ -18,6 +18,7 @@ tags: [predictive-maintenance]
 - **Deux façons de prédire la durée de vie.** [[RUL par apprentissage profond]] régresse une durée à partir de fenêtres de capteurs ; [[RUL par analyse de survie]] modélise un temps jusqu'à la panne avec censure, et s'appuie sur [[lifelines]] et [[Analyse de survie]].
 - **Le problème industriel réel : presque pas de pannes.** [[Maintenance prédictive avec peu de pannes]] part de là : anomalie non supervisée, transfert entre machines, simulation. La détection de l'anormal elle-même reste dans [[Détection d'anomalies]] (règle D-R11) : la maintenance l'emploie, elle ne la contient pas.
 - **Un score n'est pas une décision.** [[Politique de maintenance et coût]] traduit un RUL ou un score en intervention, au coût moyen le plus bas ; [[Jumeau numérique et modèles hybrides]] traite le cas où un modèle physique complète les données.
+- **Construire ou acheter.** [[Comparatif - Offres de maintenance prédictive]] range six offres du marché sur l'auto-hébergement, la licence et l'ouverture des données : toutes propriétaires, deux (Amazon Lookout for Equipment, Amazon Monitron) arrêtées ou fermées aux nouveaux clients. Les bibliothèques libres du sujet sont [[scikit-survival]] (survie, GPL-3.0), [[tsfresh]] (table de features) et [[sktime]] (interface unifiée), rangées dans leurs propres dossiers.
 - **Les jeux de test publics, et ce qu'ils permettent**, sont dans [[Jeux de données PHM]] : plusieurs sont simulés ou à défauts artificiels, et aucun ne remplace des pannes réelles.
 
 ## Choisir
@@ -28,6 +29,9 @@ tags: [predictive-maintenance]
 - Prédire une durée de vie → [[RUL par apprentissage profond]] avec beaucoup de trajectoires complètes ; [[RUL par analyse de survie]] quand la plupart des unités sont encore en service (censure).
 - Quasi aucune panne enregistrée → [[Maintenance prédictive avec peu de pannes]], puis [[Détection d'anomalies]].
 - Décider quand intervenir → [[Politique de maintenance et coût]].
+- Survie avec un modèle d'ensemble ou une évaluation sous censure → [[scikit-survival]] ; avec des tests et des rapports de risque → [[lifelines]].
+- Transformer des fenêtres de capteurs en table pour un classifieur ou une régression → [[tsfresh]], ou [[sktime]] pour une interface commune.
+- Un service ou une plateforme du marché, ou un historien déjà en place → [[Comparatif - Offres de maintenance prédictive]] : [[Siemens Insights Hub]], [[Cognite Data Fusion]], [[Seeq]], [[AVEVA PI System]], [[Amazon Lookout for Equipment]], [[Amazon Monitron]].
 - Mesurer sur un terrain public → [[Jeux de données PHM]].
 
 <!-- AUTO:START -->
