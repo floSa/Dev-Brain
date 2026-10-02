@@ -42,3 +42,18 @@ Il n'y a pas de `unfreeze`, et c'est délibéré : un dégel silencieux ferait
 cohabiter deux versions du même code sans que personne ne le sache. Pour
 rebrancher l'instance : supprimer `AI/scripts/brainkit/` et les trois lanceurs,
 remettre `kit.mode: branche` dans `brain.yml`, et installer le kit.
+
+## Report manuel du 2026-10-02 — la carte de lecture
+
+Une exception à « cette instance ne recevra plus rien », décidée pour un cas
+précis : le cinquième artefact (`genere.carte`, générateur `carte.py`) a été
+reporté **à la main** depuis BrainKit au commit `5704de1`. Cinq fichiers de
+`AI/scripts/brainkit/generer/` : `carte.py` (nouveau), `orchestre.py`,
+`__main__.py`, `__init__.py`, `prose.py`. Le reste du paquet est inchangé, et la
+copie est identique au kit à cet instant (`diff -rq` vide).
+
+Ce n'est pas un re-gel : le kit refuse de figer une instance déjà figée, et ce
+report ne contourne pas ce refus, il le remplace par un diff lisible. Toute
+correction ultérieure du kit reste à reporter de la même façon, fichier par
+fichier.
+
