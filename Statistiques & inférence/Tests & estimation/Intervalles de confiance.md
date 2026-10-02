@@ -52,6 +52,7 @@ tags: [statistical-inference, confidence-interval]
 - [[Analyse de puissance]] — viser une précision cible (largeur d'IC) pour fixer $n$.
 - [[Inférence bayésienne]] — son intervalle de crédibilité est l'analogue, avec interprétation probabiliste directe.
 - [[Prédiction conforme]] — encadre une observation future, pas un paramètre, sans hypothèse de loi.
+- [[Facteurs de Bayes et tailles d'effet]] — l'intervalle de confiance sur une taille d'effet, et le facteur de Bayes comme autre lecture de la preuve.
 
 ## Pour aller plus loin
 

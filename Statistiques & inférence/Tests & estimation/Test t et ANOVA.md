@@ -55,6 +55,7 @@ tags: [hypothesis-testing, parametric-test, effect-size]
 - [[Correction des tests multiples]] — indispensable pour les comparaisons post-hoc.
 - [[Analyse de puissance]] — dimensionner pour détecter un $d$ donné.
 - [[Tests d'hypothèse]] — cadre général.
+- [[Facteurs de Bayes et tailles d'effet]] — $d$ de Cohen, $g$ de Hedges, $\eta^2$, et le facteur de Bayes du test $t$.
 
 ## Pour aller plus loin
 
