@@ -39,7 +39,7 @@ le nôtre.
 
 | Prendre si | Écarter si |
 |---|---|
-| Environnement dont on ne choisit pas l'outillage : image de base, doc tierce, support universel | Aucun lockfile natif : la reproductibilité passe par `pip freeze`, pip-tools ou un autre outil |
+| Environnement dont on ne choisit pas l'outillage : image de base, doc tierce, support universel | Pas de lockfile stable : `pip lock` (qui écrit un `pylock.toml`) existe mais reste expérimental ; la reproductibilité passe par `pip freeze`, pip-tools ou un autre outil |
 | Besoin minimal : installer quelques paquets dans un venv déjà en place | Résolveur strict depuis 2020, mais lent sur de gros graphes de dépendances |
 | Compatibilité maximale : tutoriels, scripts d'installation, instructions « copier-coller » | N'isole rien de lui-même : hors d'un venv, il installe dans le Python système |
 
