@@ -56,6 +56,7 @@ tags: [experimentation, ab-testing, hypothesis-testing]
 - [[Multi-armed bandits]] — allocation dynamique du trafic vers la variante gagnante, au lieu d'un split fixe.
 - [[Sequential testing]] — évaluer en continu sans gonfler le faux positif.
 - [[Diff-in-Diff]] — estimer un effet quand la randomisation n'est pas possible.
+- [[Modélisation d'uplift]] — éclater l'effet moyen d'un test par profil pour cibler l'action.
 
 ## Pour aller plus loin
 
