@@ -57,6 +57,7 @@ tags: [regularization, linear-model, supervised]
 - [[Sélection de variables]] — le Lasso L1 est une sélection intégrée (*embedded*).
 - AIC/BIC, réduction de dimension ([[PCA]]) — autres parades à la sur-dimension.
 - [[Double descente et généralisation des grands modèles]] — la régularisation efface-t-elle la double descente ? Ridge optimale monotone en régression linéaire isotrope (Nakkiran et al. 2021).
+- Voir aussi : [[Méthodes à noyau]]
 
 ## Pour aller plus loin
 
