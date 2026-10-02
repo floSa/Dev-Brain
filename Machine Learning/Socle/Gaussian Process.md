@@ -74,6 +74,7 @@ tags: [supervised, regression, bayesian, non-parametric]
 - [[Gradient Boosting (GBDT)]] — ce qu'on utilise dès que $n$ dépasse quelques milliers.
 - [[Bootstrap]] — l'alternative non paramétrique pour quantifier l'incertitude d'un modèle quelconque.
 - [[Mouvement brownien]] — un processus gaussien particulier, vu côté probabilités.
+- Voir aussi : [[Méthodes à noyau]], [[Optimisation bayésienne]]
 
 ## Pour aller plus loin
 
