@@ -31,6 +31,7 @@ tags: [mqtt, opc-ua, iiot, message-broker]
 - Relier automate, broker et base par un flux visuel que les automaticiens lisent → [[Node-RED]], avec `adminAuth` configuré.
 - Comprendre MQTT, OPC UA, Modbus, Sparkplug B, la pyramide ISA-95 et la sécurité du réseau d'atelier → [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
 - Stocker les séries une fois arrivées → [[InfluxDB]] ou [[TimescaleDB]], cf. [[Comparatif - Bases temporelles]].
+- Une plateforme IoT industrielle clé en main : [[Siemens Insights Hub]] (cloud privé local possible, géré par Siemens) ou [[Cognite Data Fusion]] (cloud seul), propriétaires, cf. [[Comparatif - Offres de maintenance prédictive]].
 - Faire tourner un modèle sur le matériel de l'atelier, avec la donnée qu'on vient de collecter → [[Inférence en bordure - modèles sur du matériel d'atelier]], et [[OpenVINO]] ou [[LiteRT]] côté moteurs.
 
 <!-- AUTO:START -->
