@@ -46,7 +46,7 @@ seul `orion-ml` est celui-ci.
 | Comparer plusieurs pipelines sur ses propres signaux : le module de benchmark et le classement (victoires contre ARIMA, sur 12 jeux) sont fournis | Le statut officiel est **pre-alpha** (badge du README, classifier PyPI) : l'API et les pipelines peuvent bouger |
 | Reproduire des méthodes publiées (TadGAN, AER) avec leur code d'origine | Dernière version publiée : 0.7.1 (2025-03-17) ; Python <3.12 exigé par le paquet — vérifier avant de l'inscrire dans une image récente |
 | Sortie en intervalles avec sévérité, directement exploitable par une revue d'expert | Dépendances lourdes et épinglées (TensorFlow <2.15, PyTorch <2.6, NumPy <2) : à isoler dans son propre environnement |
-| | Un pipeline `azure` existe mais appelle le service Azure AI Anomaly Detector, retiré le 2026-10-01 → [[Azure AI Anomaly Detector]] |
+| | Un pipeline `azure` existe mais appelle le service Azure AI Anomaly Detector, retiré le 2026-10-01 → Azure AI Anomaly Detector (sans fiche dans le brain) |
 | | Des séries multivariées de grande taille ou un besoin de suite de référence → [[TSB-AD]] ou [[DeepOD]] |
 
 ## Mise en œuvre

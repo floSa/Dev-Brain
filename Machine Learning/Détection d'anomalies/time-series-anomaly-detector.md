@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[Azure AI Anomaly Detector]]"]
+alternatives: []
 complements: []
 tags: [timeseries, multivariate, deep-learning, thresholding]
 url_docs: 
@@ -29,7 +29,7 @@ url_repo: https://github.com/microsoft/anomaly-detector
 
 Paquet PyPI `time-series-anomaly-detector` (dépôt `microsoft/anomaly-detector`, module
 Python `anomaly_detector`). Microsoft y a publié les algorithmes qui servaient le service
-managé [[Azure AI Anomaly Detector]]. Deux familles : un détecteur **univarié**
+managé Azure AI Anomaly Detector. Deux familles : un détecteur **univarié**
 (`UnivariateAnomalyDetector`, avec des variantes sur série entière ou sur dernier point, un
 modèle à résidu spectral, un filtre ESD, un z-score, une détection de période) et un
 détecteur **multivarié** (`MultivariateAnomalyDetector`, réseau à attention sur graphe
@@ -62,7 +62,7 @@ dépôt distinct et plus ancien, qui ne porte que le code SR-CNN (dernier push e
 
 ### Alternatives
 
-- [[Azure AI Anomaly Detector]] — Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.
+- Azure AI Anomaly Detector — service managé Microsoft retiré le 2026-10-01, sans fiche dans le brain (hors périmètre : propriétaire).
 
 ## Ressources
 

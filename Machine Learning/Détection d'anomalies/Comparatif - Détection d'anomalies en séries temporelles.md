@@ -21,10 +21,9 @@ tags: [timeseries, benchmark]
 - [[ruptures]] — ne rend ni score ni alerte mais des points de rupture, hors ligne ; l'outil à prendre quand la question est « quand le régime a changé ».
 - [[STUMPY]] — les discords du matrix profile : anomalies de forme, sans modèle ni étiquettes ; calcul exact quadratique en longueur, fenêtre à caler sur la période.
 - [[time-series-anomaly-detector]] — les algorithmes du service Azure (résidu spectral, détecteur multivarié à attention sur graphe), exécutés en local ; roues publiées pour Linux x86_64 et Windows seulement, plus de commit depuis novembre 2025.
-- [[Azure AI Anomaly Detector]] — retiré le 2026-10-01 : présent pour mémoire, aucun nouveau projet ne le prend.
 - [[TSB-AD]] — pas un détecteur à déployer mais le banc d'essai qui permet de comparer les autres, avec VUS-PR comme métrique de référence ; à utiliser avant de choisir, pas après.
 
-On tranche d'abord sur la sortie attendue (score, rupture, motif), puis sur l'état de maintenance : Azure est retiré, Merlion archivé, Kats sans version depuis 2022 : trois pages décrivent des outils à ne pas prendre pour un projet neuf.
+On tranche d'abord sur la sortie attendue (score, rupture, motif), puis sur l'état de maintenance : Merlion archivé, Kats sans version depuis 2022 : deux pages décrivent des outils à ne pas prendre pour un projet neuf.
 
 ## Voir aussi
 
