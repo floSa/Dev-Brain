@@ -253,4 +253,4 @@ Domaine `ml/maintenance` quand le sujet est un modèle ; dérive sinon.
 - [ ] Lot 11 — recherche opérationnelle et gestion de stock
 - [ ] Lot 12 — planification et ordonnancement
 - [ ] Lot 13 — solveurs libres, simulation, pattern
-- [ ] Lot 14 — fiabilité et exploitation
+- [x] Lot 14 — fiabilité et exploitation
