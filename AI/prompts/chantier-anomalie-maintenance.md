@@ -5,9 +5,9 @@ modified: 2026-10-02
 tags: [meta, backlog]
 ---
 
-# Chantier — détection d'anomalies et maintenance prédictive
+# Chantier — anomalies, maintenance prédictive, agents de code, stocks et plannings
 
-Plan unique du chantier, huit lots numérotés de 1 à 8. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, quatorze lots numérotés de 1 à 14. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -40,6 +40,9 @@ on-prem industriel, ESN.
 13. **Parallèle.** Les lots d'une même vague tournent en parallèle dans des worktrees séparés. Si `origin/main` a bougé à la clôture, suis `cloturer-brain` : fusion dans la branche de travail, régénération des fichiers générés, jamais de fusion à la main d'un fichier généré.
 14. **Fin de lot** : coche ta ligne dans « Suivi », puis termine ta réponse par une ligne vide, `SYNTHÈSE DE TÂCHES`, ta synthèse, puis `FIN DE TÂCHES`. La synthèse dit : pages créées, pages à décider, faits non vérifiés, ce qui reste.
 
+15. **Libre seulement (règle de floSa, 2026-10-04).** Aucune page de brique pour une solution payante ou propriétaire. Une brique porte `licence_type: open-source` vérifié à la source (fichier LICENSE du dépôt). `open-core`, `source-available` ou `proprietary` : pas de page. Si le doute est réel, demande.
+16. **Mentions.** Un service propriétaire ou payant peut être cité en **texte simple**, sans lien `[[...]]` et sans page, quand c'est utile (un client l'utilise, il a fermé, il sert de comparaison). Jamais en brique.
+
 ## Vagues
 
 | Vague | Conversations | Dépend de |
@@ -49,6 +52,10 @@ on-prem industriel, ESN.
 | 3 | Lot 5 | Lot 4 |
 | 4 | Lot 6 | Lots 2, 3, 4, 5 |
 | 5 | Lots 7, 8 (en parallèle) | Lots 1 à 6 clos |
+| 6 | Lot 9 (seul) | Lots 1 à 8 clos |
+| 7 | Lots 10, 11, 14 (en parallèle) | Lot 9 clos et poussé |
+| 8 | Lot 12 | Lot 11 |
+| 9 | Lot 13 | Lot 12 |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -180,6 +187,57 @@ Ce lot ne touche **pas** les pages du brain. Il travaille dans le dépôt BrainK
   6. Reporte à la main les fichiers modifiés dans la copie figée `AI/scripts/brainkit/generer/` du DevBrain, et consigne-le dans `AI/scripts/brainkit/FIGE.md` comme les reports précédents. Vérifie que la copie est identique au kit. Clôture avec `cloturer-brain`.
 - Aucune page du brain n'est modifiée. Si tu dois en toucher une, arrête-toi et demande.
 
+## Lot 9 — Retrait des solutions propriétaires (vague 6)
+
+**Accord explicite de floSa** : tu peux supprimer les pages listées ci-dessous par `git rm` (l'historique est conservé), et remplacer par du texte simple les liens qui y mènent, dans les notions comme ailleurs. Aucune autre modification de texte dans les notions.
+
+Pages à supprimer, un commit chacune :
+- les 7 briques propriétaires du chantier : **Seeq**, **Siemens Insights Hub**, **AVEVA PI System**, **Cognite Data Fusion**, **Amazon Lookout for Equipment**, **Amazon Monitron**, **Azure AI Anomaly Detector** ;
+- le **Comparatif - Offres de maintenance prédictive** (`.md` et `.base`), dont tous les membres disparaissent.
+
+Procédure (suis la procédure « mode mise à jour » de `enrichir-brain`, section suppression) :
+1. Pour chaque page, liste ses consommateurs avec `grep -rl` sur son nom et ses alias : corps de pages, `alternatives:` et `complements:` des briques, sections « Ce qui départage » et vues `.base` des comparatifs (Bases temporelles, BI auto-hébergée, Détection d'anomalies en séries temporelles, etc.), corps de hubs, `Home.md`, `CLAUDE.md`, `AI/index/fraicheur.json`, patterns et règles.
+2. Dans le corps d'une page : remplace `[[Nom]]` ou `[[Nom|texte]]` par le texte simple, sans lien. Dans le frontmatter : retire l'entrée. Dans un comparatif : retire le paragraphe du membre disparu ; si le comparatif descend sous 2 membres, signale-le et propose, ne supprime pas.
+3. **Garde les mentions utiles** : ajoute dans le corps du hub « Maintenance prédictive » un paragraphe « Hors périmètre du brain (propriétaires ou payants) » qui cite en texte simple Seeq, Siemens Insights Hub, AVEVA PI System, Cognite Data Fusion, et « Services fermés » : Amazon Lookout for Equipment (2026-10-07), Amazon Monitron, Azure AI Anomaly Detector (2026-10-01).
+4. Supprime les entrées de ces pages dans `AI/index/fraicheur.json` par la voie prévue (`sonder_amont.py --recalculer`) ; sinon, dis-le.
+5. Regénère, recompte `Home.md` et `CLAUDE.md`, valide. Le compte d'avertissements ne doit pas dépasser 158. `audit_inventaire.py` doit sortir conforme.
+6. Fais ensuite un balayage : `grep -rn` des sept noms. Il ne doit rester que du texte simple, aucun `[[...]]`.
+7. Ne touche à aucune autre brique, même propriétaire : si tu en trouves (`licence_type` différent de `open-source`), liste-les dans ta synthèse, sans rien faire.
+
+## Lot 10 — Agents de code libres (vague 7)
+
+Domaine `llm/agent-de-code`. Applique la règle 15 : **licence libre seulement**. floSa exclut Claude Code, Codex CLI et Gemini CLI.
+
+- Candidates, à vérifier chacune à la source : **OpenCode** (le nom a été porté par plusieurs projets : dis lequel est lequel, lequel est archivé, lequel est devenu Crush), **Goose**, **Crush**, **Kilo Code**, **Roo Code**. Cherche aussi un ou deux autres agents de code libres actifs que le brain n'a pas (Qwen Code, par exemple) et propose-les sans les créer.
+- Pour chaque candidate : licence exacte (fichier LICENSE), version et date de la dernière release, archivage, fournisseurs de modèles pris en charge, usage avec un modèle local (Ollama, vLLM), mode d'exécution (terminal, extension, application). Une candidate non libre (source-available, licence FSL, offre payante au cœur du produit) n'obtient **pas** de page : dis-le dans ta synthèse.
+- Une brique par candidate retenue, puis mets à jour **Comparatif - Assistants de code IA** (`.md` et `.base`), et le hub « Agents de code ». Cite Aider, Cline, Continue, OpenHands, pi, Hermes Agent, OpenClaw.
+
+## Lot 11 — Ouverture de la recherche opérationnelle, et gestion de stock (vague 7)
+
+1. **Ouvre le sous-domaine** qui accueillera stocks et plannings, par la procédure « nouvelle valeur de catégorie » de `enrichir-brain`. Derive-le par l'arbre D1→D14 ; hypothèse de départ : `math/recherche-operationnelle` (dossier « Recherche opérationnelle »), distinct de `math/optimisation` (les méthodes de résolution). Écris la règle de départage. S'il vaut mieux ranger dans `math/optimisation`, justifie-le. Ne déplace aucune page existante sans demander.
+2. Écris 7 notions : **Modèle du vendeur de journaux (newsvendor)**, **Quantité économique de commande et tailles de lot**, **Stock de sécurité et taux de service**, **Politiques de réapprovisionnement (s,S) et (R,Q)**, **Classification ABC/XYZ**, **De la prévision probabiliste à la quantité commandée**, **Indicateurs de stock (rotation, couverture, rupture)**.
+3. Cite, sans les modifier : Intermittent demand, Hierarchical forecasting, Forecasting framing, Forecasting metrics, Prédiction conforme, Optimisation combinatoire.
+4. Tags manquants à créer, un commit : `inventory`, `supply-chain`, `newsvendor`, s'ils n'existent pas.
+
+## Lot 12 — Planification et ordonnancement (vague 8, après le lot 11)
+
+Sous-domaine ouvert par le lot 11. Six notions : **S&OP et plan directeur de production**, **MRP et calcul des besoins**, **Ordonnancement d'atelier (job-shop, flow-shop)**, **Plannings de personnel (rostering)**, **Tournées de véhicules (VRP)**, **Programmation par contraintes**. Cite Programmation linéaire en nombres entiers (MIP), Optimisation combinatoire, Optimisation sous contrainte, les notions du lot 11. Tags manquants : `scheduling`, `constraint-programming`, `vehicle-routing`, s'ils n'existent pas.
+
+## Lot 13 — Solveurs libres, simulation et pattern (vague 9, après le lot 12)
+
+Règle 15 : libres seulement.
+- Lis d'abord la page existante **Comparatif - Solveurs d'optimisation** et ses membres (PuLP, etc.) : complète-la, ne la double pas.
+- Briques candidates, à vérifier à la source : **OR-Tools** (CP-SAT), **HiGHS**, **Pyomo**, **CVXPY**, **SimPy**, **Timefold Solver**. Exclus de page : toute brique `open-core` ou à édition payante, dont Gurobi et CPLEX, qui se citent en texte simple seulement.
+- **Pattern - Prévoir puis optimiser** : demande, stock, plan. Il cite des briques et notions réelles du brain.
+- Met à jour les hubs et le comparatif des solveurs.
+
+## Lot 14 — Fiabilité et exploitation de la maintenance (vague 7)
+
+Domaine `ml/maintenance` quand le sujet est un modèle ; dérive sinon.
+- Notions : **Indicateurs de fiabilité (MTBF, MTTR, disponibilité)**, **OEE et rendement global**, **Cause racine d'une anomalie**, **Expliquer une anomalie (contribution des capteurs)**, **Santé de batterie (SOH et RUL)**, **Anomalie acoustique**.
+- Briques candidates, libres seulement, à vérifier : une **GMAO / CMMS libre** (Atlas CMMS, openMAINT, par exemple ; Odoo est open-core : pas de page), **PyBaMM** pour les batteries. Cherche d'autres outils libres actifs ; une candidate non libre n'a pas de page.
+- Cite les notions existantes : Maintenance prédictive et RUL, Surveillance conditionnelle et modes de défaillance, Politique de maintenance et coût, Types d'anomalies et régimes de supervision, Explicabilité des modèles, SHAP.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -190,3 +248,9 @@ Ce lot ne touche **pas** les pages du brain. Il travaille dans le dépôt BrainK
 - [x] Lot 6 — patterns, rules, bord d'usine
 - [x] Lot 7 — notions transverses (LSTM, adaptation de domaine, prédiction conforme)
 - [x] Lot 8 — correctif BrainKit, fichiers orphelins de la carte
+- [ ] Lot 9 — retrait des solutions propriétaires
+- [ ] Lot 10 — agents de code libres
+- [ ] Lot 11 — recherche opérationnelle et gestion de stock
+- [ ] Lot 12 — planification et ordonnancement
+- [ ] Lot 13 — solveurs libres, simulation, pattern
+- [ ] Lot 14 — fiabilité et exploitation
