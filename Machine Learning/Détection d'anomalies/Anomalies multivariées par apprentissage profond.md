@@ -133,6 +133,7 @@ tags: [anomaly-detection, timeseries, deep-learning, transformers, benchmark]
 - [[Types d'anomalies et régimes de supervision]] — ce qu'on suppose de l'entraînement : normal pur, ou contaminé.
 - [[Détection hors distribution (OOD)]] — même idée appliquée aux entrées d'un modèle déployé.
 - [[Transformer architectures]] et [[Self-attention]] — le socle d'Anomaly Transformer et de TranAD.
+- [[LSTM et réseaux récurrents]] — le socle de LSTM-AE et des détecteurs prédictifs : cellule, portes, limites face à l'attention.
 
 ## Pour aller plus loin
 

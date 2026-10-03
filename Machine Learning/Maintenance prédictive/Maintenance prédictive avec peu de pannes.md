@@ -31,7 +31,7 @@ tags: [predictive-maintenance, class-imbalance, anomaly-detection, transfer-lear
 
 ### Transférer d'une machine à une autre
 
-- **Idée** : entraîner là où il y a des pannes (flotte voisine, simulation, la *source*), puis adapter à la machine où il y en a peu (la *cible*). Azari et al. (2023, résumé seul) en font la revue systématique pour la maintenance prédictive. Le brain n'a pas de page sur l'apprentissage par transfert hors vision ni sur l'adaptation de domaine ; voisines : [[Transfer learning vision]], [[Méta-apprentissage et few-shot learning]].
+- **Idée** : entraîner là où il y a des pannes (flotte voisine, simulation, la *source*), puis adapter à la machine où il y en a peu (la *cible*). Azari et al. (2023, résumé seul) en font la revue systématique pour la maintenance prédictive. Cadre général : [[Adaptation de domaine]]. Le brain n'a pas de page sur l'apprentissage par transfert hors vision ; voisines : [[Transfer learning vision]], [[Méta-apprentissage et few-shot learning]].
 - **Adaptation de domaine** (*domain adaptation*) : aligner les distributions source et cible sans étiquettes de panne côté cible. Wang et al. (2025) décrivent le schéma général comme l'équilibre entre une perte de prédiction sur la source et une perte d'adaptation.
 - **Ce que mesure un benchmark** : Wang et al. comparent huit méthodes sur C-MAPSS en transférant d'un sous-jeu à l'autre (12 paires), même extracteur pour toutes, cinq exécutions, hyperparamètres choisis sur le risque source pour ne pas fuiter la cible. RMSE moyen (tableau III) : source seule **36,41** ; DDC 22,89 ; ConsDANN 22,06 ; ADARUL 22,59 ; CADA 21,90. Mais HoMM (40,95) fait **pire** que la source seule, et sur F1 vers F2 la source seule (17,20) bat CADA (22,95). Les auteurs notent que la source seule bat parfois l'état de l'art.
 - **Flotte hétérogène** : Wang et al. citent les écarts entre compagnies, moteurs et conditions comme source de décalage ; Nunes et al. notent que les approches de pronostic sont le plus souvent propres à une pièce ou un équipement. La confidentialité bloque le partage de données entre acteurs : l'[[Apprentissage fédéré]] est la piste citée (Wang et al. ; Yang et al. 2026, sur C-MAPSS).
@@ -80,6 +80,7 @@ tags: [predictive-maintenance, class-imbalance, anomaly-detection, transfer-lear
 - [[RUL par analyse de survie]] — exploite les unités censurées.
 - [[Jumeau numérique et modèles hybrides]] — simulation et physique.
 - [[Politique de maintenance et coût]] — décider malgré l'incertitude.
+- [[Adaptation de domaine]] — compenser le décalage entre machines : pondération, features invariantes, adaptation au test.
 - [[Maintenance prédictive]] — le dossier.
 
 ## Pour aller plus loin
