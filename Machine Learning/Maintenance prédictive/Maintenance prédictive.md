@@ -54,12 +54,7 @@ Le brain ne tient pas de fiche pour ces offres, citées ici pour mémoire : Seeq
 - [[Surveillance conditionnelle et modes de défaillance]] — domaines : data-sci, infra-ops
 
 ### Briques
-- [[Amazon Lookout for Equipment]] — Service managé AWS de détection d'anomalies sur capteurs d'équipements industriels — un modèle entraîné sur l'historique de jusqu'à 300 capteurs, déposé dans S3, puis appliqué en temps réel — fermé aux nouveaux clients depuis le 2025-10-07 et arrêté le 2026-10-07.
-- [[Amazon Monitron]] — Système AWS de surveillance conditionnelle livré de bout en bout — capteurs de vibration et de température, passerelle, analyse dans le cloud AWS (seuils ISO 20816 et modèles d'apprentissage) et application mobile — fermé aux nouveaux clients depuis le 2024-10-31, sans nouvelle fonctionnalité.
 - [[Jeux de données PHM]] — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
-
-### Comparatifs
-- [[Comparatif - Offres de maintenance prédictive]]
 <!-- AUTO:END -->
 
 ## Notes

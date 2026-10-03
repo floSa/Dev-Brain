@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1073 pages actives.
+> 1065 pages actives.
 
 ## Par page
 
@@ -85,16 +85,6 @@
 - liens sortants : [[Comparatif - Plateformes data & IA]], [[DataRobot]], [[Databricks]], [[Dataiku]], [[Featuretools]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]], [[Polars]], [[Snowflake]], [[pandas]]
 - liens entrants : [[AWS SageMaker]], [[Comparatif - Plateformes data & IA]], [[Databricks]], [[Dataiku]], [[Google Cloud Vertex AI]], [[Machine Learning]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]]
 
-### Amazon Lookout for Equipment  ·  brique
-- tags : `predictive-maintenance`, `anomaly-detection`, `timeseries`, `condition-monitoring`
-- liens sortants : [[Amazon Monitron]], [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Comparatif - Offres de maintenance prédictive]], [[DeepOD]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Orion]], [[PyOD]], [[STUMPY]], [[Time series anomaly detection]], [[time-series-anomaly-detector]]
-- liens entrants : [[Amazon Monitron]], [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive]], [[Time series anomaly detection]]
-
-### Amazon Monitron  ·  brique
-- tags : `predictive-maintenance`, `condition-monitoring`, `iiot`, `timeseries`
-- liens sortants : [[Amazon Lookout for Equipment]], [[Analyse vibratoire]], [[Comparatif - Offres de maintenance prédictive]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[InfluxDB]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Surveillance conditionnelle et modes de défaillance]], [[Telegraf]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive]], [[Surveillance conditionnelle et modes de défaillance]]
-
 ### Annoy  ·  brique
 - tags : `vector-db`, `ann`, `embedded`
 - liens sortants : [[Bases de données vectorielles]], [[Chroma]], [[Comparatif - Bases vectorielles]], [[Faiss]], [[ScaNN]], [[hnswlib]]
@@ -158,7 +148,7 @@
 ### Apache Superset  ·  brique
 - tags : `bi`, `dashboard`, `self-hosted`, `distributed`
 - liens sortants : [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[Grafana]], [[Kubernetes]], [[Metabase]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Redis]], [[Streamlit]], [[Trino]]
-- liens entrants : [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[Metabase]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Redis]], [[Seeq]], [[Trino]]
+- liens entrants : [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[Metabase]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Redis]], [[Trino]]
 
 ### ArangoDB  ·  brique
 - tags : `graph-db`, `document-db`, `distributed`
@@ -188,7 +178,7 @@
 ### asyncua  ·  brique
 - tags : `opc-ua`, `iiot`, `data-ingestion`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[open62541]]
-- liens entrants : [[Cognite Data Fusion]], [[Données industrielles]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Siemens Insights Hub]], [[Telegraf]], [[open62541]]
+- liens entrants : [[Données industrielles]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[open62541]]
 
 ### Authelia  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`, `reverse-proxy`
@@ -204,11 +194,6 @@
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
 - liens sortants : [[Agent memory]], [[Agent patterns]], [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[PraisonAI]], [[Semantic Kernel]], [[Tool use patterns]], [[agent-loops]], [[smolagents]], [[swarm-forge]]
 - liens entrants : [[Agents]], [[Agno]], [[Comparatif - Frameworks LLM]], [[CrewAI]], [[Multi-agent systems]], [[OpenAI Agents SDK]], [[OpenHands]], [[PraisonAI]], [[Semantic Kernel]], [[Sous-agents et isolation du contexte]], [[smolagents]], [[swarm-forge]]
-
-### AVEVA PI System  ·  brique
-- tags : `timeseries`, `iiot`, `predictive-maintenance`, `self-hosted`
-- liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[InfluxDB]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Seeq]], [[Surveillance conditionnelle et modes de défaillance]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Offres de maintenance prédictive]], [[InfluxDB]], [[Maintenance prédictive]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Seeq]], [[TimescaleDB]]
 
 ### Avro  ·  brique
 - tags : `file-format`, `serialization`, `schema-evolution`
@@ -229,11 +214,6 @@
 - tags : `fine-tuning`, `declarative-config`, `distributed-training`, `llm`
 - liens sortants : [[Comparatif - Fine-tuning LLM]], [[DeepSpeed]], [[Entraînement distribué]], [[Fine-tuning]], [[Fusion de modèles]], [[HuggingFace]], [[LLaMA-Factory]], [[PEFT]], [[Quantization]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
 - liens entrants : [[Comparatif - Fine-tuning LLM]], [[Fine-tuning]], [[Fusion de modèles]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[PEFT]], [[RLHF and DPO]], [[SFT]], [[TRL]], [[Tunix]], [[Unsloth]]
-
-### Azure AI Anomaly Detector  ·  brique
-- tags : `timeseries`, `multivariate`, `change-point`, `streaming`
-- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Maintenance prédictive et RUL]], [[Orion]], [[TSB-AD]], [[Time series anomaly detection]], [[ruptures]], [[time-series-anomaly-detector]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Orion]], [[time-series-anomaly-detector]]
 
 ### Beats  ·  brique
 - tags : `logging`, `data-pipeline`
@@ -369,11 +349,6 @@
 - tags : `agent-memory`, `knowledge-graph`, `rag`, `agents`, `local-llm`
 - liens sortants : [[Agent memory]], [[Comparatif - Mémoire pour agents]], [[Construction de graphes de connaissances]], [[Docling]], [[Graphiti]], [[LanceDB]], [[LangGraph]], [[Letta]], [[Mem0]], [[Mémoire des agents]], [[Neo4j]], [[Ollama]], [[OpenViking]], [[pgvector]]
 - liens entrants : [[Agent memory]], [[Comparatif - Mémoire pour agents]], [[Docling]], [[Graphiti]], [[LLM & IA générative]], [[LanceDB]], [[LangGraph]], [[Letta]], [[Mem0]], [[Mémoire des agents]], [[Neo4j]], [[Ollama]], [[OpenViking]], [[pgvector]]
-
-### Cognite Data Fusion  ·  brique
-- tags : `iiot`, `timeseries`, `predictive-maintenance`, `knowledge-graph`
-- liens sortants : [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[InfluxDB]], [[Maintenance prédictive et RUL]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Siemens Insights Hub]], [[Telegraf]], [[TimescaleDB]], [[asyncua]]
-- liens entrants : [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[Maintenance prédictive]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Siemens Insights Hub]], [[Time series anomaly detection]]
 
 ### Cohere Rerank  ·  brique
 - tags : `retrieval`, `reranking`, `rag`
@@ -523,7 +498,7 @@
 ### DeepOD  ·  brique
 - tags : `timeseries`, `deep-learning`, `unsupervised`
 - liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Orion]], [[PyOD]], [[PyTorch]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[PyOD]], [[aeon]], [[time-series-anomaly-detector]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[PyOD]], [[aeon]], [[time-series-anomaly-detector]]
 
 ### DeepSpeed  ·  brique
 - tags : `distributed-training`, `memory-optimization`, `deep-learning`, `gpu`, `mixed-precision`
@@ -927,8 +902,8 @@
 
 ### InfluxDB  ·  brique
 - tags : `timeseries`
-- liens sortants : [[AVEVA PI System]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[Postgres]], [[Telegraf]], [[TimescaleDB]]
-- liens entrants : [[AVEVA PI System]], [[Amazon Monitron]], [[Bases de données]], [[Cognite Data Fusion]], [[Comparatif - Bases temporelles]], [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Seeq]], [[Siemens Insights Hub]], [[Telegraf]], [[TimescaleDB]]
+- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[Postgres]], [[Telegraf]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[TimescaleDB]]
 
 ### Inspect AI  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `agents`, `benchmark`
@@ -1268,7 +1243,7 @@
 ### Metabase  ·  brique
 - tags : `bi`, `dashboard`, `self-hosted`
 - liens sortants : [[Apache Superset]], [[ClickHouse]], [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[Grafana]], [[MySQL]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Streamlit]]
-- liens entrants : [[Apache Superset]], [[ClickHouse]], [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[MySQL]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Seeq]], [[Trino]]
+- liens entrants : [[Apache Superset]], [[ClickHouse]], [[Comparatif - BI auto-hébergée]], [[Data & pipelines]], [[MySQL]], [[OLTP, OLAP et lakehouse]], [[Postgres]], [[Trino]]
 
 ### Metaflow  ·  brique
 - tags : `orchestration`, `ml-pipeline`
@@ -1348,7 +1323,7 @@
 ### Mosquitto  ·  brique
 - tags : `mqtt`, `message-broker`, `iiot`, `self-hosted`
 - liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[NATS]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]]
-- liens entrants : [[Amazon Monitron]], [[Comparatif - Brokers MQTT]], [[Comparatif - Offres de maintenance prédictive]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[NATS]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Siemens Insights Hub]], [[Telegraf]]
+- liens entrants : [[Comparatif - Brokers MQTT]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[NATS]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]]
 
 ### mypy  ·  brique
 - tags : `type-checker`, `type-hints`
@@ -1433,7 +1408,7 @@
 ### Node-RED  ·  brique
 - tags : `low-code`, `iiot`, `data-ingestion`, `self-hosted`
 - liens sortants : [[Authentik]], [[Comparatif - Brokers MQTT]], [[Docker Compose]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]], [[n8n]]
-- liens entrants : [[Authentik]], [[Comparatif - Offres de maintenance prédictive]], [[Docker Compose]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens entrants : [[Authentik]], [[Docker Compose]], [[Données industrielles]], [[EMQX]], [[Mosquitto]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### numpy  ·  brique
 - tags : `array`, `in-memory`
@@ -1582,8 +1557,8 @@
 
 ### Orion  ·  brique
 - tags : `timeseries`, `unsupervised`, `deep-learning`, `gan`, `benchmark`
-- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[time-series-anomaly-detector]]
+- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[time-series-anomaly-detector]]
 
 ### osint4all  ·  brique
 - tags : `osint`
@@ -1828,7 +1803,7 @@
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
 - liens sortants : [[Apprentissage non supervisé]], [[Comparatif - Détection d'anomalies]], [[DeepOD]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Anomalies multivariées par apprentissage profond]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[STUMPY]], [[aeon]], [[sktime]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[STUMPY]], [[aeon]], [[sktime]]
 
 ### pypdf  ·  brique
 - tags : `pdf`, `document-parsing`
@@ -1983,7 +1958,7 @@
 ### ruptures  ·  brique
 - tags : `timeseries`, `change-point`
 - liens sortants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Data drift]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Kats]], [[STUMPY]], [[Stationarity]], [[Time series anomaly detection]], [[aeon]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Détection de ruptures]], [[Kats]], [[Merlion]], [[Pattern - Détection d'anomalies en deux étages]], [[aeon]]
+- liens entrants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Détection de ruptures]], [[Kats]], [[Merlion]], [[Pattern - Détection d'anomalies en deux étages]], [[aeon]]
 
 ### RustFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
@@ -2008,7 +1983,7 @@
 ### scikit-survival  ·  brique
 - tags : `survival-analysis`, `rul`, `supervised`, `ensemble`
 - liens sortants : [[Analyse de survie]], [[Gradient Boosting (GBDT)]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[Random Forest]], [[Scikit-Learn]], [[Tabulaire]], [[lifelines]], [[tsfresh]]
-- liens entrants : [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[Tabulaire]], [[lifelines]], [[tsfresh]]
+- liens entrants : [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[Tabulaire]], [[lifelines]], [[tsfresh]]
 
 ### scipy.signal  ·  brique
 - tags : `signal-processing`, `digital-filter`, `fourier`, `spectrogram`
@@ -2044,11 +2019,6 @@
 - tags : `object-storage`, `s3-compatible`
 - liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
 - liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
-
-### Seeq  ·  brique
-- tags : `timeseries`, `predictive-maintenance`, `iiot`, `dashboard`
-- liens sortants : [[AVEVA PI System]], [[Apache Superset]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Offres de maintenance prédictive]], [[Data & pipelines]], [[Données industrielles]], [[Indicateurs de santé]], [[InfluxDB]], [[Metabase]], [[Politique de maintenance et coût]], [[Surveillance conditionnelle et modes de défaillance]], [[TimescaleDB]]
-- liens entrants : [[AVEVA PI System]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Offres de maintenance prédictive]], [[Data & pipelines]], [[Maintenance prédictive]]
 
 ### segment-anything  ·  brique
 - tags : `segmentation`, `foundation-model`, `computer-vision`, `transformers`, `deep-learning`, `gpu`
@@ -2110,15 +2080,10 @@
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 
-### Siemens Insights Hub  ·  brique
-- tags : `iiot`, `predictive-maintenance`, `timeseries`, `anomaly-detection`
-- liens sortants : [[Cognite Data Fusion]], [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[InfluxDB]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]]
-- liens entrants : [[Cognite Data Fusion]], [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[Maintenance prédictive]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Time series anomaly detection]]
-
 ### sktime  ·  brique
 - tags : `timeseries`, `forecasting`, `classification`, `clustering`
 - liens sortants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Maintenance prédictive et RUL]], [[PyOD]], [[Séries temporelles]], [[Time series feature engineering]], [[Walk-forward CV]], [[aeon]], [[darts]], [[statsforecast]], [[tsfresh]]
-- liens entrants : [[Comparatif - Forecasting]], [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Séries temporelles]], [[aeon]], [[darts]], [[tsfresh]]
+- liens entrants : [[Comparatif - Forecasting]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Séries temporelles]], [[aeon]], [[darts]], [[tsfresh]]
 
 ### SmartTube  ·  brique
 - tags : `media-player`, `privacy`
@@ -2218,7 +2183,7 @@
 ### STUMPY  ·  brique
 - tags : `anomaly-detection`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Jeux de données d'anomalies]], [[Prophet]], [[PyOD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[PyOD]], [[Séries temporelles]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[PyOD]], [[Séries temporelles]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]]
 
 ### supervision  ·  brique
 - tags : `object-detection`, `object-tracking`, `computer-vision`
@@ -2248,7 +2213,7 @@
 ### Telegraf  ·  brique
 - tags : `iiot`, `metrics`, `data-ingestion`, `opc-ua`, `mqtt`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[InfluxDB]], [[Kafka]], [[Mosquitto]], [[Node-RED]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[Amazon Monitron]], [[Cognite Data Fusion]], [[Comparatif - Offres de maintenance prédictive]], [[Données industrielles]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Siemens Insights Hub]], [[TimescaleDB]], [[open62541]]
+- liens entrants : [[Données industrielles]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]], [[open62541]]
 
 ### Tempo  ·  brique
 - tags : `observability`, `tracing`, `self-hosted`
@@ -2317,13 +2282,13 @@
 
 ### time-series-anomaly-detector  ·  brique
 - tags : `timeseries`, `multivariate`, `deep-learning`, `thresholding`
-- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Maintenance prédictive et RUL]], [[Orion]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]]
+- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Maintenance prédictive et RUL]], [[Orion]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]]
 
 ### TimescaleDB  ·  brique
 - tags : `timeseries`, `postgres`
-- liens sortants : [[AVEVA PI System]], [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[InfluxDB]], [[Postgres]], [[Telegraf]], [[pgvector]]
-- liens entrants : [[AVEVA PI System]], [[Bases de données]], [[Cognite Data Fusion]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Seeq]], [[Telegraf]]
+- liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[InfluxDB]], [[Postgres]], [[Telegraf]], [[pgvector]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]]
 
 ### timm  ·  brique
 - tags : `computer-vision`, `cnn`, `vit`, `transfer-learning`, `fine-tuning`, `deep-learning`, `model-hub`
@@ -2373,12 +2338,12 @@
 ### TSB-AD  ·  brique
 - tags : `timeseries`, `benchmark`, `model-evaluation`
 - liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Chronos]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'anomalies]], [[Foundation models pour séries temporelles]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[aeon]], [[time-series-anomaly-detector]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[aeon]], [[time-series-anomaly-detector]]
 
 ### tsfresh  ·  brique
 - tags : `timeseries`, `feature-engineering`, `supervised`
 - liens sortants : [[Data leakage]], [[Indicateurs de santé]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[Scikit-Learn]], [[Séries temporelles]], [[Time series feature engineering]], [[aeon]], [[darts]], [[scikit-survival]], [[sktime]], [[statsforecast]]
-- liens entrants : [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Séries temporelles]], [[Time series feature engineering]], [[scikit-survival]], [[sktime]]
+- liens entrants : [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Séries temporelles]], [[Time series feature engineering]], [[scikit-survival]], [[sktime]]
 
 ### Tunix  ·  brique
 - tags : `llm`, `reinforcement-learning`, `fine-tuning`
@@ -2557,8 +2522,8 @@
 
 ### Comparatif - Bases temporelles  ·  comparatif
 - tags : `timeseries`
-- liens sortants : [[AVEVA PI System]], [[Comparatif - Bases temporelles.base]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
-- liens entrants : [[AVEVA PI System]], [[Bases de données]], [[Comparatifs]], [[Données industrielles]], [[InfluxDB]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]]
+- liens sortants : [[Comparatif - Bases temporelles.base]], [[Comparatifs]], [[InfluxDB]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatifs]], [[Données industrielles]], [[InfluxDB]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[TimescaleDB]]
 
 ### Comparatif - Bases vectorielles  ·  comparatif
 - tags : `vector-db`
@@ -2567,8 +2532,8 @@
 
 ### Comparatif - BI auto-hébergée  ·  comparatif
 - tags : `bi`, `dashboard`, `self-hosted`
-- liens sortants : [[Apache Superset]], [[Comparatif - BI auto-hébergée.base]], [[Comparatifs]], [[Dash]], [[Grafana]], [[Metabase]], [[Seeq]], [[Streamlit]]
-- liens entrants : [[Apache Superset]], [[Comparatifs]], [[Data & pipelines]], [[Metabase]], [[OLTP, OLAP et lakehouse]], [[Seeq]]
+- liens sortants : [[Apache Superset]], [[Comparatif - BI auto-hébergée.base]], [[Comparatifs]], [[Dash]], [[Grafana]], [[Metabase]], [[Streamlit]]
+- liens entrants : [[Apache Superset]], [[Comparatifs]], [[Data & pipelines]], [[Metabase]], [[OLTP, OLAP et lakehouse]]
 
 ### Comparatif - Boosting  ·  comparatif
 - tags : `boosting`, `tree-based`, `ensemble`
@@ -2583,7 +2548,7 @@
 ### Comparatif - Brokers MQTT  ·  comparatif
 - tags : `mqtt`, `message-broker`
 - liens sortants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT.base]], [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Données industrielles]], [[EMQX]], [[Kafka]], [[Mosquitto]], [[NATS]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Redpanda]]
-- liens entrants : [[Comparatif - Brokers de messages]], [[Comparatif - Offres de maintenance prédictive]], [[Comparatifs]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens entrants : [[Comparatif - Brokers de messages]], [[Comparatifs]], [[Data & pipelines]], [[Données industrielles]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Comparatif - Calcul distribué  ·  comparatif
 - tags : `distributed`, `parallel`, `gpu`, `out-of-core`
@@ -2632,8 +2597,8 @@
 
 ### Comparatif - Détection d'anomalies en séries temporelles  ·  comparatif
 - tags : `timeseries`, `benchmark`
-- liens sortants : [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles.base]], [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[STUMPY]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
-- liens entrants : [[Azure AI Anomaly Detector]], [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[ruptures]], [[sktime]], [[time-series-anomaly-detector]]
+- liens sortants : [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles.base]], [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[STUMPY]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
+- liens entrants : [[Comparatifs]], [[DeepOD]], [[Détection d'anomalies]], [[Kats]], [[Merlion]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[STUMPY]], [[TSB-AD]], [[aeon]], [[ruptures]], [[sktime]], [[time-series-anomaly-detector]]
 
 ### Comparatif - Détection d'anomalies visuelles  ·  comparatif
 - tags : `industrial-inspection`, `computer-vision`
@@ -2744,11 +2709,6 @@
 - tags : `llm-observability`, `tracing`
 - liens sortants : [[Comparatif - Observabilité LLM.base]], [[Comparatifs]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Phoenix Arize]]
 - liens entrants : [[Comparatifs]], [[Headroom]], [[Helicone]], [[LangSmith]], [[Langfuse]], [[Observabilité des LLM]], [[Phoenix Arize]]
-
-### Comparatif - Offres de maintenance prédictive  ·  comparatif
-- tags : `predictive-maintenance`, `iiot`
-- liens sortants : [[AVEVA PI System]], [[Amazon Lookout for Equipment]], [[Amazon Monitron]], [[Cognite Data Fusion]], [[Comparatif - Brokers MQTT]], [[Comparatif - Offres de maintenance prédictive.base]], [[Comparatifs]], [[InfluxDB]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Politique de maintenance et coût]], [[Seeq]], [[Siemens Insights Hub]], [[Telegraf]], [[scikit-survival]], [[sktime]], [[tsfresh]]
-- liens entrants : [[AVEVA PI System]], [[Amazon Lookout for Equipment]], [[Amazon Monitron]], [[Cognite Data Fusion]], [[Comparatifs]], [[Données industrielles]], [[Maintenance prédictive]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Seeq]], [[Siemens Insights Hub]]
 
 ### Comparatif - Optimisation d'hyperparamètres  ·  comparatif
 - tags : `hyperparameter-tuning`
@@ -2957,8 +2917,8 @@
 
 ### Bases de données  ·  hub
 - tags : `relational`, `nosql`, `columnar`, `timeseries`, `graph-db`, `vector-db`, `search`
-- liens sortants : [[ADBC]], [[AVEVA PI System]], [[Administration]], [[Alembic]], [[Apache AGE]], [[Apache Cassandra]], [[ArangoDB]], [[Bases de données vectorielles]], [[Bases de graphes]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[Dgraph]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[JanusGraph]], [[Liquibase]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Trino]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
-- liens entrants : [[ADBC]], [[AI Engineering]], [[AVEVA PI System]], [[Apache Cassandra]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DataGrip]], [[Données industrielles]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Trino]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
+- liens sortants : [[ADBC]], [[Administration]], [[Alembic]], [[Apache AGE]], [[Apache Cassandra]], [[ArangoDB]], [[Bases de données vectorielles]], [[Bases de graphes]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Clients de bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[DBeaver]], [[DataGrip]], [[Dgraph]], [[DuckDB]], [[Elasticsearch]], [[Flyway]], [[HeidiSQL]], [[InfluxDB]], [[JanusGraph]], [[Liquibase]], [[MariaDB]], [[Memgraph]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[ORM]], [[Postgres]], [[Prisma]], [[Recherche]], [[Redis]], [[Redis Insight]], [[Relationnel]], [[SQLAlchemy]], [[SQLModel]], [[SQLite]], [[TimescaleDB]], [[Trino]], [[Vectoriel]], [[pgAdmin]], [[psycopg2]]
+- liens entrants : [[ADBC]], [[AI Engineering]], [[Apache Cassandra]], [[Bases graphe — modèles et langages de requête]], [[ClickHouse]], [[CockroachDB]], [[DBeaver]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DataGrip]], [[Données industrielles]], [[DuckDB]], [[Elasticsearch]], [[Embeddings & encodeurs]], [[HeidiSQL]], [[InfluxDB]], [[MariaDB]], [[Microsoft SQL Server]], [[Migrations de schéma]], [[MongoDB]], [[MongoDB Compass]], [[MySQL]], [[MySQL Workbench]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[ORM]], [[Outils de développement]], [[Plateformes data & IA]], [[Postgres]], [[Redis]], [[Redis Insight]], [[SQLite]], [[TimescaleDB]], [[Trino]], [[Web scraping]], [[pgAdmin]], [[psycopg2]]
 
 ### Bases de graphes  ·  hub
 - tags : `graph-db`
@@ -2977,8 +2937,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Offres de maintenance prédictive]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Offres de maintenance prédictive]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -2987,8 +2947,8 @@
 
 ### Data & pipelines  ·  hub
 - tags : `data-pipeline`, `dataframe`, `web-scraping`, `document-parsing`, `dataviz`, `data-transformation`
-- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Superset]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Brokers MQTT]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[DataFrames]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[Données industrielles]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[EMQX]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Metabase]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[Mosquitto]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Seeq]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[lakeFS]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
-- liens entrants : [[AI Engineering]], [[Apache Superset]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[Infrastructure & Ops]], [[MLOps]], [[Machine Learning]], [[Metabase]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Seeq]], [[Tabulaire]], [[dbt Core]]
+- liens sortants : [[Airbyte]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Superset]], [[Architecture médaillon]], [[Avro]], [[Bases de données]], [[Bases de données vectorielles]], [[Beats]], [[Catalogue de données et lignage]], [[Celery]], [[Change Data Capture (CDC)]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Brokers MQTT]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Ingestion de données]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Contrats de données & qualité]], [[DVC]], [[DataFrames]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[Données industrielles]], [[EDA automatisée & profiling]], [[ELT vs ETL & idempotence]], [[EMQX]], [[Elasticsearch]], [[Faker]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[Great Expectations]], [[Index ANN — internes]], [[Ingestion de données]], [[Ingestion incrémentale et curseurs]], [[Kafka]], [[Logstash]], [[Messagerie]], [[Metabase]], [[Migrations de schéma]], [[Mimesis]], [[Modélisation dimensionnelle]], [[Mosquitto]], [[NATS]], [[Notebooks-as-code]], [[ORM]], [[OpenLineage]], [[OpenMetadata]], [[Orchestration]], [[Outils de développement]], [[Parquet]], [[Parsing]], [[Partitionnement & layout de données]], [[Polars]], [[RabbitMQ]], [[Redpanda]], [[SDV]], [[SQLMesh]], [[Scraping]], [[Soda Core]], [[Stream processing]], [[Synthetic data generation]], [[Versionnage de données]], [[Visualisation]], [[connectorx]], [[dbt Core]], [[dlt]], [[lakeFS]], [[missingno]], [[pandas]], [[pandera]], [[sweetviz]], [[ydata-profiling]]
+- liens entrants : [[AI Engineering]], [[Apache Superset]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Transformation SQL]], [[Data Engineering]], [[Data Science]], [[DataHub]], [[Infrastructure & Ops]], [[MLOps]], [[Machine Learning]], [[Metabase]], [[OpenLineage]], [[OpenMetadata]], [[Recherche]], [[SQLMesh]], [[Tabulaire]], [[dbt Core]]
 
 ### Data Engineering  ·  hub
 - tags : —
@@ -3027,12 +2987,12 @@
 
 ### Données industrielles  ·  hub
 - tags : `mqtt`, `opc-ua`, `iiot`, `message-broker`
-- liens sortants : [[Bases de données]], [[Cognite Data Fusion]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Offres de maintenance prédictive]], [[EMQX]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Ingestion de données]], [[Kafka]], [[LiteRT]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[OpenVINO]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Siemens Insights Hub]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[AVEVA PI System]], [[Architecture pilotée par les événements]], [[Cognite Data Fusion]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Seeq]], [[Serving]], [[Siemens Insights Hub]], [[Telegraf]], [[asyncua]], [[open62541]]
+- liens sortants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[EMQX]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Ingestion de données]], [[Kafka]], [[LiteRT]], [[Messagerie]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[OpenVINO]], [[Prometheus]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RabbitMQ]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[open62541]]
+- liens entrants : [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Data & pipelines]], [[EMQX]], [[Messagerie]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Serving]], [[Telegraf]], [[asyncua]], [[open62541]]
 
 ### Détection d'anomalies  ·  hub
 - tags : `anomaly-detection`
-- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Kats]], [[Local Outlier Factor]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Anomalie visuelle par banque de mémoire]], [[Anomalie visuelle par reconstruction, distillation et flux]], [[Anomalie visuelle zero-shot et few-shot]], [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Kats]], [[Local Outlier Factor]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Apprentissage non supervisé]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[DeepOD]], [[Jeux de données d'anomalies]], [[Machine Learning]], [[Maintenance prédictive]], [[Non supervisé]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Séries temporelles]], [[TSB-AD]], [[aeon]], [[ruptures]]
 
 ### Embeddings & encodeurs  ·  hub
@@ -3092,8 +3052,8 @@
 
 ### Maintenance prédictive  ·  hub
 - tags : `predictive-maintenance`
-- liens sortants : [[AVEVA PI System]], [[Amazon Lookout for Equipment]], [[Amazon Monitron]], [[Analyse de survie]], [[Analyse vibratoire]], [[Cognite Data Fusion]], [[Comparatif - Offres de maintenance prédictive]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Seeq]], [[Siemens Insights Hub]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]], [[scikit-survival]], [[sktime]], [[tsfresh]]
-- liens entrants : [[Comparatif - Offres de maintenance prédictive]], [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]]
+- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]], [[scikit-survival]], [[sktime]], [[tsfresh]]
+- liens entrants : [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]]
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
@@ -3463,7 +3423,7 @@
 ### Analyse vibratoire  ·  notion
 - tags : `vibration-analysis`, `signal-processing`, `fourier`, `condition-monitoring`
 - liens sortants : [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyWavelets]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types d'anomalies et régimes de supervision]], [[scipy.signal]]
-- liens entrants : [[Amazon Monitron]], [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Ondelettes]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
+- liens entrants : [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Ondelettes]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
 
 ### Annotation de données  ·  notion
 - tags : `annotation`, `human-in-the-loop`, `supervised`, `self-hosted`
@@ -3488,7 +3448,7 @@
 ### Anomalies multivariées par apprentissage profond  ·  notion
 - tags : `anomaly-detection`, `timeseries`, `deep-learning`, `transformers`, `benchmark`
 - liens sortants : [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive et RUL]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Self-attention]], [[TSB-AD]], [[Time series anomaly detection]], [[Transformer architectures]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Azure AI Anomaly Detector]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[LSTM et réseaux récurrents]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[TSB-AD]], [[Time series anomaly detection]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[LSTM et réseaux récurrents]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[TSB-AD]], [[Time series anomaly detection]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### API REST, GraphQL et gRPC  ·  notion
 - tags : `web-framework`, `schema-evolution`, `idempotence`, `serialization`
@@ -3823,7 +3783,7 @@
 ### Diagnostic de défauts de roulements  ·  notion
 - tags : `predictive-maintenance`, `condition-monitoring`, `vibration-analysis`, `data-leakage`, `benchmark`
 - liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Filtrage numérique]], [[Imbalanced classification]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Validation croisée]]
-- liens entrants : [[Amazon Monitron]], [[Analyse vibratoire]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens entrants : [[Analyse vibratoire]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Diff-in-Diff  ·  notion
 - tags : `causal-inference`, `hypothesis-testing`
@@ -3868,7 +3828,7 @@
 ### Détection d'anomalies en ligne  ·  notion
 - tags : `anomaly-detection`, `streaming`, `timeseries`
 - liens sortants : [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Forecasting framing]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[River]], [[Score et seuil d'alerte]], [[Stream processing]], [[Théorie des valeurs extrêmes]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection de ruptures]], [[Forecasting metrics]], [[Foundation models et anomalies de séries]], [[Kats]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[River]], [[Stream processing]], [[Time series anomaly detection]], [[ruptures]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection de ruptures]], [[Forecasting metrics]], [[Foundation models et anomalies de séries]], [[Kats]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[River]], [[Stream processing]], [[Time series anomaly detection]], [[ruptures]]
 
 ### Détection d'anomalies visuelle  ·  notion
 - tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `unsupervised`
@@ -4163,7 +4123,7 @@
 ### Indicateurs de santé  ·  notion
 - tags : `predictive-maintenance`, `rul`, `condition-monitoring`, `dimensionality-reduction`, `multivariate`, `feature-engineering`
 - liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mise à l'échelle]], [[PCA]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series feature engineering]], [[Types d'anomalies et régimes de supervision]], [[Walk-forward CV]]
-- liens entrants : [[Amazon Monitron]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Seeq]], [[Surveillance conditionnelle et modes de défaillance]], [[tsfresh]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[tsfresh]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -4343,12 +4303,12 @@
 ### Maintenance prédictive avec peu de pannes  ·  notion
 - tags : `predictive-maintenance`, `class-imbalance`, `anomaly-detection`, `transfer-learning`, `synthetic-data`
 - liens sortants : [[Adaptation de domaine]], [[Apprentissage fédéré]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Détection d'outliers multivariée]], [[Détection hors distribution (OOD)]], [[Foundation models pour séries temporelles]], [[GANs]], [[Imbalanced classification]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Méta-apprentissage et few-shot learning]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Synthetic data generation]], [[Time series anomaly detection]], [[Transfer learning vision]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Adaptation de domaine]], [[Amazon Lookout for Equipment]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens entrants : [[Adaptation de domaine]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
 - liens sortants : [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Forecasting framing]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Regression metrics]], [[STUMPY]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[lifelines]], [[scikit-survival]], [[sktime]], [[tsfresh]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Amazon Monitron]], [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Azure AI Anomaly Detector]], [[Cognite Data Fusion]], [[Comparatif - Offres de maintenance prédictive]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[LSTM et réseaux récurrents]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Siemens Insights Hub]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Time series anomaly detection]], [[scikit-survival]], [[sktime]], [[time-series-anomaly-detector]], [[tsfresh]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[LSTM et réseaux récurrents]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Time series anomaly detection]], [[scikit-survival]], [[sktime]], [[time-series-anomaly-detector]], [[tsfresh]]
 
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -4697,8 +4657,8 @@
 
 ### Politique de maintenance et coût  ·  notion
 - tags : `predictive-maintenance`, `rul`, `thresholding`, `optimization`
-- liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Comparatif - Offres de maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Comparatif - Offres de maintenance prédictive]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Score et seuil d'alerte]], [[Seeq]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Positional encoding  ·  notion
 - tags : `positional-encoding`, `transformers`, `attention`
@@ -4752,8 +4712,8 @@
 
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
-- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Cognite Data Fusion]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Siemens Insights Hub]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
-- liens entrants : [[AVEVA PI System]], [[Analyse vibratoire]], [[Architecture pilotée par les événements]], [[Cognite Data Fusion]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Siemens Insights Hub]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]], [[open62541]]
+- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
+- liens entrants : [[Analyse vibratoire]], [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]], [[open62541]]
 
 ### Pruning  ·  notion
 - tags : `pruning`, `model-compression`, `deep-learning`, `inference-optimization`
@@ -5087,8 +5047,8 @@
 
 ### Surveillance conditionnelle et modes de défaillance  ·  notion
 - tags : `predictive-maintenance`, `condition-monitoring`
-- liens sortants : [[Amazon Monitron]], [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
-- liens entrants : [[AVEVA PI System]], [[Amazon Monitron]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Seeq]]
+- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]]
 
 ### SVD  ·  notion
 - tags : `linear-algebra`, `matrix-decomposition`, `eigenvalue`, `dimensionality-reduction`
@@ -5162,8 +5122,8 @@
 
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
-- liens sortants : [[ARIMA SARIMA]], [[Amazon Lookout for Equipment]], [[Anomalies multivariées par apprentissage profond]], [[Autocorrelation]], [[Autoencodeurs]], [[Cognite Data Fusion]], [[Contrôle statistique de procédé (SPC)]], [[DBSCAN]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Exponential smoothing]], [[Forecasting framing]], [[Foundation models et anomalies de séries]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Siemens Insights Hub]], [[Stationarity]], [[Time series feature engineering]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Azure AI Anomaly Detector]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Jumeau numérique et modèles hybrides]], [[Kats]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Siemens Insights Hub]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[ARIMA SARIMA]], [[Anomalies multivariées par apprentissage profond]], [[Autocorrelation]], [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[DBSCAN]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Exponential smoothing]], [[Forecasting framing]], [[Foundation models et anomalies de séries]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Jumeau numérique et modèles hybrides]], [[Kats]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
@@ -5317,7 +5277,7 @@
 
 ### Pattern - Pipeline de maintenance prédictive on-prem  ·  pattern
 - tags : `pattern`, `predictive-maintenance`, `iiot`, `opc-ua`, `mqtt`, `anomaly-detection`
-- liens sortants : [[AVEVA PI System]], [[Alertmanager]], [[Comparatif - Brokers MQTT]], [[Comparatif - Offres de maintenance prédictive]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[EMQX]], [[Grafana]], [[Indicateurs de santé]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[darts]], [[open62541]]
+- liens sortants : [[Alertmanager]], [[Comparatif - Brokers MQTT]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[EMQX]], [[Grafana]], [[Indicateurs de santé]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[darts]], [[open62541]]
 - liens entrants : [[Maintenance prédictive]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Patterns]], [[Rule - Évaluer une anomalie par événement, pas par point]]
 
 ### Pattern - Pipeline scraping → matching → optimisation  ·  pattern
@@ -5382,7 +5342,7 @@
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
 - `ann` : Annoy, Faiss, Index ANN — internes, Lucene, Milvus, Qdrant, Recherche vectorielle approximative, ScaNN, Typesense, hnswlib
 - `annotation` : Active learning, Annotation de données, CVAT, Label Studio
-- `anomaly-detection` : Amazon Lookout for Equipment, Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, Anomalies multivariées par apprentissage profond, Comparatif - Détection d'anomalies, Contrôle statistique de procédé (SPC), Détection d'anomalies, Détection d'anomalies en ligne, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Détection de ruptures, Détection hors distribution (OOD), Foundation models et anomalies de séries, Isolation Forest, Local Outlier Factor, Maintenance prédictive avec peu de pannes, Non supervisé, One-Class SVM, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Pipeline de maintenance prédictive on-prem, PyOD, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, STUMPY, Score et seuil d'alerte, Siemens Insights Hub, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection, Types d'anomalies et régimes de supervision, Évaluer une détection d'anomalies
+- `anomaly-detection` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, Anomalies multivariées par apprentissage profond, Comparatif - Détection d'anomalies, Contrôle statistique de procédé (SPC), Détection d'anomalies, Détection d'anomalies en ligne, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Détection de ruptures, Détection hors distribution (OOD), Foundation models et anomalies de séries, Isolation Forest, Local Outlier Factor, Maintenance prédictive avec peu de pannes, Non supervisé, One-Class SVM, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Pipeline de maintenance prédictive on-prem, PyOD, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, STUMPY, Score et seuil d'alerte, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection, Types d'anomalies et régimes de supervision, Évaluer une détection d'anomalies
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
 - `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
@@ -5401,7 +5361,7 @@
 - `calibration` : Calibration, Hallucinations des LLM, Évaluation de modèles
 - `causal-inference` : CausalImpact, Comparatif - Outils stats, Diff-in-Diff, Découverte causale, Inférence causale, Modélisation d'uplift, Méthodes causales, Statistiques & inférence
 - `cdc` : Airbyte, Change Data Capture (CDC), Debezium, Ingestion de données
-- `change-point` : Azure AI Anomaly Detector, Détection de ruptures, Kats, Merlion, ruptures  — pas de page concept dédiée
+- `change-point` : Détection de ruptures, Kats, Merlion, ruptures  — pas de page concept dédiée
 - `chunking` : Chunking strategies, RAG & retrieval, RAGFlow
 - `ci-cd` : Argo CD, CI-CD pour le ML, Comparatif - CI-CD auto-hébergé, DevOps, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Maintenance prédictive avec peu de pannes, Tabulaire, imbalanced-learn, Évaluer une détection d'anomalies
@@ -5416,7 +5376,7 @@
 - `computer-vision` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Comparatif - Détection d'anomalies visuelles, Detectron2, Dinomaly, Détection d'anomalies visuelle, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Pattern - Inspection visuelle en ligne de production, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, anomalib, docTR, patchcore-inspection, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River  — pas de page concept dédiée
-- `condition-monitoring` : Amazon Lookout for Equipment, Amazon Monitron, Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance  — pas de page concept dédiée
+- `condition-monitoring` : Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Prédiction conforme, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : Optimisation sous contrainte
@@ -5427,7 +5387,7 @@
 - `convexity` : Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
 - `cryptography` : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc  — pas de page concept dédiée
-- `dashboard` : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Seeq, Shiny for Python, Uptime Kuma, WrenAI, Zabbix  — pas de page concept dédiée
+- `dashboard` : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix  — pas de page concept dédiée
 - `data-app` : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit  — pas de page concept dédiée
 - `data-augmentation` : Augmentation d'images, Kornia, Vision, albumentations, torchvision
 - `data-catalog` : Catalogue de données et lignage, Comparatif - Catalogues et lignage de données, DataHub, OpenMetadata
@@ -5511,7 +5471,7 @@
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : API REST, GraphQL et gRPC, Architecture pilotée par les événements, ELT vs ETL & idempotence, Fiabilité des données, Ingestion incrémentale et curseurs, Orchestration, Stream processing
 - `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
-- `iiot` : AVEVA PI System, Amazon Monitron, Cognite Data Fusion, Comparatif - Offres de maintenance prédictive, Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Seeq, Siemens Insights Hub, Telegraf, asyncua, open62541  — pas de page concept dédiée
+- `iiot` : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
@@ -5528,7 +5488,7 @@
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité, garak
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
-- `knowledge-graph` : Bases graphe — modèles et langages de requête, Cognee, Cognite Data Fusion, Construction de graphes de connaissances, GraphRAG, Graphify, Graphiti, Mémoire des agents, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
+- `knowledge-graph` : Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, GraphRAG, Graphify, Graphiti, Mémoire des agents, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval  — pas de page concept dédiée
 - `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, OLTP, OLAP et lakehouse, Partitionnement & layout de données, Plateformes data & IA, Trino
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
@@ -5583,7 +5543,7 @@
 - `multi-output` : Régression et classification multi-sorties
 - `multimodal` : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models  — pas de page concept dédiée
 - `multiple-testing` : Correction des tests multiples
-- `multivariate` : Azure AI Anomaly Detector, Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector  — pas de page concept dédiée
+- `multivariate` : Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector  — pas de page concept dédiée
 - `mutual-information` : Mutual information, Théorie de l'information
 - `ner` : Comparatif - NLP, Construction de graphes de connaissances, Données personnelles et anonymisation pour LLM, GLiNER, Label Studio, NER et étiquetage de séquence, NLP, Presidio, pytorch-crf, seqeval, spaCy
 - `networking` : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc  — pas de page concept dédiée
@@ -5626,7 +5586,7 @@
 - `pose-estimation` : Estimation de pose, Ultralytics YOLO
 - `positional-encoding` : Contexte long, Positional encoding
 - `postgres` : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
-- `predictive-maintenance` : AVEVA PI System, Adaptation de domaine, Amazon Lookout for Equipment, Amazon Monitron, Cognite Data Fusion, Comparatif - Offres de maintenance prédictive, Diagnostic de défauts de roulements, Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Maintenance prédictive, Maintenance prédictive avec peu de pannes, Pattern - Détection d'anomalies en deux étages, Pattern - Pipeline de maintenance prédictive on-prem, Politique de maintenance et coût, RUL par analyse de survie, RUL par apprentissage profond, Seeq, Siemens Insights Hub, Surveillance conditionnelle et modes de défaillance
+- `predictive-maintenance` : Adaptation de domaine, Diagnostic de défauts de roulements, Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Maintenance prédictive, Maintenance prédictive avec peu de pannes, Pattern - Détection d'anomalies en deux étages, Pattern - Pipeline de maintenance prédictive on-prem, Politique de maintenance et coût, RUL par analyse de survie, RUL par apprentissage profond, Surveillance conditionnelle et modes de défaillance
 - `prior` : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube  — pas de page concept dédiée
 - `probabilistic-programming` : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan  — pas de page concept dédiée
@@ -5678,7 +5638,7 @@
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : AVEVA PI System, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
+- `self-hosted` : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -5698,7 +5658,7 @@
 - `statistical-process-control` : Contrôle statistique de procédé (SPC), Pattern - Détection d'anomalies en deux étages
 - `statistical-viz` : Visualisation, seaborn, sweetviz  — pas de page concept dédiée
 - `stochastic-process` : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity  — pas de page concept dédiée
-- `streaming` : Azure AI Anomaly Detector, Change Data Capture (CDC), Debezium, Détection d'anomalies en ligne, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
+- `streaming` : Change Data Capture (CDC), Debezium, Détection d'anomalies en ligne, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets  — pas de page concept dédiée
 - `string-matching` : Fuzzy matching & similarité de chaînes, NLP, Pattern - Pipeline scraping → matching → optimisation
 - `structured-output` : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use  — pas de page concept dédiée
 - `supervised` : Active learning, AdaBoost, Analyse discriminante, Annotation de données, Apprentissage semi-supervisé, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, Learning to rank, LightGBM, Machine Learning, Méthodes à noyau, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN, scikit-survival, tsfresh, Équité et biais algorithmique  — pas de page concept dédiée
@@ -5714,7 +5674,7 @@
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
 - `thresholding` : Merlion, Pattern - Détection d'anomalies en deux étages, Politique de maintenance et coût, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, Score et seuil d'alerte, time-series-anomaly-detector  — pas de page concept dédiée
-- `timeseries` : ARIMA SARIMA, AVEVA PI System, Amazon Lookout for Equipment, Amazon Monitron, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Cognite Data Fusion, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, LSTM et réseaux récurrents, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Seeq, Siemens Insights Hub, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, sktime, statsforecast, time-series-anomaly-detector, tsfresh  — pas de page concept dédiée
+- `timeseries` : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, LSTM et réseaux récurrents, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, sktime, statsforecast, time-series-anomaly-detector, tsfresh  — pas de page concept dédiée
 - `tls` : Caddy, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik  — pas de page concept dédiée
 - `token-optimization` : Headroom  — pas de page concept dédiée
 - `tokenization` : Constrained decoding, Modèles de langage, NLP, NLTK, Tokenization, sentencepiece, spaCy
@@ -5768,7 +5728,7 @@
 - `bi` (porté par : Apache Superset, Comparatif - BI auto-hébergée, Metabase)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
-- `change-point` (porté par : Azure AI Anomaly Detector, Détection de ruptures, Kats, Merlion, ruptures)
+- `change-point` (porté par : Détection de ruptures, Kats, Merlion, ruptures)
 - `ci-cd` (porté par : Argo CD, CI-CD pour le ML, Comparatif - CI-CD auto-hébergé, DevOps, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI)
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Graphify, Maka, Spec Kit, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
@@ -5776,13 +5736,13 @@
 - `columnar` (porté par : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River)
-- `condition-monitoring` (porté par : Amazon Lookout for Equipment, Amazon Monitron, Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance)
+- `condition-monitoring` (porté par : Analyse vibratoire, Diagnostic de défauts de roulements, Indicateurs de santé, Surveillance conditionnelle et modes de défaillance)
 - `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
 - `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers)
 - `container-registry` (porté par : Comparatif - Registres d'images, Harbor, Zot)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc)
-- `dashboard` (porté par : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Seeq, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
+- `dashboard` (porté par : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix)
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Catalogue de données et lignage, Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `data-ingestion` (porté par : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, Telegraf, asyncua, dlt)
@@ -5830,7 +5790,7 @@
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
-- `iiot` (porté par : AVEVA PI System, Amazon Monitron, Cognite Data Fusion, Comparatif - Offres de maintenance prédictive, Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Seeq, Siemens Insights Hub, Telegraf, asyncua, open62541)
+- `iiot` (porté par : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
 - `in-memory` (porté par : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `industrial-inspection` (porté par : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Comparatif - Détection d'anomalies visuelles, Dinomaly, Détection d'anomalies visuelle, Pattern - Inspection visuelle en ligne de production, anomalib, patchcore-inspection)
 - `inference` (porté par : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM)
@@ -5839,7 +5799,7 @@
 - `interoperability` (porté par : Apache Arrow)
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
-- `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Cognee, Cognite Data Fusion, Construction de graphes de connaissances, GraphRAG, Graphify, Graphiti, Mémoire des agents, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
+- `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, GraphRAG, Graphify, Graphiti, Mémoire des agents, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
 - `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s)
 - `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
@@ -5874,7 +5834,7 @@
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, Claude Agent SDK, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits, Optimisation bayésienne)
 - `multimodal` (porté par : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models)
-- `multivariate` (porté par : Azure AI Anomaly Detector, Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector)
+- `multivariate` (porté par : Indicateurs de santé, Kats, MANOVA et tests multivariés, time-series-anomaly-detector)
 - `networking` (porté par : Protocoles de l'atelier - MQTT, OPC UA et Modbus, Réseau, Sniffnet, Web-Check, croc)
 - `neural-rendering` (porté par : Rendu neuronal 3D & estimation de profondeur)
 - `normalizing-flow` (porté par : Anomalie visuelle par reconstruction, distillation et flux)
@@ -5924,7 +5884,7 @@
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
-- `self-hosted` (porté par : AVEVA PI System, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
+- `self-hosted` (porté par : Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Keycloak, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Web-Check, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : API REST, GraphQL et gRPC, Apache Arrow, Avro)
@@ -5935,7 +5895,7 @@
 - `statistical-inference` (porté par : Comparatif - Outils stats, Découverte causale, Inférence bayésienne, Inférence causale, Intervalles de confiance, Maximum de vraisemblance, Modèles graphiques probabilistes, Modèles à effets mixtes, Monte Carlo et inférence variationnelle, Méthodes causales, Prédiction conforme, Statistiques & inférence, Tests & estimation, Tests d'hypothèse, Théorie des valeurs extrêmes, statsmodels)
 - `statistical-viz` (porté par : Visualisation, seaborn, sweetviz)
 - `stochastic-process` (porté par : Autocorrelation, Chaînes de Markov, Modèles de Markov cachés et filtre de Kalman, Mouvement brownien, Probabilités, Processus de Poisson, Stationarity)
-- `streaming` (porté par : Azure AI Anomaly Detector, Change Data Capture (CDC), Debezium, Détection d'anomalies en ligne, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
+- `streaming` (porté par : Change Data Capture (CDC), Debezium, Détection d'anomalies en ligne, Flink, Kafka, Messagerie, Redpanda, River, Server-Sent Events & streaming LLM, Spark, Stream processing, datasets)
 - `structured-output` (porté par : Comparatif - Frameworks LLM, Constrained decoding, Guidance, Instructor, LLM & IA générative, Outlines, PydanticAI, Sortie typée, Structured outputs, needle, tool-use)
 - `supervised` (porté par : Active learning, AdaBoost, Analyse discriminante, Annotation de données, Apprentissage semi-supervisé, Apprentissage supervisé, Arbres de décision, Bagging, Boosting, CatBoost, Classification, Classification de texte, Classification metrics, Compromis biais-variance, Data leakage, Ensembling, Explicabilité des modèles, Extra Trees, GAM, GLM, Gaussian Process, Gradient Boosting (GBDT), Imbalanced classification, Imitation learning, LIME, Learning to rank, LightGBM, Machine Learning, Méthodes à noyau, NER et étiquetage de séquence, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Random Forest, Regression metrics, Régression, Régression et classification multi-sorties, Régression linéaire, Régression logistique, Régression quantile, Régularisation, SHAP, SVM, Scikit-Learn, Socle, Tabulaire, Types de données et choix de modèle, Validation croisée, XGBoost, imbalanced-learn, k-NN, scikit-survival, tsfresh, Équité et biais algorithmique)
 - `supply-chain` (porté par : Analyse de vulnérabilités, Dependency-Track, Gitleaks, Grype, Harbor, Pipelines CI-CD on-prem — runners, secrets et artefacts, Semgrep, Supply chain logicielle et SBOM, Sécurité, Trivy, Zot)
@@ -5947,7 +5907,7 @@
 - `testing` (porté par : DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
 - `thresholding` (porté par : Merlion, Pattern - Détection d'anomalies en deux étages, Politique de maintenance et coût, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, Score et seuil d'alerte, time-series-anomaly-detector)
-- `timeseries` (porté par : ARIMA SARIMA, AVEVA PI System, Amazon Lookout for Equipment, Amazon Monitron, Anomalies multivariées par apprentissage profond, Autocorrelation, Azure AI Anomaly Detector, Bases de données, CausalImpact, Chronos, Cognite Data Fusion, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, LSTM et réseaux récurrents, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Seeq, Siemens Insights Hub, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, sktime, statsforecast, time-series-anomaly-detector, tsfresh)
+- `timeseries` (porté par : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Bases de données, CausalImpact, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, LSTM et réseaux récurrents, Maintenance prédictive et RUL, Merlion, Orion, Prophet, RUL par apprentissage profond, STUMPY, Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, sktime, statsforecast, time-series-anomaly-detector, tsfresh)
 - `tls` (porté par : Caddy, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
 - `token-optimization` (porté par : Headroom)
 - `tracing` (porté par : Comparatif - Observabilité LLM, Helicone, Journalisation structurée et traçabilité, LLM observability, LangSmith, Langfuse, Métriques, logs et traces, Observabilité des LLM, OpenTelemetry, Phoenix Arize, Tempo, TruLens)

@@ -1,27 +1,8 @@
 # Machine Learning — carte (3 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 104 pages, chacune avec son chemin et une ligne.
-> Couvre : Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving, Socle, Suivi d'expériences, Séries temporelles.
-
-## Non supervisé
-- [[hdbscan]] · brique · `Machine Learning/Non supervisé/hdbscan.md` — Implémentation de référence de HDBSCAN — clustering par densité hiérarchique qui découvre le nombre de clusters, gère les densités hétérogènes et isole le…
-- [[PaCMAP]] · brique · `Machine Learning/Non supervisé/PaCMAP.md` — Réduction de dimension préservant structure locale ET globale — projette en 2-3D via des paires mid-near, plus fidèle à la topologie d'ensemble que t-SNE et…
-- [[umap-learn]] · brique · `Machine Learning/Non supervisé/umap-learn.md` — Réduction de dimension non linéaire par apprentissage de variété (UMAP) — projette en 2-3D pour la visualisation ou en k dimensions pour le pré-traitement, en…
-- [[Apprentissage non supervisé]] · notion · `Machine Learning/Non supervisé/Apprentissage non supervisé.md` — Famille de méthodes qui cherchent une structure dans les données sans variable cible : aucun $y$, aucune bonne réponse connue.
-- [[Classification hiérarchique (CAH)]] · notion · `Machine Learning/Non supervisé/Classification hiérarchique (CAH).md` — Méthode de Clustering qui construit une hiérarchie de clusters emboîtés, visualisée par un dendrogramme, sans fixer le nombre de groupes à l'avance.
-- [[Clustering]] · notion · `Machine Learning/Non supervisé/Clustering.md` — Famille de méthodes non supervisées : regrouper les observations en sous-ensembles (clusters) homogènes, sans variable cible ni étiquettes connues.
-- [[Clustering evaluation]] · notion · `Machine Learning/Non supervisé/Clustering evaluation.md` — Mesurer la qualité d'un partitionnement sans cible : problème mal posé, car il n'existe pas de vérité terrain en non supervisé.
-- [[Clustering hiérarchique par densité]] · notion · `Machine Learning/Non supervisé/Clustering hiérarchique par densité.md` — L'algorithme s'appelle HDBSCAN ; la page porte le nom du concept, la bibliothèque qui l'implémente s'appelle hdbscan.
-- [[DBSCAN]] · notion · `Machine Learning/Non supervisé/DBSCAN.md` — Méthode de Clustering par densité : un cluster est une zone dense de points séparée des autres par des régions clairsemées.
-- [[Gaussian Mixture Models (GMM)]] · notion · `Machine Learning/Non supervisé/Gaussian Mixture Models (GMM).md` — Méthode de Clustering probabiliste : suppose que les données proviennent d'un mélange de $K$ lois gaussiennes, chacune correspondant à un cluster.
-- [[ICA]] · notion · `Machine Learning/Non supervisé/ICA.md` — Décomposition qui sépare un signal mélangé en sources statistiquement indépendantes.
-- [[K-Means]] · notion · `Machine Learning/Non supervisé/K-Means.md` — Méthode de Clustering par partition : répartit les observations en $K$ clusters en minimisant l'inertie intra-classe (somme des carrés des distances aux…
-- [[k-médoïds (PAM)]] · notion · `Machine Learning/Non supervisé/k-médoïds (PAM).md` — Variante de K-Means où le centre de chaque cluster n'est pas une moyenne mais un médoïde : un point réel du jeu de données, celui qui minimise la somme des…
-- [[Manifold learning]] · notion · `Machine Learning/Non supervisé/Manifold learning.md` — Famille de méthodes de réduction de dimension non linéaire qui supposent que les données vivent sur une variété (manifold) courbe de faible dimension plongée…
-- [[NMF]] · notion · `Machine Learning/Non supervisé/NMF.md` — Décomposition d'une matrice positive en produit de deux matrices positives : $V \approx W H$.
-- [[t-SNE and UMAP]] · notion · `Machine Learning/Non supervisé/t-SNE and UMAP.md` — Deux méthodes de réduction de dimension non linéaire, surtout employées pour visualiser en 2-3D des données à haute dimension (embeddings, single-cell, images).
-- [[Comparatif - Réduction de dimension]] · comparatif · `Machine Learning/Non supervisé/Comparatif - Réduction de dimension.md` — des axes qu'on interprète ou une variété qu'on apprend, et ce que la projection doit préserver — le voisinage local ou la forme d'ensemble.
+> 110 pages, chacune avec son chemin et une ligne.
+> Couvre : Plateformes data & IA, Recherche d'hyperparamètres, Serving, Socle, Suivi d'expériences, Séries temporelles, Tabulaire.
 
 ## Plateformes data & IA
 - [[Alteryx]] · brique · `Machine Learning/Plateformes data & IA/Alteryx.md` — Préparation, enrichissement et analyse de données en flux visuels sans code, pour analystes métier : Designer sur poste Windows, Server pour publier et…
@@ -121,3 +102,28 @@
 - [[Time series feature engineering]] · notion · `Machine Learning/Séries temporelles/Time series feature engineering.md` — Transformer une série (ou un parc de séries) en table de features exploitable par un modèle ML/global : gradient boosting, réseaux.
 - [[Walk-forward CV]] · notion · `Machine Learning/Séries temporelles/Walk-forward CV.md` — Protocole d'évaluation temporel : avancer l'origine de prévision dans le temps et toujours tester sur du futur.
 - [[Comparatif - Forecasting]] · comparatif · `Machine Learning/Séries temporelles/Comparatif - Forecasting.md` — entraîner un modèle par série, un modèle global, ou n'en entraîner aucun — puis le nombre de séries à couvrir et le budget de calcul, CPU compilé ou GPU.
+
+## Tabulaire
+- [[CatBoost]] · brique · `Machine Learning/Tabulaire/CatBoost.md` — Gradient boosting Yandex avec gestion native des variables catégorielles (encodage ordonné) et arbres symétriques ; robuste avec peu de tuning.
+- [[category_encoders]] · brique · `Machine Learning/Tabulaire/category_encoders.md` — Encodeurs catégoriels compatibles scikit-learn — Target, Weight of Evidence, James-Stein, CatBoost, hashing — pour les variables à forte cardinalité.
+- [[Featuretools]] · brique · `Machine Learning/Tabulaire/Featuretools.md` — Ingénierie de features automatisée par Deep Feature Synthesis : empile des primitives d'agrégation et de transformation sur des données…
+- [[imbalanced-learn]] · brique · `Machine Learning/Tabulaire/imbalanced-learn.md` — Rééchantillonnage pour classes déséquilibrées, API compatible scikit-learn — SMOTE et variantes, undersampling, méthodes combinées et ensembles rééquilibrés…
+- [[LightGBM]] · brique · `Machine Learning/Tabulaire/LightGBM.md` — Gradient boosting Microsoft optimisé vitesse et mémoire : croissance des arbres par feuille (leaf-wise) et binning histogramme, taillé pour les gros volumes.
+- [[scikit-survival]] · brique · `Machine Learning/Tabulaire/scikit-survival.md` — Analyse de survie « machine learning » au-dessus de scikit-learn — Cox pénalisé, forêts de survie aléatoires, gradient boosting et SVM de survie, avec les…
+- [[XGBoost]] · brique · `Machine Learning/Tabulaire/XGBoost.md` — Implémentation de référence du gradient boosting : optimisée, régularisée et distribuée (Spark, Dask, Ray) ; cheval de bataille des compétitions sur données…
+- [[AdaBoost]] · notion · `Machine Learning/Tabulaire/AdaBoost.md` — Le premier algorithme de boosting qui ait vraiment fonctionné (1995), et la réponse positive à une question théorique ouverte : peut-on transformer un…
+- [[Arbres de décision]] · notion · `Machine Learning/Tabulaire/Arbres de décision.md` — Modèle supervisé non paramétrique : segmente l'espace des variables par une suite de tests binaires, jusqu'à des feuilles qui portent une prédiction.
+- [[Bagging]] · notion · `Machine Learning/Tabulaire/Bagging.md` — Bootstrap aggregating : technique d'ensemble parallèle.
+- [[Boosting]] · notion · `Machine Learning/Tabulaire/Boosting.md` — Technique d'ensemble séquentielle : empiler des apprenants faibles, chacun corrigeant les erreurs du modèle courant.
+- [[Encodage des variables catégorielles]] · notion · `Machine Learning/Tabulaire/Encodage des variables catégorielles.md` — Convertir des variables qualitatives (texte, modalités) en numérique, seul format que la plupart des modèles acceptent.
+- [[Ensembling]] · notion · `Machine Learning/Tabulaire/Ensembling.md` — Combiner plusieurs modèles en un seul prédicteur, plus performant et plus robuste qu'aucun pris isolément.
+- [[Extra Trees]] · notion · `Machine Learning/Tabulaire/Extra Trees.md` — Variante du Random Forest qui pousse l'aléatoire un cran plus loin : au lieu de chercher le meilleur seuil de découpage pour chaque variable, elle en tire un…
+- [[Gradient Boosting (GBDT)]] · notion · `Machine Learning/Tabulaire/Gradient Boosting (GBDT).md` — Ensemble supervisé séquentiel (une instance de Boosting) : ajoute des Arbres de décision les uns après les autres, chacun corrigeant les erreurs résiduelles du…
+- [[Imbalanced classification]] · notion · `Machine Learning/Tabulaire/Imbalanced classification.md` — Classification où une classe — souvent celle d'intérêt — est rare : fraude, panne, maladie, churn.
+- [[Imputation des valeurs manquantes]] · notion · `Machine Learning/Tabulaire/Imputation des valeurs manquantes.md` — Remplacer les valeurs absentes par des valeurs plausibles, pour qu'un modèle qui n'accepte pas les NaN puisse s'entraîner.
+- [[Ingénierie des caractéristiques]] · notion · `Machine Learning/Tabulaire/Ingénierie des caractéristiques.md` — Construire et transformer les variables d'entrée (features) d'un modèle à partir des données brutes : imputer, encoder, mettre à l'échelle, combiner…
+- [[Mise à l'échelle]] · notion · `Machine Learning/Tabulaire/Mise à l'échelle.md` — Ramener les variables numériques à des amplitudes comparables, pour qu'aucune ne domine par sa seule unité.
+- [[Mécanismes de données manquantes]] · notion · `Machine Learning/Tabulaire/Mécanismes de données manquantes.md` — Classification de Rubin du pourquoi une valeur manque : MCAR, MAR, MNAR.
+- [[Random Forest]] · notion · `Machine Learning/Tabulaire/Random Forest.md` — Ensemble supervisé : agrège de nombreux Arbres de décision entraînés indépendamment, puis moyenne (régression) ou vote (classification).
+- [[Sélection de variables]] · notion · `Machine Learning/Tabulaire/Sélection de variables.md` — Garder un sous-ensemble des variables existantes, sans les transformer, pour réduire le surapprentissage et le coût et améliorer l'interprétabilité.
+- [[Comparatif - Boosting]] · comparatif · `Machine Learning/Tabulaire/Comparatif - Boosting.md` — la nature des colonnes — catégorielles ou numériques —, le temps d'entraînement, et la taille du jeu.

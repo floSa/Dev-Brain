@@ -1,14 +1,13 @@
 # Bases de données — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 78 pages, chacune avec son chemin et une ligne.
+> 77 pages, chacune avec son chemin et une ligne.
 > Couvre : Administration, Bases de graphes, Recherche, Relationnel, Vectoriel.
 
 ## Au niveau du dossier
 - [[ADBC]] · brique · `Bases de données/ADBC.md` — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement…
 - [[Alembic]] · brique · `Bases de données/Alembic.md` — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
 - [[Apache Cassandra]] · brique · `Bases de données/Apache Cassandra.md` — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
-- [[AVEVA PI System]] · brique · `Bases de données/AVEVA PI System.md` — Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI…
 - [[ClickHouse]] · brique · `Bases de données/ClickHouse.md` — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 - [[DuckDB]] · brique · `Bases de données/DuckDB.md` — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 - [[Flyway]] · brique · `Bases de données/Flyway.md` — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.

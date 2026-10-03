@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1073,
+  "count": 1065,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,7 +197,6 @@
       "Label Studio"
     ],
     "anomaly-detection": [
-      "Amazon Lookout for Equipment",
       "Anomalie visuelle par banque de mémoire",
       "Anomalie visuelle par reconstruction, distillation et flux",
       "Anomalie visuelle zero-shot et few-shot",
@@ -225,7 +224,6 @@
       "Rule - Évaluer une anomalie par événement, pas par point",
       "STUMPY",
       "Score et seuil d'alerte",
-      "Siemens Insights Hub",
       "Séries temporelles",
       "Théorie des valeurs extrêmes",
       "Time series anomaly detection",
@@ -389,7 +387,6 @@
       "Ingestion de données"
     ],
     "change-point": [
-      "Azure AI Anomaly Detector",
       "Détection de ruptures",
       "Kats",
       "Merlion",
@@ -609,8 +606,6 @@
       "River"
     ],
     "condition-monitoring": [
-      "Amazon Lookout for Equipment",
-      "Amazon Monitron",
       "Analyse vibratoire",
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
@@ -715,7 +710,6 @@
       "Metabase",
       "Netdata",
       "Observabilité",
-      "Seeq",
       "Shiny for Python",
       "Uptime Kuma",
       "WrenAI",
@@ -1651,10 +1645,6 @@
       "Sécurité"
     ],
     "iiot": [
-      "AVEVA PI System",
-      "Amazon Monitron",
-      "Cognite Data Fusion",
-      "Comparatif - Offres de maintenance prédictive",
       "Données industrielles",
       "EMQX",
       "Inférence en bordure - modèles sur du matériel d'atelier",
@@ -1662,8 +1652,6 @@
       "Node-RED",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
-      "Seeq",
-      "Siemens Insights Hub",
       "Telegraf",
       "asyncua",
       "open62541"
@@ -1824,7 +1812,6 @@
     "knowledge-graph": [
       "Bases graphe — modèles et langages de requête",
       "Cognee",
-      "Cognite Data Fusion",
       "Construction de graphes de connaissances",
       "GraphRAG",
       "Graphify",
@@ -2583,7 +2570,6 @@
       "Correction des tests multiples"
     ],
     "multivariate": [
-      "Azure AI Anomaly Detector",
       "Indicateurs de santé",
       "Kats",
       "MANOVA et tests multivariés",
@@ -2966,12 +2952,7 @@
       "psycopg2"
     ],
     "predictive-maintenance": [
-      "AVEVA PI System",
       "Adaptation de domaine",
-      "Amazon Lookout for Equipment",
-      "Amazon Monitron",
-      "Cognite Data Fusion",
-      "Comparatif - Offres de maintenance prédictive",
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
       "Jeux de données PHM",
@@ -2983,8 +2964,6 @@
       "Politique de maintenance et coût",
       "RUL par analyse de survie",
       "RUL par apprentissage profond",
-      "Seeq",
-      "Siemens Insights Hub",
       "Surveillance conditionnelle et modes de défaillance"
     ],
     "prior": [
@@ -3526,7 +3505,6 @@
       "segment-anything"
     ],
     "self-hosted": [
-      "AVEVA PI System",
       "Airbyte",
       "Alertmanager",
       "Annotation de données",
@@ -3757,7 +3735,6 @@
       "Stationarity"
     ],
     "streaming": [
-      "Azure AI Anomaly Detector",
       "Change Data Capture (CDC)",
       "Debezium",
       "Détection d'anomalies en ligne",
@@ -3939,16 +3916,11 @@
     ],
     "timeseries": [
       "ARIMA SARIMA",
-      "AVEVA PI System",
-      "Amazon Lookout for Equipment",
-      "Amazon Monitron",
       "Anomalies multivariées par apprentissage profond",
       "Autocorrelation",
-      "Azure AI Anomaly Detector",
       "Bases de données",
       "CausalImpact",
       "Chronos",
-      "Cognite Data Fusion",
       "Comparatif - Bases temporelles",
       "Comparatif - Détection d'anomalies en séries temporelles",
       "Comparatif - Forecasting",
@@ -3972,8 +3944,6 @@
       "Prophet",
       "RUL par apprentissage profond",
       "STUMPY",
-      "Seeq",
-      "Siemens Insights Hub",
       "Stationarity",
       "Séries temporelles",
       "TSB-AD",
@@ -4542,36 +4512,6 @@
       "complements": [
         "[[Polars]]",
         "[[Apache Arrow]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Bases de données/AVEVA PI System.md",
-      "nom": "AVEVA PI System",
-      "alias": [
-        "PI System",
-        "PI Server",
-        "PI Data Archive",
-        "AVEVA PI Server"
-      ],
-      "role": "brique",
-      "categorie": "database/series-temporelles",
-      "famille": "plateforme",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.",
-      "tags": [
-        "timeseries",
-        "iiot",
-        "predictive-maintenance",
-        "self-hosted"
-      ],
-      "alternatives": [
-        "[[InfluxDB]]",
-        "[[TimescaleDB]]"
-      ],
-      "complements": [
-        "[[Seeq]]"
       ],
       "maturite": "production"
     },
@@ -5347,8 +5287,7 @@
         "timeseries"
       ],
       "alternatives": [
-        "[[TimescaleDB]]",
-        "[[AVEVA PI System]]"
+        "[[TimescaleDB]]"
       ],
       "complements": [
         "[[EMQX]]",
@@ -6262,8 +6201,7 @@
         "postgres"
       ],
       "alternatives": [
-        "[[InfluxDB]]",
-        "[[AVEVA PI System]]"
+        "[[InfluxDB]]"
       ],
       "complements": [
         "[[Postgres]]",
@@ -7388,32 +7326,6 @@
       "maturite": "production"
     },
     {
-      "path": "Data & pipelines/Données industrielles/Cognite Data Fusion.md",
-      "nom": "Cognite Data Fusion",
-      "alias": [
-        "CDF",
-        "Cognite",
-        "Cognite Data Fusion CDF"
-      ],
-      "role": "brique",
-      "categorie": "data/industrie",
-      "famille": "saas",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Plateforme de données industrielles de Cognite — modèle de données en graphe, extracteurs (OPC UA, PostgreSQL), contextualisation et API REST avec SDK Python ouvert ; service cloud, sans offre sur site décrite dans la documentation consultée.",
-      "tags": [
-        "iiot",
-        "timeseries",
-        "predictive-maintenance",
-        "knowledge-graph"
-      ],
-      "alternatives": [
-        "[[Siemens Insights Hub]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Data & pipelines/Données industrielles/Comparatif - Brokers MQTT.md",
       "nom": "Comparatif - Brokers MQTT",
       "alias": null,
@@ -7592,32 +7504,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "Data & pipelines/Données industrielles/Siemens Insights Hub.md",
-      "nom": "Siemens Insights Hub",
-      "alias": [
-        "Insights Hub",
-        "MindSphere",
-        "Siemens MindSphere"
-      ],
-      "role": "brique",
-      "categorie": "data/industrie",
-      "famille": "plateforme",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Plateforme IoT industrielle de Siemens (ex-MindSphere) — collecte des données de machines, modèle d'actifs, tableaux de bord, applications low-code (Mendix) et module Predict de prévision et de détection d'anomalies ; en cloud public, en cloud privé virtuel ou en cloud privé local géré par Siemens.",
-      "tags": [
-        "iiot",
-        "predictive-maintenance",
-        "timeseries",
-        "anomaly-detection"
-      ],
-      "alternatives": [
-        "[[Cognite Data Fusion]]"
-      ],
-      "complements": [],
-      "maturite": "production"
     },
     {
       "path": "Data & pipelines/Données industrielles/Telegraf.md",
@@ -10242,32 +10128,6 @@
         "[[curl_cffi]]",
         "[[Playwright]]",
         "[[Scrapy]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Data & pipelines/Seeq.md",
-      "nom": "Seeq",
-      "alias": [
-        "Seeq Corporation",
-        "Seeq Workbench",
-        "Seeq Server"
-      ],
-      "role": "brique",
-      "categorie": "data/bi",
-      "famille": "application",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Application d'analyse en libre-service de séries temporelles de procédé — se branche sur des historiens dont PI System, sans copier les données ; installable sur site ou en cloud, propriétaire.",
-      "tags": [
-        "timeseries",
-        "predictive-maintenance",
-        "iiot",
-        "dashboard"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[AVEVA PI System]]"
       ],
       "maturite": "production"
     },
@@ -19701,33 +19561,6 @@
       "maturite": "experimental"
     },
     {
-      "path": "Machine Learning/Détection d'anomalies/Azure AI Anomaly Detector.md",
-      "nom": "Azure AI Anomaly Detector",
-      "alias": [
-        "Azure Anomaly Detector",
-        "Anomaly Detector Azure",
-        "Azure Cognitive Services Anomaly Detector",
-        "AI Services Anomaly Detector"
-      ],
-      "role": "brique",
-      "categorie": "ml/anomalie",
-      "famille": "saas",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.",
-      "tags": [
-        "timeseries",
-        "multivariate",
-        "change-point",
-        "streaming"
-      ],
-      "alternatives": [
-        "[[time-series-anomaly-detector]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
       "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies en séries temporelles.md",
       "nom": "Comparatif - Détection d'anomalies en séries temporelles",
       "alias": null,
@@ -20558,9 +20391,7 @@
         "deep-learning",
         "thresholding"
       ],
-      "alternatives": [
-        "[[Azure AI Anomaly Detector]]"
-      ],
+      "alternatives": [],
       "complements": [],
       "maturite": "beta"
     },
@@ -21473,70 +21304,6 @@
         "explainability",
         "ensemble",
         "clustering"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "Machine Learning/Maintenance prédictive/Amazon Lookout for Equipment.md",
-      "nom": "Amazon Lookout for Equipment",
-      "alias": [
-        "AWS Lookout for Equipment",
-        "Lookout for Equipment"
-      ],
-      "role": "brique",
-      "categorie": "ml/maintenance",
-      "famille": "saas",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Service managé AWS de détection d'anomalies sur capteurs d'équipements industriels — un modèle entraîné sur l'historique de jusqu'à 300 capteurs, déposé dans S3, puis appliqué en temps réel — fermé aux nouveaux clients depuis le 2025-10-07 et arrêté le 2026-10-07.",
-      "tags": [
-        "predictive-maintenance",
-        "anomaly-detection",
-        "timeseries",
-        "condition-monitoring"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Machine Learning/Maintenance prédictive/Amazon Monitron.md",
-      "nom": "Amazon Monitron",
-      "alias": [
-        "AWS Monitron",
-        "Monitron"
-      ],
-      "role": "brique",
-      "categorie": "ml/maintenance",
-      "famille": "saas",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Système AWS de surveillance conditionnelle livré de bout en bout — capteurs de vibration et de température, passerelle, analyse dans le cloud AWS (seuils ISO 20816 et modèles d'apprentissage) et application mobile — fermé aux nouveaux clients depuis le 2024-10-31, sans nouvelle fonctionnalité.",
-      "tags": [
-        "predictive-maintenance",
-        "condition-monitoring",
-        "iiot",
-        "timeseries"
-      ],
-      "alternatives": [],
-      "complements": [],
-      "maturite": "deprecated"
-    },
-    {
-      "path": "Machine Learning/Maintenance prédictive/Comparatif - Offres de maintenance prédictive.md",
-      "nom": "Comparatif - Offres de maintenance prédictive",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "ml/maintenance",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "predictive-maintenance",
-        "iiot"
       ],
       "alternatives": null,
       "complements": null,

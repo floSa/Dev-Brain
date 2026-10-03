@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1073 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1065 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -28,7 +28,6 @@
 ### data/bi
 - **Apache Superset** — BI auto-hébergée Apache-2.0 tournée vers l'exploration : SQL Lab, constructeur de graphiques, tableaux de bord, droits par ligne, alertes et embedding sans édition payante ; exploitation plus lourde (base de métadonnées, Redis, Celery).
 - **Metabase** — BI auto-hébergée orientée utilisateurs métier : questions sans code et SQL natif, tableaux de bord, alertes, en un seul conteneur Java ; AGPL-3.0 avec SSO avancé, droits par ligne et embedding complet réservés aux éditions payantes.
-- **Seeq** — Application d'analyse en libre-service de séries temporelles de procédé — se branche sur des historiens dont PI System, sans copier les données ; installable sur site ou en cloud, propriétaire.
 
 ### data/catalogue
 - **DataHub** — Catalogue de métadonnées open source né chez LinkedIn : lignage table et colonne, glossaire, domaines, propriétaires, contrats de données et politiques d'accès, alimenté par recettes d'ingestion ou par événements ; Kafka, une base SQL et un moteur de recherche à héberger (Apache-2.0, offre commerciale DataHub Cloud).
@@ -56,12 +55,10 @@
 
 ### data/industrie
 - **asyncua** — Bibliothèque Python asynchrone, client et serveur OPC UA : lecture, écriture, abonnements, méthodes, historique, chiffrement X.509 et import de NodeSet XML ; LGPL-3.0, noyau de mainteneurs réduit, alarmes serveur non implémentées et pub/sub minimal.
-- **Cognite Data Fusion** — Plateforme de données industrielles de Cognite — modèle de données en graphe, extracteurs (OPC UA, PostgreSQL), contextualisation et API REST avec SDK Python ouvert ; service cloud, sans offre sur site décrite dans la documentation consultée.
 - **EMQX** — Broker MQTT 3.x et 5.0 en Erlang : cluster natif, règles et intégrations de données (Kafka, bases), authentification LDAP, JWT ou X.509, Prometheus natif ; BSL 1.1 depuis la 5.9 (source-available : un seul nœud gratuit en production, le cluster exige une licence commerciale).
 - **Mosquitto** — Broker MQTT 3.1, 3.1.1 et 5.0 léger, écrit en C, sans clustering natif : bridges, TLS avec certificats clients, ACL et plugin Dynamic Security, plugin Sparkplug-aware non validé par le TCK ; EPL-2.0 ou EDL-1.0 sous la fondation Eclipse.
 - **Node-RED** — Éditeur visuel de flux dans le navigateur, sur un runtime Node.js : nœuds MQTT, HTTP, TCP, WebSocket et Function livrés, des milliers de nœuds communautaires (OPC UA, Modbus, S7) sans revue de sécurité ; Apache-2.0 sous l'OpenJS Foundation, éditeur non protégé par défaut.
 - **open62541** — Pile OPC UA client et serveur en C, cœur sans dépendance hors bibliothèque standard, de Linux à FreeRTOS et Zephyr : sécurité X.509 (mbedTLS ou OpenSSL), PubSub UADP et MQTT encore annoncé expérimental, serveur d'exemple certifié (profil Standard 2017, v1.4) ; MPL-2.0, support commercial chez o6 Automation.
-- **Siemens Insights Hub** — Plateforme IoT industrielle de Siemens (ex-MindSphere) — collecte des données de machines, modèle d'actifs, tableaux de bord, applications low-code (Mendix) et module Predict de prévision et de détection d'anomalies ; en cloud public, en cloud privé virtuel ou en cloud privé local géré par Siemens.
 - **Telegraf** — Agent de collecte en Go, binaire statique configuré en TOML : entrées OPC UA (interrogation et abonnements), Modbus, S7 et MQTT, sorties vers InfluxDB, PostgreSQL/TimescaleDB, Prometheus et Kafka ; MIT sous InfluxData, tampon disque encore expérimental.
 
 ### data/ingestion
@@ -211,7 +208,6 @@
 - **SQLite** — Moteur relationnel embarqué, sans serveur — une base = un fichier, zéro administration.
 
 ### database/series-temporelles
-- **AVEVA PI System** — Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.
 - **InfluxDB** — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
 - **TimescaleDB** — Extension Postgres qui transforme une table en hypertable temporelle — du temporel en restant en SQL/Postgres.
 
@@ -457,7 +453,6 @@
 - **aeon** — Boîte à outils Python compatible scikit-learn pour l'apprentissage sur séries temporelles — classification, régression, clustering, prévision, segmentation et anomalies ; son module d'anomalies est modeste (une quinzaine de détecteurs fenêtrés ou à distance, aucun réseau profond) : l'intérêt est de rester dans la même API que le reste.
 - **anomalib** — Bibliothèque Python (Intel, Open Edge Platform) de détection d'anomalies visuelles — une trentaine de modèles d'images (PatchCore, PaDiM, STFPM, EfficientAD, FastFlow, CFlow, DRAEM, Dinomaly, WinCLIP…) sous PyTorch Lightning, CLI et API Python, jeux MVTec AD, VisA ou dossier maison, export ONNX et OpenVINO ; Apache-2.0.
 - **AnomalyCLIP** — Code d'AnomalyCLIP (ICLR 2024) — détection d'anomalies visuelles zero-shot : CLIP ViT-L/14@336px gelé, deux prompts apprenables indépendants de l'objet (normal, anormal), entraînés sur un jeu auxiliaire puis testés sur des catégories jamais vues ; 91,5 % d'AUROC image annoncés sur MVTec AD ; code sous licence MIT.
-- **Azure AI Anomaly Detector** — Service managé Microsoft de détection d'anomalies sur séries temporelles, par API REST univariée (flux, lot, ruptures) et multivariée (réseau à attention sur graphe) — retiré le 1er octobre 2026 ; page conservée pour savoir quoi faire d'un projet qui en dépend.
 - **DeepOD** — Bibliothèque Python de détecteurs d'anomalies profonds, tabulaires et séries temporelles (Deep SVDD, REPEN, RDP, GOAD, USAD, TimesNet, Anomaly Transformer, DCdetector…), sous une API fit / decision_function à la PyOD, avec un banc d'essai de recherche ; PyTorch, dépendances épinglées anciennes et dernière release en 2023.
 - **Dinomaly** — Code de Dinomaly (CVPR 2025) — détection d'anomalies visuelles multi-classe avec un seul modèle pour toutes les catégories : encodeur DINOv2 à registres gelé, goulot bruité, décodeur à attention linéaire ; 99,6 % d'AUROC image annoncés sur MVTec AD, 98,7 % sur VisA, 89,3 % sur Real-IAD ; points de contrôle fournis, Apache-2.0.
 - **Jeux de données d'anomalies** — Annuaire commenté de onze jeux de référence pour la détection d'anomalies — images industrielles (MVTec AD, MVTec AD 2, VisA, Real-IAD), séries temporelles (NAB, SMD, SMAP/MSL, SWaT, TSB-AD) et tabulaire (ADBench, ODDS) — avec, pour chacun, la licence des données et ce qu'elle permet en usage commercial. Rien à installer ; plusieurs jeux sont réservés à la recherche.
@@ -518,8 +513,6 @@
 - **TransformerLens** — Bibliothèque de référence de l'interprétabilité mécaniste des Transformers — expose les activations et les poids en notation canonique (têtes séparées, flux résiduel décomposé) avec un système de hooks, pour rétro-concevoir les circuits appris.
 
 ### ml/maintenance
-- **Amazon Lookout for Equipment** — Service managé AWS de détection d'anomalies sur capteurs d'équipements industriels — un modèle entraîné sur l'historique de jusqu'à 300 capteurs, déposé dans S3, puis appliqué en temps réel — fermé aux nouveaux clients depuis le 2025-10-07 et arrêté le 2026-10-07.
-- **Amazon Monitron** — Système AWS de surveillance conditionnelle livré de bout en bout — capteurs de vibration et de température, passerelle, analyse dans le cloud AWS (seuils ISO 20816 et modèles d'apprentissage) et application mobile — fermé aux nouveaux clients depuis le 2024-10-31, sans nouvelle fonctionnalité.
 - **Jeux de données PHM** — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
 
 ### ml/monitoring
@@ -1420,9 +1413,6 @@
 
 ### ml/interpretabilite
 - **Comparatif - Explicabilité** — —
-
-### ml/maintenance
-- **Comparatif - Offres de maintenance prédictive** — —
 
 ### ml/monitoring
 - **Comparatif - Monitoring de modèles** — —

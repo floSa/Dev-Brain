@@ -99,7 +99,6 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 - [[ADBC]] — Standard d'accès aux bases nativement Arrow (Arrow Database Connectivity) — l'équivalent colonnaire d'ODBC/JDBC : un jeu de drivers qui renvoient directement des données Arrow.
 - [[Alembic]] — Outil de migrations de schéma pour SQLAlchemy : scripts versionnés, autogénération du diff et exécution séquentielle.
 - [[Apache Cassandra]] — Base NoSQL wide-column distribuée, sans maître : écritures massives et haute dispo multi-datacenter.
-- [[AVEVA PI System]] — Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.
 - [[ClickHouse]] — SGBD colonnes distribué pour l'analytique temps réel : agrégations massives à très faible latence.
 - [[DuckDB]] — Base analytique colonnes embarquée — le « SQLite de l'OLAP », SQL local sans serveur.
 - [[Flyway]] — Migrations de base de données SQL-first par Redgate : versionnées, simples, intégrées au build.
