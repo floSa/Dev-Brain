@@ -1117,6 +1117,13 @@ axes:
               sans modele de donnees) et de automation/* (Node-RED ici : D4 passe
               avant D13, parce qu il deplace de la donnee machine et non des
               applications SaaS).
+              Elargie le 2026-10-04 sur arbitrage de floSa (chantier anomalie
+              et maintenance, lot 14) : aussi ce qu on CALCULE avec la donnee
+              d atelier pour piloter l exploitation, indicateurs de rendement
+              (OEE) et de fiabilite (MTBF, MTTR, disponibilite), et la GMAO
+              qui en tient les ordres de travail. Aucune valeur nouvelle : D4
+              les range faute de branche D1-D13 plus juste. Un modele appris
+              sur ces donnees reste en ml/maintenance ou ml/anomalie.
           bi:
             libelle: "BI et tableaux de bord"
             motif: >

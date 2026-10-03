@@ -365,7 +365,11 @@ valeurs disparues et ne sont pas reconduites.
   (outils génériques de chargement : Airbyte, NiFi), de `database/series-temporelles` (la base qui
   stocke le résultat), de `network/*` (ce qui circule entre machines, sans modèle de données) et
   de `automation/*` (Node-RED est ici : D4 passe avant D13, il déplace de la donnée machine et non
-  des applications SaaS). Libellé du dossier : « Données industrielles ».
+  des applications SaaS). **Élargie le 2026-10-04, sur arbitrage de floSa** (chantier anomalie et
+  maintenance, lot 14) : aussi ce qu'on **calcule** avec la donnée d'atelier pour piloter
+  l'exploitation — indicateurs de rendement (OEE) et de fiabilité (MTBF, MTTR, disponibilité) — et
+  la GMAO qui tient les ordres de travail ; aucune valeur nouvelle. Un modèle appris sur ces
+  données reste en `ml/maintenance` ou `ml/anomalie`. Libellé du dossier : « Données industrielles ».
 - `data/bi` — **ouvert au lot « requêtes analytiques et BI » (2026-09-30, conversation 19), sur
   arbitrage de floSa** : aucune valeur ne rangeait un outil de BI auto-hébergé. `data/viz` est
   défini comme « graphiques de données » et ses membres sont des bibliothèques ; `ui/data-app`
