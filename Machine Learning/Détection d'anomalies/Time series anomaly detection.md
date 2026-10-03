@@ -67,7 +67,7 @@ tags: [timeseries, anomaly-detection]
 - [[Détection d'anomalies en ligne]] — scorer chaque point à son arrivée, avec une mémoire bornée.
 - [[Anomalies multivariées par apprentissage profond]] — LSTM-AE, USAD, TranAD, Anomaly Transformer, et ce que TSB-AD en dit.
 - [[Foundation models et anomalies de séries]] — résidus de prévision zero-shot.
-- Offres d'éditeur : [[Siemens Insights Hub]] (module Predict), [[Amazon Lookout for Equipment]] (arrêt annoncé le 2026-10-07), [[Cognite Data Fusion]] (source de séries contextualisées ; sa fiche ne décrit pas de détection d'anomalies native).
+- Offres d'éditeur : Siemens Insights Hub (module Predict), Amazon Lookout for Equipment (arrêt annoncé le 2026-10-07), Cognite Data Fusion (source de séries contextualisées ; sa fiche ne décrit pas de détection d'anomalies native).
 - [[Modèles de Markov cachés et filtre de Kalman]] — un état latent donne un score d'anomalie (innovation du filtre, vraisemblance d'un HMM) ; la page cible présente cet usage comme un raisonnement, non appuyé par une source lue.
 
 ## Pour aller plus loin
