@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1071 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1073 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -976,6 +976,7 @@
 - **Graph Neural Networks** — domaines : ml-eng, data-sci · alias : GNN, graph neural network, réseaux de neurones sur graphes, GCN, GAT, GraphSAGE, message passing, passage de messages
 - **Image generation** — domaines : ml-eng, ai-eng · alias : text-to-image, T2I, génération d'images, Stable Diffusion, DALL-E, Midjourney, FLUX, inpainting
 - **Kolmogorov-Arnold Networks** — domaines : ml-eng · alias : KAN, KANs, réseaux de Kolmogorov-Arnold, kolmogorov-arnold network
+- **LSTM et réseaux récurrents** — domaines : ml-eng, data-sci · alias : LSTM, Long Short-Term Memory, RNN, réseaux récurrents, réseau de neurones récurrent, recurrent neural network, GRU, Gated Recurrent Unit, BiLSTM, LSTM bidirectionnel, BPTT, rétropropagation à travers le temps, xLSTM, cellule LSTM, forget gate
 - **Maximal Update Parametrization** — domaines : ml-eng, ai-eng · alias : µP, muP, mu-P, µTransfer, muTransfer, transfert d'hyperparamètres, hyperparameter transfer, Tensor Programs, u-µP
 - **Mixed precision** — domaines : ml-eng · alias : Mixed precision, précision mixte, AMP, automatic mixed precision, fp16, bf16, float16, bfloat16, loss scaling, autocast, half precision, demi-précision
 - **Mixture of Experts** — domaines : ml-eng, ai-eng · alias : MoE, mélange d'experts, sparse MoE, Switch Transformer, experts conditionnels, top-k routing, fine-grained experts, shared experts, DeepSeekMoE, ratio de sparsité, expert parallelism
@@ -1104,6 +1105,7 @@
 - **Inférence en bordure - modèles sur du matériel d'atelier** — domaines : mlops, infra-ops · alias : Inférence en bordure : modèles sur du matériel d'atelier, inférence en bordure, inférence edge, edge inference, edge AI, inférence sur site, IA en bordure
 
 ### ml/socle
+- **Adaptation de domaine** — domaines : data-sci, ml-eng, mlops · alias : Domain adaptation, adaptation de domaine non supervisée, UDA, unsupervised domain adaptation, domain shift, décalage de domaine, covariate shift, décalage de covariables, importance weighting, pondération par importance, DANN, adaptation au test, test-time adaptation, TTA, généralisation de domaine, domain generalization, transfert entre machines
 - **Analyse discriminante** — domaines : data-sci, ml-eng · alias : LDA, QDA, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Analyse discriminante linéaire, Analyse factorielle discriminante, AFD, LinearDiscriminantAnalysis
 - **Apprentissage fédéré** — domaines : ml-eng, mlops · alias : Federated learning, FL, apprentissage fédéré, entraînement fédéré, FedAvg, Federated Averaging, FedProx, FedSGD, cross-device, cross-silo, inter-appareils, inter-silos, non-IID, hétérogénéité des clients, fuite de gradients, gradient inversion, deep leakage from gradients, agrégation sécurisée, secure aggregation, apprentissage collaboratif sans partage de données
 - **Apprentissage semi-supervisé** — domaines : data-sci, ml-eng · alias : Semi-supervised learning, SSL, apprentissage semi supervisé, peu d'étiquettes, données non étiquetées, auto-apprentissage, self-training, pseudo-étiquettes, pseudo-labels, pseudo-labeling, régularisation par cohérence, consistency regularization, Mean Teacher, FixMatch, propagation de labels, label propagation, label spreading, hypothèse de cluster, hypothèse de la variété, apprentissage transductif

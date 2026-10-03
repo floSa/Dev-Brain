@@ -40,6 +40,7 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Adaptation de domaine]] — domaines : data-sci, ml-eng, mlops
 - [[Analyse discriminante]] — domaines : data-sci, ml-eng
 - [[Apprentissage fédéré]] — domaines : ml-eng, mlops
 - [[Apprentissage semi-supervisé]] — domaines : data-sci, ml-eng

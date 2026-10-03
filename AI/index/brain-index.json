@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1071,
+  "count": 1073,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -753,6 +753,7 @@
       "Soda Core"
     ],
     "data-drift": [
+      "Adaptation de domaine",
       "Comparatif - Monitoring de modèles",
       "Data drift",
       "Deepchecks",
@@ -981,6 +982,7 @@
       "Keras",
       "Kolmogorov-Arnold Networks",
       "Kornia",
+      "LSTM et réseaux récurrents",
       "Maximal Update Parametrization",
       "Metric learning & ré-identification",
       "Mixed precision",
@@ -1186,6 +1188,9 @@
       "pypdf",
       "pypdfium2",
       "selectolax"
+    ],
+    "domain-adaptation": [
+      "Adaptation de domaine"
     ],
     "durable-execution": [
       "Comparatif - Orchestrateurs data",
@@ -2224,6 +2229,9 @@
       "gumloop",
       "n8n"
     ],
+    "lstm": [
+      "LSTM et réseaux récurrents"
+    ],
     "manifold": [
       "Analyse factorielle",
       "Comparatif - Réduction de dimension",
@@ -2959,6 +2967,7 @@
     ],
     "predictive-maintenance": [
       "AVEVA PI System",
+      "Adaptation de domaine",
       "Amazon Lookout for Equipment",
       "Amazon Monitron",
       "Cognite Data Fusion",
@@ -3956,6 +3965,7 @@
       "InfluxDB",
       "Intermittent demand",
       "Kats",
+      "LSTM et réseaux récurrents",
       "Maintenance prédictive et RUL",
       "Merlion",
       "Orion",
@@ -4061,6 +4071,7 @@
       "Sniffnet"
     ],
     "transfer-learning": [
+      "Adaptation de domaine",
       "Anomalie visuelle par banque de mémoire",
       "Fusion de modèles",
       "Maintenance prédictive avec peu de pannes",
@@ -18747,6 +18758,44 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Apprentissage profond/LSTM et réseaux récurrents.md",
+      "nom": "LSTM et réseaux récurrents",
+      "alias": [
+        "LSTM",
+        "Long Short-Term Memory",
+        "RNN",
+        "réseaux récurrents",
+        "réseau de neurones récurrent",
+        "recurrent neural network",
+        "GRU",
+        "Gated Recurrent Unit",
+        "BiLSTM",
+        "LSTM bidirectionnel",
+        "BPTT",
+        "rétropropagation à travers le temps",
+        "xLSTM",
+        "cellule LSTM",
+        "forget gate"
+      ],
+      "role": "notion",
+      "categorie": "ml/apprentissage-profond",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "lstm",
+        "deep-learning",
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Apprentissage profond/Maximal Update Parametrization.md",
       "nom": "Maximal Update Parametrization",
       "alias": [
@@ -23953,6 +24002,48 @@
       ],
       "complements": [],
       "maturite": "deprecated"
+    },
+    {
+      "path": "Machine Learning/Socle/Adaptation de domaine.md",
+      "nom": "Adaptation de domaine",
+      "alias": [
+        "Domain adaptation",
+        "adaptation de domaine non supervisée",
+        "UDA",
+        "unsupervised domain adaptation",
+        "domain shift",
+        "décalage de domaine",
+        "covariate shift",
+        "décalage de covariables",
+        "importance weighting",
+        "pondération par importance",
+        "DANN",
+        "adaptation au test",
+        "test-time adaptation",
+        "TTA",
+        "généralisation de domaine",
+        "domain generalization",
+        "transfert entre machines"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "domain-adaptation",
+        "transfer-learning",
+        "data-drift",
+        "predictive-maintenance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Socle/Analyse discriminante.md",

@@ -1,7 +1,7 @@
 # Machine Learning — carte (1 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 79 pages, chacune avec son chemin et une ligne.
+> 80 pages, chacune avec son chemin et une ligne.
 > Couvre : Apprentissage par renforcement, Apprentissage profond.
 
 ## Au niveau du dossier
@@ -73,6 +73,7 @@
 - [[Graph Neural Networks]] · notion · `Machine Learning/Apprentissage profond/Graph Neural Networks.md` — Réseaux de neurones opérant directement sur des graphes (nœuds + arêtes), là où CNN et Transformers supposent une grille ou une séquence régulière.
 - [[Image generation]] · notion · `Machine Learning/Apprentissage profond/Image generation.md` — Synthèse d'images à partir d'une description (text-to-image) ou d'une autre image (image-to-image, inpainting, outpainting).
 - [[Kolmogorov-Arnold Networks]] · notion · `Machine Learning/Apprentissage profond/Kolmogorov-Arnold Networks.md` — Architecture de réseau de neurones proposée en 2024 comme alternative au perceptron multicouche (MLP) : au lieu de poids linéaires fixes + activations fixes…
+- [[LSTM et réseaux récurrents]] · notion · `Machine Learning/Apprentissage profond/LSTM et réseaux récurrents.md` — Un réseau récurrent (RNN) lit une séquence pas à pas et résume ce qu'il a vu dans un état caché réinjecté au pas suivant.
 - [[Maximal Update Parametrization]] · notion · `Machine Learning/Apprentissage profond/Maximal Update Parametrization.md` — Règle de paramétrisation (initialisation + taux d'apprentissage par couche, en fonction de la largeur du réseau) qui rend les dynamiques d'entraînement…
 - [[Mixed precision]] · notion · `Machine Learning/Apprentissage profond/Mixed precision.md` — Entraîner en mélangeant basse précision (16 bits, fp16 ou bf16) pour la majorité des calculs et fp32 là où c'est sensible — pour diviser la mémoire et…
 - [[Mixture of Experts]] · notion · `Machine Learning/Apprentissage profond/Mixture of Experts.md` — Architecture où le réseau feed-forward dense d'un Transformer est remplacé par plusieurs experts, dont un routeur n'active qu'une petite fraction par token.
