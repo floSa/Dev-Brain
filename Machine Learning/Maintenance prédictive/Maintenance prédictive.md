@@ -57,10 +57,12 @@ Le brain ne tient pas de fiche pour ces offres, citées ici pour mémoire : Seeq
 - [[Politique de maintenance et coût]] — domaines : data-sci, mlops
 - [[RUL par analyse de survie]] — domaines : data-sci, mlops
 - [[RUL par apprentissage profond]] — domaines : data-sci, ml-eng
+- [[Santé de batterie (SOH et RUL)]] — domaines : data-sci, ml-eng, mlops
 - [[Surveillance conditionnelle et modes de défaillance]] — domaines : data-sci, infra-ops
 
 ### Briques
 - [[Jeux de données PHM]] — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
+- [[PyBaMM]] — Bibliothèque Python de simulation de batteries par modèles physiques (SPM, SPMe, DFN, MPM, MSMR…) : un cadre pour écrire et résoudre des équations différentielles, une bibliothèque de modèles et de jeux de paramètres, des outils d'expériences de cyclage ; les modèles de vieillissement (SEI, dépôt de lithium, perte de matière active) y sont des options, pas de l'apprentissage.
 <!-- AUTO:END -->
 
 ## Notes

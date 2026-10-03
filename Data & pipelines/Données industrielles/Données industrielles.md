@@ -39,6 +39,8 @@ tags: [mqtt, opc-ua, iiot, message-broker]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] — domaines : data-sci, mlops
+- [[OEE et rendement global]] — domaines : data-eng, infra-ops
 - [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — domaines : data-eng, infra-ops
 
 ### Briques

@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1065,
+  "count": 1072,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -197,10 +197,12 @@
       "Label Studio"
     ],
     "anomaly-detection": [
+      "Anomalie acoustique",
       "Anomalie visuelle par banque de mémoire",
       "Anomalie visuelle par reconstruction, distillation et flux",
       "Anomalie visuelle zero-shot et few-shot",
       "Anomalies multivariées par apprentissage profond",
+      "Cause racine d'une anomalie",
       "Comparatif - Détection d'anomalies",
       "Contrôle statistique de procédé (SPC)",
       "Détection d'anomalies",
@@ -210,6 +212,7 @@
       "Détection d'outliers univariée",
       "Détection de ruptures",
       "Détection hors distribution (OOD)",
+      "Expliquer une anomalie (contribution des capteurs)",
       "Foundation models et anomalies de séries",
       "Isolation Forest",
       "Local Outlier Factor",
@@ -258,6 +261,7 @@
       "Transformer architectures"
     ],
     "audio-classification": [
+      "Anomalie acoustique",
       "Classification audio par spectrogramme",
       "Signal & audio"
     ],
@@ -372,6 +376,7 @@
     ],
     "causal-inference": [
       "CausalImpact",
+      "Cause racine d'une anomalie",
       "Comparatif - Outils stats",
       "Diff-in-Diff",
       "Découverte causale",
@@ -607,8 +612,11 @@
     ],
     "condition-monitoring": [
       "Analyse vibratoire",
+      "Anomalie acoustique",
+      "Cause racine d'une anomalie",
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
+      "Santé de batterie (SOH et RUL)",
       "Surveillance conditionnelle et modes de défaillance"
     ],
     "confidence-interval": [
@@ -837,6 +845,7 @@
       "Contrats de données & qualité",
       "Fiabilité des données",
       "Great Expectations",
+      "OEE et rendement global",
       "OpenMetadata",
       "SQLMesh",
       "Soda Core",
@@ -997,6 +1006,7 @@
       "RUL par apprentissage profond",
       "Rendu neuronal 3D & estimation de profondeur",
       "Rétropropagation et différentiation automatique",
+      "Santé de batterie (SOH et RUL)",
       "Scaling laws",
       "Segment Anything (SAM)",
       "Segmentation",
@@ -1070,7 +1080,9 @@
       "scipy.signal"
     ],
     "digital-twin": [
-      "Jumeau numérique et modèles hybrides"
+      "Jumeau numérique et modèles hybrides",
+      "PyBaMM",
+      "Santé de batterie (SOH et RUL)"
     ],
     "dimensionality-reduction": [
       "Analyse factorielle",
@@ -1314,6 +1326,7 @@
       "Captum",
       "Comparatif - Explicabilité",
       "Explicabilité des modèles",
+      "Expliquer une anomalie (contribution des capteurs)",
       "Interprétabilité",
       "Interprétabilité mécaniste",
       "LIME",
@@ -1650,6 +1663,7 @@
       "Inférence en bordure - modèles sur du matériel d'atelier",
       "Mosquitto",
       "Node-RED",
+      "OEE et rendement global",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Telegraf",
@@ -2243,6 +2257,7 @@
     "markov": [
       "Bayésien",
       "Chaînes de Markov",
+      "Indicateurs de fiabilité (MTBF, MTTR, disponibilité)",
       "MCMC",
       "Markov Decision Process",
       "Modèles de Markov cachés et filtre de Kalman",
@@ -2954,6 +2969,7 @@
     "predictive-maintenance": [
       "Adaptation de domaine",
       "Diagnostic de défauts de roulements",
+      "Indicateurs de fiabilité (MTBF, MTTR, disponibilité)",
       "Indicateurs de santé",
       "Jeux de données PHM",
       "Jumeau numérique et modèles hybrides",
@@ -2962,8 +2978,10 @@
       "Pattern - Détection d'anomalies en deux étages",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Politique de maintenance et coût",
+      "PyBaMM",
       "RUL par analyse de survie",
       "RUL par apprentissage profond",
+      "Santé de batterie (SOH et RUL)",
       "Surveillance conditionnelle et modes de défaillance"
     ],
     "prior": [
@@ -3389,8 +3407,10 @@
       "Jeux de données PHM",
       "Jumeau numérique et modèles hybrides",
       "Politique de maintenance et coût",
+      "PyBaMM",
       "RUL par analyse de survie",
       "RUL par apprentissage profond",
+      "Santé de batterie (SOH et RUL)",
       "scikit-survival"
     ],
     "rule": [
@@ -3588,6 +3608,7 @@
       "Pattern - Moteur de jeu pur + IA séparée"
     ],
     "self-supervised": [
+      "Anomalie acoustique",
       "Apprentissage auto-supervisé en vision",
       "Apprentissage contrastif",
       "Dinomaly",
@@ -3638,6 +3659,7 @@
     ],
     "signal-processing": [
       "Analyse vibratoire",
+      "Anomalie acoustique",
       "Comparatif - Traitement du signal",
       "Filtrage numérique",
       "Ondelettes",
@@ -3660,6 +3682,7 @@
       "needle"
     ],
     "spectrogram": [
+      "Anomalie acoustique",
       "Classification audio par spectrogramme",
       "Comparatif - Traitement du signal",
       "STFT et spectrogramme",
@@ -3718,6 +3741,7 @@
     ],
     "statistical-process-control": [
       "Contrôle statistique de procédé (SPC)",
+      "OEE et rendement global",
       "Pattern - Détection d'anomalies en deux étages"
     ],
     "statistical-viz": [
@@ -3837,6 +3861,7 @@
     ],
     "survival-analysis": [
       "Analyse de survie",
+      "Indicateurs de fiabilité (MTBF, MTTR, disponibilité)",
       "Maintenance prédictive et RUL",
       "RUL par analyse de survie",
       "Tests & estimation",
@@ -3920,6 +3945,7 @@
       "Autocorrelation",
       "Bases de données",
       "CausalImpact",
+      "Cause racine d'une anomalie",
       "Chronos",
       "Comparatif - Bases temporelles",
       "Comparatif - Détection d'anomalies en séries temporelles",
@@ -3928,6 +3954,7 @@
       "DeepOD",
       "Détection d'anomalies en ligne",
       "Détection de ruptures",
+      "Expliquer une anomalie (contribution des capteurs)",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
@@ -3940,10 +3967,12 @@
       "LSTM et réseaux récurrents",
       "Maintenance prédictive et RUL",
       "Merlion",
+      "OEE et rendement global",
       "Orion",
       "Prophet",
       "RUL par apprentissage profond",
       "STUMPY",
+      "Santé de batterie (SOH et RUL)",
       "Stationarity",
       "Séries temporelles",
       "TSB-AD",
@@ -4117,6 +4146,7 @@
     ],
     "unsupervised": [
       "Analyse factorielle",
+      "Anomalie acoustique",
       "Apprentissage non supervisé",
       "Apprentissage semi-supervisé",
       "Autoencodeurs",
@@ -7408,6 +7438,37 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Données industrielles/Indicateurs de fiabilité (MTBF, MTTR, disponibilité).md",
+      "nom": "Indicateurs de fiabilité (MTBF, MTTR, disponibilité)",
+      "alias": [
+        "MTBF",
+        "MTTR",
+        "MTTF",
+        "Disponibilité",
+        "Taux de panne",
+        "Taux de défaillance",
+        "Disponibilité inhérente",
+        "Mean time between failures"
+      ],
+      "role": "notion",
+      "categorie": "data/industrie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "survival-analysis",
+        "markov"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Données industrielles/Mosquitto.md",
       "nom": "Mosquitto",
       "alias": [
@@ -7471,6 +7532,39 @@
         "[[Authentik]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Données industrielles/OEE et rendement global.md",
+      "nom": "OEE et rendement global",
+      "alias": [
+        "OEE",
+        "TRS",
+        "TRG",
+        "TRE",
+        "TEEP",
+        "Rendement global",
+        "Overall Equipment Effectiveness",
+        "Taux de rendement synthétique",
+        "Six grandes pertes"
+      ],
+      "role": "notion",
+      "categorie": "data/industrie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "iiot",
+        "timeseries",
+        "statistical-process-control",
+        "data-quality"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/Données industrielles/Protocoles de l'atelier - MQTT, OPC UA et Modbus.md",
@@ -19404,6 +19498,41 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Anomalie acoustique.md",
+      "nom": "Anomalie acoustique",
+      "alias": [
+        "Anomalous sound detection",
+        "ASD",
+        "détection d'anomalie sonore",
+        "anomalie audio",
+        "DCASE",
+        "DCASE tâche 2",
+        "son anormal de machine"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "unsupervised",
+        "signal-processing",
+        "spectrogram",
+        "audio-classification",
+        "self-supervised",
+        "condition-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Anomalie visuelle par banque de mémoire.md",
       "nom": "Anomalie visuelle par banque de mémoire",
       "alias": [
@@ -19559,6 +19688,37 @@
       ],
       "complements": [],
       "maturite": "experimental"
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Cause racine d'une anomalie.md",
+      "nom": "Cause racine d'une anomalie",
+      "alias": [
+        "RCA",
+        "Analyse de cause racine",
+        "Root cause analysis",
+        "Cause racine",
+        "Propagation de panne",
+        "Root cause localization"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "causal-inference",
+        "condition-monitoring",
+        "timeseries"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Détection d'anomalies/Comparatif - Détection d'anomalies en séries temporelles.md",
@@ -19891,6 +20051,36 @@
         "out-of-distribution",
         "anomaly-detection",
         "model-monitoring"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/Expliquer une anomalie (contribution des capteurs).md",
+      "nom": "Expliquer une anomalie (contribution des capteurs)",
+      "alias": [
+        "Attribution d'anomalie",
+        "Localisation d'anomalie",
+        "Contribution plots",
+        "Anomaly attribution",
+        "Explication d'anomalie",
+        "Bavure des contributions"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "explainability",
+        "timeseries"
       ],
       "alternatives": null,
       "complements": null,
@@ -21533,6 +21723,28 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Maintenance prédictive/PyBaMM.md",
+      "nom": "PyBaMM",
+      "alias": [
+        "pybamm",
+        "Python Battery Mathematical Modelling"
+      ],
+      "role": "brique",
+      "categorie": "ml/maintenance",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de simulation de batteries par modèles physiques (SPM, SPMe, DFN, MPM, MSMR…) : un cadre pour écrire et résoudre des équations différentielles, une bibliothèque de modèles et de jeux de paramètres, des outils d'expériences de cyclage ; les modèles de vieillissement (SEI, dépôt de lithium, perte de matière active) y sont des options, pas de l'apprentissage.",
+      "tags": [
+        "digital-twin",
+        "predictive-maintenance",
+        "rul"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Machine Learning/Maintenance prédictive/RUL par analyse de survie.md",
       "nom": "RUL par analyse de survie",
       "alias": [
@@ -21583,6 +21795,40 @@
         "timeseries",
         "cnn",
         "transformers"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Maintenance prédictive/Santé de batterie (SOH et RUL).md",
+      "nom": "Santé de batterie (SOH et RUL)",
+      "alias": [
+        "SOH",
+        "State of Health",
+        "état de santé batterie",
+        "fin de vie batterie",
+        "EOL",
+        "Pronostic de batterie",
+        "Durée de vie résiduelle d'une batterie"
+      ],
+      "role": "notion",
+      "categorie": "ml/maintenance",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "predictive-maintenance",
+        "rul",
+        "digital-twin",
+        "timeseries",
+        "deep-learning",
+        "condition-monitoring"
       ],
       "alternatives": null,
       "complements": null,

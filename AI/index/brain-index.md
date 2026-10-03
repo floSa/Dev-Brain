@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1065 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1072 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -514,6 +514,7 @@
 
 ### ml/maintenance
 - **Jeux de données PHM** — Annuaire commenté de huit jeux de référence pour la maintenance prédictive — turboréacteurs simulés (C-MAPSS), roulements (CWRU, PRONOSTIA/FEMTO, IMS, XJTU-SY, Paderborn), batteries (NASA PCoE) et sons de machines (MIMII) — avec, pour chacun, la licence des données, le mode d'accès et ce qu'elle permet en usage commercial. Rien à installer ; un seul jeu interdit l'usage commercial par une licence écrite, mais la plupart n'en portent aucune.
+- **PyBaMM** — Bibliothèque Python de simulation de batteries par modèles physiques (SPM, SPMe, DFN, MPM, MSMR…) : un cadre pour écrire et résoudre des équations différentielles, une bibliothèque de modèles et de jeux de paramètres, des outils d'expériences de cyclage ; les modèles de vieillissement (SEI, dépôt de lithium, perte de matière active) y sont des options, pas de l'apprentissage.
 
 ### ml/monitoring
 - **Deepchecks** — Bibliothèque Python de validation continue pour le ML — suites de checks sur données et modèles tabulaires, NLP et vision, avec conditions pass/fail rejouables en CI ; cœur AGPL-3.0, monitoring auto-hébergé limité à un modèle, évaluation de LLM et fonctions premium commerciales.
@@ -742,6 +743,8 @@
 - **Partitionnement & layout de données** — domaines : data-eng · alias : partitionnement, partitioning, data layout, layout de données, bucketing, partition pruning, taille de fichiers, small files problem
 
 ### data/industrie
+- **Indicateurs de fiabilité (MTBF, MTTR, disponibilité)** — domaines : data-sci, mlops · alias : MTBF, MTTR, MTTF, Disponibilité, Taux de panne, Taux de défaillance, Disponibilité inhérente, Mean time between failures
+- **OEE et rendement global** — domaines : data-eng, infra-ops · alias : OEE, TRS, TRG, TRE, TEEP, Rendement global, Overall Equipment Effectiveness, Taux de rendement synthétique, Six grandes pertes
 - **Protocoles de l'atelier - MQTT, OPC UA et Modbus** — domaines : data-eng, infra-ops · alias : Protocoles de l'atelier : MQTT, OPC UA et Modbus, protocoles industriels, MQTT, OPC UA, Modbus, Sparkplug B, ISA-95, modèle de Purdue, Unified Namespace
 
 ### data/ingestion
@@ -930,10 +933,12 @@
 - **Annotation de données** — domaines : data-sci, ml-eng · alias : annotation, data labeling, étiquetage de données, labellisation, labeling, annotation d'images, annotation de texte
 
 ### ml/anomalie
+- **Anomalie acoustique** — domaines : data-sci, ml-eng, mlops · alias : Anomalous sound detection, ASD, détection d'anomalie sonore, anomalie audio, DCASE, DCASE tâche 2, son anormal de machine
 - **Anomalie visuelle par banque de mémoire** — domaines : data-sci, ml-eng · alias : SPADE, PaDiM, PatchCore, Détection d'anomalies par plus proche voisin, Memory bank anomaly detection, Coreset
 - **Anomalie visuelle par reconstruction, distillation et flux** — domaines : data-sci, ml-eng · alias : DRAEM, RD4AD, Reverse Distillation, STFPM, EfficientAD, UniAD, FastFlow, CFlow, CFlow-AD, Détection d'anomalies multi-classe, Anomalie visuelle par réseau appris
 - **Anomalie visuelle zero-shot et few-shot** — domaines : data-sci, ml-eng · alias : WinCLIP, AnomalyCLIP, AnomalyDINO, AdaCLIP, Détection d'anomalies zero-shot, Few-shot anomaly detection, Anomalie visuelle avec modèle vision-langage
 - **Anomalies multivariées par apprentissage profond** — domaines : data-sci, ml-eng · alias : Deep learning pour anomalies multivariées, USAD, TranAD, Anomaly Transformer, LSTM-AE, TimesNet
+- **Cause racine d'une anomalie** — domaines : data-sci, ml-eng, mlops · alias : RCA, Analyse de cause racine, Root cause analysis, Cause racine, Propagation de panne, Root cause localization
 - **Contrôle statistique de procédé (SPC)** — domaines : data-sci, ml-eng · alias : SPC, Statistical process control, Maîtrise statistique des procédés, Cartes de contrôle, Control charts, Carte de Shewhart, Cartes EWMA, Capabilité de procédé, Cpk, Western Electric, Average run length
 - **Détection d'anomalies en ligne** — domaines : data-sci, ml-eng, mlops · alias : Online anomaly detection, Streaming anomaly detection, Détection d'anomalies sur flux, Détection d'anomalies en streaming, Half-Space Trees, Random Cut Forest, RRCF
 - **Détection d'anomalies visuelle** — domaines : data-sci, ml-eng · alias : Visual anomaly detection, Inspection visuelle par IA, Détection de défauts non supervisée, Industrial anomaly detection, Contrôle qualité visuel non supervisé
@@ -941,6 +946,7 @@
 - **Détection d'outliers univariée** — domaines : data-sci, ml-eng · alias : outliers univarié, Z-score, IQR, MAD, règle de Tukey, modified Z-score
 - **Détection de ruptures** — domaines : data-sci, ml-eng · alias : Change point detection, Changepoint detection, Détection de points de rupture, Segmentation de séries temporelles, CUSUM, PELT, BOCPD
 - **Détection hors distribution (OOD)** — domaines : ml-eng, mlops, data-sci · alias : OOD, Out-of-distribution detection, Détection OOD, Entrée hors distribution
+- **Expliquer une anomalie (contribution des capteurs)** — domaines : data-sci, ml-eng, mlops · alias : Attribution d'anomalie, Localisation d'anomalie, Contribution plots, Anomaly attribution, Explication d'anomalie, Bavure des contributions
 - **Foundation models et anomalies de séries** — domaines : data-sci, ml-eng · alias : Détection d'anomalies zero-shot, Résidus de prévision zero-shot, TSFM pour anomalies, MOMENT, TimesFM
 - **Isolation Forest** — domaines : data-sci, ml-eng · alias : iForest, Forêt d'isolement, IsolationForest
 - **Local Outlier Factor** — domaines : data-sci, ml-eng · alias : LOF, Facteur d'aberration locale, LocalOutlierFactor, Densité locale
@@ -1025,6 +1031,7 @@
 - **Politique de maintenance et coût** — domaines : data-sci, mlops · alias : Politique de maintenance, Maintenance conditionnelle à seuil, Politique d'âge, Politique de bloc, Coût de maintenance
 - **RUL par analyse de survie** — domaines : data-sci, mlops · alias : RUL par survie, Survie et RUL, Weibull et RUL
 - **RUL par apprentissage profond** — domaines : data-sci, ml-eng · alias : RUL deep learning, Deep RUL, Pronostic par apprentissage profond
+- **Santé de batterie (SOH et RUL)** — domaines : data-sci, ml-eng, mlops · alias : SOH, State of Health, état de santé batterie, fin de vie batterie, EOL, Pronostic de batterie, Durée de vie résiduelle d'une batterie
 - **Surveillance conditionnelle et modes de défaillance** — domaines : data-sci, infra-ops · alias : CBM, Condition-based maintenance, Courbe P-F, Intervalle P-F, AMDEC, FMEA
 
 ### ml/monitoring

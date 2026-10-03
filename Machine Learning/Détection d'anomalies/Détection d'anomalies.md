@@ -44,10 +44,12 @@ tags: [anomaly-detection]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Anomalie acoustique]] — domaines : data-sci, ml-eng, mlops
 - [[Anomalie visuelle par banque de mémoire]] — domaines : data-sci, ml-eng
 - [[Anomalie visuelle par reconstruction, distillation et flux]] — domaines : data-sci, ml-eng
 - [[Anomalie visuelle zero-shot et few-shot]] — domaines : data-sci, ml-eng
 - [[Anomalies multivariées par apprentissage profond]] — domaines : data-sci, ml-eng
+- [[Cause racine d'une anomalie]] — domaines : data-sci, ml-eng, mlops
 - [[Contrôle statistique de procédé (SPC)]] — domaines : data-sci, ml-eng
 - [[Détection d'anomalies en ligne]] — domaines : data-sci, ml-eng, mlops
 - [[Détection d'anomalies visuelle]] — domaines : data-sci, ml-eng
@@ -55,6 +57,7 @@ tags: [anomaly-detection]
 - [[Détection d'outliers univariée]] — domaines : data-sci, ml-eng
 - [[Détection de ruptures]] — domaines : data-sci, ml-eng
 - [[Détection hors distribution (OOD)]] — domaines : ml-eng, mlops, data-sci
+- [[Expliquer une anomalie (contribution des capteurs)]] — domaines : data-sci, ml-eng, mlops
 - [[Foundation models et anomalies de séries]] — domaines : data-sci, ml-eng
 - [[Isolation Forest]] — domaines : data-sci, ml-eng
 - [[Local Outlier Factor]] — domaines : data-sci, ml-eng
