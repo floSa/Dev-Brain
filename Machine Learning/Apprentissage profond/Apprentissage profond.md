@@ -57,6 +57,7 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - [[Graph Neural Networks]] — domaines : ml-eng, data-sci
 - [[Image generation]] — domaines : ml-eng, ai-eng
 - [[Kolmogorov-Arnold Networks]] — domaines : ml-eng
+- [[LSTM et réseaux récurrents]] — domaines : ml-eng, data-sci
 - [[Maximal Update Parametrization]] — domaines : ml-eng, ai-eng
 - [[Mixed precision]] — domaines : ml-eng
 - [[Mixture of Experts]] — domaines : ml-eng, ai-eng

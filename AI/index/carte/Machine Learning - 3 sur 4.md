@@ -1,7 +1,7 @@
 # Machine Learning — carte (3 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 103 pages, chacune avec son chemin et une ligne.
+> 104 pages, chacune avec son chemin et une ligne.
 > Couvre : Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving, Socle, Suivi d'expériences, Séries temporelles.
 
 ## Non supervisé
@@ -64,6 +64,7 @@
 ## Socle
 - [[River]] · brique · `Machine Learning/Socle/River.md` — ML en ligne / streaming en Python — apprentissage incrémental échantillon par échantillon (learnone/predictone) couvrant classification, régression…
 - [[Scikit-Learn]] · brique · `Machine Learning/Socle/Scikit-Learn.md` — Boîte à outils ML généraliste en Python — une API fit/predict unifiée pour modèles supervisés, clustering, décomposition (PCA…), preprocessing et métriques.
+- [[Adaptation de domaine]] · notion · `Machine Learning/Socle/Adaptation de domaine.md` — Situation : un modèle est appris sur un domaine source (des étiquettes, une distribution) et doit servir sur un domaine cible dont la distribution est…
 - [[Analyse discriminante]] · notion · `Machine Learning/Socle/Analyse discriminante.md` — Classifieur génératif qui suppose que, dans chaque classe, les données suivent une loi normale multivariée.
 - [[Apprentissage fédéré]] · notion · `Machine Learning/Socle/Apprentissage fédéré.md` — Entraîner un seul modèle à partir de données qui ne quittent pas leur propriétaire.
 - [[Apprentissage semi-supervisé]] · notion · `Machine Learning/Socle/Apprentissage semi-supervisé.md` — Situation : quelques exemples étiquetés, beaucoup d'exemples bruts.
