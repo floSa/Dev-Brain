@@ -34,6 +34,7 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 - Classer des documents ou des items selon une requête, à partir de jugements de pertinence ou de clics → [[Learning to rank]].
 - Apprendre en flux, sur une donnée qui n'entre pas en mémoire → [[River]].
 - Des colonnes et une cible, une fois la baseline posée → [[Tabulaire]].
+- Un modèle appris sur une machine, une ligne ou un capteur qui doit servir sur un autre → [[Adaptation de domaine]].
 - Un réseau de neurones → [[Apprentissage profond]].
 - Quelques étiquettes et beaucoup de données brutes → [[Apprentissage semi-supervisé]], après avoir réglé une baseline supervisée et essayé un modèle pré-entraîné ; choisir lesquelles étiqueter → [[Active learning]].
 - Des données qui ne peuvent pas être centralisées → [[Apprentissage fédéré]] ; une garantie formelle de confidentialité sur ce que le modèle laisse fuiter → [[Confidentialité différentielle]].

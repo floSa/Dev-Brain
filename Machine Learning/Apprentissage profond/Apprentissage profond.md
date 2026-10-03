@@ -36,6 +36,7 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - Expérimenter les Kolmogorov-Arnold Networks → [[pykan]].
 - Un graphe en entrée → [[PyTorch Geometric]], au niveau du domaine.
 - Récupérer un modèle pré-entraîné plutôt que d'en entraîner un → [[HuggingFace]], et [[timm]] pour les backbones vision.
+- Une séquence de capteurs ou une série, avec un réseau à état plutôt qu'un Transformer → [[LSTM et réseaux récurrents]].
 
 <!-- AUTO:START -->
 ### Notions
