@@ -71,7 +71,7 @@ tags: [predictive-maintenance, rul, thresholding, optimization]
 - [[Prédiction conforme]] — intervalles sur le RUL avec garantie de couverture.
 - [[Régression quantile]] — viser le quantile que les coûts dictent.
 - [[Markov Decision Process]] — le cadre des décisions séquentielles.
-- [[Comparatif - Offres de maintenance prédictive]] — ce que les offres d'éditeur proposent, sur l'auto-hébergement, la licence et l'ouverture des données.
+- Comparatif - Offres de maintenance prédictive (retiré du brain : offres propriétaires) — ce que les offres d'éditeur proposent, sur l'auto-hébergement, la licence et l'ouverture des données.
 
 ## Pour aller plus loin
 

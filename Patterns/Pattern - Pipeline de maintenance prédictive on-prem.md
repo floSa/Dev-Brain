@@ -35,7 +35,7 @@ serveur OPC UA → collecte → broker MQTT → base de séries → modèle → 
 | Modèle | les notions du dossier [[Détection d'anomalies]] et [[Maintenance prédictive]] | voir la décision 5 |
 | Alerte | [[Alertmanager]], ou l'alerting intégré de [[Grafana]] | regrouper, dédoublonner, router vers une personne |
 
-Le comparatif des brokers est [[Comparatif - Brokers MQTT]]. Les offres d'éditeur qui couvrent plusieurs étages d'un coup sont départagées dans [[Comparatif - Offres de maintenance prédictive]].
+Le comparatif des brokers est [[Comparatif - Brokers MQTT]].
 
 ## Décisions clés
 
