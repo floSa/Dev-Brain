@@ -17,7 +17,6 @@ tags: [bi, dashboard, self-hosted]
 - [[Apache Superset]] — Apache-2.0, sans édition payante : droits par ligne, alertes et rapports, embedding par SDK et SQL Lab libre sont dans la distribution ; le prix est l'exploitation (base de métadonnées, Redis, Celery, navigateur headless) et la configuration manuelle de l'authentification.
 - [[Grafana]] — **absent de la vue ci-dessus, et c'est voulu** : il est rangé en observabilité, pour les métriques et les séries techniques branchées sur Prometheus, Loki ou une base temporelle. Il dépanne pour un tableau de bord d'exploitation d'atelier, pas pour l'exploration libre d'un entrepôt.
 - [[Streamlit]] et [[Dash]] — **absents de la vue aussi** : ce sont des applications qu'un développeur écrit en Python, pas des outils servis à des utilisateurs qui ne programment pas. Le choix se fait quand l'écran est sur mesure ; la BI sert quand des équipes veulent poser leurs propres questions.
-- [[Seeq]] — **n'est pas une BI généraliste** : il analyse des séries de procédé branchées sur des historiens, sans copier les données, pour des ingénieurs de fiabilité. Propriétaire, installable sur site ou en cloud ; aucune édition gratuite. On le prend quand l'objet est un signal d'atelier, pas une table d'entrepôt.
 
 ## Voir aussi
 
