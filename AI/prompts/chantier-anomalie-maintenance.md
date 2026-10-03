@@ -188,5 +188,5 @@ Ce lot ne touche **pas** les pages du brain. Il travaille dans le dépôt BrainK
 - [x] Lot 4 — maintenance, concepts
 - [x] Lot 5 — maintenance, outils et offres
 - [x] Lot 6 — patterns, rules, bord d'usine
-- [ ] Lot 7 — notions transverses (LSTM, adaptation de domaine, prédiction conforme)
+- [x] Lot 7 — notions transverses (LSTM, adaptation de domaine, prédiction conforme)
 - [x] Lot 8 — correctif BrainKit, fichiers orphelins de la carte
