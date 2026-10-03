@@ -1258,7 +1258,7 @@ axes:
 
       - cle: math
         dossier: "Mathématiques"
-        portee: "les quatre socles : algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage"
+        portee: "les quatre socles : algèbre linéaire, optimisation, théorie de l'information, théorie de l'apprentissage ; et la recherche opérationnelle (stocks, plannings)"
         sous:
           optimisation:
             libelle: "Optimisation"
@@ -1271,6 +1271,32 @@ axes:
               Distinct de ml/hyperopt (chercher des hyperparametres, pas minimiser
               une fonction connue), de ml/* (les modeles qui EMPLOIENT la descente
               — la mecanique est ici, l architecture est la-bas) et de stats/*.
+              Distinct de math/recherche-operationnelle (D-R12) : ici la methode,
+              la-bas le probleme de decision d un metier.
+          recherche-operationnelle:
+            libelle: "Recherche opérationnelle"
+            motif: >
+              Ouvert le 2026-10-04 sur accord de floSa (chantier anomalie,
+              maintenance et stocks, lot 11). Derive par D5 (optimisation
+              mathematique) puis D-R12. Le libelle reprend le nom du domaine
+              tel que floSa l emploie. Il redoublait un ALIAS du hub
+              Optimisation (« recherche opérationnelle ») : cet alias est
+              retire, sans quoi un lien nu [[Recherche opérationnelle]] et
+              l alias auraient designe deux pages. Aucun lien ne l employait
+              (mesure le 2026-10-04). Aucune page existante n est deplacee :
+              Optimisation combinatoire, MIP et PuLP restent en
+              math/optimisation, ce sont des methodes de resolution.
+            frontiere: >
+              Le PROBLEME DE DECISION d un metier, avec ses modeles et ses
+              politiques : combien commander, quand, avec quel stock de
+              securite ; puis planifier, ordonnancer, tourner. Depart contre
+              math/optimisation (D-R12) : ici la page a pour sujet la
+              situation de decision (le stock, l atelier, la tournee) et sa
+              solution propre, souvent en forme fermee ; math/optimisation
+              des que le sujet est la METHODE de resolution, quel que soit le
+              probleme (descente, convexite, MIP, solveur). Distinct de
+              ml/series-temporelles (prevoir la demande) : la prevision est
+              l entree, la quantite a commander est la sortie.
           algebre-lineaire:
             libelle: "Algèbre linéaire"
             motif: "Ouvert au lot 4."
@@ -1697,6 +1723,16 @@ axes:
           ecart, ou une decision d intervenir ? ». La serie est l entree dans
           les trois cas, ce n est donc pas elle qui range. Ouverte le
           2026-10-02 avec ml/maintenance.
+      - n: D-R12
+        regle: "Une page de math/* dont le SUJET est une situation de décision d'un métier (stock, plan de production, tournée, planning) et la politique qui la résout est math/recherche-operationnelle. Une page dont le sujet est la MÉTHODE de résolution, quel que soit le problème (descente de gradient, convexité, MIP, solveur), est math/optimisation. La prévision de la demande, qui n'est que l'entrée, reste ml/series-temporelles."
+        cas: "Modèle du vendeur de journaux, Stock de sécurité et taux de service -> math/recherche-operationnelle ; Optimisation combinatoire, Programmation linéaire en nombres entiers (MIP), PuLP -> math/optimisation ; Intermittent demand, Hierarchical forecasting -> ml/series-temporelles"
+        motif: >
+          La question fermee est « la page decrit-elle un probleme que le
+          metier reconnait (un stock, un atelier), ou une facon de le
+          resoudre ? ». Le vendeur de journaux se resout par un quantile, sans
+          solveur : il serait faux de le ranger sous la methode. Inversement,
+          le MIP s applique a un stock comme a un horaire : il ne porte pas
+          un probleme. Ouverte le 2026-10-04 avec math/recherche-operationnelle.
 
     # ------------------------------------------------------------------------
     # frontieres — NEUF frontieres disputees, ecrites une fois. Distinctes des
@@ -1724,6 +1760,9 @@ axes:
           distinction: "ml/plateforme : la suite couvre tout le cycle — préparation, entraînement, déploiement, gouvernance — sous une console unique. ml/orchestration : le pipeline seul, l'infrastructure et les droits restent au dehors (D-R9). database/analytique : le moteur, quand son concurrent réel est un autre moteur et non une plateforme (D-R8)." }
       - { entre: "ml/anomalie", et: ["ml/non-supervise", "ml/series-temporelles", "ml/maintenance"],
           distinction: "ml/anomalie : l'écart au normal est le sujet (D-R10). ml/non-supervise : la structure des données, l'anomalie n'étant qu'un usage possible. ml/series-temporelles : la série comme objet, prévoir ou décrire. ml/maintenance : le but est une panne ou une décision d'intervenir (D-R11)." }
+
+      - { entre: "math/recherche-operationnelle", et: ["math/optimisation", "ml/series-temporelles"],
+          distinction: "math/recherche-operationnelle : le problème de décision d'un métier (stock, plan, tournée) et sa politique (D-R12). math/optimisation : la méthode de résolution, quel que soit le problème. ml/series-temporelles : prévoir la demande, qui n'est que l'entrée de la décision." }
 
     # ------------------------------------------------------------------------
     # journal — le vocabulaire de galaxie `concept/*` a ete CLOS le 2026-09-05,
