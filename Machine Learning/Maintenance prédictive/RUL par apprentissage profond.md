@@ -22,7 +22,7 @@ tags: [rul, predictive-maintenance, deep-learning, timeseries, cnn, transformers
 - **CNN 1D** : Babu, Zhao et Li (DASFAA 2016) se disent les premiers à l'appliquer au RUL : convolution et pooling le long du temps, deux étages puis un perceptron, perte quadratique. Fenêtre de 15 cycles, imposée par le moteur de test le plus court (15 cycles). Li, Ding et Sun (RESS, 2018) vont plus profond ; Javanmardi et Hüllermeier, qui réutilisent leur réseau, le décrivent : quatre couches de convolution identiques, une cinquième à un filtre, une couche dense de 100 neurones, dropout 0,5, Adam. Fenêtres de 30, 20, 30 et 15 sur FD001 à FD004.
 - **LSTM** : Zheng, Ristovski, Farahat et Gupta (ICPHM 2017) reprochent aux approches à fenêtre aplatie d'ignorer l'ordre de la séquence. Avant eux, Heimes (PHM 2008) avait résolu le défi PHM08 par un réseau récurrent (deuxième du concours).
 - **Transformers** : DAST (Zhang, Song, Li, IEEE TIM 2022), encodeur-décodeur fondé sur la seule auto-attention ([[Self-attention]], [[Transformer architectures]]), avec **deux encodeurs parallèles**, l'un sur les capteurs, l'autre sur les pas de temps. Fenêtre de 40 cycles (FD001, FD003) ou 60 (FD002, FD004), 14 capteurs sur 21, moyenne de 10 exécutions.
-- Le réseau lui-même : [[CNN]], [[Perceptron et MLP]]. Pas de page sur le LSTM dans le brain à ce jour.
+- Le réseau lui-même : [[CNN]], [[Perceptron et MLP]]. Le LSTM : [[LSTM et réseaux récurrents]].
 
 ### L'étiquette plateau-puis-linéaire
 
@@ -75,6 +75,8 @@ tags: [rul, predictive-maintenance, deep-learning, timeseries, cnn, transformers
 - [[Politique de maintenance et coût]] — transformer un RUL et son incertitude en décision.
 - [[Time series feature engineering]] — la voie sans réseau.
 - [[Régression quantile]], [[Calibration]], [[Prédiction conforme]] — les briques d'un intervalle fiable.
+- [[LSTM et réseaux récurrents]] — le réseau de séquence derrière les modèles récurrents de cette page : cellule, portes, gradient.
+- [[Adaptation de domaine]] — passer d'une flotte ou d'un régime à l'autre sans étiquettes de panne côté cible.
 - [[Maintenance prédictive]] — le dossier.
 
 ## Pour aller plus loin
