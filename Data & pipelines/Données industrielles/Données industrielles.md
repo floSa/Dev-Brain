@@ -19,6 +19,7 @@ tags: [mqtt, opc-ua, iiot, message-broker]
 - **Deux brokers MQTT seulement ont une fiche**, départagés dans [[Comparatif - Brokers MQTT]] : le nœud léger sous licence libre, le cluster sous BSL. Les brokers déjà dans le brain qui parlent MQTT sont cités dans ce comparatif : [[NATS]] (3.1.1 seul) et [[RabbitMQ]] (sans QoS 2) ; [[Kafka]] n'en parle pas.
 - **Une passerelle d'atelier est un point d'entrée dans le réseau.** [[Node-RED]] a un éditeur ouvert par défaut, et des produits d'atelier livrés avec lui sans authentification ont eu des CVE : la configuration d'`adminAuth` n'est pas optionnelle.
 - **Collecter sans développer, ou compiler son propre serveur** : [[Telegraf]] lit OPC UA, Modbus, S7 et MQTT par configuration TOML et écrit vers [[InfluxDB]], [[TimescaleDB]], [[Prometheus]] ou [[Kafka]] ; [[open62541]] est la pile C à embarquer pour un serveur ou un client OPC UA dans un produit. Le tampon de Telegraf est en mémoire par défaut, le tampon disque reste expérimental : à connaître avant de compter sur lui pendant une coupure de réseau.
+- **Au-delà du transport : ce qu'on calcule avec la donnée d'atelier.** Depuis le 2026-10-04 le dossier range aussi les indicateurs d'exploitation. [[OEE et rendement global]] part des états machine et des compteurs de pièces ; [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] part de l'historique des pannes et des interventions, que tient une GMAO. Les deux supposent des horodatages propres à la source, d'où leur place à côté des protocoles. Les GMAO libres du marché (Atlas CMMS, openMAINT) sont de l'open-core : le brain n'en tient pas de fiche (voir « Hors périmètre du brain » dans [[Maintenance prédictive]]).
 - **Des piles OPC UA sans fiche**, faute de place : Eclipse Milo (EPL-2.0, Java), node-opcua (MIT, dont le pub/sub est un module commercial) et Apache PLC4X (Apache-2.0). Leurs points sont dans les fiches [[open62541]] et [[asyncua]].
 
 ## Choisir
@@ -32,6 +33,8 @@ tags: [mqtt, opc-ua, iiot, message-broker]
 - Comprendre MQTT, OPC UA, Modbus, Sparkplug B, la pyramide ISA-95 et la sécurité du réseau d'atelier → [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]].
 - Stocker les séries une fois arrivées → [[InfluxDB]] ou [[TimescaleDB]], cf. [[Comparatif - Bases temporelles]].
 - Une plateforme IoT industrielle clé en main : les offres du marché (Siemens Insights Hub, Cognite Data Fusion) sont propriétaires et n'ont pas de fiche dans le brain.
+- Calculer le rendement d'une ligne depuis les états machine → [[OEE et rendement global]].
+- Mesurer la fiabilité d'un équipement (MTBF, MTTR, disponibilité) depuis l'historique des pannes → [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]].
 - Faire tourner un modèle sur le matériel de l'atelier, avec la donnée qu'on vient de collecter → [[Inférence en bordure - modèles sur du matériel d'atelier]], et [[OpenVINO]] ou [[LiteRT]] côté moteurs.
 
 <!-- AUTO:START -->
