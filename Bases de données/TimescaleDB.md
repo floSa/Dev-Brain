@@ -8,7 +8,7 @@ famille: extension
 licence_type: open-source
 maturite: production
 langage: C
-alternatives: ["[[InfluxDB]]", "[[AVEVA PI System]]"]
+alternatives: ["[[InfluxDB]]"]
 complements: ["[[Postgres]]", "[[EMQX]]", "[[Telegraf]]"]
 tags: [timeseries, postgres]
 url_docs: https://www.tigerdata.com/docs
@@ -56,7 +56,6 @@ par Tiger Data, ex-Timescale.
 ### Alternatives
 
 - [[InfluxDB]] — SGBD de séries temporelles pensé métriques et IoT : ingestion haut débit, rétention et requêtes par fenêtres temporelles.
-- [[AVEVA PI System]] — Historien industriel d'AVEVA — PI Data Archive stocke les séries temporelles de l'atelier, PI Asset Framework les rattache à une hiérarchie d'équipements, PI Vision les affiche ; propriétaire, installé sur site (datasheet : Windows) ; un historien, pas un outil de machine learning.
 
 ### Compléments
 

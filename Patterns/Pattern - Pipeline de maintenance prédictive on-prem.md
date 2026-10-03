@@ -31,7 +31,7 @@ serveur OPC UA → collecte → broker MQTT → base de séries → modèle → 
 | Broker | [[Mosquitto]] | un seul nœud, matériel modeste, pas de cluster |
 | Broker | [[EMQX]] | cluster, règles, intégrations ; licence BSL 1.1, cluster payant |
 | Base de séries | [[InfluxDB]], [[TimescaleDB]] | selon que le reste de l'infrastructure parle Influx ou SQL |
-| Historien existant | [[AVEVA PI System]] | l'usine en a déjà un : lire dedans plutôt que dupliquer |
+| Historien existant | AVEVA PI System (propriétaire, sans fiche dans le brain) | l'usine en a déjà un : lire dedans plutôt que dupliquer |
 | Modèle | les notions du dossier [[Détection d'anomalies]] et [[Maintenance prédictive]] | voir la décision 5 |
 | Alerte | [[Alertmanager]], ou l'alerting intégré de [[Grafana]] | regrouper, dédoublonner, router vers une personne |
 
