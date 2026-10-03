@@ -57,3 +57,18 @@ report ne contourne pas ce refus, il le remplace par un diff lisible. Toute
 correction ultérieure du kit reste à reporter de la même façon, fichier par
 fichier.
 
+
+## Report manuel du 2026-10-03 — les orphelins de la carte
+
+Second report à la main, même mécanisme, depuis BrainKit au commit `fb7c7e8` :
+`--ecrire` supprime désormais les fichiers L1 de la carte qui n'ont plus de
+source (fichier coupé en « 1 sur 2 » / « 2 sur 2 », ou l'inverse), au lieu de les
+laisser rouges dans `--check`. Deux fichiers de `AI/scripts/brainkit/generer/` :
+`carte.py` et `sortie.py`. Le reste du paquet est inchangé, et la copie est
+identique au kit à cet instant (`diff -rq` vide).
+
+Garde-fous : seul un fichier directement dans `AI/index/carte/`, qui porte la marque
+« Généré par » en tête, est supprimé ; `--check` ne supprime rien et sort en 2 ;
+`genere.carte.supprime_orphelins: false` dans `brain.yml` rend l'ancien
+comportement. Le contrat `schema/brain.schema.json` a reçu la clé côté kit ; cette
+instance, qui n'a pas le schéma, n'en a pas besoin.
