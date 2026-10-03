@@ -3483,7 +3483,7 @@
 ### Anomalies multivariées par apprentissage profond  ·  notion
 - tags : `anomaly-detection`, `timeseries`, `deep-learning`, `transformers`, `benchmark`
 - liens sortants : [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Self-attention]], [[TSB-AD]], [[Time series anomaly detection]], [[Transformer architectures]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Amazon Lookout for Equipment]], [[Azure AI Anomaly Detector]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[TSB-AD]], [[Time series anomaly detection]], [[time-series-anomaly-detector]]
+- liens entrants : [[Amazon Lookout for Equipment]], [[Azure AI Anomaly Detector]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[TSB-AD]], [[Time series anomaly detection]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### API REST, GraphQL et gRPC  ·  notion
 - tags : `web-framework`, `schema-evolution`, `idempotence`, `serialization`
@@ -5282,7 +5282,7 @@
 
 ### Évaluer une détection d'anomalies  ·  notion
 - tags : `anomaly-detection`, `model-evaluation`, `class-imbalance`
-- liens sortants : [[Classification metrics]], [[Data leakage]], [[Détection hors distribution (OOD)]], [[Forecasting metrics]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Classification metrics]], [[Data leakage]], [[Détection hors distribution (OOD)]], [[Forecasting metrics]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Métriques vision]], [[ROC-AUC / courbe PR]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
 - liens entrants : [[Anomalies multivariées par apprentissage profond]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données PHM]], [[Jeux de données d'anomalies]], [[Kats]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Merlion]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Séries temporelles]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]]
 
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
