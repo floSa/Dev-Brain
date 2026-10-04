@@ -266,6 +266,8 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `linear-programming` | Programmation linéaire — objectif et contraintes linéaires (simplexe, point intérieur) et son extension en nombres entiers (MIP, branch & bound, relaxation LP) |
 | `combinatorial-optimization` | Optimisation combinatoire — meilleure configuration dans un ensemble discret (sac à dos, affectation, couverture ; NP-difficulté, heuristiques) |
 | `constrained-optimization` | Optimisation sous contrainte — minimisation sous égalités/inégalités (multiplicateurs de Lagrange, conditions KKT, dualité) |
+| `inventory` | Gestion de stock — combien commander et quand : stock de sécurité, taux de service, politiques de réapprovisionnement, rotation ; distinct de `forecasting` (prévoir la demande, l'entrée) et de `optimization` (la méthode de résolution) |
+| `newsvendor` | Modèle du vendeur de journaux — une seule commande avant une demande incertaine ; quantile critique entre coût de rupture et coût de surstock |
 | `information-theory` | Théorie de l'information — quantifier incertitude, information et écart entre distributions |
 | `entropy` | Entropie — mesure d'incertitude d'une distribution (Shannon) |
 | `cross-entropy` | Entropie croisée — coût d'encoder une loi avec une autre (perte de classification, log-loss) |

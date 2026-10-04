@@ -249,8 +249,8 @@ Domaine `ml/maintenance` quand le sujet est un modèle ; dérive sinon.
 - [x] Lot 7 — notions transverses (LSTM, adaptation de domaine, prédiction conforme)
 - [x] Lot 8 — correctif BrainKit, fichiers orphelins de la carte
 - [x] Lot 9 — retrait des solutions propriétaires
-- [ ] Lot 10 — agents de code libres
-- [ ] Lot 11 — recherche opérationnelle et gestion de stock
+- [x] Lot 10 — agents de code libres
+- [x] Lot 11 — recherche opérationnelle et gestion de stock
 - [ ] Lot 12 — planification et ordonnancement
 - [ ] Lot 13 — solveurs libres, simulation, pattern
 - [x] Lot 14 — fiabilité et exploitation

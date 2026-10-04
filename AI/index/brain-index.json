@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1072,
+  "count": 1082,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -87,6 +87,7 @@
       "Dify",
       "E2B",
       "Flowise",
+      "Goose",
       "Graphiti",
       "Harnais d'agent",
       "Haystack",
@@ -109,6 +110,7 @@
       "Mémoire des agents",
       "OpenAI Agents SDK",
       "OpenClaw",
+      "OpenCode",
       "OpenHands",
       "OpenMAIC",
       "OpenViking",
@@ -371,6 +373,7 @@
     ],
     "calibration": [
       "Calibration",
+      "De la prévision probabiliste à la quantité commandée",
       "Hallucinations des LLM",
       "Évaluation de modèles"
     ],
@@ -504,8 +507,10 @@
       "Cline",
       "Comparatif - Assistants de code IA",
       "Continue",
+      "Goose",
       "Graphify",
       "Maka",
+      "OpenCode",
       "Spec Kit",
       "ai-memory",
       "freebuff",
@@ -523,6 +528,7 @@
       "Comparatif - Assistants de code IA",
       "Continue",
       "LM Studio Bionic",
+      "OpenCode",
       "OpenHands",
       "Spec Kit",
       "freebuff",
@@ -550,7 +556,8 @@
       "Optimisation combinatoire",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Programmation linéaire en nombres entiers (MIP)",
-      "PuLP"
+      "PuLP",
+      "Quantité économique de commande et tailles de lot"
     ],
     "computer-vision": [
       "Anomalie visuelle par banque de mémoire",
@@ -1206,7 +1213,9 @@
     "dynamic-programming": [
       "Bellman equations",
       "Model-based RL",
-      "Optimisation combinatoire"
+      "Optimisation combinatoire",
+      "Politiques de réapprovisionnement (s,S) et (R,Q)",
+      "Quantité économique de commande et tailles de lot"
     ],
     "eda": [
       "Comparatif - Outils EDA - profiling",
@@ -1427,7 +1436,9 @@
     "forecasting": [
       "ARIMA SARIMA",
       "Chronos",
+      "Classification ABC-XYZ",
       "Comparatif - Forecasting",
+      "De la prévision probabiliste à la quantité commandée",
       "Exponential smoothing",
       "Forecasting framing",
       "Forecasting metrics",
@@ -1439,6 +1450,7 @@
       "Merlion",
       "Modèles de Markov cachés et filtre de Kalman",
       "Prophet",
+      "Stock de sécurité et taux de service",
       "Séries temporelles",
       "Time series feature engineering",
       "aeon",
@@ -1803,6 +1815,16 @@
     "interoperability": [
       "Apache Arrow"
     ],
+    "inventory": [
+      "Classification ABC-XYZ",
+      "De la prévision probabiliste à la quantité commandée",
+      "Indicateurs de stock (rotation, couverture, rupture)",
+      "Modèle du vendeur de journaux (newsvendor)",
+      "Politiques de réapprovisionnement (s,S) et (R,Q)",
+      "Quantité économique de commande et tailles de lot",
+      "Recherche opérationnelle",
+      "Stock de sécurité et taux de service"
+    ],
     "isometric": [
       "Comparatif - Diagrammes",
       "Diagrammes",
@@ -2025,6 +2047,7 @@
       "Open WebUI",
       "OpenAI Agents SDK",
       "OpenClaw",
+      "OpenCode",
       "OpenHands",
       "OpenMAIC",
       "OpenRouter",
@@ -2165,6 +2188,7 @@
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Gemma",
+      "Goose",
       "Graphiti",
       "LM Studio",
       "LM Studio Bionic",
@@ -2175,6 +2199,7 @@
       "Mistral",
       "Ollama",
       "Open WebUI",
+      "OpenCode",
       "Pattern - Agent sur LLM auto-hébergé",
       "Prometheus-Eval",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
@@ -2269,6 +2294,7 @@
     "markov-decision-process": [
       "Apprentissage par renforcement",
       "Markov Decision Process",
+      "Politiques de réapprovisionnement (s,S) et (R,Q)",
       "Reinforcement learning"
     ],
     "matrix-decomposition": [
@@ -2294,6 +2320,7 @@
       "Comparatif - Automatisation no-code",
       "Deep Agents",
       "GitDiagram",
+      "Goose",
       "Graphify",
       "Headroom",
       "Hermes Agent",
@@ -2617,6 +2644,11 @@
     "neural-rendering": [
       "Rendu neuronal 3D & estimation de profondeur"
     ],
+    "newsvendor": [
+      "De la prévision probabiliste à la quantité commandée",
+      "Modèle du vendeur de journaux (newsvendor)",
+      "Recherche opérationnelle"
+    ],
     "nlp": [
       "BM25",
       "Classification de texte",
@@ -2795,11 +2827,13 @@
       "Adam optimizer",
       "Comparatif - Solveurs d'optimisation",
       "Convexity",
+      "De la prévision probabiliste à la quantité commandée",
       "Gradient descent",
       "Learning rate schedules",
       "Loss landscape and saddle points",
       "Mathématiques",
       "Maximal Update Parametrization",
+      "Modèle du vendeur de journaux (newsvendor)",
       "Newton & quasi-Newton",
       "Normalisation et initialisation des réseaux",
       "Optimal transport",
@@ -2808,8 +2842,11 @@
       "Optimisation combinatoire",
       "Optimisation sous contrainte",
       "Politique de maintenance et coût",
+      "Politiques de réapprovisionnement (s,S) et (R,Q)",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP",
+      "Quantité économique de commande et tailles de lot",
+      "Recherche opérationnelle",
       "Théorie des jeux"
     ],
     "orchestration": [
@@ -3008,12 +3045,15 @@
     ],
     "probability": [
       "Chaînes de Markov",
+      "Indicateurs de stock (rotation, couverture, rupture)",
       "Inégalités de concentration",
       "Loi des grands nombres",
+      "Modèle du vendeur de journaux (newsvendor)",
       "Modèles graphiques probabilistes",
       "Mouvement brownien",
       "Probabilités",
       "Processus de Poisson",
+      "Stock de sécurité et taux de service",
       "Théorie des valeurs extrêmes",
       "Théorème central limite"
     ],
@@ -3730,6 +3770,7 @@
       "Méthodes causales",
       "Prédiction conforme",
       "Statistiques & inférence",
+      "Stock de sécurité et taux de service",
       "Tests & estimation",
       "Tests d'hypothèse",
       "Théorie des valeurs extrêmes",
@@ -3898,6 +3939,7 @@
     ],
     "terminal-ui": [
       "Comparatif - Frameworks CLI",
+      "OpenCode",
       "Rich",
       "llmfit",
       "pi"
@@ -4021,6 +4063,7 @@
       "CrewAI",
       "Deep Agents",
       "Gemma",
+      "Goose",
       "Harnais d'agent",
       "Hermes Agent",
       "LangChain",
@@ -11848,7 +11891,9 @@
         "[[Cline]]",
         "[[freebuff]]",
         "[[t3code]]",
-        "[[pi]]"
+        "[[pi]]",
+        "[[OpenCode]]",
+        "[[Goose]]"
       ],
       "complements": [
         "[[Spec Kit]]",
@@ -11978,6 +12023,37 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/Goose.md",
+      "nom": "Goose",
+      "alias": [
+        "goose",
+        "block/goose",
+        "aaif-goose/goose"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "application",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "mcp",
+        "tool-use",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[OpenCode]]",
+        "[[Aider]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Graphify.md",
       "nom": "Graphify",
       "alias": [
@@ -12029,6 +12105,38 @@
       "alternatives": [
         "[[OpenHands]]",
         "[[t3code]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/OpenCode.md",
+      "nom": "OpenCode",
+      "alias": [
+        "opencode",
+        "anomalyco/opencode",
+        "sst/opencode"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "local-llm",
+        "terminal-ui"
+      ],
+      "alternatives": [
+        "[[Aider]]",
+        "[[pi]]",
+        "[[Goose]]"
       ],
       "complements": [],
       "maturite": null
@@ -12178,7 +12286,9 @@
         "[[Aider]]",
         "[[Cline]]",
         "[[Continue]]",
-        "[[freebuff]]"
+        "[[freebuff]]",
+        "[[OpenCode]]",
+        "[[Goose]]"
       ],
       "complements": [],
       "maturite": null
@@ -28061,7 +28171,6 @@
       "alias": [
         "optimization",
         "minimisation",
-        "recherche opérationnelle",
         "programmation mathématique"
       ],
       "role": "hub",
@@ -28140,6 +28249,264 @@
       "alternatives": [],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Classification ABC-XYZ.md",
+      "nom": "Classification ABC-XYZ",
+      "alias": [
+        "Classification ABC/XYZ",
+        "ABC analysis",
+        "analyse ABC",
+        "classification ABC",
+        "analyse XYZ",
+        "matrice ABC-XYZ",
+        "Pareto 80/20 (stock)",
+        "loi de Pareto (stocks)"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "forecasting"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/De la prévision probabiliste à la quantité commandée.md",
+      "nom": "De la prévision probabiliste à la quantité commandée",
+      "alias": [
+        "prescriptive analytics (stock)",
+        "estimate-then-optimize",
+        "predict-then-optimize",
+        "decision-focused learning",
+        "big data newsvendor",
+        "prévision probabiliste et décision"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "newsvendor",
+        "forecasting",
+        "calibration",
+        "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Indicateurs de stock (rotation, couverture, rupture).md",
+      "nom": "Indicateurs de stock (rotation, couverture, rupture)",
+      "alias": [
+        "inventory turnover",
+        "rotation des stocks",
+        "days of supply",
+        "couverture de stock",
+        "stockout",
+        "taux de rupture",
+        "DIO",
+        "days inventory outstanding",
+        "inventory turns",
+        "stock turns",
+        "inventory record accuracy",
+        "précision de stock",
+        "DSI",
+        "days sales of inventory",
+        "stock dormant"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Modèle du vendeur de journaux (newsvendor).md",
+      "nom": "Modèle du vendeur de journaux (newsvendor)",
+      "alias": [
+        "newsvendor",
+        "newsboy",
+        "vendeur de journaux",
+        "critical fractile",
+        "critical ratio",
+        "ratio critique",
+        "fractile critique"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "newsvendor",
+        "optimization",
+        "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Politiques de réapprovisionnement (s,S) et (R,Q).md",
+      "nom": "Politiques de réapprovisionnement (s,S) et (R,Q)",
+      "alias": [
+        "(s,S)",
+        "(R,Q)",
+        "(s,Q)",
+        "(R,S)",
+        "(R,s,S)",
+        "(T,S)",
+        "base-stock",
+        "order-up-to",
+        "point de commande",
+        "reorder point",
+        "min-max",
+        "réapprovisionnement périodique",
+        "réapprovisionnement continu",
+        "position de stock",
+        "inventory position",
+        "revue continue",
+        "revue périodique",
+        "politique de stock"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "optimization",
+        "dynamic-programming",
+        "markov-decision-process"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Quantité économique de commande et tailles de lot.md",
+      "nom": "Quantité économique de commande et tailles de lot",
+      "alias": [
+        "EOQ",
+        "economic order quantity",
+        "formule de Wilson",
+        "formule de Harris",
+        "EPQ",
+        "lot sizing",
+        "tailles de lot",
+        "Wagner-Whitin",
+        "Silver-Meal",
+        "lot-for-lot"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "optimization",
+        "dynamic-programming",
+        "combinatorial-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Recherche opérationnelle.md",
+      "nom": "Recherche opérationnelle",
+      "alias": [
+        "operations research",
+        "gestion de stock",
+        "gestion des stocks",
+        "inventory management"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": "Décider combien commander et quand — le modèle du vendeur de journaux, le stock de sécurité, les politiques de réapprovisionnement et les indicateurs qui disent si ça marche.",
+      "tags": [
+        "inventory",
+        "newsvendor",
+        "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Stock de sécurité et taux de service.md",
+      "nom": "Stock de sécurité et taux de service",
+      "alias": [
+        "safety stock",
+        "service level",
+        "taux de service",
+        "fill rate",
+        "taux de remplissage",
+        "cycle service level",
+        "stock tampon"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "inventory",
+        "probability",
+        "forecasting",
+        "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Mathématiques/Théorie de l'apprentissage/Double descente et généralisation des grands modèles.md",

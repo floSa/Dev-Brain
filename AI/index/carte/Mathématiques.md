@@ -1,8 +1,8 @@
 # Mathématiques — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 29 pages, chacune avec son chemin et une ligne.
-> Couvre : Algèbre linéaire, Optimisation, Théorie de l'apprentissage, Théorie de l'information.
+> 36 pages, chacune avec son chemin et une ligne.
+> Couvre : Algèbre linéaire, Optimisation, Recherche opérationnelle, Théorie de l'apprentissage, Théorie de l'information.
 
 ## Algèbre linéaire
 - [[Eigendecomposition]] · notion · `Mathématiques/Algèbre linéaire/Eigendecomposition.md` — Trouver les directions $v$ qu'une matrice carrée $A$ se contente d'étirer sans tourner : $Av = \lambda v$.
@@ -23,6 +23,15 @@
 - [[Optimisation sous contrainte]] · notion · `Mathématiques/Optimisation/Optimisation sous contrainte.md` — Minimiser une fonction sous des contraintes d'égalité et d'inégalité : la solution n'est plus là où le gradient s'annule, mais là où il s'équilibre avec les…
 - [[Programmation linéaire en nombres entiers (MIP)]] · notion · `Mathématiques/Optimisation/Programmation linéaire en nombres entiers (MIP).md` — Optimise un objectif linéaire sous des contraintes linéaires, tout ou partie des variables étant contraintes à être entières.
 - [[Comparatif - Solveurs d'optimisation]] · comparatif · `Mathématiques/Optimisation/Comparatif - Solveurs d'optimisation.md` — la classe du problème — linéaire et entier, ou non linéaire — et sur le couplage au solveur, qu'on veut délégué ou piloté finement.
+
+## Recherche opérationnelle
+- [[Classification ABC-XYZ]] · notion · `Mathématiques/Recherche opérationnelle/Classification ABC-XYZ.md` — Segmenter un catalogue de références (SKU) en quelques classes pour ne pas gérer des milliers de références de la même façon.
+- [[De la prévision probabiliste à la quantité commandée]] · notion · `Mathématiques/Recherche opérationnelle/De la prévision probabiliste à la quantité commandée.md` — Une prévision ponctuelle répond à « combien en moyenne ?
+- [[Indicateurs de stock (rotation, couverture, rupture)]] · notion · `Mathématiques/Recherche opérationnelle/Indicateurs de stock (rotation, couverture, rupture).md` — Référentiel des indicateurs qui résument l'état d'un stock : rotation, couverture, rupture, valeur, stock dormant, précision des enregistrements.
+- [[Modèle du vendeur de journaux (newsvendor)]] · notion · `Mathématiques/Recherche opérationnelle/Modèle du vendeur de journaux (newsvendor).md` — Une quantité à commander une seule fois, avant de connaître la demande.
+- [[Politiques de réapprovisionnement (s,S) et (R,Q)]] · notion · `Mathématiques/Recherche opérationnelle/Politiques de réapprovisionnement (s,S) et (R,Q).md` — Une politique de réapprovisionnement est une règle de décision : à partir de l'état du stock, elle dit quand commander et combien.
+- [[Quantité économique de commande et tailles de lot]] · notion · `Mathématiques/Recherche opérationnelle/Quantité économique de commande et tailles de lot.md` — Question posée : combien commander (ou lancer en fabrication) à chaque fois, quand chaque lancement coûte un montant fixe et que tout stock détenu coûte aussi ?
+- [[Stock de sécurité et taux de service]] · notion · `Mathématiques/Recherche opérationnelle/Stock de sécurité et taux de service.md` — Le stock de sécurité (SS) est la quantité tenue au-dessus de la demande attendue pendant le délai de réapprovisionnement, pour absorber ce que la prévision n'a…
 
 ## Théorie de l'apprentissage
 - [[Double descente et généralisation des grands modèles]] · notion · `Mathématiques/Théorie de l'apprentissage/Double descente et généralisation des grands modèles.md` — Le récit classique dit : trop peu de capacité sous-apprend, trop de capacité sur-apprend, donc l'erreur de test dessine un U en fonction de la complexité du…

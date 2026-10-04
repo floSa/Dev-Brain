@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1072 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1082 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -310,9 +310,11 @@
 - **Cline** — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
 - **Continue** — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 - **freebuff** — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
+- **Goose** — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
 - **Graphify** — Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.
 - **i-have-adhd** — Skill/plugin MIT pour agents de code (Claude Code, Cursor, Codex, Gemini, Qwen, Kimi) imposant dix règles de sortie : action en premier, étapes numérotées, état rappelé à chaque tour, ni préambule ni récapitulatif.
 - **Maka** — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
+- **OpenCode** — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
 - **pi** — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 - **Spec Kit** — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
 - **swarm-forge** — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
@@ -919,6 +921,15 @@
 - **Optimisation combinatoire** — domaines : data-sci, ml-eng · alias : Combinatorial optimization, Sac à dos, Knapsack, Problème d'affectation, Assignment problem, Set cover, Couverture d'ensemble, Voyageur de commerce, TSP
 - **Optimisation sous contrainte** — domaines : data-sci, ml-eng · alias : Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne
 - **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
+
+### math/recherche-operationnelle
+- **Classification ABC-XYZ** — domaines : data-sci · alias : Classification ABC/XYZ, ABC analysis, analyse ABC, classification ABC, analyse XYZ, matrice ABC-XYZ, Pareto 80/20 (stock), loi de Pareto (stocks)
+- **De la prévision probabiliste à la quantité commandée** — domaines : data-sci, ml-eng · alias : prescriptive analytics (stock), estimate-then-optimize, predict-then-optimize, decision-focused learning, big data newsvendor, prévision probabiliste et décision
+- **Indicateurs de stock (rotation, couverture, rupture)** — domaines : data-sci · alias : inventory turnover, rotation des stocks, days of supply, couverture de stock, stockout, taux de rupture, DIO, days inventory outstanding, inventory turns, stock turns, inventory record accuracy, précision de stock, DSI, days sales of inventory, stock dormant
+- **Modèle du vendeur de journaux (newsvendor)** — domaines : data-sci · alias : newsvendor, newsboy, vendeur de journaux, critical fractile, critical ratio, ratio critique, fractile critique
+- **Politiques de réapprovisionnement (s,S) et (R,Q)** — domaines : data-sci, ml-eng · alias : (s,S), (R,Q), (s,Q), (R,S), (R,s,S), (T,S), base-stock, order-up-to, point de commande, reorder point, min-max, réapprovisionnement périodique, réapprovisionnement continu, position de stock, inventory position, revue continue, revue périodique, politique de stock
+- **Quantité économique de commande et tailles de lot** — domaines : data-sci · alias : EOQ, economic order quantity, formule de Wilson, formule de Harris, EPQ, lot sizing, tailles de lot, Wagner-Whitin, Silver-Meal, lot-for-lot
+- **Stock de sécurité et taux de service** — domaines : data-sci · alias : safety stock, service level, taux de service, fill rate, taux de remplissage, cycle service level, stock tampon
 
 ### math/theorie-apprentissage
 - **Double descente et généralisation des grands modèles** — domaines : data-sci, ml-eng · alias : Double descente, double descent, deep double descent, model-wise double descent, epoch-wise double descent, seuil d'interpolation, interpolation threshold, surparamétrisation, overparameterization, benign overfitting, surapprentissage bénin, interpolation, multiple descent
@@ -1572,6 +1583,7 @@
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Recherche d'hyperparamètres** — Régler un modèle en connaissant le coût d'un essai — grille, hasard, substitut bayésien, arrêt précoce, et les bibliothèques qui les exécutent.
+- **Recherche opérationnelle** — Décider combien commander et quand — le modèle du vendeur de journaux, le stock de sécurité, les politiques de réapprovisionnement et les indicateurs qui disent si ça marche.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.

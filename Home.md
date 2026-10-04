@@ -10,11 +10,11 @@ tags: [meta]
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 - [[Machine Learning]] — 123 briques, 18 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Détection d'anomalies]], [[Maintenance prédictive]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
-- [[LLM & IA générative]] — 97 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
+- [[LLM & IA générative]] — 99 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
 - [[Bases de données]] — 58 briques, 5 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 85 briques, 10 sous-domaines
-- [[Mathématiques]] — 1 brique, 4 sous-domaines
+- [[Mathématiques]] — 1 brique, 5 sous-domaines
 - [[Outils de développement]] — 24 briques, 2 sous-domaines
 - [[Signal & audio]] — 3 briques, 1 sous-domaine
 - [[Design & diagrammes]] — 8 briques, 1 sous-domaine

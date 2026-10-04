@@ -25,7 +25,7 @@ pitch: Faire tenir un entraînement à l'échelle — données, mémoire, temps 
 Axe métier **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis descendre via le graphe local.
 
 - [[Machine Learning]] — 160 page(s)
-- [[Mathématiques]] — 27 page(s)
+- [[Mathématiques]] — 29 page(s)
 - [[LLM & IA générative]] — 17 page(s)
 - [[Signal & audio]] — 6 page(s)
 - [[Outils de développement]] — 2 page(s)

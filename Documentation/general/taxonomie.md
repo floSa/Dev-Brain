@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 116 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 117 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (116 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (117 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -194,7 +194,7 @@ data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
 devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
-math/{optimisation, algebre-lineaire, information, theorie-apprentissage}
+math/{optimisation, recherche-operationnelle, algebre-lineaire, information, theorie-apprentissage}
 compute/{distribue, gpu, a-la-demande}
 storage/{objet}
 web/{backend, frontend, api, proxy}
@@ -248,6 +248,7 @@ WrenAI ne produit aucun SQL.
 | D-R9 | Après D2, une brique `ml/*` qui couvre **à elle seule** la préparation des données, l'entraînement, le déploiement **et** la gouvernance, sous une console et un modèle de droits uniques, est `ml/plateforme`. Si elle ne décrit qu'un **pipeline** et laisse l'infrastructure, le catalogue et les droits au dehors, elle est `ml/orchestration`. | Dataiku, Databricks, DataRobot → `ml/plateforme` ; ZenML, Metaflow, Flyte → `ml/orchestration` |
 | D-R10 | Une page dont le **sujet est l'écart au normal** (le score, le seuil, l'évaluation, le jeu de test, une méthode conçue pour l'anomalie) est `ml/anomalie`. Une page dont le sujet est autre (clustering, densité, réduction de dimension) et pour laquelle l'anomalie n'est qu'un **usage possible** reste `ml/non-supervise`. | Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD → `ml/anomalie` ; DBSCAN, hdbscan, Gaussian Mixture Models → `ml/non-supervise` |
 | D-R11 | Une page de `ml/*` dont le **but est une panne ou une décision de maintenance** (état de santé, durée de vie résiduelle, diagnostic de défaut, politique et coût) est `ml/maintenance`, même quand son entrée est une série temporelle. Une page qui traite une série sans viser une panne est `ml/series-temporelles` ; une page qui détecte l'anormal sur cette série est `ml/anomalie`. | Maintenance prédictive et RUL → `ml/maintenance` ; ARIMA SARIMA, Prophet → `ml/series-temporelles` ; Time series anomaly detection, STUMPY → `ml/anomalie` |
+| D-R12 | Une page de `math/*` dont le **sujet est une situation de décision d'un métier** (stock, plan de production, tournée, planning) et la politique qui la résout est `math/recherche-operationnelle`. Une page dont le sujet est la **méthode** de résolution, quel que soit le problème (descente de gradient, convexité, MIP, solveur), est `math/optimisation`. La prévision de la demande, qui n'est que l'entrée, reste `ml/series-temporelles`. | Modèle du vendeur de journaux, Stock de sécurité et taux de service → `math/recherche-operationnelle` ; Optimisation combinatoire, Programmation linéaire en nombres entiers (MIP), PuLP → `math/optimisation` ; Intermittent demand, Hierarchical forecasting → `ml/series-temporelles` |
 
 ### Frontières disputées, écrites une fois
 
@@ -393,6 +394,19 @@ valeurs disparues et ne sont pas reconduites.
   la descente de gradient — la mécanique est ici, l'architecture est là-bas) et de `stats/*`
   (modélisation statistique). **Élargi au lot 4** : la valeur ne portait que la recherche
   opérationnelle tant qu'elle n'avait qu'une brique.
+- `math/recherche-operationnelle` — **ouvert le 2026-10-04**, sur accord de floSa (chantier anomalie,
+  maintenance et stocks, lot 11). Le **problème de décision** d'un métier et la politique qui le
+  résout : combien commander, quand, avec quel stock de sécurité ; puis, aux lots suivants, planifier,
+  ordonnancer, tourner. **Le départage est la règle D-R12** : la question fermée est *la page décrit-elle
+  un problème que le métier reconnaît (un stock, un atelier), ou une façon de le résoudre ?* Le vendeur
+  de journaux se résout par un quantile, sans solveur : le ranger sous la méthode serait faux. À
+  l'inverse le MIP s'applique à un stock comme à un horaire, il ne porte aucun problème en propre — il
+  reste en `math/optimisation`, avec [[Optimisation combinatoire]], [[Optimisation sous contrainte]]
+  et [[PuLP]] ; aucune page existante n'est déplacée. Distinct de `ml/series-temporelles` : la
+  prévision de la demande est l'entrée de la décision, pas la décision. Libellé du dossier :
+  « Recherche opérationnelle ». Ce nom était un **alias** du hub [[Optimisation]] ; l'alias est retiré
+  pour qu'un lien nu ne désigne pas deux pages (aucun lien ne l'employait). Seul le nom de fichier
+  `Recherche opérationnelle.md` est créé, aucun autre fichier de ce nom n'existe.
 - `math/algebre-lineaire` — **ouvert au lot 4.** Le langage dans lequel données et modèles sont
   écrits : normes, produits matriciels, projections, décompositions (SVD, valeurs propres). Ce
   sont les objets et leurs propriétés, pas les méthodes qui s'en servent. Distinct de
