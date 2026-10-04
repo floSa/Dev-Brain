@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1082,
+  "count": 1088,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -554,10 +554,14 @@
       "Comparatif - Solveurs d'optimisation",
       "Optimisation",
       "Optimisation combinatoire",
+      "Ordonnancement d'atelier (job-shop, flow-shop)",
       "Pattern - Pipeline scraping → matching → optimisation",
+      "Plannings de personnel (rostering)",
       "Programmation linéaire en nombres entiers (MIP)",
+      "Programmation par contraintes",
       "PuLP",
-      "Quantité économique de commande et tailles de lot"
+      "Quantité économique de commande et tailles de lot",
+      "Tournées de véhicules (VRP)"
     ],
     "computer-vision": [
       "Anomalie visuelle par banque de mémoire",
@@ -643,6 +647,11 @@
     ],
     "constrained-optimization": [
       "Optimisation sous contrainte"
+    ],
+    "constraint-programming": [
+      "Ordonnancement d'atelier (job-shop, flow-shop)",
+      "Plannings de personnel (rostering)",
+      "Programmation par contraintes"
     ],
     "container": [
       "Beszel",
@@ -1450,6 +1459,7 @@
       "Merlion",
       "Modèles de Markov cachés et filtre de Kalman",
       "Prophet",
+      "S&OP et plan directeur de production",
       "Stock de sécurité et taux de service",
       "Séries temporelles",
       "Time series feature engineering",
@@ -1819,10 +1829,12 @@
       "Classification ABC-XYZ",
       "De la prévision probabiliste à la quantité commandée",
       "Indicateurs de stock (rotation, couverture, rupture)",
+      "MRP et calcul des besoins",
       "Modèle du vendeur de journaux (newsvendor)",
       "Politiques de réapprovisionnement (s,S) et (R,Q)",
       "Quantité économique de commande et tailles de lot",
       "Recherche opérationnelle",
+      "S&OP et plan directeur de production",
       "Stock de sécurité et taux de service"
     ],
     "isometric": [
@@ -1947,7 +1959,8 @@
       "Optimisation",
       "Pattern - Pipeline scraping → matching → optimisation",
       "Programmation linéaire en nombres entiers (MIP)",
-      "PuLP"
+      "PuLP",
+      "S&OP et plan directeur de production"
     ],
     "linter": [
       "Outils de développement",
@@ -2226,6 +2239,10 @@
       "Métriques, logs et traces",
       "Observabilité",
       "OpenTelemetry"
+    ],
+    "logistics": [
+      "Recherche opérationnelle",
+      "Tournées de véhicules (VRP)"
     ],
     "loss-landscape": [
       "Loss landscape and saddle points"
@@ -3507,6 +3524,14 @@
       "Airflow",
       "Comparatif - Orchestrateurs data"
     ],
+    "scheduling": [
+      "MRP et calcul des besoins",
+      "Ordonnancement d'atelier (job-shop, flow-shop)",
+      "Plannings de personnel (rostering)",
+      "Programmation par contraintes",
+      "Recherche opérationnelle",
+      "S&OP et plan directeur de production"
+    ],
     "schema-evolution": [
       "API REST, GraphQL et gRPC",
       "Apache Iceberg",
@@ -4272,6 +4297,10 @@
     "vector-norm": [
       "Algèbre linéaire",
       "Vector norms"
+    ],
+    "vehicle-routing": [
+      "Recherche opérationnelle",
+      "Tournées de véhicules (VRP)"
     ],
     "version-control": [
       "Aider",
@@ -28230,6 +28259,45 @@
       "maturite": null
     },
     {
+      "path": "Mathématiques/Optimisation/Programmation par contraintes.md",
+      "nom": "Programmation par contraintes",
+      "alias": [
+        "constraint programming",
+        "CP",
+        "CP-SAT",
+        "CSP",
+        "constraint satisfaction problem",
+        "problème de satisfaction de contraintes",
+        "contraintes globales",
+        "global constraints",
+        "alldifferent",
+        "propagation de contraintes",
+        "constraint propagation",
+        "cohérence d'arc",
+        "arc consistency",
+        "lazy clause generation",
+        "LCG",
+        "MiniZinc"
+      ],
+      "role": "notion",
+      "categorie": "math/optimisation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "constraint-programming",
+        "combinatorial-optimization",
+        "scheduling"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Mathématiques/Optimisation/PuLP.md",
       "nom": "PuLP",
       "alias": [
@@ -28347,6 +28415,44 @@
       "maturite": null
     },
     {
+      "path": "Mathématiques/Recherche opérationnelle/MRP et calcul des besoins.md",
+      "nom": "MRP et calcul des besoins",
+      "alias": [
+        "MRP",
+        "Material Requirements Planning",
+        "calcul des besoins",
+        "calcul des besoins nets",
+        "CBN",
+        "éclatement de nomenclature",
+        "BOM explosion",
+        "nomenclature",
+        "bill of materials",
+        "BOM",
+        "code bas niveau",
+        "low-level code",
+        "ordre planifié",
+        "planned order release",
+        "MRP II",
+        "nervosité du MRP"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "scheduling",
+        "inventory"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Mathématiques/Recherche opérationnelle/Modèle du vendeur de journaux (newsvendor).md",
       "nom": "Modèle du vendeur de journaux (newsvendor)",
       "alias": [
@@ -28371,6 +28477,82 @@
         "newsvendor",
         "optimization",
         "probability"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Ordonnancement d'atelier (job-shop, flow-shop).md",
+      "nom": "Ordonnancement d'atelier (job-shop, flow-shop)",
+      "alias": [
+        "job-shop",
+        "jobshop",
+        "job shop scheduling",
+        "flow-shop",
+        "flowshop",
+        "flow shop scheduling",
+        "open-shop",
+        "ordonnancement",
+        "ordonnancement d'atelier",
+        "makespan",
+        "durée totale",
+        "règle de Johnson",
+        "Johnson's rule",
+        "règles de priorité",
+        "dispatching rules",
+        "flexible job shop"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "scheduling",
+        "combinatorial-optimization",
+        "constraint-programming"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Plannings de personnel (rostering).md",
+      "nom": "Plannings de personnel (rostering)",
+      "alias": [
+        "rostering",
+        "nurse rostering",
+        "nurse scheduling",
+        "staff scheduling",
+        "personnel scheduling",
+        "planning de personnel",
+        "planning du personnel",
+        "planning d'équipes",
+        "roulement",
+        "shift scheduling",
+        "tour scheduling",
+        "days-off scheduling",
+        "planification des équipes",
+        "INRC"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "scheduling",
+        "constraint-programming",
+        "combinatorial-optimization"
       ],
       "alternatives": null,
       "complements": null,
@@ -28458,7 +28640,10 @@
         "operations research",
         "gestion de stock",
         "gestion des stocks",
-        "inventory management"
+        "inventory management",
+        "planification de la production",
+        "ordonnancement",
+        "supply chain planning"
       ],
       "role": "hub",
       "categorie": null,
@@ -28468,11 +28653,55 @@
         "data-sci",
         "ml-eng"
       ],
-      "pitch": "Décider combien commander et quand — le modèle du vendeur de journaux, le stock de sécurité, les politiques de réapprovisionnement et les indicateurs qui disent si ça marche.",
+      "pitch": "Décider combien commander et quand, puis planifier, ordonnancer et tourner — du vendeur de journaux au plan agrégé, au MRP, à l'atelier, aux plannings de personnel et aux tournées de véhicules.",
       "tags": [
         "inventory",
         "newsvendor",
+        "scheduling",
+        "vehicle-routing",
+        "logistics",
         "optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/S&OP et plan directeur de production.md",
+      "nom": "S&OP et plan directeur de production",
+      "alias": [
+        "S&OP",
+        "Sales and Operations Planning",
+        "Sales & Operations Planning",
+        "plan industriel et commercial",
+        "PIC",
+        "plan directeur de production",
+        "PDP",
+        "MPS",
+        "Master Production Schedule",
+        "aggregate planning",
+        "planification agrégée",
+        "planning agrégé",
+        "ATP",
+        "available to promise",
+        "disponible à la vente",
+        "time fences",
+        "horizon gelé"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "scheduling",
+        "forecasting",
+        "inventory",
+        "linear-programming"
       ],
       "alternatives": null,
       "complements": null,
@@ -28503,6 +28732,44 @@
         "probability",
         "forecasting",
         "statistical-inference"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/Tournées de véhicules (VRP).md",
+      "nom": "Tournées de véhicules (VRP)",
+      "alias": [
+        "VRP",
+        "vehicle routing problem",
+        "CVRP",
+        "capacitated vehicle routing problem",
+        "VRPTW",
+        "VRP with time windows",
+        "tournées",
+        "optimisation de tournées",
+        "problème de tournées",
+        "route optimization",
+        "savings",
+        "algorithme des économies",
+        "Clarke et Wright",
+        "voyageur de commerce",
+        "TSP"
+      ],
+      "role": "notion",
+      "categorie": "math/recherche-operationnelle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "vehicle-routing",
+        "logistics",
+        "combinatorial-optimization"
       ],
       "alternatives": null,
       "complements": null,

@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 987 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 993 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -62,10 +62,10 @@
   - Tabulaire — 7 briques · 15 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%204%20sur%204.md)
   - Vision — 9 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%204%20sur%204.md)
   - Évaluation de modèles — 2 briques · 9 notions → [détail](carte/Machine%20Learning%20-%204%20sur%204.md)
-- **Mathématiques** — 1 brique · 34 notions · 1 comparatif → [détail](carte/Math%C3%A9matiques.md)
+- **Mathématiques** — 1 brique · 40 notions · 1 comparatif → [détail](carte/Math%C3%A9matiques.md)
   - Algèbre linéaire — 6 notions
-  - Optimisation — 1 brique · 8 notions · 1 comparatif
-  - Recherche opérationnelle — 7 notions
+  - Optimisation — 1 brique · 9 notions · 1 comparatif
+  - Recherche opérationnelle — 12 notions
   - Théorie de l'apprentissage — 6 notions
   - Théorie de l'information — 7 notions
 - **Médias** — 4 briques → [détail](carte/M%C3%A9dias.md)

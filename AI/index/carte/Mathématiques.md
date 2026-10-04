@@ -1,7 +1,7 @@
 # Mathématiques — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 36 pages, chacune avec son chemin et une ligne.
+> 42 pages, chacune avec son chemin et une ligne.
 > Couvre : Algèbre linéaire, Optimisation, Recherche opérationnelle, Théorie de l'apprentissage, Théorie de l'information.
 
 ## Algèbre linéaire
@@ -22,6 +22,7 @@
 - [[Optimisation combinatoire]] · notion · `Mathématiques/Optimisation/Optimisation combinatoire.md` — Cherche la meilleure configuration dans un ensemble discret et fini (sous-ensembles, permutations, affectations) : l'espace des solutions est énorme mais…
 - [[Optimisation sous contrainte]] · notion · `Mathématiques/Optimisation/Optimisation sous contrainte.md` — Minimiser une fonction sous des contraintes d'égalité et d'inégalité : la solution n'est plus là où le gradient s'annule, mais là où il s'équilibre avec les…
 - [[Programmation linéaire en nombres entiers (MIP)]] · notion · `Mathématiques/Optimisation/Programmation linéaire en nombres entiers (MIP).md` — Optimise un objectif linéaire sous des contraintes linéaires, tout ou partie des variables étant contraintes à être entières.
+- [[Programmation par contraintes]] · notion · `Mathématiques/Optimisation/Programmation par contraintes.md` — On déclare le problème au lieu de décrire comment le résoudre : des variables, un domaine de valeurs pour chacune, et des contraintes qui lient les variables.
 - [[Comparatif - Solveurs d'optimisation]] · comparatif · `Mathématiques/Optimisation/Comparatif - Solveurs d'optimisation.md` — la classe du problème — linéaire et entier, ou non linéaire — et sur le couplage au solveur, qu'on veut délégué ou piloté finement.
 
 ## Recherche opérationnelle
@@ -29,9 +30,14 @@
 - [[De la prévision probabiliste à la quantité commandée]] · notion · `Mathématiques/Recherche opérationnelle/De la prévision probabiliste à la quantité commandée.md` — Une prévision ponctuelle répond à « combien en moyenne ?
 - [[Indicateurs de stock (rotation, couverture, rupture)]] · notion · `Mathématiques/Recherche opérationnelle/Indicateurs de stock (rotation, couverture, rupture).md` — Référentiel des indicateurs qui résument l'état d'un stock : rotation, couverture, rupture, valeur, stock dormant, précision des enregistrements.
 - [[Modèle du vendeur de journaux (newsvendor)]] · notion · `Mathématiques/Recherche opérationnelle/Modèle du vendeur de journaux (newsvendor).md` — Une quantité à commander une seule fois, avant de connaître la demande.
+- [[MRP et calcul des besoins]] · notion · `Mathématiques/Recherche opérationnelle/MRP et calcul des besoins.md` — Le MRP (material requirements planning) répond à une question de dépendance : étant donné ce qu'on veut livrer de produits finis, quels composants, en quelle…
+- [[Ordonnancement d'atelier (job-shop, flow-shop)]] · notion · `Mathématiques/Recherche opérationnelle/Ordonnancement d'atelier (job-shop, flow-shop).md` — Des tâches à placer sur des machines, dans le temps : décider, pour chaque tâche, sur quelle machine elle passe et à quel instant, sans qu'une machine fasse…
+- [[Plannings de personnel (rostering)]] · notion · `Mathématiques/Recherche opérationnelle/Plannings de personnel (rostering).md` — Décider qui travaille quand : pour chaque personne et chaque jour, un poste (matin, soir, nuit, repos), de sorte que chaque poste soit tenu par assez de monde…
 - [[Politiques de réapprovisionnement (s,S) et (R,Q)]] · notion · `Mathématiques/Recherche opérationnelle/Politiques de réapprovisionnement (s,S) et (R,Q).md` — Une politique de réapprovisionnement est une règle de décision : à partir de l'état du stock, elle dit quand commander et combien.
 - [[Quantité économique de commande et tailles de lot]] · notion · `Mathématiques/Recherche opérationnelle/Quantité économique de commande et tailles de lot.md` — Question posée : combien commander (ou lancer en fabrication) à chaque fois, quand chaque lancement coûte un montant fixe et que tout stock détenu coûte aussi ?
+- [[S&OP et plan directeur de production]] · notion · `Mathématiques/Recherche opérationnelle/S&OP et plan directeur de production.md` — Deux plans emboîtés.
 - [[Stock de sécurité et taux de service]] · notion · `Mathématiques/Recherche opérationnelle/Stock de sécurité et taux de service.md` — Le stock de sécurité (SS) est la quantité tenue au-dessus de la demande attendue pendant le délai de réapprovisionnement, pour absorber ce que la prévision n'a…
+- [[Tournées de véhicules (VRP)]] · notion · `Mathématiques/Recherche opérationnelle/Tournées de véhicules (VRP).md` — Une flotte de véhicules part d'un dépôt, des clients à servir, une demande par client, une capacité par véhicule : décider quels clients vont dans quelle…
 
 ## Théorie de l'apprentissage
 - [[Double descente et généralisation des grands modèles]] · notion · `Mathématiques/Théorie de l'apprentissage/Double descente et généralisation des grands modèles.md` — Le récit classique dit : trop peu de capacité sous-apprend, trop de capacité sur-apprend, donc l'erreur de test dessine un U en fonction de la complexité du…

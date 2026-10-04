@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1082 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1088 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -921,15 +921,21 @@
 - **Optimisation combinatoire** — domaines : data-sci, ml-eng · alias : Combinatorial optimization, Sac à dos, Knapsack, Problème d'affectation, Assignment problem, Set cover, Couverture d'ensemble, Voyageur de commerce, TSP
 - **Optimisation sous contrainte** — domaines : data-sci, ml-eng · alias : Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne
 - **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
+- **Programmation par contraintes** — domaines : data-sci, ml-eng · alias : constraint programming, CP, CP-SAT, CSP, constraint satisfaction problem, problème de satisfaction de contraintes, contraintes globales, global constraints, alldifferent, propagation de contraintes, constraint propagation, cohérence d'arc, arc consistency, lazy clause generation, LCG, MiniZinc
 
 ### math/recherche-operationnelle
 - **Classification ABC-XYZ** — domaines : data-sci · alias : Classification ABC/XYZ, ABC analysis, analyse ABC, classification ABC, analyse XYZ, matrice ABC-XYZ, Pareto 80/20 (stock), loi de Pareto (stocks)
 - **De la prévision probabiliste à la quantité commandée** — domaines : data-sci, ml-eng · alias : prescriptive analytics (stock), estimate-then-optimize, predict-then-optimize, decision-focused learning, big data newsvendor, prévision probabiliste et décision
 - **Indicateurs de stock (rotation, couverture, rupture)** — domaines : data-sci · alias : inventory turnover, rotation des stocks, days of supply, couverture de stock, stockout, taux de rupture, DIO, days inventory outstanding, inventory turns, stock turns, inventory record accuracy, précision de stock, DSI, days sales of inventory, stock dormant
 - **Modèle du vendeur de journaux (newsvendor)** — domaines : data-sci · alias : newsvendor, newsboy, vendeur de journaux, critical fractile, critical ratio, ratio critique, fractile critique
+- **MRP et calcul des besoins** — domaines : data-sci, ml-eng · alias : MRP, Material Requirements Planning, calcul des besoins, calcul des besoins nets, CBN, éclatement de nomenclature, BOM explosion, nomenclature, bill of materials, BOM, code bas niveau, low-level code, ordre planifié, planned order release, MRP II, nervosité du MRP
+- **Ordonnancement d'atelier (job-shop, flow-shop)** — domaines : data-sci, ml-eng · alias : job-shop, jobshop, job shop scheduling, flow-shop, flowshop, flow shop scheduling, open-shop, ordonnancement, ordonnancement d'atelier, makespan, durée totale, règle de Johnson, Johnson's rule, règles de priorité, dispatching rules, flexible job shop
+- **Plannings de personnel (rostering)** — domaines : data-sci, ml-eng · alias : rostering, nurse rostering, nurse scheduling, staff scheduling, personnel scheduling, planning de personnel, planning du personnel, planning d'équipes, roulement, shift scheduling, tour scheduling, days-off scheduling, planification des équipes, INRC
 - **Politiques de réapprovisionnement (s,S) et (R,Q)** — domaines : data-sci, ml-eng · alias : (s,S), (R,Q), (s,Q), (R,S), (R,s,S), (T,S), base-stock, order-up-to, point de commande, reorder point, min-max, réapprovisionnement périodique, réapprovisionnement continu, position de stock, inventory position, revue continue, revue périodique, politique de stock
 - **Quantité économique de commande et tailles de lot** — domaines : data-sci · alias : EOQ, economic order quantity, formule de Wilson, formule de Harris, EPQ, lot sizing, tailles de lot, Wagner-Whitin, Silver-Meal, lot-for-lot
+- **S&OP et plan directeur de production** — domaines : data-sci, ml-eng · alias : S&OP, Sales and Operations Planning, Sales & Operations Planning, plan industriel et commercial, PIC, plan directeur de production, PDP, MPS, Master Production Schedule, aggregate planning, planification agrégée, planning agrégé, ATP, available to promise, disponible à la vente, time fences, horizon gelé
 - **Stock de sécurité et taux de service** — domaines : data-sci · alias : safety stock, service level, taux de service, fill rate, taux de remplissage, cycle service level, stock tampon
+- **Tournées de véhicules (VRP)** — domaines : data-sci, ml-eng · alias : VRP, vehicle routing problem, CVRP, capacitated vehicle routing problem, VRPTW, VRP with time windows, tournées, optimisation de tournées, problème de tournées, route optimization, savings, algorithme des économies, Clarke et Wright, voyageur de commerce, TSP
 
 ### math/theorie-apprentissage
 - **Double descente et généralisation des grands modèles** — domaines : data-sci, ml-eng · alias : Double descente, double descent, deep double descent, model-wise double descent, epoch-wise double descent, seuil d'interpolation, interpolation threshold, surparamétrisation, overparameterization, benign overfitting, surapprentissage bénin, interpolation, multiple descent
@@ -1583,7 +1589,7 @@
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Recherche d'hyperparamètres** — Régler un modèle en connaissant le coût d'un essai — grille, hasard, substitut bayésien, arrêt précoce, et les bibliothèques qui les exécutent.
-- **Recherche opérationnelle** — Décider combien commander et quand — le modèle du vendeur de journaux, le stock de sécurité, les politiques de réapprovisionnement et les indicateurs qui disent si ça marche.
+- **Recherche opérationnelle** — Décider combien commander et quand, puis planifier, ordonnancer et tourner — du vendeur de journaux au plan agrégé, au MRP, à l'atelier, aux plannings de personnel et aux tournées de véhicules.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
