@@ -13,7 +13,7 @@ tags: [optimization, gradient-descent, convexity, second-order, learning-rate, l
 
 ## Ce qu'il faut comprendre
 
-- **Le dossier se coupe en deux, et la ligne de coupe est le type de variable.** Le **continu** — [[Gradient descent]], [[Convexity]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Learning rate schedules]] — est ce qui fait apprendre un modèle ; on l'écrit dans le code d'entraînement. Le **discret** — [[Optimisation sous contrainte]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]] — est la boîte à outils de la recherche opérationnelle ; on le modélise et on le confie à un solveur, et c'est là que [[PuLP]] intervient. Le **problème** d'un métier (un stock à dimensionner) est dans [[Recherche opérationnelle]] : ici la méthode, là-bas la décision. Les deux moitiés partagent le mot « optimiser » et presque rien d'autre.
+- **Le dossier se coupe en deux, et la ligne de coupe est le type de variable.** Le **continu** — [[Gradient descent]], [[Convexity]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Learning rate schedules]] — est ce qui fait apprendre un modèle ; on l'écrit dans le code d'entraînement. Le **discret** — [[Optimisation sous contrainte]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]] — est la boîte à outils de la recherche opérationnelle ; on le modélise et on le confie à un solveur, et c'est là que [[PuLP]] intervient. Le **problème** d'un métier (un stock à dimensionner, un atelier à ordonnancer, une tournée à construire) est dans [[Recherche opérationnelle]] : ici la méthode, là-bas la décision. Les deux moitiés partagent le mot « optimiser » et presque rien d'autre.
 - **[[Convexity]] est la question à poser en premier**, parce qu'elle décide de la confiance à accorder au résultat : en convexe, tout minimum local est global et une descente converge sans se faire piéger. OLS, Ridge, Lasso, régression logistique et SVM sont convexes ; un réseau de neurones ne l'est pas.
 - **En non convexe, l'obstacle n'est presque jamais le minimum local.** [[Loss landscape and saddle points]] le dit : en grande dimension ce sont les **points-selles** et les zones plates qui ralentissent, pas des cuvettes parasites. C'est ce qui explique pourquoi l'entraînement profond marche malgré l'absence de garantie.
 - **Le premier ordre gagne par le coût, pas par la qualité.** [[Newton & quasi-Newton]] converge en beaucoup moins d'itérations en exploitant la courbure, mais chaque itération paie la hessienne — inabordable au-delà de quelques milliers de paramètres. [[Gradient descent]] ne demande que le gradient, que la différentiation automatique fournit gratuitement : c'est pour ça qu'il est partout.
@@ -27,9 +27,10 @@ tags: [optimization, gradient-descent, convexity, second-order, learning-rate, l
 - Peu de paramètres, un optimum précis exigé → [[Newton & quasi-Newton]].
 - Des contraintes d'égalité ou d'inégalité à respecter → [[Optimisation sous contrainte]] (Lagrangien, KKT).
 - Des décisions discrètes — affecter, planifier, découper → [[Optimisation combinatoire]], puis [[Programmation linéaire en nombres entiers (MIP)]] pour la formulation.
+- Un problème riche en règles (ordre, exclusion, cardinalité, ressources) plutôt que linéaire → [[Programmation par contraintes]] : on déclare variables, domaines et contraintes, le solveur propage et cherche.
 - Résoudre un LP ou un MIP en Python → [[PuLP]], qui délègue à CBC, HiGHS, Gurobi ou CPLEX.
 - Une optimisation continue non linéaire dans du code numérique → le module `optimize` de SciPy, pas ce dossier.
-- Dimensionner un stock, fixer une quantité à commander → [[Recherche opérationnelle]], pas ce dossier.
+- Dimensionner un stock, fixer une quantité à commander, planifier la production, ordonnancer un atelier, construire un planning ou des tournées → [[Recherche opérationnelle]], pas ce dossier.
 - Chercher des hyperparamètres → [[Optimisation d'hyperparamètres]], au domaine [[Machine Learning]].
 
 <!-- AUTO:START -->
