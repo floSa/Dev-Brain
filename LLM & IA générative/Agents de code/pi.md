@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, Android (Termux)"
 langage: TypeScript
-alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[freebuff]]"]
+alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[freebuff]]", "[[OpenCode]]", "[[Goose]]"]
 complements: []
 tags: [code-assistant, agents, local-llm, terminal-ui, tool-use]
 url_docs: https://github.com/earendil-works/pi/tree/main/packages/coding-agent
@@ -63,6 +63,8 @@ déclare dans `~/.pi/agent/models.json`.
 - [[Cline]] — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
 - [[Continue]] — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
 - [[freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
+- [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
+- [[Goose]] — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
 
 ## Ressources
 
