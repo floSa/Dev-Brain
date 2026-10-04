@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1065 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1073 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -917,6 +917,15 @@
 - **Optimisation sous contrainte** — domaines : data-sci, ml-eng · alias : Constrained optimization, Lagrangien, Multiplicateurs de Lagrange, Lagrange multipliers, KKT, Karush-Kuhn-Tucker, Conditions KKT, Dualité lagrangienne
 - **Programmation linéaire en nombres entiers (MIP)** — domaines : data-sci, ml-eng · alias : MIP, MILP, Mixed-Integer Programming, ILP, Integer programming, Programmation linéaire, LP, Linear programming, Branch and bound, Relaxation LP
 
+### math/recherche-operationnelle
+- **Classification ABC-XYZ** — domaines : data-sci · alias : Classification ABC/XYZ, ABC analysis, analyse ABC, classification ABC, analyse XYZ, matrice ABC-XYZ, Pareto 80/20 (stock), loi de Pareto (stocks)
+- **De la prévision probabiliste à la quantité commandée** — domaines : data-sci, ml-eng · alias : prescriptive analytics (stock), estimate-then-optimize, predict-then-optimize, decision-focused learning, big data newsvendor, prévision probabiliste et décision
+- **Indicateurs de stock (rotation, couverture, rupture)** — domaines : data-sci · alias : inventory turnover, rotation des stocks, days of supply, couverture de stock, stockout, taux de rupture, DIO, days inventory outstanding, inventory turns, stock turns, inventory record accuracy, précision de stock, DSI, days sales of inventory, stock dormant
+- **Modèle du vendeur de journaux (newsvendor)** — domaines : data-sci · alias : newsvendor, newsboy, vendeur de journaux, critical fractile, critical ratio, ratio critique, fractile critique
+- **Politiques de réapprovisionnement (s,S) et (R,Q)** — domaines : data-sci, ml-eng · alias : (s,S), (R,Q), (s,Q), (R,S), (R,s,S), (T,S), base-stock, order-up-to, point de commande, reorder point, min-max, réapprovisionnement périodique, réapprovisionnement continu, position de stock, inventory position, revue continue, revue périodique, politique de stock
+- **Quantité économique de commande et tailles de lot** — domaines : data-sci · alias : EOQ, economic order quantity, formule de Wilson, formule de Harris, EPQ, lot sizing, tailles de lot, Wagner-Whitin, Silver-Meal, lot-for-lot
+- **Stock de sécurité et taux de service** — domaines : data-sci · alias : safety stock, service level, taux de service, fill rate, taux de remplissage, cycle service level, stock tampon
+
 ### math/theorie-apprentissage
 - **Double descente et généralisation des grands modèles** — domaines : data-sci, ml-eng · alias : Double descente, double descent, deep double descent, model-wise double descent, epoch-wise double descent, seuil d'interpolation, interpolation threshold, surparamétrisation, overparameterization, benign overfitting, surapprentissage bénin, interpolation, multiple descent
 - **Generalization bounds** — domaines : data-sci, ml-eng · alias : Bornes de généralisation, borne de généralisation, generalization bound, erreur de généralisation, generalization gap
@@ -1565,6 +1574,7 @@
 - **RAG & retrieval** — Ancrer une réponse sur des documents récupérés à la volée — et rattraper le retrieval quand la version naïve plafonne.
 - **Recherche** — Indexer des documents pour la recherche plein texte, lexicale ou hybride, avec un classement par pertinence.
 - **Recherche d'hyperparamètres** — Régler un modèle en connaissant le coût d'un essai — grille, hasard, substitut bayésien, arrêt précoce, et les bibliothèques qui les exécutent.
+- **Recherche opérationnelle** — Décider combien commander et quand — le modèle du vendeur de journaux, le stock de sécurité, les politiques de réapprovisionnement et les indicateurs qui disent si ça marche.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
 - **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
