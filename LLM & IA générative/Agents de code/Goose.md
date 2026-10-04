@@ -42,8 +42,7 @@ Agent qui s'exécute sur le poste et ne se limite pas au code : recherche, réda
 
 - Installation — application desktop téléchargée depuis la page d'installation, ou CLI : `curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash`
 - Point d'entrée — l'application, ou `goose configure` pour déclarer fournisseur et modèle en CLI
-- Prérequis — un modèle qui sait appeler des outils : API, abonnement existant (Claude, ChatGPT, Gemini via ACP) ou serveur local
-- Modèle local — Ollama, LM Studio, Docker avec un endpoint compatible OpenAI ; fonctionnement hors ligne possible
+- Prérequis — un modèle qui sait appeler des outils : API, abonnement existant (Claude, ChatGPT, Gemini via ACP) ou serveur local (Ollama, LM Studio, Docker avec un endpoint compatible OpenAI ; fonctionnement hors ligne possible)
 - Exécution — sur le poste ; v1.53.0 du 2026-10-02
 - Coût — gratuit (Apache-2.0) ; la dépense est celle du modèle
 

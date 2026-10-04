@@ -52,8 +52,7 @@ Le terminal d'`anomalyco` n'est donc pas le Crush de Charm, malgré le nom : les
 
 - Installation — script `curl -fsSL https://opencode.ai/install | bash`, ou `npm i -g opencode-ai`, Homebrew, Scoop, Chocolatey, pacman, mise, Nix ; application desktop en bêta (`.dmg`, `.exe`, `.deb`, `.rpm`, `.AppImage`)
 - Point d'entrée — commande `opencode` dans le dépôt ; `/connect` pour enregistrer un fournisseur, `/models` pour choisir le modèle
-- Prérequis — un accès à un modèle : abonnement, clé d'API ou serveur local
-- Modèle local — déclarer un fournisseur `@ai-sdk/openai-compatible` avec son `baseURL` dans `opencode.json`
+- Prérequis — un accès à un modèle : abonnement, clé d'API ou serveur local, déclaré comme fournisseur `@ai-sdk/openai-compatible` avec son `baseURL` dans `opencode.json`
 - Exécution — sur le poste, en terminal ; l'éditeur propose en plus ses offres hébergées (OpenCode Zen et Go, modèles sélectionnés), facultatives
 - Coût — le logiciel est gratuit (MIT) ; la dépense est celle du modèle, nulle en local
 
