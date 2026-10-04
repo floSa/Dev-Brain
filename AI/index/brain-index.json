@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1073,
+  "count": 1075,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -87,6 +87,7 @@
       "Dify",
       "E2B",
       "Flowise",
+      "Goose",
       "Graphiti",
       "Harnais d'agent",
       "Haystack",
@@ -109,6 +110,7 @@
       "Mémoire des agents",
       "OpenAI Agents SDK",
       "OpenClaw",
+      "OpenCode",
       "OpenHands",
       "OpenMAIC",
       "OpenViking",
@@ -500,8 +502,10 @@
       "Cline",
       "Comparatif - Assistants de code IA",
       "Continue",
+      "Goose",
       "Graphify",
       "Maka",
+      "OpenCode",
       "Spec Kit",
       "ai-memory",
       "freebuff",
@@ -519,6 +523,7 @@
       "Comparatif - Assistants de code IA",
       "Continue",
       "LM Studio Bionic",
+      "OpenCode",
       "OpenHands",
       "Spec Kit",
       "freebuff",
@@ -2028,6 +2033,7 @@
       "Open WebUI",
       "OpenAI Agents SDK",
       "OpenClaw",
+      "OpenCode",
       "OpenHands",
       "OpenMAIC",
       "OpenRouter",
@@ -2168,6 +2174,7 @@
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Gemma",
+      "Goose",
       "Graphiti",
       "LM Studio",
       "LM Studio Bionic",
@@ -2178,6 +2185,7 @@
       "Mistral",
       "Ollama",
       "Open WebUI",
+      "OpenCode",
       "Pattern - Agent sur LLM auto-hébergé",
       "Prometheus-Eval",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
@@ -2297,6 +2305,7 @@
       "Comparatif - Automatisation no-code",
       "Deep Agents",
       "GitDiagram",
+      "Goose",
       "Graphify",
       "Headroom",
       "Hermes Agent",
@@ -3905,6 +3914,7 @@
     ],
     "terminal-ui": [
       "Comparatif - Frameworks CLI",
+      "OpenCode",
       "Rich",
       "llmfit",
       "pi"
@@ -4024,6 +4034,7 @@
       "CrewAI",
       "Deep Agents",
       "Gemma",
+      "Goose",
       "Harnais d'agent",
       "Hermes Agent",
       "LangChain",
@@ -11786,7 +11797,9 @@
         "[[Cline]]",
         "[[freebuff]]",
         "[[t3code]]",
-        "[[pi]]"
+        "[[pi]]",
+        "[[OpenCode]]",
+        "[[Goose]]"
       ],
       "complements": [
         "[[Spec Kit]]",
@@ -11916,6 +11929,37 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/Goose.md",
+      "nom": "Goose",
+      "alias": [
+        "goose",
+        "block/goose",
+        "aaif-goose/goose"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "application",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.",
+      "tags": [
+        "code-assistant",
+        "agents",
+        "mcp",
+        "tool-use",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[OpenCode]]",
+        "[[Aider]]",
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Graphify.md",
       "nom": "Graphify",
       "alias": [
@@ -11967,6 +12011,38 @@
       "alternatives": [
         "[[OpenHands]]",
         "[[t3code]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/OpenCode.md",
+      "nom": "OpenCode",
+      "alias": [
+        "opencode",
+        "anomalyco/opencode",
+        "sst/opencode"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "local-llm",
+        "terminal-ui"
+      ],
+      "alternatives": [
+        "[[Aider]]",
+        "[[pi]]",
+        "[[Goose]]"
       ],
       "complements": [],
       "maturite": null
@@ -12116,7 +12192,9 @@
         "[[Aider]]",
         "[[Cline]]",
         "[[Continue]]",
-        "[[freebuff]]"
+        "[[freebuff]]",
+        "[[OpenCode]]",
+        "[[Goose]]"
       ],
       "complements": [],
       "maturite": null

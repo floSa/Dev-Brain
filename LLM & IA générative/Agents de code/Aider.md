@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Python
-alternatives: ["[[Continue]]", "[[Cline]]", "[[freebuff]]", "[[t3code]]", "[[pi]]"]
+alternatives: ["[[Continue]]", "[[Cline]]", "[[freebuff]]", "[[t3code]]", "[[pi]]", "[[OpenCode]]", "[[Goose]]"]
 complements: ["[[Spec Kit]]", "[[BMAD]]"]
 tags: [code-assistant, code-generation, llm, version-control]
 url_docs: https://aider.chat/docs/
@@ -60,6 +60,8 @@ traçabilité et sa condition d'entrée.
 - [[freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 - [[t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
+- [[Goose]] — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
 
 ### Compléments
 
