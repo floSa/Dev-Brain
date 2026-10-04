@@ -1,7 +1,7 @@
 ---
 role: hub
 nom: Optimisation
-alias: [optimization, minimisation, recherche opérationnelle, programmation mathématique]
+alias: [optimization, minimisation, programmation mathématique]
 pitch: Minimiser une fonction — le mécanisme qui fait apprendre un modèle, les garanties qu'on a ou non, et la branche discrète qu'on délègue à un solveur.
 domaines: [data-sci, ml-eng, ai-eng]
 tags: [optimization, gradient-descent, convexity, second-order, learning-rate, linear-programming, combinatorial-optimization]
