@@ -1,7 +1,7 @@
 ---
 nom: tags
 created: 2026-06-04
-modified: 2026-10-03
+modified: 2026-10-05
 tags: [meta, gouvernance, vocabulaire]
 ---
 
@@ -268,6 +268,10 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `constrained-optimization` | Optimisation sous contrainte — minimisation sous égalités/inégalités (multiplicateurs de Lagrange, conditions KKT, dualité) |
 | `inventory` | Gestion de stock — combien commander et quand : stock de sécurité, taux de service, politiques de réapprovisionnement, rotation ; distinct de `forecasting` (prévoir la demande, l'entrée) et de `optimization` (la méthode de résolution) |
 | `newsvendor` | Modèle du vendeur de journaux — une seule commande avant une demande incertaine ; quantile critique entre coût de rupture et coût de surstock |
+| `scheduling` | Ordonnancement et planification — affecter des tâches ou des personnes à des ressources dans le temps (atelier, planning de personnel, plan de production) ; distinct de `orchestration` (exécuter des jobs logiciels) |
+| `constraint-programming` | Programmation par contraintes — déclarer variables, domaines et contraintes, puis laisser un solveur propager et chercher (contraintes globales, CP-SAT) ; distinct de `linear-programming` |
+| `vehicle-routing` | Tournées de véhicules — construire des routes de coût minimal pour une flotte qui sert des clients (VRP et variantes : capacités, fenêtres de temps) |
+| `logistics` | Logistique physique — transport, distribution, approvisionnement de marchandises ; distinct de `inventory` (le stock) et de `supply-chain` (la chaîne d'approvisionnement logicielle, pas la marchandise) |
 | `information-theory` | Théorie de l'information — quantifier incertitude, information et écart entre distributions |
 | `entropy` | Entropie — mesure d'incertitude d'une distribution (Shannon) |
 | `cross-entropy` | Entropie croisée — coût d'encoder une loi avec une autre (perte de classification, log-loss) |
