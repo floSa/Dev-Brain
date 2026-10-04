@@ -36,5 +36,5 @@ tags: [linear-algebra, optimization, information-theory, learning-theory, linear
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Algèbre linéaire]] · [[Optimisation]] · [[Théorie de l'apprentissage]] · [[Théorie de l'information]]
+- [[Algèbre linéaire]] · [[Optimisation]] · [[Recherche opérationnelle]] · [[Théorie de l'apprentissage]] · [[Théorie de l'information]]
 <!-- AUTO:END -->

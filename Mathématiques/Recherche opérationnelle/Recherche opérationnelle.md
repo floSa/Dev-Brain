@@ -32,4 +32,12 @@ tags: [inventory, newsvendor, optimization]
 - Savoir si la politique en place marche → [[Indicateurs de stock (rotation, couverture, rupture)]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Classification ABC-XYZ]] — domaines : data-sci
+- [[De la prévision probabiliste à la quantité commandée]] — domaines : data-sci, ml-eng
+- [[Indicateurs de stock (rotation, couverture, rupture)]] — domaines : data-sci
+- [[Modèle du vendeur de journaux (newsvendor)]] — domaines : data-sci
+- [[Politiques de réapprovisionnement (s,S) et (R,Q)]] — domaines : data-sci, ml-eng
+- [[Quantité économique de commande et tailles de lot]] — domaines : data-sci
+- [[Stock de sécurité et taux de service]] — domaines : data-sci
 <!-- AUTO:END -->
