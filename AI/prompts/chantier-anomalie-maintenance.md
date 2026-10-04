@@ -7,7 +7,7 @@ tags: [meta, backlog]
 
 # Chantier — anomalies, maintenance prédictive, agents de code, stocks et plannings
 
-Plan unique du chantier, quatorze lots numérotés de 1 à 14. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, seize lots numérotés de 1 à 16. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -54,8 +54,9 @@ on-prem industriel, ESN.
 | 5 | Lots 7, 8 (en parallèle) | Lots 1 à 6 clos |
 | 6 | Lot 9 (seul) | Lots 1 à 8 clos |
 | 7 | Lots 10, 11, 14 (en parallèle) | Lot 9 clos et poussé |
-| 8 | Lot 12 | Lot 11 |
+| 8 | Lots 12, 16 (en parallèle) | Lot 11 clos (pour le 12) ; lot 10 clos (pour le 16) |
 | 9 | Lot 13 | Lot 12 |
+| 10 | Lot 15 | Lots 12, 13, 16 clos |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -221,7 +222,7 @@ Domaine `llm/agent-de-code`. Applique la règle 15 : **licence libre seulement**
 
 ## Lot 12 — Planification et ordonnancement (vague 8, après le lot 11)
 
-Sous-domaine ouvert par le lot 11. Six notions : **S&OP et plan directeur de production**, **MRP et calcul des besoins**, **Ordonnancement d'atelier (job-shop, flow-shop)**, **Plannings de personnel (rostering)**, **Tournées de véhicules (VRP)**, **Programmation par contraintes**. Cite Programmation linéaire en nombres entiers (MIP), Optimisation combinatoire, Optimisation sous contrainte, les notions du lot 11. Tags manquants : `scheduling`, `constraint-programming`, `vehicle-routing`, s'ils n'existent pas.
+Sous-domaine ouvert par le lot 11. Six notions : **S&OP et plan directeur de production**, **MRP et calcul des besoins**, **Ordonnancement d'atelier (job-shop, flow-shop)**, **Plannings de personnel (rostering)**, **Tournées de véhicules (VRP)**, **Programmation par contraintes**. Cite Programmation linéaire en nombres entiers (MIP), Optimisation combinatoire, Optimisation sous contrainte, les notions du lot 11. Tags manquants : `scheduling`, `constraint-programming`, `vehicle-routing`, `logistics`, s'ils n'existent pas. N'utilise pas `supply-chain`, qui désigne la chaîne d'approvisionnement logicielle.
 
 ## Lot 13 — Solveurs libres, simulation et pattern (vague 9, après le lot 12)
 
@@ -237,6 +238,23 @@ Domaine `ml/maintenance` quand le sujet est un modèle ; dérive sinon.
 - Notions : **Indicateurs de fiabilité (MTBF, MTTR, disponibilité)**, **OEE et rendement global**, **Cause racine d'une anomalie**, **Expliquer une anomalie (contribution des capteurs)**, **Santé de batterie (SOH et RUL)**, **Anomalie acoustique**.
 - Briques candidates, libres seulement, à vérifier : une **GMAO / CMMS libre** (Atlas CMMS, openMAINT, par exemple ; Odoo est open-core : pas de page), **PyBaMM** pour les batteries. Cherche d'autres outils libres actifs ; une candidate non libre n'a pas de page.
 - Cite les notions existantes : Maintenance prédictive et RUL, Surveillance conditionnelle et modes de défaillance, Politique de maintenance et coût, Types d'anomalies et régimes de supervision, Explicabilité des modèles, SHAP.
+
+## Lot 15 — Câblage final des lots 10 à 14 (vague 10, après les lots 12, 13 et 16)
+
+**Accord de floSa** : liens seulement (aucun texte réécrit), un commit par groupe de 5 fichiers au plus regroupés par sous-dossier. Lis d'abord le frontmatter de chaque page : ne lien que si le renvoi est naturel, deux liens au plus par page.
+
+1. Depuis les notions et briques existantes vers les notions du lot 14 : Indicateurs de fiabilité (MTBF, MTTR, disponibilité), OEE et rendement global, Santé de batterie (SOH et RUL), Anomalie acoustique, Expliquer une anomalie (contribution des capteurs), Cause racine d'une anomalie. Pages candidates : Politique de maintenance et coût, RUL par analyse de survie, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Jumeau numérique et modèles hybrides, Indicateurs de santé, Analyse vibratoire, Contrôle statistique de procédé (SPC), Découverte causale, Surveillance conditionnelle et modes de défaillance, Anomalies multivariées par apprentissage profond, Jeux de données d'anomalies.
+2. Depuis les notions existantes vers les notions de stock (lot 11) et de planification (lot 12) : Intermittent demand, Hierarchical forecasting, Forecasting framing, Prédiction conforme, Optimisation combinatoire, Programmation linéaire en nombres entiers (MIP), Optimisation sous contrainte, et la brique PuLP. Vers les briques du lot 13 : le hub Optimisation et la brique PuLP.
+3. Le retrait de l'alias « recherche opérationnelle » du hub Optimisation (fait par le lot 11) est confirmé par floSa.
+4. **À proposer seulement, ne pas faire** : Chronos et « Foundation models pour séries temporelles » parlent d'intervalles « sans calibration » alors que les docs lues ne garantissent aucune couverture ; « Forecasting metrics » pourrait dire que la perte pinball vaut le coût du vendeur de journaux à un facteur près ; ajouts à « Jeux de données PHM » (DCASE, MIMII DUE, jeux de batterie Oxford, CALCE, MIT-Stanford-Toyota) ; pAUC et moyenne harmonique de DCASE dans « Évaluer une détection d'anomalies » ; tag `battery` ; PyBOP ; BatteryML, archivé, à citer sans fiche ; notions voisines manquantes (lois de durée de vie de Weibull, processus de renouvellement, théorie des contraintes, analyse multivariée de procédé T² et SPE, distance de Mahalanobis, valeurs de Shapley, causalité de Granger).
+
+## Lot 16 — Agents de code libres, suite (vague 8)
+
+Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ces candidats.
+- **Qwen Code** (Apache-2.0, actif d'après le lot 10) et **Zoo Code** (fork de Roo Code, Apache-2.0, actif) : vérifie chacun à la source (licence, dernière release, archivage, fournisseurs de modèles, usage local).
+- **Kilo Code** : dépôt MIT, mais le lot 10 n'a pas pu confirmer l'usage avec ses propres clés ni un modèle local. Vérifie dans la documentation : si la clé propre et le modèle local sont possibles et que rien de payant n'est au cœur du produit, crée la page ; sinon, cite-le en texte simple.
+- Exclus : Crush (licence FSL), Roo Code (extension fermée, dépôt archivé), Kimi CLI (archivé), Plandex (dernier push en 2025-10 : mentionne-le en texte simple s'il est utile). Claude Code, Codex CLI et Gemini CLI restent exclus par floSa.
+- Mets à jour **Comparatif - Assistants de code IA** (`.md`, la vue `.base` est filtrée par catégorie) et le hub « Agents de code ».
 
 ## Suivi
 
@@ -254,3 +272,5 @@ Domaine `ml/maintenance` quand le sujet est un modèle ; dérive sinon.
 - [ ] Lot 12 — planification et ordonnancement
 - [ ] Lot 13 — solveurs libres, simulation, pattern
 - [x] Lot 14 — fiabilité et exploitation
+- [ ] Lot 15 — câblage final des lots 10 à 14
+- [ ] Lot 16 — agents de code libres, suite
