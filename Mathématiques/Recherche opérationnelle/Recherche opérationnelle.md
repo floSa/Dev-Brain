@@ -46,7 +46,12 @@ tags: [inventory, newsvendor, scheduling, vehicle-routing, logistics, optimizati
 - [[De la prévision probabiliste à la quantité commandée]] — domaines : data-sci, ml-eng
 - [[Indicateurs de stock (rotation, couverture, rupture)]] — domaines : data-sci
 - [[Modèle du vendeur de journaux (newsvendor)]] — domaines : data-sci
+- [[MRP et calcul des besoins]] — domaines : data-sci, ml-eng
+- [[Ordonnancement d'atelier (job-shop, flow-shop)]] — domaines : data-sci, ml-eng
+- [[Plannings de personnel (rostering)]] — domaines : data-sci, ml-eng
 - [[Politiques de réapprovisionnement (s,S) et (R,Q)]] — domaines : data-sci, ml-eng
 - [[Quantité économique de commande et tailles de lot]] — domaines : data-sci
+- [[S&OP et plan directeur de production]] — domaines : data-sci, ml-eng
 - [[Stock de sécurité et taux de service]] — domaines : data-sci
+- [[Tournées de véhicules (VRP)]] — domaines : data-sci, ml-eng
 <!-- AUTO:END -->

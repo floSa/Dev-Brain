@@ -43,6 +43,7 @@ tags: [optimization, gradient-descent, convexity, second-order, learning-rate, l
 - [[Optimisation combinatoire]] — domaines : data-sci, ml-eng
 - [[Optimisation sous contrainte]] — domaines : data-sci, ml-eng
 - [[Programmation linéaire en nombres entiers (MIP)]] — domaines : data-sci, ml-eng
+- [[Programmation par contraintes]] — domaines : data-sci, ml-eng
 
 ### Briques
 - [[PuLP]] — Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…).
