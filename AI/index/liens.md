@@ -408,7 +408,7 @@
 ### CVXPY  ·  brique
 - tags : `optimization`, `convexity`, `constrained-optimization`, `linear-programming`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation sous contrainte]], [[PuLP]], [[Pyomo]]
-- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[PuLP]], [[Pyomo]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Optimisation sous contrainte]], [[PuLP]], [[Pyomo]]
 
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
@@ -868,12 +868,12 @@
 ### HGS-CVRP  ·  brique
 - tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[PyVRP]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PyVRP]], [[Recherche opérationnelle]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PyVRP]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### HiGHS  ·  brique
 - tags : `linear-programming`, `optimization`, `combinatorial-optimization`
 - liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[OR-Tools]], [[Optimisation]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Pyomo]]
-- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PuLP]], [[Pyomo]], [[Recherche opérationnelle]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Pyomo]], [[Recherche opérationnelle]]
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -1588,7 +1588,7 @@
 ### OR-Tools  ·  brique
 - tags : `constraint-programming`, `combinatorial-optimization`, `linear-programming`, `scheduling`, `vehicle-routing`
 - liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Optimisation]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[HiGHS]], [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[HiGHS]], [[Mathématiques]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### Orion  ·  brique
 - tags : `timeseries`, `unsupervised`, `deep-learning`, `gan`, `benchmark`
@@ -1898,7 +1898,7 @@
 ### PyVRP  ·  brique
 - tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
 - liens sortants : [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
@@ -2138,7 +2138,7 @@
 ### SimPy  ·  brique
 - tags : `simulation`, `inventory`, `scheduling`
 - liens sortants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Modèle du vendeur de journaux (newsvendor)]], [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[PuLP]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]]
+- liens entrants : [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]]
 
 ### sktime  ·  brique
 - tags : `timeseries`, `forecasting`, `classification`, `clustering`
@@ -3817,7 +3817,7 @@
 
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
-- liens sortants : [[Eigendecomposition]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
+- liens sortants : [[CVXPY]], [[Eigendecomposition]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
 - liens entrants : [[Adam optimizer]], [[CVXPY]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimal transport]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Pyomo]]
 
 ### Correction des tests multiples  ·  notion
@@ -4712,12 +4712,12 @@
 
 ### Optimisation sous contrainte  ·  notion
 - tags : `optimization`, `constrained-optimization`, `convexity`
-- liens sortants : [[Convexity]], [[Gradient descent]], [[Modèle du vendeur de journaux (newsvendor)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[Régularisation]]
+- liens sortants : [[CVXPY]], [[Convexity]], [[Gradient descent]], [[Modèle du vendeur de journaux (newsvendor)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[Régularisation]]
 - liens entrants : [[CVXPY]], [[Convexity]], [[HiGHS]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régularisation]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Ordonnancement d'atelier (job-shop, flow-shop)  ·  notion
 - tags : `scheduling`, `combinatorial-optimization`, `constraint-programming`
-- liens sortants : [[MRP et calcul des besoins]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Politique de maintenance et coût]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens sortants : [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Politique de maintenance et coût]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 - liens entrants : [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### ORM  ·  notion
@@ -4792,7 +4792,7 @@
 
 ### Politiques de réapprovisionnement (s,S) et (R,Q)  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `markov-decision-process`
-- liens sortants : [[Chaînes de Markov]], [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Processus de Poisson]], [[Quantité économique de commande et tailles de lot]], [[Reinforcement learning]], [[Stock de sécurité et taux de service]]
+- liens sortants : [[Chaînes de Markov]], [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Processus de Poisson]], [[Quantité économique de commande et tailles de lot]], [[Reinforcement learning]], [[SimPy]], [[Stock de sécurité et taux de service]]
 - liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Pattern - Prévoir puis optimiser]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Stock de sécurité et taux de service]], [[Tournées de véhicules (VRP)]]
 
 ### Positional encoding  ·  notion
@@ -4822,12 +4822,12 @@
 
 ### Programmation linéaire en nombres entiers (MIP)  ·  notion
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]]
+- liens sortants : [[Convexity]], [[HiGHS]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]]
 - liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimal transport]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régression quantile]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Programmation par contraintes  ·  notion
 - tags : `constraint-programming`, `combinatorial-optimization`, `scheduling`
-- liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Tournées de véhicules (VRP)]]
+- liens sortants : [[OR-Tools]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Tournées de véhicules (VRP)]]
 - liens entrants : [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Projections  ·  notion
@@ -5307,7 +5307,7 @@
 
 ### Tournées de véhicules (VRP)  ·  notion
 - tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
-- liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
+- liens sortants : [[HGS-CVRP]], [[OR-Tools]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PyVRP]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
 - liens entrants : [[HGS-CVRP]], [[OR-Tools]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PyVRP]], [[Recherche opérationnelle]]
 
 ### Traitement du langage naturel  ·  notion
