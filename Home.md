@@ -14,7 +14,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Bases de données]] — 58 briques, 5 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 85 briques, 10 sous-domaines
-- [[Mathématiques]] — 1 brique, 5 sous-domaines
+- [[Mathématiques]] — 8 briques, 5 sous-domaines
 - [[Outils de développement]] — 24 briques, 2 sous-domaines
 - [[Signal & audio]] — 3 briques, 1 sous-domaine
 - [[Design & diagrammes]] — 8 briques, 1 sous-domaine
@@ -43,7 +43,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Rangés par `role:` — aucune `categorie:` ne les range
 
-- [[Patterns]] — 8 architectures type, chacune enjambant plusieurs domaines
+- [[Patterns]] — 9 architectures type, chacune enjambant plusieurs domaines
 - [[Rules]] — 7 règles transverses, applicables quelle que soit la stack
 
 ## Réunis par `role:` — les comparatifs
