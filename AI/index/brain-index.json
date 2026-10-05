@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1082,
+  "count": 1085,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -94,6 +94,7 @@
       "Hermes Agent",
       "Human-in-the-loop",
       "Inspect AI",
+      "Kilo Code",
       "LLM & IA générative",
       "LM Studio Bionic",
       "LangChain",
@@ -118,6 +119,7 @@
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PraisonAI",
       "PydanticAI",
+      "Qwen Code",
       "RAG agentique",
       "Reliability patterns",
       "Sandboxing de code généré",
@@ -129,6 +131,7 @@
       "Vanna",
       "WrenAI",
       "Zapier",
+      "Zoo Code",
       "a2a-protocol",
       "agent-loops",
       "fastmcp",
@@ -509,9 +512,12 @@
       "Continue",
       "Goose",
       "Graphify",
+      "Kilo Code",
       "Maka",
       "OpenCode",
+      "Qwen Code",
       "Spec Kit",
+      "Zoo Code",
       "ai-memory",
       "freebuff",
       "i-have-adhd",
@@ -527,10 +533,13 @@
       "Code and math benchmarks",
       "Comparatif - Assistants de code IA",
       "Continue",
+      "Kilo Code",
       "LM Studio Bionic",
       "OpenCode",
       "OpenHands",
+      "Qwen Code",
       "Spec Kit",
+      "Zoo Code",
       "freebuff",
       "t3code"
     ],
@@ -2013,6 +2022,7 @@
       "Interprétabilité",
       "Interprétabilité mécaniste",
       "Jailbreaking and defenses",
+      "Kilo Code",
       "LLM & IA générative",
       "LLM benchmarks",
       "LLM caching",
@@ -2064,6 +2074,7 @@
       "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Query transformations",
       "Qwen",
+      "Qwen Code",
       "RAG",
       "RAG agentique",
       "RAG documentaire on-prem - clé en main ou assemblé",
@@ -2104,6 +2115,7 @@
       "Vanna",
       "Vision Language Models",
       "WrenAI",
+      "Zoo Code",
       "a2a-protocol",
       "agent-loops",
       "gpt-oss",
@@ -2190,6 +2202,7 @@
       "Gemma",
       "Goose",
       "Graphiti",
+      "Kilo Code",
       "LM Studio",
       "LM Studio Bionic",
       "LibreChat",
@@ -2204,11 +2217,13 @@
       "Prometheus-Eval",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Qwen",
+      "Qwen Code",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "Runtimes",
       "Small Language Models",
       "Superwhisper",
       "Vanna",
+      "Zoo Code",
       "gpt-oss",
       "llama.cpp",
       "llmfit",
@@ -2324,12 +2339,15 @@
       "Graphify",
       "Headroom",
       "Hermes Agent",
+      "Kilo Code",
       "LLM & IA générative",
       "LM Studio Bionic",
       "LibreChat",
       "OpenClaw",
       "OpenViking",
       "PraisonAI",
+      "Qwen Code",
+      "Zoo Code",
       "ai-memory",
       "fastmcp",
       "mcp-protocol",
@@ -3940,6 +3958,7 @@
     "terminal-ui": [
       "Comparatif - Frameworks CLI",
       "OpenCode",
+      "Qwen Code",
       "Rich",
       "llmfit",
       "pi"
@@ -11960,7 +11979,9 @@
         "[[Aider]]",
         "[[freebuff]]",
         "[[t3code]]",
-        "[[pi]]"
+        "[[pi]]",
+        "[[Zoo Code]]",
+        "[[Kilo Code]]"
       ],
       "complements": [
         "[[Spec Kit]]",
@@ -12014,7 +12035,8 @@
         "[[Cline]]",
         "[[freebuff]]",
         "[[t3code]]",
-        "[[pi]]"
+        "[[pi]]",
+        "[[Zoo Code]]"
       ],
       "complements": [
         "[[Spec Kit]]",
@@ -12048,7 +12070,8 @@
       "alternatives": [
         "[[OpenCode]]",
         "[[Aider]]",
-        "[[pi]]"
+        "[[pi]]",
+        "[[Qwen Code]]"
       ],
       "complements": [],
       "maturite": null
@@ -12076,6 +12099,38 @@
       ],
       "alternatives": [
         "[[ai-memory]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Kilo Code.md",
+      "nom": "Kilo Code",
+      "alias": [
+        "kilo",
+        "kilocode",
+        "Kilo-Org/kilocode"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent de code open source (MIT, TypeScript) pour VS Code, JetBrains et le terminal, bâti sur le code d'OpenCode : agents Code, Plan, Ask et Debug, plus de 30 fournisseurs par clé propre et les serveurs locaux Ollama et LM Studio.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "mcp",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[Cline]]",
+        "[[OpenCode]]",
+        "[[Zoo Code]]"
       ],
       "complements": [],
       "maturite": null
@@ -12136,6 +12191,39 @@
       "alternatives": [
         "[[Aider]]",
         "[[pi]]",
+        "[[Goose]]",
+        "[[Qwen Code]]",
+        "[[Kilo Code]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Qwen Code.md",
+      "nom": "Qwen Code",
+      "alias": [
+        "qwen-code",
+        "QwenLM/qwen-code"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "mcp",
+        "local-llm",
+        "terminal-ui"
+      ],
+      "alternatives": [
+        "[[OpenCode]]",
         "[[Goose]]"
       ],
       "complements": [],
@@ -12173,6 +12261,37 @@
         "[[Cline]]",
         "[[Continue]]"
       ],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Zoo Code.md",
+      "nom": "Zoo Code",
+      "alias": [
+        "zoo-code",
+        "Zoo-Code-Org/Zoo-Code"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.",
+      "tags": [
+        "code-assistant",
+        "code-generation",
+        "llm",
+        "agents",
+        "mcp",
+        "local-llm"
+      ],
+      "alternatives": [
+        "[[Cline]]",
+        "[[Continue]]",
+        "[[Kilo Code]]"
+      ],
+      "complements": [],
       "maturite": null
     },
     {
