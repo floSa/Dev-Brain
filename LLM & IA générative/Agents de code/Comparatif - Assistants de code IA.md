@@ -7,7 +7,7 @@ tags: [code-assistant, agents, code-generation]
 
 # Comparatif - Assistants de code IA
 
-> On tranche sur : ce que la brique fait dans la chaîne — écrire le code, dire à l'agent quoi écrire, superviser plusieurs agents, ou leur fournir le contexte — puis, pour celles qui écrivent, où l'on travaille et à qui part le code.
+> On tranche sur : ce que la brique fait dans la chaîne — écrire le code, dire à l'agent quoi écrire, superviser plusieurs agents, ou leur fournir le contexte — puis, pour celles qui écrivent, où l'on travaille et à qui part le code (fournisseur, clé propre ou modèle local).
 
 ![[Comparatif - Assistants de code IA.base]]
 
@@ -20,6 +20,9 @@ tags: [code-assistant, agents, code-generation]
 - [[freebuff]] — l'inverse exact de pi sur le même axe : **ni clé API ni paiement**, les modèles étant hébergés par l'éditeur et le service financé par la publicité. Le prix est le sujet de la fiche — prompts et contenu collé analysés pour le ciblage, soumissions réutilisables pour l'entraînement, sessions journalières plafonnées. À écarter dès qu'il s'agit de code client.
 - [[OpenCode]] — l'agent de **terminal à fournisseur libre** : plus de 75 fournisseurs et tout serveur local compatible OpenAI (Ollama, llama.cpp, LM Studio, vLLM), MIT. Piège de nom : le projet Go `opencode-ai/opencode` est archivé et continue sous le nom Crush, qui n'est pas libre (FSL) ; la fiche vise `anomalyco/opencode`.
 - [[Goose]] — le seul du lot qui ne se limite pas au code : agent **généraliste** en application desktop, CLI et API, extensions MCP, gouvernance Linux Foundation. Ses appels d'outils exigent un modèle capable : un petit modèle local le réduit à du chat.
+- [[Qwen Code]] — l'agent de **terminal issu de Gemini CLI** (v0.8.2 à l'origine, indépendant depuis la 0.1), avec plugins d'éditeur (VS Code, Zed, JetBrains) et mode démon. Parle aux protocoles OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM. Le palier gratuit par OAuth est arrêté : il faut une clé ou un serveur local.
+- [[Zoo Code]] — l'extension VS Code **par modes** (Code, Architect, Ask, Debug, modes sur mesure), suite communautaire de Roo Code après l'arrêt de celui-ci. Garde-fou contre les commandes dangereuses et orchestration de sous-tâches. Projet né en 2026-04 : équipe de volontaires, et le mode proxy de son offre en ligne fait transiter le code par ses serveurs.
+- [[Kilo Code]] — le même agent en **extension VS Code, plugin JetBrains et CLI**, bâti sur le code d'OpenCode. Plus de 30 fournisseurs par clé propre, dont Ollama et LM Studio ; le fournisseur intégré demande un compte chez l'éditeur, qu'une clé propre évite. Versions très fréquentes.
 - [[Spec Kit]] — n'écrit pas de code : il impose le **spec-driven development**, une spécification exécutable qui devient la source de vérité et pilote l'agent, plus une « constitution » de principes à respecter. L'effort se déplace vers l'amont sans disparaître — une spec bâclée produit un code bâclé.
 - [[BMAD]] — même étage que Spec Kit, mais découpé en **rôles agiles nommés** (analyst, PM, architect, dev, UX, scrum master, test architect) et en **stories** isolées chacune dans un chat neuf. Il pilote, il ne code pas. Churn important : v4 et v6 sont incompatibles, verrouiller une version.
 - [[i-have-adhd]] — un fichier `SKILL.md`, rien à exécuter : dix règles qui reformatent la **sortie** de l'agent — action d'abord, état rappelé à chaque tour, ni préambule ni récapitulatif. Effet fort sur la verbosité, **nul sur la justesse**.
