@@ -49,6 +49,7 @@ tags: [optimization, convexity]
 - [[Régression logistique]] — la log-vraisemblance est convexe, d'où un optimum unique.
 - [[Optimisation sous contrainte]] — sous convexité, les conditions KKT certifient l'optimum global et la dualité forte tient.
 - [[Programmation linéaire en nombres entiers (MIP)]] — le LP est convexe ; c'est l'intégralité qui brise la convexité et rend le MIP difficile.
+- [[CVXPY]] — la brique libre pour modéliser et résoudre un problème convexe.
 
 ## Pour aller plus loin
 

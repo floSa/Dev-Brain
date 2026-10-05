@@ -75,6 +75,7 @@ m.AddAllDifferent([q[i] - i for i in range(n)])               # une par diagonal
 - [[Plannings de personnel (rostering)]] — contraintes de cardinalité et de succession de postes.
 - [[Tournées de véhicules (VRP)]] — contraintes de capacité et de fenêtres, souvent traitées par des heuristiques dédiées.
 - [[PuLP]] — modeleur LP/MIP (alternative quand le modèle est linéaire).
+- [[OR-Tools]] — le solveur CP-SAT, la brique libre qui met cette approche en œuvre.
 
 ## Pour aller plus loin
 

@@ -46,6 +46,7 @@ tags: [optimization, constrained-optimization, convexity]
 - [[Programmation linéaire en nombres entiers (MIP)|Programmation linéaire]] — la dualité LP est le cas linéaire de la dualité lagrangienne ; le MIP en est l'analogue à variables discrètes.
 - [[Quantité économique de commande et tailles de lot]] — un optimum sous contrainte qui a une formule fermée.
 - [[Modèle du vendeur de journaux (newsvendor)]] — un optimum sous contrainte de service, résolu par un quantile.
+- [[CVXPY]] — la brique libre pour modéliser et résoudre un problème convexe sous contraintes.
 
 ## Pour aller plus loin
 

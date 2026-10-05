@@ -48,6 +48,8 @@ tags: [optimization, linear-programming, combinatorial-optimization]
 - [[Plannings de personnel (rostering)]] — un problème d'affectation sous contraintes de cardinalité que l'on formule en MIP.
 - [[Optimal transport]] — le problème de transport discret est un cas particulier de programmation linéaire.
 - Programmation dynamique — alternative exacte pour les problèmes à sous-structure optimale (sac à dos, plus court chemin).
+- [[HiGHS]] — un solveur libre de programmation linéaire et en nombres entiers.
+- [[PuLP]] — le modeleur Python qui pose le modèle et appelle le solveur.
 
 ## Pour aller plus loin
 
