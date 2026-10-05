@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: Rust
-alternatives: ["[[OpenCode]]", "[[Aider]]", "[[pi]]"]
+alternatives: ["[[OpenCode]]", "[[Aider]]", "[[pi]]", "[[Qwen Code]]"]
 complements: []
 tags: [code-assistant, agents, mcp, tool-use, local-llm]
 url_docs: https://goose-docs.ai/
@@ -53,6 +53,7 @@ Agent qui s'exécute sur le poste et ne se limite pas au code : recherche, réda
 - [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
 - [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- [[Qwen Code]] — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
 
 ## Ressources
 

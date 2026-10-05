@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: TypeScript
-alternatives: ["[[Aider]]", "[[pi]]", "[[Goose]]"]
+alternatives: ["[[Aider]]", "[[pi]]", "[[Goose]]", "[[Qwen Code]]", "[[Kilo Code]]"]
 complements: []
 tags: [code-assistant, code-generation, llm, agents, local-llm, terminal-ui]
 url_docs: https://opencode.ai/docs/
@@ -63,6 +63,8 @@ Le terminal d'`anomalyco` n'est donc pas le Crush de Charm, malgré le nom : les
 - [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 - [[Goose]] — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
+- [[Qwen Code]] — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
+- [[Kilo Code]] — Agent de code open source (MIT, TypeScript) pour VS Code, JetBrains et le terminal, bâti sur le code d'OpenCode : agents Code, Plan, Ask et Debug, plus de 30 fournisseurs par clé propre et les serveurs locaux Ollama et LM Studio.
 
 ### Compléments
 

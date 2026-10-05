@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
 langage: TypeScript, Kotlin
-alternatives: ["[[Aider]]", "[[Cline]]", "[[freebuff]]", "[[t3code]]", "[[pi]]"]
+alternatives: ["[[Aider]]", "[[Cline]]", "[[freebuff]]", "[[t3code]]", "[[pi]]", "[[Zoo Code]]"]
 complements: ["[[Spec Kit]]", "[[BMAD]]"]
 tags: [code-assistant, code-generation, llm, agents]
 url_docs: https://docs.continue.dev/
@@ -62,6 +62,7 @@ Kotlin, désormais maintenue par la communauté, le développement actif se dép
 - [[freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 - [[t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- [[Zoo Code]] — Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.
 
 ### Compléments
 
