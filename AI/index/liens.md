@@ -957,7 +957,7 @@
 
 ### Jeux de données d'anomalies  ·  brique
 - tags : `benchmark`
-- liens sortants : [[Anomalie acoustique]], [[Détection d'anomalies]], [[Jeux de données PHM]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Détection d'anomalies]], [[Jeux de données PHM]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalie acoustique]], [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Jeux de données PHM]], [[Merlion]], [[Orion]], [[Pattern - Inspection visuelle en ligne de production]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[STUMPY]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[Évaluer une détection d'anomalies]]
 
 ### Jeux de données PHM  ·  brique
@@ -3503,7 +3503,7 @@
 ### Anomalie acoustique  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `signal-processing`, `spectrogram`, `audio-classification`, `self-supervised`, `condition-monitoring`
 - liens sortants : [[Adaptation de domaine]], [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection hors distribution (OOD)]], [[Jeux de données PHM]], [[Jeux de données d'anomalies]], [[STFT et spectrogramme]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Types d'anomalies et régimes de supervision]], [[k-NN]], [[librosa]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Jeux de données d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]]
 
 ### Anomalie visuelle par banque de mémoire  ·  notion
 - tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `transfer-learning`
