@@ -47,6 +47,8 @@ tags: [forecasting, timeseries]
 - [[Forecasting metrics]] — pourquoi MAPE casse ici et pourquoi MASE/RMSSE sont robustes aux zéros.
 - [[Exponential smoothing]] — Croston applique un SES séparé à la taille et à l'intervalle.
 - [[Forecasting framing]] — cadrer l'objectif (quantile, niveau de service) avant la moyenne.
+- [[Stock de sécurité et taux de service]] — le quantile de la demande creuse, là où la loi normale ne tient pas.
+- [[Classification ABC-XYZ]] — la grille qui choisit une politique de gestion, là où la classification de Syntetos-Boylan choisit une méthode de prévision.
 
 ## Pour aller plus loin
 

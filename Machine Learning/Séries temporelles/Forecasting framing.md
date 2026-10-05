@@ -48,6 +48,8 @@ tags: [forecasting, timeseries]
 - [[Autocorrelation]] — diagnostic de la structure temporelle (mémoire, saisonnalité) en amont du choix de modèle.
 - [[ARIMA SARIMA]] / [[Exponential smoothing]] — les familles statistiques classiques, baselines à cadrer correctement avant tout modèle ML/DL.
 - [[Validation croisée]] — la CV temporelle (TimeSeriesSplit) matérialise le backtesting à origine glissante.
+- [[De la prévision probabiliste à la quantité commandée]] — cadrer la prévision par la décision qu'elle sert, ici une quantité à commander.
+- [[Plannings de personnel (rostering)]] — la demande prévue comme entrée d'un planning de personnel.
 
 ## Pour aller plus loin
 

@@ -50,6 +50,8 @@ tags: [forecasting, timeseries]
 - [[Forecasting framing]] — local vs global et le parc de séries, dont la hiérarchie est un cas structuré.
 - [[Forecasting metrics]] — évaluer la précision à chaque niveau d'agrégation, pas seulement au total.
 - [[ARIMA SARIMA]] / [[Exponential smoothing]] — modèles de base posés sur chaque nœud avant réconciliation.
+- [[S&OP et plan directeur de production]] — où la cohérence entre niveaux d'agrégation sert une décision de plan.
+- [[De la prévision probabiliste à la quantité commandée]] — de la prévision cohérente à la quantité commandée.
 
 ## Pour aller plus loin
 
