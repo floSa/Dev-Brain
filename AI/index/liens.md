@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1091 pages actives.
+> 1099 pages actives.
 
 ## Par page
 
@@ -303,7 +303,7 @@
 ### Chronos  ·  brique
 - tags : `forecasting`, `timeseries`, `foundation-model`, `transformers`, `deep-learning`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Foundation models et anomalies de séries]], [[Foundation models pour séries temporelles]], [[HuggingFace]], [[Prophet]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[statsforecast]]
-- liens entrants : [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Foundation models et anomalies de séries]], [[Foundation models pour séries temporelles]], [[LSTM et réseaux récurrents]], [[Prophet]], [[Séries temporelles]], [[TSB-AD]], [[darts]]
+- liens entrants : [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Foundation models et anomalies de séries]], [[Foundation models pour séries temporelles]], [[LSTM et réseaux récurrents]], [[Pattern - Prévoir puis optimiser]], [[Prophet]], [[Séries temporelles]], [[TSB-AD]], [[darts]]
 
 ### Claude Agent SDK  ·  brique
 - tags : `llm`, `agents`, `multi-agent`, `tool-use`, `mcp`
@@ -405,6 +405,11 @@
 - liens sortants : [[Active learning]], [[Annotation de données]], [[Detectron2]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[Label Studio]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[Vision]], [[segment-anything]]
 - liens entrants : [[Active learning]], [[Annotation de données]], [[Detectron2]], [[Docker Compose]], [[Keycloak]], [[Kubernetes]], [[Label Studio]], [[Machine Learning]], [[Postgres]], [[Ultralytics YOLO]], [[segment-anything]]
 
+### CVXPY  ·  brique
+- tags : `optimization`, `convexity`, `constrained-optimization`, `linear-programming`
+- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation sous contrainte]], [[PuLP]], [[Pyomo]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[PuLP]], [[Pyomo]]
+
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airbyte]], [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Kestra]], [[Mage]], [[OpenLineage]], [[Orchestration]], [[Prefect]], [[Temporal]], [[dbt Core]], [[dlt]], [[pandera]]
@@ -413,7 +418,7 @@
 ### darts  ·  brique
 - tags : `forecasting`, `timeseries`, `deep-learning`
 - liens sortants : [[CatBoost]], [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Foundation models et anomalies de séries]], [[LightGBM]], [[Modèles de Markov cachés et filtre de Kalman]], [[Prophet]], [[Prédiction conforme]], [[PyTorch]], [[XGBoost]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models et anomalies de séries]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]], [[tsfresh]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models et anomalies de séries]], [[Foundation models pour séries temporelles]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]], [[tsfresh]]
 
 ### Dash  ·  brique
 - tags : `data-app`, `dashboard`, `web-framework`
@@ -859,6 +864,16 @@
 - tags : `llm`, `agents`, `tool-use`, `mcp`
 - liens sortants : [[AI security]], [[Agent memory]], [[Agent patterns]], [[Agent skills]], [[Agno]], [[Assistants]], [[Daytona]], [[Harnais d'agent]], [[LM Studio Bionic]], [[LangGraph]], [[Letta]], [[Modal]], [[OpenAI Agents SDK]], [[OpenClaw]], [[OpenHands]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Prompt injection]], [[Sandboxing de code généré]], [[Tool use patterns]], [[a2a-protocol]], [[agent-loops]], [[fastmcp]], [[mcp-protocol]], [[smolagents]]
 - liens entrants : [[Agent memory]], [[Agent skills]], [[Agents de code]], [[Assistants]], [[Daytona]], [[E2B]], [[Harnais d'agent]], [[LM Studio Bionic]], [[Modal]], [[OpenClaw]], [[OpenHands]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Sandboxing de code généré]], [[a2a-protocol]], [[mcp-protocol]]
+
+### HGS-CVRP  ·  brique
+- tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
+- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[PyVRP]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PyVRP]], [[Recherche opérationnelle]]
+
+### HiGHS  ·  brique
+- tags : `linear-programming`, `optimization`, `combinatorial-optimization`
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[OR-Tools]], [[Optimisation]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Pyomo]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PuLP]], [[Pyomo]], [[Recherche opérationnelle]]
 
 ### hnswlib  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -1570,6 +1585,11 @@
 - liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[LightGBM]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[PyTorch]], [[Ray Tune]], [[Scikit-Learn]], [[Validation croisée]], [[XGBoost]]
 - liens entrants : [[ClearML]], [[Comparatif - Optimisation d'hyperparamètres]], [[Gaussian Process]], [[Hyperopt]], [[MLflow]], [[Machine Learning]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Plateformes data & IA]], [[PyTorch]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[Scikit-Learn]], [[Suivi d'expériences]], [[TensorBoard]], [[Weights & Biases]]
 
+### OR-Tools  ·  brique
+- tags : `constraint-programming`, `combinatorial-optimization`, `linear-programming`, `scheduling`, `vehicle-routing`
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Optimisation]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[HiGHS]], [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
+
 ### Orion  ·  brique
 - tags : `timeseries`, `unsupervised`, `deep-learning`, `gan`, `benchmark`
 - liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Score et seuil d'alerte]], [[TSB-AD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
@@ -1728,7 +1748,7 @@
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Dagster]], [[Dask]], [[Kestra]], [[Mage]], [[Orchestration]], [[Temporal]], [[dbt Core]]
-- liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Temporal]], [[Windmill]], [[dbt Core]], [[n8n]]
+- liens entrants : [[Airflow]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Transformation SQL]], [[Dagster]], [[Kestra]], [[Mage]], [[Orchestration]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Temporal]], [[Windmill]], [[dbt Core]], [[n8n]]
 
 ### Presidio  ·  brique
 - tags : `privacy`, `ner`, `ai-security`, `pii`
@@ -1777,8 +1797,8 @@
 
 ### PuLP  ·  brique
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Optimisation]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]]
-- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Mathématiques]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]]
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]], [[Pyomo]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
 
 ### PyBaMM  ·  brique
 - tags : `digital-twin`, `predictive-maintenance`, `rul`
@@ -1825,6 +1845,11 @@
 - liens sortants : [[Apprentissage non supervisé]], [[Comparatif - Détection d'anomalies]], [[DeepOD]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Jeux de données d'anomalies]], [[STUMPY]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Comparatif - Détection d'anomalies]], [[DeepOD]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Isolation Forest]], [[Local Outlier Factor]], [[Machine Learning]], [[Merlion]], [[Non supervisé]], [[One-Class SVM]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[STUMPY]], [[aeon]], [[sktime]]
 
+### Pyomo  ·  brique
+- tags : `optimization`, `linear-programming`, `combinatorial-optimization`, `constrained-optimization`
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]]
+- liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[PuLP]]
+
 ### pypdf  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[docTR]], [[pdfminer.six]], [[pdfplumber]], [[pypdfium2]]
@@ -1869,6 +1894,11 @@
 - tags : `sequence-labeling`, `ner`, `deep-learning`
 - liens sortants : [[Comparatif - NLP]], [[HuggingFace]], [[NER et étiquetage de séquence]], [[PyTorch]]
 - liens entrants : [[Comparatif - NLP]], [[NER et étiquetage de séquence]], [[NLP]]
+
+### PyVRP  ·  brique
+- tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
+- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]]
 
 ### PyWavelets  ·  brique
 - tags : `signal-processing`, `wavelet`
@@ -2105,6 +2135,11 @@
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 
+### SimPy  ·  brique
+- tags : `simulation`, `inventory`, `scheduling`
+- liens sortants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Modèle du vendeur de journaux (newsvendor)]], [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[PuLP]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]]
+
 ### sktime  ·  brique
 - tags : `timeseries`, `forecasting`, `classification`, `clustering`
 - liens sortants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Maintenance prédictive et RUL]], [[PyOD]], [[Séries temporelles]], [[Time series feature engineering]], [[Walk-forward CV]], [[aeon]], [[darts]], [[statsforecast]], [[tsfresh]]
@@ -2188,7 +2223,7 @@
 ### statsforecast  ·  brique
 - tags : `forecasting`, `timeseries`, `distributed`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Prophet]], [[Prédiction conforme]], [[darts]], [[neuralforecast]], [[pmdarima]]
-- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[tsfresh]]
+- liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Forecasting]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Pattern - Prévoir puis optimiser]], [[Prophet]], [[Prédiction conforme]], [[Stationarity]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[tsfresh]]
 
 ### statsmodels  ·  brique
 - tags : `statistical-inference`, `hypothesis-testing`, `parametric-test`, `p-value`
@@ -2658,7 +2693,7 @@
 ### Comparatif - Forecasting  ·  comparatif
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Chronos]], [[Comparatif - Forecasting.base]], [[Comparatifs]], [[Prophet]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[Comparatifs]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]]
+- liens entrants : [[Chronos]], [[Comparatifs]], [[Pattern - Prévoir puis optimiser]], [[Prophet]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]]
 
 ### Comparatif - Fournisseurs d'identité  ·  comparatif
 - tags : `identity-provider`
@@ -2842,8 +2877,8 @@
 
 ### Comparatif - Solveurs d'optimisation  ·  comparatif
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Comparatif - Solveurs d'optimisation.base]], [[Comparatifs]], [[PuLP]]
-- liens entrants : [[Comparatifs]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[PuLP]]
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation.base]], [[Comparatifs]], [[HGS-CVRP]], [[HiGHS]], [[OR-Tools]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[PyVRP]], [[Pyomo]]
+- liens entrants : [[CVXPY]], [[Comparatifs]], [[HGS-CVRP]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[PuLP]], [[PyVRP]], [[Pyomo]]
 
 ### Comparatif - Stockage objet  ·  comparatif
 - tags : `object-storage`, `s3-compatible`
@@ -3087,7 +3122,7 @@
 
 ### Mathématiques  ·  hub
 - tags : `linear-algebra`, `optimization`, `information-theory`, `learning-theory`, `linear-programming`
-- liens sortants : [[Algèbre linéaire]], [[Analyse factorielle]], [[Machine Learning]], [[Optimisation]], [[PCA]], [[Probabilités]], [[PuLP]], [[Recherche opérationnelle]], [[Réduction de dimension]], [[SVD]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Théorie de l'information]], [[scipy.stats]]
+- liens sortants : [[Algèbre linéaire]], [[Analyse factorielle]], [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HGS-CVRP]], [[HiGHS]], [[Machine Learning]], [[OR-Tools]], [[Optimisation]], [[PCA]], [[Probabilités]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[Réduction de dimension]], [[SVD]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Théorie de l'information]], [[scipy.stats]]
 - liens entrants : [[AI Engineering]], [[Data Science]], [[ML Engineering]], [[Probabilités]]
 
 ### Messagerie  ·  hub
@@ -3157,8 +3192,8 @@
 
 ### Optimisation  ·  hub
 - tags : `optimization`, `gradient-descent`, `convexity`, `second-order`, `learning-rate`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Newton & quasi-Newton]], [[Optimisation combinatoire]], [[Optimisation d'hyperparamètres]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[Recherche opérationnelle]]
-- liens entrants : [[Mathématiques]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[PuLP]], [[Recherche opérationnelle]]
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[Gradient descent]], [[HGS-CVRP]], [[HiGHS]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Machine Learning]], [[Newton & quasi-Newton]], [[OR-Tools]], [[Optimisation combinatoire]], [[Optimisation d'hyperparamètres]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
+- liens entrants : [[CVXPY]], [[HGS-CVRP]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
 
 ### Orchestration  ·  hub
 - tags : `orchestration`, `data-pipeline`, `durable-execution`, `idempotence`
@@ -3182,7 +3217,7 @@
 
 ### Patterns  ·  hub
 - tags : —
-- liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
+- liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
 - liens entrants : [[Comparatifs]]
 
 ### Plateformes data & IA  ·  hub
@@ -3217,8 +3252,8 @@
 
 ### Recherche opérationnelle  ·  hub
 - tags : `inventory`, `newsvendor`, `scheduling`, `vehicle-routing`, `logistics`, `optimization`
-- liens sortants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Prédiction conforme]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[Mathématiques]], [[Optimisation]]
+- liens sortants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Forecasting metrics]], [[HGS-CVRP]], [[HiGHS]], [[Hierarchical forecasting]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Prédiction conforme]], [[PuLP]], [[PyVRP]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[SimPy]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Mathématiques]], [[Optimisation]], [[Pattern - Prévoir puis optimiser]], [[SimPy]]
 
 ### Relationnel  ·  hub
 - tags : —
@@ -3298,7 +3333,7 @@
 ### Séries temporelles  ·  hub
 - tags : `timeseries`, `forecasting`, `anomaly-detection`, `foundation-model`
 - liens sortants : [[ARIMA SARIMA]], [[Apprentissage profond]], [[Autocorrelation]], [[Chronos]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Forecasting]], [[Data leakage]], [[Détection d'anomalies]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Prophet]], [[STUMPY]], [[Serving]], [[Stationarity]], [[Suivi d'expériences]], [[Tabulaire]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]], [[tsfresh]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Kats]], [[Machine Learning]], [[Merlion]], [[OEE et rendement global]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Recherche opérationnelle]], [[Serving]], [[Traitement]], [[aeon]], [[sktime]], [[tsfresh]]
+- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Kats]], [[Machine Learning]], [[Merlion]], [[OEE et rendement global]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[Serving]], [[Traitement]], [[aeon]], [[sktime]], [[tsfresh]]
 
 ### Tabulaire  ·  hub
 - tags : `tree-based`, `boosting`, `ensemble`, `feature-engineering`, `class-imbalance`, `supervised`
@@ -3638,7 +3673,7 @@
 ### Calibration  ·  notion
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[Hallucinations des LLM]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Active learning]], [[Adaptation de domaine]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modèle du vendeur de journaux (newsvendor)]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[RUL par apprentissage profond]], [[SVM]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Stock de sécurité et taux de service]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
+- liens entrants : [[Active learning]], [[Adaptation de domaine]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modèle du vendeur de journaux (newsvendor)]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Pattern - Prévoir puis optimiser]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[RUL par apprentissage profond]], [[SVM]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Stock de sécurité et taux de service]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
 
 ### Catalogue de données et lignage  ·  notion
 - tags : `data-catalog`, `data-lineage`, `data-governance`
@@ -3688,7 +3723,7 @@
 ### Classification ABC-XYZ  ·  notion
 - tags : `inventory`, `forecasting`
 - liens sortants : [[Forecasting framing]], [[Hierarchical forecasting]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Politique de maintenance et coût]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
+- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
 
 ### Classification audio par spectrogramme  ·  notion
 - tags : `audio-classification`, `spectrogram`, `cnn`
@@ -3783,7 +3818,7 @@
 ### Convexity  ·  notion
 - tags : `optimization`, `convexity`
 - liens sortants : [[Eigendecomposition]], [[Gradient descent]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régression linéaire]], [[Régression logistique]], [[Régularisation]]
-- liens entrants : [[Adam optimizer]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimal transport]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens entrants : [[Adam optimizer]], [[CVXPY]], [[Gradient descent]], [[Learning rate schedules]], [[Loss landscape and saddle points]], [[Newton & quasi-Newton]], [[Optimal transport]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]], [[Pyomo]]
 
 ### Correction des tests multiples  ·  notion
 - tags : `hypothesis-testing`, `multiple-testing`, `p-value`
@@ -3823,7 +3858,7 @@
 ### De la prévision probabiliste à la quantité commandée  ·  notion
 - tags : `inventory`, `newsvendor`, `forecasting`, `calibration`, `optimization`
 - liens sortants : [[Autocorrelation]], [[Bootstrap]], [[Calibration]], [[Chronos]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Monte Carlo et inférence variationnelle]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Processus de Poisson]], [[Prédiction conforme]], [[Reinforcement learning]], [[Régression quantile]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[statsforecast]]
-- liens entrants : [[Modèle du vendeur de journaux (newsvendor)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
 
 ### Decoding strategies  ·  notion
 - tags : `decoding`, `llm`, `nlp`
@@ -4028,7 +4063,7 @@
 ### Foundation models pour séries temporelles  ·  notion
 - tags : `timeseries`, `forecasting`, `transformers`, `deep-learning`
 - liens sortants : [[ARIMA SARIMA]], [[Chronos]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models et anomalies de séries]], [[HuggingFace]], [[Scaling laws]], [[Self-attention]], [[Time series feature engineering]], [[Tokenization]], [[Transformer architectures]], [[Walk-forward CV]], [[darts]], [[neuralforecast]]
-- liens entrants : [[Chronos]], [[De la prévision probabiliste à la quantité commandée]], [[Foundation models et anomalies de séries]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Séries temporelles]], [[TSB-AD]]
+- liens entrants : [[Chronos]], [[De la prévision probabiliste à la quantité commandée]], [[Foundation models et anomalies de séries]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Pattern - Prévoir puis optimiser]], [[Séries temporelles]], [[TSB-AD]]
 
 ### Fusion de modèles  ·  notion
 - tags : `llm`, `fine-tuning`, `transfer-learning`
@@ -4133,7 +4168,7 @@
 ### Hierarchical forecasting  ·  notion
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[statsforecast]]
-- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Séries temporelles]]
+- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Séries temporelles]]
 
 ### Human-in-the-loop  ·  notion
 - tags : `human-in-the-loop`, `agents`, `reliability`, `llm`
@@ -4193,7 +4228,7 @@
 ### Indicateurs de stock (rotation, couverture, rupture)  ·  notion
 - tags : `inventory`, `probability`
 - liens sortants : [[Classification ABC-XYZ]], [[Forecasting metrics]], [[Intermittent demand]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Probabilités]], [[Quantité économique de commande et tailles de lot]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Classification ABC-XYZ]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[Classification ABC-XYZ]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[SimPy]], [[Stock de sécurité et taux de service]]
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
@@ -4233,7 +4268,7 @@
 ### Intermittent demand  ·  notion
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[statsforecast]]
-- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prophet]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]], [[Séries temporelles]]
+- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prophet]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]], [[Séries temporelles]]
 
 ### Interprétabilité mécaniste  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`
@@ -4473,7 +4508,7 @@
 ### Modèle du vendeur de journaux (newsvendor)  ·  notion
 - tags : `inventory`, `newsvendor`, `optimization`, `probability`
 - liens sortants : [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Intermittent demand]], [[Optimisation sous contrainte]], [[Prédiction conforme]], [[Régression quantile]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[SimPy]], [[Stock de sécurité et taux de service]]
 
 ### Modèles de fondation vision  ·  notion
 - tags : `foundation-model`, `vision-language`, `self-supervised`, `representation-learning`, `computer-vision`
@@ -4528,7 +4563,7 @@
 ### MRP et calcul des besoins  ·  notion
 - tags : `scheduling`, `inventory`
 - liens sortants : [[Intermittent demand]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
+- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
 
 ### Multi-agent systems  ·  notion
 - tags : `multi-agent`, `agents`, `llm`
@@ -4668,7 +4703,7 @@
 ### Optimisation combinatoire  ·  notion
 - tags : `optimization`, `combinatorial-optimization`, `dynamic-programming`
 - liens sortants : [[Convexity]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
-- liens entrants : [[MRP et calcul des besoins]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[HGS-CVRP]], [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Optimisation d'hyperparamètres  ·  notion
 - tags : `hyperparameter-tuning`, `model-evaluation`, `bayesian`
@@ -4678,12 +4713,12 @@
 ### Optimisation sous contrainte  ·  notion
 - tags : `optimization`, `constrained-optimization`, `convexity`
 - liens sortants : [[Convexity]], [[Gradient descent]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régularisation]]
-- liens entrants : [[Convexity]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régularisation]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[CVXPY]], [[Convexity]], [[HiGHS]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régularisation]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Ordonnancement d'atelier (job-shop, flow-shop)  ·  notion
 - tags : `scheduling`, `combinatorial-optimization`, `constraint-programming`
 - liens sortants : [[MRP et calcul des besoins]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Politique de maintenance et coût]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[MRP et calcul des besoins]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[MRP et calcul des besoins]], [[OR-Tools]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### ORM  ·  notion
 - tags : `orm`, `relational`
@@ -4738,7 +4773,7 @@
 ### Plannings de personnel (rostering)  ·  notion
 - tags : `scheduling`, `constraint-programming`, `combinatorial-optimization`
 - liens sortants : [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[OR-Tools]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Plateforme data & IA — concept  ·  notion
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`, `ml-pipeline`
@@ -4753,12 +4788,12 @@
 ### Politique de maintenance et coût  ·  notion
 - tags : `predictive-maintenance`, `rul`, `thresholding`, `optimization`
 - liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Cause racine d'une anomalie]], [[Classification ABC-XYZ]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens entrants : [[Cause racine d'une anomalie]], [[Classification ABC-XYZ]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Politiques de réapprovisionnement (s,S) et (R,Q)  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `markov-decision-process`
 - liens sortants : [[Chaînes de Markov]], [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Processus de Poisson]], [[Quantité économique de commande et tailles de lot]], [[Reinforcement learning]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Pattern - Prévoir puis optimiser]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Stock de sécurité et taux de service]], [[Tournées de véhicules (VRP)]]
 
 ### Positional encoding  ·  notion
 - tags : `positional-encoding`, `transformers`, `attention`
@@ -4788,12 +4823,12 @@
 ### Programmation linéaire en nombres entiers (MIP)  ·  notion
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
 - liens sortants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PuLP]]
-- liens entrants : [[Convexity]], [[MRP et calcul des besoins]], [[Optimal transport]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régression quantile]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimal transport]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régression quantile]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Programmation par contraintes  ·  notion
 - tags : `constraint-programming`, `combinatorial-optimization`, `scheduling`
 - liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Projections  ·  notion
 - tags : `linear-algebra`, `projection`
@@ -4828,7 +4863,7 @@
 ### Prédiction conforme  ·  notion
 - tags : `statistical-inference`, `confidence-interval`, `model-evaluation`
 - liens sortants : [[Bootstrap]], [[Calibration]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[darts]], [[statsforecast]]
-- liens entrants : [[Adaptation de domaine]], [[Bootstrap]], [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Intervalles de confiance]], [[LSTM et réseaux récurrents]], [[Modèle du vendeur de journaux (newsvendor)]], [[Monte Carlo et inférence variationnelle]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Recherche opérationnelle]], [[Régression quantile]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Statistiques & inférence]], [[Stock de sécurité et taux de service]], [[Tests & estimation]], [[darts]], [[statsforecast]]
+- liens entrants : [[Adaptation de domaine]], [[Bootstrap]], [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Intervalles de confiance]], [[LSTM et réseaux récurrents]], [[Modèle du vendeur de journaux (newsvendor)]], [[Monte Carlo et inférence variationnelle]], [[Pattern - Prévoir puis optimiser]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Recherche opérationnelle]], [[Régression quantile]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Statistiques & inférence]], [[Stock de sécurité et taux de service]], [[Tests & estimation]], [[darts]], [[statsforecast]]
 
 ### Q-learning and DQN  ·  notion
 - tags : `reinforcement-learning`, `value-function`, `temporal-difference`, `deep-learning`
@@ -5033,7 +5068,7 @@
 ### S&OP et plan directeur de production  ·  notion
 - tags : `scheduling`, `forecasting`, `inventory`, `linear-programming`
 - liens sortants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[MRP et calcul des besoins]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[MRP et calcul des besoins]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Sandboxing de code généré  ·  notion
 - tags : `agents`, `llm`, `ai-security`, `container`
@@ -5138,7 +5173,7 @@
 ### Stock de sécurité et taux de service  ·  notion
 - tags : `inventory`, `probability`, `forecasting`, `statistical-inference`
 - liens sortants : [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Processus de Poisson]], [[Prédiction conforme]], [[Théorie des valeurs extrêmes]], [[Walk-forward CV]]
-- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### Stockage objet et API S3  ·  notion
 - tags : `object-storage`, `s3-compatible`
@@ -5273,7 +5308,7 @@
 ### Tournées de véhicules (VRP)  ·  notion
 - tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
 - liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Recherche opérationnelle]]
+- liens entrants : [[HGS-CVRP]], [[OR-Tools]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PyVRP]], [[Recherche opérationnelle]]
 
 ### Traitement du langage naturel  ·  notion
 - tags : `nlp`
@@ -5363,7 +5398,7 @@
 ### Walk-forward CV  ·  notion
 - tags : `timeseries`, `model-evaluation`, `resampling`
 - liens sortants : [[Data leakage]], [[Forecasting framing]], [[Forecasting metrics]], [[Scikit-Learn]], [[Validation croisée]], [[darts]], [[statsforecast]]
-- liens entrants : [[Chronos]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Indicateurs de santé]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive et RUL]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Régression]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]], [[sktime]], [[Évaluation de modèles]]
+- liens entrants : [[Chronos]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Indicateurs de santé]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive et RUL]], [[Pattern - Prévoir puis optimiser]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Régression]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Validation croisée]], [[sktime]], [[Évaluation de modèles]]
 
 ### Wasserstein distance  ·  notion
 - tags : `information-theory`, `optimal-transport`
@@ -5408,11 +5443,16 @@
 ### Pattern - Pipeline de maintenance prédictive on-prem  ·  pattern
 - tags : `pattern`, `predictive-maintenance`, `iiot`, `opc-ua`, `mqtt`, `anomaly-detection`
 - liens sortants : [[Alertmanager]], [[Comparatif - Brokers MQTT]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[EMQX]], [[Grafana]], [[Indicateurs de santé]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[darts]], [[open62541]]
-- liens entrants : [[Maintenance prédictive]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Patterns]], [[Rule - Évaluer une anomalie par événement, pas par point]]
+- liens entrants : [[Maintenance prédictive]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Prévoir puis optimiser]], [[Patterns]], [[Rule - Évaluer une anomalie par événement, pas par point]]
 
 ### Pattern - Pipeline scraping → matching → optimisation  ·  pattern
 - tags : `pattern`, `web-scraping`, `string-matching`, `combinatorial-optimization`, `linear-programming`, `data-pipeline`
 - liens sortants : [[BM25]], [[Comparatif - Scraping]], [[Comparatif - Solveurs d'optimisation]], [[Dagster]], [[Fuzzy matching & similarité de chaînes]], [[Optimisation combinatoire]], [[Playwright]], [[Prefect]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Pydantic]], [[Web scraping]], [[bm25s]], [[cloudscraper]], [[curl_cffi]], [[rank-bm25]], [[selectolax]], [[sentence-transformers]]
+- liens entrants : [[Pattern - Prévoir puis optimiser]], [[Patterns]]
+
+### Pattern - Prévoir puis optimiser  ·  pattern
+- tags : `pattern`, `forecasting`, `inventory`, `linear-programming`, `scheduling`, `simulation`
+- liens sortants : [[Calibration]], [[Chronos]], [[Classification ABC-XYZ]], [[Comparatif - Forecasting]], [[Comparatif - Solveurs d'optimisation]], [[De la prévision probabiliste à la quantité commandée]], [[Foundation models pour séries temporelles]], [[HGS-CVRP]], [[HiGHS]], [[Hierarchical forecasting]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[OR-Tools]], [[Optimisation]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Politique de maintenance et coût]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prefect]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Prédiction conforme]], [[PuLP]], [[PyVRP]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Tournées de véhicules (VRP)]], [[Walk-forward CV]], [[darts]], [[statsforecast]]
 - liens entrants : [[Patterns]]
 
 ### Pattern - RAG structuré graphe + human-in-the-loop  ·  pattern
@@ -5502,20 +5542,20 @@
 - `code-assistant` : Agents de code, Aider, Archify, BMAD, Cline, Comparatif - Assistants de code IA, Continue, Goose, Graphify, Kilo Code, Maka, OpenCode, Qwen Code, Spec Kit, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, Kilo Code, LM Studio Bionic, OpenCode, OpenHands, Qwen Code, Spec Kit, Zoo Code, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
-- `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, Optimisation, Optimisation combinatoire, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Pipeline scraping → matching → optimisation, Plannings de personnel (rostering), Programmation linéaire en nombres entiers (MIP), Programmation par contraintes, PuLP, Quantité économique de commande et tailles de lot, Tournées de véhicules (VRP)
+- `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, HGS-CVRP, HiGHS, OR-Tools, Optimisation, Optimisation combinatoire, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Pipeline scraping → matching → optimisation, Plannings de personnel (rostering), Programmation linéaire en nombres entiers (MIP), Programmation par contraintes, PuLP, PyVRP, Pyomo, Quantité économique de commande et tailles de lot, Tournées de véhicules (VRP)
 - `computer-vision` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Comparatif - Détection d'anomalies visuelles, Detectron2, Dinomaly, Détection d'anomalies visuelle, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Pattern - Inspection visuelle en ligne de production, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, anomalib, docTR, patchcore-inspection, segment-anything, supervision, timm, torchvision
 - `concentration` : Inégalités de concentration, Probabilités  — pas de page concept dédiée
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River  — pas de page concept dédiée
 - `condition-monitoring` : Analyse vibratoire, Anomalie acoustique, Cause racine d'une anomalie, Diagnostic de défauts de roulements, Indicateurs de santé, Santé de batterie (SOH et RUL), Surveillance conditionnelle et modes de défaillance  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Prédiction conforme, Tests & estimation, scipy.stats
 - `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
-- `constrained-optimization` : Optimisation sous contrainte
-- `constraint-programming` : Ordonnancement d'atelier (job-shop, flow-shop), Plannings de personnel (rostering), Programmation par contraintes
+- `constrained-optimization` : CVXPY, Optimisation sous contrainte, Pyomo
+- `constraint-programming` : OR-Tools, Ordonnancement d'atelier (job-shop, flow-shop), Plannings de personnel (rostering), Programmation par contraintes
 - `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers  — pas de page concept dédiée
 - `container-registry` : Comparatif - Registres d'images, Harbor, Zot  — pas de page concept dédiée
 - `context-engineering` : Agent skills, Architecture deep agent, Claude Video, Context engineering, Contexte long, Deep Agents, Deep research, Graphify, Harnais d'agent, Headroom, Mémoire des agents, OmniRoute, OpenViking, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
-- `convexity` : Convexity, Optimisation, Optimisation sous contrainte
+- `convexity` : CVXPY, Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
 - `cryptography` : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc  — pas de page concept dédiée
 - `dashboard` : Apache Superset, Beszel, Comparatif - Apps data & démos ML, Comparatif - BI auto-hébergée, Dash, Grafana, Interfaces & apps data, Kibana, Metabase, Netdata, Observabilité, Shiny for Python, Uptime Kuma, WrenAI, Zabbix  — pas de page concept dédiée
@@ -5579,7 +5619,7 @@
 - `file-format` : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données  — pas de page concept dédiée
 - `file-transfer` : Réseau, croc  — pas de page concept dédiée
 - `fine-tuning` : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, Fusion de modèles, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm  — pas de page concept dédiée
-- `forecasting` : ARIMA SARIMA, Chronos, Classification ABC-XYZ, Comparatif - Forecasting, De la prévision probabiliste à la quantité commandée, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Prophet, S&OP et plan directeur de production, Stock de sécurité et taux de service, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, sktime, statsforecast  — pas de page concept dédiée
+- `forecasting` : ARIMA SARIMA, Chronos, Classification ABC-XYZ, Comparatif - Forecasting, De la prévision probabiliste à la quantité commandée, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Pattern - Prévoir puis optimiser, Prophet, S&OP et plan directeur de production, Stock de sécurité et taux de service, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, sktime, statsforecast  — pas de page concept dédiée
 - `formatter` : Qualité du code, Ruff, Rule - Toolchain Python  — pas de page concept dédiée
 - `foundation-model` : Anomalie visuelle zero-shot et few-shot, Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything  — pas de page concept dédiée
 - `fourier` : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal  — pas de page concept dédiée
@@ -5615,7 +5655,7 @@
 - `infrastructure-as-code` : Ansible, Infrastructure as code — configuration, provisionnement et idempotence, OpenTofu
 - `interactive-viz` : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly  — pas de page concept dédiée
 - `interoperability` : Apache Arrow  — pas de page concept dédiée
-- `inventory` : Classification ABC-XYZ, De la prévision probabiliste à la quantité commandée, Indicateurs de stock (rotation, couverture, rupture), MRP et calcul des besoins, Modèle du vendeur de journaux (newsvendor), Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot, Recherche opérationnelle, S&OP et plan directeur de production, Stock de sécurité et taux de service  — pas de page concept dédiée
+- `inventory` : Classification ABC-XYZ, De la prévision probabiliste à la quantité commandée, Indicateurs de stock (rotation, couverture, rupture), MRP et calcul des besoins, Modèle du vendeur de journaux (newsvendor), Pattern - Prévoir puis optimiser, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot, Recherche opérationnelle, S&OP et plan directeur de production, SimPy, Stock de sécurité et taux de service  — pas de page concept dédiée
 - `isometric` : Comparatif - Diagrammes, Diagrammes, FossFLOW  — pas de page concept dédiée
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité, garak
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
@@ -5629,7 +5669,7 @@
 - `learning-theory` : Double descente et généralisation des grands modèles, Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
 - `linear-algebra` : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
 - `linear-model` : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
-- `linear-programming` : Comparatif - Solveurs d'optimisation, Mathématiques, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Programmation linéaire en nombres entiers (MIP), PuLP, S&OP et plan directeur de production
+- `linear-programming` : CVXPY, Comparatif - Solveurs d'optimisation, HiGHS, Mathématiques, OR-Tools, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, S&OP et plan directeur de production
 - `linter` : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
 - `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : ARES, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, RAGChecker, TruLens, Évaluation
@@ -5639,7 +5679,7 @@
 - `load-balancer` : HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik  — pas de page concept dédiée
 - `local-llm` : AnythingLLM, Assistants, Cognee, Comparatif - Exécution & serving LLM, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Gemma, Goose, Graphiti, Kilo Code, LM Studio, LM Studio Bionic, LibreChat, Licences de modèles open weights, Llama Guard, Mem0, Mistral, Ollama, Open WebUI, OpenCode, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Quantification des LLM - GGUF, AWQ, GPTQ, Qwen, Qwen Code, RAG documentaire on-prem - clé en main ou assemblé, Runtimes, Small Language Models, Superwhisper, Vanna, Zoo Code, gpt-oss, llama.cpp, llmfit, needle, pi, text-generation-webui  — pas de page concept dédiée
 - `logging` : Beats, Ingestion de données, Journalisation structurée et traçabilité, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry  — pas de page concept dédiée
-- `logistics` : Recherche opérationnelle, Tournées de véhicules (VRP)  — pas de page concept dédiée
+- `logistics` : HGS-CVRP, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP)  — pas de page concept dédiée
 - `loss-landscape` : Loss landscape and saddle points
 - `low-code` : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n  — pas de page concept dédiée
 - `lstm` : LSTM et réseaux récurrents
@@ -5698,7 +5738,7 @@
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
 - `opc-ua` : Données industrielles, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
-- `optimization` : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux  — pas de page concept dédiée
+- `optimization` : Adam optimizer, CVXPY, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, HiGHS, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux  — pas de page concept dédiée
 - `orchestration` : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n  — pas de page concept dédiée
 - `orm` : Comparatif - ORM, ORM, Prisma, SQLAlchemy, SQLModel
 - `osint` : Sécurité, Web-Check, osint4all  — pas de page concept dédiée
@@ -5710,7 +5750,7 @@
 - `parallel` : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Programmation asynchrone en Python, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
-- `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
+- `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `pii` : Presidio
@@ -5766,7 +5806,7 @@
 - `sbom` : Analyse de vulnérabilités, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy
 - `scaling-laws` : Maximal Update Parametrization, Mixture of Experts, Modèles de langage, Scaling laws, Small Language Models
 - `scheduler` : Airflow, Comparatif - Orchestrateurs data  — pas de page concept dédiée
-- `scheduling` : MRP et calcul des besoins, Ordonnancement d'atelier (job-shop, flow-shop), Plannings de personnel (rostering), Programmation par contraintes, Recherche opérationnelle, S&OP et plan directeur de production  — pas de page concept dédiée
+- `scheduling` : MRP et calcul des besoins, OR-Tools, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Prévoir puis optimiser, Plannings de personnel (rostering), Programmation par contraintes, Recherche opérationnelle, S&OP et plan directeur de production, SimPy  — pas de page concept dédiée
 - `schema-evolution` : API REST, GraphQL et gRPC, Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt  — pas de page concept dédiée
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
@@ -5781,6 +5821,7 @@
 - `sequential-analysis` : Sequential testing  — pas de page concept dédiée
 - `serialization` : API REST, GraphQL et gRPC, Apache Arrow, Avro  — pas de page concept dédiée
 - `signal-processing` : Analyse vibratoire, Anomalie acoustique, Comparatif - Traitement du signal, Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
+- `simulation` : Pattern - Prévoir puis optimiser, SimPy  — pas de page concept dédiée
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
 - `spectrogram` : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
@@ -5828,7 +5869,7 @@
 - `vc-dimension` : Théorie de l'apprentissage, VC dimension
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Comparatif - Bases vectorielles, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Algèbre linéaire, Vector norms  — pas de page concept dédiée
-- `vehicle-routing` : Recherche opérationnelle, Tournées de véhicules (VRP)  — pas de page concept dédiée
+- `vehicle-routing` : HGS-CVRP, OR-Tools, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP)  — pas de page concept dédiée
 - `version-control` : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge  — pas de page concept dédiée
 - `vibration-analysis` : Analyse vibratoire, Diagnostic de défauts de roulements
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
@@ -5915,7 +5956,7 @@
 - `file-format` (porté par : Avro, Delta Lake, Formats de fichiers et de tables, Parquet, Partitionnement & layout de données)
 - `file-transfer` (porté par : Réseau, croc)
 - `fine-tuning` (porté par : Axolotl, Comparatif - Fine-tuning LLM, DB-GPT, Distillation, Fine-tuning, Fusion de modèles, HuggingFace, LLaMA-Factory, LoRA et QLoRA, PEFT, RL for LLMs, RLHF and DPO, SFT, SetFit, Synthetic data generation, TRL, Transfer learning vision, Tunix, Unsloth, timm)
-- `forecasting` (porté par : ARIMA SARIMA, Chronos, Classification ABC-XYZ, Comparatif - Forecasting, De la prévision probabiliste à la quantité commandée, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Prophet, S&OP et plan directeur de production, Stock de sécurité et taux de service, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, sktime, statsforecast)
+- `forecasting` (porté par : ARIMA SARIMA, Chronos, Classification ABC-XYZ, Comparatif - Forecasting, De la prévision probabiliste à la quantité commandée, Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, Intermittent demand, Kats, Merlion, Modèles de Markov cachés et filtre de Kalman, Pattern - Prévoir puis optimiser, Prophet, S&OP et plan directeur de production, Stock de sécurité et taux de service, Séries temporelles, Time series feature engineering, aeon, darts, neuralforecast, pmdarima, sktime, statsforecast)
 - `formatter` (porté par : Qualité du code, Ruff, Rule - Toolchain Python)
 - `foundation-model` (porté par : Anomalie visuelle zero-shot et few-shot, Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
@@ -5933,7 +5974,7 @@
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
 - `interactive-viz` (porté par : Comparatif - Visualisation, Interfaces & apps data, Visualisation, altair, bokeh, plotly)
 - `interoperability` (porté par : Apache Arrow)
-- `inventory` (porté par : Classification ABC-XYZ, De la prévision probabiliste à la quantité commandée, Indicateurs de stock (rotation, couverture, rupture), MRP et calcul des besoins, Modèle du vendeur de journaux (newsvendor), Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot, Recherche opérationnelle, S&OP et plan directeur de production, Stock de sécurité et taux de service)
+- `inventory` (porté par : Classification ABC-XYZ, De la prévision probabiliste à la quantité commandée, Indicateurs de stock (rotation, couverture, rupture), MRP et calcul des besoins, Modèle du vendeur de journaux (newsvendor), Pattern - Prévoir puis optimiser, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot, Recherche opérationnelle, S&OP et plan directeur de production, SimPy, Stock de sécurité et taux de service)
 - `isometric` (porté par : Comparatif - Diagrammes, Diagrammes, FossFLOW)
 - `key-value` (porté par : Redis, Redis Insight)
 - `knowledge-graph` (porté par : Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, GraphRAG, Graphify, Graphiti, Mémoire des agents, Obsidian, Pattern - RAG structuré graphe + human-in-the-loop, RAG & retrieval)
@@ -5951,7 +5992,7 @@
 - `load-balancer` (porté par : HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
 - `local-llm` (porté par : AnythingLLM, Assistants, Cognee, Comparatif - Exécution & serving LLM, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Gemma, Goose, Graphiti, Kilo Code, LM Studio, LM Studio Bionic, LibreChat, Licences de modèles open weights, Llama Guard, Mem0, Mistral, Ollama, Open WebUI, OpenCode, Pattern - Agent sur LLM auto-hébergé, Prometheus-Eval, Quantification des LLM - GGUF, AWQ, GPTQ, Qwen, Qwen Code, RAG documentaire on-prem - clé en main ou assemblé, Runtimes, Small Language Models, Superwhisper, Vanna, Zoo Code, gpt-oss, llama.cpp, llmfit, needle, pi, text-generation-webui)
 - `logging` (porté par : Beats, Ingestion de données, Journalisation structurée et traçabilité, Kibana, Logstash, Loki, Métriques, logs et traces, Observabilité, OpenTelemetry)
-- `logistics` (porté par : Recherche opérationnelle, Tournées de véhicules (VRP))
+- `logistics` (porté par : HGS-CVRP, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP))
 - `low-code` (porté par : Activepieces, Alteryx, Apache NiFi, Automatisation no-code, Comparatif - Automatisation no-code, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Plateformes data & IA, Comparatif - Scraping, Dataiku, Dify, Flowise, LLaMA-Factory, Langflow, Mage, Maxun, Node-RED, Plateforme data & IA — concept, Plateformes data & IA, PraisonAI, Windmill, Zapier, gumloop, n8n)
 - `manifold` (porté par : Analyse factorielle, Comparatif - Réduction de dimension, Manifold learning, Non supervisé, PGA, PaCMAP, t-SNE and UMAP, umap-learn)
 - `markdown-conversion` (porté par : Documents, Firecrawl, Marker, MinerU, OpenDataLoader PDF, Page to Markdown, Parsing, olmOCR, pdf-inspector)
@@ -5981,7 +6022,7 @@
 - `notebook` (porté par : Kubeflow, Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
 - `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Journalisation structurée et traçabilité, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
-- `optimization` (porté par : Adam optimizer, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux)
+- `optimization` (porté par : Adam optimizer, CVXPY, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, HiGHS, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)
 - `osint` (porté par : Sécurité, Web-Check, osint4all)
 - `out-of-core` (porté par : Calcul distribué, Comparatif - Calcul distribué, Comparatif - Manipulation de données, Dask, DataFrames, Polars, Spark, datasets, xarray)
@@ -5990,7 +6031,7 @@
 - `package-manager` (porté par : Comparatif - Gestionnaires de paquets Python, Outils de développement, Packaging Python et environnements reproductibles, Rule - Toolchain Python, pip, uv)
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Programmation asynchrone en Python, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
-- `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
+- `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)
@@ -6018,7 +6059,7 @@
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses, Llama Guard, NeMo Guardrails)
 - `sast` (porté par : Analyse de vulnérabilités, Semgrep, Sécurité)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
-- `scheduling` (porté par : MRP et calcul des besoins, Ordonnancement d'atelier (job-shop, flow-shop), Plannings de personnel (rostering), Programmation par contraintes, Recherche opérationnelle, S&OP et plan directeur de production)
+- `scheduling` (porté par : MRP et calcul des besoins, OR-Tools, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Prévoir puis optimiser, Plannings de personnel (rostering), Programmation par contraintes, Recherche opérationnelle, S&OP et plan directeur de production, SimPy)
 - `schema-evolution` (porté par : API REST, GraphQL et gRPC, Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
@@ -6027,6 +6068,7 @@
 - `self-supervised` (porté par : Anomalie acoustique, Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : API REST, GraphQL et gRPC, Apache Arrow, Avro)
+- `simulation` (porté par : Pattern - Prévoir puis optimiser, SimPy)
 - `spectrogram` (porté par : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `sso` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité)
@@ -6057,7 +6099,7 @@
 - `unsupervised` (porté par : Analyse factorielle, Anomalie acoustique, Apprentissage non supervisé, Apprentissage semi-supervisé, Autoencodeurs, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, Comparatif - Détection d'anomalies, DBSCAN, DeepOD, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Fanalysis, Gaussian Mixture Models (GMM), HCPC, ICA, Isolation Forest, K-Means, Local Outlier Factor, Machine Learning, Manifold learning, NMF, Non supervisé, One-Class SVM, Orion, PCA, PGA, PaCMAP, Prince, PyOD, Réduction de dimension, Scikit-Learn, Sparse autoencoders, Types d'anomalies et régimes de supervision, Types de données et choix de modèle, hdbscan, k-médoïds (PAM), t-SNE and UMAP, umap-learn)
 - `uptime` (porté par : Uptime Kuma)
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
-- `vehicle-routing` (porté par : Recherche opérationnelle, Tournées de véhicules (VRP))
+- `vehicle-routing` (porté par : HGS-CVRP, OR-Tools, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP))
 - `version-control` (porté par : Aider, Bruno, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, jupytext, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)

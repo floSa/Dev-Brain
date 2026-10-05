@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1091,
+  "count": 1099,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -561,6 +561,9 @@
     ],
     "combinatorial-optimization": [
       "Comparatif - Solveurs d'optimisation",
+      "HGS-CVRP",
+      "HiGHS",
+      "OR-Tools",
       "Optimisation",
       "Optimisation combinatoire",
       "Ordonnancement d'atelier (job-shop, flow-shop)",
@@ -569,6 +572,8 @@
       "Programmation linéaire en nombres entiers (MIP)",
       "Programmation par contraintes",
       "PuLP",
+      "PyVRP",
+      "Pyomo",
       "Quantité économique de commande et tailles de lot",
       "Tournées de véhicules (VRP)"
     ],
@@ -655,9 +660,12 @@
       "python-dotenv"
     ],
     "constrained-optimization": [
-      "Optimisation sous contrainte"
+      "CVXPY",
+      "Optimisation sous contrainte",
+      "Pyomo"
     ],
     "constraint-programming": [
+      "OR-Tools",
       "Ordonnancement d'atelier (job-shop, flow-shop)",
       "Plannings de personnel (rostering)",
       "Programmation par contraintes"
@@ -715,6 +723,7 @@
       "Théorème central limite"
     ],
     "convexity": [
+      "CVXPY",
       "Convexity",
       "Optimisation",
       "Optimisation sous contrainte"
@@ -1467,6 +1476,7 @@
       "Kats",
       "Merlion",
       "Modèles de Markov cachés et filtre de Kalman",
+      "Pattern - Prévoir puis optimiser",
       "Prophet",
       "S&OP et plan directeur de production",
       "Stock de sécurité et taux de service",
@@ -1840,10 +1850,12 @@
       "Indicateurs de stock (rotation, couverture, rupture)",
       "MRP et calcul des besoins",
       "Modèle du vendeur de journaux (newsvendor)",
+      "Pattern - Prévoir puis optimiser",
       "Politiques de réapprovisionnement (s,S) et (R,Q)",
       "Quantité économique de commande et tailles de lot",
       "Recherche opérationnelle",
       "S&OP et plan directeur de production",
+      "SimPy",
       "Stock de sécurité et taux de service"
     ],
     "isometric": [
@@ -1963,12 +1975,17 @@
       "Socle"
     ],
     "linear-programming": [
+      "CVXPY",
       "Comparatif - Solveurs d'optimisation",
+      "HiGHS",
       "Mathématiques",
+      "OR-Tools",
       "Optimisation",
       "Pattern - Pipeline scraping → matching → optimisation",
+      "Pattern - Prévoir puis optimiser",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP",
+      "Pyomo",
       "S&OP et plan directeur de production"
     ],
     "linter": [
@@ -2256,6 +2273,8 @@
       "OpenTelemetry"
     ],
     "logistics": [
+      "HGS-CVRP",
+      "PyVRP",
       "Recherche opérationnelle",
       "Tournées de véhicules (VRP)"
     ],
@@ -2860,10 +2879,12 @@
     ],
     "optimization": [
       "Adam optimizer",
+      "CVXPY",
       "Comparatif - Solveurs d'optimisation",
       "Convexity",
       "De la prévision probabiliste à la quantité commandée",
       "Gradient descent",
+      "HiGHS",
       "Learning rate schedules",
       "Loss landscape and saddle points",
       "Mathématiques",
@@ -2880,6 +2901,7 @@
       "Politiques de réapprovisionnement (s,S) et (R,Q)",
       "Programmation linéaire en nombres entiers (MIP)",
       "PuLP",
+      "Pyomo",
       "Quantité économique de commande et tailles de lot",
       "Recherche opérationnelle",
       "Théorie des jeux"
@@ -2980,6 +3002,7 @@
       "Pattern - Moteur de jeu pur + IA séparée",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Pattern - Pipeline scraping → matching → optimisation",
+      "Pattern - Prévoir puis optimiser",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Pattern - Stack démo ML locale multi-services"
     ],
@@ -3544,11 +3567,14 @@
     ],
     "scheduling": [
       "MRP et calcul des besoins",
+      "OR-Tools",
       "Ordonnancement d'atelier (job-shop, flow-shop)",
+      "Pattern - Prévoir puis optimiser",
       "Plannings de personnel (rostering)",
       "Programmation par contraintes",
       "Recherche opérationnelle",
-      "S&OP et plan directeur de production"
+      "S&OP et plan directeur de production",
+      "SimPy"
     ],
     "schema-evolution": [
       "API REST, GraphQL et gRPC",
@@ -3754,6 +3780,10 @@
       "Transformée de Fourier",
       "librosa",
       "scipy.signal"
+    ],
+    "simulation": [
+      "Pattern - Prévoir puis optimiser",
+      "SimPy"
     ],
     "slo": [
       "SLO et alerting"
@@ -4318,6 +4348,9 @@
       "Vector norms"
     ],
     "vehicle-routing": [
+      "HGS-CVRP",
+      "OR-Tools",
+      "PyVRP",
       "Recherche opérationnelle",
       "Tournées de véhicules (VRP)"
     ],
@@ -28092,6 +28125,36 @@
       "maturite": null
     },
     {
+      "path": "Mathématiques/Optimisation/CVXPY.md",
+      "nom": "CVXPY",
+      "alias": [
+        "cvxpy",
+        "CVX Python",
+        "disciplined convex programming Python"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Langage de modélisation Python pour l'optimisation convexe : le problème s'écrit comme les maths, CVXPY vérifie la convexité (DCP) puis le traduit pour un solveur (Clarabel, OSQP et SCS livrés, HiGHS, SCIP et d'autres en option) ; Apache-2.0.",
+      "tags": [
+        "optimization",
+        "convexity",
+        "constrained-optimization",
+        "linear-programming"
+      ],
+      "alternatives": [
+        "[[PuLP]]",
+        "[[Pyomo]]",
+        "[[OR-Tools]]"
+      ],
+      "complements": [
+        "[[HiGHS]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Mathématiques/Optimisation/Comparatif - Solveurs d'optimisation.md",
       "nom": "Comparatif - Solveurs d'optimisation",
       "alias": null,
@@ -28164,6 +28227,63 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/HGS-CVRP.md",
+      "nom": "HGS-CVRP",
+      "alias": [
+        "HGS CVRP",
+        "Hybrid Genetic Search CVRP",
+        "HGS",
+        "PyHygese",
+        "SWAP*"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "cli",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Implémentation C++ de référence de la recherche génétique hybride pour le problème de tournées avec capacités (CVRP) et son voisinage SWAP*, en exécutable et en interface C, pensée pour des instances jusqu'à environ 1 000 clients ; MIT.",
+      "tags": [
+        "vehicle-routing",
+        "logistics",
+        "combinatorial-optimization"
+      ],
+      "alternatives": [
+        "[[PyVRP]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Optimisation/HiGHS.md",
+      "nom": "HiGHS",
+      "alias": [
+        "highspy",
+        "HiGHS solver",
+        "HiGHS optimizer",
+        "ERGO-Code HiGHS"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Solveur libre de programmation linéaire, quadratique convexe et en nombres entiers (simplexe, points intérieurs, PDLP, un solveur MIP), en C++ sans dépendance, appelé par highspy et par la plupart des modeleurs Python ; MIT, ni non linéaire ni QP en entiers.",
+      "tags": [
+        "linear-programming",
+        "optimization",
+        "combinatorial-optimization"
+      ],
+      "alternatives": [
+        "[[OR-Tools]]"
+      ],
+      "complements": [
+        "[[PuLP]]",
+        "[[Pyomo]]",
+        "[[CVXPY]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Mathématiques/Optimisation/Learning rate schedules.md",
@@ -28249,6 +28369,39 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Mathématiques/Optimisation/OR-Tools.md",
+      "nom": "OR-Tools",
+      "alias": [
+        "Google OR-Tools",
+        "ortools",
+        "CP-SAT",
+        "CP-SAT solver",
+        "Google Optimization Tools"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Suite C++ de Google pour l'optimisation combinatoire, utilisable depuis Python : solveur CP-SAT (contraintes sur entiers, recherche parallèle), solveurs LP (Glop, PDLP), enveloppes MIP vers des solveurs tiers, bibliothèque de tournées et algorithmes de graphes ; Apache-2.0.",
+      "tags": [
+        "constraint-programming",
+        "combinatorial-optimization",
+        "linear-programming",
+        "scheduling",
+        "vehicle-routing"
+      ],
+      "alternatives": [
+        "[[PuLP]]",
+        "[[Pyomo]]",
+        "[[CVXPY]]",
+        "[[HiGHS]]",
+        "[[PyVRP]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Mathématiques/Optimisation/Optimisation combinatoire.md",
@@ -28433,8 +28586,70 @@
         "linear-programming",
         "combinatorial-optimization"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Pyomo]]",
+        "[[CVXPY]]",
+        "[[OR-Tools]]"
+      ],
+      "complements": [
+        "[[HiGHS]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Optimisation/PyVRP.md",
+      "nom": "PyVRP",
+      "alias": [
+        "pyvrp",
+        "Python VRP solver",
+        "PyVRP VRP solver"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Solveur de tournées de véhicules en Python à cœur C++ : capacités, fenêtres de temps, flotte hétérogène, multi-dépôts, collectes-livraisons, clients optionnels, recherche locale itérée ; MIT, avec une édition Enterprise payante vendue à part.",
+      "tags": [
+        "vehicle-routing",
+        "logistics",
+        "combinatorial-optimization"
+      ],
+      "alternatives": [
+        "[[OR-Tools]]",
+        "[[HGS-CVRP]]"
+      ],
       "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Mathématiques/Optimisation/Pyomo.md",
+      "nom": "Pyomo",
+      "alias": [
+        "pyomo",
+        "Python Optimization Modeling Objects",
+        "Coopr"
+      ],
+      "role": "brique",
+      "categorie": "math/optimisation",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Langage de modélisation algébrique en Python pour LP, MIP, non linéaire, disjonctif et stochastique : le modèle est un objet Python, la résolution est confiée à un solveur externe que Pyomo n'installe pas ; BSD-3-Clause, projet COIN-OR.",
+      "tags": [
+        "optimization",
+        "linear-programming",
+        "combinatorial-optimization",
+        "constrained-optimization"
+      ],
+      "alternatives": [
+        "[[PuLP]]",
+        "[[CVXPY]]",
+        "[[OR-Tools]]"
+      ],
+      "complements": [
+        "[[HiGHS]]"
+      ],
       "maturite": "production"
     },
     {
@@ -28825,6 +29040,29 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Mathématiques/Recherche opérationnelle/SimPy.md",
+      "nom": "SimPy",
+      "alias": [
+        "simpy",
+        "SimPy discrete-event simulation",
+        "simulation à événements discrets Python"
+      ],
+      "role": "brique",
+      "categorie": "math/recherche-operationnelle",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Cadre de simulation à événements discrets en Python pur : les processus sont des générateurs, les ressources partagées (serveurs, files, stocks) des objets du paquet, le temps est simulé, réel ou avancé pas à pas ; MIT.",
+      "tags": [
+        "simulation",
+        "inventory",
+        "scheduling"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Mathématiques/Recherche opérationnelle/Stock de sécurité et taux de service.md",
@@ -30922,6 +31160,28 @@
         "combinatorial-optimization",
         "linear-programming",
         "data-pipeline"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Prévoir puis optimiser.md",
+      "nom": "Pattern - Prévoir puis optimiser",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "forecasting",
+        "inventory",
+        "linear-programming",
+        "scheduling",
+        "simulation"
       ],
       "alternatives": null,
       "complements": null,
