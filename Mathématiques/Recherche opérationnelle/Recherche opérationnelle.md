@@ -21,6 +21,7 @@ tags: [inventory, newsvendor, scheduling, vehicle-routing, logistics, optimizati
 - **Mesurer.** [[Indicateurs de stock (rotation, couverture, rupture)]] est un référentiel de définitions : leur variation d'une entreprise à l'autre est le premier piège d'un tableau de bord.
 - **Du stock au plan, de la quantité au calendrier.** [[S&OP et plan directeur de production]] fixe, par famille puis par produit, combien produire et pour quelle semaine : un plan agrégé qu'un LP chiffre, puis un tableau que le PDP décline. [[MRP et calcul des besoins]] éclate ce plan en composants et en dates de lancement, par une récurrence déterministe qui ne vérifie pas la capacité. [[Ordonnancement d'atelier (job-shop, flow-shop)]] vient ensuite : dans quel ordre, sur quelle machine, avec une borne inférieure pour mesurer l'écart.
 - **Des personnes et des véhicules.** [[Plannings de personnel (rostering)]] couvre une demande de présence en respectant des règles dures et en soignant des règles souples ; [[Tournées de véhicules (VRP)]] construit les routes d'une flotte sous capacité et fenêtres de temps. Les modèles de base sont déterministes : chaque page dit ce qu'elle ne couvre pas.
+- **Simuler avant de décider.** Quand la formule ne tient plus — demande variable, délais aléatoires, pannes —, [[SimPy]] fait tourner la politique sur un modèle de l'atelier ou du stock et en mesure le comportement. C'est une évaluation, pas une recherche de l'optimum, et c'est pourquoi la brique est ici et pas dans [[Optimisation]], avec les solveurs.
 - **Un point d'attention : la capacité.** Le MRP la suppose infinie ; le plan agrégé et l'atelier la rendent explicite. Un plan qui franchit l'étape du MRP sans vérification de charge n'est pas un plan faisable.
 - **Ce qui n'est pas ici, et pourquoi.** [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]] et [[Programmation par contraintes]] restent dans [[Optimisation]] : le MIP et la programmation par contraintes s'appliquent à un stock comme à un horaire, ils ne portent aucun problème en propre. Ces notions donnent les outils des pages ci-dessus, et les pages ci-dessus les renvoient vers eux. La prévision de la demande reste dans [[Séries temporelles]] : c'est l'entrée de la décision, pas la décision.
 
@@ -39,6 +40,8 @@ tags: [inventory, newsvendor, scheduling, vehicle-routing, logistics, optimizati
 - Construire un planning d'équipes qui couvre la demande → [[Plannings de personnel (rostering)]].
 - Construire les tournées d'une flotte de véhicules → [[Tournées de véhicules (VRP)]].
 - Modéliser un de ces problèmes avec des contraintes plutôt que des inégalités linéaires → [[Programmation par contraintes]], au dossier [[Optimisation]].
+- Résoudre un de ces problèmes par un outil libre → [[OR-Tools]] pour les contraintes et les plannings, [[PyVRP]] ou [[HGS-CVRP]] pour les tournées, [[PuLP]] ou [[HiGHS]] pour un modèle linéaire en nombres entiers, tous au dossier [[Optimisation]].
+- Essayer une politique de stock ou d'atelier par simulation avant de la déployer → [[SimPy]].
 
 <!-- AUTO:START -->
 ### Notions
