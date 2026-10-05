@@ -103,6 +103,8 @@ def wagner_whitin(d, K, h):
 - [[Modèle du vendeur de journaux (newsvendor)]] — une seule période, demande aléatoire : la quantité vient d'un quantile, pas d'un compromis lancement/possession.
 - [[Programmation linéaire en nombres entiers (MIP)]] et [[Optimisation combinatoire]] — pour le dimensionnement capacitaire, les remises complexes, les plusieurs articles.
 - [[Optimisation sous contrainte]] — cadre général quand le problème n'a plus de formule fermée.
+- [[MRP et calcul des besoins]] — l'étape qui transforme une taille de lot en ordres de fabrication.
+- [[Ordonnancement d'atelier (job-shop, flow-shop)]] — le calendrier que plusieurs articles sur une même machine imposent.
 
 ## Pour aller plus loin
 

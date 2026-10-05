@@ -102,6 +102,8 @@ Prépublication de juillet 2026, lue au niveau du résumé : Fernández-Palacios
 - [[Théorie des valeurs extrêmes]] — quantiles très élevés d'une queue lourde.
 - [[Processus de Poisson]] — demande rare à loi connue, lecture directe du quantile.
 - [[Forecasting metrics]], [[Calibration]], [[Prédiction conforme]] — mesurer l'erreur, vérifier qu'elle est bien calibrée, la borner sans loi supposée.
+- [[MRP et calcul des besoins]] — où le stock de sécurité entre dans le calcul des besoins.
+- [[S&OP et plan directeur de production]] — les stocks tampons d'un plan agrégé, dimensionnés avec ce stock de sécurité.
 
 ## Pour aller plus loin
 
