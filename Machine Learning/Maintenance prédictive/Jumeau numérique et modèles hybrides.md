@@ -72,6 +72,8 @@ tags: [digital-twin, predictive-maintenance, rul]
 - [[Maintenance prédictive avec peu de pannes]] — le régime où la physique compense le manque de données.
 - [[RUL par apprentissage profond]] et [[RUL par analyse de survie]] — les voies sans modèle du mécanisme.
 - [[Time series anomaly detection]] — détecter l'écart sans modèle physique.
+- [[Santé de batterie (SOH et RUL)]] — le cas où le modèle physique de cellule et l'apprentissage se rejoignent.
+- [[Cause racine d'une anomalie]] — simuler les défauts pour disposer d'une vérité terrain.
 - [[Inférence en bordure - modèles sur du matériel d'atelier]] et [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — le fil numérique côté atelier.
 
 ## Pour aller plus loin

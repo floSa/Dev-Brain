@@ -70,6 +70,8 @@ tags: [predictive-maintenance, condition-monitoring]
 - [[Time series anomaly detection]] et [[Types d'anomalies et régimes de supervision]] — la détection d'écart sans connaissance du mode.
 - [[Analyse de survie]] — la durée jusqu'à la panne avec censure ; [[RUL par analyse de survie]] en est la déclinaison maintenance.
 - [[Jumeau numérique et modèles hybrides]] — la surveillance appuyée sur un modèle du mécanisme.
+- [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] — la fiabilité par équipement, avant tout capteur.
+- [[Cause racine d'une anomalie]] — remonter d'une alerte au mode de défaillance en cause.
 - Amazon Monitron — une offre de surveillance conditionnelle livrée de bout en bout (capteurs, passerelle, analyse dans le cloud) ; fermée aux nouveaux clients depuis le 2024-10-31.
 
 ## Pour aller plus loin

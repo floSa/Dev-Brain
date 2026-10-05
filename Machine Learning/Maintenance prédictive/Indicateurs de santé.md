@@ -87,6 +87,8 @@ Q  = ((Z - pca.inverse_transform(T))**2).sum(axis=1)
 - [[RUL par apprentissage profond]] — contourne le HI en prédisant le RUL de bout en bout.
 - [[Surveillance conditionnelle et modes de défaillance]] — quels capteurs pour quel mode de défaillance.
 - [[Jeux de données PHM]] — où essayer ces critères.
+- [[Santé de batterie (SOH et RUL)]] — le SOH, indicateur de santé d'une cellule, et ses seuils de fin de vie.
+- [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] — la moyenne d'une flotte, par opposition à l'état d'une machine.
 
 ## Pour aller plus loin
 

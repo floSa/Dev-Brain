@@ -80,6 +80,8 @@ tags: [rul, predictive-maintenance, survival-analysis, regression]
 - [[Maintenance prédictive et RUL]] — le cadre du pronostic.
 - [[Indicateurs de santé]] — un indice qui résume les capteurs en une seule covariable.
 - [[Politique de maintenance et coût]] — une loi de durée de vie nourrit directement le coût d'un remplacement.
+- [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] — le taux de panne moyen d'un parc, avant toute covariable par machine.
+- [[Santé de batterie (SOH et RUL)]] — le RUL appliqué à une cellule, où peu de trajectoires vont jusqu'à la fin de vie.
 - [[Modèles de Markov cachés et filtre de Kalman]] — modéliser l'état de santé comme latent, autre route vers la covariable dynamique.
 - [[Maintenance prédictive]] — le dossier.
 

@@ -70,6 +70,8 @@ tags: [predictive-maintenance, rul, thresholding, optimization]
 - [[Analyse de survie]] et [[Processus de Poisson]] — durées de vie et comptage des pannes.
 - [[Prédiction conforme]] — intervalles sur le RUL avec garantie de couverture.
 - [[Régression quantile]] — viser le quantile que les coûts dictent.
+- [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]] — la loi de panne moyenne d'un parc, point de départ des politiques d'âge.
+- [[OEE et rendement global]] — la perte de disponibilité que la politique cherche à réduire.
 - [[Markov Decision Process]] — le cadre des décisions séquentielles.
 
 ## Pour aller plus loin
