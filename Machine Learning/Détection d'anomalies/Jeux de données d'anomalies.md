@@ -104,3 +104,4 @@ Trois jeux appellent une lecture plus fine :
 - [[Types d'anomalies et régimes de supervision]] — ce que chaque jeu suppose du « normal » de son entraînement
 - [[Time series anomaly detection]] — la notion pour les jeux de séries
 - [[Jeux de données PHM]] — l'annuaire voisin côté maintenance prédictive (MIMII y figure aussi)
+- [[Anomalie acoustique]] — la notion côté son de machine, où MIMII sert de jeu d'essai

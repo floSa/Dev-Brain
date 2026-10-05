@@ -134,6 +134,7 @@ Côté résidus, un saut $\delta$ de la moyenne d'un AR(1) donne un premier rés
 - [[Tests d'hypothèse]] — chaque point de carte est un test ; la carte répète ce test à chaque instant, d'où l'ARL.
 - [[Théorie des valeurs extrêmes]] — les seuils à risque très bas de SPOT (voir [[Score et seuil d'alerte]]) remplacent le $3\sigma$ gaussien par une queue estimée.
 - [[Maintenance prédictive et RUL]] — la surveillance d'un indicateur de santé est un usage naturel des cartes (rapprochement de cette page).
+- [[OEE et rendement global]] — un indicateur d'atelier qu'on surveille contre ses limites naturelles.
 
 ## Pour aller plus loin
 

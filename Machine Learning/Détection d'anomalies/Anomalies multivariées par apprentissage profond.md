@@ -125,6 +125,8 @@ tags: [anomaly-detection, timeseries, deep-learning, transformers, benchmark]
 - [[Time series anomaly detection]] — la notion de départ : résidus de prévision, [[STUMPY]] (profil matriciel), [[Détection d'outliers multivariée]] sur fenêtres. Trois alternatives qui n'exigent aucun entraînement profond.
 - [[Autoencodeurs]] — le socle de la reconstruction, avec sa limite : un modèle trop expressif reconstruit aussi l'anomalie.
 - [[Évaluer une détection d'anomalies]] — où le *point-adjust* de Kim et al. (AAAI 2022) est décrit ; les chiffres de cette page doivent se lire à travers elle.
+- [[Expliquer une anomalie (contribution des capteurs)]] — de l'alerte au classement des capteurs en cause.
+- [[Anomalie acoustique]] — les mêmes familles de modèles appliquées au son de machine.
 - [[Jeux de données d'anomalies]] — les terrains d'essai et leurs défauts.
 - [[Foundation models et anomalies de séries]] — la voie sans entraînement par série : prévoir avec un modèle pré-entraîné, lire le résidu.
 - [[Détection d'anomalies en ligne]] — ce qui change quand les fenêtres arrivent au fil de l'eau et que le normal dérive.
