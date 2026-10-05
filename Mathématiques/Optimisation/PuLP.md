@@ -8,8 +8,8 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: []
-complements: []
+alternatives: ["[[Pyomo]]", "[[CVXPY]]", "[[OR-Tools]]"]
+complements: ["[[HiGHS]]"]
 tags: [optimization, linear-programming, combinatorial-optimization]
 url_docs: https://coin-or.github.io/pulp/
 url_repo: https://github.com/coin-or/pulp
@@ -42,8 +42,8 @@ opérationnelle en Python.
 
 | Prendre si | Écarter si |
 |---|---|
-| Modéliser un problème LP ou MIP — allocation de ressources, planification, sac à dos, affectation, tournées — sans coupler le code à un solveur précis | Optimisation non linéaire ou convexe générale, quadratique ou conique : Pyomo et CVXPY sont plus expressifs (aucun des deux n'est fiché au brain) |
-| Prototyper une formulation puis changer de solveur, de CBC à Gurobi, sans réécrire le modèle | Modèle industriel très gros où l'on exploite finement l'API native du solveur — callbacks, warm start : API Gurobi ou CPLEX directe, ou Pyomo |
+| Modéliser un problème LP ou MIP — allocation de ressources, planification, sac à dos, affectation, tournées — sans coupler le code à un solveur précis | Optimisation non linéaire ou convexe générale, quadratique ou conique : [[Pyomo]] et [[CVXPY]] sont plus expressifs |
+| Prototyper une formulation puis changer de solveur, de CBC à Gurobi, sans réécrire le modèle | Modèle industriel très gros où l'on exploite finement l'API native du solveur — callbacks, warm start : API Gurobi ou CPLEX directe, ou [[Pyomo]] |
 | Apprendre ou enseigner le MIP : la syntaxe colle à la formulation mathématique | Optimisation continue sans contraintes linéaires : `scipy.optimize` couvre le besoin |
 | | Attendre du solveur qu'il rattrape la formulation : CBC est correct mais décroche des solveurs commerciaux sur les gros MIP, et quand le branch & bound traîne la cause est presque toujours un big-M lâche → [[Programmation linéaire en nombres entiers (MIP)]] |
 
@@ -59,7 +59,13 @@ opérationnelle en Python.
 
 ### Alternatives
 
-- *Aucune alternative déclarée : les candidats naturels — Pyomo (LP, MIP, NLP, MINLP, proche d'un langage algébrique), CVXPY (optimisation convexe en formulation DCP), Google OR-Tools (MIP, CP-SAT, routing) — n'ont pas de page au brain. Le manque est ouvert au backlog d'enrichissement, section « Solveurs d'optimisation ».*
+- [[Pyomo]] — Langage de modélisation algébrique en Python pour LP, MIP, non linéaire, disjonctif et stochastique : le modèle est un objet Python, la résolution est confiée à un solveur externe que Pyomo n'installe pas ; BSD-3-Clause, projet COIN-OR. — le modeleur à prendre quand le problème sort du LP et du MIP, ou quand il faut piloter finement le solveur.
+- [[CVXPY]] — Langage de modélisation Python pour l'optimisation convexe : le problème s'écrit comme les maths, CVXPY vérifie la convexité (DCP) puis le traduit pour un solveur (Clarabel, OSQP et SCS livrés, HiGHS, SCIP et d'autres en option) ; Apache-2.0. — le modeleur pour les problèmes convexes, quadratiques ou coniques, que PuLP ne formule pas.
+- [[OR-Tools]] — Suite C++ de Google pour l'optimisation combinatoire, utilisable depuis Python : solveur CP-SAT (contraintes sur entiers, recherche parallèle), solveurs LP (Glop, PDLP), enveloppes MIP vers des solveurs tiers, bibliothèque de tournées et algorithmes de graphes ; Apache-2.0. — la suite qui porte son propre solveur de contraintes, pour les modèles riches en ordre et en ressources.
+
+### Compléments
+
+- [[HiGHS]] — Solveur libre de programmation linéaire, quadratique convexe et en nombres entiers (simplexe, points intérieurs, PDLP, un solveur MIP), en C++ sans dépendance, appelé par highspy et par la plupart des modeleurs Python ; MIT, ni non linéaire ni QP en entiers. — un solveur libre auquel PuLP délègue la résolution, à la place de CBC.
 
 ## Ressources
 
@@ -70,4 +76,4 @@ opérationnelle en Python.
 
 - [[Optimisation]] — le hub du dossier
 - [[Optimisation combinatoire]] — la notion : la classe de problèmes que le MIP formule
-- [[Comparatif - Solveurs d'optimisation]] — la vue du dossier, qui ne compte qu'un membre faute des autres solveurs au brain
+- [[Comparatif - Solveurs d'optimisation]] — la vue du dossier, qui réunit PuLP et les autres modeleurs et solveurs libres
