@@ -84,6 +84,7 @@ tags: [vibration-analysis, signal-processing, fourier, condition-monitoring]
 - [[Traitement du signal]] — page chapeau.
 - [[Time series anomaly detection]] — détecter une dérive sur la série d'indicateurs plutôt que lire le spectre à la main.
 - [[Jeux de données PHM]] — des enregistrements de vibration de roulements pour s'exercer.
+- [[Anomalie acoustique]] — le même problème par microphone, sans contact.
 - [[Inférence en bordure - modèles sur du matériel d'atelier]] et [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]] — calculer ces indicateurs sur site et remonter les mesures.
 
 ## Pour aller plus loin
