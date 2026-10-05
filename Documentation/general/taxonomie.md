@@ -407,6 +407,12 @@ valeurs disparues et ne sont pas reconduites.
   « Recherche opérationnelle ». Ce nom était un **alias** du hub [[Optimisation]] ; l'alias est retiré
   pour qu'un lien nu ne désigne pas deux pages (aucun lien ne l'employait). Seul le nom de fichier
   `Recherche opérationnelle.md` est créé, aucun autre fichier de ce nom n'existe.
+  **Application aux briques (lot 13, 2026-10-05).** Un **solveur** ou un **modeleur** est une façon de
+  résoudre : il va en `math/optimisation`, même taillé pour un seul problème — [[PyVRP]] et [[HGS-CVRP]]
+  (tournées) y sont rangés avec [[OR-Tools]], [[HiGHS]], [[Pyomo]], [[CVXPY]] et [[PuLP]], et c'est aussi ce
+  qui les fait entrer dans la vue du comparatif des solveurs. Un outil qui **évalue une politique** sans rien
+  résoudre, [[SimPy]] (simulation d'un stock ou d'un atelier), va ici : en `math/optimisation` il
+  entrerait dans la vue du comparatif des solveurs, qu'il n'a pas lieu d'alimenter.
 - `math/algebre-lineaire` — **ouvert au lot 4.** Le langage dans lequel données et modèles sont
   écrits : normes, produits matriciels, projections, décompositions (SVD, valeurs propres). Ce
   sont les objets et leurs propriétés, pas les méthodes qui s'en servent. Distinct de
