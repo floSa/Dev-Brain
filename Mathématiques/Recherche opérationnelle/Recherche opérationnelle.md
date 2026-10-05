@@ -57,4 +57,7 @@ tags: [inventory, newsvendor, scheduling, vehicle-routing, logistics, optimizati
 - [[S&OP et plan directeur de production]] — domaines : data-sci, ml-eng
 - [[Stock de sécurité et taux de service]] — domaines : data-sci
 - [[Tournées de véhicules (VRP)]] — domaines : data-sci, ml-eng
+
+### Briques
+- [[SimPy]] — Cadre de simulation à événements discrets en Python pur : les processus sont des générateurs, les ressources partagées (serveurs, files, stocks) des objets du paquet, le temps est simulé, réel ou avancé pas à pas ; MIT.
 <!-- AUTO:END -->

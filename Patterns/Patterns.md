@@ -30,6 +30,7 @@ pitch: Des combinaisons de briques déjà éprouvées — ce qui marche ensemble
 - [[Pattern - Moteur de jeu pur + IA séparée]]
 - [[Pattern - Pipeline de maintenance prédictive on-prem]]
 - [[Pattern - Pipeline scraping → matching → optimisation]]
+- [[Pattern - Prévoir puis optimiser]]
 - [[Pattern - RAG structuré graphe + human-in-the-loop]]
 - [[Pattern - Stack démo ML locale multi-services]]
 <!-- AUTO:END -->

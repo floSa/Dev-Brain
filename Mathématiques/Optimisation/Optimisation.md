@@ -52,7 +52,13 @@ tags: [optimization, gradient-descent, convexity, second-order, learning-rate, l
 - [[Programmation par contraintes]] — domaines : data-sci, ml-eng
 
 ### Briques
+- [[CVXPY]] — Langage de modélisation Python pour l'optimisation convexe : le problème s'écrit comme les maths, CVXPY vérifie la convexité (DCP) puis le traduit pour un solveur (Clarabel, OSQP et SCS livrés, HiGHS, SCIP et d'autres en option) ; Apache-2.0.
+- [[HGS-CVRP]] — Implémentation C++ de référence de la recherche génétique hybride pour le problème de tournées avec capacités (CVRP) et son voisinage SWAP*, en exécutable et en interface C, pensée pour des instances jusqu'à environ 1 000 clients ; MIT.
+- [[HiGHS]] — Solveur libre de programmation linéaire, quadratique convexe et en nombres entiers (simplexe, points intérieurs, PDLP, un solveur MIP), en C++ sans dépendance, appelé par highspy et par la plupart des modeleurs Python ; MIT, ni non linéaire ni QP en entiers.
+- [[OR-Tools]] — Suite C++ de Google pour l'optimisation combinatoire, utilisable depuis Python : solveur CP-SAT (contraintes sur entiers, recherche parallèle), solveurs LP (Glop, PDLP), enveloppes MIP vers des solveurs tiers, bibliothèque de tournées et algorithmes de graphes ; Apache-2.0.
 - [[PuLP]] — Modeleur de programmation linéaire et en nombres entiers (LP/MIP) en Python : on décrit le modèle en objets Python, PuLP le passe à un solveur (CBC par défaut, ou Gurobi, CPLEX, HiGHS…).
+- [[Pyomo]] — Langage de modélisation algébrique en Python pour LP, MIP, non linéaire, disjonctif et stochastique : le modèle est un objet Python, la résolution est confiée à un solveur externe que Pyomo n'installe pas ; BSD-3-Clause, projet COIN-OR.
+- [[PyVRP]] — Solveur de tournées de véhicules en Python à cœur C++ : capacités, fenêtres de temps, flotte hétérogène, multi-dépôts, collectes-livraisons, clients optionnels, recherche locale itérée ; MIT, avec une édition Enterprise payante vendue à part.
 
 ### Comparatifs
 - [[Comparatif - Solveurs d'optimisation]]
