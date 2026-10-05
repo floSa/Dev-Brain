@@ -100,6 +100,7 @@ Kıcıman, Ness, Sharma, Tan (*Causal reasoning and large language models*, arXi
 - [[Modélisation d'uplift]] — suppose aussi l'ignorabilité ; la découverte causale peut aider à choisir les covariables d'ajustement.
 - [[Inférence bayésienne]] — l'apprentissage de structure bayésien met une loi sur les graphes ; voisin par le score, pas par les hypothèses.
 - [[Modèles graphiques probabilistes]] — le cadre des graphes (d-séparation, équivalence de Markov, fidélité) sur lequel s'appuient les algorithmes d'apprentissage de structure.
+- [[Cause racine d'une anomalie]] — l'usage en maintenance : remonter d'une anomalie à sa source.
 - Briques du brain : **sans objet** — aucune bibliothèque de découverte causale n'a de fiche.
 
 ## Pour aller plus loin
