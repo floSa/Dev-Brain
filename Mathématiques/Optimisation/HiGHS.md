@@ -87,7 +87,6 @@ en cours.
 
 - Documentation — https://ergo-code.github.io/HiGHS/
 - Dépôt — https://github.com/ERGO-Code/HiGHS
-- Site — https://www.highs.dev
 
 ## Voir aussi
 

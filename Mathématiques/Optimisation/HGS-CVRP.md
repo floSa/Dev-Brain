@@ -82,10 +82,10 @@ Aucun complément déclaré.
 
 ## Ressources
 
-- Dépôt et documentation — https://github.com/vidalt/HGS-CVRP
+- Dépôt — https://github.com/vidalt/HGS-CVRP
 - Article — Vidal (2022), *Hybrid Genetic Search for the CVRP: Open-Source Implementation and SWAP\* Neighborhood*, arXiv 2012.10384 : https://arxiv.org/abs/2012.10384
-- Article fondateur — Vidal, Crainic, Gendreau, Lahrichi, Rei (2012), Operations Research 60(3), 611-624 : https://doi.org/10.1287/opre.1120.1048
-- Python — https://github.com/chkwon/PyHygese
+- Article — Vidal, Crainic, Gendreau, Lahrichi, Rei (2012), Operations Research 60(3), 611-624 : https://doi.org/10.1287/opre.1120.1048
+- Dépôt — https://github.com/chkwon/PyHygese (le *wrapper* Python)
 
 ## Voir aussi
 

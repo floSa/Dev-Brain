@@ -86,7 +86,7 @@ HiGHS), dépôt actif (push du 2026-10-04), Apache-2.0 lue dans `LICENSE`.
 
 - Documentation — https://www.cvxpy.org/
 - Dépôt — https://github.com/cvxpy/cvxpy
-- Solveurs — https://www.cvxpy.org/tutorial/solvers/index.html
+- Documentation — https://www.cvxpy.org/tutorial/solvers/index.html (choix du solveur)
 
 ## Voir aussi
 
