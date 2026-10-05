@@ -272,6 +272,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `constraint-programming` | Programmation par contraintes — déclarer variables, domaines et contraintes, puis laisser un solveur propager et chercher (contraintes globales, CP-SAT) ; distinct de `linear-programming` |
 | `vehicle-routing` | Tournées de véhicules — construire des routes de coût minimal pour une flotte qui sert des clients (VRP et variantes : capacités, fenêtres de temps) |
 | `logistics` | Logistique physique — transport, distribution, approvisionnement de marchandises ; distinct de `inventory` (le stock) et de `supply-chain` (la chaîne d'approvisionnement logicielle, pas la marchandise) |
+| `simulation` | Simulation — exécuter un modèle d'un système (atelier, stock, file d'attente) pour en observer le comportement et comparer des politiques ; distinct de `monte-carlo` (estimer une quantité par tirages) et de `optimization` (chercher la meilleure décision) |
 | `information-theory` | Théorie de l'information — quantifier incertitude, information et écart entre distributions |
 | `entropy` | Entropie — mesure d'incertitude d'une distribution (Shannon) |
 | `cross-entropy` | Entropie croisée — coût d'encoder une loi avec une autre (perte de classification, log-loss) |
