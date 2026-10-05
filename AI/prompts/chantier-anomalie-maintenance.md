@@ -269,7 +269,7 @@ Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ce
 - [x] Lot 9 — retrait des solutions propriétaires
 - [x] Lot 10 — agents de code libres
 - [x] Lot 11 — recherche opérationnelle et gestion de stock
-- [ ] Lot 12 — planification et ordonnancement
+- [x] Lot 12 — planification et ordonnancement
 - [ ] Lot 13 — solveurs libres, simulation, pattern
 - [x] Lot 14 — fiabilité et exploitation
 - [ ] Lot 15 — câblage final des lots 10 à 14
