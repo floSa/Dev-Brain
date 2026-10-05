@@ -63,6 +63,8 @@ tags: [vehicle-routing, logistics, combinatorial-optimization]
 - [[Plannings de personnel (rostering)]] — l'affectation des chauffeurs, qui s'ajoute à celle des tournées.
 - [[Politiques de réapprovisionnement (s,S) et (R,Q)]] — la revue périodique avec tournée de camion, vue du côté du stock.
 - [[Optimisation sous contrainte]] — les multiplicateurs de Lagrange derrière les bornes de relaxation lagrangienne.
+- [[PyVRP]] et [[HGS-CVRP]] — les deux implémentations libres de la recherche génétique hybride pour les tournées.
+- [[OR-Tools]] — le routage et CP-SAT, en généraliste.
 
 ## Pour aller plus loin
 

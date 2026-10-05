@@ -135,6 +135,7 @@ def cout(s, S, L=3, K=50, h=1, b=9, physique=False):
 - [[Optimisation]] : programmation mathématique du dimensionnement (Xiang et al. : MILP pour $(s_t,S_t)$).
 - [[Classification ABC-XYZ]] : choisit quelle politique pour quel article.
 - [[MRP et calcul des besoins]] — l'autre manière de déclencher les ordres, par les besoins dérivés plutôt que par un point de commande.
+- [[SimPy]] — la simulation à événements discrets, pour évaluer une politique de stock avant de la déployer.
 
 ## Pour aller plus loin
 

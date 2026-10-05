@@ -87,6 +87,8 @@ mk = m.NewIntVar(0, H, ""); m.AddMaxEquality(mk, fins); m.Minimize(mk)
 - [[MRP et calcul des besoins]] — l'amont : les ordres de fabrication que l'ordonnancement place.
 - [[S&OP et plan directeur de production]] — l'amont lointain : la capacité et le plan agrégé.
 - [[Politique de maintenance et coût]] — les fenêtres de maintenance comme contraintes d'indisponibilité.
+- [[SimPy]] — simuler un atelier pour tester une règle de priorité.
+- [[OR-Tools]] — CP-SAT, un solveur libre pour le job-shop.
 
 ## Pour aller plus loin
 
