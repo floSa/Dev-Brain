@@ -26,6 +26,7 @@ tags: [linear-algebra, optimization, information-theory, learning-theory, linear
 
 - Comprendre pourquoi un entraînement ne converge pas → [[Optimisation]].
 - Un programme linéaire ou en nombres entiers à résoudre en Python → [[PuLP]], qui délègue à CBC, HiGHS, Gurobi ou CPLEX.
+- Choisir entre un modeleur, un solveur et une suite pour un problème d'optimisation en Python → [[Comparatif - Solveurs d'optimisation]] : [[PuLP]], [[Pyomo]], [[CVXPY]], [[HiGHS]], [[OR-Tools]], et pour les tournées [[PyVRP]] et [[HGS-CVRP]].
 - Une optimisation continue, non linéaire, dans du code numérique → [[scipy.stats|SciPy]] et son module `optimize`, pas ce domaine.
 - Choisir une perte, comparer deux distributions → [[Théorie de l'information]].
 - Décider d'une quantité à commander, d'un stock de sécurité, d'une politique de réapprovisionnement, d'un plan de production, d'un ordonnancement, d'un planning ou de tournées → [[Recherche opérationnelle]].
