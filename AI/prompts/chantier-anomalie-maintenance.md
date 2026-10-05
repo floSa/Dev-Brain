@@ -273,4 +273,4 @@ Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ce
 - [ ] Lot 13 — solveurs libres, simulation, pattern
 - [x] Lot 14 — fiabilité et exploitation
 - [ ] Lot 15 — câblage final des lots 10 à 14
-- [ ] Lot 16 — agents de code libres, suite
+- [x] Lot 16 — agents de code libres, suite
