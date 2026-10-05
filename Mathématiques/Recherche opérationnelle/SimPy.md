@@ -85,7 +85,7 @@ Aucun complément déclaré : le décideur qui entoure la simulation, une politi
 
 - Documentation — https://simpy.readthedocs.io/
 - Dépôt — https://gitlab.com/team-simpy/simpy
-- Guide des ressources — https://simpy.readthedocs.io/en/latest/topical_guides/resources.html
+- Documentation — https://simpy.readthedocs.io/en/latest/topical_guides/resources.html
 
 ## Voir aussi
 

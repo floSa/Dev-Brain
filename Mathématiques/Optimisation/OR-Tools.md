@@ -85,7 +85,7 @@ Aucun complément déclaré : OR-Tools se suffit pour contraintes, LP et tourné
 
 - Documentation — https://developers.google.com/optimization/
 - Dépôt — https://github.com/google/or-tools
-- Guide CP-SAT — https://github.com/google/or-tools/tree/stable/ortools/sat/docs
+- Documentation — https://github.com/google/or-tools/tree/stable/ortools/sat/docs
 
 ## Voir aussi
 

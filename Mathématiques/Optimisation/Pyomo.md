@@ -82,7 +82,7 @@ licence **BSD à trois clauses** (copyright Sandia) ; GitHub l'affiche sans iden
 
 - Documentation — https://pyomo.readthedocs.io/
 - Dépôt — https://github.com/Pyomo/pyomo
-- Site — https://www.pyomo.org
+- Documentation — https://www.pyomo.org/documentation/
 
 ## Voir aussi
 
