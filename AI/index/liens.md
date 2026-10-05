@@ -957,7 +957,7 @@
 
 ### Jeux de données d'anomalies  ·  brique
 - tags : `benchmark`
-- liens sortants : [[Détection d'anomalies]], [[Jeux de données PHM]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Anomalie acoustique]], [[Détection d'anomalies]], [[Jeux de données PHM]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalie acoustique]], [[Anomalies multivariées par apprentissage profond]], [[AnomalyCLIP]], [[DeepOD]], [[Dinomaly]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Jeux de données PHM]], [[Merlion]], [[Orion]], [[Pattern - Inspection visuelle en ligne de production]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[STUMPY]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[anomalib]], [[patchcore-inspection]], [[Évaluer une détection d'anomalies]]
 
 ### Jeux de données PHM  ·  brique
@@ -1797,7 +1797,7 @@
 
 ### PuLP  ·  brique
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Programmation linéaire en nombres entiers (MIP)]], [[Pyomo]]
+- liens sortants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[OR-Tools]], [[Optimisation]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]]
 - liens entrants : [[CVXPY]], [[Comparatif - Solveurs d'optimisation]], [[HiGHS]], [[Mathématiques]], [[OR-Tools]], [[Optimisation]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]], [[Recherche opérationnelle]], [[SimPy]]
 
 ### PyBaMM  ·  brique
@@ -3492,7 +3492,7 @@
 
 ### Analyse vibratoire  ·  notion
 - tags : `vibration-analysis`, `signal-processing`, `fourier`, `condition-monitoring`
-- liens sortants : [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyWavelets]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types d'anomalies et régimes de supervision]], [[scipy.signal]]
+- liens sortants : [[Anomalie acoustique]], [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive et RUL]], [[Ondelettes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyWavelets]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Traitement du signal]], [[Transformée de Fourier]], [[Types d'anomalies et régimes de supervision]], [[scipy.signal]]
 - liens entrants : [[Anomalie acoustique]], [[Diagnostic de défauts de roulements]], [[Filtrage numérique]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Ondelettes]], [[STFT et spectrogramme]], [[Surveillance conditionnelle et modes de défaillance]], [[Traitement]], [[Traitement du signal]], [[Transformée de Fourier]], [[scipy.signal]]
 
 ### Annotation de données  ·  notion
@@ -3503,7 +3503,7 @@
 ### Anomalie acoustique  ·  notion
 - tags : `anomaly-detection`, `unsupervised`, `signal-processing`, `spectrogram`, `audio-classification`, `self-supervised`, `condition-monitoring`
 - liens sortants : [[Adaptation de domaine]], [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection hors distribution (OOD)]], [[Jeux de données PHM]], [[Jeux de données d'anomalies]], [[STFT et spectrogramme]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Types d'anomalies et régimes de supervision]], [[k-NN]], [[librosa]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Jeux de données d'anomalies]]
 
 ### Anomalie visuelle par banque de mémoire  ·  notion
 - tags : `anomaly-detection`, `computer-vision`, `industrial-inspection`, `transfer-learning`
@@ -3522,7 +3522,7 @@
 
 ### Anomalies multivariées par apprentissage profond  ·  notion
 - tags : `anomaly-detection`, `timeseries`, `deep-learning`, `transformers`, `benchmark`
-- liens sortants : [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive et RUL]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Self-attention]], [[TSB-AD]], [[Time series anomaly detection]], [[Transformer architectures]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Anomalie acoustique]], [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[DeepOD]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Jeux de données d'anomalies]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive et RUL]], [[PyOD]], [[STUMPY]], [[Score et seuil d'alerte]], [[Self-attention]], [[TSB-AD]], [[Time series anomaly detection]], [[Transformer architectures]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalie acoustique]], [[DeepOD]], [[Détection d'anomalies]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[LSTM et réseaux récurrents]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[TSB-AD]], [[Time series anomaly detection]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### API REST, GraphQL et gRPC  ·  notion
@@ -3683,7 +3683,7 @@
 ### Cause racine d'une anomalie  ·  notion
 - tags : `anomaly-detection`, `causal-inference`, `condition-monitoring`, `timeseries`
 - liens sortants : [[Diagnostic de défauts de roulements]], [[Découverte causale]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Graph Neural Networks]], [[Inférence causale]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles graphiques probabilistes]], [[Mutual information]], [[Métriques, logs et traces]], [[OpenTelemetry]], [[Politique de maintenance et coût]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Détection d'anomalies]], [[Expliquer une anomalie (contribution des capteurs)]]
+- liens entrants : [[Découverte causale]], [[Détection d'anomalies]], [[Expliquer une anomalie (contribution des capteurs)]], [[Jumeau numérique et modèles hybrides]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Chain-of-Thought  ·  notion
 - tags : `prompting`, `reasoning`, `llm`
@@ -3723,7 +3723,7 @@
 ### Classification ABC-XYZ  ·  notion
 - tags : `inventory`, `forecasting`
 - liens sortants : [[Forecasting framing]], [[Hierarchical forecasting]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Politique de maintenance et coût]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
+- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
 
 ### Classification audio par spectrogramme  ·  notion
 - tags : `audio-classification`, `spectrogram`, `cnn`
@@ -3812,7 +3812,7 @@
 
 ### Contrôle statistique de procédé (SPC)  ·  notion
 - tags : `statistical-process-control`, `anomaly-detection`, `timeseries`
-- liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Détection d'anomalies en ligne]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Forecasting framing]], [[Maintenance prédictive et RUL]], [[Score et seuil d'alerte]], [[Sequential testing]], [[Stationarity]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]], [[Time series anomaly detection]]
+- liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Détection d'anomalies en ligne]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Forecasting framing]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Score et seuil d'alerte]], [[Sequential testing]], [[Stationarity]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]], [[Time series anomaly detection]]
 - liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[OEE et rendement global]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Time series anomaly detection]]
 
 ### Convexity  ·  notion
@@ -3858,7 +3858,7 @@
 ### De la prévision probabiliste à la quantité commandée  ·  notion
 - tags : `inventory`, `newsvendor`, `forecasting`, `calibration`, `optimization`
 - liens sortants : [[Autocorrelation]], [[Bootstrap]], [[Calibration]], [[Chronos]], [[Forecasting framing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Monte Carlo et inférence variationnelle]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Processus de Poisson]], [[Prédiction conforme]], [[Reinforcement learning]], [[Régression quantile]], [[Stock de sécurité et taux de service]], [[Séries temporelles]], [[Walk-forward CV]], [[darts]], [[statsforecast]]
-- liens entrants : [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[Forecasting framing]], [[Hierarchical forecasting]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prédiction conforme]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
 
 ### Decoding strategies  ·  notion
 - tags : `decoding`, `llm`, `nlp`
@@ -3907,7 +3907,7 @@
 
 ### Découverte causale  ·  notion
 - tags : `causal-inference`, `statistical-inference`
-- liens sortants : [[A/B testing]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Modèles graphiques probabilistes]], [[Modélisation d'uplift]]
+- liens sortants : [[A/B testing]], [[Cause racine d'une anomalie]], [[Diff-in-Diff]], [[Inférence bayésienne]], [[Inférence causale]], [[Modèles graphiques probabilistes]], [[Modélisation d'uplift]]
 - liens entrants : [[Cause racine d'une anomalie]], [[Inférence causale]], [[Modèles graphiques probabilistes]], [[Méthodes causales]], [[Statistiques & inférence]]
 
 ### Déploiement de modèles  ·  notion
@@ -4003,7 +4003,7 @@
 ### Expliquer une anomalie (contribution des capteurs)  ·  notion
 - tags : `anomaly-detection`, `explainability`, `timeseries`
 - liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Attribution par gradient]], [[Autoencodeurs]], [[Captum]], [[Cause racine d'une anomalie]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'outliers multivariée]], [[Explicabilité des modèles]], [[Indicateurs de santé]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[PCA]], [[SHAP]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[TSB-AD]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Cause racine d'une anomalie]], [[Détection d'anomalies]]
+- liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Cause racine d'une anomalie]], [[Détection d'anomalies]]
 
 ### Exploration vs exploitation  ·  notion
 - tags : `exploration-exploitation`, `reinforcement-learning`, `multi-armed-bandit`
@@ -4047,7 +4047,7 @@
 
 ### Forecasting framing  ·  notion
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Exponential smoothing]], [[Prophet]], [[Stationarity]], [[Validation croisée]], [[darts]], [[pmdarima]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[Autocorrelation]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Plannings de personnel (rostering)]], [[Prophet]], [[Stationarity]], [[Validation croisée]], [[darts]], [[pmdarima]], [[statsforecast]]
 - liens entrants : [[ARIMA SARIMA]], [[Autocorrelation]], [[Chronos]], [[Classification ABC-XYZ]], [[Contrôle statistique de procédé (SPC)]], [[De la prévision probabiliste à la quantité commandée]], [[Détection d'anomalies en ligne]], [[Exponential smoothing]], [[Forecasting metrics]], [[Foundation models pour séries temporelles]], [[Hierarchical forecasting]], [[Intermittent demand]], [[Maintenance prédictive et RUL]], [[Plannings de personnel (rostering)]], [[Prophet]], [[Recherche opérationnelle]], [[Régression]], [[S&OP et plan directeur de production]], [[Stationarity]], [[Séries temporelles]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Types de données et choix de modèle]], [[Walk-forward CV]], [[darts]], [[neuralforecast]], [[pmdarima]], [[sktime]], [[statsforecast]]
 
 ### Forecasting metrics  ·  notion
@@ -4167,7 +4167,7 @@
 
 ### Hierarchical forecasting  ·  notion
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[ARIMA SARIMA]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[statsforecast]]
+- liens sortants : [[ARIMA SARIMA]], [[De la prévision probabiliste à la quantité commandée]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[S&OP et plan directeur de production]], [[statsforecast]]
 - liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Séries temporelles]]
 
 ### Human-in-the-loop  ·  notion
@@ -4218,11 +4218,11 @@
 ### Indicateurs de fiabilité (MTBF, MTTR, disponibilité)  ·  notion
 - tags : `predictive-maintenance`, `survival-analysis`, `markov`
 - liens sortants : [[Analyse de survie]], [[Bootstrap]], [[Chaînes de Markov]], [[Contrats de données & qualité]], [[Données industrielles]], [[Indicateurs de santé]], [[Intervalles de confiance]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Maximum de vraisemblance]], [[OEE et rendement global]], [[Politique de maintenance et coût]], [[Processus de Poisson]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]]
-- liens entrants : [[Données industrielles]], [[Maintenance prédictive]], [[OEE et rendement global]]
+- liens entrants : [[Données industrielles]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[OEE et rendement global]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Indicateurs de santé  ·  notion
 - tags : `predictive-maintenance`, `rul`, `condition-monitoring`, `dimensionality-reduction`, `multivariate`, `feature-engineering`
-- liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mise à l'échelle]], [[PCA]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series feature engineering]], [[Types d'anomalies et régimes de supervision]], [[Walk-forward CV]]
+- liens sortants : [[Analyse vibratoire]], [[Autoencodeurs]], [[Data drift]], [[Data leakage]], [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mise à l'échelle]], [[PCA]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series feature engineering]], [[Types d'anomalies et régimes de supervision]], [[Walk-forward CV]]
 - liens entrants : [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Expliquer une anomalie (contribution des capteurs)]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[PyBaMM]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[tsfresh]]
 
 ### Indicateurs de stock (rotation, couverture, rupture)  ·  notion
@@ -4267,7 +4267,7 @@
 
 ### Intermittent demand  ·  notion
 - tags : `forecasting`, `timeseries`
-- liens sortants : [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[statsforecast]]
+- liens sortants : [[Classification ABC-XYZ]], [[Exponential smoothing]], [[Forecasting framing]], [[Forecasting metrics]], [[Stock de sécurité et taux de service]], [[statsforecast]]
 - liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prophet]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]], [[Séries temporelles]]
 
 ### Interprétabilité mécaniste  ·  notion
@@ -4307,7 +4307,7 @@
 
 ### Jumeau numérique et modèles hybrides  ·  notion
 - tags : `digital-twin`, `predictive-maintenance`, `rul`
-- liens sortants : [[Data drift]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]]
+- liens sortants : [[Cause racine d'une anomalie]], [[Data drift]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]]
 - liens entrants : [[Cause racine d'une anomalie]], [[Diagnostic de défauts de roulements]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[PyBaMM]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### K-Means  ·  notion
@@ -4508,7 +4508,7 @@
 ### Modèle du vendeur de journaux (newsvendor)  ·  notion
 - tags : `inventory`, `newsvendor`, `optimization`, `probability`
 - liens sortants : [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Intermittent demand]], [[Optimisation sous contrainte]], [[Prédiction conforme]], [[Régression quantile]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[SimPy]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Optimisation sous contrainte]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[SimPy]], [[Stock de sécurité et taux de service]]
 
 ### Modèles de fondation vision  ·  notion
 - tags : `foundation-model`, `vision-language`, `self-supervised`, `representation-learning`, `computer-vision`
@@ -4563,7 +4563,7 @@
 ### MRP et calcul des besoins  ·  notion
 - tags : `scheduling`, `inventory`
 - liens sortants : [[Intermittent demand]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]]
+- liens entrants : [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
 
 ### Multi-agent systems  ·  notion
 - tags : `multi-agent`, `agents`, `llm`
@@ -4668,7 +4668,7 @@
 ### OEE et rendement global  ·  notion
 - tags : `iiot`, `timeseries`, `statistical-process-control`, `data-quality`
 - liens sortants : [[Contrats de données & qualité]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection de ruptures]], [[Grafana]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[InfluxDB]], [[Maintenance prédictive et RUL]], [[Node-RED]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]]
-- liens entrants : [[Données industrielles]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Maintenance prédictive]]
+- liens entrants : [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Maintenance prédictive]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]]
 
 ### Offline RL  ·  notion
 - tags : `reinforcement-learning`, `offline-rl`, `value-function`
@@ -4702,7 +4702,7 @@
 
 ### Optimisation combinatoire  ·  notion
 - tags : `optimization`, `combinatorial-optimization`, `dynamic-programming`
-- liens sortants : [[Convexity]], [[Optimisation sous contrainte]], [[Programmation linéaire en nombres entiers (MIP)]]
+- liens sortants : [[Convexity]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Tournées de véhicules (VRP)]]
 - liens entrants : [[HGS-CVRP]], [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[PyVRP]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Optimisation d'hyperparamètres  ·  notion
@@ -4712,13 +4712,13 @@
 
 ### Optimisation sous contrainte  ·  notion
 - tags : `optimization`, `constrained-optimization`, `convexity`
-- liens sortants : [[Convexity]], [[Gradient descent]], [[Programmation linéaire en nombres entiers (MIP)]], [[Régularisation]]
+- liens sortants : [[Convexity]], [[Gradient descent]], [[Modèle du vendeur de journaux (newsvendor)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[Régularisation]]
 - liens entrants : [[CVXPY]], [[Convexity]], [[HiGHS]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Optimisation bayésienne]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régularisation]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Ordonnancement d'atelier (job-shop, flow-shop)  ·  notion
 - tags : `scheduling`, `combinatorial-optimization`, `constraint-programming`
 - liens sortants : [[MRP et calcul des besoins]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Politique de maintenance et coût]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[MRP et calcul des besoins]], [[OR-Tools]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimisation combinatoire]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### ORM  ·  notion
 - tags : `orm`, `relational`
@@ -4773,7 +4773,7 @@
 ### Plannings de personnel (rostering)  ·  notion
 - tags : `scheduling`, `constraint-programming`, `combinatorial-optimization`
 - liens sortants : [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[OR-Tools]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation par contraintes]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Forecasting framing]], [[OR-Tools]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[PuLP]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Plateforme data & IA — concept  ·  notion
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`, `ml-pipeline`
@@ -4787,12 +4787,12 @@
 
 ### Politique de maintenance et coût  ·  notion
 - tags : `predictive-maintenance`, `rul`, `thresholding`, `optimization`
-- liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[OEE et rendement global]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Cause racine d'une anomalie]], [[Classification ABC-XYZ]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Politiques de réapprovisionnement (s,S) et (R,Q)  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `markov-decision-process`
-- liens sortants : [[Chaînes de Markov]], [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Processus de Poisson]], [[Quantité économique de commande et tailles de lot]], [[Reinforcement learning]], [[Stock de sécurité et taux de service]]
+- liens sortants : [[Chaînes de Markov]], [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation]], [[Processus de Poisson]], [[Quantité économique de commande et tailles de lot]], [[Reinforcement learning]], [[Stock de sécurité et taux de service]]
 - liens entrants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Pattern - Prévoir puis optimiser]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Stock de sécurité et taux de service]], [[Tournées de véhicules (VRP)]]
 
 ### Positional encoding  ·  notion
@@ -4822,13 +4822,13 @@
 
 ### Programmation linéaire en nombres entiers (MIP)  ·  notion
 - tags : `optimization`, `linear-programming`, `combinatorial-optimization`
-- liens sortants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[PuLP]]
+- liens sortants : [[Convexity]], [[Optimal transport]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]]
 - liens entrants : [[Comparatif - Solveurs d'optimisation]], [[Convexity]], [[HiGHS]], [[MRP et calcul des besoins]], [[OR-Tools]], [[Optimal transport]], [[Optimisation]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PuLP]], [[Pyomo]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[Régression quantile]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Programmation par contraintes  ·  notion
 - tags : `constraint-programming`, `combinatorial-optimization`, `scheduling`
 - liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Tournées de véhicules (VRP)]]
-- liens entrants : [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation linéaire en nombres entiers (MIP)]], [[PuLP]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
 
 ### Projections  ·  notion
 - tags : `linear-algebra`, `projection`
@@ -4852,7 +4852,7 @@
 
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
-- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
+- liens sortants : [[Apache NiFi]], [[Architecture pilotée par les événements]], [[Comparatif - Bases temporelles]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[Kafka]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[NATS]], [[Node-RED]], [[OEE et rendement global]], [[RabbitMQ]], [[Reverse proxy et TLS]], [[Stream processing]], [[Telegraf]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]], [[open62541]]
 - liens entrants : [[Analyse vibratoire]], [[Architecture pilotée par les événements]], [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[EMQX]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Telegraf]], [[Time series anomaly detection]], [[asyncua]], [[open62541]]
 
 ### Pruning  ·  notion
@@ -4862,7 +4862,7 @@
 
 ### Prédiction conforme  ·  notion
 - tags : `statistical-inference`, `confidence-interval`, `model-evaluation`
-- liens sortants : [[Bootstrap]], [[Calibration]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[darts]], [[statsforecast]]
+- liens sortants : [[Bootstrap]], [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Inférence bayésienne]], [[Intervalles de confiance]], [[Régression quantile]], [[Stationarity]], [[Stock de sécurité et taux de service]], [[darts]], [[statsforecast]]
 - liens entrants : [[Adaptation de domaine]], [[Bootstrap]], [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Intervalles de confiance]], [[LSTM et réseaux récurrents]], [[Modèle du vendeur de journaux (newsvendor)]], [[Monte Carlo et inférence variationnelle]], [[Pattern - Prévoir puis optimiser]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Recherche opérationnelle]], [[Régression quantile]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Statistiques & inférence]], [[Stock de sécurité et taux de service]], [[Tests & estimation]], [[darts]], [[statsforecast]]
 
 ### Q-learning and DQN  ·  notion
@@ -4877,8 +4877,8 @@
 
 ### Quantité économique de commande et tailles de lot  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `combinatorial-optimization`
-- liens sortants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
+- liens sortants : [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Stock de sécurité et taux de service]]
+- liens entrants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Optimisation sous contrainte]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[Tournées de véhicules (VRP)]]
 
 ### Quantization  ·  notion
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
@@ -5017,7 +5017,7 @@
 
 ### RUL par analyse de survie  ·  notion
 - tags : `rul`, `predictive-maintenance`, `survival-analysis`, `regression`
-- liens sortants : [[Analyse de survie]], [[Data leakage]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[RUL par apprentissage profond]], [[Walk-forward CV]], [[lifelines]], [[scikit-survival]]
+- liens sortants : [[Analyse de survie]], [[Data leakage]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Maximum de vraisemblance]], [[Modèles de Markov cachés et filtre de Kalman]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Walk-forward CV]], [[lifelines]], [[scikit-survival]]
 - liens entrants : [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[lifelines]], [[scikit-survival]]
 
 ### RUL par apprentissage profond  ·  notion
@@ -5068,7 +5068,7 @@
 ### S&OP et plan directeur de production  ·  notion
 - tags : `scheduling`, `forecasting`, `inventory`, `linear-programming`
 - liens sortants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting framing]], [[Forecasting metrics]], [[Hierarchical forecasting]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Quantité économique de commande et tailles de lot]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[MRP et calcul des besoins]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[Tournées de véhicules (VRP)]]
+- liens entrants : [[Hierarchical forecasting]], [[MRP et calcul des besoins]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]], [[Tournées de véhicules (VRP)]]
 
 ### Sandboxing de code généré  ·  notion
 - tags : `agents`, `llm`, `ai-security`, `container`
@@ -5078,7 +5078,7 @@
 ### Santé de batterie (SOH et RUL)  ·  notion
 - tags : `predictive-maintenance`, `rul`, `digital-twin`, `timeseries`, `deep-learning`, `condition-monitoring`
 - liens sortants : [[Adaptation de domaine]], [[Calibration]], [[Data leakage]], [[Indicateurs de santé]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[PyBaMM]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Régularisation]], [[Time series feature engineering]]
-- liens entrants : [[Maintenance prédictive]], [[PyBaMM]]
+- liens entrants : [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[PyBaMM]], [[RUL par analyse de survie]]
 
 ### Scaling laws  ·  notion
 - tags : `scaling-laws`, `llm`, `deep-learning`
@@ -5172,8 +5172,8 @@
 
 ### Stock de sécurité et taux de service  ·  notion
 - tags : `inventory`, `probability`, `forecasting`, `statistical-inference`
-- liens sortants : [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[Modèle du vendeur de journaux (newsvendor)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Processus de Poisson]], [[Prédiction conforme]], [[Théorie des valeurs extrêmes]], [[Walk-forward CV]]
-- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
+- liens sortants : [[Calibration]], [[De la prévision probabiliste à la quantité commandée]], [[Forecasting metrics]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Processus de Poisson]], [[Prédiction conforme]], [[S&OP et plan directeur de production]], [[Théorie des valeurs extrêmes]], [[Walk-forward CV]]
+- liens entrants : [[Classification ABC-XYZ]], [[De la prévision probabiliste à la quantité commandée]], [[Indicateurs de stock (rotation, couverture, rupture)]], [[Intermittent demand]], [[MRP et calcul des besoins]], [[Modèle du vendeur de journaux (newsvendor)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Prédiction conforme]], [[Quantité économique de commande et tailles de lot]], [[Recherche opérationnelle]], [[S&OP et plan directeur de production]], [[SimPy]], [[Tournées de véhicules (VRP)]]
 
 ### Stockage objet et API S3  ·  notion
 - tags : `object-storage`, `s3-compatible`
@@ -5207,7 +5207,7 @@
 
 ### Surveillance conditionnelle et modes de défaillance  ·  notion
 - tags : `predictive-maintenance`, `condition-monitoring`
-- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Diagnostic de défauts de roulements]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
+- liens sortants : [[Analyse de survie]], [[Analyse vibratoire]], [[Cause racine d'une anomalie]], [[Diagnostic de défauts de roulements]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Politique de maintenance et coût]], [[RUL par analyse de survie]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]]
 - liens entrants : [[Analyse vibratoire]], [[Anomalie acoustique]], [[Cause racine d'une anomalie]], [[Diagnostic de défauts de roulements]], [[Expliquer une anomalie (contribution des capteurs)]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive]], [[OEE et rendement global]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]]
 
 ### SVD  ·  notion
@@ -5308,7 +5308,7 @@
 ### Tournées de véhicules (VRP)  ·  notion
 - tags : `vehicle-routing`, `logistics`, `combinatorial-optimization`
 - liens sortants : [[Optimisation combinatoire]], [[Optimisation sous contrainte]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Plannings de personnel (rostering)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Programmation linéaire en nombres entiers (MIP)]], [[Programmation par contraintes]], [[Quantité économique de commande et tailles de lot]], [[S&OP et plan directeur de production]], [[Stock de sécurité et taux de service]]
-- liens entrants : [[HGS-CVRP]], [[OR-Tools]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PyVRP]], [[Recherche opérationnelle]]
+- liens entrants : [[HGS-CVRP]], [[OR-Tools]], [[Optimisation combinatoire]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Plannings de personnel (rostering)]], [[Programmation par contraintes]], [[PyVRP]], [[Recherche opérationnelle]]
 
 ### Traitement du langage naturel  ·  notion
 - tags : `nlp`
