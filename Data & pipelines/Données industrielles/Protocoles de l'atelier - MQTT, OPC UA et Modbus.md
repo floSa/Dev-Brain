@@ -92,6 +92,7 @@ tags: [mqtt, opc-ua, iiot, networking]
 - [[Comparatif - Brokers de messages]] — Kafka, Redpanda, NATS, RabbitMQ ; [[NATS]] et [[RabbitMQ]] parlent MQTT avec des bornes (NATS : 3.1.1 seul ; RabbitMQ : sans QoS 2).
 - [[Stream processing]] — traiter le flux une fois transporté.
 - [[Maintenance prédictive et RUL]] et [[Time series anomaly detection]] — ce que l'on fait des séries une fois stockées.
+- [[OEE et rendement global]] — ce que l'on calcule avec les états, compteurs et horodatages collectés.
 - [[Apache NiFi]] — l'ingestion de fichiers et de protocoles, hors du périmètre d'atelier.
 - Voir aussi : [[Telegraf]], [[open62541]].
 - Plateformes d'éditeur qui collectent ces protocoles : Siemens Insights Hub, Cognite Data Fusion (extracteur OPC UA).
