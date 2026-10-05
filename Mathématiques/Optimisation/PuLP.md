@@ -77,3 +77,5 @@ opérationnelle en Python.
 - [[Optimisation]] — le hub du dossier
 - [[Optimisation combinatoire]] — la notion : la classe de problèmes que le MIP formule
 - [[Comparatif - Solveurs d'optimisation]] — la vue du dossier, qui réunit PuLP et les autres modeleurs et solveurs libres
+- [[Programmation par contraintes]] — la famille voisine quand le modèle n'est pas linéaire ou que les domaines sont finis.
+- [[Plannings de personnel (rostering)]] — un cas d'usage de modélisation en MIP.

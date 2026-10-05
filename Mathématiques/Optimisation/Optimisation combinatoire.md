@@ -41,6 +41,7 @@ tags: [optimization, combinatorial-optimization, dynamic-programming]
 - [[Programmation linéaire en nombres entiers (MIP)]] — l'outil exact de référence pour formuler et résoudre ces problèmes.
 - [[Convexity]] — ces problèmes sont non convexes par nature (domaine discret) ; d'où leur difficulté.
 - [[Optimisation sous contrainte]] — le pendant continu ; ici les variables sont discrètes.
+- [[Ordonnancement d'atelier (job-shop, flow-shop)]] et [[Tournées de véhicules (VRP)]] — deux familles de problèmes de séquencement et de routage, de l'atelier à la logistique.
 - Programmation dynamique — résout exactement les cas à sous-structure optimale (sac à dos, plus court chemin).
 
 ## Pour aller plus loin

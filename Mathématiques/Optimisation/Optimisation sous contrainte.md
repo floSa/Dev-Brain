@@ -44,6 +44,8 @@ tags: [optimization, constrained-optimization, convexity]
 - [[Régularisation]] — la pénalité L1/L2 est la forme lagrangienne d'une contrainte sur la norme des coefficients.
 - [[Gradient descent]] — version contrainte : gradient projeté, méthodes de pénalité.
 - [[Programmation linéaire en nombres entiers (MIP)|Programmation linéaire]] — la dualité LP est le cas linéaire de la dualité lagrangienne ; le MIP en est l'analogue à variables discrètes.
+- [[Quantité économique de commande et tailles de lot]] — un optimum sous contrainte qui a une formule fermée.
+- [[Modèle du vendeur de journaux (newsvendor)]] — un optimum sous contrainte de service, résolu par un quantile.
 
 ## Pour aller plus loin
 

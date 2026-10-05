@@ -44,6 +44,8 @@ tags: [optimization, linear-programming, combinatorial-optimization]
 - [[Optimisation combinatoire]] — la classe de problèmes discrets que le MIP résout en pratique.
 - [[Convexity]] — le LP est convexe (donc facile) ; c'est l'intégralité, non convexe, qui rend le MIP dur.
 - [[Optimisation sous contrainte]] — cadre continu (Lagrangien, KKT) ; le MIP en est la version à variables discrètes.
+- [[Programmation par contraintes]] — l'autre grande famille exacte : propagation plutôt que relaxation linéaire.
+- [[Plannings de personnel (rostering)]] — un problème d'affectation sous contraintes de cardinalité que l'on formule en MIP.
 - [[Optimal transport]] — le problème de transport discret est un cas particulier de programmation linéaire.
 - Programmation dynamique — alternative exacte pour les problèmes à sous-structure optimale (sac à dos, plus court chemin).
 
