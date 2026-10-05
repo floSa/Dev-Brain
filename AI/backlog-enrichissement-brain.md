@@ -269,6 +269,14 @@ existantes (`Quantization`, `Distillation`, `Speculative decoding`,
 
 ## Solveurs d'optimisation — le seul comparatif à un membre du vault
 
+> **Clos le 2026-10-05** (chantier anomalies, maintenance et stocks, lot 13). Le comparatif
+> compte sept membres : **Pyomo**, **CVXPY** et **HiGHS** (la priorité ci-dessous), plus
+> **OR-Tools**, **PyVRP** et **HGS-CVRP**. La section « Ce comparatif ne compare rien » est retirée,
+> `R8b` ne l'émet plus. Restent en mention seulement : `scipy.optimize`, CBC, GLPK, SCIP (libres, sans
+> fiche, à ouvrir si un projet le demande), Gurobi, CPLEX, MOSEK et XPRESS (commerciaux, exclus par la règle
+> des briques libres) et Timefold Solver (édition Enterprise propriétaire). Le texte qui suit est
+> l'état d'avant, gardé comme trace.
+
 > Ouvert le **2026-09-06**, à la conversion du lot 5. Source : `Analyse` — trou
 > repéré dans la cohérence du brain lui-même, pas dans un projet.
 
