@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1151,
+  "count": 1168,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -38,7 +38,8 @@
     ],
     "adr": [
       "ADR et design docs",
-      "Gestion de projet"
+      "Gestion de projet",
+      "MADR - le modèle de fiche"
     ],
     "agent-memory": [
       "Agents",
@@ -67,6 +68,7 @@
       "Skills d'Anthropic",
       "Skills de Matt Pocock",
       "Superpowers",
+      "awesome-claude-code",
       "i-have-adhd",
       "pm-skills"
     ],
@@ -74,6 +76,7 @@
       "ADR et design docs",
       "AGENTS.md - le format",
       "Activepieces",
+      "Agent OS",
       "Agent Skills - la spécification",
       "Agent evaluation",
       "Agent memory",
@@ -91,9 +94,13 @@
       "BMAD - la méthode",
       "BMAD - tour complet des skills",
       "Backlog, Kanban, Scrum et Shape Up",
+      "Backlog.md - l'outil",
+      "Beads",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
       "Claude Agent SDK",
+      "Claude Squad",
+      "Claude-Code-Usage-Monitor",
       "Cline",
       "Cognee",
       "Comparatif - Assistants de code IA",
@@ -171,6 +178,7 @@
       "Zoo Code",
       "a2a-protocol",
       "agent-loops",
+      "awesome-claude-code",
       "ccusage",
       "fastmcp",
       "freebuff",
@@ -446,6 +454,7 @@
       "Commitizen",
       "Comparatif - Versions et changelog",
       "git-cliff",
+      "python-semantic-release",
       "release-please"
     ],
     "chunking": [
@@ -771,6 +780,7 @@
     "context-engineering": [
       "ADR et design docs",
       "AGENTS.md - le format",
+      "Agent OS",
       "Agent Skills - la spécification",
       "Agent skills",
       "Architecture deep agent",
@@ -782,6 +792,7 @@
       "Deep research",
       "Développement piloté par la spécification",
       "Fichiers de contexte pour agents",
+      "Gitingest",
       "Graphify",
       "Harnais d'agent",
       "Headroom",
@@ -1166,24 +1177,30 @@
     "diagram": [
       "Archify",
       "Comparatif - Diagrammes",
+      "D2",
       "Design & diagrammes",
       "Diagrammes",
       "Excalidraw",
       "FossFLOW",
       "GitDiagram",
+      "Kroki",
       "LikeC4",
       "Mermaid",
       "Modèle C4",
+      "PlantUML",
       "draw.io"
     ],
     "diagram-as-code": [
       "Archify",
       "Comparatif - Diagrammes",
+      "D2",
       "Diagrammes",
       "Diátaxis et docs-as-code",
+      "Kroki",
       "LikeC4",
       "Mermaid",
-      "Modèle C4"
+      "Modèle C4",
+      "PlantUML"
     ],
     "diffusion": [
       "Diffusion models",
@@ -1318,6 +1335,7 @@
       "Diátaxis et docs-as-code",
       "Documentation technique",
       "Docusaurus",
+      "MADR - le modèle de fiche",
       "MkDocs",
       "Modèle C4",
       "Sphinx",
@@ -1632,6 +1650,7 @@
     "git-hooks": [
       "Commitizen",
       "Commits conventionnels, versions et changelog",
+      "Lefthook",
       "Qualité du code",
       "Revue, tests et définition de terminé avec un agent",
       "pre-commit"
@@ -1964,7 +1983,9 @@
     "issue-tracking": [
       "Comparatif - Suivi de projet auto-hébergé",
       "Kanboard",
-      "Redmine"
+      "Redmine",
+      "Vikunja",
+      "Wekan"
     ],
     "jailbreak": [
       "Jailbreaking and defenses",
@@ -2526,6 +2547,7 @@
       "Metric learning & ré-identification"
     ],
     "metrics": [
+      "Apache DevLake",
       "Beszel",
       "Grafana",
       "Mesurer un projet - DORA, coût des agents et temps passé",
@@ -2735,6 +2757,7 @@
       "BMAD - la méthode",
       "BMAD - tour complet des skills",
       "Claude Agent SDK",
+      "Claude Squad",
       "Comparatif - Frameworks LLM",
       "CrewAI",
       "DB-GPT",
@@ -3230,11 +3253,15 @@
     ],
     "project-management": [
       "ADR et design docs",
+      "Apache DevLake",
       "BMAD - la méthode",
       "BMAD - tour complet des skills",
       "Backlog, Kanban, Scrum et Shape Up",
+      "Backlog.md - l'outil",
+      "Beads",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
+      "Claude-Code-Usage-Monitor",
       "Commits conventionnels, versions et changelog",
       "Comparatif - Suivi de projet auto-hébergé",
       "Cycle de vie d'un projet assisté par agent",
@@ -3244,6 +3271,7 @@
       "Gestion de projet",
       "Kanboard",
       "Kimai",
+      "MADR - le modèle de fiche",
       "Mesurer un projet - DORA, coût des agents et temps passé",
       "Modèle C4",
       "OpenSpec",
@@ -3253,6 +3281,8 @@
       "Revue, tests et définition de terminé avec un agent",
       "Vibe Kanban",
       "Vibe coding contre ingénierie agentique",
+      "Vikunja",
+      "Wekan",
       "ccusage",
       "pm-skills"
     ],
@@ -3782,6 +3812,7 @@
       "Alertmanager",
       "Annotation de données",
       "AnythingLLM",
+      "Apache DevLake",
       "Apache NiFi",
       "Apache Superset",
       "Argo CD",
@@ -3814,6 +3845,7 @@
       "Kanboard",
       "Keycloak",
       "Kimai",
+      "Kroki",
       "Kubeflow",
       "Kubernetes",
       "Label Studio",
@@ -3849,7 +3881,9 @@
       "Typesense",
       "Uptime Kuma",
       "VictoriaMetrics",
+      "Vikunja",
       "Web-Check",
+      "Wekan",
       "Woodpecker CI",
       "Zabbix",
       "Zot",
@@ -3943,6 +3977,7 @@
       "Skills d'Anthropic",
       "Skills de Matt Pocock",
       "Superpowers",
+      "awesome-claude-code",
       "pm-skills"
     ],
     "slo": [
@@ -3955,8 +3990,10 @@
       "needle"
     ],
     "spec-driven": [
+      "Agent OS",
       "BMAD - la méthode",
       "BMAD - tour complet des skills",
+      "Backlog.md - l'outil",
       "Cycle de vie d'un projet assisté par agent",
       "Développement piloté par la spécification",
       "Gestion de projet",
@@ -4173,6 +4210,7 @@
       "Messagerie"
     ],
     "task-runner": [
+      "Task",
       "just",
       "mise"
     ],
@@ -4294,6 +4332,7 @@
       "Traefik"
     ],
     "token-optimization": [
+      "Gitingest",
       "Headroom",
       "Repomix"
     ],
@@ -4538,6 +4577,7 @@
       "Aider",
       "Branches courtes et worktrees pour agents",
       "Bruno",
+      "Claude Squad",
       "Commitizen",
       "Comparatif - Clients d'API",
       "Forgejo",
@@ -4548,6 +4588,7 @@
       "Vibe Kanban",
       "git-cliff",
       "jupytext",
+      "python-semantic-release",
       "release-please",
       "swarm-forge"
     ],
@@ -10935,6 +10976,37 @@
       "maturite": null
     },
     {
+      "path": "Design & diagrammes/Diagrammes/D2.md",
+      "nom": "D2",
+      "alias": [
+        "d2",
+        "d2lang",
+        "d2lang/d2",
+        "Terrastruct D2"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande (MPL-2.0, Go) qui transforme un langage de description de diagrammes en SVG, PNG, PDF, GIF ou PPTX, avec thèmes, plusieurs moteurs de placement, rendu au trait de crayon et animations — mais le langage lui est propre, aucune forge ne le rend nativement, et le moteur TALA est un module à part.",
+      "tags": [
+        "diagram",
+        "diagram-as-code"
+      ],
+      "alternatives": [
+        "[[Mermaid]]",
+        "[[PlantUML]]",
+        "[[LikeC4]]"
+      ],
+      "complements": [
+        "[[Kroki]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Design & diagrammes/Diagrammes/Diagrammes.md",
       "nom": "Diagrammes",
       "alias": [
@@ -11034,6 +11106,34 @@
       "maturite": null
     },
     {
+      "path": "Design & diagrammes/Diagrammes/Kroki.md",
+      "nom": "Kroki",
+      "alias": [
+        "kroki",
+        "yuzutech/kroki",
+        "kroki.io"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Serveur HTTP (MIT, Java) à héberger qui donne une seule API pour rendre une vingtaine de langages de diagrammes — PlantUML, Mermaid, D2, GraphViz, BPMN, Excalidraw, DBML, Vega — en SVG ou PNG, par une URL ou une requête POST — mais les langages tournent dans des conteneurs compagnons, et l'instance publique kroki.io reçoit vos sources si on la préfère à la sienne.",
+      "tags": [
+        "diagram",
+        "diagram-as-code",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[PlantUML]]",
+        "[[D2]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Design & diagrammes/Diagrammes/LikeC4.md",
       "nom": "LikeC4",
       "alias": [
@@ -11053,7 +11153,8 @@
       ],
       "alternatives": [
         "[[Mermaid]]",
-        "[[draw.io]]"
+        "[[draw.io]]",
+        "[[D2]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -11079,10 +11180,41 @@
       "alternatives": [
         "[[draw.io]]",
         "[[Archify]]",
-        "[[LikeC4]]"
+        "[[LikeC4]]",
+        "[[D2]]",
+        "[[PlantUML]]"
       ],
       "complements": [],
       "maturite": null
+    },
+    {
+      "path": "Design & diagrammes/Diagrammes/PlantUML.md",
+      "nom": "PlantUML",
+      "alias": [
+        "plantuml",
+        "plantuml/plantuml",
+        "UML en texte"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "cli",
+      "langage": "Java",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil Java (licences au choix : GPL, LGPL, Apache, EPL ou MIT) qui dessine des diagrammes UML et plus de vingt types — séquence, classes, activité, états, Gantt, carte mentale, JSON, YAML — à partir d'une description textuelle, en ligne de commande, en bibliothèque ou compilé pour le navigateur — mais GitHub ne les rend pas nativement, il faut une extension de navigateur ou un rendu en amont.",
+      "tags": [
+        "diagram",
+        "diagram-as-code"
+      ],
+      "alternatives": [
+        "[[Mermaid]]",
+        "[[D2]]"
+      ],
+      "complements": [
+        "[[Kroki]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Design & diagrammes/Diagrammes/draw.io.md",
@@ -31076,6 +31208,58 @@
       "maturite": "production"
     },
     {
+      "path": "Outils de développement/Gestion de projet/Agent OS.md",
+      "nom": "Agent OS",
+      "alias": [
+        "agent-os",
+        "buildermethods/agent-os",
+        "Builder Methods Agent OS"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "extension",
+      "langage": "Shell",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Jeu de commandes et de scripts shell (MIT) qui extrait les règles de code d'un projet — nommage, structure, tests, formats — dans des fichiers Markdown, puis les injecte dans le contexte de l'agent à chaque tâche pour qu'il code comme son auteur — mais il faut un agent hôte (Claude Code, Cursor…), et depuis la v3 la rédaction des spécifications est laissée au mode plan de l'agent.",
+      "tags": [
+        "spec-driven",
+        "context-engineering",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Apache DevLake.md",
+      "nom": "Apache DevLake",
+      "alias": [
+        "DevLake",
+        "apache/devlake"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Plateforme à héberger (Apache-2.0, Go) qui collecte les données dispersées des outils de développement — GitHub, GitLab, Jenkins, Jira, SonarQube — et les rend en tableaux de bord Grafana prêts à l'emploi, dont les mesures DORA, extensibles en SQL — mais elle n'a que des versions bêta, et se déploie avec Docker Compose ou Helm avec ses bases et son Grafana.",
+      "tags": [
+        "project-management",
+        "metrics",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[ccusage]]"
+      ],
+      "maturite": "beta"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Backlog, Kanban, Scrum et Shape Up.md",
       "nom": "Backlog, Kanban, Scrum et Shape Up",
       "alias": [
@@ -31107,6 +31291,60 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Backlog.md - l'outil.md",
+      "nom": "Backlog.md - l'outil",
+      "alias": [
+        "Backlog.md",
+        "MrLesk/Backlog.md",
+        "backlog-md"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande (MIT, TypeScript) qui range les tâches d'un projet en fichiers Markdown dans le dépôt, avec critères d'acceptation, jalons et dépendances, un Kanban dans le terminal ou le navigateur et un accès pour les agents par instructions ou MCP — mais il n'y a ni serveur ni compte, donc rien ne se partage hors de git.",
+      "tags": [
+        "project-management",
+        "spec-driven",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Beads]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Beads.md",
+      "nom": "Beads",
+      "alias": [
+        "beads",
+        "bd",
+        "gastownhall/beads",
+        "steveyegge/beads"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande (MIT, Go) qui tient les tâches d'un projet comme un graphe de dépendances dans une base Dolt, pour que des agents trouvent le travail prêt, le réclament de façon atomique et gardent la mémoire d'un long chantier — mais ce n'est pas un fichier lisible dans le dépôt : la base se synchronise par `bd dolt push` et `pull`, et le fichier JSONL n'est qu'un export.",
+      "tags": [
+        "project-management",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Backlog.md - l'outil]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Gestion de projet/Boucle de Ralph.md",
@@ -31171,6 +31409,60 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Claude Squad.md",
+      "nom": "Claude Squad",
+      "alias": [
+        "claude-squad",
+        "cs",
+        "smtg-ai/claude-squad"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application de terminal (AGPL-3.0, Go) qui gère plusieurs agents de code en parallèle, chacun dans une session tmux et un worktree git à lui, avec aperçu, diff, validation et poussée de la branche — mais tmux et gh sont requis, et l'AGPL pèse si l'outil est offert en service.",
+      "tags": [
+        "multi-agent",
+        "version-control",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Vibe Kanban]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Claude-Code-Usage-Monitor.md",
+      "nom": "Claude-Code-Usage-Monitor",
+      "alias": [
+        "claude-monitor",
+        "ccmonitor",
+        "cmonitor",
+        "Maciek-roboblog/Claude-Code-Usage-Monitor"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande Python (MIT) qui lit les journaux locaux de Claude Code et affiche dans le terminal, en direct, la consommation de jetons, de messages et de coût sur la fenêtre de cinq heures, avec prévision et alertes avant la limite, état exportable en JSON et entrepôt local facultatif — mais il ne suit que Claude Code, là où ccusage couvre dix-huit agents.",
+      "tags": [
+        "project-management",
+        "agents"
+      ],
+      "alternatives": [
+        "[[ccusage]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Commitizen.md",
       "nom": "Commitizen",
       "alias": [
@@ -31194,7 +31486,8 @@
       ],
       "alternatives": [
         "[[git-cliff]]",
-        "[[release-please]]"
+        "[[release-please]]",
+        "[[python-semantic-release]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31415,6 +31708,31 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Gitingest.md",
+      "nom": "Gitingest",
+      "alias": [
+        "gitingest",
+        "coderamp-labs/gitingest"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande et bibliothèque Python (MIT) qui transforme un dépôt Git ou un dossier en un texte unique pour un modèle de langage, avec arborescence et compte de jetons, et un site (gitingest.com) où remplacer « hub » par « ingest » dans une URL GitHub — mais le site est un service tiers, et le tri des fichiers reste à régler par motifs.",
+      "tags": [
+        "context-engineering",
+        "token-optimization"
+      ],
+      "alternatives": [
+        "[[Repomix]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Kanboard.md",
       "nom": "Kanboard",
       "alias": [
@@ -31432,7 +31750,9 @@
         "self-hosted"
       ],
       "alternatives": [
-        "[[Redmine]]"
+        "[[Redmine]]",
+        "[[Vikunja]]",
+        "[[Wekan]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31460,6 +31780,31 @@
       "complements": [
         "[[ActivityWatch]]"
       ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/MADR - le modèle de fiche.md",
+      "nom": "MADR - le modèle de fiche",
+      "alias": [
+        "adr/madr",
+        "Markdown Architectural Decision Records",
+        "Markdown ADR"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "specification",
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Modèle de fiche en Markdown (MIT ou CC0-1.0, quatre variantes) pour consigner une décision d'architecture : contexte, options envisagées, décision et conséquences, un fichier par décision dans `docs/decisions` — mais c'est un gabarit à copier, sans outil de génération, ni de contrôle, ni d'index.",
+      "tags": [
+        "adr",
+        "documentation",
+        "project-management"
+      ],
+      "alternatives": [],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -31630,7 +31975,8 @@
         "self-hosted"
       ],
       "alternatives": [
-        "[[Kanboard]]"
+        "[[Kanboard]]",
+        "[[Vikunja]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31657,7 +32003,8 @@
       ],
       "alternatives": [
         "[[Serena]]",
-        "[[DeepWiki-Open]]"
+        "[[DeepWiki-Open]]",
+        "[[Gitingest]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31724,6 +32071,33 @@
       "maturite": "production"
     },
     {
+      "path": "Outils de développement/Gestion de projet/Task.md",
+      "nom": "Task",
+      "alias": [
+        "taskfile",
+        "go-task",
+        "go-task/task",
+        "Taskfile.yml"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Lanceur de commandes de projet (MIT, Go) qui lit un fichier `Taskfile.yml` : tâches, dépendances entre tâches, variables, vérification des fichiers sources pour ne refaire que ce qui a changé, inclusion de Taskfiles venus d'une URL ou d'un dépôt — mais la syntaxe est du YAML avec gabarits, plus lourde que celle d'un justfile.",
+      "tags": [
+        "task-runner"
+      ],
+      "alternatives": [
+        "[[just]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Vibe Kanban.md",
       "nom": "Vibe Kanban",
       "alias": [
@@ -31743,7 +32117,9 @@
         "project-management",
         "version-control"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Claude Squad]]"
+      ],
       "complements": [],
       "maturite": "beta"
     },
@@ -31776,6 +32152,61 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Vikunja.md",
+      "nom": "Vikunja",
+      "alias": [
+        "vikunja",
+        "go-vikunja/vikunja"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application web de gestion de tâches à héberger (AGPL-3.0 ou ultérieure, Go et Vue.js), livrée en un seul binaire ou conteneur : projets et sous-projets, tâches avec rappels et répétitions, partage entre utilisateurs, vues liste, Gantt, tableau et Kanban, API documentée — mais l'administration, le journal d'audit et le suivi du temps relèvent de la version payante Vikunja Pro.",
+      "tags": [
+        "issue-tracking",
+        "project-management",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kanboard]]",
+        "[[Redmine]]",
+        "[[Wekan]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Wekan.md",
+      "nom": "Wekan",
+      "alias": [
+        "WeKan",
+        "wekan/wekan"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "JavaScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application web de tableaux Kanban à héberger (MIT, JavaScript et Meteor), sur le modèle de Trello : couloirs, listes, cartes, vues tableau, calendrier et Gantt, modules Scrum et graphiques de flux, règles automatiques, imports depuis Trello, Jira, GitHub ou Kanboard, connexion LDAP, SAML ou OAuth2 — mais l'outil est large, sa cadence de versions est très rapide (six en cinq jours début octobre 2026), et le support officiel public se limite aux tickets GitHub.",
+      "tags": [
+        "issue-tracking",
+        "project-management",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kanboard]]",
+        "[[Vikunja]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/ccusage.md",
       "nom": "ccusage",
       "alias": [
@@ -31794,9 +32225,12 @@
         "metrics",
         "agents"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Claude-Code-Usage-Monitor]]"
+      ],
       "complements": [
-        "[[ActivityWatch]]"
+        "[[ActivityWatch]]",
+        "[[Apache DevLake]]"
       ],
       "maturite": "production"
     },
@@ -31823,7 +32257,8 @@
       ],
       "alternatives": [
         "[[Commitizen]]",
-        "[[release-please]]"
+        "[[release-please]]",
+        "[[python-semantic-release]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31849,7 +32284,38 @@
         "task-runner"
       ],
       "alternatives": [
-        "[[mise]]"
+        "[[mise]]",
+        "[[Task]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/python-semantic-release.md",
+      "nom": "python-semantic-release",
+      "alias": [
+        "semantic-release",
+        "PSR",
+        "Python Semantic Release",
+        "python-semantic-release/python-semantic-release"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Outil en ligne de commande Python (MIT) qui lit les commits d'un dépôt, calcule la prochaine version SemVer, met à jour les fichiers de version, génère le changelog, pose le tag et publie la release sur GitHub, GitLab, Gitea ou Bitbucket — mais l'envoi du paquet vers PyPI n'est pas son travail, la documentation le confie à une étape de la CI.",
+      "tags": [
+        "changelog",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Commitizen]]",
+        "[[git-cliff]]",
+        "[[release-please]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -31876,7 +32342,8 @@
       ],
       "alternatives": [
         "[[Commitizen]]",
-        "[[git-cliff]]"
+        "[[git-cliff]]",
+        "[[python-semantic-release]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -32259,6 +32726,31 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Qualité du code/Lefthook.md",
+      "nom": "Lefthook",
+      "alias": [
+        "lefthook",
+        "evilmartians/lefthook"
+      ],
+      "role": "brique",
+      "categorie": "devtools/qualite",
+      "famille": "cli",
+      "langage": "Go",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Gestionnaire de crochets git (MIT, Go) distribué en binaire unique qui lit un fichier `lefthook.yml`, lance les commandes en parallèle et choisit les fichiers à leur passer — mais il ne fournit pas de bibliothèque de contrôles prête à l'emploi : chaque commande est à écrire ou à appeler depuis le projet.",
+      "tags": [
+        "git-hooks"
+      ],
+      "alternatives": [
+        "[[pre-commit]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Qualité du code/Pyright.md",
       "nom": "Pyright",
       "alias": [
@@ -32411,7 +32903,9 @@
       "tags": [
         "git-hooks"
       ],
-      "alternatives": [],
+      "alternatives": [
+        "[[Lefthook]]"
+      ],
       "complements": [
         "[[Ruff]]",
         "[[Gitleaks]]",
@@ -32489,6 +32983,30 @@
       "complements": [
         "[[Rich]]"
       ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/awesome-claude-code.md",
+      "nom": "awesome-claude-code",
+      "alias": [
+        "hesreallyhim/awesome-claude-code",
+        "awesome claude code"
+      ],
+      "role": "brique",
+      "categorie": "devtools/annuaire-standard",
+      "famille": "annuaire",
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Annuaire GitHub d'environ deux cents ressources pour Claude Code, rangées par thème — skills, agents, serveurs, lignes d'état, suivi de coûts, orchestration, configuration — avec un compteur de projets en vogue, publié sous licence CC BY-NC-ND 4.0 : usage non commercial, sans modification — une liste à lire, pas un outil, et chaque ressource garde sa propre licence.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [],
       "maturite": "production"
     },
     {
