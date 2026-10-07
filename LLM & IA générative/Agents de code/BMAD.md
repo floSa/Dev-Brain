@@ -8,8 +8,8 @@ famille: extension
 domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux"
-langage: JavaScript
-alternatives: ["[[Spec Kit]]"]
+langage: Python
+alternatives: ["[[Spec Kit]]", "[[OpenSpec]]"]
 complements: ["[[Aider]]", "[[Cline]]", "[[Continue]]"]
 tags: [agent-skill, code-assistant, agents, multi-agent, code-generation]
 url_docs: https://docs.bmad-method.org/
@@ -28,39 +28,36 @@ url_repo: https://github.com/bmad-code-org/BMAD-METHOD
 
 ## Définition
 
-*Breakthrough Method for Agile AI-Driven Development* — une méthode de développement assisté
-par IA outillée sous forme d'agents nommés installés dans l'outil de codage, que le paquet npm
-`bmad-method` injecte comme skills et commandes. Le flux est explicitement agile : l'**analyst**
-produit un Project Brief, le **PM** un PRD, l'**architect** le design et une revue
-d'Implementation Readiness, puis le travail se déroule **story par story**, chaque story isolée
-dans un chat neuf et son fichier servant de paquet de handoff entre les rôles. BMAD ne code pas :
-il pilote l'agent qui code. Le module BMM porte neuf agents, le module CIS six autres, aux côtés
-des modules core, BMad Builder, Game Dev Studio et Test Architect — les chiffres qui circulent
-(« 19 agents, 50+ workflows ») viennent de sources secondaires, pas d'une page officielle.
+BMAD (*Breakthrough Method for Agile AI-Driven Development*, aussi écrit *BMad Method*) est un **jeu de skills** qu'on installe dans un agent de code pour mener un projet de la première idée au code relu : agents nommés, workflows de planification et de construction, tickets. Il ne code pas lui-même : il pilote l'agent hôte, qui code. Le README le décrit comme une méthode agile dont les décisions restent explicites, dont le contexte se reporte d'une étape à l'autre, et dont la profondeur de planification se règle sur la taille du travail : un petit changement va droit à `bmad-build`, un chantier complexe passe par spécification, architecture et découpage en stories.
+
+Le principe, les rôles et les artefacts sont dans [[BMAD - la méthode]] ; chaque skill, agent, commande et module officiel est dans [[BMAD - tour complet des skills]].
+
+Deux états coexistent au 2026-10-07 : la dernière **release** (v6.12.1, 2026-10-04, paquet npm `bmad-method`) s'installe par `npx bmad-method install` ; la **branche `main`**, que décrit la documentation en ligne, s'installe par `npx skills add bmad-code-org/BMAD-METHOD` puis `bmad setup`, avec un skill concentrateur `bmad` et `bmad-ticket` pour le découpage. Le module de base porte cinq agents (Mary l'analyste, John le chef de produit, Winston l'architecte, Sally l'UX, Amelia la développeuse) ; les modules officiels à part sont Builder, Creative Intelligence Suite (six agents), Test Architect, Loop et Game Dev Studio. Les chiffres qui circulent (« 19 agents, 50+ workflows ») viennent de sources secondaires, pas d'une page officielle.
 
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
 |---|---|
-| Vouloir une trace structurée intention → PRD → architecture → stories, révisable, plutôt qu'un enchaînement de prompts | Petite tâche ou correctif : le cérémonial coûte plus cher que le travail |
-| Travail découpé en incréments livrables, contexte remis à zéro à chaque story pour éviter la dérive | Outil de codage autre que Claude Code ou Cursor : la documentation officielle ne cite explicitement que ces deux-là |
-| Besoin de rôles explicites (produit, architecture, dev, test) même en travaillant seul | Chaîne d'outils qu'on veut garder mince : depuis la v6.11, les skills rendus exigent `uv` et Python 3.11+ **en plus** de Node ≥ 20.12 |
-| | Churn important entre versions : v4 et v6 sont incompatibles — verrouiller une version, ne pas suivre la tête aveuglément. La v6.11 déprécie `bmad-create-story` et `bmad-dev-story` (réduits à des shims), consolide `bmad-quick-dev` en `bmad-build` comme seule voie officielle d'implémentation, ramène les skills core de 14 à 8 et unifie `bmad-review` avec des « lentilles » configurables |
-| | Nom à réutiliser pour un dérivé : la licence est MIT mais le fichier LICENSE réserve les marques BMad™, BMad Method™ et BMad Core™ à BMad Code, LLC — d'où le `NOASSERTION` renvoyé par l'API GitHub |
+| Vouloir une trace structurée intention → spécification → architecture → stories, révisable, plutôt qu'un enchaînement de prompts | Petite tâche ou correctif évident : la doc elle-même dit qu'on n'a pas besoin de BMAD pour une retouche triviale |
+| Travail découpé en unités d'une session (environ 500 lignes hors tests), chacune dans une conversation neuve pour éviter la dérive | Un cadre plus mince suffit : [[OpenSpec]] ou [[Spec Kit]] gardent la spécification sans les rôles ni le suivi |
+| Besoin de rôles explicites (produit, architecture, UX, développement) et de points de validation, même en travaillant seul | Chaîne d'outils qu'on veut garder mince : `uv` est requis pour les scripts et le setup, en plus de Node.js pour l'installation |
+| Code existant : `bmad-build` lit le dépôt d'abord, `bmad-project-context` pose les règles dans `AGENTS.md` | Churn important : la v4 et la v6 sont incompatibles, des skills ont été renommés ou fondus (`bmad-quick-dev` devenu `bmad-build`, trois skills de recherche fondus en `bmad-deep-recon`), et `main` n'est pas publié ; verrouiller une version |
+| Un outil de codage qui gère les skills : Claude Code, Cursor, Cline, Codex, Windsurf, Amp, Antigravity et d'autres, listés par la doc | Réutiliser le nom pour un dérivé : la licence est MIT, mais le fichier LICENSE réserve les marques BMad™, BMad Method™ et BMad Core™ à BMad Code, LLC (d'où le `NOASSERTION` renvoyé par l'API GitHub) ; `TRADEMARK.md` interdit un nom confusément proche |
 
 ## Mise en œuvre
 
-- Installation — `npx bmad-method install` : l'installeur écrit les skills et commandes dans l'outil de codage cible ; version courante v6.11.0, la v4 restant en maintenance pour les seuls correctifs critiques
-- Point d'entrée — les agents nommés (`pm`, `analyst`, `architect`, `dev`, `ux-designer`, `tech-writer`, `sm`, `tea`, `quick-flow-solo-dev`) et leurs commandes, injectés dans Claude Code ou Cursor ; configuration en TOML par couches
-- Prérequis — Node ≥ 20.12.0 ; depuis la v6.11, également `uv` et Python 3.11+ pour les skills rendus
-- Exécution — dans l'outil de codage hôte, sur le poste ; multiplateforme (Node)
-- Coût — gratuit, MIT, mais avec une clause de marque ; la dépense réelle est celle du LLM de l'agent piloté
+- Installation — sur `main` : `npx skills add bmad-code-org/BMAD-METHOD`, ou la place de marché de plugins (`/plugin marketplace add bmad-code-org/bmad-plugins` dans Claude Code), puis, dans l'outil, demander au skill `bmad` de lancer `bmad setup` (`bmad status` vérifie les versions) ; sur la release v6.12.1 : `npx bmad-method install`, qui écrit les skills dans le dossier de l'outil choisi
+- Point d'entrée — `bmad` pour savoir quoi faire, puis `bmad-build` avec ce qu'on veut changer ; les agents nommés (`bmad-agent-analyst`, `-pm`, `-architect`, `-ux-designer`, `-dev`) et leurs codes de menu ; surcharge en TOML par couches sous `_bmad/custom/`
+- Prérequis — `uv` pour le setup et les scripts Python ; Node.js, npm et Git pour la CLI de skills ; sur la release v6.12.1, le README donne Node 20.12 ou plus et Python 3.10 ou plus
+- Exécution — dans l'outil de codage hôte, sur le poste ; le modèle est celui de l'outil (usage avec un modèle local non vérifié)
+- Coût — gratuit, MIT, avec une clause de marque ; la dépense réelle est celle du LLM de l'agent piloté, et les relectures `thorough` en consomment beaucoup
 
 ## Écosystème
 
 ### Alternatives
 
 - [[Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- [[OpenSpec]] — Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.
 
 ### Compléments
 
@@ -77,6 +74,8 @@ des modules core, BMad Builder, Game Dev Studio et Test Architect — les chiffr
 
 - [[Agents de code]] — le hub du dossier
 - [[Comparatif - Assistants de code IA]] — ce qui départage les briques du dossier
+- [[BMAD - la méthode]] — le principe, la boucle de livraison, les rôles, Scrum en parallèle
+- [[BMAD - tour complet des skills]] — chaque skill, agent et commande, et une session complète
 - [[Agent skills]] — compétences packagées d'un agent
 - [[Multi-agent systems]] — systèmes à plusieurs agents coopérants
 - [[Agent patterns]] — patrons d'architecture d'agents
