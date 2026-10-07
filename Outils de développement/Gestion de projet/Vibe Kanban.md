@@ -11,7 +11,7 @@ maturite: beta
 langage: Rust
 hosted: [self]
 scaling: single-node
-alternatives: []
+alternatives: ["[[Claude Squad]]"]
 complements: []
 tags: [multi-agent, project-management, version-control]
 url_docs: https://www.vibekanban.com/docs
@@ -55,9 +55,10 @@ Application qui se lance par `npx vibe-kanban` et s'ouvre dans le navigateur. On
 
 ### Alternatives
 
+- [[Claude Squad]] — Application de terminal (AGPL-3.0, Go) qui gère plusieurs agents de code en parallèle, chacun dans une session tmux et un worktree git à lui, avec aperçu, diff, validation et poussée de la branche — mais tmux et gh sont requis, et l'AGPL pèse si l'outil est offert en service. — là où Vibe Kanban offre un tableau et une revue de diff dans le navigateur, Claude Squad tient dans un terminal, sur tmux.
 - voisin : [[t3code]] — plan de contrôle au-dessus des CLI d'agents de code installées localement, desktop, web et mobile ; il pilote des agents lui aussi, sans le tableau de cartes.
 - voisin : [[swarm-forge]] — orchestrateur tmux d'agents de code, un git worktree par agent ; aucune licence déclarée.
-- voisin : Claude Squad, Ruflo et Crystal — d'autres gestionnaires d'agents en parallèle, cités en texte simple, non fichés dans le brain.
+- voisin : Ruflo et Crystal — d'autres gestionnaires d'agents en parallèle, cités en texte simple, non fichés dans le brain.
 
 ## Ressources
 
