@@ -29,7 +29,7 @@ url_repo: https://github.com/wandb/wandb
 
 ## Définition
 
-Plateforme de suivi d'expériences devenue un standard de fait en recherche deep learning.
+Plateforme de suivi d'expériences ML, gratuite en usage personnel et en recherche, payante par siège en équipe, proposée en service hébergé ou en serveur auto-hébergé sous licence commerciale. Plateforme de suivi d'expériences devenue un standard de fait en recherche deep learning.
 Deux appels — `wandb.init`, `wandb.log` — suffisent à diffuser métriques, courbes, gradients,
 images et tables vers des tableaux de bord interactifs et partageables. Autour du suivi :
 **Sweeps**, une recherche d'hyperparamètres distribuée intégrée au tracking ; **Artifacts**,

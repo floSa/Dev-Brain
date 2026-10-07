@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Environnement complet de développement d'API, et non simple client de requêtes : on compose et envoie
+Outil propriétaire de développement d'API, gratuit mais limité à un utilisateur depuis mars 2026, puis payant par palier, qui s'appuie par défaut sur le cloud de l'éditeur. Environnement complet de développement d'API, et non simple client de requêtes : on compose et envoie
 du HTTP, REST, GraphQL et gRPC, on range en collections, on gère des environnements de
 variables, on écrit des tests en JavaScript, puis on publie de la documentation, on monte
 des mocks et on branche des monitors. Tout cela est adossé à son **cloud** par défaut :

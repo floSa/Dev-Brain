@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Plateforme commerciale couvrant le cycle ML : suivi d'expériences — paramètres, métriques,
+Plateforme commerciale de suivi d'expériences ML, gratuite en usage personnel et en recherche, payante en équipe, proposée en service hébergé ou à installer sur site. Plateforme commerciale couvrant le cycle ML : suivi d'expériences — paramètres, métriques,
 artefacts, comparaison d'exécutions —, registre de modèles, gestion de jeux de données et
 panneaux de visualisation personnalisables. Son extension vers l'observabilité des
 applications génératives passe par **Opik**, brique de tracing et d'évaluation de RAG et
