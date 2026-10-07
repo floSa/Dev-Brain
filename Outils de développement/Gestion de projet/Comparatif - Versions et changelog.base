@@ -1,0 +1,22 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du sous-domaine.
+    - role == "brique"
+    # devtools/projet rassemble aussi des outils de contexte, de revue et de
+    # parallélisme qui ne versionnent rien : la catégorie ne dit pas ce que ce
+    # comparatif compare, le tag oui.
+    - file.hasTag("changelog")
+views:
+  - type: table
+    name: Versions et changelog
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

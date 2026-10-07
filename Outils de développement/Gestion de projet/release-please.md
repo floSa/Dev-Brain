@@ -32,7 +32,7 @@ Outil de release, écrit en TypeScript et publié par Google (organisation `goog
 | Un projet sur GitHub, où la release se décide en relisant et en fusionnant une pull request | Une forge auto-hébergée : la commande demande un jeton GitHub et une adresse `<propriétaire>/<dépôt>` ; `--api-url` change l'adresse de l'API, par défaut `api.github.com`, mais le README ne documente ni [[Forgejo]] ni [[GitLab CE]] |
 | Un monorepo dont les paquets sortent à des versions différentes (configuration par manifeste) | Des pull requests fusionnées en merge commits, dont les messages n'ont de sens que dans leur branche : le README recommande vivement le squash-merge, pour que le journal de la pull request de release reflète `main` |
 | Aucune commande de release à lancer à la main : la fusion de la pull request suffit | Une release lancée depuis le poste, sans pull request : [[Commitizen]] (`cz bump`) ou [[git-cliff]] |
-| Garder un contrôle humain avant chaque release, sur la version et le journal proposés | Un journal à la forme très personnalisée : le format est celui de l'outil ; [[git-cliff]] se règle par modèle |
+| Garder un contrôle humain avant chaque release, sur la version et le journal proposés | Un journal à la forme très personnalisée : [[git-cliff]] se règle par un modèle complet ; release-please offre des options de personnalisation (`docs/customizing.md`), que cette fiche n'a pas détaillées |
 
 ## Mise en œuvre
 
