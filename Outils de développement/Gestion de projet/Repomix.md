@@ -19,6 +19,11 @@ url_repo: https://github.com/yamadashy/repomix
 # Repomix
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (MIT, TypeScript) qui empaquette un dépôt en un seul fichier XML, Markdown, JSON ou texte pour le donner à une IA : jetons comptés, fichiers ressemblant à des secrets écartés, code réductible à sa structure par Tree-sitter — mais le tri de ce qui compte reste à faire par motifs d'inclusion et d'exclusion.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

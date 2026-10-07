@@ -19,6 +19,11 @@ url_repo: https://github.com/casey/just
 # just
 
 <!-- AUTO:BANDEAU:START -->
+> Lanceur de commandes de projet (CC0-1.0, Rust) : des recettes écrites dans un fichier `justfile`, de syntaxe inspirée de make, avec paramètres, dépendances entre recettes et chargement de `.env` — mais un lanceur seulement, pas un système de build.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

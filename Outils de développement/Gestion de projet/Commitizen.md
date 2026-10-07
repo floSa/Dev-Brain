@@ -19,6 +19,11 @@ url_repo: https://github.com/commitizen-tools/commitizen
 # Commitizen
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande Python (MIT) qui guide l'écriture de commits conventionnels, puis calcule la prochaine version SemVer et met à jour le changelog par `cz bump` — mais tout repose sur des messages de commit conformes, que seul le hook de validation impose.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

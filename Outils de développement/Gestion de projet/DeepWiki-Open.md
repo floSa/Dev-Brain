@@ -22,6 +22,11 @@ url_repo: https://github.com/AsyncFuncAI/deepwiki-open
 # DeepWiki-Open
 
 <!-- AUTO:BANDEAU:START -->
+> Application web à héberger (MIT, Python et Next.js) qui génère un wiki interactif d'un dépôt GitHub, GitLab ou Bitbucket — structure du code, documentation, diagrammes, codemap — avec le modèle au choix (Google, OpenAI, OpenRouter, Azure, Bedrock, Ollama en local) — mais aucune release publiée, et le README renvoie vers une suite « 2.0 », Grok Wiki, qui est une autre application.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Python | open-source | self-hébergé · mono-nœud | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -21,6 +21,11 @@ url_repo: https://github.com/oraios/serena
 # Serena
 
 <!-- AUTO:BANDEAU:START -->
+> Serveur MCP (GPL-3.0-or-later, Python) qui donne à un agent de code des outils au niveau du symbole — chercher, renommer, remplacer le corps d'une fonction — appuyés par défaut sur des serveurs de langage, plus de 40 langages — mais l'agent et son modèle restent à fournir, et le renommage par serveur de langage ne vise que les symboles.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Python | open-source | self-hébergé · mono-nœud | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

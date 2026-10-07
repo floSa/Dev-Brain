@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1114,
+  "count": 1125,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -138,6 +138,7 @@
       "Revue, tests et définition de terminé avec un agent",
       "Sandboxing de code généré",
       "Semantic Kernel",
+      "Serena",
       "Sous-agents et isolation du contexte",
       "Spec Kit",
       "Text-to-SQL",
@@ -418,6 +419,12 @@
       "Merlion",
       "ruptures"
     ],
+    "changelog": [
+      "Commitizen",
+      "Comparatif - Versions et changelog",
+      "git-cliff",
+      "release-please"
+    ],
     "chunking": [
       "Chunking strategies",
       "RAG & retrieval",
@@ -569,6 +576,9 @@
       "Zoo Code",
       "freebuff",
       "t3code"
+    ],
+    "code-review": [
+      "PR-Agent"
     ],
     "columnar": [
       "ADBC",
@@ -744,6 +754,8 @@
       "Mémoire des agents",
       "OmniRoute",
       "OpenViking",
+      "Repomix",
+      "Serena",
       "Sous-agents et isolation du contexte",
       "ai-memory",
       "prompt-caching"
@@ -1265,6 +1277,7 @@
     ],
     "documentation": [
       "ADR et design docs",
+      "DeepWiki-Open",
       "Diátaxis et docs-as-code",
       "Modèle C4"
     ],
@@ -1574,6 +1587,7 @@
       "Video generation"
     ],
     "git-hooks": [
+      "Commitizen",
       "Commits conventionnels, versions et changelog",
       "Qualité du code",
       "Revue, tests et définition de terminé avec un agent",
@@ -2134,6 +2148,7 @@
       "OpenRouter",
       "Outlines",
       "PEFT",
+      "PR-Agent",
       "Pattern - Agent sur LLM auto-hébergé",
       "Perplexity",
       "Phoenix Arize",
@@ -2424,6 +2439,8 @@
       "OpenViking",
       "PraisonAI",
       "Qwen Code",
+      "Repomix",
+      "Serena",
       "Zoo Code",
       "ai-memory",
       "fastmcp",
@@ -2677,6 +2694,7 @@
       "OpenMAIC",
       "PraisonAI",
       "Sous-agents et isolation du contexte",
+      "Vibe Kanban",
       "a2a-protocol",
       "freebuff",
       "open_deep_research",
@@ -3015,6 +3033,7 @@
       "Outils de développement",
       "Packaging Python et environnements reproductibles",
       "Rule - Toolchain Python",
+      "mise",
       "pip",
       "uv"
     ],
@@ -3172,6 +3191,7 @@
       "Modèle C4",
       "PRD et user stories",
       "Revue, tests et définition de terminé avec un agent",
+      "Vibe Kanban",
       "Vibe coding contre ingénierie agentique"
     ],
     "projection": [
@@ -3248,6 +3268,7 @@
       "Comparatif - Plateformes LLM auto-hébergées",
       "Comparatif - Rerankers",
       "DB-GPT",
+      "DeepWiki-Open",
       "Dify",
       "Docling",
       "FlashRank",
@@ -3474,6 +3495,7 @@
       "Suivi d'expériences",
       "jupytext",
       "lakeFS",
+      "mise",
       "papermill"
     ],
     "reranking": [
@@ -3714,6 +3736,7 @@
       "Comparatif - Registres d'images",
       "Dataiku",
       "Debezium",
+      "DeepWiki-Open",
       "Dependency-Track",
       "EMQX",
       "Forgejo",
@@ -3743,6 +3766,7 @@
       "OpenBao",
       "OpenMAIC",
       "OpenTelemetry",
+      "PR-Agent",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Podman",
       "Prometheus",
@@ -4071,6 +4095,10 @@
       "Comparatif - Brokers de messages",
       "Messagerie"
     ],
+    "task-runner": [
+      "just",
+      "mise"
+    ],
     "templating": [
       "Jinja2",
       "Web & API"
@@ -4185,7 +4213,8 @@
       "Traefik"
     ],
     "token-optimization": [
-      "Headroom"
+      "Headroom",
+      "Repomix"
     ],
     "tokenization": [
       "Constrained decoding",
@@ -4428,13 +4457,17 @@
       "Aider",
       "Branches courtes et worktrees pour agents",
       "Bruno",
+      "Commitizen",
       "Comparatif - Clients d'API",
       "Forgejo",
       "Forges & CI-CD",
       "GitLab CE",
       "Notebooks",
       "Notebooks-as-code",
+      "Vibe Kanban",
+      "git-cliff",
       "jupytext",
+      "release-please",
       "swarm-forge"
     ],
     "vibration-analysis": [
@@ -30533,6 +30566,35 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Commitizen.md",
+      "nom": "Commitizen",
+      "alias": [
+        "commitizen",
+        "cz",
+        "commitizen-tools/commitizen"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Outil en ligne de commande Python (MIT) qui guide l'écriture de commits conventionnels, puis calcule la prochaine version SemVer et met à jour le changelog par `cz bump` — mais tout repose sur des messages de commit conformes, que seul le hook de validation impose.",
+      "tags": [
+        "changelog",
+        "version-control",
+        "git-hooks"
+      ],
+      "alternatives": [
+        "[[git-cliff]]",
+        "[[release-please]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Commits conventionnels, versions et changelog.md",
       "nom": "Commits conventionnels, versions et changelog",
       "alias": [
@@ -30557,6 +30619,23 @@
         "project-management",
         "git-hooks",
         "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Comparatif - Versions et changelog.md",
+      "nom": "Comparatif - Versions et changelog",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "changelog"
       ],
       "alternatives": null,
       "complements": null,
@@ -30590,6 +30669,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/DeepWiki-Open.md",
+      "nom": "DeepWiki-Open",
+      "alias": [
+        "deepwiki-open",
+        "AsyncFuncAI/deepwiki-open",
+        "Open DeepWiki"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application web à héberger (MIT, Python et Next.js) qui génère un wiki interactif d'un dépôt GitHub, GitLab ou Bitbucket — structure du code, documentation, diagrammes, codemap — avec le modèle au choix (Google, OpenAI, OpenRouter, Azure, Bedrock, Ollama en local) — mais aucune release publiée, et le README renvoie vers une suite « 2.0 », Grok Wiki, qui est une autre application.",
+      "tags": [
+        "documentation",
+        "rag",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Repomix]]",
+        "[[Serena]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Outils de développement/Gestion de projet/Développement piloté par la spécification.md",
@@ -30748,6 +30855,32 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/PR-Agent.md",
+      "nom": "PR-Agent",
+      "alias": [
+        "pr-agent",
+        "The-PR-Agent/pr-agent",
+        "qodo-ai/pr-agent",
+        "Qodo Merge open source"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil de revue automatique de pull requests (MIT, Python), auto-hébergeable : commandes /describe, /review, /improve et /ask, en GitHub Action, en ligne de commande, en conteneur ou en webhook, pour GitHub, GitLab, Bitbucket, Azure DevOps et Gitea — mais le modèle est à fournir (clé d'API ou modèle local par LiteLLM), et le projet est un héritage de Qodo tenu par la communauté, distinct de l'offre commerciale de Qodo.",
+      "tags": [
+        "code-review",
+        "llm",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/PRD et user stories.md",
       "nom": "PRD et user stories",
       "alias": [
@@ -30778,6 +30911,33 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Repomix.md",
+      "nom": "Repomix",
+      "alias": [
+        "repomix",
+        "yamadashy/repomix"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil en ligne de commande (MIT, TypeScript) qui empaquette un dépôt en un seul fichier XML, Markdown, JSON ou texte pour le donner à une IA : jetons comptés, fichiers ressemblant à des secrets écartés, code réductible à sa structure par Tree-sitter — mais le tri de ce qui compte reste à faire par motifs d'inclusion et d'exclusion.",
+      "tags": [
+        "context-engineering",
+        "token-optimization",
+        "mcp"
+      ],
+      "alternatives": [
+        "[[Serena]]",
+        "[[DeepWiki-Open]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md",
@@ -30813,6 +30973,58 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Serena.md",
+      "nom": "Serena",
+      "alias": [
+        "serena",
+        "oraios/serena",
+        "serena-agent"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "plateforme",
+      "langage": "Python",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Serveur MCP (GPL-3.0-or-later, Python) qui donne à un agent de code des outils au niveau du symbole — chercher, renommer, remplacer le corps d'une fonction — appuyés par défaut sur des serveurs de langage, plus de 40 langages — mais l'agent et son modèle restent à fournir, et le renommage par serveur de langage ne vise que les symboles.",
+      "tags": [
+        "mcp",
+        "agents",
+        "context-engineering"
+      ],
+      "alternatives": [
+        "[[Repomix]]",
+        "[[DeepWiki-Open]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Vibe Kanban.md",
+      "nom": "Vibe Kanban",
+      "alias": [
+        "vibe-kanban",
+        "BloopAI/vibe-kanban"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Application locale (Apache-2.0, Rust) : un tableau Kanban où chaque carte lance un agent de code dans un espace de travail isolé — branche, terminal, serveur de développement — avec revue de diff commentée et création de pull request — mais la société bloop qui la portait a fermé le 2026-04-10 et le projet vit en maintenance communautaire.",
+      "tags": [
+        "multi-agent",
+        "project-management",
+        "version-control"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Vibe coding contre ingénierie agentique.md",
       "nom": "Vibe coding contre ingénierie agentique",
       "alias": [
@@ -30839,6 +31051,87 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/git-cliff.md",
+      "nom": "git-cliff",
+      "alias": [
+        "git cliff",
+        "cliff",
+        "orhun/git-cliff"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Outil en ligne de commande (Apache-2.0, Rust) qui génère un changelog depuis l'historique Git, par commits conventionnels ou analyseurs à expressions régulières, et calcule la prochaine version SemVer avec `--bump` — mais il produit le journal et le numéro, pas le tag : `--tag` ne le crée pas.",
+      "tags": [
+        "changelog",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Commitizen]]",
+        "[[release-please]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/just.md",
+      "nom": "just",
+      "alias": [
+        "casey/just",
+        "justfile",
+        "Just command runner"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Lanceur de commandes de projet (CC0-1.0, Rust) : des recettes écrites dans un fichier `justfile`, de syntaxe inspirée de make, avec paramètres, dépendances entre recettes et chargement de `.env` — mais un lanceur seulement, pas un système de build.",
+      "tags": [
+        "task-runner"
+      ],
+      "alternatives": [
+        "[[mise]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/release-please.md",
+      "nom": "release-please",
+      "alias": [
+        "Release Please",
+        "googleapis/release-please"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Outil Node.js (Apache-2.0, Google) qui tient à jour une pull request de release depuis les commits conventionnels : à sa fusion, il met à jour le changelog et les fichiers de version, pose le tag et crée la release GitHub — mais il vise l'API GitHub (jeton GitHub exigé) et ne publie pas les paquets.",
+      "tags": [
+        "changelog",
+        "version-control"
+      ],
+      "alternatives": [
+        "[[Commitizen]]",
+        "[[git-cliff]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Hypothesis.md",
@@ -31466,6 +31759,33 @@
         "[[dynaconf]]",
         "[[python-dotenv]]",
         "[[Pydantic Settings]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/mise.md",
+      "nom": "mise",
+      "alias": [
+        "mise-en-place",
+        "jdx/mise"
+      ],
+      "role": "brique",
+      "categorie": "devtools/paquet",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": "Outil en ligne de commande (MIT, Rust) qui installe les outils de développement d'un projet (Node.js, Python, Go et des centaines d'autres), fixe ses variables d'environnement et lance ses tâches depuis un seul `mise.toml` — mais une version demandée comme « 24 » suit la série : il faut une épingle exacte ou un fichier de verrou pour que toute l'équipe ait la même.",
+      "tags": [
+        "task-runner",
+        "reproducibility",
+        "package-manager"
+      ],
+      "alternatives": [
+        "[[just]]"
       ],
       "complements": [],
       "maturite": "production"

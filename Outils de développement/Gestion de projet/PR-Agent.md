@@ -19,6 +19,11 @@ url_repo: https://github.com/The-PR-Agent/pr-agent
 # PR-Agent
 
 <!-- AUTO:BANDEAU:START -->
+> Outil de revue automatique de pull requests (MIT, Python), auto-hébergeable : commandes /describe, /review, /improve et /ask, en GitHub Action, en ligne de commande, en conteneur ou en webhook, pour GitHub, GitLab, Bitbucket, Azure DevOps et Gitea — mais le modèle est à fournir (clé d'API ou modèle local par LiteLLM), et le projet est un héritage de Qodo tenu par la communauté, distinct de l'offre commerciale de Qodo.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
