@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[MkDocs]]", "[[Docusaurus]]", "[[Zensical]]"]
+alternatives: ["[[MkDocs]]", "[[Docusaurus]]", "[[Zensical]]", "[[mkdocstrings]]"]
 complements: []
 tags: [documentation]
 url_docs: https://www.sphinx-doc.org/
@@ -18,6 +18,11 @@ url_repo: https://github.com/sphinx-doc/sphinx
 # Sphinx
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -52,12 +57,13 @@ Version 9.1.0 du 2025-12-31 (Python ≥ 3.12), dernier commit le 2026-10-05, lic
 - [[MkDocs]] — Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
 - [[Docusaurus]] — Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
 - [[Zensical]] — Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
+- [[mkdocstrings]] — Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé. — pour la seule référence d'API : dans Sphinx, l'extension `autodoc` fait ce travail.
 
 ## Ressources
 
 - Documentation — https://www.sphinx-doc.org/
 - Dépôt — https://github.com/sphinx-doc/sphinx
-- Markdown avec Sphinx — https://www.sphinx-doc.org/en/master/usage/markdown.html
+- Documentation — Markdown avec Sphinx : https://www.sphinx-doc.org/en/master/usage/markdown.html
 
 ## Voir aussi
 

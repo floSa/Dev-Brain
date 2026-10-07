@@ -8,7 +8,7 @@ famille: extension
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: []
+alternatives: ["[[Sphinx]]"]
 complements: ["[[MkDocs]]", "[[Zensical]]"]
 tags: [documentation]
 url_docs: https://mkdocstrings.github.io/
@@ -18,6 +18,11 @@ url_repo: https://github.com/mkdocstrings/mkdocstrings
 # mkdocstrings
 
 <!-- AUTO:BANDEAU:START -->
+> Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -48,7 +53,7 @@ Fonctions que le dépôt met en avant : renvois d'une page à l'autre par `[iden
 
 ### Alternatives
 
-- *Aucune alternative déclarée pour ce dossier.* L'équivalent côté [[Sphinx]] est une extension (`autodoc`), pas une brique à part.
+- [[Sphinx]] — Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser. — son extension `autodoc` joue le même rôle pour la référence d'API, sans plugin à part ; l'alternative vaut surtout pour qui n'est pas déjà sur MkDocs.
 
 ### Compléments
 

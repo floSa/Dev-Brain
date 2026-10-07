@@ -18,6 +18,11 @@ url_repo: https://github.com/zensical/zensical
 # Zensical
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Rust | open-source | en ligne de commande, rien à héberger | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -66,9 +71,9 @@ Pourquoi il existe : l'équipe de Material for MkDocs a annoncé le 2025-11-05 q
 
 - Documentation — https://zensical.org/docs/
 - Dépôt — https://github.com/zensical/zensical
-- Compatibilité avec MkDocs — https://zensical.org/docs/compatibility/mkdocs/
-- Feuille de route — https://zensical.org/roadmap/
-- Annonce de la maintenance de Material for MkDocs — https://github.com/squidfunk/mkdocs-material/issues/8523
+- Documentation — compatibilité avec MkDocs : https://zensical.org/docs/compatibility/mkdocs/
+- Documentation — feuille de route : https://zensical.org/roadmap/
+- Article — annonce de la maintenance de Material for MkDocs : https://github.com/squidfunk/mkdocs-material/issues/8523
 
 ## Voir aussi
 

@@ -18,6 +18,11 @@ url_repo: https://github.com/mkdocs/mkdocs
 # MkDocs
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI Python | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -69,8 +74,8 @@ Conséquence pratique : MkDocs 1.6.1 fonctionne et reste utilisable pour un site
 
 - Documentation — https://www.mkdocs.org/
 - Dépôt — https://github.com/mkdocs/mkdocs
-- Discussions citées — https://github.com/mkdocs/mkdocs/discussions/4063, /4077, /4089
-- Billet de l'équipe Material (avis) — https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/
+- Article — discussions du dépôt citées : https://github.com/mkdocs/mkdocs/discussions/4063, /4077 et /4089
+- Article — avis de l'équipe Material, partie prenante : https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/
 
 ## Voir aussi
 

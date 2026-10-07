@@ -18,13 +18,18 @@ url_repo: https://github.com/facebook/docusaurus
 # Docusaurus
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
 
-Générateur de sites de documentation de **Meta**, publié pour ses propres projets open source et ouvert aux autres. La documentation le décrit comme un générateur de sites statiques qui produit une **application monopage** : navigation côté client, et toute la puissance de **React** pour les pages interactives. On y écrit en Markdown, avec **MDX** (du JSX dans le Markdown) quand il faut un composant. Il apporte d'origine une page d'accueil, une section de documentation, un **blog** et des pages libres, plus des fonctions que les autres générateurs du dossier traitent en plugin ou pas du tout : **versions de la documentation**, **traduction** (support de la localisation fourni, via Crowdin) et recherche.
+Générateur de sites de documentation de **Meta**, conçu pour ses propres projets et ouvert aux autres. La documentation le décrit comme un générateur de sites statiques qui produit une **application monopage** : navigation côté client, et toute la puissance de **React** pour les pages interactives. On y écrit en Markdown, avec **MDX** (du JSX dans le Markdown) quand il faut un composant. Il apporte d'origine une page d'accueil, une section de documentation, un **blog** et des pages libres, plus des fonctions que les autres générateurs du dossier traitent en plugin ou pas du tout : **versions de la documentation**, **traduction** (support de la localisation fourni, via Crowdin) et recherche.
 
-Le prix est l'écosystème : Node.js et npm, un projet JavaScript à côté d'un dépôt Python ou data, et une mise à jour de dépendances à tenir. Version 3.10.2 du 2026-07-10 (Node ≥ 20), dernier commit le 2026-10-05, environ 66,4 k étoiles, code sous licence MIT ; les fichiers `.md` du dossier `docs/` du dépôt sont sous licence Creative Commons, distincte (fichier `LICENSE-docs`).
+Le prix est l'écosystème : Node.js et npm, un projet JavaScript à côté d'un dépôt Python ou data, et une mise à jour de dépendances à tenir. Version 3.10.2 du 2026-07-10 (Node ≥ 20), dernier commit le 2026-10-05, environ 66,4 k étoiles. Les fichiers `.md` du dossier `docs/` du dépôt suivent une licence Creative Commons distincte du code (fichier `LICENSE-docs`).
 
 ## Prendre si / Écarter si
 
