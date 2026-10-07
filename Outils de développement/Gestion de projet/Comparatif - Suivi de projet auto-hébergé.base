@@ -1,0 +1,23 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du dossier.
+    - role == "brique"
+    # `devtools/projet` porte aussi les outils de mesure (ccusage, ActivityWatch,
+    # Kimai) et ceux des lots suivants : seul le tag dit « suivi de tickets ».
+    - categorie == "devtools/projet"
+    - file.hasTag("issue-tracking")
+views:
+  - type: table
+    name: Suivi de projet auto-hébergé
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - maturite
+      - scaling
+      - tags
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc
