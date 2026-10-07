@@ -16,7 +16,7 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - Ce dossier contient des **agents déjà écrits**, à installer et à utiliser. Les bibliothèques pour en écrire un sont dans [[Agents]] ; la distinction est celle entre un produit et une brique, et c'est elle qui range chaque fiche ici ou là.
 - Trois formes coexistent, et le choix se fait sur le **point d'insertion dans le poste de travail**, pas sur les capacités annoncées : dans le terminal, à côté de git ([[Aider]], [[pi]], [[freebuff]], [[OpenCode]], [[Goose]], [[Qwen Code]]) ; dans l'éditeur, avec le contexte de l'IDE ([[Cline]], [[Continue]], [[Zoo Code]], [[Kilo Code]], ce dernier aussi en CLI) ; au-dessus des CLI déjà installées, comme plan de contrôle ([[t3code]], [[Maka]]).
 - La couche qui compte le plus au quotidien n'est pas le modèle mais le **harnais** : quels fichiers sont lus, quels outils sont exposés, quel contexte est rechargé à chaque tour, et quelle action demande une confirmation. Cf. [[Harnais d'agent]] et [[Context engineering]] — à modèle égal, deux harnais donnent des résultats sans rapport.
-- Cette famille a produit un objet propre, le **skill** : une compétence packagée qui étend ou contraint le comportement de l'agent, installée dans le dépôt ou dans l'outil. [[Agent skills]] en décrit le mécanisme ; [[BMAD]] en fait un processus complet (brief → PRD → architecture → stories), [[Spec Kit]] en fait une spécification exécutable, [[i-have-adhd]] ne contraint que le format de sortie. Ce sont trois usages du même levier, du plus lourd au plus léger.
+- Cette famille a produit un objet propre, le **skill** : une compétence packagée qui étend ou contraint le comportement de l'agent, installée dans le dépôt ou dans l'outil. [[Agent skills]] en décrit le mécanisme ; [[BMAD]] en fait un processus complet (idée → PRD → architecture → stories → relecture, lu pas à pas dans [[BMAD - la méthode]] et [[BMAD - tour complet des skills]]), [[Spec Kit]] en fait une spécification exécutable, [[OpenSpec]] garde la spécification dans le dépôt, un dossier par changement, [[i-have-adhd]] ne contraint que le format de sortie. Ce sont quatre usages du même levier, du plus lourd au plus léger. Cinq jeux de skills précis, chacun lié à une étape du cycle, complètent la série : [[Superpowers]] (un cycle imposé), [[Skills d'Addy Osmani]] (un catalogue large), [[Skills de Matt Pocock]] (petits skills composables), [[Ponytail]] (le moins de code possible) et [[pm-skills]] (le produit en amont du code). Le tableau par étape est dans [[Quel skill pour quelle étape]].
 - Le **contexte du dépôt** est le point dur, et deux réponses s'opposent : laisser l'agent chercher (grep, lecture à la demande) ou lui donner une carte préalable — c'est ce que fait [[Graphify]] en transformant le dépôt en graphe interrogeable. La seconde coûte une étape d'indexation et fait gagner sur les gros dépôts.
 - La **mémoire entre sessions** est le manque le plus visible de ces outils : chaque session repart de zéro. [[ai-memory]] y répond par un serveur MCP qui consolide les sessions en wiki versionné, et permet de reprendre sous un agent une tâche entamée sous un autre. Cf. [[Agent memory]].
 - **Un agent qui exécute du code exécute du code**, y compris ce qu'il a lui-même écrit. [[Sandboxing de code généré]] n'est pas une précaution optionnelle sur un dépôt de travail ; c'est aussi pour cette raison que [[Maka]] journalise chaque appel d'outil et chaque décision de permission en append-only, et que [[swarm-forge]] isole chaque agent dans son propre worktree git.
@@ -38,8 +38,14 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - Piloter plusieurs CLI d'agents déjà installées depuis une seule interface → [[t3code]].
 - Un journal rejouable de tout ce que l'agent a fait sur ma machine → [[Maka]].
 - Une boîte à outils TypeScript pour bâtir mon propre agent de code → [[pi]].
-- Imposer un processus de spécification avant l'implémentation → [[Spec Kit]], ou [[BMAD]] pour un cycle complet à rôles nommés.
+- Imposer un processus de spécification avant l'implémentation → [[Spec Kit]] (une fonctionnalité à spécifier), [[OpenSpec]] (des changements successifs sur du code existant, archivés), ou [[BMAD]] pour un cycle complet à rôles nommés. Comprendre BMAD avant de l'installer → [[BMAD - la méthode]], puis [[BMAD - tour complet des skills]] pour le catalogue.
 - Ne changer que la forme des réponses de l'agent → [[i-have-adhd]].
+- Un cycle complet de skills, enchaîné et obligatoire (brainstorming, plan, sous-agents, TDD, revue) → [[Superpowers]].
+- Un catalogue de skills par étape, avec une commande pour chacune, jusqu'à la sécurité et la livraison → [[Skills d'Addy Osmani]].
+- Quelques skills courts et modifiables, qui commencent par interroger → [[Skills de Matt Pocock]].
+- Que l'agent écrive moins de code, et relire un diff pour y chasser la sur-ingénierie → [[Ponytail]].
+- Cadrer le produit avant de spécifier : hypothèses, PRD, histoires, sprints → [[pm-skills]].
+- Savoir quel skill lancer à quelle étape → [[Quel skill pour quelle étape]].
 - Donner à l'agent la structure du dépôt avant qu'il ne cherche → [[Graphify]].
 - Retrouver le contexte d'une session à l'autre, ou d'un agent à l'autre → [[ai-memory]].
 - Faire travailler plusieurs agents en parallèle sur des worktrees isolés → [[swarm-forge]], licence non déclarée.
@@ -47,6 +53,10 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - Écrire moi-même la boucle d'agent → [[Agents]], pas ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[BMAD - la méthode]] — domaines : ai-eng
+- [[BMAD - tour complet des skills]] — domaines : ai-eng
+
 ### Briques
 - [[ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
 - [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
@@ -60,9 +70,15 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - [[Kilo Code]] — Agent de code open source (MIT, TypeScript) pour VS Code, JetBrains et le terminal, bâti sur le code d'OpenCode : agents Code, Plan, Ask et Debug, plus de 30 fournisseurs par clé propre et les serveurs locaux Ollama et LM Studio.
 - [[Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 - [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
+- [[OpenSpec]] — Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- [[pm-skills]] — Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.
+- [[Ponytail]] — Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.
 - [[Qwen Code]] — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
+- [[Skills d'Addy Osmani]] — Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.
+- [[Skills de Matt Pocock]] — Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.
 - [[Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- [[Superpowers]] — Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».
 - [[swarm-forge]] — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - [[t3code]] — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - [[Zoo Code]] — Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.

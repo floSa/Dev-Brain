@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web, CLI"
 langage: JavaScript
-alternatives: ["[[draw.io]]", "[[Archify]]"]
+alternatives: ["[[draw.io]]", "[[Archify]]", "[[LikeC4]]"]
 complements: []
 tags: [diagram, diagram-as-code]
 url_docs: https://mermaid.js.org/
@@ -58,6 +58,7 @@ l'auteur.
 
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
+- [[LikeC4]] — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io. — le C4 de Mermaid est un type de diagramme expérimental, écrit à part ; LikeC4 décrit un modèle commun dont les vues sont calculées.
 
 ## Ressources
 

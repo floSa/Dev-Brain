@@ -110,6 +110,8 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Clients d'API]]
 - [[Comparatif - Frameworks CLI]]
 - [[Comparatif - Gestionnaires de paquets Python]]
+- [[Comparatif - Générateurs de documentation]]
+- [[Comparatif - Suivi de projet auto-hébergé]]
 - [[Comparatif - Versions et changelog]]
 - [[Comparatif - Vérificateurs de types Python]]
 

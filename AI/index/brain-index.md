@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1125 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1148 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -230,6 +230,7 @@
 - **Excalidraw** — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - **FossFLOW** — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - **GitDiagram** — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
+- **LikeC4** — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
 - **Mermaid** — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### design/ui
@@ -272,6 +273,13 @@
 - **Pydantic Settings** — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 - **python-dotenv** — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 
+### devtools/documentation
+- **Docusaurus** — Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
+- **MkDocs** — Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
+- **mkdocstrings** — Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.
+- **Sphinx** — Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.
+- **Zensical** — Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
+
 ### devtools/notebook
 - **jupysql** — SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.
 - **jupytext** — Apparie chaque notebook Jupyter à un fichier texte (`.py` ou `.md`) synchronisé — diff propre, revue en PR et versionnage git du code sans les sorties JSON.
@@ -285,11 +293,16 @@
 - **uv** — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
 
 ### devtools/projet
+- **ActivityWatch** — Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où passe le temps ; les données restent sur la machine.
+- **ccusage** — Outil en ligne de commande (MIT) qui lit les journaux locaux de 18 agents de code (Claude Code, Codex, OpenCode, Goose…) et en tire jetons et coût estimé par jour, semaine, mois ou session.
 - **Commitizen** — Outil en ligne de commande Python (MIT) qui guide l'écriture de commits conventionnels, puis calcule la prochaine version SemVer et met à jour le changelog par `cz bump` — mais tout repose sur des messages de commit conformes, que seul le hook de validation impose.
 - **DeepWiki-Open** — Application web à héberger (MIT, Python et Next.js) qui génère un wiki interactif d'un dépôt GitHub, GitLab ou Bitbucket — structure du code, documentation, diagrammes, codemap — avec le modèle au choix (Google, OpenAI, OpenRouter, Azure, Bedrock, Ollama en local) — mais aucune release publiée, et le README renvoie vers une suite « 2.0 », Grok Wiki, qui est une autre application.
 - **git-cliff** — Outil en ligne de commande (Apache-2.0, Rust) qui génère un changelog depuis l'historique Git, par commits conventionnels ou analyseurs à expressions régulières, et calcule la prochaine version SemVer avec `--bump` — mais il produit le journal et le numéro, pas le tag : `--tag` ne le crée pas.
 - **just** — Lanceur de commandes de projet (CC0-1.0, Rust) : des recettes écrites dans un fichier `justfile`, de syntaxe inspirée de make, avec paramètres, dépendances entre recettes et chargement de `.env` — mais un lanceur seulement, pas un système de build.
+- **Kanboard** — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture.
+- **Kimai** — Application web de suivi du temps à héberger (AGPL-3.0, PHP, Symfony) : feuilles de temps, clients et projets, tarifs, budgets, factures et API JSON, multi-utilisateur avec LDAP ou SAML.
 - **PR-Agent** — Outil de revue automatique de pull requests (MIT, Python), auto-hébergeable : commandes /describe, /review, /improve et /ask, en GitHub Action, en ligne de commande, en conteneur ou en webhook, pour GitHub, GitLab, Bitbucket, Azure DevOps et Gitea — mais le modèle est à fournir (clé d'API ou modèle local par LiteLLM), et le projet est un héritage de Qodo tenu par la communauté, distinct de l'offre commerciale de Qodo.
+- **Redmine** — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés.
 - **release-please** — Outil Node.js (Apache-2.0, Google) qui tient à jour une pull request de release depuis les commits conventionnels : à sa fusion, il met à jour le changelog et les fichiers de version, pose le tag et crée la release GitHub — mais il vise l'API GitHub (jeton GitHub exigé) et ne publie pas les paquets.
 - **Repomix** — Outil en ligne de commande (MIT, TypeScript) qui empaquette un dépôt en un seul fichier XML, Markdown, JSON ou texte pour le donner à une IA : jetons comptés, fichiers ressemblant à des secrets écartés, code réductible à sa structure par Tree-sitter — mais le tri de ce qui compte reste à faire par motifs d'inclusion et d'exclusion.
 - **Serena** — Serveur MCP (GPL-3.0-or-later, Python) qui donne à un agent de code des outils au niveau du symbole — chercher, renommer, remplacer le corps d'une fonction — appuyés par défaut sur des serveurs de langage, plus de 40 langages — mais l'agent et son modèle restent à fournir, et le renommage par serveur de langage ne vise que les symboles.
@@ -328,9 +341,15 @@
 - **Kilo Code** — Agent de code open source (MIT, TypeScript) pour VS Code, JetBrains et le terminal, bâti sur le code d'OpenCode : agents Code, Plan, Ask et Debug, plus de 30 fournisseurs par clé propre et les serveurs locaux Ollama et LM Studio.
 - **Maka** — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 - **OpenCode** — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
+- **OpenSpec** — Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.
 - **pi** — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- **pm-skills** — Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.
+- **Ponytail** — Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.
 - **Qwen Code** — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
+- **Skills d'Addy Osmani** — Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.
+- **Skills de Matt Pocock** — Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.
 - **Spec Kit** — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- **Superpowers** — Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».
 - **swarm-forge** — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - **t3code** — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - **Zoo Code** — Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.
@@ -840,11 +859,16 @@
 - **Mesurer un projet - DORA, coût des agents et temps passé** — domaines : mlops, ai-eng · alias : DORA, DORA metrics, four keys, métriques de livraison, coût des agents, jetons, time tracking, suivi du temps, Goodhart
 - **Modèle C4** — domaines : ai-eng, mlops, data-eng · alias : C4, C4 model, C4 diagrams, diagrammes C4, Context Containers Components Code, modèle C4 de Simon Brown
 - **PRD et user stories** — domaines : ai-eng, data-eng · alias : PRD, product requirements document, document d'exigences produit, user story, user stories, histoires utilisateur, job stories, critères d'acceptation, INVEST
+- **Quel skill pour quelle étape** — domaines : ai-eng, ml-eng · alias : choisir un skill, skills par étape du cycle de vie, catalogue de skills, quel skill utiliser
 - **Revue, tests et définition de terminé avec un agent** — domaines : ai-eng, ml-eng, mlops · alias : definition of done, DoD, définition de terminé, revue de code d'agent, tests d'abord, test-first avec agent, vérification de code généré
 - **Vibe coding contre ingénierie agentique** — domaines : ai-eng, ml-eng · alias : vibe coding, agentic engineering, ingénierie agentique, vibe engineering
 
 ### devtools/qualite
 - **Typage statique en Python** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : Typage statique, typage graduel, gradual typing, type hints, annotations de type, static typing, type checking Python
+
+### llm/agent-de-code
+- **BMAD - la méthode** — domaines : ai-eng · alias : BMAD : la méthode, méthode BMAD, BMad Method, Agile AI-Driven Development, AiDD
+- **BMAD - tour complet des skills** — domaines : ai-eng · alias : BMAD : tour complet des skills, skills BMAD, commandes BMAD, agents BMAD, modules BMAD, bmad-build, bmad-spec, bmad-ticket
 
 ### llm/agents
 - **Agent patterns** — domaines : ai-eng · alias : patrons d'agents, agent design patterns, agentic patterns
@@ -1424,10 +1448,14 @@
 ### devtools/client-api
 - **Comparatif - Clients d'API** — —
 
+### devtools/documentation
+- **Comparatif - Générateurs de documentation** — —
+
 ### devtools/paquet
 - **Comparatif - Gestionnaires de paquets Python** — —
 
 ### devtools/projet
+- **Comparatif - Suivi de projet auto-hébergé** — —
 - **Comparatif - Versions et changelog** — —
 
 ### devtools/qualite
@@ -1594,6 +1622,7 @@
 - **Design & diagrammes** — Dessiner — une interface qu'on prototype, ou un système qu'on explique.
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
+- **Documentation technique** — Documenter un projet logiciel dans son dépôt — quoi écrire, et avec quel générateur fabriquer et publier le site.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Données industrielles** — Amener la donnée de l'atelier jusqu'au système d'information par les protocoles industriels — brokers MQTT, piles OPC UA, outils de flux — et sécuriser le chemin.
 - **Détection d'anomalies** — Repérer ce qui s'écarte du normal — points, motifs, images — et décider à partir de quel écart on alerte.
