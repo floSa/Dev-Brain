@@ -22,7 +22,7 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
 > **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
-> à la clôture du lot 4, le 2026-09-05. Les 539 briques, les **422 notions**, les 77
+> à la clôture du lot 4, le 2026-09-05. Les 538 briques, les **427 notions**, les 77
 > comparatifs (comptes mesurés dans l'index le 2026-10-07), les 9 patterns et les 7 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
@@ -163,8 +163,8 @@ ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : les **422** notions (mesuré le 2026-10-07) sont rangées, réparties comme les briques par leur domaine —
-« Machine Learning/ » (199), « LLM & IA générative/ » (69), « Statistiques & inférence/ » (45),
+État actuel : les **427** notions (mesuré le 2026-10-07) sont rangées, réparties comme les briques par leur domaine —
+« Machine Learning/ » (203), « LLM & IA générative/ » (69), « Statistiques & inférence/ » (46),
 « Mathématiques/ » (40), « Data & pipelines/ » (17), « Bases de données/ » (9), « Sécurité/ » (9),
 « Signal & audio/ » (6), « DevOps/ » (3), « Observabilité/ » (3), « Outils de développement/ » (18),
 « Stockage/ » (1), « Web & API/ » (3). Il n'y a plus de lieu d'attente,
