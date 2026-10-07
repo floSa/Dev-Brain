@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[Serena]]", "[[DeepWiki-Open]]"]
+alternatives: ["[[Serena]]", "[[DeepWiki-Open]]", "[[Gitingest]]"]
 complements: []
 tags: [context-engineering, token-optimization, mcp]
 url_docs: https://repomix.com
@@ -53,8 +53,8 @@ Outil en ligne de commande qui lit un dépôt et l'écrit dans **un seul fichier
 
 - [[Serena]] — Serveur MCP (GPL-3.0-or-later, Python) qui donne à un agent de code des outils au niveau du symbole — chercher, renommer, remplacer le corps d'une fonction — appuyés par défaut sur des serveurs de langage, plus de 40 langages — mais l'agent et son modèle restent à fournir, et le renommage par serveur de langage ne vise que les symboles. — là où Repomix donne tout le dépôt d'un bloc, Serena laisse l'agent aller chercher le seul symbole utile.
 - [[DeepWiki-Open]] — Application web à héberger (MIT, Python et Next.js) qui génère un wiki interactif d'un dépôt GitHub, GitLab ou Bitbucket — structure du code, documentation, diagrammes, codemap — avec le modèle au choix (Google, OpenAI, OpenRouter, Azure, Bedrock, Ollama en local) — mais aucune release publiée, et le README renvoie vers une suite « 2.0 », Grok Wiki, qui est une autre application. — un wiki à lire par un humain, au lieu d'un fichier à donner à un modèle.
+- [[Gitingest]] — Outil en ligne de commande et bibliothèque Python (MIT) qui transforme un dépôt Git ou un dossier en un texte unique pour un modèle de langage, avec arborescence et compte de jetons, et un site (gitingest.com) où remplacer « hub » par « ingest » dans une URL GitHub — mais le site est un service tiers, et le tri des fichiers reste à régler par motifs. — là où Repomix compresse, filtre et sert de serveur MCP, Gitingest se lance par une URL et s'appelle depuis Python.
 - voisin : Context7 — serveur MCP sous licence MIT, mais son index de documentation de bibliothèques est un service hébergé fermé (Upstash), sans auto-hébergement ; sans page dans le brain (règle 15). Pour donner de la documentation à jour plutôt que le code du projet.
-- voisin : Gitingest — même idée pour l'écosystème Python (cité par le README de Repomix), non fiché.
 
 ## Ressources
 
