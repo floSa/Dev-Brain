@@ -369,4 +369,4 @@ floSa veut les annuaires et les standards **à part des outils**, jamais mêlés
 - [x] Lot 20 — outils autour de l'agent
 - [x] Lot 21 — documenter et dessiner l'architecture
 - [x] Lot 22 — suivi de projet auto-hébergé et mesure
-- [ ] Lot 23 — annuaires et standards, à part
+- [x] Lot 23 — annuaires et standards, à part
