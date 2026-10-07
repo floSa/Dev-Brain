@@ -402,5 +402,5 @@ Mets à jour les comparatifs existants de ces dossiers au lieu d'en créer : Dia
 - [x] Lot 21 — documenter et dessiner l'architecture
 - [x] Lot 22 — suivi de projet auto-hébergé et mesure
 - [x] Lot 23 — annuaires et standards, à part
-- [ ] Lot 24 — outils manquants
+- [x] Lot 24 — outils manquants
 - [ ] Lot 25 — notions voisines et pages fermées déjà au brain
