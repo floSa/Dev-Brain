@@ -366,7 +366,7 @@ floSa veut les annuaires et les standards **à part des outils**, jamais mêlés
 - [x] Lot 17 — gestion de projet : ouverture et méthodes
 - [ ] Lot 18 — BMAD en détail et spécification d'abord
 - [ ] Lot 19 — skills précis pour le cycle de vie
-- [ ] Lot 20 — outils autour de l'agent
+- [x] Lot 20 — outils autour de l'agent
 - [ ] Lot 21 — documenter et dessiner l'architecture
 - [ ] Lot 22 — suivi de projet auto-hébergé et mesure
 - [ ] Lot 23 — annuaires et standards, à part
