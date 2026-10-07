@@ -9,7 +9,7 @@ domaines: [ai-eng, mlops]
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[Commitizen]]", "[[git-cliff]]"]
+alternatives: ["[[Commitizen]]", "[[git-cliff]]", "[[python-semantic-release]]"]
 complements: []
 tags: [changelog, version-control]
 url_docs: https://github.com/googleapis/release-please
@@ -53,7 +53,7 @@ Outil de release, écrit en TypeScript et publié par Google (organisation `goog
 
 - [[Commitizen]] — Outil en ligne de commande Python (MIT) qui guide l'écriture de commits conventionnels, puis calcule la prochaine version SemVer et met à jour le changelog par `cz bump` — mais tout repose sur des messages de commit conformes, que seul le hook de validation impose. — une release lancée à la main, sans pull request, et sans dépendance à GitHub.
 - [[git-cliff]] — Outil en ligne de commande (Apache-2.0, Rust) qui génère un changelog depuis l'historique Git, par commits conventionnels ou analyseurs à expressions régulières, et calcule la prochaine version SemVer avec `--bump` — mais il produit le journal et le numéro, pas le tag : `--tag` ne le crée pas. — le journal seul, sur n'importe quelle forge.
-- voisin : python-semantic-release — version et changelog depuis les commits, côté Python, cité en texte simple, non fiché dans le brain.
+- [[python-semantic-release]] — Outil en ligne de commande Python (MIT) qui lit les commits d'un dépôt, calcule la prochaine version SemVer, met à jour les fichiers de version, génère le changelog, pose le tag et publie la release sur GitHub, GitLab, Gitea ou Bitbucket — mais l'envoi du paquet vers PyPI n'est pas son travail, la documentation le confie à une étape de la CI. — là où release-please passe par une pull request de release sur GitHub, python-semantic-release sort la release directement, sur plusieurs forges.
 
 ## Ressources
 
