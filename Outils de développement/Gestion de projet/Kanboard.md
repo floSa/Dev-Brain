@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: PHP
 scaling: single-node
-alternatives: ["[[Redmine]]"]
+alternatives: ["[[Redmine]]", "[[Vikunja]]", "[[Wekan]]"]
 complements: []
 tags: [issue-tracking, project-management, self-hosted]
 url_docs: https://docs.kanboard.org/
@@ -63,8 +63,10 @@ Le site le dit sans détour : l'interface est minimale et le nombre de fonctions
 ### Alternatives
 
 - [[Redmine]] — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés. — l'application complète, quand le tableau ne suffit plus.
+- [[Vikunja]] — Application web de gestion de tâches à héberger (AGPL-3.0 ou ultérieure, Go et Vue.js), livrée en un seul binaire ou conteneur : projets et sous-projets, tâches avec rappels et répétitions, partage entre utilisateurs, vues liste, Gantt, tableau et Kanban, API documentée — mais l'administration, le journal d'audit et le suivi du temps relèvent de la version payante Vikunja Pro. — là où Kanboard s'en tient au tableau, Vikunja offre aussi listes, Gantt et rappels dans une application de tâches.
+- [[Wekan]] — Application web de tableaux Kanban à héberger (MIT, JavaScript et Meteor), sur le modèle de Trello : couloirs, listes, cartes, vues tableau, calendrier et Gantt, modules Scrum et graphiques de flux, règles automatiques, imports depuis Trello, Jira, GitHub ou Kanboard, connexion LDAP, SAML ou OAuth2 — mais l'outil est large, sa cadence de versions est très rapide (six en cinq jours début octobre 2026), et le support officiel public se limite aux tickets GitHub. — un Kanban plus riche que Kanboard, avec couloirs, Scrum et graphiques de flux, mais plus lourd à tenir.
 - Jira (Atlassian, propriétaire) — la référence en entreprise pour les workflows et la traçabilité. Cité en texte simple, sans page : voir [[Backlog, Kanban, Scrum et Shape Up]].
-- Vikunja, Wekan, Huly, Leantime, Taiga, Focalboard — tâches et tableaux libres, sans fiche ici ; cités en texte simple (Focalboard : dernier push relevé en 2025-02).
+- Huly, Leantime, Taiga, Focalboard — tâches et tableaux libres, sans fiche ici ; cités en texte simple (Focalboard : dernier push relevé en 2025-02).
 
 ## Ressources
 
