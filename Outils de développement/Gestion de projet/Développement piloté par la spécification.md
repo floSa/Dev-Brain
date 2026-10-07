@@ -78,6 +78,7 @@ Kiro est cité pour mémoire : produit propriétaire, hors périmètre du brain.
 - [[Vibe coding contre ingénierie agentique]] — l'opposé : décrire un objectif et accepter ce qui sort.
 - [[Revue, tests et définition de terminé avec un agent]] — la vérification qui ferme la chaîne.
 - [[Cycle de vie d'un projet assisté par agent]] — où le SDD s'insère dans le projet entier.
+- [[Agent OS]], [[Backlog.md - l'outil]] — briques : les règles de code injectées à l'agent, et les tâches avec critères d'acceptation relues avant le code.
 - Alternative : **tests d'abord** (TDD). Le test est une spécification exécutable, donc impossible à laisser dériver ; il ne couvre pas l'intention ni l'architecture.
 
 ## Pour aller plus loin

@@ -95,6 +95,8 @@ Conclusion des auteurs : ne décrire que les exigences minimales (outillage spé
 - [[Prompt engineering]] — la formulation d'une consigne, qui s'applique ligne à ligne dans ces fichiers.
 - [[Développement piloté par la spécification]] — la spécification est un autre fichier lu par l'agent, mais propre à une fonctionnalité et non au dépôt.
 - [[Agents de code]] — le hub des outils qui lisent ces fichiers.
+- [[Agent OS]] — brique : des règles de code écrites une fois dans des fichiers, injectées dans le contexte de l'agent à chaque tâche.
+- [[Gitingest]] — brique : un dépôt en un seul texte pour un modèle, à côté de [[Repomix]].
 - Alternative : **ne rien écrire** et laisser le dépôt parler (README, scripts de test, configuration de lint). Défendable si le projet est bien outillé, et c'est ce que suggère l'étude pour les aperçus.
 
 ## Pour aller plus loin

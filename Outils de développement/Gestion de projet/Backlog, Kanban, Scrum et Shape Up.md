@@ -85,6 +85,8 @@ Jira (Atlassian, propriétaire) est la référence en entreprise. Il apporte des
 - [[Forgejo]] — forge libre dont le suivi de tickets peut tenir lieu de backlog partagé.
 - [[Forges & CI-CD]] — le hub des forges, où se trouve le suivi de tickets.
 - [[Obsidian]] — un backlog en Markdown se lit et se déplace bien dans un coffre de notes.
+- [[Backlog.md - l'outil]], [[Beads]] — briques : un backlog en fichiers Markdown dans le dépôt, et un graphe de tâches pour agents.
+- [[Vikunja]], [[Wekan]] — briques : des tableaux et listes de tâches à héberger, à comparer dans [[Comparatif - Suivi de projet auto-hébergé]].
 - Alternative : **ne rien suivre hors du dépôt**. Pour un travail de quelques jours, un fichier de tâches de l'agent suffit. Ça ne passe plus dès que plusieurs personnes ou un client entrent dans la boucle.
 
 ## Pour aller plus loin

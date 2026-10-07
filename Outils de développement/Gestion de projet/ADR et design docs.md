@@ -112,6 +112,7 @@ Chosen option: "PostgreSQL + pgvector", parce que l'exploitation existe déjà
 - [[Diátaxis et docs-as-code]] — un ADR relève de l'*explication* ; il vit dans le dépôt comme le reste de la documentation.
 - [[Context engineering]] — un journal de décisions est une source de contexte stable pour un agent.
 - [[Mermaid]] — pour intégrer un diagramme dans un ADR sans fichier image.
+- [[MADR - le modèle de fiche]] — brique : le gabarit MADR, avec sa licence et ses quatre variantes.
 - Outils (texte simple) : **adr-tools** (scripts shell, dépôt de Nat Pryce ; son dernier commit sur la branche principale date de mars 2020, donc peu entretenu même s'il n'est pas archivé) ; **log4brains** (Apache-2.0, génère un site statique de consultation ; dernière version 1.1.0 en décembre 2024, non archivé, 57 tickets ouverts). Un simple fichier et un `ls` suffisent souvent.
 - Alternative : le **wiki** ou la page de ticket — les raisons y sont dispersées et ne suivent pas la version du code.
 
