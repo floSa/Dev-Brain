@@ -19,7 +19,7 @@ tags: [experiment-tracking, model-registry]
 - [[Weights & Biases]] — les visualisations DL de référence, plus les **Sweeps** d'hyperparamètres intégrés au tracking et les Reports collaboratifs. SaaS propriétaire : données au cloud par défaut, mode *online* qui bloque si le réseau tombe, et facturation qui croît avec le volume loggé.
 - [[Comet]] — le seul à couvrir le tracking ML **et** l'observabilité LLM, via **Opik** (tracing et évaluation de RAG/agents), déployable en Docker/Kubernetes. Attention au périmètre : le cœur Comet est propriétaire, Opik seul est open-source.
 - [[TensorBoard]] — pas un tracker mais un **visualiseur** : le code écrit des *event files*, le serveur les lit — graphe du modèle, histogrammes de gradients, projecteur d'embeddings, profilage. Comparaison de runs limitée, aucune authentification, et les event files grossissent vite.
-- [[Neptune]] — le critère est de cycle de vie, pas de fonction : racheté par OpenAI en décembre 2025, **service hébergé arrêté le 5 mars 2026**. Plus de nouvel usage — export de données existantes seulement.
+- Neptune (service arrêté en mars 2026) — absent du tableau, qui ne liste plus que des briques à choisir : racheté par OpenAI en décembre 2025, **service hébergé arrêté le 5 mars 2026**, il n'a plus de page au brain.
 
 ## Voir aussi
 

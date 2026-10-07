@@ -29,7 +29,7 @@ tags: [experiment-tracking, model-registry, reproducibility, hyperparameter-tuni
 - Des dashboards riches, des sweeps intégrés, un usage R&D deep learning → [[Weights & Biases]], en SaaS.
 - Du tracking classique doublé d'observabilité LLM → [[Comet]] et son volet Opik.
 - Regarder des courbes d'entraînement en local, sans rien installer de plus → [[TensorBoard]], qui se branche aussi sur PyTorch.
-- [[Neptune]] n'est plus un choix pour du neuf : racheté par OpenAI, service hébergé arrêté en mars 2026. Cf. [[Comparatif - Suivi d'expériences ML]].
+- Neptune (service arrêté en mars 2026) n'est plus un choix : racheté par OpenAI, il n'a plus de page au brain. Cf. [[Comparatif - Suivi d'expériences ML]].
 
 <!-- AUTO:START -->
 ### Notions
