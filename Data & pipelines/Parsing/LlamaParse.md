@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Service de parsing de documents de **LlamaCloud** (LlamaIndex). Il extrait les PDF complexes —
+Service cloud de LlamaIndex (LlamaCloud) qui convertit des documents en Markdown, payant en crédits avec un palier gratuit mensuel ; les documents quittent le réseau. Service de parsing de documents de **LlamaCloud** (LlamaIndex). Il extrait les PDF complexes —
 tableaux imbriqués, multi-colonnes, schémas, documents scannés — vers du **Markdown propre**,
 prêt à chunker pour le RAG. La v2 expose des **tiers** — Fast, Cost-Effective, Agentic,
 Agentic Plus — qui échelonnent le compromis coût/qualité, l'extraction agentique s'appuyant

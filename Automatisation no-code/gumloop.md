@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Automatisation no-code où l'IA n'est pas un nœud parmi d'autres : sur un **canvas
+Service cloud d'automatisation no-code pilotée par l'IA, payant au crédit, sans version à héberger. Automatisation no-code où l'IA n'est pas un nœud parmi d'autres : sur un **canvas
 drag-and-drop**, **chaque nœud peut porter de la logique IA** — analyser un texte, décider,
 transformer — sans qu'on câble un seul appel LLM. La cible affichée est la construction
 d'agents métier par des employés non développeurs : onboarding, rapprochement de factures, tri

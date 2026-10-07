@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-La référence historique de l'iPaaS no-code : on connecte plus de **8 000 applications** par des
+Service cloud d'automatisation no-code, payant au volume de tâches après un plan gratuit de 100 tâches par mois, sans version à héberger. La référence historique de l'iPaaS no-code : on connecte plus de **8 000 applications** par des
 « **Zaps** » — un déclencheur, puis une ou plusieurs actions. C'est le plus large catalogue
 d'intégrations du marché, et le plus immédiat à prendre en main pour un profil métier : rien à
 opérer, rien à installer, un compte suffit. L'offre a débordé du seul iPaaS avec **Tables**
