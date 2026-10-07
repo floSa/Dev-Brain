@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Application de bureau qui rend l'exécution locale de LLM entièrement cliquable : recherche et
+Application de bureau fermée mais gratuite, en usage personnel comme commercial, qui exécute des modèles de langage en local. Application de bureau qui rend l'exécution locale de LLM entièrement cliquable : recherche et
 téléchargement de modèles depuis Hugging Face, chat intégré, réglage des paramètres, et un
 **serveur local à API OpenAI-compatible** pour y brancher ses applications. Sous le capot, deux
 moteurs open-source — llama.cpp pour le GGUF partout, et **Apple MLX** sur Apple Silicon, que

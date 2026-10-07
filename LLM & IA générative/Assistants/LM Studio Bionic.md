@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Agent de bureau publié le **16 juillet 2026**, présenté comme « l'agent IA fait pour les
+Application de bureau fermée mais gratuite pour tout l'usage local, publiée par l'éditeur de LM Studio ; le cloud, optionnel, se paie au token. Agent de bureau publié le **16 juillet 2026**, présenté comme « l'agent IA fait pour les
 modèles ouverts ». C'est une **application distincte** de LM Studio, et non un mode de
 celle-ci : LM Studio reste l'outil de configuration fine du runtime, Bionic est la couche
 agentique posée dessus. Le travail s'y organise en **projets** de deux types — *Work*
