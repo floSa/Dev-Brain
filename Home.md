@@ -15,7 +15,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 85 briques, 10 sous-domaines
 - [[Mathématiques]] — 8 briques, 5 sous-domaines
-- [[Outils de développement]] — 44 briques, 4 sous-domaines
+- [[Outils de développement]] — 47 briques, 4 sous-domaines
 - [[Signal & audio]] — 3 briques, 1 sous-domaine
 - [[Design & diagrammes]] — 9 briques, 1 sous-domaine
 - [[Calcul distribué]] — 7 briques
