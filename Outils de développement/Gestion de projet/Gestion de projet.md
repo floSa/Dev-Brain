@@ -48,4 +48,14 @@ tags: [project-management, spec-driven, adr, skills]
 - [[PRD et user stories]] — domaines : ai-eng, data-eng
 - [[Revue, tests et définition de terminé avec un agent]] — domaines : ai-eng, ml-eng, mlops
 - [[Vibe coding contre ingénierie agentique]] — domaines : ai-eng, ml-eng
+
+### Briques
+- [[ActivityWatch]] — Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où passe le temps ; les données restent sur la machine.
+- [[ccusage]] — Outil en ligne de commande (MIT) qui lit les journaux locaux de 18 agents de code (Claude Code, Codex, OpenCode, Goose…) et en tire jetons et coût estimé par jour, semaine, mois ou session.
+- [[Kanboard]] — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture.
+- [[Kimai]] — Application web de suivi du temps à héberger (AGPL-3.0, PHP, Symfony) : feuilles de temps, clients et projets, tarifs, budgets, factures et API JSON, multi-utilisateur avec LDAP ou SAML.
+- [[Redmine]] — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés.
+
+### Comparatifs
+- [[Comparatif - Suivi de projet auto-hébergé]]
 <!-- AUTO:END -->

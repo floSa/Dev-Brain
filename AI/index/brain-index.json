@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1114,
+  "count": 1120,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -149,6 +149,7 @@
       "Zoo Code",
       "a2a-protocol",
       "agent-loops",
+      "ccusage",
       "fastmcp",
       "freebuff",
       "gumloop",
@@ -1904,6 +1905,11 @@
       "Diagrammes",
       "FossFLOW"
     ],
+    "issue-tracking": [
+      "Comparatif - Suivi de projet auto-hébergé",
+      "Kanboard",
+      "Redmine"
+    ],
     "jailbreak": [
       "Jailbreaking and defenses",
       "Systèmes IA",
@@ -2471,7 +2477,8 @@
       "Prometheus",
       "Telegraf",
       "VictoriaMetrics",
-      "Zabbix"
+      "Zabbix",
+      "ccusage"
     ],
     "migration": [
       "Alembic",
@@ -3129,6 +3136,7 @@
       "PyMC"
     ],
     "privacy": [
+      "ActivityWatch",
       "Apprentissage fédéré",
       "Confidentialité différentielle",
       "Données personnelles et anonymisation pour LLM",
@@ -3163,16 +3171,21 @@
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
       "Commits conventionnels, versions et changelog",
+      "Comparatif - Suivi de projet auto-hébergé",
       "Cycle de vie d'un projet assisté par agent",
       "Diátaxis et docs-as-code",
       "Développement piloté par la spécification",
       "Fichiers de contexte pour agents",
       "Gestion de projet",
+      "Kanboard",
+      "Kimai",
       "Mesurer un projet - DORA, coût des agents et temps passé",
       "Modèle C4",
       "PRD et user stories",
+      "Redmine",
       "Revue, tests et définition de terminé avec un agent",
-      "Vibe coding contre ingénierie agentique"
+      "Vibe coding contre ingénierie agentique",
+      "ccusage"
     ],
     "projection": [
       "Algèbre linéaire",
@@ -3693,6 +3706,7 @@
       "segment-anything"
     ],
     "self-hosted": [
+      "ActivityWatch",
       "Airbyte",
       "Alertmanager",
       "Annotation de données",
@@ -3725,7 +3739,9 @@
       "Infinity",
       "Jenkins",
       "Kafka",
+      "Kanboard",
       "Keycloak",
+      "Kimai",
       "Kubeflow",
       "Kubernetes",
       "Label Studio",
@@ -3749,6 +3765,7 @@
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAGFlow",
       "RabbitMQ",
+      "Redmine",
       "Redpanda",
       "Reverse proxy et TLS",
       "Stirling PDF",
@@ -4124,6 +4141,10 @@
       "Rule - Évaluer une anomalie par événement, pas par point",
       "Score et seuil d'alerte",
       "time-series-anomaly-detector"
+    ],
+    "time-tracking": [
+      "ActivityWatch",
+      "Kimai"
     ],
     "timeseries": [
       "ARIMA SARIMA",
@@ -30438,6 +30459,32 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/ActivityWatch.md",
+      "nom": "ActivityWatch",
+      "alias": [
+        "activitywatch",
+        "aw-qt",
+        "suivi du temps automatique"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où passe le temps ; les données restent sur la machine.",
+      "tags": [
+        "time-tracking",
+        "privacy",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[ccusage]]",
+        "[[Kimai]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Backlog, Kanban, Scrum et Shape Up.md",
       "nom": "Backlog, Kanban, Scrum et Shape Up",
       "alias": [
@@ -30557,6 +30604,24 @@
         "project-management",
         "git-hooks",
         "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Comparatif - Suivi de projet auto-hébergé.md",
+      "nom": "Comparatif - Suivi de projet auto-hébergé",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "issue-tracking",
+        "project-management"
       ],
       "alternatives": null,
       "complements": null,
@@ -30685,6 +30750,54 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Kanboard.md",
+      "nom": "Kanboard",
+      "alias": [
+        "kanboard"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "PHP",
+      "domaines": null,
+      "pitch": "Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture.",
+      "tags": [
+        "issue-tracking",
+        "project-management",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Redmine]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Kimai.md",
+      "nom": "Kimai",
+      "alias": [
+        "kimai",
+        "Kimai 2",
+        "kimai2"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "PHP",
+      "domaines": null,
+      "pitch": "Application web de suivi du temps à héberger (AGPL-3.0, PHP, Symfony) : feuilles de temps, clients et projets, tarifs, budgets, factures et API JSON, multi-utilisateur avec LDAP ou SAML.",
+      "tags": [
+        "time-tracking",
+        "project-management",
+        "self-hosted"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[ActivityWatch]]"
+      ],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Mesurer un projet - DORA, coût des agents et temps passé.md",
       "nom": "Mesurer un projet - DORA, coût des agents et temps passé",
       "alias": [
@@ -30780,6 +30893,30 @@
       "maturite": null
     },
     {
+      "path": "Outils de développement/Gestion de projet/Redmine.md",
+      "nom": "Redmine",
+      "alias": [
+        "redmine",
+        "Redmine PM"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "application",
+      "langage": "Ruby",
+      "domaines": null,
+      "pitch": "Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés.",
+      "tags": [
+        "issue-tracking",
+        "project-management",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Kanboard]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md",
       "nom": "Revue, tests et définition de terminé avec un agent",
       "alias": [
@@ -30839,6 +30976,31 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/ccusage.md",
+      "nom": "ccusage",
+      "alias": [
+        "ccusage-cli",
+        "coût des agents de code",
+        "usage des jetons"
+      ],
+      "role": "brique",
+      "categorie": "devtools/projet",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (MIT) qui lit les journaux locaux de 18 agents de code (Claude Code, Codex, OpenCode, Goose…) et en tire jetons et coût estimé par jour, semaine, mois ou session.",
+      "tags": [
+        "project-management",
+        "metrics",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[ActivityWatch]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Hypothesis.md",
