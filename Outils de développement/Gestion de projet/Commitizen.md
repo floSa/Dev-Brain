@@ -9,7 +9,7 @@ domaines: [ai-eng, mlops]
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[git-cliff]]", "[[release-please]]"]
+alternatives: ["[[git-cliff]]", "[[release-please]]", "[[python-semantic-release]]"]
 complements: []
 tags: [changelog, version-control, git-hooks]
 url_docs: https://commitizen-tools.github.io/commitizen/
@@ -53,7 +53,7 @@ Outil en ligne de commande, écrit en Python, qui fait tenir ensemble trois gest
 
 - [[git-cliff]] — Outil en ligne de commande (Apache-2.0, Rust) qui génère un changelog depuis l'historique Git, par commits conventionnels ou analyseurs à expressions régulières, et calcule la prochaine version SemVer avec `--bump` — mais il produit le journal et le numéro, pas le tag : `--tag` ne le crée pas. — Commitizen fait en plus le commit guidé, le tag et la mise à jour des fichiers de version.
 - [[release-please]] — Outil Node.js (Apache-2.0, Google) qui tient à jour une pull request de release depuis les commits conventionnels : à sa fusion, il met à jour le changelog et les fichiers de version, pose le tag et crée la release GitHub — mais il vise l'API GitHub (jeton GitHub exigé) et ne publie pas les paquets. — Commitizen release à la demande, depuis le poste ; release-please passe par une pull request.
-- voisin : python-semantic-release — même rôle en Python (version et changelog depuis les commits), cité en texte simple, non fiché dans le brain.
+- [[python-semantic-release]] — Outil en ligne de commande Python (MIT) qui lit les commits d'un dépôt, calcule la prochaine version SemVer, met à jour les fichiers de version, génère le changelog, pose le tag et publie la release sur GitHub, GitLab, Gitea ou Bitbucket — mais l'envoi du paquet vers PyPI n'est pas son travail, la documentation le confie à une étape de la CI. — là où Commitizen guide le commit sur le poste, python-semantic-release automatise la release en CI.
 
 ## Ressources
 
