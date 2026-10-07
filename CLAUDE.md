@@ -87,6 +87,17 @@ wiki", il annonce simplement qu'il vient travailler ses notions : applique la fr
 - Suggérer des fiches manquantes
 - Auditer la cohérence (frontmatter, taxonomie — cf. `Documentation/general/taxonomie.md`)
 
+## Quelles solutions entrent au brain
+
+Règle de floSa, corrigée le 2026-10-07. On cherche des solutions **non payantes** et
+**déployables sur site** (on-prem). On privilégie le libre et commercialisable. FloSa n'a pas
+d'usage commercial : une licence qui limite l'usage commercial (`source-available`,
+`open-core`, « non commercial ») reste acceptée si l'outil est gratuit pour lui. Un outil
+fermé mais gratuit en local est accepté, la première phrase de la fiche le dit. **Pas de page**
+pour un service payant, un service cloud seulement, un logiciel fermé et payant, ni pour une
+licence non vérifiée à la source (pas de fichier LICENSE). Ces cas se citent en texte simple.
+Ni Claude Code, ni Codex, ni Gemini CLI. Au moindre doute, demande.
+
 ## Ce que tu NE fais PAS sans confirmation explicite
 
 - Modifier une page `role: brique` existante (y compris sa section `## Retours`) — en mode projet, **aucune écriture dans l'arbre des domaines**
