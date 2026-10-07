@@ -31,6 +31,16 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 - Rendre une installation reproductible, y compris sans accès à PyPI (verrou, miroir interne, image Docker) → [[Packaging Python et environnements reproductibles]].
 - Installer les bonnes versions de Node.js, de Python ou de Go pour chaque projet, avec ses variables et ses tâches dans un seul `mise.toml` → [[mise]] ; pour un projet purement Python, [[uv]] suffit. Une liste de commandes sans gestion de versions → [[just]], rangé dans [[Gestion de projet]].
 
+## Annuaires et standards
+
+Trois pages de ce dossier ne sont pas des outils : ce sont des **standards** et un **annuaire** de l'écosystème des agents de code, rangés à part par la règle D-R14 de la taxonomie (valeur `devtools/annuaire-standard`). Elles se lisent comme des références, rien ne s'y installe. Le dossier « Annuaires et standards » n'apparaîtra qu'à cinq pages ; d'ici là elles figurent parmi les briques ci-dessous.
+
+- [[AGENTS.md - le format]] — le fichier de contexte permanent d'un dépôt, lu par de nombreux agents.
+- [[Agent Skills - la spécification]] — le format SKILL.md des procédures chargées à la demande.
+- [[Skills d'Anthropic]] — le dépôt officiel de skills d'exemple : licence variable d'un skill à l'autre, seuls ceux sous Apache-2.0 se reprennent.
+
+Deux autres annuaires circulent et n'ont pas de page, faute de licence libre confirmée (règle 15 du chantier) : **awesome-claude-code**, liste de ressources pour Claude Code, publiée sous CC BY-NC-ND 4.0 (usage non commercial, sans dérivés) ; **awesome-claude-skills**, liste de skills et de plugins, dont le dépôt n'a pas de fichier de licence (le README annonce Apache-2.0, sans fichier à l'appui, et précise que chaque skill peut avoir la sienne). Les lire reste possible ; en reprendre le contenu demande de vérifier la licence de chaque entrée.
+
 <!-- AUTO:START -->
 ### Sous-domaines
 - [[Documentation technique]] · [[Gestion de projet]] · [[Notebooks]] · [[Qualité du code]]
