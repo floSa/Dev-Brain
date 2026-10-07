@@ -7,7 +7,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 
 # Comparatif - Diagrammes
 
-> On tranche sur : ce que le diagramme est — du texte versionné, un fichier posé à la main, un artefact produit par un agent, ou une lecture de dépôt par un modèle — et donc qui en garde la maîtrise de la mise en page.
+> On tranche sur : ce que le diagramme est — du texte versionné (langage court et rendu natif, catalogue large, ou rendu soigné), un fichier posé à la main, un artefact produit par un agent, ou une lecture de dépôt par un modèle — et donc qui en garde la maîtrise de la mise en page.
 
 ![[Comparatif - Diagrammes.base]]
 
@@ -20,6 +20,9 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[Archify]] — le seul qui ne s'utilise pas à la main : c'est un **skill pour agent de code**, où l'agent remplit une **IR JSON typée** que la chaîne compile de façon **déterministe** en HTML autonome validé — même IR, même rendu. Quatre absences documentées par le projet lui-même : pas de parsing Mermaid, pas d'auto-layout généraliste, pas de partage hébergé, pas d'édition WYSIWYG.
 
 - [[GitDiagram]] — le seul qui part d'une **URL de dépôt** : rien à dessiner ni à installer, un LLM lit le dépôt et rend un diagramme interactif dont chaque composant renvoie à son fichier sur GitHub, avec la source Mermaid et un serveur MCP en sortie. Ce que [[Archify]] fait avec un agent et une IR reproductible, il le fait sans agent, mais le schéma est **régénéré par un modèle** : le banc d'essai du projet mesure encore 17 % de flèches pleines non étayées par le code, donc à relire avant de le publier. À écarter dès que le code ne doit pas partir chez un fournisseur LLM.
+- [[D2]] — le **diagram-as-code au rendu soigné** : un langage court (`x -> y`), des thèmes, un mode croquis, trois moteurs de placement au choix (Dagro, ELK, et TALA, le moteur propre à D2, à licence non relevée) et des sorties SVG, PNG, PDF, GIF ou PPTX, depuis un seul binaire Go. Le prix : aucune forge ne le rend nativement, il faut une étape de rendu, et le langage lui est propre. MPL-2.0 ; v0.9.0.
+- [[PlantUML]] — **le plus large catalogue de types, UML en tête** : séquence, classes, activité, états, mais aussi Gantt, cartes mentales, JSON, YAML, ArchiMate et maquettes d'interface. Java, avec des licences au choix (GPL, LGPL, Apache, EPL, MIT) ; une extension de navigateur officielle le dessine dans GitHub, qui ne le rend pas nativement. Le prix : un runtime Java, sauf rendu par l'extension ou par Kroki.
+- [[Kroki]] — le seul qui n'est **pas un langage mais un serveur de rendu** : une API unique qui fait rendre par des conteneurs PlantUML, Mermaid, D2, GraphViz, BPMN, Excalidraw, DBML et d'autres langages (une vingtaine au total). À héberger soi-même pour que les sources de diagrammes ne partent pas chez un tiers ; c'est un complément des outils précédents, pas un concurrent.
 - [[LikeC4]] — le seul qui tient un **modèle** d'architecture : les éléments et leurs relations se décrivent une fois en texte (inspiré du modèle C4 et du DSL de Structurizr), et les vues — contexte, conteneurs, composants — en sont **calculées**, donc cohérentes entre elles. Prévisualisation locale, site statique, exports PNG, Mermaid, D2 et draw.io, et serveur MCP pour les agents. Contrepartie : il exige Node (le champ `engines` de la dernière version demande 22.22.3 ou plus) et un investissement de départ qu'un schéma unique ne justifie pas.
 
 ## Voir aussi
