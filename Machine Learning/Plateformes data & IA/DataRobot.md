@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-Plateforme dont le cœur est l'**automatisation de la modélisation** : on lui donne un jeu de
+Plateforme d'AutoML et de MLOps propriétaire, payante sous licence commerciale, proposée en service managé ou à installer sur site. Plateforme dont le cœur est l'**automatisation de la modélisation** : on lui donne un jeu de
 données et une cible, elle construit et entraîne un grand nombre de modèles candidats, les
 classe sur une métrique, et présente le meilleur avec ses explications. La seconde moitié du
 produit est le MLOps : registre, déploiement en endpoint, surveillance de la dérive et de la

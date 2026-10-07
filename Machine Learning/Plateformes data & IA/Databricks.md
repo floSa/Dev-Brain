@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-Plateforme d'analytique et d'IA bâtie autour de l'architecture **lakehouse** : les données
+Plateforme d'analytique et d'IA managée, payante à l'usage et déployée dans un compte cloud AWS, Azure ou GCP ; aucune version à installer sur ses propres serveurs. Plateforme d'analytique et d'IA bâtie autour de l'architecture **lakehouse** : les données
 restent sur du stockage objet, dans un format de table transactionnel — Delta Lake — et le
 même jeu sert au SQL analytique, aux pipelines et à l'entraînement, sans copie vers un
 entrepôt séparé. Le moteur est [[Spark]], dont les créateurs de Databricks sont aussi les
@@ -66,6 +66,7 @@ aucune installation sur des serveurs qu'on possède.
 - [[AWS SageMaker]] — Écosystème ML natif d'AWS : notebooks, entraînement distribué, réglage, registre et endpoints d'inférence managés, réunis avec les services data d'AWS sous SageMaker Unified Studio ; descend sur site par Outposts. — l'option native quand on ne veut pas de couche par-dessus le cloud.
 - [[Google Cloud Vertex AI]] — Écosystème ML natif de Google Cloud : entraînement, registre, pipelines et endpoints managés, plus l'accès aux modèles Gemini ; une partie seulement descend sur site, sur l'appliance air-gapped de Google Distributed Cloud. — idem chez Google.
 - [[Microsoft Azure Machine Learning]] — Écosystème ML natif d'Azure : espaces de travail, entraînement, registre et endpoints managés, pilotables en SDK Python ou en YAML ; seul des trois clouds à faire tourner entraînement et inférence sur un Kubernetes déjà en place, par Azure Arc. — idem chez Microsoft.
+- voisin : [[Spark]] — le moteur de calcul open source sur lequel Databricks est bâti, utilisable seul sur son propre cluster : SQL, DataFrames, streaming et MLlib.
 
 ### Compléments
 

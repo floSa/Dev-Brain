@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-Plateforme collaborative qui réunit sur un même projet la préparation des données, la
+Plateforme data et IA propriétaire, payante par utilisateur et par nœud, à installer sur site ou en service managé, avec une édition gratuite limitée pour la découverte. Plateforme collaborative qui réunit sur un même projet la préparation des données, la
 modélisation, le déploiement et la gouvernance. Sa particularité est de servir **deux publics
 sur les mêmes objets** : un analyste enchaîne des recettes visuelles, un data scientist ouvre
 un notebook Python, R ou SQL au milieu du même flux, et les deux voient le même graphe de
