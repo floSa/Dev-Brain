@@ -1,7 +1,7 @@
 # Outils de développement — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 52 pages, chacune avec son chemin et une ligne.
+> 58 pages, chacune avec son chemin et une ligne.
 > Couvre : Documentation technique, Gestion de projet, Notebooks, Qualité du code.
 
 ## Au niveau du dossier
@@ -35,6 +35,11 @@
 - [[Comparatif - Générateurs de documentation]] · comparatif · `Outils de développement/Documentation technique/Comparatif - Générateurs de documentation.md` — le langage d'écriture (Markdown, reStructuredText ou MDX), la chaîne technique exigée (Python, ou Node et React), la référence d'API générée depuis le code, et…
 
 ## Gestion de projet
+- [[ActivityWatch]] · brique · `Outils de développement/Gestion de projet/ActivityWatch.md` — Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où…
+- [[ccusage]] · brique · `Outils de développement/Gestion de projet/ccusage.md` — Outil en ligne de commande (MIT) qui lit les journaux locaux de 18 agents de code (Claude Code, Codex, OpenCode, Goose…) et en tire jetons et coût estimé par…
+- [[Kanboard]] · brique · `Outils de développement/Gestion de projet/Kanboard.md` — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions…
+- [[Kimai]] · brique · `Outils de développement/Gestion de projet/Kimai.md` — Application web de suivi du temps à héberger (AGPL-3.0, PHP, Symfony) : feuilles de temps, clients et projets, tarifs, budgets, factures et API JSON…
+- [[Redmine]] · brique · `Outils de développement/Gestion de projet/Redmine.md` — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de…
 - [[ADR et design docs]] · notion · `Outils de développement/Gestion de projet/ADR et design docs.md` — Un ADR (Architecture Decision Record) est un court fichier qui consigne une décision d'architecture : le contexte, ce qui a été décidé, les conséquences.
 - [[Backlog, Kanban, Scrum et Shape Up]] · notion · `Outils de développement/Gestion de projet/Backlog, Kanban, Scrum et Shape Up.md` — Quatre manières d'organiser le travail : un backlog (liste ordonnée de ce qui reste à faire), Kanban (limiter le travail en cours), Scrum (itérations fixes et…
 - [[Boucle de Ralph]] · notion · `Outils de développement/Gestion de projet/Boucle de Ralph.md` — Technique de Geoffrey Huntley (billet du 14 juillet 2025) : relancer le même prompt dans une boucle shell, while :; do cat PROMPT.md | agent ; done, jusqu'à ce…
@@ -49,6 +54,7 @@
 - [[Quel skill pour quelle étape]] · notion · `Outils de développement/Gestion de projet/Quel skill pour quelle étape.md` — Un skill précis fait une chose à une étape donnée du cycle de vie.
 - [[Revue, tests et définition de terminé avec un agent]] · notion · `Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md` — Un agent s'arrête quand le travail « a l'air terminé ».
 - [[Vibe coding contre ingénierie agentique]] · notion · `Outils de développement/Gestion de projet/Vibe coding contre ingénierie agentique.md` — Vibe coding : produire du logiciel par prompts en acceptant le code sans le lire.
+- [[Comparatif - Suivi de projet auto-hébergé]] · comparatif · `Outils de développement/Gestion de projet/Comparatif - Suivi de projet auto-hébergé.md` — le modèle (un tableau ou une application à plusieurs projets), puis le poids à héberger, puis l'état d'entretien.
 
 ## Notebooks
 - [[jupysql]] · brique · `Outils de développement/Notebooks/jupysql.md` — SQL natif dans Jupyter via les magics %sql / %%sql — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.

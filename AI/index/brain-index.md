@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1131 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1137 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -290,6 +290,13 @@
 ### devtools/paquet
 - **pip** — Installeur de paquets historique de Python, recommandé par la PyPA : simple, universel, présent partout.
 - **uv** — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.
+
+### devtools/projet
+- **ActivityWatch** — Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où passe le temps ; les données restent sur la machine.
+- **ccusage** — Outil en ligne de commande (MIT) qui lit les journaux locaux de 18 agents de code (Claude Code, Codex, OpenCode, Goose…) et en tire jetons et coût estimé par jour, semaine, mois ou session.
+- **Kanboard** — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture.
+- **Kimai** — Application web de suivi du temps à héberger (AGPL-3.0, PHP, Symfony) : feuilles de temps, clients et projets, tarifs, budgets, factures et API JSON, multi-utilisateur avec LDAP ou SAML.
+- **Redmine** — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés.
 
 ### devtools/qualite
 - **mypy** — Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour.
@@ -1436,6 +1443,9 @@
 
 ### devtools/paquet
 - **Comparatif - Gestionnaires de paquets Python** — —
+
+### devtools/projet
+- **Comparatif - Suivi de projet auto-hébergé** — —
 
 ### devtools/qualite
 - **Comparatif - Vérificateurs de types Python** — —
