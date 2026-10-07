@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1099,
+  "count": 1114,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -35,6 +35,10 @@
     ],
     "accessibility": [
       "OpenDataLoader PDF"
+    ],
+    "adr": [
+      "ADR et design docs",
+      "Gestion de projet"
     ],
     "agent-memory": [
       "Agents",
@@ -52,9 +56,11 @@
       "Archify",
       "Assistants",
       "BMAD",
+      "Fichiers de contexte pour agents",
       "i-have-adhd"
     ],
     "agents": [
+      "ADR et design docs",
       "Activepieces",
       "Agent evaluation",
       "Agent memory",
@@ -69,6 +75,9 @@
       "Assistants",
       "AutoGen",
       "BMAD",
+      "Backlog, Kanban, Scrum et Shape Up",
+      "Boucle de Ralph",
+      "Branches courtes et worktrees pour agents",
       "Claude Agent SDK",
       "Cline",
       "Cognee",
@@ -81,11 +90,14 @@
       "Context engineering",
       "Continue",
       "CrewAI",
+      "Cycle de vie d'un projet assisté par agent",
       "Daytona",
       "Deep Agents",
       "Deep research",
       "Dify",
+      "Développement piloté par la spécification",
       "E2B",
+      "Fichiers de contexte pour agents",
       "Flowise",
       "Goose",
       "Graphiti",
@@ -115,6 +127,7 @@
       "OpenHands",
       "OpenMAIC",
       "OpenViking",
+      "PRD et user stories",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "PraisonAI",
@@ -122,6 +135,7 @@
       "Qwen Code",
       "RAG agentique",
       "Reliability patterns",
+      "Revue, tests et définition de terminé avec un agent",
       "Sandboxing de code généré",
       "Semantic Kernel",
       "Sous-agents et isolation du contexte",
@@ -129,6 +143,7 @@
       "Text-to-SQL",
       "Tool use patterns",
       "Vanna",
+      "Vibe coding contre ingénierie agentique",
       "WrenAI",
       "Zapier",
       "Zoo Code",
@@ -410,9 +425,12 @@
     ],
     "ci-cd": [
       "Argo CD",
+      "Branches courtes et worktrees pour agents",
       "CI-CD pour le ML",
+      "Commits conventionnels, versions et changelog",
       "Comparatif - CI-CD auto-hébergé",
       "DevOps",
+      "Diátaxis et docs-as-code",
       "Du Compose à Kubernetes — quand changer d'échelle",
       "Forgejo",
       "Forges & CI-CD",
@@ -421,6 +439,7 @@
       "Gitleaks",
       "Grype",
       "Jenkins",
+      "Mesurer un projet - DORA, coût des agents et temps passé",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Rule - Packaging démo",
       "Rule - Qualité stricte",
@@ -507,16 +526,21 @@
       "Aider",
       "Archify",
       "BMAD",
+      "Branches courtes et worktrees pour agents",
       "Cline",
       "Comparatif - Assistants de code IA",
       "Continue",
+      "Cycle de vie d'un projet assisté par agent",
+      "Fichiers de contexte pour agents",
       "Goose",
       "Graphify",
       "Kilo Code",
       "Maka",
       "OpenCode",
       "Qwen Code",
+      "Revue, tests et définition de terminé avec un agent",
       "Spec Kit",
+      "Vibe coding contre ingénierie agentique",
       "Zoo Code",
       "ai-memory",
       "freebuff",
@@ -529,16 +553,19 @@
       "Agents de code",
       "Aider",
       "BMAD",
+      "Boucle de Ralph",
       "Cline",
       "Code and math benchmarks",
       "Comparatif - Assistants de code IA",
       "Continue",
+      "Développement piloté par la spécification",
       "Kilo Code",
       "LM Studio Bionic",
       "OpenCode",
       "OpenHands",
       "Qwen Code",
       "Spec Kit",
+      "Vibe coding contre ingénierie agentique",
       "Zoo Code",
       "freebuff",
       "t3code"
@@ -700,13 +727,17 @@
       "Zot"
     ],
     "context-engineering": [
+      "ADR et design docs",
       "Agent skills",
       "Architecture deep agent",
+      "Boucle de Ralph",
       "Claude Video",
       "Context engineering",
       "Contexte long",
       "Deep Agents",
       "Deep research",
+      "Développement piloté par la spécification",
+      "Fichiers de contexte pour agents",
       "Graphify",
       "Harnais d'agent",
       "Headroom",
@@ -1095,13 +1126,16 @@
       "FossFLOW",
       "GitDiagram",
       "Mermaid",
+      "Modèle C4",
       "draw.io"
     ],
     "diagram-as-code": [
       "Archify",
       "Comparatif - Diagrammes",
       "Diagrammes",
-      "Mermaid"
+      "Diátaxis et docs-as-code",
+      "Mermaid",
+      "Modèle C4"
     ],
     "diffusion": [
       "Diffusion models",
@@ -1228,6 +1262,11 @@
       "pypdf",
       "pypdfium2",
       "selectolax"
+    ],
+    "documentation": [
+      "ADR et design docs",
+      "Diátaxis et docs-as-code",
+      "Modèle C4"
     ],
     "domain-adaptation": [
       "Adaptation de domaine"
@@ -1535,7 +1574,9 @@
       "Video generation"
     ],
     "git-hooks": [
+      "Commits conventionnels, versions et changelog",
       "Qualité du code",
+      "Revue, tests et définition de terminé avec un agent",
       "pre-commit"
     ],
     "gitops": [
@@ -2422,6 +2463,7 @@
     "metrics": [
       "Beszel",
       "Grafana",
+      "Mesurer un projet - DORA, coût des agents et temps passé",
       "Métriques, logs et traces",
       "Netdata",
       "Observabilité",
@@ -3115,6 +3157,23 @@
       "Théorie des valeurs extrêmes",
       "Théorème central limite"
     ],
+    "project-management": [
+      "ADR et design docs",
+      "Backlog, Kanban, Scrum et Shape Up",
+      "Boucle de Ralph",
+      "Branches courtes et worktrees pour agents",
+      "Commits conventionnels, versions et changelog",
+      "Cycle de vie d'un projet assisté par agent",
+      "Diátaxis et docs-as-code",
+      "Développement piloté par la spécification",
+      "Fichiers de contexte pour agents",
+      "Gestion de projet",
+      "Mesurer un projet - DORA, coût des agents et temps passé",
+      "Modèle C4",
+      "PRD et user stories",
+      "Revue, tests et définition de terminé avec un agent",
+      "Vibe coding contre ingénierie agentique"
+    ],
     "projection": [
       "Algèbre linéaire",
       "Analyse factorielle",
@@ -3785,6 +3844,9 @@
       "Pattern - Prévoir puis optimiser",
       "SimPy"
     ],
+    "skills": [
+      "Gestion de projet"
+    ],
     "slo": [
       "SLO et alerting"
     ],
@@ -3793,6 +3855,12 @@
       "Modèles de langage",
       "Small Language Models",
       "needle"
+    ],
+    "spec-driven": [
+      "Cycle de vie d'un projet assisté par agent",
+      "Développement piloté par la spécification",
+      "Gestion de projet",
+      "PRD et user stories"
     ],
     "spectrogram": [
       "Anomalie acoustique",
@@ -4019,11 +4087,13 @@
       "pi"
     ],
     "testing": [
+      "Boucle de Ralph",
       "DeepEval",
       "Faker",
       "Hypothesis",
       "Mimesis",
       "Outils de développement",
+      "Revue, tests et définition de terminé avec un agent",
       "Rule - Qualité stricte",
       "mcpjam",
       "promptfoo",
@@ -4356,6 +4426,7 @@
     ],
     "version-control": [
       "Aider",
+      "Branches courtes et worktrees pour agents",
       "Bruno",
       "Comparatif - Clients d'API",
       "Forgejo",
@@ -30295,6 +30366,475 @@
       "tags": [
         "package-manager",
         "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Diátaxis et docs-as-code.md",
+      "nom": "Diátaxis et docs-as-code",
+      "alias": [
+        "Diátaxis",
+        "Diataxis",
+        "docs as code",
+        "documentation as code",
+        "docs-as-code",
+        "documentation dans le dépôt",
+        "quatre types de documentation"
+      ],
+      "role": "notion",
+      "categorie": "devtools/documentation",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "documentation",
+        "project-management",
+        "ci-cd",
+        "diagram-as-code"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/ADR et design docs.md",
+      "nom": "ADR et design docs",
+      "alias": [
+        "ADR",
+        "ADRs",
+        "Architecture Decision Record",
+        "Architecture Decision Records",
+        "MADR",
+        "design doc",
+        "RFC",
+        "journal des décisions",
+        "decision log"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "adr",
+        "project-management",
+        "documentation",
+        "agents",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Backlog, Kanban, Scrum et Shape Up.md",
+      "nom": "Backlog, Kanban, Scrum et Shape Up",
+      "alias": [
+        "backlog",
+        "Kanban",
+        "Scrum",
+        "Shape Up",
+        "méthodes agiles",
+        "gestion de backlog",
+        "limite de WIP",
+        "appetite",
+        "betting table",
+        "Scrum Guide"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Boucle de Ralph.md",
+      "nom": "Boucle de Ralph",
+      "alias": [
+        "Ralph",
+        "Ralph Wiggum",
+        "Ralph Wiggum technique",
+        "Ralph loop",
+        "ralph-loop",
+        "agent en boucle"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "code-generation",
+        "testing",
+        "project-management",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Branches courtes et worktrees pour agents.md",
+      "nom": "Branches courtes et worktrees pour agents",
+      "alias": [
+        "git worktree",
+        "worktrees",
+        "trunk-based development",
+        "TBD",
+        "branches de courte durée",
+        "agents en parallèle",
+        "isolation par worktree"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "version-control",
+        "ci-cd",
+        "code-assistant",
+        "project-management"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Commits conventionnels, versions et changelog.md",
+      "nom": "Commits conventionnels, versions et changelog",
+      "alias": [
+        "Conventional Commits",
+        "SemVer",
+        "Semantic Versioning",
+        "Keep a Changelog",
+        "CalVer",
+        "versionnage sémantique",
+        "release automation"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "git-hooks",
+        "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Cycle de vie d'un projet assisté par agent.md",
+      "nom": "Cycle de vie d'un projet assisté par agent",
+      "alias": [
+        "cycle de vie agentique",
+        "workflow agentique",
+        "agentic software development lifecycle",
+        "cycle projet avec agent",
+        "SDLC agentique"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "agents",
+        "code-assistant",
+        "spec-driven"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Développement piloté par la spécification.md",
+      "nom": "Développement piloté par la spécification",
+      "alias": [
+        "spec-driven development",
+        "SDD",
+        "développement guidé par les specs",
+        "spec-first",
+        "specs d'abord"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "spec-driven",
+        "agents",
+        "code-generation",
+        "context-engineering"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Fichiers de contexte pour agents.md",
+      "nom": "Fichiers de contexte pour agents",
+      "alias": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "context files",
+        "fichiers de règles",
+        "instructions de dépôt",
+        "repository context files",
+        ".cursor/rules",
+        ".clinerules",
+        "CONVENTIONS.md"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "context-engineering",
+        "agent-skill",
+        "code-assistant",
+        "project-management"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Gestion de projet.md",
+      "nom": "Gestion de projet",
+      "alias": [
+        "project management",
+        "conduite de projet",
+        "cycle de vie logiciel",
+        "méthodes de projet"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Conduire un projet de développement, avec ou sans agent — cycle de vie, spécification, backlog, décisions, contexte, revue, versions, mesure.",
+      "tags": [
+        "project-management",
+        "spec-driven",
+        "adr",
+        "skills"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Mesurer un projet - DORA, coût des agents et temps passé.md",
+      "nom": "Mesurer un projet - DORA, coût des agents et temps passé",
+      "alias": [
+        "DORA",
+        "DORA metrics",
+        "four keys",
+        "métriques de livraison",
+        "coût des agents",
+        "jetons",
+        "time tracking",
+        "suivi du temps",
+        "Goodhart"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "mlops",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "metrics",
+        "ci-cd"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Modèle C4.md",
+      "nom": "Modèle C4",
+      "alias": [
+        "C4",
+        "C4 model",
+        "C4 diagrams",
+        "diagrammes C4",
+        "Context Containers Components Code",
+        "modèle C4 de Simon Brown"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "diagram",
+        "diagram-as-code",
+        "documentation",
+        "project-management"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/PRD et user stories.md",
+      "nom": "PRD et user stories",
+      "alias": [
+        "PRD",
+        "product requirements document",
+        "document d'exigences produit",
+        "user story",
+        "user stories",
+        "histoires utilisateur",
+        "job stories",
+        "critères d'acceptation",
+        "INVEST"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "spec-driven",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md",
+      "nom": "Revue, tests et définition de terminé avec un agent",
+      "alias": [
+        "definition of done",
+        "DoD",
+        "définition de terminé",
+        "revue de code d'agent",
+        "tests d'abord",
+        "test-first avec agent",
+        "vérification de code généré"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "testing",
+        "agents",
+        "code-assistant",
+        "git-hooks"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Vibe coding contre ingénierie agentique.md",
+      "nom": "Vibe coding contre ingénierie agentique",
+      "alias": [
+        "vibe coding",
+        "agentic engineering",
+        "ingénierie agentique",
+        "vibe engineering"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "agents",
+        "code-assistant",
+        "code-generation"
       ],
       "alternatives": null,
       "complements": null,

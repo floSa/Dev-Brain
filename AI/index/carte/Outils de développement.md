@@ -1,8 +1,8 @@
 # Outils de développement — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 31 pages, chacune avec son chemin et une ligne.
-> Couvre : Notebooks, Qualité du code.
+> 45 pages, chacune avec son chemin et une ligne.
+> Couvre : Gestion de projet, Notebooks, Qualité du code.
 
 ## Au niveau du dossier
 - [[Bruno]] · brique · `Outils de développement/Bruno.md` — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
@@ -20,10 +20,26 @@
 - [[testcontainers]] · brique · `Outils de développement/testcontainers.md` — Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.
 - [[Typer]] · brique · `Outils de développement/Typer.md` — Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées…
 - [[uv]] · brique · `Outils de développement/uv.md` — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv…
+- [[Diátaxis et docs-as-code]] · notion · `Outils de développement/Diátaxis et docs-as-code.md` — Diátaxis (Daniele Procida) est un cadre pour organiser une documentation technique en quatre types de pages, chacun répondant à un besoin différent : tutoriel…
 - [[Packaging Python et environnements reproductibles]] · notion · `Outils de développement/Packaging Python et environnements reproductibles.md` — « Reproductible » veut dire : refaire l'installation plus tard, sur une autre machine, et obtenir les mêmes paquets.
 - [[Comparatif - Clients d'API]] · comparatif · `Outils de développement/Comparatif - Clients d'API.md` — où vivent les collections — dans le dépôt git ou dans un cloud — et le prix d'une équipe.
 - [[Comparatif - Frameworks CLI]] · comparatif · `Outils de développement/Comparatif - Frameworks CLI.md` — déclarer les commandes ou peindre la sortie — ce sont deux couches, pas deux options.
 - [[Comparatif - Gestionnaires de paquets Python]] · comparatif · `Outils de développement/Comparatif - Gestionnaires de paquets Python.md` — le plus petit dénominateur commun de l'écosystème, ou un outil unique qui gère aussi le lock, le venv et les versions de Python.
+
+## Gestion de projet
+- [[ADR et design docs]] · notion · `Outils de développement/Gestion de projet/ADR et design docs.md` — Un ADR (Architecture Decision Record) est un court fichier qui consigne une décision d'architecture : le contexte, ce qui a été décidé, les conséquences.
+- [[Backlog, Kanban, Scrum et Shape Up]] · notion · `Outils de développement/Gestion de projet/Backlog, Kanban, Scrum et Shape Up.md` — Quatre manières d'organiser le travail : un backlog (liste ordonnée de ce qui reste à faire), Kanban (limiter le travail en cours), Scrum (itérations fixes et…
+- [[Boucle de Ralph]] · notion · `Outils de développement/Gestion de projet/Boucle de Ralph.md` — Technique de Geoffrey Huntley (billet du 14 juillet 2025) : relancer le même prompt dans une boucle shell, while :; do cat PROMPT.md | agent ; done, jusqu'à ce…
+- [[Branches courtes et worktrees pour agents]] · notion · `Outils de développement/Gestion de projet/Branches courtes et worktrees pour agents.md` — Faire travailler plusieurs agents sur un même dépôt suppose d'isoler leurs fichiers : un worktree par agent, sur une branche courte fusionnée vite.
+- [[Commits conventionnels, versions et changelog]] · notion · `Outils de développement/Gestion de projet/Commits conventionnels, versions et changelog.md` — Trois conventions qui s'emboîtent : le message de commit dit la nature du changement (Conventional Commits), le numéro de version dit son effet sur les…
+- [[Cycle de vie d'un projet assisté par agent]] · notion · `Outils de développement/Gestion de projet/Cycle de vie d'un projet assisté par agent.md` — Un projet mené avec un agent de code garde les étapes d'un projet classique (cadrer, spécifier, planifier, implémenter, vérifier, documenter, livrer).
+- [[Développement piloté par la spécification]] · notion · `Outils de développement/Gestion de projet/Développement piloté par la spécification.md` — Le développement piloté par la spécification (SDD) consiste à écrire ce que le logiciel doit faire avant de le coder, puis à dériver de cette spécification un…
+- [[Fichiers de contexte pour agents]] · notion · `Outils de développement/Gestion de projet/Fichiers de contexte pour agents.md` — Un fichier de contexte est un fichier Markdown versionné à la racine d'un dépôt, que l'agent de code lit au début de chaque session : commandes, conventions…
+- [[Mesurer un projet - DORA, coût des agents et temps passé]] · notion · `Outils de développement/Gestion de projet/Mesurer un projet - DORA, coût des agents et temps passé.md` — Trois familles de mesures utiles à un projet de développement : la santé de la livraison (métriques DORA), le coût des agents (jetons et argent), le temps…
+- [[Modèle C4]] · notion · `Outils de développement/Gestion de projet/Modèle C4.md` — Le modèle C4, de Simon Brown, décrit l'architecture d'un logiciel à quatre niveaux de zoom : système (contexte), conteneurs, composants, code.
+- [[PRD et user stories]] · notion · `Outils de développement/Gestion de projet/PRD et user stories.md` — Le PRD (product requirements document) dit quoi construire et pourquoi : le problème, pour qui, jusqu'où, comment savoir que c'est réussi.
+- [[Revue, tests et définition de terminé avec un agent]] · notion · `Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md` — Un agent s'arrête quand le travail « a l'air terminé ».
+- [[Vibe coding contre ingénierie agentique]] · notion · `Outils de développement/Gestion de projet/Vibe coding contre ingénierie agentique.md` — Vibe coding : produire du logiciel par prompts en acceptant le code sans le lire.
 
 ## Notebooks
 - [[jupysql]] · brique · `Outils de développement/Notebooks/jupysql.md` — SQL natif dans Jupyter via les magics %sql / %%sql — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.

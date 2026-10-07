@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1099 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1114 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -807,11 +807,29 @@
 ### devops/infrastructure
 - **Infrastructure as code — configuration, provisionnement et idempotence** — domaines : infra-ops, mlops · alias : {'Infrastructure as code': 'configuration'}, provisionnement et idempotence, infrastructure as code, iac, idempotence, dérive de configuration, provisionnement et configuration
 
+### devtools/documentation
+- **Diátaxis et docs-as-code** — domaines : ai-eng, mlops, data-eng · alias : Diátaxis, Diataxis, docs as code, documentation as code, docs-as-code, documentation dans le dépôt, quatre types de documentation
+
 ### devtools/notebook
 - **Notebooks-as-code** — domaines : data-sci, mlops · alias : notebooks as code, jupytext, pairing de notebooks, notebook pairing, notebooks reproductibles, nbstripout
 
 ### devtools/paquet
 - **Packaging Python et environnements reproductibles** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : packaging Python, pyproject.toml, fichier de verrouillage, lockfile, uv.lock, pylock.toml, wheel, sdist, environnement virtuel, venv, miroir PyPI, dépendances en réseau fermé, build reproductible
+
+### devtools/projet
+- **ADR et design docs** — domaines : ai-eng, mlops · alias : ADR, ADRs, Architecture Decision Record, Architecture Decision Records, MADR, design doc, RFC, journal des décisions, decision log
+- **Backlog, Kanban, Scrum et Shape Up** — domaines : ai-eng, data-eng, mlops · alias : backlog, Kanban, Scrum, Shape Up, méthodes agiles, gestion de backlog, limite de WIP, appetite, betting table, Scrum Guide
+- **Boucle de Ralph** — domaines : ai-eng · alias : Ralph, Ralph Wiggum, Ralph Wiggum technique, Ralph loop, ralph-loop, agent en boucle
+- **Branches courtes et worktrees pour agents** — domaines : ai-eng, mlops · alias : git worktree, worktrees, trunk-based development, TBD, branches de courte durée, agents en parallèle, isolation par worktree
+- **Commits conventionnels, versions et changelog** — domaines : ai-eng, mlops · alias : Conventional Commits, SemVer, Semantic Versioning, Keep a Changelog, CalVer, versionnage sémantique, release automation
+- **Cycle de vie d'un projet assisté par agent** — domaines : ai-eng, ml-eng · alias : cycle de vie agentique, workflow agentique, agentic software development lifecycle, cycle projet avec agent, SDLC agentique
+- **Développement piloté par la spécification** — domaines : ai-eng · alias : spec-driven development, SDD, développement guidé par les specs, spec-first, specs d'abord
+- **Fichiers de contexte pour agents** — domaines : ai-eng · alias : AGENTS.md, CLAUDE.md, context files, fichiers de règles, instructions de dépôt, repository context files, .cursor/rules, .clinerules, CONVENTIONS.md
+- **Mesurer un projet - DORA, coût des agents et temps passé** — domaines : mlops, ai-eng · alias : DORA, DORA metrics, four keys, métriques de livraison, coût des agents, jetons, time tracking, suivi du temps, Goodhart
+- **Modèle C4** — domaines : ai-eng, mlops, data-eng · alias : C4, C4 model, C4 diagrams, diagrammes C4, Context Containers Components Code, modèle C4 de Simon Brown
+- **PRD et user stories** — domaines : ai-eng, data-eng · alias : PRD, product requirements document, document d'exigences produit, user story, user stories, histoires utilisateur, job stories, critères d'acceptation, INVEST
+- **Revue, tests et définition de terminé avec un agent** — domaines : ai-eng, ml-eng, mlops · alias : definition of done, DoD, définition de terminé, revue de code d'agent, tests d'abord, test-first avec agent, vérification de code généré
+- **Vibe coding contre ingénierie agentique** — domaines : ai-eng, ml-eng · alias : vibe coding, agentic engineering, ingénierie agentique, vibe engineering
 
 ### devtools/qualite
 - **Typage statique en Python** — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops · alias : Typage statique, typage graduel, gradual typing, type hints, annotations de type, static typing, type checking Python
@@ -1569,6 +1587,7 @@
 - **Fine-tuning** — Modifier les poids d'un modèle plutôt que son prompt — apprentissage supervisé, alignement sur des préférences, renforcement.
 - **Forges & CI-CD** — Héberger le code et exécuter ce qui le construit, le teste et le livre — la forge, le serveur de CI, et le déploiement depuis Git.
 - **Formats de fichiers et de tables** — Comment la donnée est rangée sur disque ou sur stockage objet — le format de fichier qui décide de la vitesse de lecture, le format de table posé par-dessus qui apporte transactions et time travel.
+- **Gestion de projet** — Conduire un projet de développement, avec ou sans agent — cycle de vie, spécification, backlog, décisions, contexte, revue, versions, mesure.
 - **Infrastructure & Ops** — Axe métier **Infrastructure & Ops** (`infra-ops`) — explorer par sous-domaine, puis descendre via le graphe local.
 - **Ingestion de données** — Amener la donnée d'une source — base, API, fichier, journal — jusqu'à sa destination, sans la remodeler, et savoir la recharger sans tout relire.
 - **Interfaces & apps data** — Donner une interface à un modèle ou à un jeu de données en quelques dizaines de lignes de Python, sans écrire de front.
