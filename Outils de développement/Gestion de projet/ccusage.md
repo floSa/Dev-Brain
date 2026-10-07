@@ -8,8 +8,8 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: []
-complements: ["[[ActivityWatch]]"]
+alternatives: ["[[Claude-Code-Usage-Monitor]]"]
+complements: ["[[ActivityWatch]]", "[[Apache DevLake]]"]
 tags: [project-management, metrics, agents]
 url_docs: https://ccusage.com/
 url_repo: https://github.com/ccusage/ccusage
@@ -58,10 +58,14 @@ Relevé le 2026-10-07 : **v20.0.26** (2026-09-27), dernier commit le même jour,
 
 ## Écosystème
 
+### Alternatives
+
+- [[Claude-Code-Usage-Monitor]] — Outil en ligne de commande Python (MIT) qui lit les journaux locaux de Claude Code et affiche dans le terminal, en direct, la consommation de jetons, de messages et de coût sur la fenêtre de cinq heures, avec prévision et alertes avant la limite, état exportable en JSON et entrepôt local facultatif — mais il ne suit que Claude Code, là où ccusage couvre dix-huit agents. — là où ccusage rend des rapports sur dix-huit agents, Claude-Code-Usage-Monitor suit en direct un seul agent avec alertes.
+
 ### Compléments
 
 - [[ActivityWatch]] — Application à installer sur le poste (MPL-2.0) qui enregistre en local l'application, la fenêtre, l'onglet de navigateur ou le fichier édité, pour savoir où passe le temps ; les données restent sur la machine. — le temps humain, à côté du coût des agents : les deux se mesurent à part.
-- Claude-Code-Usage-Monitor (MIT) — suivi de la consommation de Claude Code en direct, avec alertes avant la limite ; cité en texte simple, sans fiche, dans [[Mesurer un projet - DORA, coût des agents et temps passé]]. Apache DevLake (mesures DORA depuis la forge et la CI) : même traitement.
+- [[Apache DevLake]] — Plateforme à héberger (Apache-2.0, Go) qui collecte les données dispersées des outils de développement — GitHub, GitLab, Jenkins, Jira, SonarQube — et les rend en tableaux de bord Grafana prêts à l'emploi, dont les mesures DORA, extensibles en SQL — mais elle n'a que des versions bêta, et se déploie avec Docker Compose ou Helm avec ses bases et son Grafana. — le coût des agents se lit à côté des mesures de livraison de DevLake.
 
 ## Ressources
 
