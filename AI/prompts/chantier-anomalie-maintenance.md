@@ -363,7 +363,7 @@ floSa veut les annuaires et les standards **à part des outils**, jamais mêlés
 - [x] Lot 14 — fiabilité et exploitation
 - [x] Lot 15 — câblage final des lots 10 à 14
 - [x] Lot 16 — agents de code libres, suite
-- [ ] Lot 17 — gestion de projet : ouverture et méthodes
+- [x] Lot 17 — gestion de projet : ouverture et méthodes
 - [ ] Lot 18 — BMAD en détail et spécification d'abord
 - [ ] Lot 19 — skills précis pour le cycle de vie
 - [ ] Lot 20 — outils autour de l'agent
