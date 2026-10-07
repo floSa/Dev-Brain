@@ -88,7 +88,7 @@ Les recommandations du site : un **titre** qui dit le type et le périmètre du 
 - [[ADR et design docs]] — le schéma montre la structure, l'ADR explique pourquoi elle est ainsi.
 - [[Diátaxis et docs-as-code]] — un schéma C4 relève de l'*explication* ; la page qui le porte vit dans le dépôt.
 - [[Fichiers de contexte pour agents]] — y renvoyer le schéma de niveau 2.
-- Outils en texte simple : Structurizr (DSL ; Structurizr se présente comme l'implémentation de référence du modèle, Apache-2.0 ; les anciens dépôts Lite et CLI sont archivés, remplacés par l'outillage unifié « local »), D2 (langage de diagrammes, MPL-2.0), PlantUML (LGPL-3.0), Kroki (MIT, service qui produit des images à partir de Mermaid, D2, PlantUML, Structurizr et d'autres formats). LikeC4 sera traité plus tard.
+- Outils en texte simple : Structurizr (DSL ; Structurizr se présente comme l'implémentation de référence du modèle, Apache-2.0 ; les anciens dépôts Lite et CLI sont archivés, remplacés par l'outillage unifié « local »), [[D2]] (langage de diagrammes, MPL-2.0), [[PlantUML]] (LGPL-3.0), [[Kroki]] (MIT, service qui produit des images à partir de Mermaid, D2, PlantUML, Structurizr et d'autres formats). LikeC4 sera traité plus tard.
 
 ## Pour aller plus loin
 

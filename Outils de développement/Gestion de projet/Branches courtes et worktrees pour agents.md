@@ -75,7 +75,7 @@ L'isolement empêche l'écrasement en direct ; il ne supprime pas les conflits. 
 - **Relecture avant fusion** : une branche d'agent se traite comme une contribution externe ; la CI ([[GitHub Actions]], ou la CI intégrée à [[GitLab CE]] ou [[Forgejo]]) et une relecture humaine précèdent la fusion. Voir [[Revue, tests et définition de terminé avec un agent]].
 - **Sur un projet on-prem ou ESN** : forge interne (GitLab CE, Forgejo) avec demandes de fusion obligatoires et CI sur runner interne. Les branches protégées empêchent un agent de pousser sur le tronc, même par erreur.
 
-**Outils de parallélisation** : plusieurs outils organisent le lancement d'agents en parallèle, un worktree par session, avec un tableau de suivi (Claude Squad, Vibe Kanban, Crystal). Ils ajoutent l'ergonomie, pas le principe : tout repose sur les mêmes worktrees git. Deux briques du brain vont dans ce sens : [[t3code]] (surface de contrôle au-dessus des CLI d'agents installées) et [[swarm-forge]] (orchestrateur tmux, un worktree par agent, handoffs entre agents).
+**Outils de parallélisation** : plusieurs outils organisent le lancement d'agents en parallèle, un worktree par session, avec un tableau de suivi ([[Claude Squad]], [[Vibe Kanban]], Crystal). Ils ajoutent l'ergonomie, pas le principe : tout repose sur les mêmes worktrees git. Deux briques du brain vont dans ce sens : [[t3code]] (surface de contrôle au-dessus des CLI d'agents installées) et [[swarm-forge]] (orchestrateur tmux, un worktree par agent, handoffs entre agents).
 
 **Limites**
 
