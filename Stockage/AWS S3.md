@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Amazon Simple Storage Service : le stockage objet qui a défini la catégorie, et dont l'API est
+Service de stockage objet d'Amazon, payant à l'usage et proposé dans le cloud AWS. Amazon Simple Storage Service : le stockage objet qui a défini la catégorie, et dont l'API est
 devenue le **standard de fait** que toutes les autres briques du dossier réimplémentent. Les
 données vivent dans des *buckets*, adressées par clé, sans hiérarchie de fichiers réelle. La
 donnée est répliquée sur au moins trois zones de disponibilité, ce qui donne les **onze neuf**

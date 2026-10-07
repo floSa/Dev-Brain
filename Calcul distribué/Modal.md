@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Plateforme de calcul **serverless orientée Python** : une fonction décorée devient une
+Service cloud de calcul serverless pour Python, payant à la seconde de calcul consommée, sans version à héberger soi-même. Plateforme de calcul **serverless orientée Python** : une fonction décorée devient une
 unité déployable, sans Dockerfile ni configuration d'infrastructure. Le positionnement
 d'origine est le GPU à la demande pour l'IA — inférence, entraînement, traitement par lots
 — avec scale-to-zero et facturation à la seconde. Les **Sandboxes** en sont la déclinaison
@@ -63,6 +63,7 @@ sable**. Aucun self-host : ni version auto-hébergeable, ni dépôt public du c�
 
 - [[E2B]] — Bacs à sable pour code généré par IA (Apache-2.0) — microVM Firecracker démarrant en moins de 200 ms, pilotée par SDK Python et TypeScript ; cloud managé ou infrastructure auto-hébergée déployée par Terraform.
 - [[Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
+- voisin : [[Ray]] — moteur de calcul distribué Python open source, à héberger sur ses propres machines : tâches et acteurs du laptop au cluster, avec GPU.
 
 ## Ressources
 
