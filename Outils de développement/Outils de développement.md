@@ -14,7 +14,7 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 ## Ce qu'il faut comprendre
 
 - Le domaine couvre la **fabrication** : ce qui tourne sur le poste du développeur et dans la CI. Le **déploiement** est ailleurs ([[DevOps]]), et l'**administration** d'une base aussi ([[Bases de données]]).
-- Sept familles cohabitent, et chacune répond à une question distincte : les paquets ([[uv]], [[pip]]), la qualité du code ([[Qualité du code]] : [[Ruff]], [[mypy]], [[Pyright]], [[pre-commit]]), les tests ([[pytest]], [[testcontainers]], [[Hypothesis]]), la validation de données ([[Pydantic]]), la configuration ([[Pydantic Settings]], [[dynaconf]], [[hydra]], [[python-dotenv]]), les CLI ([[Typer]], [[Rich]]), les clients d'API ([[Bruno]], [[Postman]]). Les notebooks ont leur sous-dossier.
+- Huit familles cohabitent, et chacune répond à une question distincte : les paquets ([[uv]], [[pip]]), la qualité du code ([[Qualité du code]] : [[Ruff]], [[mypy]], [[Pyright]], [[pre-commit]]), les tests ([[pytest]], [[testcontainers]], [[Hypothesis]]), la validation de données ([[Pydantic]]), la configuration ([[Pydantic Settings]], [[dynaconf]], [[hydra]], [[python-dotenv]]), les CLI ([[Typer]], [[Rich]]), les clients d'API ([[Bruno]], [[Postman]]), la conduite de projet ([[Gestion de projet]] : méthodes, avec ou sans agent). Les notebooks ont leur sous-dossier.
 - La tendance de fond du domaine est la **consolidation en Rust** : un outil rapide qui en remplace six. [[uv]] absorbe pip, pip-tools, pipx, poetry, pyenv et virtualenv ; [[Ruff]] absorbe Flake8, Black, isort et pyupgrade. Ce n'est pas qu'une question de vitesse : c'est un fichier de config au lieu de six.
 - **Validation et configuration ne sont pas le même problème**, même quand la même brique les sert. [[Pydantic]] valide une donnée qui entre (requête, fichier, réponse d'API) ; [[Pydantic Settings]] résout une valeur de réglage depuis plusieurs couches (défauts, `.env`, environnement, secrets). Confondre les deux produit des modèles qui portent des mots de passe.
 
@@ -27,13 +27,15 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 - Une CLI → [[Typer]] ; l'affichage soigné dans le terminal → [[Rich]] (les deux se combinent).
 - Tester une API à la main : [[Bruno]] si les collections doivent vivre dans le dépôt git ; [[Postman]] si l'équipe et la collaboration cloud priment.
 - Notebooks → voir [[Notebooks]].
+- Conduire un projet, avec ou sans agent de code (cycle de vie, spécification, backlog, décisions, contexte, revue, versions, mesure) → [[Gestion de projet]] ; documenter ce projet dans son dépôt → [[Diátaxis et docs-as-code]].
 - Rendre une installation reproductible, y compris sans accès à PyPI (verrou, miroir interne, image Docker) → [[Packaging Python et environnements reproductibles]].
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Notebooks]] · [[Qualité du code]]
+- [[Gestion de projet]] · [[Notebooks]] · [[Qualité du code]]
 
 ### Notions
+- [[Diátaxis et docs-as-code]] — domaines : ai-eng, mlops, data-eng
 - [[Packaging Python et environnements reproductibles]] — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops
 
 ### Briques

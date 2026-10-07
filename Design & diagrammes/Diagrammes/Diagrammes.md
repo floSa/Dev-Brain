@@ -26,6 +26,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - Un croquis à main levée pour une réunion ou une explication rapide → [[Excalidraw]].
 - Une vue isométrique d'infrastructure, pour une présentation → [[FossFLOW]].
 - Générer le schéma depuis un dépôt existant plutôt que le dessiner → [[Archify]] si un agent de code est dans la boucle et que le rendu doit être reproductible, [[GitDiagram]] pour un coup d'œil immédiat à partir d'une URL, en acceptant que le code passe par un fournisseur LLM.
+- Savoir **quoi** dessiner à chaque niveau d'un système (contexte, conteneurs, composants) → [[Modèle C4]], qui dit quoi montrer ; les outils ci-dessus ne disent que comment le tracer.
 
 <!-- AUTO:START -->
 ### Briques
