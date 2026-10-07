@@ -1,0 +1,19 @@
+filters:
+  and:
+    # Un comparatif compare des briques, pas les notions du sous-domaine.
+    - role == "brique"
+    - categorie == "devtools/documentation"
+views:
+  - type: table
+    name: Générateurs de documentation
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - maturite
+      - alternatives
+    sort:
+      - property: file.name
+        direction: asc

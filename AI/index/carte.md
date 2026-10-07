@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1030 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1037 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -22,8 +22,8 @@
   - Parsing — 17 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Scraping — 10 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Visualisation — 5 briques · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%202%20sur%202.md)
-- **Design & diagrammes** — 8 briques · 2 comparatifs → [détail](carte/Design%20%26%20diagrammes.md)
-  - Diagrammes — 6 briques · 1 comparatif
+- **Design & diagrammes** — 9 briques · 2 comparatifs → [détail](carte/Design%20%26%20diagrammes.md)
+  - Diagrammes — 7 briques · 1 comparatif
 - **DevOps** — 16 briques · 3 notions · 3 comparatifs → [détail](carte/DevOps.md)
   - Conteneurs & orchestration — 8 briques · 1 notion · 2 comparatifs
   - Forges & CI-CD — 6 briques · 1 notion · 1 comparatif
@@ -70,7 +70,8 @@
   - Théorie de l'information — 7 notions
 - **Médias** — 4 briques → [détail](carte/M%C3%A9dias.md)
 - **Observabilité** — 12 briques · 3 notions → [détail](carte/Observabilit%C3%A9.md)
-- **Outils de développement** — 29 briques · 18 notions · 5 comparatifs → [détail](carte/Outils%20de%20d%C3%A9veloppement.md)
+- **Outils de développement** — 34 briques · 18 notions · 6 comparatifs → [détail](carte/Outils%20de%20d%C3%A9veloppement.md)
+  - Documentation technique — 5 briques · 1 notion · 1 comparatif
   - Gestion de projet — 5 briques · 14 notions · 1 comparatif
   - Notebooks — 5 briques · 1 notion
   - Qualité du code — 4 briques · 1 notion · 1 comparatif

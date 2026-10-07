@@ -13,7 +13,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 
 ## Ce qu'il faut comprendre
 
-- La ligne de fracture du sous-domaine est le **support**, pas le rendu. Un **diagramme-as-code** ([[Mermaid]]) est du texte : il vit dans le dépôt, se relit en diff, se régénère, et le moteur décide du placement. Un **canevas** ([[draw.io]], [[Excalidraw]]) est un dessin : on place à la main, donc on obtient exactement ce qu'on veut, et le fichier ne se relit pas en diff.
+- La ligne de fracture du sous-domaine est le **support**, pas le rendu. Un **diagramme-as-code** ([[Mermaid]], [[LikeC4]]) est du texte : il vit dans le dépôt, se relit en diff, se régénère, et le moteur décide du placement. Un **canevas** ([[draw.io]], [[Excalidraw]]) est un dessin : on place à la main, donc on obtient exactement ce qu'on veut, et le fichier ne se relit pas en diff.
 - Le corollaire pratique : un schéma qui doit **rester juste dans six mois** gagne à être du code, parce qu'on le corrige en éditant deux lignes. Un schéma qui doit **convaincre à l'écran maintenant** gagne à être dessiné.
 - Le placement automatique est la vraie limite du diagramme-as-code : au-delà d'une vingtaine de nœuds, aucun moteur ne produit une mise en page lisible sans indices manuels.
 - Un troisième support est apparu : le diagramme **produit par un modèle** à partir d'un dépôt ([[Archify]] via un agent, [[GitDiagram]] via une URL). Personne n'y place rien, donc personne n'en répond : il se relit comme une hypothèse, pas comme une spécification.
@@ -26,6 +26,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - Un croquis à main levée pour une réunion ou une explication rapide → [[Excalidraw]].
 - Une vue isométrique d'infrastructure, pour une présentation → [[FossFLOW]].
 - Générer le schéma depuis un dépôt existant plutôt que le dessiner → [[Archify]] si un agent de code est dans la boucle et que le rendu doit être reproductible, [[GitDiagram]] pour un coup d'œil immédiat à partir d'une URL, en acceptant que le code passe par un fournisseur LLM.
+- Tenir le **modèle** d'une architecture en texte, et en tirer les vues contexte, conteneurs et composants sans qu'elles se contredisent → [[LikeC4]] (inspiré du [[Modèle C4]]) ; [[Mermaid]] dessine un diagramme à la fois, sans modèle commun.
 - Savoir **quoi** dessiner à chaque niveau d'un système (contexte, conteneurs, composants) → [[Modèle C4]], qui dit quoi montrer ; les outils ci-dessus ne disent que comment le tracer.
 
 <!-- AUTO:START -->
@@ -35,6 +36,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - [[GitDiagram]] — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
+- [[LikeC4]] — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### Comparatifs
