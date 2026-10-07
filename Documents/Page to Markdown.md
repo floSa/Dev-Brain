@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Le geste à l'unité : une page de documentation lue dans le navigateur, un thread, un
+Extension de navigateur gratuite et fermée (aucun code publié) qui convertit une page en Markdown ; l'éditeur indique que le traitement reste en local. Le geste à l'unité : une page de documentation lue dans le navigateur, un thread, un
 article — récupérés en Markdown structuré en deux clics, pour les coller dans un prompt,
 une note ou une doc de projet. Le copier-coller brut perd la hiérarchie de titres, casse
 les blocs de code et embarque la navigation du site ; c'est ce trou que l'extension
