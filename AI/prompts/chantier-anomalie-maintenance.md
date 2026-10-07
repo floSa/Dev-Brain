@@ -7,7 +7,7 @@ tags: [meta, backlog]
 
 # Chantier — anomalies, maintenance prédictive, agents de code, stocks et plannings
 
-Plan unique du chantier, seize lots numérotés de 1 à 16. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, vingt lots numérotés de 1 à 20. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -57,6 +57,8 @@ on-prem industriel, ESN.
 | 8 | Lots 12, 16 (en parallèle) | Lot 11 clos (pour le 12) ; lot 10 clos (pour le 16) |
 | 9 | Lot 13 | Lot 12 |
 | 10 | Lot 15 | Lots 12, 13, 16 clos |
+| 11 | Lot 17 (seul) | Lots 1 à 16 clos |
+| 12 | Lots 18, 19, 20 (en parallèle) | Lot 17 clos et poussé |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -256,6 +258,55 @@ Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ce
 - Exclus : Crush (licence FSL), Roo Code (extension fermée, dépôt archivé), Kimi CLI (archivé), Plandex (dernier push en 2025-10 : mentionne-le en texte simple s'il est utile). Claude Code, Codex CLI et Gemini CLI restent exclus par floSa.
 - Mets à jour **Comparatif - Assistants de code IA** (`.md`, la vue `.base` est filtrée par catégorie) et le hub « Agents de code ».
 
+## Lot 17 — Gestion de projet : ouverture et méthodes (vague 11)
+
+floSa veut une section « Gestion de projet » : outils, skills et **méthodes** (les méthodes sont des notions) pour aider le développement et le cycle de vie d'un projet, avec un agent ou sans.
+
+1. **Vocabulaire.** Derive par l'arbre D1→D14 et ouvre au plus **deux** valeurs de catégorie, par la procédure « nouvelle valeur » de `enrichir-brain`. Hypothèse de départ : `devtools/projet` (dossier « Gestion de projet ») pour les méthodes et le suivi de travail ; une seconde valeur seulement si la documentation (génération de sites de doc) n'entre vraiment dans aucune valeur existante (`docs/*` d'abord). Écris la règle de départage. Les lots 18, 19 et 20 utiliseront ces valeurs. Ne déplace aucune page existante.
+2. **Notions à écrire** (9, exemples recalculés ou sourcés, rien de marketing) :
+   - **Cycle de vie d'un projet assisté par agent** : cadrer, spécifier, planifier, implémenter, vérifier, documenter ; ce que l'agent fait bien, ce qu'il fait mal, où l'humain décide.
+   - **Développement piloté par la spécification (spec-driven)** : spécification exécutable, plan, tâches ; pourquoi, limites, coût.
+   - **Cadrer un besoin : PRD et user stories** : contenu minimal, critères d'acceptation.
+   - **Découper et suivre le travail : backlog, Kanban, Scrum** : version légère en solo ou petite équipe, avec agents.
+   - **Décisions d'architecture (ADR)** : format, quand en écrire, où les ranger.
+   - **Modèle C4 et diagrammes d'architecture** : quatre niveaux, lien avec Mermaid, Excalidraw, draw.io, GitDiagram.
+   - **Documentation : Diátaxis et docs-as-code** : les quatre types de pages, la doc dans le dépôt.
+   - **Fichiers de contexte pour agents (AGENTS.md, CLAUDE.md, règles, skills)** : à quoi ils servent, taille, pièges. Cherche d'abord si une notion existante couvre le contexte (context engineering) : si oui, cite-la au lieu de la doubler.
+   - **Revue, tests et « terminé » avec un agent** : définition de terminé, tests d'abord, revue de ce que l'agent a écrit.
+3. **Citer, sans les modifier** : BMAD, Spec Kit, Graphify, i-have-adhd, GitDiagram, Mermaid, Excalidraw, draw.io, Obsidian, Forgejo, GitLab CE, pytest, Hypothesis, testcontainers, ai-memory, Agent patterns.
+4. Ouvre le hub du dossier et écris son corps à la main : « Choisir » avec toutes les briques existantes qui servent la gestion de projet, même rangées ailleurs (BMAD, Spec Kit, Graphify, i-have-adhd sont en `llm/agent-de-code`).
+5. Tags manquants à créer, un commit : `project-management`, `spec-driven`, `adr`, `documentation` s'ils n'existent pas.
+
+## Lot 18 — Skills et cadres de travail avec agents, libres (vague 12)
+
+Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Verifie chaque dépôt à la source.
+
+- **Ponytail** (`DietrichGebert/ponytail`, MIT, actif ; skill qui force l'agent à écrire le minimum de code ; il propose aussi une extension de gestion de projet pour Claude Code : lis le README et dis ce qu'elle fait). Les chiffres de gain annoncés (54 % de code en moins) viennent du projet ou d'articles : cite-les comme tels, avec leur source.
+- **Superpowers** (`obra/superpowers`, MIT, très suivi) : méthode et skills pour agents (brainstorm, plan, tests d'abord).
+- **OpenSpec** (`Fission-AI/OpenSpec`, MIT) : couche de spécification dans le dépôt, avec suivi des écarts.
+- **Backlog.md** (`MrLesk/Backlog.md`, MIT) : tâches en fichiers Markdown dans git, pensées pour les agents.
+- **Beads** (`steveyegge/beads`, MIT) : suivi de tâches pour agents. Vérifie ce que c'est exactement et son modèle de données.
+- Exclus de page, à citer en texte simple seulement : **Task Master** (licence MIT avec clause Commons Clause : source-available), **get-shit-done** (dépôt archivé), **Kiro** (AWS, propriétaire).
+- **Comparatif - Cadres de développement avec agents** (`.md` + `.base`) : BMAD, Spec Kit, OpenSpec, Superpowers, Ponytail. **Accord de floSa** : tu peux ajouter un tag (par exemple `spec-driven`) dans le frontmatter de BMAD, Spec Kit, i-have-adhd et Graphify pour qu'ils entrent dans la vue ; rien d'autre n'y change. Le comparatif se départage sur : spécification d'abord ou méthode d'équipe, poids du dépôt, dépendance à un agent précis, état d'entretien.
+- Cite les notions du lot 17.
+
+## Lot 19 — Documenter et comprendre un dépôt, libres (vague 12)
+
+Règle 15 : libre seulement. Valeur de catégorie : celle que le lot 17 a ouverte pour la documentation, sinon `devtools/projet`.
+
+- Briques candidates, à vérifier : **Repomix** (MIT), **Gitingest** (MIT), **DeepWiki-Open** (MIT, alternative libre au DeepWiki de Cognition, qui est propriétaire : à citer en texte simple), **MkDocs** (BSD-2 ; dernier push 2025-10, dis si le projet est ralenti ; cite aussi Material for MkDocs et son successeur éventuel, vérifie), **Docusaurus** (MIT), **Sphinx** (BSD-2), **log4brains** (Apache-2.0, dernier push 2024-12 : vérifie son état) et **adr-tools** (dernier push 2024-04 : idem, licence à lire dans le dépôt). **Structurizr Lite** est archivé : texte simple.
+- Deux comparatifs (`.md` + `.base`) : **Comparatif - Générateurs de documentation** (MkDocs, Docusaurus, Sphinx) et **Comparatif - Du dépôt au contexte et à la doc** (Repomix, Gitingest, DeepWiki-Open, et Graphify et GitDiagram déjà au brain). Pour que les briques existantes entrent dans la vue, **accord de floSa** : ajoute un tag dans leur frontmatter, rien d'autre.
+- Cite : Diátaxis, ADR, C4 (lot 17), Mermaid, Excalidraw, draw.io, Obsidian.
+
+## Lot 20 — Suivi de projet auto-hébergé (vague 12)
+
+Règle 15, avec une précision de floSa : ce qui compte est de **ne rien payer et de ne rien devoir de propriétaire pour l'usage normal**. Pour chaque outil, vérifie si l'édition communautaire est libre (licence OSI), complète sans clé ni paiement, et si l'édition payante n'est qu'un ajout. Si oui, crée la page et signale l'édition payante dans « Écarter si » ; sinon, texte simple seulement. Dis-le dans ta synthèse pour chaque outil.
+
+- Candidats, à vérifier : **Redmine** (GPL), **Kanboard** (MIT), **Vikunja** (AGPL-3.0), **OpenProject** (GPL-3.0, édition Enterprise payante), **Plane** (AGPL-3.0, offres payantes), **Taiga** (MPL-2.0 ; l'activité du dépôt principal est incertaine : vérifie, `deprecated` si abandonné). Focalboard : texte simple (non maintenu d'après sa documentation).
+- Propriétaires, texte simple seulement : Jira, Linear, Notion, Trello, Asana.
+- **Comparatif - Suivi de projet auto-hébergé** (`.md` + `.base`) : méthode supportée (Kanban, Scrum, Gantt), pile technique et poids, licence, état d'entretien, lien avec git et agents.
+- Cite : Backlog.md et Beads (lot 18), Forgejo, GitLab CE, Obsidian, et les notions du lot 17 (backlog, Kanban, Scrum).
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -274,3 +325,7 @@ Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ce
 - [x] Lot 14 — fiabilité et exploitation
 - [x] Lot 15 — câblage final des lots 10 à 14
 - [x] Lot 16 — agents de code libres, suite
+- [ ] Lot 17 — gestion de projet : ouverture et méthodes
+- [ ] Lot 18 — skills et cadres de travail avec agents
+- [ ] Lot 19 — documenter et comprendre un dépôt
+- [ ] Lot 20 — suivi de projet auto-hébergé
