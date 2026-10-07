@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[MLflow]]", "[[Weights & Biases]]", "[[Neptune]]", "[[ClearML]]", "[[Aim]]"]
+alternatives: ["[[MLflow]]", "[[Weights & Biases]]", "[[ClearML]]", "[[Aim]]"]
 complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://www.comet.com/docs/
@@ -58,7 +58,7 @@ Comet est fermé, Opik seul est ouvert.
 
 - [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
 - [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
-- [[Neptune]] — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- voisin : Neptune (service arrêté en mars 2026) — tracker d'expériences pour les entraînements longs, racheté par OpenAI.
 - [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 
