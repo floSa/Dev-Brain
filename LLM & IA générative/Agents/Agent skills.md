@@ -63,3 +63,4 @@ Le gain est réel, le risque aussi : un skill erroné se **rejoue indéfiniment*
 - Anthropic (2025) — *Agent Skills* : format `SKILL.md` (frontmatter `name` + `description`, chargement progressif).
 - Implémentations : [[OpenClaw]] (skills communautaires, en cours de remplacement par MCP), [[Hermes Agent]] (skills auto-créés et raffinés).
 - Liés : [[Agent evaluation]] — mesurer si un skill se déclenche et améliore réellement le résultat.
+- Fiches : [[Agent Skills - la spécification]] (le format ouvert), [[Skills d'Anthropic]] (le dépôt de skills, licences par skill).
