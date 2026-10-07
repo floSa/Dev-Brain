@@ -29,4 +29,16 @@ tags: [documentation]
 - Le détail de ce qui départage les générateurs → [[Comparatif - Générateurs de documentation]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Diátaxis et docs-as-code]] — domaines : ai-eng, mlops, data-eng
+
+### Briques
+- [[Docusaurus]] — Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
+- [[MkDocs]] — Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
+- [[mkdocstrings]] — Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.
+- [[Sphinx]] — Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.
+- [[Zensical]] — Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
+
+### Comparatifs
+- [[Comparatif - Générateurs de documentation]]
 <!-- AUTO:END -->

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1114 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1122 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -230,6 +230,7 @@
 - **Excalidraw** — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - **FossFLOW** — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - **GitDiagram** — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
+- **LikeC4** — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
 - **Mermaid** — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### design/ui
@@ -271,6 +272,13 @@
 - **hydra** — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
 - **Pydantic Settings** — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 - **python-dotenv** — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+
+### devtools/documentation
+- **Docusaurus** — Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
+- **MkDocs** — Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
+- **mkdocstrings** — Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.
+- **Sphinx** — Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.
+- **Zensical** — Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
 
 ### devtools/notebook
 - **jupysql** — SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.
@@ -1412,6 +1420,9 @@
 ### devtools/client-api
 - **Comparatif - Clients d'API** — —
 
+### devtools/documentation
+- **Comparatif - Générateurs de documentation** — —
+
 ### devtools/paquet
 - **Comparatif - Gestionnaires de paquets Python** — —
 
@@ -1579,6 +1590,7 @@
 - **Design & diagrammes** — Dessiner — une interface qu'on prototype, ou un système qu'on explique.
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
+- **Documentation technique** — Documenter un projet logiciel dans son dépôt — quoi écrire, et avec quel générateur fabriquer et publier le site.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Données industrielles** — Amener la donnée de l'atelier jusqu'au système d'information par les protocoles industriels — brokers MQTT, piles OPC UA, outils de flux — et sécuriser le chemin.
 - **Détection d'anomalies** — Repérer ce qui s'écarte du normal — points, motifs, images — et décider à partir de quel écart on alerte.

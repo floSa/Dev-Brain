@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1114 pages actives.
+> 1122 pages actives.
 
 ## Par page
 
@@ -565,10 +565,15 @@
 - liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
 - liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
 
+### Docusaurus  ·  brique
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Mermaid]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[MkDocs]], [[Obsidian]], [[Outils de développement]], [[Sphinx]], [[Zensical]]
+
 ### draw.io  ·  brique
 - tags : `diagram`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[Mermaid]]
-- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Gestion de projet]], [[Mermaid]], [[Modèle C4]], [[Penpot]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[LikeC4]], [[Mermaid]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[Figma]], [[FossFLOW]], [[Gestion de projet]], [[LikeC4]], [[Mermaid]], [[Modèle C4]], [[Penpot]]
 
 ### DSPy  ·  brique
 - tags : `llm`, `prompt-optimization`, `nlp`
@@ -623,7 +628,7 @@
 ### Excalidraw  ·  brique
 - tags : `diagram`, `whiteboard`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
-- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Figma]], [[Gestion de projet]], [[Modèle C4]], [[Penpot]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Figma]], [[Gestion de projet]], [[LikeC4]], [[Modèle C4]], [[Penpot]], [[draw.io]]
 
 ### Faiss  ·  brique
 - tags : `vector-db`, `ann`, `embedded`, `in-memory`
@@ -738,7 +743,7 @@
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Graphify]], [[Mermaid]], [[mcp-protocol]]
-- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Gestion de projet]], [[Modèle C4]]
+- liens entrants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[Gestion de projet]], [[LikeC4]], [[Modèle C4]]
 
 ### GitHub Actions  ·  brique
 - tags : `ci-cd`
@@ -1115,6 +1120,11 @@
 - liens sortants : [[Arbres de décision]], [[CatBoost]], [[Comparatif - Boosting]], [[Gradient Boosting (GBDT)]], [[Learning to rank]], [[Scikit-Learn]], [[XGBoost]]
 - liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Boosting]], [[CatBoost]], [[Classification]], [[Comparatif - Boosting]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Imbalanced classification]], [[Learning to rank]], [[Machine Learning]], [[Optuna]], [[PyTorch]], [[Régression]], [[Régression quantile]], [[SHAP]], [[Scikit-Learn]], [[Tabulaire]], [[XGBoost]], [[darts]], [[imbalanced-learn]]
 
+### LikeC4  ·  brique
+- tags : `diagram`, `diagram-as-code`
+- liens sortants : [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[GitDiagram]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
+- liens entrants : [[Comparatif - Diagrammes]], [[Diagrammes]], [[Documentation technique]], [[Mermaid]], [[draw.io]]
+
 ### LIME  ·  brique
 - tags : `explainability`, `supervised`
 - liens sortants : [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[SHAP]], [[interpreto]], [[Équité et biais algorithmique]]
@@ -1262,8 +1272,8 @@
 
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[draw.io]]
-- liens entrants : [[ADR et design docs]], [[Archify]], [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Figma]], [[Gestion de projet]], [[GitDiagram]], [[Modèle C4]], [[Penpot]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Diagrammes]], [[LikeC4]], [[draw.io]]
+- liens entrants : [[ADR et design docs]], [[Archify]], [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Figma]], [[Gestion de projet]], [[GitDiagram]], [[LikeC4]], [[Modèle C4]], [[Penpot]], [[draw.io]]
 
 ### Metabase  ·  brique
 - tags : `bi`, `dashboard`, `self-hosted`
@@ -1319,6 +1329,16 @@
 - tags : `llm`, `local-llm`, `reasoning`, `tool-use`, `vision-language`
 - liens sortants : [[Comparatif - Modèles de langage open weights]], [[Contexte long]], [[Gemma]], [[LM Studio]], [[Licences de modèles open weights]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[Reasoning models]], [[Small Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Comparatif - Modèles de langage open weights]], [[Contexte long]], [[Gemma]], [[LM Studio]], [[Licences de modèles open weights]], [[Modèles de langage]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[Reasoning models]], [[Small Language Models]], [[Vision Language Models]], [[gpt-oss]], [[llama.cpp]], [[vLLM]]
+
+### MkDocs  ·  brique
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[Obsidian]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+
+### mkdocstrings  ·  brique
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[Zensical]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Sphinx]], [[Zensical]]
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1447,7 +1467,7 @@
 
 ### Obsidian  ·  brique
 - tags : `note-taking`, `knowledge-graph`
-- liens sortants : [[Outils de développement]]
+- liens sortants : [[Docusaurus]], [[MkDocs]], [[Outils de développement]]
 - liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Diátaxis et docs-as-code]], [[Outils de développement]]
 
 ### Ollama  ·  brique
@@ -2190,6 +2210,11 @@
 - liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]]
 - liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Boucle de Ralph]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[PRD et user stories]], [[Vibe coding contre ingénierie agentique]], [[i-have-adhd]]
 
+### Sphinx  ·  brique
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Zensical]], [[mkdocstrings]]
+
 ### SQLAlchemy  ·  brique
 - tags : `orm`, `relational`, `type-hints`
 - liens sortants : [[Alembic]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[ORM]], [[Prisma]], [[Programmation asynchrone en Python]], [[SQLModel]], [[psycopg2]]
@@ -2540,6 +2565,11 @@
 - liens sortants : [[Airflow]], [[BentoML]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Flyte]], [[KServe]], [[Kubeflow]], [[MLflow]], [[Machine Learning]], [[Metaflow]]
 - liens entrants : [[AWS SageMaker]], [[CI-CD pour le ML]], [[Comparatif - Orchestrateurs ML]], [[Dataiku]], [[Flyte]], [[Google Cloud Vertex AI]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[Microsoft Azure Machine Learning]], [[Plateforme data & IA — concept]], [[Plateformes data & IA]]
 
+### Zensical  ·  brique
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[mkdocstrings]]
+
 ### Zoo Code  ·  brique
 - tags : `code-assistant`, `code-generation`, `llm`, `agents`, `mcp`, `local-llm`
 - liens sortants : [[Agents de code]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Harnais d'agent]], [[Kilo Code]], [[Sandboxing de code généré]]
@@ -2647,8 +2677,8 @@
 
 ### Comparatif - Diagrammes  ·  comparatif
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes.base]], [[Comparatifs]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[Archify]], [[Comparatifs]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Mermaid]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes.base]], [[Comparatifs]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[LikeC4]], [[Mermaid]], [[draw.io]]
+- liens entrants : [[Archify]], [[Comparatifs]], [[Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[LikeC4]], [[Mermaid]], [[draw.io]]
 
 ### Comparatif - Détection & segmentation  ·  comparatif
 - tags : `object-detection`, `segmentation`, `computer-vision`
@@ -2729,6 +2759,11 @@
 - tags : `package-manager`, `reproducibility`
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python.base]], [[Comparatifs]], [[pip]], [[uv]]
 - liens entrants : [[Comparatifs]], [[Outils de développement]], [[Packaging Python et environnements reproductibles]], [[pip]], [[uv]]
+
+### Comparatif - Générateurs de documentation  ·  comparatif
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation.base]], [[Comparatifs]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatifs]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
 
 ### Comparatif - Ingestion de données  ·  comparatif
 - tags : `data-ingestion`, `data-pipeline`
@@ -3002,8 +3037,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -3042,8 +3077,13 @@
 
 ### Diagrammes  ·  hub
 - tags : `diagram`, `diagram-as-code`, `whiteboard`, `isometric`
-- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
-- liens entrants : [[Archify]], [[Design & diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
+- liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[LikeC4]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
+- liens entrants : [[Archify]], [[Design & diagrammes]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Excalidraw]], [[FossFLOW]], [[GitDiagram]], [[LikeC4]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
+
+### Documentation technique  ·  hub
+- tags : `documentation`
+- liens sortants : [[Comparatif - Générateurs de documentation]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Docusaurus]], [[Gestion de projet]], [[LikeC4]], [[Mermaid]], [[MkDocs]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Docusaurus]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
 
 ### Documents  ·  hub
 - tags : `pdf`, `markdown-conversion`, `ocr`, `web-scraping`
@@ -3088,7 +3128,7 @@
 ### Gestion de projet  ·  hub
 - tags : `project-management`, `spec-driven`, `adr`, `skills`
 - liens sortants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitDiagram]], [[GitLab CE]], [[Graphify]], [[Hypothesis]], [[Mermaid]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Modèle C4]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[ai-memory]], [[draw.io]], [[i-have-adhd]], [[pre-commit]], [[pytest]], [[swarm-forge]], [[t3code]], [[testcontainers]]
-- liens entrants : [[Agents de code]], [[Outils de développement]]
+- liens entrants : [[Agents de code]], [[Documentation technique]], [[Outils de développement]]
 
 ### Infrastructure & Ops  ·  hub
 - tags : —
@@ -3207,8 +3247,8 @@
 
 ### Outils de développement  ·  hub
 - tags : `package-manager`, `linter`, `testing`, `config`, `cli`, `api-client`, `data-validation`
-- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Vérificateurs de types Python]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Hypothesis]], [[Notebooks]], [[Obsidian]], [[Packaging Python et environnements reproductibles]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Pyright]], [[Qualité du code]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[mypy]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
-- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Hypothesis]], [[ML Engineering]], [[MLOps]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Pyright]], [[Qualité du code]], [[Rich]], [[Ruff]], [[Typer]], [[dynaconf]], [[hydra]], [[mypy]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens sortants : [[Bases de données]], [[Bruno]], [[Comparatif - Clients d'API]], [[Comparatif - Frameworks CLI]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Vérificateurs de types Python]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Gestion de projet]], [[Hypothesis]], [[MkDocs]], [[Notebooks]], [[Obsidian]], [[Packaging Python et environnements reproductibles]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Pyright]], [[Qualité du code]], [[Rich]], [[Ruff]], [[Sphinx]], [[Typer]], [[Zensical]], [[dynaconf]], [[hydra]], [[mypy]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
+- liens entrants : [[AI Engineering]], [[Bruno]], [[Data & pipelines]], [[Data Engineering]], [[Data Science]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Docusaurus]], [[Hypothesis]], [[ML Engineering]], [[MLOps]], [[MkDocs]], [[Obsidian]], [[Postman]], [[Pydantic]], [[Pydantic Settings]], [[Pyright]], [[Qualité du code]], [[Rich]], [[Ruff]], [[Sphinx]], [[Typer]], [[Zensical]], [[dynaconf]], [[hydra]], [[mkdocstrings]], [[mypy]], [[pip]], [[pre-commit]], [[pytest]], [[python-dotenv]], [[testcontainers]], [[uv]]
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
@@ -3928,7 +3968,7 @@
 ### Diátaxis et docs-as-code  ·  notion
 - tags : `documentation`, `project-management`, `ci-cd`, `diagram-as-code`
 - liens sortants : [[ADR et design docs]], [[Diagrammes]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Mermaid]], [[Modèle C4]], [[Obsidian]], [[Outils de développement]], [[Woodpecker CI]], [[draw.io]], [[pre-commit]]
-- liens entrants : [[ADR et design docs]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Modèle C4]], [[Outils de développement]]
+- liens entrants : [[ADR et design docs]], [[Comparatif - Générateurs de documentation]], [[Cycle de vie d'un projet assisté par agent]], [[Documentation technique]], [[Docusaurus]], [[Gestion de projet]], [[LikeC4]], [[MkDocs]], [[Modèle C4]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
 
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
@@ -4563,7 +4603,7 @@
 ### Modèle C4  ·  notion
 - tags : `diagram`, `diagram-as-code`, `documentation`, `project-management`
 - liens sortants : [[ADR et design docs]], [[Archify]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[GitDiagram]], [[Mermaid]], [[draw.io]]
-- liens entrants : [[ADR et design docs]], [[Cycle de vie d'un projet assisté par agent]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Gestion de projet]]
+- liens entrants : [[ADR et design docs]], [[Cycle de vie d'un projet assisté par agent]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[LikeC4]]
 
 ### Modèle du vendeur de journaux (newsvendor)  ·  notion
 - tags : `inventory`, `newsvendor`, `optimization`, `probability`
@@ -5661,8 +5701,8 @@
 - `deployment-strategy` : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving  — pas de page concept dédiée
 - `depth-estimation` : Rendu neuronal 3D & estimation de profondeur
 - `design-tool` : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot  — pas de page concept dédiée
-- `diagram` : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, Modèle C4, draw.io  — pas de page concept dédiée
-- `diagram-as-code` : Archify, Comparatif - Diagrammes, Diagrammes, Diátaxis et docs-as-code, Mermaid, Modèle C4  — pas de page concept dédiée
+- `diagram` : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, LikeC4, Mermaid, Modèle C4, draw.io  — pas de page concept dédiée
+- `diagram-as-code` : Archify, Comparatif - Diagrammes, Diagrammes, Diátaxis et docs-as-code, LikeC4, Mermaid, Modèle C4  — pas de page concept dédiée
 - `diffusion` : Diffusion models, Image generation, Video generation
 - `digital-filter` : Filtrage numérique, Traitement, scipy.signal
 - `digital-twin` : Jumeau numérique et modèles hybrides, PyBaMM, Santé de batterie (SOH et RUL)
@@ -5671,7 +5711,7 @@
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
-- `documentation` : ADR et design docs, Diátaxis et docs-as-code, Modèle C4  — pas de page concept dédiée
+- `documentation` : ADR et design docs, Comparatif - Générateurs de documentation, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MkDocs, Modèle C4, Sphinx, Zensical, mkdocstrings  — pas de page concept dédiée
 - `domain-adaptation` : Adaptation de domaine
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot  — pas de page concept dédiée
@@ -6017,12 +6057,12 @@
 - `deep-learning` (porté par : Adam optimizer, AlphaZero and self-play, Anomalie visuelle par reconstruction, distillation et flux, Anomalies multivariées par apprentissage profond, Apprentissage auto-supervisé en vision, Apprentissage profond, Architectures CNN, Attention Residuals, Attribution par gradient, Augmentation d'images, Autoencodeurs, CNN, Calculs adaptatifs, Captum, Chronos, Classification d'images, Confidentialité différentielle, DeepOD, DeepSpeed, Detectron2, Diffusion models, Distillation, Double descente et généralisation des grands modèles, Détection d'objets, EasyOCR, Entraînement distribué, Estimation de pose, Foundation models pour séries temporelles, GANs, Gradient checkpointing, Graph Neural Networks, HuggingFace, Interprétabilité, Interprétabilité mécaniste, JAX, Keras, Kolmogorov-Arnold Networks, Kornia, LSTM et réseaux récurrents, Maximal Update Parametrization, Metric learning & ré-identification, Mixed precision, Mixture of Experts, Méta-apprentissage et few-shot learning, Normalisation et initialisation des réseaux, OCR, Orion, PaddleOCR, Perceptron et MLP, Probing, Pruning, PyTorch, PyTorch Geometric, PyTorch Lightning, Q-learning and DQN, Quantization, RUL par apprentissage profond, Rendu neuronal 3D & estimation de profondeur, Rétropropagation et différentiation automatique, Santé de batterie (SOH et RUL), Scaling laws, Segment Anything (SAM), Segmentation, Self-attention, Sparse autoencoders, Speech models, Stable-Baselines3, State Space Models, Suivi d'objets, Superposition, TensorBoard, TensorFlow, Transfer learning vision, Transformer architectures, Ultralytics YOLO, Vision Transformers (ViT), Vision par ordinateur, accelerate, albumentations, darts, datasets, docTR, neuralforecast, pykan, pytorch-crf, segment-anything, time-series-anomaly-detector, timm, torchvision)
 - `deployment-strategy` (porté par : CI-CD pour le ML, DevOps, Déploiement de modèles, Serving)
 - `design-tool` (porté par : Comparatif - Design & prototypage, Design & diagrammes, Figma, Penpot)
-- `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, Mermaid, Modèle C4, draw.io)
-- `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Diátaxis et docs-as-code, Mermaid, Modèle C4)
+- `diagram` (porté par : Archify, Comparatif - Diagrammes, Design & diagrammes, Diagrammes, Excalidraw, FossFLOW, GitDiagram, LikeC4, Mermaid, Modèle C4, draw.io)
+- `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, Diagrammes, Diátaxis et docs-as-code, LikeC4, Mermaid, Modèle C4)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, Apprentissage fédéré, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : ArangoDB, MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
-- `documentation` (porté par : ADR et design docs, Diátaxis et docs-as-code, Modèle C4)
+- `documentation` (porté par : ADR et design docs, Comparatif - Générateurs de documentation, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MkDocs, Modèle C4, Sphinx, Zensical, mkdocstrings)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot)
 - `education` (porté par : OpenMAIC)

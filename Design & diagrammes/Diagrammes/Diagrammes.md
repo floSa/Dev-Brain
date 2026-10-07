@@ -36,6 +36,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 - [[Excalidraw]] — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - [[GitDiagram]] — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
+- [[LikeC4]] — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### Comparatifs

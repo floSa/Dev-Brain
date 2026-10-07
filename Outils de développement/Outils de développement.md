@@ -32,10 +32,9 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Gestion de projet]] · [[Notebooks]] · [[Qualité du code]]
+- [[Documentation technique]] · [[Gestion de projet]] · [[Notebooks]] · [[Qualité du code]]
 
 ### Notions
-- [[Diátaxis et docs-as-code]] — domaines : ai-eng, mlops, data-eng
 - [[Packaging Python et environnements reproductibles]] — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops
 
 ### Briques
