@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: TypeScript
-alternatives: ["[[Mermaid]]", "[[draw.io]]"]
+alternatives: ["[[Mermaid]]", "[[draw.io]]", "[[D2]]"]
 complements: []
 tags: [diagram, diagram-as-code]
 url_docs: https://likec4.dev/
@@ -63,6 +63,7 @@ Version 1.59.4 du 2026-09-21, dernier commit le 2026-10-07, environ 5,8 k étoil
 
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
+- [[D2]] — Outil en ligne de commande (MPL-2.0, Go) qui transforme un langage de description de diagrammes en SVG, PNG, PDF, GIF ou PPTX, avec thèmes, plusieurs moteurs de placement, rendu au trait de crayon et animations — mais le langage lui est propre, aucune forge ne le rend nativement, et le moteur TALA est un module à part. — LikeC4 calcule des vues depuis un modèle ; D2 dessine chaque diagramme et sait être une sortie de LikeC4.
 
 ## Ressources
 
