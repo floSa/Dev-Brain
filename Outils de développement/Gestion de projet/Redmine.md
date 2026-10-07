@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Ruby
 scaling: single-node
-alternatives: ["[[Kanboard]]"]
+alternatives: ["[[Kanboard]]", "[[Vikunja]]"]
 complements: []
 tags: [issue-tracking, project-management, self-hosted]
 url_docs: https://www.redmine.org/projects/redmine/wiki/Guide
@@ -63,6 +63,7 @@ Relevé le 2026-10-07 sur redmine.org : trois versions suivies, **6.0.11** (2026
 ### Alternatives
 
 - [[Kanboard]] — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture. — un tableau seul, sans Gantt ni wiki dans sa documentation, contre une application complète : Kanboard est un tableau ; Redmine gère plusieurs projets et leur traçabilité.
+- [[Vikunja]] — Application web de gestion de tâches à héberger (AGPL-3.0 ou ultérieure, Go et Vue.js), livrée en un seul binaire ou conteneur : projets et sous-projets, tâches avec rappels et répétitions, partage entre utilisateurs, vues liste, Gantt, tableau et Kanban, API documentée — mais l'administration, le journal d'audit et le suivi du temps relèvent de la version payante Vikunja Pro. — des listes de tâches plus simples que Redmine, sans workflow de tickets ni dépôts.
 - Jira (Atlassian, propriétaire) — la référence en entreprise : workflows, rapports, droits par projet, traçabilité. Cité en texte simple, sans page : voir [[Backlog, Kanban, Scrum et Shape Up]].
 - OpenProject, Plane, Taiga, Leantime — autres plateformes de suivi de projet, sans fiche ici ; citées en texte simple.
 
