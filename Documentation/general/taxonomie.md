@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 117 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 119 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (117 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (119 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -191,7 +191,7 @@ database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
       synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie, bi}
-devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation}
+devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation, projet, documentation}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
 math/{optimisation, recherche-operationnelle, algebre-lineaire, information, theorie-apprentissage}
@@ -249,6 +249,7 @@ WrenAI ne produit aucun SQL.
 | D-R10 | Une page dont le **sujet est l'écart au normal** (le score, le seuil, l'évaluation, le jeu de test, une méthode conçue pour l'anomalie) est `ml/anomalie`. Une page dont le sujet est autre (clustering, densité, réduction de dimension) et pour laquelle l'anomalie n'est qu'un **usage possible** reste `ml/non-supervise`. | Isolation Forest, Local Outlier Factor, One-Class SVM, PyOD → `ml/anomalie` ; DBSCAN, hdbscan, Gaussian Mixture Models → `ml/non-supervise` |
 | D-R11 | Une page de `ml/*` dont le **but est une panne ou une décision de maintenance** (état de santé, durée de vie résiduelle, diagnostic de défaut, politique et coût) est `ml/maintenance`, même quand son entrée est une série temporelle. Une page qui traite une série sans viser une panne est `ml/series-temporelles` ; une page qui détecte l'anormal sur cette série est `ml/anomalie`. | Maintenance prédictive et RUL → `ml/maintenance` ; ARIMA SARIMA, Prophet → `ml/series-temporelles` ; Time series anomaly detection, STUMPY → `ml/anomalie` |
 | D-R12 | Une page de `math/*` dont le **sujet est une situation de décision d'un métier** (stock, plan de production, tournée, planning) et la politique qui la résout est `math/recherche-operationnelle`. Une page dont le sujet est la **méthode** de résolution, quel que soit le problème (descente de gradient, convexité, MIP, solveur), est `math/optimisation`. La prévision de la demande, qui n'est que l'entrée, reste `ml/series-temporelles`. | Modèle du vendeur de journaux, Stock de sécurité et taux de service → `math/recherche-operationnelle` ; Optimisation combinatoire, Programmation linéaire en nombres entiers (MIP), PuLP → `math/optimisation` ; Intermittent demand, Hierarchical forecasting → `ml/series-temporelles` |
+| D-R13 | Une page dont le **sujet est la conduite d'un projet de développement** (cycle de vie, spécification, backlog, décisions d'architecture, contexte donné aux agents, revue, versions, mesure) est `devtools/projet`, **même quand la méthode suppose un agent de code** : D1 ne s'applique pas, parce que la méthode vaut aussi sans agent, et que l'agent n'est qu'un des acteurs du projet. Une page dont le sujet est **l'agent lui-même** (le produit qu'on installe, son interface, ses fournisseurs de modèle) reste `llm/agent-de-code`. Une page qui **documente** le projet (écrire, structurer, générer, publier la documentation) est `devtools/documentation`. | Cycle de vie assisté par agent, Boucle de Ralph, Fichiers de contexte pour agents → `devtools/projet` ; BMAD, Spec Kit (l'outil installé) → `llm/agent-de-code` ; Diátaxis et docs-as-code → `devtools/documentation` |
 
 ### Frontières disputées, écrites une fois
 
@@ -678,6 +679,17 @@ valeurs disparues et ne sont pas reconduites.
   (exécuter le code pour constater son comportement : pytest, Hypothesis), de `security/analyse`
   (analyse statique orientée vulnérabilités et secrets : Semgrep, Gitleaks) et de
   `devtools/validation` (valider des données à l'exécution, pas du code).
+- `devtools/projet` — **conduire un projet de développement** : cycle de vie, spécification, backlog,
+  décisions d'architecture (ADR, C4), fichiers de contexte pour agents, revue et « terminé »,
+  versions et changelog, mesure. Ouvert le 2026-10-07 (lot 17), promu d'emblée en dossier
+  « Gestion de projet » (13 notions). Règle D-R13 : la méthode reste ici même si elle suppose un
+  agent. Distinct de `llm/agent-de-code` (l'agent lui-même), de `devtools/qualite` et
+  `devtools/test` (le code), de `devops/*` (le déploiement) et de `devtools/documentation`.
+- `devtools/documentation` — **documenter un projet logiciel** : écrire la documentation dans le
+  dépôt, la structurer, la générer depuis le code ou des fichiers texte, la publier. Ouvert le
+  2026-10-07 (lot 17), sous le seuil à l'ouverture (une page : la notion « Diátaxis et
+  docs-as-code ») ; libellé « Documentation technique ». Distinct de `devtools/projet` (conduire le
+  projet), de `docs/*` (document hors dépôt de code : PDF, capture web) et de `design/diagramme`.
 - `docs/capture` — **capture de contenu** externe vers un format texte réutilisable : page web ou
   document converti en Markdown, à l'unité, par un geste manuel. Distinct de `data/scraping`
   (extraction programmatique et à l'échelle).

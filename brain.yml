@@ -1177,6 +1177,36 @@ axes:
               (valider des donnees a l execution, pas du code).
           validation:
             frontiere: "Valider des objets dans du code Python, pas des jeux de donnees livres."
+          projet:
+            libelle: "Gestion de projet"
+            motif: >
+              Ouvert le 2026-10-07 (lot 17 du chantier anomalie-maintenance, sur la
+              consigne de floSa : une section « Gestion de projet » pour conduire un
+              projet de developpement, avec ou sans agent). Hypothese du plan retenue.
+              Le hub sera « Gestion de projet.md » : nom verifie unique, insensible a
+              la casse.
+            frontiere: >
+              Conduire un projet de developpement : cycle de vie, specification,
+              backlog, decisions d architecture, contexte donne aux agents, revue,
+              versions, mesure. Une page qui decrit une METHODE ou un outil de
+              conduite de projet est ici, meme quand elle suppose un agent de code
+              (regle D-R13). Distinct de llm/agent-de-code (l agent lui-meme, le
+              produit qu on installe), de devtools/qualite et devtools/test (le
+              code), de devops/* (le deploiement) et de devtools/documentation (la
+              documentation du projet, pas sa conduite).
+          documentation:
+            libelle: "Documentation technique"
+            motif: >
+              Ouvert le 2026-10-07 (lot 17), a la demande du lot 21 qui y rangera les
+              generateurs de documentation. Une seule page a l ouverture (la notion
+              Diataxis et docs-as-code) : le sous-dossier n apparait qu a 5 pages
+              pesantes. Libelle verifie unique, insensible a la casse.
+            frontiere: >
+              Documenter un projet logiciel : ecrire la documentation dans le depot,
+              la structurer, la generer depuis le code ou depuis des fichiers texte
+              et la publier. Distinct de devtools/projet (conduire le projet), de
+              docs/* (produire ou convertir un document hors d un depot de code :
+              PDF, capture web) et de design/diagramme (dessiner un schema).
 
       - cle: stats
         dossier: "Statistiques & inférence"
