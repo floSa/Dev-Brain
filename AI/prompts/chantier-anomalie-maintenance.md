@@ -62,6 +62,7 @@ on-prem industriel, ESN.
 | 11 | Lot 17 (seul) | Lots 1 à 16 clos |
 | 12 | Lots 18, 19, 20, 21, 22 (en parallèle) | Lot 17 clos et poussé |
 | 13 | Lot 23 | Lot 19 clos |
+| 14 | Lots 24, 25 (en parallèle) | Lots 1 à 23 clos et poussés |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -345,6 +346,37 @@ floSa veut les annuaires et les standards **à part des outils**, jamais mêlés
 - Candidats, à vérifier : **AGENTS.md** (`agentsmd/agents.md`, MIT, format), **Agent Skills** (spécification SKILL.md, agentskills.io : une notion « Agent Skills » existe déjà en `llm/agents`, cite-la au lieu de la doubler), **awesome-claude-code** (`hesreallyhim/awesome-claude-code`, licence à lire), **awesome-claude-skills** (`ComposioHQ/awesome-claude-skills`, pas de licence détectée), **anthropics/skills** (dépôt officiel de skills, licences variables). Une page par annuaire, sans description des outils qu'il liste.
 - Aucune page ne doit se faire passer pour un outil.
 
+## Lot 24 — Outils manquants (vague 14)
+
+Règle 15 corrigée (gratuit d'abord, déployable sur site). Vérifie la licence de chaque dépôt **à la source** (`gh api repos/<dépôt> --jq .license` puis le fichier LICENSE) avant d'écrire. Licence introuvable ou outil abandonné : pas de page, dis-le dans ta synthèse. Pour chaque outil, la **première phrase** dit ce que c'est en mots simples (règle 17).
+
+Une page par outil, rangée avec ses voisins de même sujet (regarde la carte et l'index, ne devine pas) :
+
+- **Tâches et spécifications** : Backlog.md (`MrLesk/Backlog.md`, tâches en fichiers Markdown dans le dépôt), Beads (`gastownhall/beads`, MIT, suivi de tâches pour agents, dans git), Agent OS (`buildermethods/agent-os`, MIT : tu écris une fois tes règles de code, nommage, structure, tests, dans des fichiers ; l'outil les donne à l'agent à chaque tâche pour qu'il code comme toi ; donne un exemple concret dans la fiche). floSa veut garder ces outils de gestion de projet à portée : relie-les à OpenSpec, Fichiers de contexte pour agents, Backlog, Kanban, Scrum et Shape Up.
+- **Plusieurs agents** : Claude Squad (`smtg-ai/claude-squad`, AGPL-3.0, plusieurs agents dans tmux). Mets-le près de Vibe Kanban.
+- **Contexte** : Gitingest (`coderamp-labs/gitingest`, dépôt GitHub en un seul fichier pour l'IA). Près de Repomix.
+- **Qualité et versions** : Lefthook (`evilmartians/lefthook`, hooks git rapides, près de pre-commit), python-semantic-release (`python-semantic-release/python-semantic-release`, versions et publication PyPI depuis les commits, près de release-please), Task (`go-task/task`, lanceur de commandes en YAML, près de just).
+- **Diagrammes écrits en texte** : D2 (`d2lang/d2`, MPL-2.0), PlantUML (`plantuml/plantuml`, LGPL-3.0), Kroki (`yuzutech/kroki`, MIT), près de LikeC4 et Mermaid.
+- **Décisions** : MADR (`adr/madr`, l'API ne détecte pas de licence : lis le fichier LICENSE, modèle de fiche pour les décisions d'architecture), à relier à la notion « ADR et design docs ».
+- **Suivi** : Vikunja (`go-vikunja/vikunja`, listes de tâches auto-hébergées) et Wekan (`wekan/wekan`, Kanban à la Trello), près de Redmine et Kanboard ; Claude-Code-Usage-Monitor (`Maciek-roboblog/Claude-Code-Usage-Monitor`, coût des sessions en temps réel) et Apache DevLake (`apache/devlake`, tableaux de bord de livraison DORA), près de ccusage.
+- **Annuaire** : awesome-claude-code (`hesreallyhim/awesome-claude-code`, licence CC BY-NC-ND 4.0 : usage non commercial, donc accepté depuis la règle 15 corrigée) avec `devtools/annuaire-standard`. Dis dans la première phrase que c'est un annuaire et que la licence interdit l'usage commercial. **Pas de page** pour awesome-claude-skills (aucun fichier de licence).
+
+Mets à jour les comparatifs existants de ces dossiers au lieu d'en créer : Diagrammes, Suivi de projet auto-hébergé, Versions et changelog, Générateurs de documentation, et le comparatif des lanceurs de commandes s'il existe. Aucune nouvelle notion : relie les fiches aux notions existantes (lien seul dans la notion, c'est autorisé). Si le sous-domaine « Annuaires et standards » atteint 5 pages, le dossier apparaît seul : fais la promotion proprement (`cloturer-brain`). Recompte les chiffres de `Home.md` et `CLAUDE.md` avec `audit_inventaire.py`.
+
+## Lot 25 — Notions voisines et pages fermées déjà au brain (vague 14)
+
+**Partie A — cinq notions** (`role: notion`, gabarit `Templates/Concept-Wiki.md`, schéma Mermaid si ça aide). Cherche d'abord dans l'index : si une notion couvre déjà le sujet, ne la double pas, ajoute un lien. Explique chaque notion en mots simples, avec un exemple d'usine ou de capteur.
+
+- **Weibull** : la loi qui décrit la durée de vie d'une machine avant panne (taux de panne qui monte, baisse ou reste plat).
+- **Shapley** : ce qui a pesé dans la décision d'un modèle, calculé comme un partage équitable entre les variables. Relie à SHAP si la brique existe.
+- **Mahalanobis** : la distance qui dit si un point est bizarre en tenant compte des corrélations entre capteurs. Relie à la détection d'anomalies.
+- **Granger** : le test pour savoir si une série aide à prédire une autre. Dis sa limite : ce n'est pas une preuve de cause.
+- **T² et SPE** : les deux indicateurs classiques de surveillance d'un procédé industriel, à partir d'une ACP. Relie à la maintenance prédictive et au contrôle statistique de procédé.
+
+**Partie B — Neptune.** floSa donne son accord pour retirer la page **seulement si** tu confirmes à une source officielle que le service hébergé est arrêté. Si oui : `git rm` de la page, puis chaque `[[Neptune]]` devient du texte simple « Neptune (service arrêté en mars 2026) », y compris dans les comparatifs (page et `.base`), les `alternatives:` et les hubs. Régénère, valide. Si non confirmé : ne supprime rien et dis-le.
+
+**Partie C — les 31 autres pages fermées ou payantes** (floSa les **garde toutes**, par connaissance : AWS S3, SageMaker, Cloudflare R2, Vertex AI, Azure ML, Snowflake, Databricks, Pinecone, Modal, OpenRouter, Cohere Rerank, LlamaParse, LangSmith, Zapier, gumloop, Figma, DataRobot, Alteryx, Comet, Weights & Biases, Postman, GitHub Actions, DataGrip, SQL Server, Dataiku, LM Studio, LM Studio Bionic, Obsidian, TensorRT, Page to Markdown, Superwhisper). floSa autorise ici, pour ces 31 briques seulement, de modifier la **première phrase** et la ligne `alternatives:` / `## Alternatives`, rien d'autre. Pour chacune, la première phrase dit : ce que c'est, et si c'est payant, cloud seulement, ou gratuit en local. Ajoute, si elle existe au brain, l'alternative libre ou sur site (exemple : Zapier renvoie vers n8n). La page ne dit jamais « n'utilise pas » : elle dit ce que c'est, et que rien n'empêche de l'utiliser. Vérifie aussi que LM Studio et LM Studio Bionic se renvoient l'un à l'autre. Pour les pages `open-core` et `source-available` (une soixantaine), ne modifie rien : liste seulement dans ta synthèse celles dont la première phrase ne dit pas la nature.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -370,3 +402,5 @@ floSa veut les annuaires et les standards **à part des outils**, jamais mêlés
 - [x] Lot 21 — documenter et dessiner l'architecture
 - [x] Lot 22 — suivi de projet auto-hébergé et mesure
 - [x] Lot 23 — annuaires et standards, à part
+- [ ] Lot 24 — outils manquants
+- [ ] Lot 25 — notions voisines et pages fermées déjà au brain
