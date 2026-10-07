@@ -1,7 +1,7 @@
 ---
 role: brique
 nom: Apache DevLake
-alias: [devlake, apache/devlake, DevLake]
+alias: [DevLake, apache/devlake]
 pitch: "Plateforme à héberger (Apache-2.0, Go) qui collecte les données dispersées des outils de développement — GitHub, GitLab, Jenkins, Jira, SonarQube — et les rend en tableaux de bord Grafana prêts à l'emploi, dont les mesures DORA, extensibles en SQL — mais elle n'a que des versions bêta, et se déploie avec Docker Compose ou Helm avec ses bases et son Grafana."
 categorie: devtools/projet
 famille: plateforme

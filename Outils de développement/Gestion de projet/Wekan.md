@@ -1,7 +1,7 @@
 ---
 role: brique
 nom: Wekan
-alias: [wekan, WeKan, wekan/wekan]
+alias: [WeKan, wekan/wekan]
 pitch: "Application web de tableaux Kanban à héberger (MIT, JavaScript et Meteor), sur le modèle de Trello : couloirs, listes, cartes, vues tableau, calendrier et Gantt, modules Scrum et graphiques de flux, règles automatiques, imports depuis Trello, Jira, GitHub ou Kanboard, connexion LDAP, SAML ou OAuth2 — mais l'outil est large, sa cadence de versions est très rapide (six en cinq jours début octobre 2026), et le support officiel public se limite aux tickets GitHub."
 categorie: devtools/projet
 famille: application
