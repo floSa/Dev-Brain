@@ -57,19 +57,15 @@ Le flux par défaut (profil `core`) compte six commandes : `propose`, `explore`,
 | Du code **existant** à faire évoluer : les deltas évitent de spécifier tout le système avant le premier changement | Correctif d'une ligne : la doc (*Core Concepts*) reconnaît que la cérémonie peut ne rien rapporter à ce niveau |
 | Relire le **plan** en pull request, avec le code : la spec et le diff voyagent dans la même branche | Il faut des rôles nommés, un PRD signé et un suivi des stories : c'est l'étage de [[BMAD]], pas d'OpenSpec |
 | Plusieurs agents de code dans l'équipe : plus de trente outils pris en charge, chacun reçoit ses commandes ou ses skills | Une chaîne d'outils qu'on veut figée : le projet sort des versions chaque semaine (v1.14.1 le 2026-10-06, v1.14.0 le 2026-09-30) et a déjà changé de flux une fois |
-| Repartir d'un contexte vide : le plan est en fichiers, une nouvelle session reprend à `/opsx:apply` | Un poste sans accès réseau sortant : la télémétrie anonyme est active par défaut (voir *Mise en œuvre*) |
+| Repartir d'un contexte vide : le plan est en fichiers, une nouvelle session reprend à `/opsx:apply` | Un poste sans accès réseau sortant : la télémétrie anonyme est active par défaut (voir *Exécution*) |
 | Une planification qui touche plusieurs dépôts : les *stores* (bêta) mettent le plan dans un dépôt à part | Compter sur les *stores* en production : la doc les dit en bêta, avec des noms de commandes et des formats susceptibles de changer |
 
 ## Mise en œuvre
 
 - Installation — `npm install -g @fission-ai/openspec@latest` (Node.js 20.19.0 ou plus), ou `brew install openspec` ; aussi pnpm, yarn, bun et Nix d'après le README
-- Point d'entrée — `openspec init` dans le dépôt : crée `openspec/` et écrit, pour chaque outil choisi, ses commandes et ses skills (`--tools claude,cursor`, `all`, `none` pour les scripts)
-- Invocation — dans le chat de l'agent, pas dans le terminal : `/opsx:explore`, `/opsx:propose ajouter-le-mode-sombre`, `/opsx:apply`, `/opsx:archive`. L'écriture dépend de l'outil : `/opsx-propose` (Cursor, GitHub Copilot), `@opsx-propose` (Amazon Q), `$openspec-propose` (Codex)
-- Terminal — la CLI sert à l'échafaudage, au suivi et à la vérification : `openspec list`, `view`, `show`, `validate`, `status`, `archive`, plus `openspec config`
-- Équipe — OpenSpec ne touche jamais à git : il lit et écrit du Markdown, on commite `openspec/` comme le code
-- Personnalisation — `openspec/config.yaml` (contexte du projet, règles par artefact) et schémas de flux sur mesure
-- Télémétrie — statistiques anonymes (nom de commande et version), **actives tant qu'on ne les coupe pas** : `openspec config set telemetry.enabled false`, ou `OPENSPEC_TELEMETRY=0`, ou `DO_NOT_TRACK=1` ; coupées d'office en CI. La vérification de version de `openspec update` interroge le registre npm
-- Exécution — sur le poste, sans service à héberger ; les modèles sont ceux des agents
+- Point d'entrée — `openspec init` dans le dépôt : crée `openspec/` et écrit, pour chaque outil choisi, ses commandes et ses skills (`--tools claude,cursor`, `all`, `none` pour les scripts). Ensuite, **dans le chat de l'agent, pas dans le terminal** : `/opsx:explore`, `/opsx:propose ajouter-le-mode-sombre`, `/opsx:apply`, `/opsx:archive` ; l'écriture dépend de l'outil : `/opsx-propose` (Cursor, GitHub Copilot), `@opsx-propose` (Amazon Q), `$openspec-propose` (Codex). La CLI sert à l'échafaudage, au suivi et à la vérification : `openspec list`, `view`, `show`, `validate`, `status`, `archive`, `config`
+- Prérequis — Node.js 20.19.0 ou plus ; un agent de code pris en charge (la doc en liste plus de trente) ; OpenSpec ne touche jamais à git : il lit et écrit du Markdown, on commite `openspec/` comme le code
+- Exécution — sur le poste, sans service à héberger ; les modèles sont ceux des agents. Réglages dans `openspec/config.yaml` (contexte du projet, règles par artefact) et schémas de flux sur mesure. **Télémétrie** : statistiques anonymes (nom de commande et version), actives tant qu'on ne les coupe pas — `openspec config set telemetry.enabled false`, ou `OPENSPEC_TELEMETRY=0`, ou `DO_NOT_TRACK=1` ; coupées d'office en CI ; la vérification de version de `openspec update` interroge le registre npm
 - Coût — gratuit (MIT) ; la dépense est celle du modèle de l'agent piloté
 
 ## Écosystème
