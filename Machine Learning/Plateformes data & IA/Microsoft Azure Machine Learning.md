@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-L'écosystème de machine learning d'Azure, organisé autour d'un **espace de travail** qui
+Ensemble de services de machine learning d'Azure, payants à l'usage et managés dans le cloud ; le calcul peut tourner sur un cluster Kubernetes du client relié par Azure Arc, le plan de contrôle restant facturé par Azure. L'écosystème de machine learning d'Azure, organisé autour d'un **espace de travail** qui
 rassemble jeux de données, calculs, expériences, registre de modèles et endpoints. Tout s'y
 pilote de trois façons interchangeables : l'interface, le SDK Python, ou des fichiers YAML
 passés à la ligne de commande — ce dernier point en fait la plus déclarative des trois offres
@@ -66,6 +66,7 @@ Azure, et un abonnement demeure obligatoire.
 - [[Dataiku]] — Plateforme data et IA de bout en bout, auto-hébergeable : un même projet se construit en interface visuelle ou en Python, R et SQL, avec préparation, entraînement, déploiement et gouvernance sous une seule console et un seul modèle de droits. — la suite indépendante du cloud, dont le plan de contrôle lui-même s'installe sur site.
 - [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la couche unique posée par-dessus le cloud, dont Azure propose une édition intégrée.
 - [[DataRobot]] — Plateforme d'AutoML et de MLOps : elle entraîne et classe des dizaines de modèles candidats, puis déploie et surveille celui qu'on retient ; auto-hébergeable sur Kubernetes ou managée. — même socle Kubernetes, mais installé en entier chez le client.
+- voisin : [[Kubeflow]] — boîte à outils ML open source sur Kubernetes, à déployer sur ses propres serveurs : notebooks, pipelines, entraînement distribué et serving, sans service cloud ni licence.
 
 ## Ressources
 
