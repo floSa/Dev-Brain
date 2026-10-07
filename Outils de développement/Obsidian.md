@@ -42,7 +42,7 @@ DevBrain — le vault courant.
 | Prendre si | Écarter si |
 |---|---|
 | Construire une mémoire de connaissances durable et navigable : notes liées, graphe, recherche | Édition collaborative en temps réel à plusieurs auteurs : ce n'est pas sa cible → un wiki d'équipe |
-| Garder ses données en local, en markdown pérenne, sans dépendre d'un SaaS | Documentation publique versionnée par une équipe → un générateur de site sur un dépôt git (MkDocs, Docusaurus) |
+| Garder ses données en local, en markdown pérenne, sans dépendre d'un SaaS | Documentation publique versionnée par une équipe → un générateur de site sur un dépôt git ([[MkDocs]], [[Docusaurus]]) |
 | Étendre l'outil à ses usages par plugins : bases de notes, canevas, automatisation | Le programme n'est pas ouvert, même si les notes le sont : aucune reprise possible du cœur |
 | | Trop de plugins fragilise le vault — dépendances croisées, casse à la mise à jour |
 
