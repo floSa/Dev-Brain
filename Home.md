@@ -15,7 +15,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 85 briques, 10 sous-domaines
 - [[Mathématiques]] — 8 briques, 5 sous-domaines
-- [[Outils de développement]] — 24 briques, 3 sous-domaines
+- [[Outils de développement]] — 29 briques, 3 sous-domaines
 - [[Signal & audio]] — 3 briques, 1 sous-domaine
 - [[Design & diagrammes]] — 8 briques, 1 sous-domaine
 - [[Calcul distribué]] — 7 briques
@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 74 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 75 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 
