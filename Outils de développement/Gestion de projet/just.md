@@ -9,7 +9,7 @@ domaines: [ai-eng, mlops]
 licence_type: open-source
 maturite: production
 langage: Rust
-alternatives: ["[[mise]]"]
+alternatives: ["[[mise]]", "[[Task]]"]
 complements: []
 tags: [task-runner]
 url_docs: https://just.systems/man/en/
@@ -52,7 +52,8 @@ Lanceur de commandes de projet : les commandes qu'on retape sans cesse (tests, f
 ### Alternatives
 
 - [[mise]] — Outil en ligne de commande (MIT, Rust) qui installe les outils de développement d'un projet (Node.js, Python, Go et des centaines d'autres), fixe ses variables d'environnement et lance ses tâches depuis un seul `mise.toml` — mais une version demandée comme « 24 » suit la série : il faut une épingle exacte ou un fichier de verrou pour que toute l'équipe ait la même. — ses tâches recouvrent les recettes de `just` ; `just` ne fait que les lancer, et ne gère ni outils ni versions.
-- voisin : Task (go-task) — même rôle en YAML, cité en texte simple, non fiché dans le brain. Make, que les deux remplacent pour ce seul usage.
+- [[Task]] — Lanceur de commandes de projet (MIT, Go) qui lit un fichier `Taskfile.yml` : tâches, dépendances entre tâches, variables, vérification des fichiers sources pour ne refaire que ce qui a changé, inclusion de Taskfiles venus d'une URL ou d'un dépôt — mais la syntaxe est du YAML avec gabarits, plus lourde que celle d'un justfile. — là où just lit des recettes courtes dans un justfile, Task lit du YAML avec suivi des fichiers sources.
+- voisin : Make, que just et Task remplacent pour ce seul usage.
 
 ## Ressources
 
