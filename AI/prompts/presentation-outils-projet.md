@@ -33,6 +33,8 @@ floSa ne sait pas encore comment ranger. Les deux options sont :
 
 **Ma recommandation** : des domaines séparés par étape du cycle de vie, avec les outils **et** les skills associés ; plus **une courte partie finale ou d'ouverture « Quel skill pour quelle étape »** qui les remet en tableau, à partir de la page `Quel skill pour quelle étape`. Ainsi on retrouve un skill par étape, et aussi d'un seul coup d'œil.
 
+**BMAD, cas particulier.** BMAD est à la fois une **méthode complète** et un **jeu de skills** (des agents nommés et leurs commandes). floSa l'a précisé : toute la méthodologie fait partie des skills. Traite-le donc **dans la partie 3**, sur plusieurs slides : d'abord la méthode, avec ses schémas Mermaid (`BMAD - la méthode`), puis le tour des skills agent par agent (`BMAD - tour complet des skills`). La partie 2 ne lui consacre qu'**une slide de renvoi** (son rôle de spécification). Même logique pour tout autre outil qui est une méthode **et** un jeu de skills (Superpowers, par exemple) : la méthode d'abord, les skills ensuite, dans la partie 3.
+
 Le catalogue ci-dessous est **déjà rangé en 9 parties** selon cette recommandation. Propose ton propre plan si tu le trouves meilleur, mais **présente-le à floSa avant de produire quoi que ce soit**.
 
 ## Méthode, dans cet ordre
@@ -96,13 +98,12 @@ Pages de fond à relire pour cette partie (notions, comparatifs, hubs) :
 - Développement piloté par la spécification — `Outils de développement/Gestion de projet/Développement piloté par la spécification.md` (notion)
 - PRD et user stories — `Outils de développement/Gestion de projet/PRD et user stories.md` (notion)
 - ADR et design docs — `Outils de développement/Gestion de projet/ADR et design docs.md` (notion)
-- BMAD - la méthode — `LLM & IA générative/Agents de code/BMAD - la méthode.md` (notion)
-- BMAD - tour complet des skills — `LLM & IA générative/Agents de code/BMAD - tour complet des skills.md` (notion)
 
 ### Partie 3. Les skills qui cadrent l'agent
 
 | Outil | Ce que c'est (extrait de la page) | Licence | Dépôt | Site | Page du brain |
 |---|---|---|---|---|---|
+| BMAD | Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM … | open-source | https://github.com/bmad-code-org/BMAD-METHOD | https://docs.bmad-method.org/ | `LLM & IA générative/Agents de code/BMAD.md` |
 | Superpowers | Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et … | open-source | https://github.com/obra/superpowers | https://github.com/obra/superpowers | `LLM & IA générative/Agents de code/Superpowers.md` |
 | Ponytail | Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie. | open-source | https://github.com/DietrichGebert/ponytail | https://github.com/DietrichGebert/ponytail | `LLM & IA générative/Agents de code/Ponytail.md` |
 | Skills d'Addy Osmani | Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle. | open-source | https://github.com/addyosmani/agent-skills | https://github.com/addyosmani/agent-skills | `LLM & IA générative/Agents de code/Skills d'Addy Osmani.md` |
@@ -112,6 +113,8 @@ Pages de fond à relire pour cette partie (notions, comparatifs, hubs) :
 
 Pages de fond à relire pour cette partie (notions, comparatifs, hubs) :
 
+- BMAD - la méthode — `LLM & IA générative/Agents de code/BMAD - la méthode.md` (notion)
+- BMAD - tour complet des skills — `LLM & IA générative/Agents de code/BMAD - tour complet des skills.md` (notion)
 - Quel skill pour quelle étape — `Outils de développement/Gestion de projet/Quel skill pour quelle étape.md` (notion)
 - Agent skills — `LLM & IA générative/Agents/Agent skills.md` (notion)
 
