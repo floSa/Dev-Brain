@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Application de dictée vocale propriétaire, gratuite avec limites puis payante (Pro), qui peut transcrire entièrement en local. Dictée vocale système : on parle, le texte s'insère dans l'application active. La transcription
+Application de dictée vocale gratuite avec limites puis payante (Pro), qui peut transcrire entièrement en local. Dictée vocale système : on parle, le texte s'insère dans l'application active. La transcription
 peut tourner **entièrement en local**, ce qui en fait un outil utilisable sur du contenu qu'on
 ne veut pas envoyer à un tiers. Deux moteurs locaux, aucun n'est maison : **whisper.cpp** pour
 la famille Whisper, **WhisperKit** (SDK Argmax) pour les modèles NVIDIA Parakeet. Le moteur de
