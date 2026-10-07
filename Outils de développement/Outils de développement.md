@@ -33,13 +33,14 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 
 ## Annuaires et standards
 
-Trois pages de ce dossier ne sont pas des outils : ce sont des **standards** et un **annuaire** de l'écosystème des agents de code, rangés à part par la règle D-R14 de la taxonomie (valeur `devtools/annuaire-standard`). Elles se lisent comme des références, rien ne s'y installe. Le dossier « Annuaires et standards » n'apparaîtra qu'à cinq pages ; d'ici là elles figurent parmi les briques ci-dessous.
+Quatre pages de ce dossier ne sont pas des outils : ce sont des **standards** et des **annuaires** de l'écosystème des agents de code, rangés à part par la règle D-R14 de la taxonomie (valeur `devtools/annuaire-standard`). Elles se lisent comme des références, rien ne s'y installe. Le dossier « Annuaires et standards » n'apparaîtra qu'à cinq pages ; d'ici là elles figurent parmi les briques ci-dessous.
 
 - [[AGENTS.md - le format]] — le fichier de contexte permanent d'un dépôt, lu par de nombreux agents.
 - [[Agent Skills - la spécification]] — le format SKILL.md des procédures chargées à la demande.
 - [[Skills d'Anthropic]] — le dépôt officiel de skills d'exemple : licence variable d'un skill à l'autre, seuls ceux sous Apache-2.0 se reprennent.
+- [[awesome-claude-code]] — la liste de ressources pour Claude Code : licence CC BY-NC-ND 4.0, usage non commercial et sans modification.
 
-Deux autres annuaires circulent et n'ont pas de page, faute de licence libre confirmée (règle 15 du chantier) : **awesome-claude-code**, liste de ressources pour Claude Code, publiée sous CC BY-NC-ND 4.0 (usage non commercial, sans dérivés) ; **awesome-claude-skills**, liste de skills et de plugins, dont le dépôt n'a pas de fichier de licence (le README annonce Apache-2.0, sans fichier à l'appui, et précise que chaque skill peut avoir la sienne). Les lire reste possible ; en reprendre le contenu demande de vérifier la licence de chaque entrée.
+Un autre annuaire circule et n'a pas de page : **awesome-claude-skills**, liste de skills et de plugins, dont le dépôt n'a pas de fichier de licence (le README annonce Apache-2.0, sans fichier à l'appui, et précise que chaque skill peut avoir la sienne). Le lire reste possible ; en reprendre le contenu demande de vérifier la licence de chaque entrée.
 
 <!-- AUTO:START -->
 ### Sous-domaines

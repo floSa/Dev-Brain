@@ -70,7 +70,7 @@ Trois d'entre eux sont étudiés dans [[Quel skill pour quelle étape]] (`skill-
 
 ### Alternatives
 
-- Aucune alternative déclarée : les jeux de skills de la communauté sont des outils à installer (rangés dans [[Agents de code]]) ; ce dépôt est un annuaire d'exemples. Deux autres annuaires, `awesome-claude-code` et `awesome-claude-skills`, sont cités dans le hub du domaine sans page (règle 15 : licence non libre ou absente).
+- Aucune alternative déclarée : les jeux de skills de la communauté sont des outils à installer (rangés dans [[Agents de code]]) ; ce dépôt est un annuaire d'exemples. Deux autres annuaires existent : [[awesome-claude-code]] (une page : licence non commerciale, acceptée) et `awesome-claude-skills`, cité dans le hub du domaine sans page (aucun fichier de licence).
 
 ### Compléments
 
