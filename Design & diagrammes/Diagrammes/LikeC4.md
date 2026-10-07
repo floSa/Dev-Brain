@@ -18,6 +18,11 @@ url_repo: https://github.com/likec4/likec4
 # LikeC4
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -63,7 +68,7 @@ Version 1.59.4 du 2026-09-21, dernier commit le 2026-10-07, environ 5,8 k étoil
 
 - Documentation — https://likec4.dev/
 - Dépôt — https://github.com/likec4/likec4
-- Bac à sable — https://playground.likec4.dev/
+- Documentation — https://playground.likec4.dev/ (bac à sable en ligne)
 
 ## Voir aussi
 
