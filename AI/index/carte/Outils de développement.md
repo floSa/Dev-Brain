@@ -1,7 +1,7 @@
 # Outils de développement — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 51 pages, chacune avec son chemin et une ligne.
+> 52 pages, chacune avec son chemin et une ligne.
 > Couvre : Gestion de projet, Notebooks, Qualité du code.
 
 ## Au niveau du dossier
@@ -43,6 +43,7 @@
 - [[Mesurer un projet - DORA, coût des agents et temps passé]] · notion · `Outils de développement/Gestion de projet/Mesurer un projet - DORA, coût des agents et temps passé.md` — Trois familles de mesures utiles à un projet de développement : la santé de la livraison (métriques DORA), le coût des agents (jetons et argent), le temps…
 - [[Modèle C4]] · notion · `Outils de développement/Gestion de projet/Modèle C4.md` — Le modèle C4, de Simon Brown, décrit l'architecture d'un logiciel à quatre niveaux de zoom : système (contexte), conteneurs, composants, code.
 - [[PRD et user stories]] · notion · `Outils de développement/Gestion de projet/PRD et user stories.md` — Le PRD (product requirements document) dit quoi construire et pourquoi : le problème, pour qui, jusqu'où, comment savoir que c'est réussi.
+- [[Quel skill pour quelle étape]] · notion · `Outils de développement/Gestion de projet/Quel skill pour quelle étape.md` — Un skill précis fait une chose à une étape donnée du cycle de vie.
 - [[Revue, tests et définition de terminé avec un agent]] · notion · `Outils de développement/Gestion de projet/Revue, tests et définition de terminé avec un agent.md` — Un agent s'arrête quand le travail « a l'air terminé ».
 - [[Vibe coding contre ingénierie agentique]] · notion · `Outils de développement/Gestion de projet/Vibe coding contre ingénierie agentique.md` — Vibe coding : produire du logiciel par prompts en acceptant le code sans le lire.
 - [[Comparatif - Suivi de projet auto-hébergé]] · comparatif · `Outils de développement/Gestion de projet/Comparatif - Suivi de projet auto-hébergé.md` — le modèle (un tableau ou une application à plusieurs projets), puis le poids à héberger, puis l'état d'entretien.

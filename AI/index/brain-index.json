@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1120,
+  "count": 1126,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -57,7 +57,13 @@
       "Assistants",
       "BMAD",
       "Fichiers de contexte pour agents",
-      "i-have-adhd"
+      "Ponytail",
+      "Quel skill pour quelle étape",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
+      "Superpowers",
+      "i-have-adhd",
+      "pm-skills"
     ],
     "agents": [
       "ADR et design docs",
@@ -130,16 +136,21 @@
       "PRD et user stories",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
+      "Ponytail",
       "PraisonAI",
       "PydanticAI",
+      "Quel skill pour quelle étape",
       "Qwen Code",
       "RAG agentique",
       "Reliability patterns",
       "Revue, tests et définition de terminé avec un agent",
       "Sandboxing de code généré",
       "Semantic Kernel",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
       "Sous-agents et isolation du contexte",
       "Spec Kit",
+      "Superpowers",
       "Text-to-SQL",
       "Tool use patterns",
       "Vanna",
@@ -158,6 +169,7 @@
       "n8n",
       "open_deep_research",
       "pi",
+      "pm-skills",
       "smolagents",
       "swarm-forge",
       "t3code"
@@ -538,9 +550,13 @@
       "Kilo Code",
       "Maka",
       "OpenCode",
+      "Ponytail",
       "Qwen Code",
       "Revue, tests et définition de terminé avec un agent",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
       "Spec Kit",
+      "Superpowers",
       "Vibe coding contre ingénierie agentique",
       "Zoo Code",
       "ai-memory",
@@ -3182,10 +3198,12 @@
       "Mesurer un projet - DORA, coût des agents et temps passé",
       "Modèle C4",
       "PRD et user stories",
+      "Quel skill pour quelle étape",
       "Redmine",
       "Revue, tests et définition de terminé avec un agent",
       "Vibe coding contre ingénierie agentique",
-      "ccusage"
+      "ccusage",
+      "pm-skills"
     ],
     "projection": [
       "Algèbre linéaire",
@@ -3862,7 +3880,13 @@
       "SimPy"
     ],
     "skills": [
-      "Gestion de projet"
+      "Gestion de projet",
+      "Ponytail",
+      "Quel skill pour quelle étape",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
+      "Superpowers",
+      "pm-skills"
     ],
     "slo": [
       "SLO et alerting"
@@ -12353,6 +12377,35 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/Ponytail.md",
+      "nom": "Ponytail",
+      "alias": [
+        "DietrichGebert/ponytail",
+        "ponytail skill"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Superpowers]]",
+        "[[Skills d'Addy Osmani]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Qwen Code.md",
       "nom": "Qwen Code",
       "alias": [
@@ -12381,6 +12434,69 @@
         "[[Goose]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Skills d'Addy Osmani.md",
+      "nom": "Skills d'Addy Osmani",
+      "alias": [
+        "agent-skills",
+        "addyosmani/agent-skills",
+        "Addy Osmani agent skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Superpowers]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "complements": [
+        "[[Ponytail]]",
+        "[[pm-skills]]"
+      ],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Skills de Matt Pocock.md",
+      "nom": "Skills de Matt Pocock",
+      "alias": [
+        "mattpocock/skills",
+        "Skills For Real Engineers",
+        "mattpocock-skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Superpowers]]",
+        "[[Skills d'Addy Osmani]]"
+      ],
+      "complements": [
+        "[[Ponytail]]"
+      ],
       "maturite": null
     },
     {
@@ -12414,6 +12530,36 @@
         "[[Aider]]",
         "[[Cline]]",
         "[[Continue]]"
+      ],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Superpowers.md",
+      "nom": "Superpowers",
+      "alias": [
+        "obra/superpowers",
+        "superpowers skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Skills d'Addy Osmani]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "complements": [
+        "[[Ponytail]]"
       ],
       "maturite": null
     },
@@ -12564,6 +12710,33 @@
         "[[Goose]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/pm-skills.md",
+      "nom": "pm-skills",
+      "alias": [
+        "phuryn/pm-skills",
+        "PM Skills Marketplace"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "project-management",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Skills d'Addy Osmani]]"
+      ],
       "maturite": null
     },
     {
@@ -30886,6 +31059,34 @@
       "tags": [
         "project-management",
         "spec-driven",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Quel skill pour quelle étape.md",
+      "nom": "Quel skill pour quelle étape",
+      "alias": [
+        "choisir un skill",
+        "skills par étape du cycle de vie",
+        "catalogue de skills",
+        "quel skill utiliser"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "skills",
+        "agent-skill",
         "agents"
       ],
       "alternatives": null,

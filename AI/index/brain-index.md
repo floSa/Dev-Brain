@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1120 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1126 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -324,8 +324,13 @@
 - **Maka** — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 - **OpenCode** — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
 - **pi** — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- **pm-skills** — Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.
+- **Ponytail** — Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.
 - **Qwen Code** — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
+- **Skills d'Addy Osmani** — Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.
+- **Skills de Matt Pocock** — Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.
 - **Spec Kit** — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- **Superpowers** — Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».
 - **swarm-forge** — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - **t3code** — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - **Zoo Code** — Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.
@@ -835,6 +840,7 @@
 - **Mesurer un projet - DORA, coût des agents et temps passé** — domaines : mlops, ai-eng · alias : DORA, DORA metrics, four keys, métriques de livraison, coût des agents, jetons, time tracking, suivi du temps, Goodhart
 - **Modèle C4** — domaines : ai-eng, mlops, data-eng · alias : C4, C4 model, C4 diagrams, diagrammes C4, Context Containers Components Code, modèle C4 de Simon Brown
 - **PRD et user stories** — domaines : ai-eng, data-eng · alias : PRD, product requirements document, document d'exigences produit, user story, user stories, histoires utilisateur, job stories, critères d'acceptation, INVEST
+- **Quel skill pour quelle étape** — domaines : ai-eng, ml-eng · alias : choisir un skill, skills par étape du cycle de vie, catalogue de skills, quel skill utiliser
 - **Revue, tests et définition de terminé avec un agent** — domaines : ai-eng, ml-eng, mlops · alias : definition of done, DoD, définition de terminé, revue de code d'agent, tests d'abord, test-first avec agent, vérification de code généré
 - **Vibe coding contre ingénierie agentique** — domaines : ai-eng, ml-eng · alias : vibe coding, agentic engineering, ingénierie agentique, vibe engineering
 

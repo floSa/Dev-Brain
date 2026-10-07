@@ -22,6 +22,7 @@ tags: [project-management, spec-driven, adr, skills]
 ## Choisir
 
 - Démarrer un projet avec un agent et ne pas savoir par où commencer → [[Cycle de vie d'un projet assisté par agent]], puis la page de l'étape qui bloque.
+- Choisir un skill précis pour une étape : le tableau étape, besoin, skill, jeu → [[Quel skill pour quelle étape]], qui renvoie aux jeux [[Superpowers]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Ponytail]] et [[pm-skills]].
 - Une fonctionnalité floue à cadrer → [[PRD et user stories]] ; une fois cadrée, la spécification exécutable : [[Développement piloté par la spécification]], avec [[Spec Kit]] (spécification, plan, tâches) ou [[BMAD]] (un jeu d'agents et de workflows qui couvre tout le cycle, jusqu'aux stories).
 - Organiser le travail, seul ou en petite équipe → [[Backlog, Kanban, Scrum et Shape Up]] : en solo, un backlog et un tableau suffisent.
 - Une décision d'architecture à garder → [[ADR et design docs]] ; la structure du système à dessiner → [[Modèle C4]], avec [[Mermaid]], [[Excalidraw]], [[draw.io]] ou [[GitDiagram]] (un schéma d'un dépôt existant).
@@ -46,6 +47,7 @@ tags: [project-management, spec-driven, adr, skills]
 - [[Mesurer un projet - DORA, coût des agents et temps passé]] — domaines : mlops, ai-eng
 - [[Modèle C4]] — domaines : ai-eng, mlops, data-eng
 - [[PRD et user stories]] — domaines : ai-eng, data-eng
+- [[Quel skill pour quelle étape]] — domaines : ai-eng, ml-eng
 - [[Revue, tests et définition de terminé avec un agent]] — domaines : ai-eng, ml-eng, mlops
 - [[Vibe coding contre ingénierie agentique]] — domaines : ai-eng, ml-eng
 

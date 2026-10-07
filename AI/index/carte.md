@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1024 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1030 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -29,15 +29,15 @@
   - Forges & CI-CD — 6 briques · 1 notion · 1 comparatif
 - **Documents** — 2 briques → [détail](carte/Documents.md)
 - **Interfaces & apps data** — 4 briques · 2 comparatifs → [détail](carte/Interfaces%20%26%20apps%20data.md)
-- **LLM & IA générative** — 102 briques · 67 notions · 11 comparatifs → [1/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md) · [2/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
+- **LLM & IA générative** — 107 briques · 67 notions · 11 comparatifs → [1/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md) · [2/2](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Agents — 12 briques · 12 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
-  - Agents de code — 18 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Agents de code — 23 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
   - Assistants — 8 briques · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
   - Fine-tuning — 5 briques · 9 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
   - Modèles de langage — 4 briques · 10 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
   - Mémoire des agents — 6 briques · 1 notion · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
   - Observabilité des LLM — 4 briques · 1 notion · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
-  - Passerelles — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%201%20sur%202.md)
+  - Passerelles — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - RAG & retrieval — 9 briques · 12 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Runtimes — 9 briques · 6 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Sortie typée — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
@@ -70,8 +70,8 @@
   - Théorie de l'information — 7 notions
 - **Médias** — 4 briques → [détail](carte/M%C3%A9dias.md)
 - **Observabilité** — 12 briques · 3 notions → [détail](carte/Observabilit%C3%A9.md)
-- **Outils de développement** — 29 briques · 17 notions · 5 comparatifs → [détail](carte/Outils%20de%20d%C3%A9veloppement.md)
-  - Gestion de projet — 5 briques · 13 notions · 1 comparatif
+- **Outils de développement** — 29 briques · 18 notions · 5 comparatifs → [détail](carte/Outils%20de%20d%C3%A9veloppement.md)
+  - Gestion de projet — 5 briques · 14 notions · 1 comparatif
   - Notebooks — 5 briques · 1 notion
   - Qualité du code — 4 briques · 1 notion · 1 comparatif
 - **Patterns** — 9 patterns → [détail](carte/Patterns.md)
