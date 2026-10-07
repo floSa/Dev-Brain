@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1114,
+  "count": 1117,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -56,7 +56,10 @@
       "Archify",
       "Assistants",
       "BMAD",
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Fichiers de contexte pour agents",
+      "OpenSpec",
       "i-have-adhd"
     ],
     "agents": [
@@ -75,6 +78,8 @@
       "Assistants",
       "AutoGen",
       "BMAD",
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Backlog, Kanban, Scrum et Shape Up",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
@@ -485,6 +490,7 @@
     ],
     "cli": [
       "Comparatif - Frameworks CLI",
+      "OpenSpec",
       "Outils de développement",
       "Spec Kit",
       "Typer",
@@ -526,6 +532,8 @@
       "Aider",
       "Archify",
       "BMAD",
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Branches courtes et worktrees pour agents",
       "Cline",
       "Comparatif - Assistants de code IA",
@@ -537,6 +545,7 @@
       "Kilo Code",
       "Maka",
       "OpenCode",
+      "OpenSpec",
       "Qwen Code",
       "Revue, tests et définition de terminé avec un agent",
       "Spec Kit",
@@ -2666,6 +2675,8 @@
       "Architecture deep agent",
       "AutoGen",
       "BMAD",
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Claude Agent SDK",
       "Comparatif - Frameworks LLM",
       "CrewAI",
@@ -3159,6 +3170,8 @@
     ],
     "project-management": [
       "ADR et design docs",
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Backlog, Kanban, Scrum et Shape Up",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
@@ -3170,6 +3183,7 @@
       "Gestion de projet",
       "Mesurer un projet - DORA, coût des agents et temps passé",
       "Modèle C4",
+      "OpenSpec",
       "PRD et user stories",
       "Revue, tests et définition de terminé avec un agent",
       "Vibe coding contre ingénierie agentique"
@@ -3857,9 +3871,12 @@
       "needle"
     ],
     "spec-driven": [
+      "BMAD - la méthode",
+      "BMAD - tour complet des skills",
       "Cycle de vie d'un projet assisté par agent",
       "Développement piloté par la spécification",
       "Gestion de projet",
+      "OpenSpec",
       "PRD et user stories"
     ],
     "spectrogram": [
@@ -12054,6 +12071,69 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/BMAD - la méthode.md",
+      "nom": "BMAD - la méthode",
+      "alias": [
+        "BMAD : la méthode",
+        "méthode BMAD",
+        "BMad Method",
+        "Agile AI-Driven Development",
+        "AiDD"
+      ],
+      "role": "notion",
+      "categorie": "llm/agent-de-code",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "spec-driven",
+        "agents",
+        "multi-agent",
+        "agent-skill",
+        "code-assistant"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/BMAD - tour complet des skills.md",
+      "nom": "BMAD - tour complet des skills",
+      "alias": [
+        "BMAD : tour complet des skills",
+        "skills BMAD",
+        "commandes BMAD",
+        "agents BMAD",
+        "modules BMAD",
+        "bmad-build",
+        "bmad-spec",
+        "bmad-ticket"
+      ],
+      "role": "notion",
+      "categorie": "llm/agent-de-code",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agent-skill",
+        "agents",
+        "multi-agent",
+        "project-management",
+        "spec-driven",
+        "code-assistant"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/BMAD.md",
       "nom": "BMAD",
       "alias": [
@@ -12064,7 +12144,7 @@
       "role": "brique",
       "categorie": "llm/agent-de-code",
       "famille": "extension",
-      "langage": "JavaScript",
+      "langage": "Python",
       "domaines": [
         "ai-eng"
       ],
@@ -12077,7 +12157,8 @@
         "code-generation"
       ],
       "alternatives": [
-        "[[Spec Kit]]"
+        "[[Spec Kit]]",
+        "[[OpenSpec]]"
       ],
       "complements": [
         "[[Aider]]",
@@ -12327,6 +12408,36 @@
         "[[Goose]]",
         "[[Qwen Code]]",
         "[[Kilo Code]]"
+      ],
+      "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/OpenSpec.md",
+      "nom": "OpenSpec",
+      "alias": [
+        "openspec",
+        "Fission-AI/OpenSpec",
+        "@fission-ai/openspec",
+        "OPSX"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "TypeScript",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.",
+      "tags": [
+        "spec-driven",
+        "code-assistant",
+        "agent-skill",
+        "project-management",
+        "cli"
+      ],
+      "alternatives": [
+        "[[BMAD]]"
       ],
       "complements": [],
       "maturite": null

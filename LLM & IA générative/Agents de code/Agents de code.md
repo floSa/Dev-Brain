@@ -47,6 +47,10 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - Écrire moi-même la boucle d'agent → [[Agents]], pas ce dossier.
 
 <!-- AUTO:START -->
+### Notions
+- [[BMAD - la méthode]] — domaines : ai-eng
+- [[BMAD - tour complet des skills]] — domaines : ai-eng
+
 ### Briques
 - [[ai-memory]] — Serveur MCP de mémoire long terme pour CLI de code (MIT, Rust) : capture les sessions, les consolide en wiki markdown versionné sur SQLite/FTS5, et permet de reprendre sous Codex une tâche entamée sous Claude Code.
 - [[Aider]] — Pair-programmeur IA dans le terminal : édite ton dépôt git en langage naturel, commit automatique, agnostique de l'éditeur.
@@ -60,6 +64,7 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - [[Kilo Code]] — Agent de code open source (MIT, TypeScript) pour VS Code, JetBrains et le terminal, bâti sur le code d'OpenCode : agents Code, Plan, Ask et Debug, plus de 30 fournisseurs par clé propre et les serveurs locaux Ollama et LM Studio.
 - [[Maka]] — Espace de travail local-first pour agents IA, en incubation à l'ASF (Apache-2.0, Electron) — chaque message, appel d'outil et décision de permission est écrit dans un journal append-only rejouable sur la machine.
 - [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
+- [[OpenSpec]] — Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.
 - [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
 - [[Qwen Code]] — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
 - [[Spec Kit]] — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).

@@ -23,7 +23,7 @@ url_repo: https://github.com/bmad-code-org/BMAD-METHOD
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Extension JavaScript | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-04 |
+| Extension Python | open-source | dans le moteur hôte, rien à héberger | — | à jour · 2026-09-04 |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

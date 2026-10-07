@@ -1,8 +1,15 @@
 # LLM & IA générative — carte (2 sur 2)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 65 pages, chacune avec son chemin et une ligne.
-> Couvre : RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
+> 70 pages, chacune avec son chemin et une ligne.
+> Couvre : Passerelles, RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
+
+## Passerelles
+- [[LiteLLM]] · brique · `LLM & IA générative/Passerelles/LiteLLM.md` — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des…
+- [[OmniRoute]] · brique · `LLM & IA générative/Passerelles/OmniRoute.md` — Passerelle LLM auto-hébergée (TypeScript/Next.js, MIT) — agrège des centaines de fournisseurs derrière une API unique, avec combos ordonnés, fallback conscient…
+- [[OpenRouter]] · brique · `LLM & IA générative/Passerelles/OpenRouter.md` — Passerelle LLM managée (SaaS propriétaire) — une seule API OpenAI-compatible et une seule facture vers 300+ modèles de 60+ fournisseurs, avec routage et…
+- [[LLM caching]] · notion · `LLM & IA générative/Passerelles/LLM caching.md` — Mettre en cache la réponse d'un LLM pour éviter de réappeler le modèle sur une requête déjà traitée.
+- [[Routing and cascading]] · notion · `LLM & IA générative/Passerelles/Routing and cascading.md` — Deux décisions d'aiguillage pour servir chaque requête au meilleur coût.
 
 ## RAG & retrieval
 - [[bge-reranker]] · brique · `LLM & IA générative/RAG & retrieval/bge-reranker.md` — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus…
