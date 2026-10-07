@@ -103,3 +103,4 @@ Conclusion des auteurs : ne décrire que les exigences minimales (outillage spé
 - Gloaguen, Mündler, Müller, Raychev, Vechev (2026) — *Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?*, arXiv:2602.11988.
 - Anthropic (s. d.) — *How Claude remembers your project*, documentation de Claude Code : emplacements, imports, taille, cohérence, lecture d'`AGENTS.md`.
 - Aider (s. d.) — *Specifying coding conventions* ; Cline (s. d.) — *Cline Rules* : emplacements et formats de leurs fichiers de règles.
+- Fiche du format : [[AGENTS.md - le format]].
