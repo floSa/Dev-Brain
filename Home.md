@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 76 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 77 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 
