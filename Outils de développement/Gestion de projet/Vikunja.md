@@ -11,7 +11,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: single-node
-alternatives: ["[[Kanboard]]", "[[Redmine]]"]
+alternatives: ["[[Kanboard]]", "[[Redmine]]", "[[Wekan]]"]
 complements: []
 tags: [issue-tracking, project-management, self-hosted]
 url_docs: https://vikunja.io/docs/
@@ -57,7 +57,7 @@ Gestionnaire de tâches, pensé comme « le carnet où l'on garde tout » : des 
 
 - [[Kanboard]] — Application web de tableau Kanban à héberger (MIT, PHP, en mode maintenance) : colonnes, limite de travail en cours, couloirs, sous-tâches, actions automatiques, API JSON-RPC, sans fioriture. — là où Vikunja offre listes, Gantt et Kanban dans une application plus large, Kanboard s'en tient au tableau.
 - [[Redmine]] — Application web de gestion de projet à héberger (GPL v2 ou ultérieure, Ruby on Rails) : plusieurs projets, tickets au workflow configurable, diagramme de Gantt, wiki, suivi du temps et dépôts de code intégrés. — plus de projets, de tickets et de traçabilité ; Vikunja vise des listes de tâches plus simples.
-- voisin : [[Wekan]] — un Kanban à la Trello, MIT.
+- [[Wekan]] — Application web de tableaux Kanban à héberger (MIT, JavaScript et Meteor), sur le modèle de Trello : couloirs, listes, cartes, vues tableau, calendrier et Gantt, modules Scrum et graphiques de flux, règles automatiques, imports depuis Trello, Jira, GitHub ou Kanboard, connexion LDAP, SAML ou OAuth2 — mais l'outil est large, sa cadence de versions est très rapide (six en cinq jours début octobre 2026), et le support officiel public se limite aux tickets GitHub. — un Kanban à la Trello, MIT ; Vikunja ajoute listes, Gantt et rappels.
 
 ## Ressources
 
