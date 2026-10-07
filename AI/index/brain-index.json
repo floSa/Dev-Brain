@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1151,
+  "count": 1155,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -249,6 +249,7 @@
       "Cause racine d'une anomalie",
       "Comparatif - Détection d'anomalies",
       "Contrôle statistique de procédé (SPC)",
+      "Distance de Mahalanobis",
       "Détection d'anomalies",
       "Détection d'anomalies en ligne",
       "Détection d'anomalies visuelle",
@@ -275,6 +276,7 @@
       "Théorie des valeurs extrêmes",
       "Time series anomaly detection",
       "Types d'anomalies et régimes de supervision",
+      "T² et SPE",
       "Évaluer une détection d'anomalies"
     ],
     "api-client": [
@@ -421,6 +423,7 @@
     ],
     "causal-inference": [
       "CausalImpact",
+      "Causalité de Granger",
       "Cause racine d'une anomalie",
       "Comparatif - Outils stats",
       "Diff-in-Diff",
@@ -711,7 +714,8 @@
       "Diagnostic de défauts de roulements",
       "Indicateurs de santé",
       "Santé de batterie (SOH et RUL)",
-      "Surveillance conditionnelle et modes de défaillance"
+      "Surveillance conditionnelle et modes de défaillance",
+      "T² et SPE"
     ],
     "confidence-interval": [
       "Bootstrap",
@@ -1222,6 +1226,7 @@
       "Réduction de dimension",
       "SVD",
       "Scikit-Learn",
+      "T² et SPE",
       "t-SNE and UMAP",
       "umap-learn"
     ],
@@ -1440,7 +1445,6 @@
       "Comparatif - Suivi d'expériences ML",
       "MLflow",
       "Model registry & versioning",
-      "Neptune",
       "Suivi d'expériences",
       "TensorBoard",
       "Weights & Biases"
@@ -1468,6 +1472,7 @@
       "Sparse autoencoders",
       "Superposition",
       "TransformerLens",
+      "Valeurs de Shapley",
       "interpreto",
       "nnsight"
     ],
@@ -1611,7 +1616,8 @@
       "Counterfactual Regret Minimization",
       "OpenSpiel",
       "Pattern - Moteur de jeu pur + IA séparée",
-      "Théorie des jeux"
+      "Théorie des jeux",
+      "Valeurs de Shapley"
     ],
     "gan": [
       "GANs",
@@ -1763,6 +1769,7 @@
     "hypothesis-testing": [
       "A/B testing",
       "Analyse de puissance",
+      "Causalité de Granger",
       "Comparatif - Outils stats",
       "Correction des tests multiples",
       "Diff-in-Diff",
@@ -2675,7 +2682,6 @@
       "MLflow",
       "Microsoft Azure Machine Learning",
       "Model registry & versioning",
-      "Neptune",
       "Suivi d'expériences",
       "Weights & Biases"
     ],
@@ -2777,6 +2783,7 @@
       "Correction des tests multiples"
     ],
     "multivariate": [
+      "Distance de Mahalanobis",
       "Indicateurs de santé",
       "Kats",
       "MANOVA et tests multivariés",
@@ -3180,6 +3187,7 @@
       "Indicateurs de santé",
       "Jeux de données PHM",
       "Jumeau numérique et modèles hybrides",
+      "Loi de Weibull",
       "Maintenance prédictive",
       "Maintenance prédictive avec peu de pannes",
       "Pattern - Détection d'anomalies en deux étages",
@@ -3218,6 +3226,7 @@
       "Chaînes de Markov",
       "Indicateurs de stock (rotation, couverture, rupture)",
       "Inégalités de concentration",
+      "Loi de Weibull",
       "Loi des grands nombres",
       "Modèle du vendeur de journaux (newsvendor)",
       "Modèles graphiques probabilistes",
@@ -3647,6 +3656,7 @@
       "Indicateurs de santé",
       "Jeux de données PHM",
       "Jumeau numérique et modèles hybrides",
+      "Loi de Weibull",
       "Politique de maintenance et coût",
       "PyBaMM",
       "RUL par analyse de survie",
@@ -4025,7 +4035,8 @@
     "statistical-process-control": [
       "Contrôle statistique de procédé (SPC)",
       "OEE et rendement global",
-      "Pattern - Détection d'anomalies en deux étages"
+      "Pattern - Détection d'anomalies en deux étages",
+      "T² et SPE"
     ],
     "statistical-viz": [
       "Visualisation",
@@ -4145,6 +4156,7 @@
     "survival-analysis": [
       "Analyse de survie",
       "Indicateurs de fiabilité (MTBF, MTTR, disponibilité)",
+      "Loi de Weibull",
       "Maintenance prédictive et RUL",
       "RUL par analyse de survie",
       "Tests & estimation",
@@ -4240,6 +4252,7 @@
       "Autocorrelation",
       "Bases de données",
       "CausalImpact",
+      "Causalité de Granger",
       "Cause racine d'une anomalie",
       "Chronos",
       "Comparatif - Bases temporelles",
@@ -4454,6 +4467,7 @@
       "Comparatif - Détection d'anomalies",
       "DBSCAN",
       "DeepOD",
+      "Distance de Mahalanobis",
       "Détection d'anomalies visuelle",
       "Détection d'outliers multivariée",
       "Détection d'outliers univariée",
@@ -20607,6 +20621,34 @@
       "maturite": "experimental"
     },
     {
+      "path": "Machine Learning/Détection d'anomalies/Distance de Mahalanobis.md",
+      "nom": "Distance de Mahalanobis",
+      "alias": [
+        "distance de Mahalanobis",
+        "Mahalanobis distance",
+        "distance généralisée",
+        "distance de Mahalanobis au carré",
+        "D² de Mahalanobis"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "anomaly-detection",
+        "multivariate",
+        "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/Détection d'anomalies/Détection d'anomalies en ligne.md",
       "nom": "Détection d'anomalies en ligne",
       "alias": [
@@ -21195,6 +21237,42 @@
       "tags": [
         "anomaly-detection",
         "unsupervised"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Détection d'anomalies/T² et SPE.md",
+      "nom": "T² et SPE",
+      "alias": [
+        "T2 et SPE",
+        "T² de Hotelling",
+        "T2 de Hotelling",
+        "Hotelling T2",
+        "SPE",
+        "Q statistic",
+        "statistique Q",
+        "Squared prediction error",
+        "erreur de prédiction quadratique",
+        "surveillance multivariée par ACP",
+        "MSPC"
+      ],
+      "role": "notion",
+      "categorie": "ml/anomalie",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "statistical-process-control",
+        "anomaly-detection",
+        "condition-monitoring",
+        "dimensionality-reduction"
       ],
       "alternatives": null,
       "complements": null,
@@ -22120,6 +22198,34 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Interprétabilité/Valeurs de Shapley.md",
+      "nom": "Valeurs de Shapley",
+      "alias": [
+        "Shapley",
+        "Shapley value",
+        "Shapley values",
+        "valeur de Shapley",
+        "attribution de Shapley",
+        "partage équitable"
+      ],
+      "role": "notion",
+      "categorie": "ml/interpretabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "explainability",
+        "game-theory"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/Interprétabilité/interpreto.md",
@@ -25620,7 +25726,6 @@
       "alternatives": [
         "[[MLflow]]",
         "[[Weights & Biases]]",
-        "[[Neptune]]",
         "[[Comet]]",
         "[[ClearML]]"
       ],
@@ -25649,7 +25754,6 @@
       "alternatives": [
         "[[MLflow]]",
         "[[Weights & Biases]]",
-        "[[Neptune]]",
         "[[Comet]]",
         "[[Aim]]"
       ],
@@ -25677,7 +25781,6 @@
       "alternatives": [
         "[[MLflow]]",
         "[[Weights & Biases]]",
-        "[[Neptune]]",
         "[[ClearML]]",
         "[[Aim]]"
       ],
@@ -25720,7 +25823,6 @@
       ],
       "alternatives": [
         "[[Weights & Biases]]",
-        "[[Neptune]]",
         "[[Comet]]",
         "[[ClearML]]",
         "[[Aim]]",
@@ -25761,34 +25863,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "Machine Learning/Suivi d'expériences/Neptune.md",
-      "nom": "Neptune",
-      "alias": [
-        "neptune.ai",
-        "neptune-client",
-        "Neptune Scale"
-      ],
-      "role": "brique",
-      "categorie": "ml/tracking",
-      "famille": "plateforme",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.",
-      "tags": [
-        "experiment-tracking",
-        "model-registry"
-      ],
-      "alternatives": [
-        "[[MLflow]]",
-        "[[Weights & Biases]]",
-        "[[Comet]]",
-        "[[ClearML]]",
-        "[[Aim]]"
-      ],
-      "complements": [],
-      "maturite": "deprecated"
     },
     {
       "path": "Machine Learning/Suivi d'expériences/Suivi d'expériences.md",
@@ -25861,7 +25935,6 @@
       ],
       "alternatives": [
         "[[MLflow]]",
-        "[[Neptune]]",
         "[[Comet]]",
         "[[ClearML]]",
         "[[Aim]]",
@@ -25918,6 +25991,34 @@
       "tags": [
         "timeseries",
         "stochastic-process"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Séries temporelles/Causalité de Granger.md",
+      "nom": "Causalité de Granger",
+      "alias": [
+        "Granger",
+        "Granger causality",
+        "test de Granger",
+        "causalité au sens de Granger",
+        "grangercausalitytests"
+      ],
+      "role": "notion",
+      "categorie": "ml/series-temporelles",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "timeseries",
+        "causal-inference",
+        "hypothesis-testing"
       ],
       "alternatives": null,
       "complements": null,
@@ -34338,6 +34439,38 @@
       "tags": [
         "probability",
         "concentration"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Statistiques & inférence/Probabilités/Loi de Weibull.md",
+      "nom": "Loi de Weibull",
+      "alias": [
+        "Weibull",
+        "Weibull distribution",
+        "distribution de Weibull",
+        "Weibull à deux paramètres",
+        "courbe en baignoire",
+        "bathtub curve",
+        "durée de vie Weibull",
+        "B10"
+      ],
+      "role": "notion",
+      "categorie": "stats/probabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "probability",
+        "survival-analysis",
+        "predictive-maintenance",
+        "rul"
       ],
       "alternatives": null,
       "complements": null,

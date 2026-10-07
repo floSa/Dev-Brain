@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1151 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1155 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -649,7 +649,6 @@
 - **ClearML** — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 - **Comet** — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
 - **MLflow** — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
-- **Neptune** — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
 - **TensorBoard** — Boîte à outils de visualisation d'entraînement de TensorFlow — courbes de scalaires, histogrammes, graphe du modèle, images et projecteur d'embeddings depuis des event files locaux ; branché à PyTorch via torch.utils.tensorboard.
 - **Weights & Biases** — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
 
@@ -1028,6 +1027,7 @@
 - **Anomalies multivariées par apprentissage profond** — domaines : data-sci, ml-eng · alias : Deep learning pour anomalies multivariées, USAD, TranAD, Anomaly Transformer, LSTM-AE, TimesNet
 - **Cause racine d'une anomalie** — domaines : data-sci, ml-eng, mlops · alias : RCA, Analyse de cause racine, Root cause analysis, Cause racine, Propagation de panne, Root cause localization
 - **Contrôle statistique de procédé (SPC)** — domaines : data-sci, ml-eng · alias : SPC, Statistical process control, Maîtrise statistique des procédés, Cartes de contrôle, Control charts, Carte de Shewhart, Cartes EWMA, Capabilité de procédé, Cpk, Western Electric, Average run length
+- **Distance de Mahalanobis** — domaines : data-sci, ml-eng · alias : distance de Mahalanobis, Mahalanobis distance, distance généralisée, distance de Mahalanobis au carré, D² de Mahalanobis
 - **Détection d'anomalies en ligne** — domaines : data-sci, ml-eng, mlops · alias : Online anomaly detection, Streaming anomaly detection, Détection d'anomalies sur flux, Détection d'anomalies en streaming, Half-Space Trees, Random Cut Forest, RRCF
 - **Détection d'anomalies visuelle** — domaines : data-sci, ml-eng · alias : Visual anomaly detection, Inspection visuelle par IA, Détection de défauts non supervisée, Industrial anomaly detection, Contrôle qualité visuel non supervisé
 - **Détection d'outliers multivariée** — domaines : data-sci, ml-eng · alias : outliers multivarié, LOF, Isolation Forest, Elliptic Envelope, ECOD, COPOD, Mahalanobis
@@ -1042,6 +1042,7 @@
 - **Score et seuil d'alerte** — domaines : data-sci, ml-eng, mlops · alias : Seuil d'alerte, Seuillage des scores d'anomalie, Fatigue d'alerte, Taux de fausses alertes
 - **Time series anomaly detection** — domaines : data-sci, mlops · alias : Détection d'anomalies temporelles, Outliers temporels, Time series anomaly, anomaly detection, matrix profile, discord
 - **Types d'anomalies et régimes de supervision** — domaines : data-sci, ml-eng · alias : Typologie des anomalies, Anomalie ponctuelle contextuelle collective, Outlier novelty OOD, Contamination
+- **T² et SPE** — domaines : data-sci, ml-eng, mlops · alias : T2 et SPE, T² de Hotelling, T2 de Hotelling, Hotelling T2, SPE, Q statistic, statistique Q, Squared prediction error, erreur de prédiction quadratique, surveillance multivariée par ACP, MSPC
 - **Évaluer une détection d'anomalies** — domaines : data-sci, ml-eng · alias : Évaluation de la détection d'anomalies, Point-adjust, Métriques d'anomalies, VUS-PR, AU-PRO
 
 ### ml/apprentissage-profond
@@ -1109,6 +1110,7 @@
 - **Probing** — domaines : data-sci, ai-eng · alias : Probe, Probes, Sonde linéaire, Linear probe, Sondage, Diagnostic classifier, Probing classifier
 - **Sparse autoencoders** — domaines : data-sci, ai-eng · alias : SAE, Sparse autoencoder, Autoencodeur parcimonieux, Autoencodeur creux, TopK SAE, JumpReLU SAE, BatchTopK, Dictionary learning
 - **Superposition** — domaines : data-sci, ai-eng · alias : Superposition hypothesis, Hypothèse de superposition, Polysémanticité, Polysemanticity, Neurones polysémantiques
+- **Valeurs de Shapley** — domaines : data-sci, ml-eng · alias : Shapley, Shapley value, Shapley values, valeur de Shapley, attribution de Shapley, partage équitable
 
 ### ml/maintenance
 - **Diagnostic de défauts de roulements** — domaines : data-sci, mlops · alias : Diagnostic de roulements, Défauts de roulements, Bearing fault diagnosis, Spectre d'enveloppe, Kurtogramme
@@ -1178,6 +1180,7 @@
 ### ml/series-temporelles
 - **ARIMA SARIMA** — domaines : data-sci, ml-eng · alias : ARIMA, SARIMA, ARMA, Box-Jenkins, AutoARIMA
 - **Autocorrelation** — domaines : data-sci · alias : Autocorrélation, ACF, PACF, Fonction d'autocorrélation, Corrélogramme
+- **Causalité de Granger** — domaines : data-sci, ml-eng · alias : Granger, Granger causality, test de Granger, causalité au sens de Granger, grangercausalitytests
 - **Exponential smoothing** — domaines : data-sci, ml-eng · alias : Lissage exponentiel, ETS, Holt-Winters, SES, Holt, AutoETS
 - **Forecasting framing** — domaines : data-sci, ml-eng · alias : Cadrage forecasting, Cadrage d'une prévision, Forecasting problem framing
 - **Forecasting metrics** — domaines : data-sci, ml-eng · alias : Métriques de prévision, MAPE, sMAPE, MASE, WAPE, RMSSE, pinball loss, forecast accuracy
@@ -1337,6 +1340,7 @@
 ### stats/probabilite
 - **Chaînes de Markov** — domaines : data-sci · alias : Markov chains, propriété de Markov, Markov property
 - **Inégalités de concentration** — domaines : data-sci · alias : Concentration inequalities, Hoeffding, Chebyshev, inégalité de Markov
+- **Loi de Weibull** — domaines : data-sci, mlops · alias : Weibull, Weibull distribution, distribution de Weibull, Weibull à deux paramètres, courbe en baignoire, bathtub curve, durée de vie Weibull, B10
 - **Loi des grands nombres** — domaines : data-sci · alias : Law of large numbers, LGN, LLN
 - **Modèles de Markov cachés et filtre de Kalman** — domaines : data-sci · alias : HMM, hidden Markov model, modèle de Markov caché, Kalman filter, filtre de Kalman, state-space model, modèle à espace d'états, modèle d'état latent, Baum-Welch, Viterbi, forward-backward, EKF, UKF, extended Kalman filter, unscented Kalman filter, particle filter, filtre particulaire, RTS smoother, lisseur de Kalman, HSMM, linear Gaussian state-space model, LGSSM
 - **Mouvement brownien** — domaines : data-sci · alias : Brownian motion, processus de Wiener, Wiener process
