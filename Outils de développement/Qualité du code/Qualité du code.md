@@ -30,6 +30,7 @@ tags: [linter, formatter, type-checker, git-hooks]
 - [[Typage statique en Python]] — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops
 
 ### Briques
+- [[Lefthook]] — Gestionnaire de crochets git (MIT, Go) distribué en binaire unique qui lit un fichier `lefthook.yml`, lance les commandes en parallèle et choisit les fichiers à leur passer — mais il ne fournit pas de bibliothèque de contrôles prête à l'emploi : chaque commande est à écrire ou à appeler depuis le projet.
 - [[mypy]] — Vérificateur de types statique de référence pour Python (MIT, dépôt python/mypy) : le plus répandu des outils de typage, avec mode strict, daemon, cache incrémental et plugin Pydantic — mais plus lent que les nouveaux vérificateurs en Rust et sans déduction des types de retour.
 - [[pre-commit]] — Gestionnaire de hooks Git multi-langage (MIT) : un fichier .pre-commit-config.yaml épingle des dépôts de hooks, chacun exécuté dans son environnement isolé avant chaque commit — mais sans réseau il faut miroiter à la fois les dépôts de hooks et les paquets qu'ils installent.
 - [[Pyright]] — Vérificateur de types statique de Microsoft (MIT, écrit en TypeScript), sans plugins : inférence plus poussée que mypy, quatre modes de rigueur, sortie JSON — mais il exige Node, et le paquet PyPI `pyright` est un wrapper communautaire non affilié à Microsoft ; Pylance, son extension VS Code, est propriétaire.

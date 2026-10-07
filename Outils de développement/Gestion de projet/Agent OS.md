@@ -23,7 +23,7 @@ url_repo: https://github.com/buildermethods/agent-os
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Extension Shell | open-source | dans un agent hôte | production | amont non sondé |
+| Extension Shell | open-source | dans le moteur hôte, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
