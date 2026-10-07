@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web, CLI"
 langage: JavaScript
-alternatives: ["[[draw.io]]", "[[Archify]]", "[[LikeC4]]"]
+alternatives: ["[[draw.io]]", "[[Archify]]", "[[LikeC4]]", "[[D2]]", "[[PlantUML]]"]
 complements: []
 tags: [diagram, diagram-as-code]
 url_docs: https://mermaid.js.org/
@@ -59,6 +59,8 @@ l'auteur.
 - [[draw.io]] — Éditeur de diagrammes GUI open-source (Apache-2.0, JavaScript) : flowcharts, UML, réseaux, org-charts, BPMN… ; app web ou desktop, stockage sur ton drive, export multi-format, embarquable.
 - [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
 - [[LikeC4]] — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io. — le C4 de Mermaid est un type de diagramme expérimental, écrit à part ; LikeC4 décrit un modèle commun dont les vues sont calculées.
+- [[D2]] — Outil en ligne de commande (MPL-2.0, Go) qui transforme un langage de description de diagrammes en SVG, PNG, PDF, GIF ou PPTX, avec thèmes, plusieurs moteurs de placement, rendu au trait de crayon et animations — mais le langage lui est propre, aucune forge ne le rend nativement, et le moteur TALA est un module à part. — une syntaxe plus courte et un rendu plus soigné que Mermaid, mais aucune forge ne le rend nativement.
+- [[PlantUML]] — Outil Java (licences au choix : GPL, LGPL, Apache, EPL ou MIT) qui dessine des diagrammes UML et plus de vingt types — séquence, classes, activité, états, Gantt, carte mentale, JSON, YAML — à partir d'une description textuelle, en ligne de commande, en bibliothèque ou compilé pour le navigateur — mais GitHub ne les rend pas nativement, il faut une extension de navigateur ou un rendu en amont. — plus de types de diagrammes que Mermaid, mais un rendu par Java ou par extension.
 
 ## Ressources
 
