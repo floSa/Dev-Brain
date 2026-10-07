@@ -8,7 +8,7 @@ famille: cli
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: []
+alternatives: ["[[Lefthook]]"]
 complements: ["[[Ruff]]", "[[Gitleaks]]", "[[Semgrep]]", "[[mypy]]", "[[Pyright]]"]
 tags: [git-hooks]
 url_docs: https://pre-commit.com/
@@ -55,7 +55,8 @@ Version 4.6.2 du 2026-08-10, 15 603 étoiles le 2026-10-01, licence MIT.
 
 ### Alternatives
 
-- *Aucune alternative fichée dans le brain. Voisins non fichés : prek (réécriture en Rust, binaire unique, lit le même `.pre-commit-config.yaml` ; 0.5.4 du 2026-09-28, MIT, un seul mainteneur sur un compte personnel, créé en octobre 2024, adopté par CPython, Airflow et FastAPI), lefthook (Go, MIT, sans environnements isolés ni dépôts de hooks) et `core.hooksPath` vers un dossier de scripts versionné, la voie de ce dépôt.*
+- [[Lefthook]] — Gestionnaire de crochets git (MIT, Go) distribué en binaire unique qui lit un fichier `lefthook.yml`, lance les commandes en parallèle et choisit les fichiers à leur passer — mais il ne fournit pas de bibliothèque de contrôles prête à l'emploi : chaque commande est à écrire ou à appeler depuis le projet. — là où pre-commit installe des hooks publiés, chacun isolé, Lefthook lance en parallèle des commandes déjà présentes.
+- voisin : prek (réécriture en Rust, binaire unique, lit le même `.pre-commit-config.yaml` ; 0.5.4 du 2026-09-28, MIT, un seul mainteneur sur un compte personnel, créé en octobre 2024, adopté par CPython, Airflow et FastAPI), non fiché ; et `core.hooksPath` vers un dossier de scripts versionné, la voie de ce dépôt.
 
 ### Compléments
 
