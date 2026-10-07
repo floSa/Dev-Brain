@@ -53,6 +53,7 @@ tags: [anomaly-detection]
 - [[Anomalies multivariées par apprentissage profond]] — domaines : data-sci, ml-eng
 - [[Cause racine d'une anomalie]] — domaines : data-sci, ml-eng, mlops
 - [[Contrôle statistique de procédé (SPC)]] — domaines : data-sci, ml-eng
+- [[Distance de Mahalanobis]] — domaines : data-sci, ml-eng
 - [[Détection d'anomalies en ligne]] — domaines : data-sci, ml-eng, mlops
 - [[Détection d'anomalies visuelle]] — domaines : data-sci, ml-eng
 - [[Détection d'outliers multivariée]] — domaines : data-sci, ml-eng
@@ -67,6 +68,7 @@ tags: [anomaly-detection]
 - [[Score et seuil d'alerte]] — domaines : data-sci, ml-eng, mlops
 - [[Time series anomaly detection]] — domaines : data-sci, mlops
 - [[Types d'anomalies et régimes de supervision]] — domaines : data-sci, ml-eng
+- [[T² et SPE]] — domaines : data-sci, ml-eng, mlops
 - [[Évaluer une détection d'anomalies]] — domaines : data-sci, ml-eng
 
 ### Briques

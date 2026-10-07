@@ -35,6 +35,7 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 ### Notions
 - [[Chaînes de Markov]] — domaines : data-sci
 - [[Inégalités de concentration]] — domaines : data-sci
+- [[Loi de Weibull]] — domaines : data-sci, mlops
 - [[Loi des grands nombres]] — domaines : data-sci
 - [[Modèles de Markov cachés et filtre de Kalman]] — domaines : data-sci
 - [[Mouvement brownien]] — domaines : data-sci

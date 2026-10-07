@@ -24,8 +24,8 @@ pitch: Comprendre un jeu de données et en tirer un modèle qui répond à une q
 <!-- AUTO:START -->
 Axe métier **Data Science** (`data-sci`) — explorer par sous-domaine, puis descendre via le graphe local.
 
-- [[Machine Learning]] — 155 page(s)
-- [[Statistiques & inférence]] — 45 page(s)
+- [[Machine Learning]] — 159 page(s)
+- [[Statistiques & inférence]] — 46 page(s)
 - [[Mathématiques]] — 38 page(s)
 - [[Signal & audio]] — 6 page(s)
 - [[Outils de développement]] — 3 page(s)

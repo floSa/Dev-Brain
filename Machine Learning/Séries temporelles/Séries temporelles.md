@@ -40,6 +40,7 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 ### Notions
 - [[ARIMA SARIMA]] — domaines : data-sci, ml-eng
 - [[Autocorrelation]] — domaines : data-sci
+- [[Causalité de Granger]] — domaines : data-sci, ml-eng
 - [[Exponential smoothing]] — domaines : data-sci, ml-eng
 - [[Forecasting framing]] — domaines : data-sci, ml-eng
 - [[Forecasting metrics]] — domaines : data-sci, ml-eng

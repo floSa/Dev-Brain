@@ -40,6 +40,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 - [[Probing]] — domaines : data-sci, ai-eng
 - [[Sparse autoencoders]] — domaines : data-sci, ai-eng
 - [[Superposition]] — domaines : data-sci, ai-eng
+- [[Valeurs de Shapley]] — domaines : data-sci, ml-eng
 
 ### Briques
 - [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.
