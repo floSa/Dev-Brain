@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 119 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 120 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (119 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (120 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -191,7 +191,7 @@ database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
       synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie, bi}
-devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation, projet, documentation}
+devtools/{notebook, config, cli, client-api, paquet, test, qualite, validation, projet, documentation, annuaire-standard}
 stats/{inference, bayesien, exploratoire, causal, probabilite, experimentation}
 signal/{traitement, audio}
 math/{optimisation, recherche-operationnelle, algebre-lineaire, information, theorie-apprentissage}
@@ -250,6 +250,7 @@ WrenAI ne produit aucun SQL.
 | D-R11 | Une page de `ml/*` dont le **but est une panne ou une décision de maintenance** (état de santé, durée de vie résiduelle, diagnostic de défaut, politique et coût) est `ml/maintenance`, même quand son entrée est une série temporelle. Une page qui traite une série sans viser une panne est `ml/series-temporelles` ; une page qui détecte l'anormal sur cette série est `ml/anomalie`. | Maintenance prédictive et RUL → `ml/maintenance` ; ARIMA SARIMA, Prophet → `ml/series-temporelles` ; Time series anomaly detection, STUMPY → `ml/anomalie` |
 | D-R12 | Une page de `math/*` dont le **sujet est une situation de décision d'un métier** (stock, plan de production, tournée, planning) et la politique qui la résout est `math/recherche-operationnelle`. Une page dont le sujet est la **méthode** de résolution, quel que soit le problème (descente de gradient, convexité, MIP, solveur), est `math/optimisation`. La prévision de la demande, qui n'est que l'entrée, reste `ml/series-temporelles`. | Modèle du vendeur de journaux, Stock de sécurité et taux de service → `math/recherche-operationnelle` ; Optimisation combinatoire, Programmation linéaire en nombres entiers (MIP), PuLP → `math/optimisation` ; Intermittent demand, Hierarchical forecasting → `ml/series-temporelles` |
 | D-R13 | Une page dont le **sujet est la conduite d'un projet de développement** (cycle de vie, spécification, backlog, décisions d'architecture, contexte donné aux agents, revue, versions, mesure) est `devtools/projet`, **même quand la méthode suppose un agent de code** : D1 ne s'applique pas, parce que la méthode vaut aussi sans agent, et que l'agent n'est qu'un des acteurs du projet. Une page dont le sujet est **l'agent lui-même** (le produit qu'on installe, son interface, ses fournisseurs de modèle) reste `llm/agent-de-code`. Une page qui **documente** le projet (écrire, structurer, générer, publier la documentation) est `devtools/documentation`. | Cycle de vie assisté par agent, Boucle de Ralph, Fichiers de contexte pour agents → `devtools/projet` ; BMAD, Spec Kit (l'outil installé) → `llm/agent-de-code` ; Diátaxis et docs-as-code → `devtools/documentation` |
+| D-R14 | Un **annuaire** ou une **spécification ouverte** dont le sujet est ce que lisent ou chargent les agents de code (le format d'un fichier de contexte ou de skill, un dépôt qui catalogue des skills) est `devtools/annuaire-standard`, rangé **à part des outils** : la page ne se fait pas passer pour une brique choisissable. Un **jeu de skills** qu'on installe reste `llm/agent-de-code` (c'est un outil) ; la notion qui explique le mécanisme reste `llm/agents` ; un annuaire d'un **autre sujet** suit D-R7. | AGENTS.md - le format, Agent Skills - la spécification, Skills d'Anthropic → `devtools/annuaire-standard` ; Superpowers → `llm/agent-de-code` ; public-apis → `web/api` |
 
 ### Frontières disputées, écrites une fois
 
@@ -690,6 +691,12 @@ valeurs disparues et ne sont pas reconduites.
   2026-10-07 (lot 17), sous le seuil à l'ouverture (une page : la notion « Diátaxis et
   docs-as-code ») ; libellé « Documentation technique ». Distinct de `devtools/projet` (conduire le
   projet), de `docs/*` (document hors dépôt de code : PDF, capture web) et de `design/diagramme`.
+- `devtools/annuaire-standard` — les **annuaires et spécifications ouvertes** de l'écosystème des
+  agents de code : le format d'un fichier que l'agent lit (AGENTS.md, SKILL.md) et le dépôt qui
+  catalogue des skills. Ouvert le 2026-10-07 (lot 23), sous le seuil à l'ouverture (3 pages) ;
+  libellé « Annuaires et standards », le dossier n'apparaît qu'à 5 pages pesantes. Règle D-R14.
+  Distinct de `llm/agent-de-code` (l'agent et les jeux de skills qu'on installe), de `llm/agents`
+  (le mécanisme des skills), de `devtools/projet` (la méthode) et de `public-apis` (`web/api`).
 - `docs/capture` — **capture de contenu** externe vers un format texte réutilisable : page web ou
   document converti en Markdown, à l'unité, par un geste manuel. Distinct de `data/scraping`
   (extraction programmatique et à l'échelle).

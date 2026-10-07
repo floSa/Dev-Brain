@@ -1207,6 +1207,27 @@ axes:
               et la publier. Distinct de devtools/projet (conduire le projet), de
               docs/* (produire ou convertir un document hors d un depot de code :
               PDF, capture web) et de design/diagramme (dessiner un schema).
+          annuaire-standard:
+            libelle: "Annuaires et standards"
+            motif: >
+              Ouvert le 2026-10-07 (lot 23 du chantier anomalie-maintenance, sur
+              arbitrage de floSa : les annuaires et les standards se rangent a part
+              des outils, jamais meles a eux). Valeur sous devtools et non nouveau
+              prefixe racine : refus du 21e dossier, accorde par floSa. Sous le seuil
+              a l ouverture (3 pages : AGENTS.md - le format, Agent Skills - la
+              specification, Skills d Anthropic) : le dossier « Annuaires et
+              standards » n apparaitra qu a 5 pages pesantes, par promotion. Libelle
+              verifie unique, insensible a la casse.
+            frontiere: >
+              Les annuaires et les specifications ouvertes de l ecosysteme des agents
+              de code : le format d un fichier que l agent lit (AGENTS.md, SKILL.md)
+              et le depot qui catalogue des skills. Rien ne s y installe comme un
+              outil : une page ici ne se fait pas passer pour une brique choisissable
+              (regle D-R14). Distinct de llm/agent-de-code (l agent lui-meme, et un
+              jeu de skills qu on installe, comme Superpowers), de llm/agents (la
+              notion « Agent skills », le mecanisme), de devtools/projet (la methode
+              de conduite de projet) et des annuaires d un autre sujet (public-apis
+              reste web/api, D-R7).
 
       - cle: stats
         dossier: "Statistiques & inférence"
