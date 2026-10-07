@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1122 pages actives.
+> 1128 pages actives.
 
 ## Par page
 
@@ -248,7 +248,7 @@
 ### BMAD  ·  brique
 - tags : `agent-skill`, `code-assistant`, `agents`, `multi-agent`, `code-generation`
 - liens sortants : [[Agent patterns]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Multi-agent systems]], [[Spec Kit]]
-- liens entrants : [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[PRD et user stories]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]]
 
 ### bokeh  ·  brique
 - tags : `dataviz`, `interactive-viz`
@@ -913,7 +913,7 @@
 ### i-have-adhd  ·  brique
 - tags : `agent-skill`, `prompting`, `code-assistant`, `agents`
 - liens sortants : [[Agent skills]], [[Agents de code]], [[Archify]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Graphify]], [[Harnais d'agent]], [[Prompt engineering]], [[Spec Kit]]
-- liens entrants : [[Agent skills]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]]
+- liens entrants : [[Agent skills]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Skills de Matt Pocock]], [[Superpowers]]
 
 ### imbalanced-learn  ·  brique
 - tags : `class-imbalance`, `classification`, `supervised`
@@ -1730,6 +1730,11 @@
 - liens sortants : [[Comparatif - Visualisation]], [[Dash]], [[Visualisation]], [[altair]], [[bokeh]]
 - liens entrants : [[Comparatif - Visualisation]], [[Dash]], [[Streamlit]], [[Visualisation]], [[altair]], [[bokeh]]
 
+### pm-skills  ·  brique
+- tags : `agent-skill`, `skills`, `project-management`, `agents`
+- liens sortants : [[Agent skills]], [[Agents de code]], [[Backlog, Kanban, Scrum et Shape Up]], [[Comparatif - Assistants de code IA]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]]
+- liens entrants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]]
+
 ### pmdarima  ·  brique
 - tags : `forecasting`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Modèles de Markov cachés et filtre de Kalman]], [[Stationarity]], [[darts]], [[neuralforecast]], [[statsforecast]]
@@ -1744,6 +1749,11 @@
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
 - liens sortants : [[ADBC]], [[Apache Arrow]], [[Comparatif - Manipulation de données]], [[Dask]], [[DataFrames]], [[DuckDB]], [[Modin]], [[connectorx]], [[pandas]], [[pandera]]
 - liens entrants : [[ADBC]], [[Alteryx]], [[Apache Arrow]], [[Calcul distribué]], [[Comparatif - Manipulation de données]], [[Dask]], [[Data & pipelines]], [[DataFrames]], [[Databricks]], [[DuckDB]], [[Modin]], [[Parquet]], [[Ray]], [[Spark]], [[Typage statique en Python]], [[connectorx]], [[datasets]], [[jupysql]], [[pandas]], [[pandera]]
+
+### Ponytail  ·  brique
+- tags : `agent-skill`, `skills`, `code-assistant`, `agents`
+- liens sortants : [[Agent skills]], [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]]
+- liens entrants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]]
 
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
@@ -1763,7 +1773,7 @@
 ### pre-commit  ·  brique
 - tags : `git-hooks`
 - liens sortants : [[Gitleaks]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Semgrep]], [[mypy]]
-- liens entrants : [[Commits conventionnels, versions et changelog]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Gitleaks]], [[Notebooks-as-code]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Ruff]], [[Semgrep]], [[Typage statique en Python]], [[mypy]]
+- liens entrants : [[Commits conventionnels, versions et changelog]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Gitleaks]], [[Notebooks-as-code]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Ruff]], [[Semgrep]], [[Skills de Matt Pocock]], [[Typage statique en Python]], [[mypy]]
 
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
@@ -2160,6 +2170,16 @@
 - liens sortants : [[Indicateurs de stock (rotation, couverture, rupture)]], [[Modèle du vendeur de journaux (newsvendor)]], [[OR-Tools]], [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[PuLP]], [[Recherche opérationnelle]], [[Stock de sécurité et taux de service]]
 - liens entrants : [[Optimisation]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Prévoir puis optimiser]], [[Politiques de réapprovisionnement (s,S) et (R,Q)]], [[Recherche opérationnelle]]
 
+### Skills d'Addy Osmani  ·  brique
+- tags : `agent-skill`, `skills`, `code-assistant`, `agents`
+- liens sortants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[pm-skills]]
+- liens entrants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills de Matt Pocock]], [[Superpowers]], [[pm-skills]]
+
+### Skills de Matt Pocock  ·  brique
+- tags : `agent-skill`, `skills`, `code-assistant`, `agents`
+- liens sortants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Développement piloté par la spécification]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Spec Kit]], [[Superpowers]], [[i-have-adhd]], [[pre-commit]]
+- liens entrants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Superpowers]], [[pm-skills]]
+
 ### sktime  ·  brique
 - tags : `timeseries`, `forecasting`, `classification`, `clustering`
 - liens sortants : [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Maintenance prédictive et RUL]], [[PyOD]], [[Séries temporelles]], [[Time series feature engineering]], [[Walk-forward CV]], [[aeon]], [[darts]], [[statsforecast]], [[tsfresh]]
@@ -2208,7 +2228,7 @@
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
 - liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Boucle de Ralph]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[PRD et user stories]], [[Vibe coding contre ingénierie agentique]], [[i-have-adhd]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Boucle de Ralph]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[i-have-adhd]]
 
 ### Sphinx  ·  brique
 - tags : `documentation`
@@ -2269,6 +2289,11 @@
 - tags : `anomaly-detection`, `timeseries`
 - liens sortants : [[ARIMA SARIMA]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Détection d'outliers univariée]], [[Exponential smoothing]], [[Jeux de données d'anomalies]], [[Prophet]], [[PyOD]], [[Time series anomaly detection]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[DeepOD]], [[Détection d'anomalies]], [[Foundation models et anomalies de séries]], [[Machine Learning]], [[Maintenance prédictive et RUL]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[PyOD]], [[Séries temporelles]], [[TSB-AD]], [[Time series anomaly detection]], [[aeon]], [[ruptures]]
+
+### Superpowers  ·  brique
+- tags : `agent-skill`, `skills`, `code-assistant`, `agents`
+- liens sortants : [[Agent skills]], [[Agents de code]], [[BMAD]], [[Comparatif - Assistants de code IA]], [[Cycle de vie d'un projet assisté par agent]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[i-have-adhd]]
+- liens entrants : [[Agents de code]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[pm-skills]]
 
 ### supervision  ·  brique
 - tags : `object-detection`, `object-tracking`, `computer-vision`
@@ -2587,8 +2612,8 @@
 
 ### Comparatif - Assistants de code IA  ·  comparatif
 - tags : `code-assistant`, `agents`, `code-generation`
-- liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Comparatifs]], [[Continue]], [[Goose]], [[Graphify]], [[Kilo Code]], [[Maka]], [[OpenCode]], [[Qwen Code]], [[Spec Kit]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatifs]], [[Continue]], [[Goose]], [[Graphify]], [[Kilo Code]], [[Maka]], [[OpenCode]], [[Qwen Code]], [[Spec Kit]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens sortants : [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA.base]], [[Comparatifs]], [[Continue]], [[Goose]], [[Graphify]], [[Kilo Code]], [[Maka]], [[OpenCode]], [[Ponytail]], [[Qwen Code]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[pm-skills]], [[swarm-forge]], [[t3code]]
+- liens entrants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatifs]], [[Continue]], [[Goose]], [[Graphify]], [[Kilo Code]], [[Maka]], [[OpenCode]], [[Ponytail]], [[Qwen Code]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[pm-skills]], [[swarm-forge]], [[t3code]]
 
 ### Comparatif - Automatisation no-code  ·  comparatif
 - tags : `low-code`, `orchestration`, `agents`, `mcp`
@@ -2967,8 +2992,8 @@
 
 ### Agents de code  ·  hub
 - tags : `code-assistant`, `code-generation`, `agents`, `agent-skill`, `mcp`
-- liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Aider]], [[BMAD]], [[Cline]], [[Code and math benchmarks]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Gestion de projet]], [[Goose]], [[Graphify]], [[Harnais d'agent]], [[Hermes Agent]], [[Kilo Code]], [[Maka]], [[OpenClaw]], [[OpenCode]], [[OpenHands]], [[Qwen Code]], [[Sandboxing de code généré]], [[Spec Kit]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[Agents]], [[Aider]], [[Assistants]], [[BMAD]], [[Branches courtes et worktrees pour agents]], [[Cline]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Goose]], [[Graphify]], [[Kilo Code]], [[LLM & IA générative]], [[Maka]], [[OpenCode]], [[Qwen Code]], [[Spec Kit]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[swarm-forge]], [[t3code]]
+- liens sortants : [[Agent memory]], [[Agent skills]], [[Agents]], [[Aider]], [[BMAD]], [[Cline]], [[Code and math benchmarks]], [[Comparatif - Assistants de code IA]], [[Context engineering]], [[Continue]], [[Gestion de projet]], [[Goose]], [[Graphify]], [[Harnais d'agent]], [[Hermes Agent]], [[Kilo Code]], [[Maka]], [[OpenClaw]], [[OpenCode]], [[OpenHands]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Qwen Code]], [[Sandboxing de code généré]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[pm-skills]], [[swarm-forge]], [[t3code]]
+- liens entrants : [[Agents]], [[Aider]], [[Assistants]], [[BMAD]], [[Branches courtes et worktrees pour agents]], [[Cline]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Goose]], [[Graphify]], [[Kilo Code]], [[LLM & IA générative]], [[Maka]], [[OpenCode]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Qwen Code]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Zoo Code]], [[ai-memory]], [[freebuff]], [[i-have-adhd]], [[pi]], [[pm-skills]], [[swarm-forge]], [[t3code]]
 
 ### AI Engineering  ·  hub
 - tags : —
@@ -3127,7 +3152,7 @@
 
 ### Gestion de projet  ·  hub
 - tags : `project-management`, `spec-driven`, `adr`, `skills`
-- liens sortants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitDiagram]], [[GitLab CE]], [[Graphify]], [[Hypothesis]], [[Mermaid]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Modèle C4]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[ai-memory]], [[draw.io]], [[i-have-adhd]], [[pre-commit]], [[pytest]], [[swarm-forge]], [[t3code]], [[testcontainers]]
+- liens sortants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitDiagram]], [[GitLab CE]], [[Graphify]], [[Hypothesis]], [[Mermaid]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Modèle C4]], [[PRD et user stories]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[ai-memory]], [[draw.io]], [[i-have-adhd]], [[pm-skills]], [[pre-commit]], [[pytest]], [[swarm-forge]], [[t3code]], [[testcontainers]]
 - liens entrants : [[Agents de code]], [[Documentation technique]], [[Outils de développement]]
 
 ### Infrastructure & Ops  ·  hub
@@ -3483,7 +3508,7 @@
 ### ADR et design docs  ·  notion
 - tags : `adr`, `project-management`, `documentation`, `agents`, `context-engineering`
 - liens sortants : [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Mermaid]], [[Modèle C4]]
-- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Modèle C4]], [[PRD et user stories]]
+- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Modèle C4]], [[PRD et user stories]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]]
 
 ### Advanced RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`
@@ -3508,7 +3533,7 @@
 ### Agent skills  ·  notion
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
 - liens sortants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Archify]], [[BMAD]], [[Context engineering]], [[Hermes Agent]], [[OpenClaw]], [[Tool use patterns]], [[i-have-adhd]], [[mcp-protocol]], [[tool-use]]
-- liens entrants : [[Agent memory]], [[Agents]], [[Agents de code]], [[Archify]], [[Assistants]], [[BMAD]], [[Claude Agent SDK]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Harnais d'agent]], [[Hermes Agent]], [[OpenClaw]], [[OpenViking]], [[Sandboxing de code généré]], [[i-have-adhd]], [[mcp-protocol]]
+- liens entrants : [[Agent memory]], [[Agents]], [[Agents de code]], [[Archify]], [[Assistants]], [[BMAD]], [[Claude Agent SDK]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Harnais d'agent]], [[Hermes Agent]], [[OpenClaw]], [[OpenViking]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Sandboxing de code généré]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]], [[i-have-adhd]], [[mcp-protocol]], [[pm-skills]]
 
 ### agent-loops  ·  notion
 - tags : `agents`, `llm`, `tool-use`
@@ -3678,7 +3703,7 @@
 ### Backlog, Kanban, Scrum et Shape Up  ·  notion
 - tags : `project-management`, `agents`
 - liens sortants : [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Forgejo]], [[Forges & CI-CD]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Obsidian]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]]
-- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PRD et user stories]]
+- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PRD et user stories]], [[pm-skills]]
 
 ### Bagging  ·  notion
 - tags : `supervised`, `ensemble`, `bagging`
@@ -3718,7 +3743,7 @@
 ### Boucle de Ralph  ·  notion
 - tags : `agents`, `code-generation`, `testing`, `project-management`, `context-engineering`
 - liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Branches courtes et worktrees pour agents]], [[Context engineering]], [[Développement piloté par la spécification]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[swarm-forge]]
-- liens entrants : [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Revue, tests et définition de terminé avec un agent]]
+- liens entrants : [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]]
 
 ### Branches courtes et worktrees pour agents  ·  notion
 - tags : `agents`, `version-control`, `ci-cd`, `code-assistant`, `project-management`
@@ -3868,7 +3893,7 @@
 ### Context engineering  ·  notion
 - tags : `context-engineering`, `llm`, `agents`
 - liens sortants : [[Agent memory]], [[Architecture deep agent]], [[Contexte long]], [[Headroom]], [[Prompt engineering]], [[RAG]], [[Reliability patterns]], [[Sous-agents et isolation du contexte]], [[Tokenization]], [[Tool use patterns]], [[prompt-caching]]
-- liens entrants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[BMAD]], [[Boucle de Ralph]], [[Claude Agent SDK]], [[Contexte long]], [[Cycle de vie d'un projet assisté par agent]], [[Deep Agents]], [[Deep research]], [[Dify]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Flowise]], [[Gestion de projet]], [[Harnais d'agent]], [[Headroom]], [[LLM & IA générative]], [[Langflow]], [[OmniRoute]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Positional encoding]], [[Prompt engineering]], [[RAG]], [[RAG agentique]], [[Reliability patterns]], [[Sous-agents et isolation du contexte]], [[Tokenization]], [[Vibe coding contre ingénierie agentique]], [[agent-loops]], [[ai-memory]], [[i-have-adhd]], [[mcp-protocol]], [[prompt-caching]]
+- liens entrants : [[ADR et design docs]], [[Agent skills]], [[Agents de code]], [[Archify]], [[Architecture deep agent]], [[BMAD]], [[Boucle de Ralph]], [[Claude Agent SDK]], [[Contexte long]], [[Cycle de vie d'un projet assisté par agent]], [[Deep Agents]], [[Deep research]], [[Dify]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Flowise]], [[Gestion de projet]], [[Harnais d'agent]], [[Headroom]], [[LLM & IA générative]], [[Langflow]], [[OmniRoute]], [[OpenViking]], [[Pattern - Agent sur LLM auto-hébergé]], [[Positional encoding]], [[Prompt engineering]], [[RAG]], [[RAG agentique]], [[Reliability patterns]], [[Skills d'Addy Osmani]], [[Sous-agents et isolation du contexte]], [[Tokenization]], [[Vibe coding contre ingénierie agentique]], [[agent-loops]], [[ai-memory]], [[i-have-adhd]], [[mcp-protocol]], [[prompt-caching]]
 
 ### Contexte long  ·  notion
 - tags : `llm`, `context-engineering`, `attention`, `inference-optimization`, `positional-encoding`
@@ -3913,7 +3938,7 @@
 ### Cycle de vie d'un projet assisté par agent  ·  notion
 - tags : `project-management`, `agents`, `code-assistant`, `spec-driven`
 - liens sortants : [[ADR et design docs]], [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Agents de code]], [[Aider]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Cline]], [[Commits conventionnels, versions et changelog]], [[Context engineering]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Graphify]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Modèle C4]], [[OpenCode]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[ai-memory]], [[i-have-adhd]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[ADR et design docs]], [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[ADR et design docs]], [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]]
 
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
@@ -4033,7 +4058,7 @@
 ### Développement piloté par la spécification  ·  notion
 - tags : `project-management`, `spec-driven`, `agents`, `code-generation`, `context-engineering`
 - liens sortants : [[ADR et design docs]], [[Agent skills]], [[BMAD]], [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]]
-- liens entrants : [[ADR et design docs]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[ADR et design docs]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Skills de Matt Pocock]], [[Vibe coding contre ingénierie agentique]]
 
 ### EDA automatisée & profiling  ·  notion
 - tags : `eda`, `feature-engineering`, `missing-data`
@@ -4123,7 +4148,7 @@
 ### Fichiers de contexte pour agents  ·  notion
 - tags : `agents`, `context-engineering`, `agent-skill`, `code-assistant`, `project-management`
 - liens sortants : [[Agent memory]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Context engineering]], [[Développement piloté par la spécification]], [[Prompt engineering]], [[ai-memory]], [[i-have-adhd]]
-- liens entrants : [[ADR et design docs]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Modèle C4]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[ADR et design docs]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Modèle C4]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe coding contre ingénierie agentique]]
 
 ### Filtrage numérique  ·  notion
 - tags : `signal-processing`, `digital-filter`
@@ -4558,7 +4583,7 @@
 ### Mesurer un projet - DORA, coût des agents et temps passé  ·  notion
 - tags : `project-management`, `metrics`, `ci-cd`
 - liens sortants : [[Agent evaluation]], [[Backlog, Kanban, Scrum et Shape Up]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Revue, tests et définition de terminé avec un agent]]
-- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Vibe coding contre ingénierie agentique]]
 
 ### Metric learning & ré-identification  ·  notion
 - tags : `metric-learning`, `re-identification`, `representation-learning`, `computer-vision`, `deep-learning`
@@ -4908,7 +4933,7 @@
 ### PRD et user stories  ·  notion
 - tags : `project-management`, `spec-driven`, `agents`
 - liens sortants : [[ADR et design docs]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[pytest]]
-- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]]
+- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[pm-skills]]
 
 ### Probing  ·  notion
 - tags : `explainability`, `deep-learning`, `representation-learning`
@@ -4989,6 +5014,11 @@
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
 - liens sortants : [[Distillation]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pattern - Inspection visuelle en ligne de production]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
+
+### Quel skill pour quelle étape  ·  notion
+- tags : `project-management`, `skills`, `agent-skill`, `agents`
+- liens sortants : [[Agent skills]], [[Agents de code]], [[BMAD]], [[Boucle de Ralph]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PRD et user stories]], [[Ponytail]], [[Revue, tests et définition de terminé avec un agent]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Spec Kit]], [[Superpowers]], [[i-have-adhd]], [[pm-skills]], [[pre-commit]]
+- liens entrants : [[Agents de code]], [[Gestion de projet]], [[Ponytail]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]], [[pm-skills]]
 
 ### Query transformations  ·  notion
 - tags : `query-transformation`, `rag`, `retrieval`, `llm`
@@ -5093,7 +5123,7 @@
 ### Revue, tests et définition de terminé avec un agent  ·  notion
 - tags : `project-management`, `testing`, `agents`, `code-assistant`, `git-hooks`
 - liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Forges & CI-CD]], [[Hypothesis]], [[Ruff]], [[Vibe coding contre ingénierie agentique]], [[mypy]], [[pre-commit]], [[pytest]], [[testcontainers]]
-- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PRD et user stories]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PRD et user stories]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Vibe coding contre ingénierie agentique]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -5621,8 +5651,8 @@
 - `accessibility` : OpenDataLoader PDF  — pas de page concept dédiée
 - `adr` : ADR et design docs, Gestion de projet
 - `agent-memory` : Agents, Assistants, Cognee, Comparatif - Mémoire pour agents, Graphiti, Mem0, Mémoire des agents, OpenViking, ai-memory
-- `agent-skill` : Agents de code, Archify, Assistants, BMAD, Fichiers de contexte pour agents, i-have-adhd
-- `agents` : ADR et design docs, Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code  — pas de page concept dédiée
+- `agent-skill` : Agents de code, Archify, Assistants, BMAD, Fichiers de contexte pour agents, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills de Matt Pocock, Superpowers, i-have-adhd, pm-skills
+- `agents` : ADR et design docs, Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Skills d'Addy Osmani, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code  — pas de page concept dédiée
 - `ai-security` : AI security, Apprentissage fédéré, Confidentialité différentielle, Daytona, Données personnelles et anonymisation pour LLM, E2B, Llama Guard, Maka, NeMo Guardrails, Presidio, Prompt injection, Sandboxing de code généré, Systèmes IA, Sécurité, garak, promptfoo
 - `alerting` : Alertmanager, Netdata, Prometheus, SLO et alerting, Uptime Kuma, Zabbix
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
@@ -5655,7 +5685,7 @@
 - `cli` : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
 - `clustering` : Analyse factorielle, Apprentissage non supervisé, Classification hiérarchique (CAH), Clustering, Clustering evaluation, Clustering hiérarchique par densité, DBSCAN, Gaussian Mixture Models (GMM), HCPC, K-Means, Machine Learning, Non supervisé, aeon, hdbscan, k-médoïds (PAM), sktime
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, RUL par apprentissage profond, Vision, Vision par ordinateur, timm, torchvision
-- `code-assistant` : Agents de code, Aider, Archify, BMAD, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, Qwen Code, Revue, tests et définition de terminé avec un agent, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
+- `code-assistant` : Agents de code, Aider, Archify, BMAD, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, Ponytail, Qwen Code, Revue, tests et définition de terminé avec un agent, Skills d'Addy Osmani, Skills de Matt Pocock, Spec Kit, Superpowers, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Boucle de Ralph, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, Développement piloté par la spécification, Kilo Code, LM Studio Bionic, OpenCode, OpenHands, Qwen Code, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, freebuff, t3code  — pas de page concept dédiée
 - `columnar` : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, HGS-CVRP, HiGHS, OR-Tools, Optimisation, Optimisation combinatoire, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Pipeline scraping → matching → optimisation, Plannings de personnel (rostering), Programmation linéaire en nombres entiers (MIP), Programmation par contraintes, PuLP, PyVRP, Pyomo, Quantité économique de commande et tailles de lot, Tournées de véhicules (VRP)
@@ -5882,7 +5912,7 @@
 - `privacy` : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube  — pas de page concept dédiée
 - `probabilistic-programming` : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan  — pas de page concept dédiée
 - `probability` : Chaînes de Markov, Indicateurs de stock (rotation, couverture, rupture), Inégalités de concentration, Loi des grands nombres, Modèle du vendeur de journaux (newsvendor), Modèles graphiques probabilistes, Mouvement brownien, Probabilités, Processus de Poisson, Stock de sécurité et taux de service, Théorie des valeurs extrêmes, Théorème central limite  — pas de page concept dédiée
-- `project-management` : ADR et design docs, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Commits conventionnels, versions et changelog, Cycle de vie d'un projet assisté par agent, Diátaxis et docs-as-code, Développement piloté par la spécification, Fichiers de contexte pour agents, Gestion de projet, Mesurer un projet - DORA, coût des agents et temps passé, Modèle C4, PRD et user stories, Revue, tests et définition de terminé avec un agent, Vibe coding contre ingénierie agentique  — pas de page concept dédiée
+- `project-management` : ADR et design docs, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Commits conventionnels, versions et changelog, Cycle de vie d'un projet assisté par agent, Diátaxis et docs-as-code, Développement piloté par la spécification, Fichiers de contexte pour agents, Gestion de projet, Mesurer un projet - DORA, coût des agents et temps passé, Modèle C4, PRD et user stories, Quel skill pour quelle étape, Revue, tests et définition de terminé avec un agent, Vibe coding contre ingénierie agentique, pm-skills  — pas de page concept dédiée
 - `projection` : Algèbre linéaire, Analyse factorielle, Projections
 - `prompt-injection` : Prompt injection, Systèmes IA, Sécurité, garak
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
@@ -5940,7 +5970,7 @@
 - `serialization` : API REST, GraphQL et gRPC, Apache Arrow, Avro  — pas de page concept dédiée
 - `signal-processing` : Analyse vibratoire, Anomalie acoustique, Comparatif - Traitement du signal, Filtrage numérique, Ondelettes, PyWavelets, STFT et spectrogramme, Signal & audio, Traitement, Traitement du signal, Transformée de Fourier, librosa, scipy.signal
 - `simulation` : Pattern - Prévoir puis optimiser, SimPy  — pas de page concept dédiée
-- `skills` : Gestion de projet
+- `skills` : Gestion de projet, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills de Matt Pocock, Superpowers, pm-skills
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
 - `spec-driven` : Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, PRD et user stories  — pas de page concept dédiée
@@ -6011,7 +6041,7 @@
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
 - `accessibility` (porté par : OpenDataLoader PDF)
-- `agents` (porté par : ADR et design docs, Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, PraisonAI, PydanticAI, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Sous-agents et isolation du contexte, Spec Kit, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, smolagents, swarm-forge, t3code)
+- `agents` (porté par : ADR et design docs, Activepieces, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Skills d'Addy Osmani, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API)
 - `array` (porté par : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray)
@@ -6028,7 +6058,7 @@
 - `change-point` (porté par : Détection de ruptures, Kats, Merlion, ruptures)
 - `ci-cd` (porté par : Argo CD, Branches courtes et worktrees pour agents, CI-CD pour le ML, Commits conventionnels, versions et changelog, Comparatif - CI-CD auto-hébergé, DevOps, Diátaxis et docs-as-code, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Mesurer un projet - DORA, coût des agents et temps passé, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI)
 - `cli` (porté par : Comparatif - Frameworks CLI, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
-- `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, Qwen Code, Revue, tests et définition de terminé avec un agent, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
+- `code-assistant` (porté par : Agents de code, Aider, Archify, BMAD, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, Ponytail, Qwen Code, Revue, tests et définition de terminé avec un agent, Skills d'Addy Osmani, Skills de Matt Pocock, Spec Kit, Superpowers, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Boucle de Ralph, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, Développement piloté par la spécification, Kilo Code, LM Studio Bionic, OpenCode, OpenHands, Qwen Code, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, freebuff, t3code)
 - `columnar` (porté par : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
@@ -6161,7 +6191,7 @@
 - `privacy` (porté par : Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube)
 - `probabilistic-programming` (porté par : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan)
 - `probability` (porté par : Chaînes de Markov, Indicateurs de stock (rotation, couverture, rupture), Inégalités de concentration, Loi des grands nombres, Modèle du vendeur de journaux (newsvendor), Modèles graphiques probabilistes, Mouvement brownien, Probabilités, Processus de Poisson, Stock de sécurité et taux de service, Théorie des valeurs extrêmes, Théorème central limite)
-- `project-management` (porté par : ADR et design docs, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Commits conventionnels, versions et changelog, Cycle de vie d'un projet assisté par agent, Diátaxis et docs-as-code, Développement piloté par la spécification, Fichiers de contexte pour agents, Gestion de projet, Mesurer un projet - DORA, coût des agents et temps passé, Modèle C4, PRD et user stories, Revue, tests et définition de terminé avec un agent, Vibe coding contre ingénierie agentique)
+- `project-management` (porté par : ADR et design docs, Backlog, Kanban, Scrum et Shape Up, Boucle de Ralph, Branches courtes et worktrees pour agents, Commits conventionnels, versions et changelog, Cycle de vie d'un projet assisté par agent, Diátaxis et docs-as-code, Développement piloté par la spécification, Fichiers de contexte pour agents, Gestion de projet, Mesurer un projet - DORA, coût des agents et temps passé, Modèle C4, PRD et user stories, Quel skill pour quelle étape, Revue, tests et définition de terminé avec un agent, Vibe coding contre ingénierie agentique, pm-skills)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
 - `property-based-testing` (porté par : Hypothesis)

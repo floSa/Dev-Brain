@@ -7,7 +7,7 @@ tags: [code-assistant, agents, code-generation]
 
 # Comparatif - Assistants de code IA
 
-> On tranche sur : ce que la brique fait dans la chaîne — écrire le code, dire à l'agent quoi écrire, superviser plusieurs agents, ou leur fournir le contexte — puis, pour celles qui écrivent, où l'on travaille et à qui part le code (fournisseur, clé propre ou modèle local).
+> On tranche sur : ce que la brique fait dans la chaîne — écrire le code, dire à l'agent quoi écrire, lui imposer une discipline par un jeu de skills, superviser plusieurs agents, ou leur fournir le contexte — puis, pour celles qui écrivent, où l'on travaille et à qui part le code (fournisseur, clé propre ou modèle local).
 
 ![[Comparatif - Assistants de code IA.base]]
 
@@ -31,6 +31,11 @@ tags: [code-assistant, agents, code-generation]
 - [[Maka]] — l'axe est la **traçabilité** : chaque message, appel d'outil et décision de permission part dans un journal **append-only** rejouable, local. Deux bornes dures : **Linux n'est pas supporté**, et aucune release Apache n'est encore publiée.
 - [[Graphify]] — ne code pas, il **cartographie** : le dépôt indexé en knowledge graph (Tree-sitter, communautés Leiden, *god nodes*), que l'assistant lit avant de grep. Le graphe est un artefact à régénérer — périmé, il induit l'assistant en erreur.
 - [[ai-memory]] — l'autre fournisseur de contexte, mais dans le temps plutôt que dans l'espace : un serveur MCP qui consolide les sessions en **wiki markdown versionné par git**, ce qui permet de quitter une CLI au milieu d'une tâche et de reprendre sous une autre. Windows natif expérimental, WSL2 recommandé.
+- [[Superpowers]] — un **cycle imposé** sous forme de quinze skills : brainstorming, plan en tâches de deux à cinq minutes, un sous-agent par tâche relu deux fois, TDD, revue, et « terminé » seulement sur preuve. Il se déclenche seul et consomme beaucoup d'appels au modèle ; trop lourd pour une petite correction.
+- [[Skills d'Addy Osmani]] — le **catalogue le plus large** : vingt-cinq skills et neuf commandes (`/spec` à `/ship`), de l'interrogatoire à la livraison, avec sécurité, performance web, observabilité et API. On choisit par étape ; rien n'est enchaîné, et le dossier `references/` commun manque à une installation skill par skill.
+- [[Skills de Matt Pocock]] — des skills **petits et composables** qui commencent par un interrogatoire (`grill-me`, `grill-with-docs`) avant spécification, tickets et TDD ; il refuse explicitement les méthodes qui possèdent le processus. Trois skills ciblent l'écosystème TypeScript de l'auteur, et `git-guardrails-claude-code` bloque aussi `git push`.
+- [[Ponytail]] — l'inverse d'un cycle : **une seule discipline**, descendre l'échelle « faut-il l'écrire, existe-t-il déjà, la bibliothèque standard le fait-elle » avant de coder, plus des commandes de revue et d'audit de la sur-ingénierie. Les gains annoncés (−54 % de code) sont ceux de l'auteur, mesurés sur un seul modèle.
+- [[pm-skills]] — l'**amont du code** : découverte, hypothèses, PRD, histoires, sprints, notes de version, plus un plugin d'audit statique d'application écrite par IA. Pensé pour un rôle de produit ; les commandes ne tournent que sous Claude Code.
 
 ## Voir aussi
 
