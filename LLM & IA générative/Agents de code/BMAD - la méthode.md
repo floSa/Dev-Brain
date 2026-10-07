@@ -165,7 +165,7 @@ La différence de fond : Scrum découpe le **temps**, BMAD découpe le **travail
 - [[Fichiers de contexte pour agents]] — `bmad-project-context` écrit le bloc `AGENTS.md`.
 - [[Branches courtes et worktrees pour agents]] — l'isolation de chaque story dans son worktree, que `bmad-loop` propose en option.
 - [[Vibe coding contre ingénierie agentique]] — le contraste que BMAD revendique.
-- En texte simple : **Agent OS** (`buildermethods/agent-os`, MIT, extrait et injecte les standards d'un dépôt et aide à façonner des spécifications), **Kiro** (AWS, propriétaire) et **Task Master** (MIT assorti d'une clause qui interdit de « vendre » le logiciel, y compris en hébergement ou en conseil : à écarter en ESN). Aucun n'a de fiche.
+- Voisins : [[Agent OS]] (MIT, extrait et injecte les standards d'un dépôt et aide à façonner des spécifications), **Kiro** (AWS, propriétaire) et **Task Master** (MIT assorti d'une clause qui interdit de « vendre » le logiciel, y compris en hébergement ou en conseil : à écarter en ESN). [[Agent OS]] a une fiche ; Kiro et Task Master n'en ont pas.
 
 ## Pour aller plus loin
 
