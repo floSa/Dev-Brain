@@ -38,12 +38,12 @@
 ### Agent Skills - la spécification  ·  brique
 - tags : `agent-skill`, `skills`, `agents`, `context-engineering`
 - liens sortants : [[AGENTS.md - le format]], [[Agent skills]], [[Outils de développement]], [[Quel skill pour quelle étape]], [[Skills d'Anthropic]]
-- liens entrants : [[AGENTS.md - le format]], [[Outils de développement]], [[Skills d'Anthropic]]
+- liens entrants : [[AGENTS.md - le format]], [[Agent skills]], [[Outils de développement]], [[Skills d'Anthropic]]
 
 ### AGENTS.md - le format  ·  brique
 - tags : `agents`, `context-engineering`, `code-assistant`
 - liens sortants : [[Agent Skills - la spécification]], [[Agent skills]], [[Context engineering]], [[Fichiers de contexte pour agents]], [[Outils de développement]]
-- liens entrants : [[Agent Skills - la spécification]], [[Outils de développement]]
+- liens entrants : [[Agent Skills - la spécification]], [[Fichiers de contexte pour agents]], [[Outils de développement]]
 
 ### Agno  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -2263,7 +2263,7 @@
 ### Skills d'Anthropic  ·  brique
 - tags : `agent-skill`, `skills`, `agents`
 - liens sortants : [[Agent Skills - la spécification]], [[Agent skills]], [[Agents de code]], [[Fichiers de contexte pour agents]], [[Outils de développement]], [[Quel skill pour quelle étape]]
-- liens entrants : [[Agent Skills - la spécification]], [[Outils de développement]]
+- liens entrants : [[Agent Skills - la spécification]], [[Agent skills]], [[Outils de développement]]
 
 ### Skills de Matt Pocock  ·  brique
 - tags : `agent-skill`, `skills`, `code-assistant`, `agents`
@@ -3637,7 +3637,7 @@
 
 ### Agent skills  ·  notion
 - tags : `agents`, `llm`, `tool-use`, `context-engineering`
-- liens sortants : [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Archify]], [[BMAD]], [[Context engineering]], [[Hermes Agent]], [[OpenClaw]], [[Tool use patterns]], [[i-have-adhd]], [[mcp-protocol]], [[tool-use]]
+- liens sortants : [[Agent Skills - la spécification]], [[Agent evaluation]], [[Agent memory]], [[Agent patterns]], [[Archify]], [[BMAD]], [[Context engineering]], [[Hermes Agent]], [[OpenClaw]], [[Skills d'Anthropic]], [[Tool use patterns]], [[i-have-adhd]], [[mcp-protocol]], [[tool-use]]
 - liens entrants : [[AGENTS.md - le format]], [[Agent Skills - la spécification]], [[Agent memory]], [[Agents]], [[Agents de code]], [[Archify]], [[Assistants]], [[BMAD]], [[BMAD - tour complet des skills]], [[Claude Agent SDK]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Harnais d'agent]], [[Hermes Agent]], [[OpenClaw]], [[OpenSpec]], [[OpenViking]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Sandboxing de code généré]], [[Skills d'Addy Osmani]], [[Skills d'Anthropic]], [[Skills de Matt Pocock]], [[Superpowers]], [[i-have-adhd]], [[mcp-protocol]], [[pm-skills]]
 
 ### agent-loops  ·  notion
@@ -4262,7 +4262,7 @@
 
 ### Fichiers de contexte pour agents  ·  notion
 - tags : `agents`, `context-engineering`, `agent-skill`, `code-assistant`, `project-management`
-- liens sortants : [[Agent memory]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Context engineering]], [[Développement piloté par la spécification]], [[Prompt engineering]], [[ai-memory]], [[i-have-adhd]]
+- liens sortants : [[AGENTS.md - le format]], [[Agent memory]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Context engineering]], [[Développement piloté par la spécification]], [[Prompt engineering]], [[ai-memory]], [[i-have-adhd]]
 - liens entrants : [[ADR et design docs]], [[AGENTS.md - le format]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[DeepWiki-Open]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Modèle C4]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Repomix]], [[Revue, tests et définition de terminé avec un agent]], [[Serena]], [[Skills d'Anthropic]], [[Vibe coding contre ingénierie agentique]], [[just]]
 
 ### Filtrage numérique  ·  notion
