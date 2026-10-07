@@ -7,7 +7,7 @@ tags: [meta, backlog]
 
 # Chantier — anomalies, maintenance prédictive, agents de code, stocks et plannings
 
-Plan unique du chantier, vingt lots numérotés de 1 à 20. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
+Plan unique du chantier, vingt-trois lots numérotés de 1 à 23. Chaque conversation reçoit un numéro de lot et lit **sa** section ici, rien d'autre pour le plan.
 Cases cochées par la conversation qui termine son lot, sur **sa** ligne seulement.
 
 ## Objectif
@@ -43,6 +43,8 @@ on-prem industriel, ESN.
 15. **Libre seulement (règle de floSa, 2026-10-04).** Aucune page de brique pour une solution payante ou propriétaire. Une brique porte `licence_type: open-source` vérifié à la source (fichier LICENSE du dépôt). `open-core`, `source-available` ou `proprietary` : pas de page. Si le doute est réel, demande.
 16. **Mentions.** Un service propriétaire ou payant peut être cité en **texte simple**, sans lien `[[...]]` et sans page, quand c'est utile (un client l'utilise, il a fermé, il sert de comparaison). Jamais en brique.
 
+17. **Nature affichée (règle de floSa, 2026-10-07).** La première phrase de chaque brique dit ce que c'est, en mots simples : agent, skill, jeu de skills, serveur MCP, outil en ligne de commande, application à héberger, plugin, bibliothèque, format. Les alternatives payantes (Jira, Linear, Notion…) se citent en texte simple dans la section Alternatives, sans page.
+
 ## Vagues
 
 | Vague | Conversations | Dépend de |
@@ -58,7 +60,8 @@ on-prem industriel, ESN.
 | 9 | Lot 13 | Lot 12 |
 | 10 | Lot 15 | Lots 12, 13, 16 clos |
 | 11 | Lot 17 (seul) | Lots 1 à 16 clos |
-| 12 | Lots 18, 19, 20 (en parallèle) | Lot 17 clos et poussé |
+| 12 | Lots 18, 19, 20, 21, 22 (en parallèle) | Lot 17 clos et poussé |
+| 13 | Lot 23 | Lot 19 clos |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -260,52 +263,87 @@ Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Le lot 10 a laissé ce
 
 ## Lot 17 — Gestion de projet : ouverture et méthodes (vague 11)
 
-floSa veut une section « Gestion de projet » : outils, skills et **méthodes** (les méthodes sont des notions) pour aider le développement et le cycle de vie d'un projet, avec un agent ou sans.
+floSa veut une section « Gestion de projet » : outils, **skills précis** et **méthodes** (les méthodes sont des notions) pour aider le développement et le cycle de vie d'un projet, avec ou sans agent. Libre seulement (règles 15 et 16). Pas de remplissage : une page doit servir.
 
-1. **Vocabulaire.** Derive par l'arbre D1→D14 et ouvre au plus **deux** valeurs de catégorie, par la procédure « nouvelle valeur » de `enrichir-brain`. Hypothèse de départ : `devtools/projet` (dossier « Gestion de projet ») pour les méthodes et le suivi de travail ; une seconde valeur seulement si la documentation (génération de sites de doc) n'entre vraiment dans aucune valeur existante (`docs/*` d'abord). Écris la règle de départage. Les lots 18, 19 et 20 utiliseront ces valeurs. Ne déplace aucune page existante.
-2. **Notions à écrire** (9, exemples recalculés ou sourcés, rien de marketing) :
-   - **Cycle de vie d'un projet assisté par agent** : cadrer, spécifier, planifier, implémenter, vérifier, documenter ; ce que l'agent fait bien, ce qu'il fait mal, où l'humain décide.
-   - **Développement piloté par la spécification (spec-driven)** : spécification exécutable, plan, tâches ; pourquoi, limites, coût.
-   - **Cadrer un besoin : PRD et user stories** : contenu minimal, critères d'acceptation.
-   - **Découper et suivre le travail : backlog, Kanban, Scrum** : version légère en solo ou petite équipe, avec agents.
-   - **Décisions d'architecture (ADR)** : format, quand en écrire, où les ranger.
-   - **Modèle C4 et diagrammes d'architecture** : quatre niveaux, lien avec Mermaid, Excalidraw, draw.io, GitDiagram.
+1. **Vocabulaire.** Derive par l'arbre D1→D14 et ouvre au plus **deux** valeurs de catégorie par la procédure « nouvelle valeur » de `enrichir-brain`. Hypothèse : `devtools/projet` (dossier « Gestion de projet »). Écris la règle de départage. Les lots suivants utilisent ces valeurs. Ne déplace aucune page existante.
+2. **Notions à écrire** (14). Chacune : courte, claire, directe, un schéma Mermaid quand il aide (Obsidian le rend). Cite les briques du brain concernées.
+   - **Cycle de vie d'un projet assisté par agent** : cadrer, spécifier, planifier, implémenter, vérifier, documenter, livrer ; ce que l'agent fait bien, mal, et où l'humain décide.
+   - **Développement piloté par la spécification** : la spécification avant le code ; plan, tâches ; limites et coût.
+   - **PRD et user stories** : contenu minimal, critères d'acceptation.
+   - **Backlog, Kanban, Scrum et Shape Up** : version légère en solo et avec agents. Parallèle avec Jira : ce que Jira apporte en entreprise, en texte simple, sans page Jira.
+   - **ADR et design docs** : décisions d'architecture et RFC ; format MADR ; où les ranger. Cite en texte simple log4brains et adr-tools.
+   - **Modèle C4** : quatre niveaux ; outils en texte simple : Structurizr, D2, PlantUML, Kroki ; liens vers Mermaid, Excalidraw, draw.io, GitDiagram.
    - **Documentation : Diátaxis et docs-as-code** : les quatre types de pages, la doc dans le dépôt.
-   - **Fichiers de contexte pour agents (AGENTS.md, CLAUDE.md, règles, skills)** : à quoi ils servent, taille, pièges. Cherche d'abord si une notion existante couvre le contexte (context engineering) : si oui, cite-la au lieu de la doubler.
+   - **Fichiers de contexte pour agents** : AGENTS.md, CLAUDE.md, règles, skills ; taille, pièges. Cherche d'abord une notion existante (context engineering, Agent Skills) : cite-la au lieu de la doubler.
    - **Revue, tests et « terminé » avec un agent** : définition de terminé, tests d'abord, revue de ce que l'agent a écrit.
-3. **Citer, sans les modifier** : BMAD, Spec Kit, Graphify, i-have-adhd, GitDiagram, Mermaid, Excalidraw, draw.io, Obsidian, Forgejo, GitLab CE, pytest, Hypothesis, testcontainers, ai-memory, Agent patterns.
-4. Ouvre le hub du dossier et écris son corps à la main : « Choisir » avec toutes les briques existantes qui servent la gestion de projet, même rangées ailleurs (BMAD, Spec Kit, Graphify, i-have-adhd sont en `llm/agent-de-code`).
-5. Tags manquants à créer, un commit : `project-management`, `spec-driven`, `adr`, `documentation` s'ils n'existent pas.
+   - **La boucle de Ralph** : un agent relancé en boucle contre un plan, contexte neuf à chaque tour ; quand ça marche, quand ça dérive.
+   - **Branches courtes et worktrees pour agents** : isoler le travail de chaque agent.
+   - **Commits conventionnels, versions et changelog** : Conventional Commits, SemVer, Keep a Changelog.
+   - **Mesurer un projet : DORA, coût des agents, temps passé** : quoi mesurer, avec quoi (les briques viennent au lot 22).
+   - **Vibe coding contre ingénierie agentique** : limites, quand reprendre la main.
+3. **Citer, sans les modifier** : BMAD, Spec Kit, Graphify, i-have-adhd, GitDiagram, Mermaid, Excalidraw, draw.io, Obsidian, Forgejo, GitLab CE, pytest, Hypothesis, testcontainers, pre-commit, ai-memory, swarm-forge, t3code, Agent patterns.
+4. Hub du dossier : corps écrit à la main, avec un « Choisir » qui renvoie aussi vers les briques déjà rangées ailleurs (BMAD, Spec Kit, Graphify, i-have-adhd en `llm/agent-de-code`).
+5. Tags à créer, un commit : `project-management`, `spec-driven`, `adr`, `documentation`, `skills`, s'ils n'existent pas.
 
-## Lot 18 — Skills et cadres de travail avec agents, libres (vague 12)
+## Lot 18 — BMAD en détail, et la spécification d'abord (vague 12)
 
-Domaine `llm/agent-de-code`. Règle 15 : libre seulement. Verifie chaque dépôt à la source.
+**BMAD est l'outil que floSa veut le mieux comprendre.** Il veut des pages claires et directes, avec **des schémas** (Mermaid), qui passent en revue tout ce qu'on peut faire avec.
 
-- **Ponytail** (`DietrichGebert/ponytail`, MIT, actif ; skill qui force l'agent à écrire le minimum de code ; il propose aussi une extension de gestion de projet pour Claude Code : lis le README et dis ce qu'elle fait). Les chiffres de gain annoncés (54 % de code en moins) viennent du projet ou d'articles : cite-les comme tels, avec leur source.
-- **Superpowers** (`obra/superpowers`, MIT, très suivi) : méthode et skills pour agents (brainstorm, plan, tests d'abord).
-- **OpenSpec** (`Fission-AI/OpenSpec`, MIT) : couche de spécification dans le dépôt, avec suivi des écarts.
-- **Backlog.md** (`MrLesk/Backlog.md`, MIT) : tâches en fichiers Markdown dans git, pensées pour les agents.
-- **Beads** (`steveyegge/beads`, MIT) : suivi de tâches pour agents. Vérifie ce que c'est exactement et son modèle de données.
-- Exclus de page, à citer en texte simple seulement : **Task Master** (licence MIT avec clause Commons Clause : source-available), **get-shit-done** (dépôt archivé), **Kiro** (AWS, propriétaire).
-- **Comparatif - Cadres de développement avec agents** (`.md` + `.base`) : BMAD, Spec Kit, OpenSpec, Superpowers, Ponytail. **Accord de floSa** : tu peux ajouter un tag (par exemple `spec-driven`) dans le frontmatter de BMAD, Spec Kit, i-have-adhd et Graphify pour qu'ils entrent dans la vue ; rien d'autre n'y change. Le comparatif se départage sur : spécification d'abord ou méthode d'équipe, poids du dépôt, dépendance à un agent précis, état d'entretien.
-- Cite les notions du lot 17.
+1. **Lis d'abord la documentation officielle actuelle** (https://docs.bmad-method.org et le dépôt `bmad-code-org/BMAD-METHOD`, licence MIT, marque déposée par BMad Code LLC). Ne t'appuie pas sur la fiche existante : elle peut être périmée. Le README décrit aujourd'hui une boucle Clarify, Plan, Build & Verify, Learn & Adjust, un « skill hub » `bmad`, des commandes `bmad setup`, `bmad status`, `bmad-build`, et des modules : BMad Method, BMad Builder, Creative Intelligence Suite, Test Architect, BMad Loop, Game Dev Studio. Vérifie tout, et décris ce qui existe vraiment : agents ou rôles, workflows, artefacts produits.
+2. **Notion « BMAD : la méthode »** : le principe, les phases, les rôles, les artefacts, l'adaptation de la profondeur de planification, quand BMAD convient et quand il est trop lourd. Au moins deux schémas Mermaid : la boucle de livraison, et qui produit quoi. Parallèle avec Scrum et avec le cycle du lot 17.
+3. **Notion « BMAD : tour complet des skills »** : chaque module, chaque agent ou skill, chaque commande, ce qu'on en tire, dans quel ordre on les utilise, un exemple de session de bout en bout. Un tableau « je veux faire X, j'utilise Y ». Installation (skills CLI, plugin) et outils compatibles.
+4. **Accord de floSa** : tu peux corriger la fiche brique **BMAD** si elle contredit la documentation officielle actuelle, et y ajouter les liens vers les deux notions. Liste les corrections dans ta synthèse. Ne touche à aucune autre brique.
+5. **OpenSpec** (brique, `Fission-AI/OpenSpec`, MIT) : spécification dans le dépôt, suivi des changements. Cite Spec Kit et BMAD en comparaison, en texte simple ou par lien.
+6. Agent OS (`buildermethods/agent-os`, MIT) : texte simple, pas de page. Kiro (AWS) et Task Master (clause Commons Clause) : texte simple.
 
-## Lot 19 — Documenter et comprendre un dépôt, libres (vague 12)
+## Lot 19 — Skills précis pour le cycle de vie (vague 12)
 
-Règle 15 : libre seulement. Valeur de catégorie : celle que le lot 17 a ouverte pour la documentation, sinon `devtools/projet`.
+floSa veut des **skills précis, qui font une chose précise** : pas de méta-collection. Une brique par jeu de skills (`famille` à dériver : un skill s'exécute dans un agent hôte), qui **liste chaque skill avec ce qu'il fait et à quelle étape on le lance**. Dépôts vérifiés le 2026-10-07 ; relis la licence de chaque dépôt avant d'écrire.
 
-- Briques candidates, à vérifier : **Repomix** (MIT), **Gitingest** (MIT), **DeepWiki-Open** (MIT, alternative libre au DeepWiki de Cognition, qui est propriétaire : à citer en texte simple), **MkDocs** (BSD-2 ; dernier push 2025-10, dis si le projet est ralenti ; cite aussi Material for MkDocs et son successeur éventuel, vérifie), **Docusaurus** (MIT), **Sphinx** (BSD-2), **log4brains** (Apache-2.0, dernier push 2024-12 : vérifie son état) et **adr-tools** (dernier push 2024-04 : idem, licence à lire dans le dépôt). **Structurizr Lite** est archivé : texte simple.
-- Deux comparatifs (`.md` + `.base`) : **Comparatif - Générateurs de documentation** (MkDocs, Docusaurus, Sphinx) et **Comparatif - Du dépôt au contexte et à la doc** (Repomix, Gitingest, DeepWiki-Open, et Graphify et GitDiagram déjà au brain). Pour que les briques existantes entrent dans la vue, **accord de floSa** : ajoute un tag dans leur frontmatter, rien d'autre.
-- Cite : Diátaxis, ADR, C4 (lot 17), Mermaid, Excalidraw, draw.io, Obsidian.
+- **Superpowers** (`obra/superpowers`, MIT) : brainstorming (explorer le besoin avant de coder), writing-plans, executing-plans, subagent-driven-development, dispatching-parallel-agents, test-driven-development, systematic-debugging, requesting-code-review, receiving-code-review, verification-before-completion (preuves avant d'annoncer « terminé »), using-git-worktrees, finishing-a-development-branch, writing-skills.
+- **Ponytail** (`DietrichGebert/ponytail`, MIT) : ponytail (la solution la plus simple qui marche), ponytail-review (revue de sur-ingénierie sur un diff), ponytail-audit (même chose sur tout le dépôt), ponytail-debt (registre des raccourcis laissés), ponytail-gain (tableau de mesure), ponytail-help. Les chiffres de gain annoncés (54 % de code en moins) sont ceux du projet : cite-les comme tels.
+- **agent-skills** (`addyosmani/agent-skills`, MIT) : idea-refine, interview-me, spec-driven-development, planning-and-task-breakdown, incremental-implementation, test-driven-development, code-review-and-quality, code-simplification, debugging-and-error-recovery, git-workflow-and-versioning, documentation-and-adrs, ci-cd-and-automation, shipping-and-launch, context-engineering, doubt-driven-development, source-driven-development, constraint-driven-development, security-and-hardening, deprecation-and-migration, api-and-interface-design, browser-testing-with-devtools, observability-and-instrumentation, performance-optimization, frontend-ui-engineering.
+- **skills de Matt Pocock** (`mattpocock/skills`, MIT) : code-review, diagnosing-bugs, domain-modeling, grill-with-docs, implement, implement-spec, improve-codebase-architecture, prototype, research, retro, pr, grill-me, handoff, writing-for-agents, setup-pre-commit, git-guardrails (blocage des commandes git dangereuses). Ignore les dossiers `deprecated` et `in-progress`.
+- **pm-skills** (`phuryn/pm-skills`, MIT) : skills de gestion de produit : create-prd, user-stories, job-stories, sprint-plan, retro, pre-mortem, release-notes, prioritization-frameworks, outcome-roadmap, test-scenarios, stakeholder-map, interview-script, opportunity-solution-tree, identify-assumptions, prioritize-features.
+- **Notion « Quel skill pour quelle étape »** : le tableau qui réunit tout : étape du cycle de vie, besoin, skill précis, jeu qui le porte. C'est la page qu'on ouvre pour choisir. Ajoute-y, en une ligne chacun et si la licence le permet, quatre skills d'Anthropic (`anthropics/skills`) : skill-creator (créer et mesurer un skill), mcp-builder (construire un serveur MCP), webapp-testing (tester une application web avec Playwright), doc-coauthoring (rédiger une spec ou un document de décision). Vérifie la licence **skill par skill** (beaucoup indiquent « terms in LICENSE.txt ») : sans licence libre confirmée, cite-les en texte simple, sans lien d'installation.
+- Pas de page pour : everything-claude-code, wshobson/agents, awesome-copilot (trop larges). Texte simple dans la notion.
+- Cite Agent Skills, AGENTS.md, i-have-adhd, BMAD, Spec Kit et les notions du lot 17.
 
-## Lot 20 — Suivi de projet auto-hébergé (vague 12)
+## Lot 20 — Outils autour de l'agent : contexte, parallèle, revue, livraison (vague 12)
 
-Règle 15, avec une précision de floSa : ce qui compte est de **ne rien payer et de ne rien devoir de propriétaire pour l'usage normal**. Pour chaque outil, vérifie si l'édition communautaire est libre (licence OSI), complète sans clé ni paiement, et si l'édition payante n'est qu'un ajout. Si oui, crée la page et signale l'édition payante dans « Écarter si » ; sinon, texte simple seulement. Dis-le dans ta synthèse pour chaque outil.
+Libre seulement. Chaque fiche commence par dire ce que c'est (règle 17). Vérifie l'amont de chaque dépôt.
 
-- Candidats, à vérifier : **Redmine** (GPL), **Kanboard** (MIT), **Vikunja** (AGPL-3.0), **OpenProject** (GPL-3.0, édition Enterprise payante), **Plane** (AGPL-3.0, offres payantes), **Taiga** (MPL-2.0 ; l'activité du dépôt principal est incertaine : vérifie, `deprecated` si abandonné). Focalboard : texte simple (non maintenu d'après sa documentation).
-- Propriétaires, texte simple seulement : Jira, Linear, Notion, Trello, Asana.
-- **Comparatif - Suivi de projet auto-hébergé** (`.md` + `.base`) : méthode supportée (Kanban, Scrum, Gantt), pile technique et poids, licence, état d'entretien, lien avec git et agents.
-- Cite : Backlog.md et Beads (lot 18), Forgejo, GitLab CE, Obsidian, et les notions du lot 17 (backlog, Kanban, Scrum).
+- **Contexte** : Context7 (`upstash/context7`, MIT, serveur MCP : documentation à jour des bibliothèques), Repomix (`yamadashy/repomix`, MIT, outil en ligne de commande : empaquette un dépôt pour une IA), DeepWiki-Open (`AsyncFuncAI/deepwiki-open`, MIT, application à héberger : wiki généré d'un dépôt), Serena (`oraios/serena`, licence à lire dans le dépôt, serveur MCP : compréhension du code par symbole). Gitingest, claude-mem et ai-memory : texte simple ou lien.
+- **Agents en parallèle** : Vibe Kanban (`BloopAI/vibe-kanban`, Apache-2.0, application locale : un tableau Kanban où chaque carte lance un agent dans sa branche). Claude Squad, Ruflo, Crystal : texte simple dans la notion du lot 17.
+- **Revue** : PR-Agent (`qodo-ai/pr-agent`, MIT, revue automatique de pull requests, auto-hébergeable). Kodus et Lefthook : texte simple.
+- **Livraison** : Commitizen (`commitizen-tools/commitizen`, MIT, Python), git-cliff (`orhun/git-cliff`, Apache-2.0), release-please (`googleapis/release-please`, Apache-2.0), just (`casey/just`, CC0), mise (`jdx/mise`, MIT). Task et python-semantic-release : texte simple.
+- **Comparatif - Versions et changelog** (`.md` + `.base`) : Commitizen, git-cliff, release-please.
+
+## Lot 21 — Documenter et dessiner l'architecture (vague 12)
+
+Libre seulement. Valeur de catégorie ouverte au lot 17 pour la documentation, sinon `devtools/projet`.
+
+- **Documentation** (briques) : MkDocs (`mkdocs/mkdocs`, BSD-2 ; dernier push en 2025-10 : dis si le projet ralentit), mkdocstrings (`mkdocstrings/mkdocstrings`, ISC : documentation d'API Python depuis les docstrings), Sphinx, Docusaurus (MIT), Zensical (`zensical/zensical`, MIT, successeur de Material for MkDocs qui est en maintenance : vérifie). VitePress, Starlight, mdBook et pdoc : texte simple dans le comparatif.
+- **Comparatif - Générateurs de documentation** (`.md` + `.base`).
+- **Dessin d'architecture** : LikeC4 (`likec4/likec4`, MIT, modèle C4 en code) en brique. D2, PlantUML, Structurizr, Kroki, Diagrams : texte simple dans la notion C4 du lot 17.
+- Cite : Diátaxis, C4, ADR (lot 17), Mermaid, Excalidraw, draw.io, GitDiagram, Graphify, Obsidian.
+
+## Lot 22 — Suivi de projet auto-hébergé et mesure (vague 12)
+
+Libre seulement. **Pas de page pour OpenProject ni Plane** (floSa : on oublie OpenProject) : texte simple. Parallèle avec Jira en texte simple, sans page Jira : ce que Jira fait en entreprise et ce que les outils libres couvrent.
+
+- **Suivi** : Redmine (GPL, `redmine/redmine`) et Kanboard (MIT, `kanboard/kanboard`) en briques. Vikunja, Wekan, Huly, Leantime, Taiga, Focalboard : texte simple.
+- **Comparatif - Suivi de projet auto-hébergé** (`.md` + `.base`) : Redmine, Kanboard ; méthode supportée, poids, état d'entretien.
+- **Mesure** : ccusage (`ryoppippi/ccusage`, licence à lire : coût et jetons des sessions d'agent), ActivityWatch (`ActivityWatch/activitywatch`, MPL-2.0 : suivi du temps automatique, local), Kimai (`kimai/kimai`, AGPL-3.0 : suivi du temps facturable). Apache DevLake et Claude-Code-Usage-Monitor : texte simple dans la notion « Mesurer un projet ».
+- Cite : Backlog.md, Beads (texte simple si pas de page), Forgejo, GitLab CE, Obsidian, les notions du lot 17.
+
+## Lot 23 — Annuaires et standards, à part (vague 13, après le lot 19)
+
+floSa veut les annuaires et les standards **à part des outils**, jamais mêlés à eux.
+
+- Propose d'abord, dans ta synthèse intermédiaire ou ta première question, l'endroit : un dossier ou sous-domaine séparé nommé « Annuaires et standards », hors des hubs d'outils. Sans réponse, crée-le (`famille: annuaire` ou `specification`).
+- Candidats, à vérifier : **AGENTS.md** (`agentsmd/agents.md`, MIT, format), **Agent Skills** (spécification SKILL.md, agentskills.io : une notion « Agent Skills » existe déjà en `llm/agents`, cite-la au lieu de la doubler), **awesome-claude-code** (`hesreallyhim/awesome-claude-code`, licence à lire), **awesome-claude-skills** (`ComposioHQ/awesome-claude-skills`, pas de licence détectée), **anthropics/skills** (dépôt officiel de skills, licences variables). Une page par annuaire, sans description des outils qu'il liste.
+- Aucune page ne doit se faire passer pour un outil.
 
 ## Suivi
 
@@ -326,6 +364,9 @@ Règle 15, avec une précision de floSa : ce qui compte est de **ne rien payer e
 - [x] Lot 15 — câblage final des lots 10 à 14
 - [x] Lot 16 — agents de code libres, suite
 - [ ] Lot 17 — gestion de projet : ouverture et méthodes
-- [ ] Lot 18 — skills et cadres de travail avec agents
-- [ ] Lot 19 — documenter et comprendre un dépôt
-- [ ] Lot 20 — suivi de projet auto-hébergé
+- [ ] Lot 18 — BMAD en détail et spécification d'abord
+- [ ] Lot 19 — skills précis pour le cycle de vie
+- [ ] Lot 20 — outils autour de l'agent
+- [ ] Lot 21 — documenter et dessiner l'architecture
+- [ ] Lot 22 — suivi de projet auto-hébergé et mesure
+- [ ] Lot 23 — annuaires et standards, à part
