@@ -19,6 +19,11 @@ url_repo: https://github.com/googleapis/release-please
 # release-please
 
 <!-- AUTO:BANDEAU:START -->
+> Outil Node.js (Apache-2.0, Google) qui tient à jour une pull request de release depuis les commits conventionnels : à sa fusion, il met à jour le changelog et les fichiers de version, pose le tag et crée la release GitHub — mais il vise l'API GitHub (jeton GitHub exigé) et ne publie pas les paquets.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | production | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -53,7 +58,7 @@ Outil de release, écrit en TypeScript et publié par Google (organisation `goog
 ## Ressources
 
 - Documentation — https://github.com/googleapis/release-please
-- Action GitHub — https://github.com/googleapis/release-please-action
+- Dépôt — https://github.com/googleapis/release-please-action
 - Dépôt — https://github.com/googleapis/release-please
 
 ## Voir aussi

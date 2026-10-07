@@ -21,13 +21,18 @@ url_repo: https://github.com/BloopAI/vibe-kanban
 # Vibe Kanban
 
 <!-- AUTO:BANDEAU:START -->
+> Application locale (Apache-2.0, Rust) : un tableau Kanban où chaque carte lance un agent de code dans un espace de travail isolé — branche, terminal, serveur de développement — avec revue de diff commentée et création de pull request — mais la société bloop qui la portait a fermé le 2026-04-10 et le projet vit en maintenance communautaire.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application Rust | open-source | self-hébergé · mono-nœud | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
 
 Application qui se lance par `npx vibe-kanban` et s'ouvre dans le navigateur. On y planifie le travail en cartes sur un tableau Kanban, puis on crée des **espaces de travail** où des agents de code exécutent : chacun reçoit une branche, un terminal et un serveur de développement. L'application affiche le diff, accepte des commentaires en ligne qui repartent vers l'agent, propose un aperçu de l'application avec les outils de développement du navigateur, ouvre la pull request avec une description rédigée par un modèle, puis la fusion. Elle ne contient pas d'agent : elle pilote ceux que l'utilisateur a déjà installés et authentifiés, plus de dix d'après le README (Claude Code, Codex, Gemini CLI, GitHub Copilot, Amp, Cursor, [[OpenCode]], Droid, CCR et [[Qwen Code]]).
 
-**À savoir avant de s'y fier.** Le README s'ouvre sur « Vibe Kanban is sunsetting ». Le billet du 2026-04-10 annonce la fermeture de bloop, la société qui l'éditait, faute de modèle économique : le projet continue en open source, maintenu par la communauté, et les espaces de travail locaux continuent de fonctionner. Les services distants (cartes, commentaires, projets, organisations) devaient disparaître après trente jours, au profit d'une architecture entièrement locale ; le README garde pourtant un guide d'auto-hébergement de l'instance « Cloud ». À vérifier avant de bâtir une organisation d'équipe dessus. La dernière release est la v0.1.44 du 2026-04-24 ; le dépôt a été poussé le 2026-09-19.
+**À savoir avant de s'y fier.** Le README s'ouvre sur « Vibe Kanban is sunsetting ». Le billet du 2026-04-10 annonce la fermeture de bloop, la société qui l'éditait, faute de modèle économique : le projet continue, maintenu par la communauté, et les espaces de travail locaux continuent de fonctionner. Les services distants (cartes, commentaires, projets, organisations) devaient disparaître après trente jours, au profit d'une architecture entièrement locale ; le README garde pourtant un guide d'auto-hébergement de l'instance « Cloud ». À vérifier avant de bâtir une organisation d'équipe dessus. La dernière release est la v0.1.44 du 2026-04-24 ; le dépôt a été poussé le 2026-09-19.
 
 ## Prendre si / Écarter si
 
@@ -58,7 +63,7 @@ Application qui se lance par `npx vibe-kanban` et s'ouvre dans le navigateur. On
 
 - Documentation — https://www.vibekanban.com/docs
 - Dépôt — https://github.com/BloopAI/vibe-kanban
-- Annonce de la fermeture de bloop — https://www.vibekanban.com/blog/shutdown
+- Article — https://www.vibekanban.com/blog/shutdown (annonce de la fermeture de bloop)
 
 ## Voir aussi
 
