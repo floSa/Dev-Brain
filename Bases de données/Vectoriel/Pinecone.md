@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Base vectorielle pionnière du secteur, servie comme un service et rien d'autre. L'architecture
+Service cloud de base vectorielle, payant à l'usage, sans version à héberger soi-même. Base vectorielle pionnière du secteur, servie comme un service et rien d'autre. L'architecture
 est serverless : les vecteurs vivent sur du stockage objet, découplé du calcul, et un pool
 élastique de processeurs sert les requêtes. Autour du magasin de vecteurs, l'éditeur fournit
 Pinecone Inference — embeddings et reranking hébergés — et Assistant, un RAG clé en main. On

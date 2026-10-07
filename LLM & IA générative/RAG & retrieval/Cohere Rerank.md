@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Endpoint de **reranking** de Cohere : on envoie une requête et une liste de documents, l'API
+Service d'API de reclassement de documents proposé par Cohere, payant à l'usage et appelé dans le cloud de l'éditeur. Endpoint de **reranking** de Cohere : on envoie une requête et une liste de documents, l'API
 rend la liste **reclassée** par pertinence, prête à être tronquée avant le LLM. C'est le
 deuxième étage d'un [[Reranking|pipeline en deux temps]], sans modèle à héberger. La
 documentation liste cinq modèles : `rerank-v4.0-pro` et `rerank-v4.0-fast` (multilingues,

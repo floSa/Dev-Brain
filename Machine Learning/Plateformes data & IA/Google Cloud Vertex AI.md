@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-L'écosystème de machine learning de Google Cloud, réuni sous une console unique :
+Ensemble de services de machine learning de Google Cloud, payants à l'usage et managés dans le cloud ; seule l'appliance Google Distributed Cloud en descend sur site, pour le cas isolé du réseau. L'écosystème de machine learning de Google Cloud, réuni sous une console unique :
 entraînement managé, réglage, registre de modèles, pipelines, endpoints d'inférence, et
 modélisation automatique pour les cas courants. Sa singularité tient à l'accès direct aux
 modèles de fondation maison — la famille **Gemini** — servis par la même plateforme que les
@@ -67,6 +67,7 @@ sur l'appliance air-gapped de Google Distributed Cloud.
 - [[Dataiku]] — Plateforme data et IA de bout en bout, auto-hébergeable : un même projet se construit en interface visuelle ou en Python, R et SQL, avec préparation, entraînement, déploiement et gouvernance sous une seule console et un seul modèle de droits. — la suite indépendante du cloud, installable sur site.
 - [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la couche unique posée par-dessus le cloud, portable entre les trois.
 - [[DataRobot]] — Plateforme d'AutoML et de MLOps : elle entraîne et classe des dizaines de modèles candidats, puis déploie et surveille celui qu'on retient ; auto-hébergeable sur Kubernetes ou managée. — plus automatisé sur la modélisation, et installable chez le client.
+- voisin : [[Kubeflow]] — boîte à outils ML open source sur Kubernetes, à déployer sur ses propres serveurs : notebooks, pipelines, entraînement distribué et serving, sans service cloud ni licence.
 
 ## Ressources
 

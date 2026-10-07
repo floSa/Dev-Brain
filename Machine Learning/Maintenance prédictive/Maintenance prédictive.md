@@ -29,6 +29,8 @@ tags: [predictive-maintenance]
 - Une machine tournante équipée d'accéléromètres → [[Analyse vibratoire]], puis [[Diagnostic de défauts de roulements]].
 - Plusieurs capteurs à résumer en un état → [[Indicateurs de santé]].
 - Prédire une durée de vie → [[RUL par apprentissage profond]] avec beaucoup de trajectoires complètes ; [[RUL par analyse de survie]] quand la plupart des unités sont encore en service (censure).
+- Lire dans les pannes d'un parc si l'âge compte (usure) ou non (pannes aléatoires) → [[Loi de Weibull]].
+- Surveiller une machine à plusieurs capteurs avec une ACP → [[T² et SPE]].
 - Quasi aucune panne enregistrée → [[Maintenance prédictive avec peu de pannes]], puis [[Détection d'anomalies]].
 - Décider quand intervenir → [[Politique de maintenance et coût]].
 - Survie avec un modèle d'ensemble ou une évaluation sous censure → [[scikit-survival]] ; avec des tests et des rapports de risque → [[lifelines]].

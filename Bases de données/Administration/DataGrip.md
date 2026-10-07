@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-L'IDE base de données de JetBrains. Il apporte au SQL ce qu'un IDE apporte au code :
+IDE de base de données de JetBrains, payant, gratuit pour un usage non commercial, qui tourne en local sur Windows, macOS et Linux. L'IDE base de données de JetBrains. Il apporte au SQL ce qu'un IDE apporte au code :
 complétion contextuelle, analyse statique des requêtes, refactoring — renommer une colonne
 propage le changement partout —, navigation entre objets et contrôle de version des scripts.
 Il parle au relationnel comme à plusieurs bases NoSQL, et repose sur la plateforme IntelliJ,

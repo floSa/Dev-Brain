@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-SGBD relationnel d'entreprise de Microsoft, intégré en profondeur à l'écosystème **.NET /
+SGBD relationnel de Microsoft, payant par cœur en production, avec une édition Express gratuite (limitée) et une édition Developer gratuite hors production, installable sur site. SGBD relationnel d'entreprise de Microsoft, intégré en profondeur à l'écosystème **.NET /
 Windows / Azure** : authentification Active Directory, pilotes de première classe, continuité
 vers Azure SQL Database et Managed Instance. Son dialecte **T-SQL** est riche, et le produit
 vient avec un outillage mûr qui couvre bien plus que la base — SSMS pour l'administration,

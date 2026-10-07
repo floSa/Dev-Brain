@@ -1,7 +1,7 @@
 # Statistiques & inférence — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 56 pages, chacune avec son chemin et une ligne.
+> 57 pages, chacune avec son chemin et une ligne.
 > Couvre : Analyse factorielle, Bayésien, Méthodes causales, Probabilités, Tests & estimation.
 
 ## Au niveau du dossier
@@ -44,6 +44,7 @@
 ## Probabilités
 - [[Chaînes de Markov]] · notion · `Statistiques & inférence/Probabilités/Chaînes de Markov.md` — Processus aléatoire dont l'état futur ne dépend que de l'état présent, pas du chemin parcouru pour y arriver — la propriété de Markov (« sans mémoire »).
 - [[Inégalités de concentration]] · notion · `Statistiques & inférence/Probabilités/Inégalités de concentration.md` — Bornent la probabilité qu'une variable aléatoire — souvent une moyenne — s'écarte de son espérance, sans attendre que $n \to \infty$.
+- [[Loi de Weibull]] · notion · `Statistiques & inférence/Probabilités/Loi de Weibull.md` — La loi de Weibull décrit combien de temps une machine tient avant de tomber en panne.
 - [[Loi des grands nombres]] · notion · `Statistiques & inférence/Probabilités/Loi des grands nombres.md` — La moyenne empirique d'observations indépendantes et de même loi converge vers l'espérance théorique quand le nombre d'observations grandit.
 - [[Modèles de Markov cachés et filtre de Kalman]] · notion · `Statistiques & inférence/Probabilités/Modèles de Markov cachés et filtre de Kalman.md` — Deux modèles pour la même situation : un état qu'on ne voit pas évolue dans le temps, et on n'en observe que des mesures bruitées.
 - [[Mouvement brownien]] · notion · `Statistiques & inférence/Probabilités/Mouvement brownien.md` — Processus stochastique à temps continu et trajectoires continues, dont les incréments sont indépendants, stationnaires et gaussiens.

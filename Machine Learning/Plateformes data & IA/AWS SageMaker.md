@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-L'écosystème de machine learning d'AWS, c'est-à-dire un ensemble de services managés plutôt
+Ensemble de services de machine learning d'AWS, payants à l'usage et managés dans le cloud AWS ; une exécution sur site passe par AWS Outposts, qui se contracte à part. L'écosystème de machine learning d'AWS, c'est-à-dire un ensemble de services managés plutôt
 qu'un produit unique : environnements de travail et notebooks, entraînement distribué sur des
 instances louées à la minute, réglage d'hyperparamètres, registre de modèles, pipelines, et
 endpoints d'inférence avec leur mise à l'échelle. Depuis 2025, **SageMaker Unified Studio**
@@ -66,6 +66,7 @@ l'auto-hébergement.
 - [[Dataiku]] — Plateforme data et IA de bout en bout, auto-hébergeable : un même projet se construit en interface visuelle ou en Python, R et SQL, avec préparation, entraînement, déploiement et gouvernance sous une seule console et un seul modèle de droits. — la suite indépendante du cloud, installable sur site.
 - [[Databricks]] — Plateforme lakehouse bâtie sur Spark et Delta Lake, managée sur AWS, Azure ou GCP : data engineering, SQL analytique et ML dans un même espace, gouvernés par Unity Catalog ; très technique, et sans auto-hébergement. — la couche unique posée par-dessus le cloud plutôt que le natif du fournisseur.
 - [[DataRobot]] — Plateforme d'AutoML et de MLOps : elle entraîne et classe des dizaines de modèles candidats, puis déploie et surveille celui qu'on retient ; auto-hébergeable sur Kubernetes ou managée. — plus automatisé sur la modélisation, et installable chez le client.
+- voisin : [[Kubeflow]] — boîte à outils ML open source sur Kubernetes, à déployer sur ses propres serveurs : notebooks, pipelines, entraînement distribué et serving, sans service cloud ni licence.
 
 ## Ressources
 

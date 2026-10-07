@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[MLflow]]", "[[Neptune]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
+alternatives: ["[[MLflow]]", "[[Comet]]", "[[ClearML]]", "[[Aim]]", "[[TensorBoard]]"]
 complements: []
 tags: [experiment-tracking, model-registry]
 url_docs: https://docs.wandb.ai/
@@ -29,7 +29,7 @@ url_repo: https://github.com/wandb/wandb
 
 ## Définition
 
-Plateforme de suivi d'expériences devenue un standard de fait en recherche deep learning.
+Plateforme de suivi d'expériences ML, gratuite en usage personnel et en recherche, payante par siège en équipe, proposée en service hébergé ou en serveur auto-hébergé sous licence commerciale. Plateforme de suivi d'expériences devenue un standard de fait en recherche deep learning.
 Deux appels — `wandb.init`, `wandb.log` — suffisent à diffuser métriques, courbes, gradients,
 images et tables vers des tableaux de bord interactifs et partageables. Autour du suivi :
 **Sweeps**, une recherche d'hyperparamètres distribuée intégrée au tracking ; **Artifacts**,
@@ -58,7 +58,7 @@ des rapports collaboratifs. Le SDK `wandb` est ouvert ; la plateforme qui le re�
 ### Alternatives
 
 - [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
-- [[Neptune]] — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- voisin : Neptune (service arrêté en mars 2026) — tracker d'expériences pour les entraînements longs, racheté par OpenAI.
 - [[Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
 - [[ClearML]] — Plateforme MLOps open-source tout-en-un — tracking automatique sans code, plus gestion de données, pipelines, orchestration d'agents et serving.
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.

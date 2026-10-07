@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Service hébergé qui expose une seule API OpenAI-compatible vers plus de 300 modèles de plus de
+Service cloud d'accès à de nombreux modèles de langage par une seule API, payant en crédits (avec un palier gratuit à limites strictes), sans version à héberger. Service hébergé qui expose une seule API OpenAI-compatible vers plus de 300 modèles de plus de
 60 fournisseurs (OpenAI, Anthropic, Google, Meta, Mistral, DeepSeek, xAI). Une clé, une
 facture, une URL de base — le routage vers le bon fournisseur est fait pour l'appelant, avec
 fallback automatique quand l'un d'eux est indisponible. C'est l'équivalent managé de

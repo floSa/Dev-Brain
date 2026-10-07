@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-Outil de préparation et d'analyse de données par **flux visuels** : on relie des blocs —
+Outil de préparation de données par flux visuels, payant sous licence par utilisateur, installable sur site. Outil de préparation et d'analyse de données par **flux visuels** : on relie des blocs —
 lire, joindre, filtrer, agréger, enrichir, écrire — sur un canevas, sans écrire de code. Son
 public historique est l'analyste métier, pas le développeur, et c'est ce qui explique sa place
 dans les directions financières et commerciales. Le produit se lit en trois morceaux :

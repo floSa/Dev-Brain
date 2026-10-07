@@ -28,6 +28,8 @@ tags: [anomaly-detection]
 - Un point aberrant sur une variable → [[Détection d'outliers univariée]].
 - Des images de pièces à contrôler, avec du bon seul → [[Détection d'anomalies visuelle]], puis [[anomalib]] pour comparer les méthodes sur ses images ; [[patchcore-inspection]] comme baseline.
 - Des tableaux de variables, aucune étiquette → [[PyOD]] pour comparer, [[Isolation Forest]] comme premier essai ; [[Local Outlier Factor]] si la densité varie d'une zone à l'autre ; [[One-Class SVM]] avec un échantillon vérifié de normal.
+- Savoir si un point est étrange compte tenu des corrélations entre capteurs → [[Distance de Mahalanobis]].
+- Surveiller un procédé à plusieurs capteurs avec une ACP, par ses deux indicateurs → [[T² et SPE]].
 - Une série temporelle → [[Time series anomaly detection]], puis [[STUMPY]] pour des anomalies de forme.
 - Plusieurs capteurs, des étiquettes rares → [[Anomalies multivariées par apprentissage profond]], après avoir essayé les méthodes statistiques ; une comparaison honnête passe par [[TSB-AD]].
 - Dater un changement de régime → [[Détection de ruptures]] avec [[ruptures]].
@@ -51,6 +53,7 @@ tags: [anomaly-detection]
 - [[Anomalies multivariées par apprentissage profond]] — domaines : data-sci, ml-eng
 - [[Cause racine d'une anomalie]] — domaines : data-sci, ml-eng, mlops
 - [[Contrôle statistique de procédé (SPC)]] — domaines : data-sci, ml-eng
+- [[Distance de Mahalanobis]] — domaines : data-sci, ml-eng
 - [[Détection d'anomalies en ligne]] — domaines : data-sci, ml-eng, mlops
 - [[Détection d'anomalies visuelle]] — domaines : data-sci, ml-eng
 - [[Détection d'outliers multivariée]] — domaines : data-sci, ml-eng
@@ -65,6 +68,7 @@ tags: [anomaly-detection]
 - [[Score et seuil d'alerte]] — domaines : data-sci, ml-eng, mlops
 - [[Time series anomaly detection]] — domaines : data-sci, mlops
 - [[Types d'anomalies et régimes de supervision]] — domaines : data-sci, ml-eng
+- [[T² et SPE]] — domaines : data-sci, ml-eng, mlops
 - [[Évaluer une détection d'anomalies]] — domaines : data-sci, ml-eng
 
 ### Briques

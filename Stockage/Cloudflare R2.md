@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Stockage objet managé de Cloudflare, **S3-compatible**, dont l'argument central tient en un
+Service de stockage objet managé de Cloudflare, payant à l'usage (palier gratuit mensuel) et proposé seulement dans le cloud de Cloudflare. Stockage objet managé de Cloudflare, **S3-compatible**, dont l'argument central tient en un
 point de facturation : **l'egress est à zéro**. Lire ses données ne coûte rien, quel que soit
 le volume sorti — par l'API S3, par un Worker ou par le domaine `r2.dev`. Le reste suit le
 modèle habituel : buckets, clés, classes Standard et Infrequent Access. La compatibilité S3

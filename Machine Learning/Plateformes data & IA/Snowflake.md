@@ -30,7 +30,7 @@ url_repo:
 
 ## Définition
 
-Entrepôt de données managé dont l'architecture sépare le **stockage** du **calcul** : les
+Entrepôt de données managé, payant à l'usage (crédits de calcul et stockage) et proposé seulement en service cloud, sur AWS, Azure ou GCP. Entrepôt de données managé dont l'architecture sépare le **stockage** du **calcul** : les
 données vivent dans un stockage objet, et des entrepôts virtuels dimensionnés indépendamment
 les interrogent, se suspendent et se réveillent à la demande. Ce qui l'a fait sortir du rang
 des moteurs est l'exécution qu'il a absorbée : **Snowpark** fait tourner du Python, du Java et

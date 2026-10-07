@@ -27,7 +27,7 @@ url_repo: https://github.com/NVIDIA/TensorRT
 
 ## Définition
 
-SDK d'inférence de NVIDIA, spécialisé pour ses propres GPU. À partir d'un modèle entraîné,
+SDK d'inférence de NVIDIA, gratuit d'usage mais au cœur fermé, qui s'exécute en local et seulement sur les GPU NVIDIA. SDK d'inférence de NVIDIA, spécialisé pour ses propres GPU. À partir d'un modèle entraîné,
 souvent passé par un export ONNX, il le **compile en un « moteur »** optimisé pour une
 architecture GPU donnée : fusion de couches, sélection automatique des kernels les plus
 rapides, calibration et **quantization** (FP16, INT8, FP8, NVFP4), gestion fine de la mémoire.

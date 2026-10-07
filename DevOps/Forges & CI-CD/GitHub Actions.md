@@ -29,7 +29,7 @@ url_repo: https://github.com/actions/runner
 
 ## Définition
 
-Plateforme de CI/CD intégrée à GitHub. Des **workflows** décrits en YAML dans
+Service de CI/CD de GitHub, gratuit sur les dépôts publics et dans la limite de minutes incluses sur les dépôts privés, puis payant à la minute ; les runners peuvent s'auto-héberger. Plateforme de CI/CD intégrée à GitHub. Des **workflows** décrits en YAML dans
 `.github/workflows/` se déclenchent sur des événements du dépôt — `push`,
 `pull_request`, `schedule`, `workflow_dispatch` — et s'exécutent sur des **runners**,
 machines éphémères hébergées par GitHub ou auto-hébergées. La force du modèle est la

@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 scaling: distributed
-alternatives: ["[[MLflow]]", "[[Weights & Biases]]", "[[Neptune]]", "[[Comet]]", "[[Aim]]"]
+alternatives: ["[[MLflow]]", "[[Weights & Biases]]", "[[Comet]]", "[[Aim]]"]
 complements: []
 tags: [experiment-tracking, model-registry, orchestration]
 url_docs: https://clear.ml/docs/
@@ -59,7 +59,7 @@ plusieurs services — Elasticsearch, MongoDB, Redis. Ancien nom : *Trains*, che
 
 - [[MLflow]] — Plateforme open-source de cycle de vie ML (Linux Foundation) — tracking d'expériences, registre de modèles, packaging et déploiement, agnostique au framework et au cloud.
 - [[Weights & Biases]] — Plateforme SaaS de suivi d'expériences et de visualisation — dashboards riches, sweeps d'hyperparamètres, artefacts et registre de modèles ; référence en R&D deep learning.
-- [[Neptune]] — Tracker d'expériences SaaS spécialisé entraînements longue durée et foundation models — racheté par OpenAI, service hébergé arrêté en mars 2026.
+- voisin : Neptune (service arrêté en mars 2026) — tracker d'expériences pour les entraînements longs, racheté par OpenAI.
 - [[Comet]] — Plateforme SaaS de suivi d'expériences ML couplée à l'observabilité LLM (Opik, open-source) — du tracking classique au monitoring d'applications génératives.
 - [[Aim]] — Tracker d'expériences open-source léger et auto-hébergé — UI de comparaison rapide sur des centaines de milliers de runs, sans dépendance à un SaaS.
 

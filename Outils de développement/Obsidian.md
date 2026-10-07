@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Base de connaissances personnelle dont le format de stockage est le système de fichiers :
+Application de notes fermée mais gratuite, y compris au travail depuis février 2025, qui tourne en local sur un dossier de fichiers Markdown ; seule la synchronisation officielle est payante. Base de connaissances personnelle dont le format de stockage est le système de fichiers :
 un vault est un dossier de fichiers `.md` sur le disque, pas une base ni un espace distant.
 Les notes se relient par des **wikilinks bidirectionnels** — chaque page sait qui la cite —
 et l'ensemble se parcourt en graphe. L'extensibilité passe par des plugins : Bases, Canvas,

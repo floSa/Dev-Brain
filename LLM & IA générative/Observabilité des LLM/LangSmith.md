@@ -29,7 +29,7 @@ url_repo:
 
 ## Définition
 
-Plateforme d'observabilité, d'évaluation et de déploiement d'agents LLM éditée par LangChain
+Plateforme d'observabilité LLM de LangChain, payante et proposée en service cloud ; l'hébergement sur site est réservé à l'offre entreprise. Plateforme d'observabilité, d'évaluation et de déploiement d'agents LLM éditée par LangChain
 Inc. : traçage détaillé, dashboards de monitoring, jeux d'évaluation (datasets, LLM-as-judge,
 annotation humaine) et déploiement d'agents dans un seul produit clé en main. Née dans
 l'écosystème [[LangChain]], elle est **framework-agnostique** — elle instrumente une app quel

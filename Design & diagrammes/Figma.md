@@ -28,7 +28,7 @@ url_repo:
 
 ## Définition
 
-Plateforme de design d'interface et de prototypage collaborative, devenue le standard du
+Service cloud de design d'interface, gratuit avec limites puis payant par éditeur, sans version à héberger. Plateforme de design d'interface et de prototypage collaborative, devenue le standard du
 design produit. Édition temps réel multi-utilisateurs dans le navigateur, systèmes de
 composants et de variables pour tenir un design system, prototypes interactifs cliquables,
 et un **dev mode** qui expose mesures, tokens et bouts de code aux développeurs. L'écosystème

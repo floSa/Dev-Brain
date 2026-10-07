@@ -23,6 +23,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 ## Choisir
 
 - Une explication à montrer à un métier, sur du tabulaire ou des arbres → [[SHAP]], et son TreeSHAP exact.
+- Comprendre d'où viennent ces attributions, et ce que leur calcul suppose → [[Valeurs de Shapley]].
 - Une explication locale rapide, sur n'importe quel modèle, en acceptant l'instabilité → [[LIME]].
 - Des attributions sur un réseau PyTorch, texte ou image → [[Captum]].
 - Expliquer un modèle de langage HuggingFace, par attributions ou par concepts → [[interpreto]]. Cf. [[Comparatif - Explicabilité]].
@@ -39,6 +40,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 - [[Probing]] — domaines : data-sci, ai-eng
 - [[Sparse autoencoders]] — domaines : data-sci, ai-eng
 - [[Superposition]] — domaines : data-sci, ai-eng
+- [[Valeurs de Shapley]] — domaines : data-sci, ml-eng
 
 ### Briques
 - [[Captum]] — Bibliothèque d'interprétabilité officielle de PyTorch (Meta) — une trentaine de méthodes d'attribution unifiées (Integrated Gradients, DeepLift, GradCAM, Shapley, TracIn) applicables à n'importe quel modèle PyTorch, entrées comme couches ou neurones.

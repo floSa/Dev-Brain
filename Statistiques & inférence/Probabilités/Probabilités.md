@@ -27,6 +27,7 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 - Modéliser des arrivées ou des comptages d'événements → [[Processus de Poisson]].
 - Reconstituer un état caché à partir de mesures bruitées, discret ou continu → [[Modèles de Markov cachés et filtre de Kalman]].
 - Modéliser le maximum d'une série ou le dépassement d'un seuil élevé (crues, pannes, seuil d'alerte) → [[Théorie des valeurs extrêmes]].
+- Décrire la durée de vie d'une machine avant panne : un risque qui baisse, reste plat ou monte avec l'âge → [[Loi de Weibull]].
 - Simuler ces lois en Python → [[scipy.stats]], au dossier [[Tests & estimation]].
 - Les échantillonner pour approcher un a posteriori → [[MCMC]], au dossier [[Bayésien]].
 
@@ -34,6 +35,7 @@ tags: [probability, convergence, concentration, stochastic-process, markov, mont
 ### Notions
 - [[Chaînes de Markov]] — domaines : data-sci
 - [[Inégalités de concentration]] — domaines : data-sci
+- [[Loi de Weibull]] — domaines : data-sci, mlops
 - [[Loi des grands nombres]] — domaines : data-sci
 - [[Modèles de Markov cachés et filtre de Kalman]] — domaines : data-sci
 - [[Mouvement brownien]] — domaines : data-sci
