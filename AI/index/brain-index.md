@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1148 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1151 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -258,6 +258,11 @@
 ### devops/infrastructure
 - **Ansible** — Gestion de configuration sans agent (ansible-core en GPL-3.0-or-later, Python, Red Hat/IBM) : des playbooks YAML exécutés depuis un nœud de contrôle par SSH sur des machines qui n'ont besoin que de Python — idempotent module par module, sans état ni détection de dérive ; l'offre payante est Ansible Automation Platform, pas l'outil.
 - **OpenTofu** — Provisionnement d'infrastructure déclaratif avec un état (MPL-2.0, Go, fork de Terraform 1.5 sous la Linux Foundation, CNCF sandbox) : des fichiers HCL, un plan avant chaque changement, des fournisseurs pour VMware, Proxmox, libvirt, Kubernetes ; chiffrement d'état natif, miroir de fournisseurs pour le réseau fermé — Terraform, lui, est sous BUSL depuis 2023.
+
+### devtools/annuaire-standard
+- **Agent Skills - la spécification** — Spécification ouverte du format SKILL.md (dépôt Apache-2.0, documentation CC-BY-4.0, née chez Anthropic) : un dossier avec un frontmatter name et description, chargé en trois temps, que 46 produits listés sur le site prennent en charge — une spécification, pas un outil, rien à installer.
+- **AGENTS.md - le format** — Format ouvert (MIT) d'un fichier Markdown AGENTS.md à la racine d'un dépôt, qui donne aux agents de code les commandes et les conventions du projet : aucun champ obligatoire, le fichier le plus proche du code l'emporte — une spécification, pas un outil, rien à installer.
+- **Skills d'Anthropic** — Dépôt GitHub d'Anthropic de 19 skills d'exemple, sans licence à la racine : 14 sous Apache-2.0, 4 de documents source-available, 1 sans licence — un annuaire à lire, dont on ne reprend que les skills libres, pas un outil à installer en bloc.
 
 ### devtools/cli
 - **Rich** — Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.

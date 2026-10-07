@@ -49,6 +49,8 @@ Deux autres annuaires circulent et n'ont pas de page, faute de licence libre con
 - [[Packaging Python et environnements reproductibles]] — domaines : data-sci, data-eng, ml-eng, ai-eng, mlops
 
 ### Briques
+- [[Agent Skills - la spécification]] — Spécification ouverte du format SKILL.md (dépôt Apache-2.0, documentation CC-BY-4.0, née chez Anthropic) : un dossier avec un frontmatter name et description, chargé en trois temps, que 46 produits listés sur le site prennent en charge — une spécification, pas un outil, rien à installer.
+- [[AGENTS.md - le format]] — Format ouvert (MIT) d'un fichier Markdown AGENTS.md à la racine d'un dépôt, qui donne aux agents de code les commandes et les conventions du projet : aucun champ obligatoire, le fichier le plus proche du code l'emporte — une spécification, pas un outil, rien à installer.
 - [[Bruno]] — Client d'API git-native et open-source : collections en fichiers texte .bru versionnables, 100 % local, sans compte ni cloud.
 - [[dynaconf]] — Gestion de configuration Python multi-format et multi-environnement : couches par environnement (default/dev/prod), surcharge par variables d'environnement et secrets.
 - [[hydra]] — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
@@ -62,6 +64,7 @@ Deux autres annuaires circulent et n'ont pas de page, faute de licence libre con
 - [[pytest]] — Framework de tests Python de référence : assertions natives, fixtures composables et large écosystème de plugins.
 - [[python-dotenv]] — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
 - [[Rich]] — Rendu riche dans le terminal : texte couleur et stylé, tables, barres de progression, Markdown, coloration syntaxique et tracebacks lisibles — en quelques lignes.
+- [[Skills d'Anthropic]] — Dépôt GitHub d'Anthropic de 19 skills d'exemple, sans licence à la racine : 14 sous Apache-2.0, 4 de documents source-available, 1 sans licence — un annuaire à lire, dont on ne reprend que les skills libres, pas un outil à installer en bloc.
 - [[testcontainers]] — Dépendances jetables (bases, brokers, navigateurs…) lancées en conteneurs Docker le temps d'un test, démarrées et nettoyées automatiquement.
 - [[Typer]] — Construction de CLI en Python à partir des annotations de type : une fonction typée devient une commande, avec aide, complétion shell et validation générées automatiquement. Bâti sur Click.
 - [[uv]] — Gestionnaire de paquets et de projets Python écrit en Rust, extrêmement rapide : un seul outil pour remplacer pip, pip-tools, pipx, poetry, pyenv, virtualenv et twine.

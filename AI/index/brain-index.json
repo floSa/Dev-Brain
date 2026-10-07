@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1148,
+  "count": 1151,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -52,6 +52,7 @@
       "ai-memory"
     ],
     "agent-skill": [
+      "Agent Skills - la spécification",
       "Agents de code",
       "Archify",
       "Assistants",
@@ -63,6 +64,7 @@
       "Ponytail",
       "Quel skill pour quelle étape",
       "Skills d'Addy Osmani",
+      "Skills d'Anthropic",
       "Skills de Matt Pocock",
       "Superpowers",
       "i-have-adhd",
@@ -70,7 +72,9 @@
     ],
     "agents": [
       "ADR et design docs",
+      "AGENTS.md - le format",
       "Activepieces",
+      "Agent Skills - la spécification",
       "Agent evaluation",
       "Agent memory",
       "Agent patterns",
@@ -153,6 +157,7 @@
       "Semantic Kernel",
       "Serena",
       "Skills d'Addy Osmani",
+      "Skills d'Anthropic",
       "Skills de Matt Pocock",
       "Sous-agents et isolation du contexte",
       "Spec Kit",
@@ -548,6 +553,7 @@
       "torchvision"
     ],
     "code-assistant": [
+      "AGENTS.md - le format",
       "Agents de code",
       "Aider",
       "Archify",
@@ -764,6 +770,8 @@
     ],
     "context-engineering": [
       "ADR et design docs",
+      "AGENTS.md - le format",
+      "Agent Skills - la spécification",
       "Agent skills",
       "Architecture deep agent",
       "Boucle de Ralph",
@@ -3927,10 +3935,12 @@
       "SimPy"
     ],
     "skills": [
+      "Agent Skills - la spécification",
       "Gestion de projet",
       "Ponytail",
       "Quel skill pour quelle étape",
       "Skills d'Addy Osmani",
+      "Skills d'Anthropic",
       "Skills de Matt Pocock",
       "Superpowers",
       "pm-skills"
@@ -30666,6 +30676,62 @@
       "maturite": "production"
     },
     {
+      "path": "Outils de développement/AGENTS.md - le format.md",
+      "nom": "AGENTS.md - le format",
+      "alias": [
+        "agentsmd",
+        "agentsmd/agents.md",
+        "format AGENTS.md"
+      ],
+      "role": "brique",
+      "categorie": "devtools/annuaire-standard",
+      "famille": "specification",
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Format ouvert (MIT) d'un fichier Markdown AGENTS.md à la racine d'un dépôt, qui donne aux agents de code les commandes et les conventions du projet : aucun champ obligatoire, le fichier le plus proche du code l'emporte — une spécification, pas un outil, rien à installer.",
+      "tags": [
+        "agents",
+        "context-engineering",
+        "code-assistant"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Agent Skills - la spécification]]"
+      ],
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Agent Skills - la spécification.md",
+      "nom": "Agent Skills - la spécification",
+      "alias": [
+        "agentskills.io",
+        "agentskills",
+        "spécification SKILL.md"
+      ],
+      "role": "brique",
+      "categorie": "devtools/annuaire-standard",
+      "famille": "specification",
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Spécification ouverte du format SKILL.md (dépôt Apache-2.0, documentation CC-BY-4.0, née chez Anthropic) : un dossier avec un frontmatter name et description, chargé en trois temps, que 46 produits listés sur le site prennent en charge — une spécification, pas un outil, rien à installer.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "agents",
+        "context-engineering"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[AGENTS.md - le format]]",
+        "[[Skills d'Anthropic]]"
+      ],
+      "maturite": null
+    },
+    {
       "path": "Outils de développement/Bruno.md",
       "nom": "Bruno",
       "alias": [
@@ -32375,6 +32441,33 @@
         "[[Typer]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Skills d'Anthropic.md",
+      "nom": "Skills d'Anthropic",
+      "alias": [
+        "anthropics/skills",
+        "skills officiels d'Anthropic",
+        "dépôt anthropics/skills"
+      ],
+      "role": "brique",
+      "categorie": "devtools/annuaire-standard",
+      "famille": "annuaire",
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Dépôt GitHub d'Anthropic de 19 skills d'exemple, sans licence à la racine : 14 sous Apache-2.0, 4 de documents source-available, 1 sans licence — un annuaire à lire, dont on ne reprend que les skills libres, pas un outil à installer en bloc.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Agent Skills - la spécification]]"
+      ],
+      "maturite": null
     },
     {
       "path": "Outils de développement/Typer.md",
