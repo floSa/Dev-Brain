@@ -31,4 +31,5 @@ tags: [documentation]
 
 - [[Documentation technique]] — le hub du sous-domaine
 - [[Diátaxis et docs-as-code]] — quoi écrire, quel que soit l'outil
+- [[Kroki]] — le serveur qui rend les diagrammes en texte (PlantUML, Mermaid, D2…) d'une documentation, sans installer chaque moteur ; il ne remplace aucun générateur ci-dessus.
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
