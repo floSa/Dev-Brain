@@ -1,7 +1,7 @@
 ---
 role: brique
 nom: OpenSpec
-alias: [openspec, Fission-AI/OpenSpec, "@fission-ai/openspec", OPSX, opsx]
+alias: [openspec, Fission-AI/OpenSpec, "@fission-ai/openspec", OPSX]
 pitch: "Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive."
 categorie: llm/agent-de-code
 famille: extension
@@ -79,8 +79,7 @@ Le flux par défaut (profil `core`) compte six commandes : `propose`, `explore`,
 ## Ressources
 
 - Documentation — https://github.com/Fission-AI/OpenSpec/blob/main/docs/README.md
-- Dépôt — https://github.com/Fission-AI/OpenSpec (licence MIT vérifiée dans le fichier `LICENSE`, dernier push le 2026-10-07)
-- Site — https://openspec.dev/
+- Dépôt — https://github.com/Fission-AI/OpenSpec (licence MIT vérifiée dans le fichier `LICENSE`, dernier push le 2026-10-07) ; site https://openspec.dev/
 
 ## Voir aussi
 
