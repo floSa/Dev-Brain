@@ -13,7 +13,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 
 ## Ce qu'il faut comprendre
 
-- La ligne de fracture du sous-domaine est le **support**, pas le rendu. Un **diagramme-as-code** ([[Mermaid]], [[LikeC4]]) est du texte : il vit dans le dépôt, se relit en diff, se régénère, et le moteur décide du placement. Un **canevas** ([[draw.io]], [[Excalidraw]]) est un dessin : on place à la main, donc on obtient exactement ce qu'on veut, et le fichier ne se relit pas en diff.
+- La ligne de fracture du sous-domaine est le **support**, pas le rendu. Un **diagramme-as-code** ([[Mermaid]], [[D2]], [[PlantUML]], [[LikeC4]]) est du texte : il vit dans le dépôt, se relit en diff, se régénère, et le moteur décide du placement. Un **canevas** ([[draw.io]], [[Excalidraw]]) est un dessin : on place à la main, donc on obtient exactement ce qu'on veut, et le fichier ne se relit pas en diff.
 - Le corollaire pratique : un schéma qui doit **rester juste dans six mois** gagne à être du code, parce qu'on le corrige en éditant deux lignes. Un schéma qui doit **convaincre à l'écran maintenant** gagne à être dessiné.
 - Le placement automatique est la vraie limite du diagramme-as-code : au-delà d'une vingtaine de nœuds, aucun moteur ne produit une mise en page lisible sans indices manuels.
 - Un troisième support est apparu : le diagramme **produit par un modèle** à partir d'un dépôt ([[Archify]] via un agent, [[GitDiagram]] via une URL). Personne n'y place rien, donc personne n'en répond : il se relit comme une hypothèse, pas comme une spécification.
@@ -22,6 +22,7 @@ tags: [diagram, diagram-as-code, whiteboard, isometric]
 ## Choisir
 
 - Dans un README, une PR, une doc Markdown → [[Mermaid]], rendu nativement par GitHub, GitLab et Obsidian.
+- Un diagramme en texte au rendu plus soigné que Mermaid (thèmes, mode croquis, moteurs de placement au choix), à produire en CI → [[D2]] ; le plus large catalogue de types, UML en tête (séquence, classes, états, mais aussi Gantt et ArchiMate) → [[PlantUML]], qui demande Java. Ni l'un ni l'autre n'est rendu par GitHub sans étape de plus. Rendre ces langages, et d'autres, par une seule API hébergée chez soi → [[Kroki]].
 - Un schéma d'architecture riche, avec des icônes fournisseur et un contrôle fin du placement → [[draw.io]].
 - Un croquis à main levée pour une réunion ou une explication rapide → [[Excalidraw]].
 - Une vue isométrique d'infrastructure, pour une présentation → [[FossFLOW]].
