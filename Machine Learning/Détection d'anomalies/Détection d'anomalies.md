@@ -28,6 +28,8 @@ tags: [anomaly-detection]
 - Un point aberrant sur une variable → [[Détection d'outliers univariée]].
 - Des images de pièces à contrôler, avec du bon seul → [[Détection d'anomalies visuelle]], puis [[anomalib]] pour comparer les méthodes sur ses images ; [[patchcore-inspection]] comme baseline.
 - Des tableaux de variables, aucune étiquette → [[PyOD]] pour comparer, [[Isolation Forest]] comme premier essai ; [[Local Outlier Factor]] si la densité varie d'une zone à l'autre ; [[One-Class SVM]] avec un échantillon vérifié de normal.
+- Savoir si un point est étrange compte tenu des corrélations entre capteurs → [[Distance de Mahalanobis]].
+- Surveiller un procédé à plusieurs capteurs avec une ACP, par ses deux indicateurs → [[T² et SPE]].
 - Une série temporelle → [[Time series anomaly detection]], puis [[STUMPY]] pour des anomalies de forme.
 - Plusieurs capteurs, des étiquettes rares → [[Anomalies multivariées par apprentissage profond]], après avoir essayé les méthodes statistiques ; une comparaison honnête passe par [[TSB-AD]].
 - Dater un changement de régime → [[Détection de ruptures]] avec [[ruptures]].

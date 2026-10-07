@@ -23,6 +23,7 @@ tags: [explainability, deep-learning, transformers, llm, model-evaluation]
 ## Choisir
 
 - Une explication à montrer à un métier, sur du tabulaire ou des arbres → [[SHAP]], et son TreeSHAP exact.
+- Comprendre d'où viennent ces attributions, et ce que leur calcul suppose → [[Valeurs de Shapley]].
 - Une explication locale rapide, sur n'importe quel modèle, en acceptant l'instabilité → [[LIME]].
 - Des attributions sur un réseau PyTorch, texte ou image → [[Captum]].
 - Expliquer un modèle de langage HuggingFace, par attributions ou par concepts → [[interpreto]]. Cf. [[Comparatif - Explicabilité]].

@@ -33,6 +33,7 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - Une API commune pour la prévision, la classification et la régression de séries, avec pipelines et réglage → [[sktime]].
 - Fabriquer des centaines de caractéristiques d'une fenêtre puis filtrer celles qui comptent → [[tsfresh]].
 - Chercher des motifs répétés ou des ruptures de forme → [[STUMPY]], par matrix profile, rangé dans [[Détection d'anomalies]].
+- Savoir si une série en précède et en prédit une autre, sans y voir une preuve de cause → [[Causalité de Granger]].
 - Transformer la série en colonnes puis modéliser → [[Tabulaire]] ; industrialiser le réentraînement → [[Suivi d'expériences]] et [[Serving]].
 
 <!-- AUTO:START -->
