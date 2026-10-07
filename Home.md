@@ -10,14 +10,14 @@ tags: [meta]
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 - [[Machine Learning]] — 123 briques, 18 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Détection d'anomalies]], [[Maintenance prédictive]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
-- [[LLM & IA générative]] — 103 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
+- [[LLM & IA générative]] — 108 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
 - [[Bases de données]] — 58 briques, 5 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 85 briques, 10 sous-domaines
 - [[Mathématiques]] — 8 briques, 5 sous-domaines
-- [[Outils de développement]] — 24 briques, 3 sous-domaines
+- [[Outils de développement]] — 29 briques, 4 sous-domaines
 - [[Signal & audio]] — 3 briques, 1 sous-domaine
-- [[Design & diagrammes]] — 8 briques, 1 sous-domaine
+- [[Design & diagrammes]] — 9 briques, 1 sous-domaine
 - [[Calcul distribué]] — 7 briques
 - [[Web & API]] — 10 briques, 1 sous-domaine
 - [[Stockage]] — 9 briques
@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 74 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 75 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 

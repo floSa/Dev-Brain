@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1117 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1131 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -230,6 +230,7 @@
 - **Excalidraw** — Whiteboard open-source (MIT) au style croquis à main levée : esquisser vite une architecture ou un schéma, collaboration temps réel, export PNG/SVG, s'intègre à Obsidian.
 - **FossFLOW** — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - **GitDiagram** — Service web open-source (MIT, TypeScript) qui génère par LLM un diagramme d'architecture interactif d'un dépôt GitHub depuis son URL : composants liés au code, export PNG/Mermaid, serveur MCP pour les agents.
+- **LikeC4** — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.
 - **Mermaid** — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 
 ### design/ui
@@ -271,6 +272,13 @@
 - **hydra** — Framework de configuration hiérarchique composable (organisation communautaire Hydra Ecosystem, ex-Meta), bâti sur OmegaConf : compositions de configs, surcharge en ligne de commande et balayages multirun — pensé pour les expériences ML.
 - **Pydantic Settings** — Configuration typée chargée depuis l'environnement, les fichiers .env et les secrets, bâtie sur Pydantic.
 - **python-dotenv** — Charge les paires clé-valeur d'un fichier `.env` dans les variables d'environnement, pour des applications suivant les 12 facteurs.
+
+### devtools/documentation
+- **Docusaurus** — Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.
+- **MkDocs** — Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.
+- **mkdocstrings** — Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.
+- **Sphinx** — Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.
+- **Zensical** — Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.
 
 ### devtools/notebook
 - **jupysql** — SQL natif dans Jupyter via les magics `%sql` / `%%sql` — requêter une base ou DuckDB depuis un notebook, paramétrer, composer en CTE et tracer les résultats.
@@ -318,8 +326,13 @@
 - **OpenCode** — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
 - **OpenSpec** — Outil libre (MIT, TypeScript, paquet npm `@fission-ai/openspec`) de spécification dans le dépôt : un dossier `openspec/` garde les specs de ce qui est vrai et un dossier par changement (proposition, specs en delta, design, tâches) que l'agent de code rédige, implémente puis archive.
 - **pi** — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés.
+- **pm-skills** — Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.
+- **Ponytail** — Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.
 - **Qwen Code** — Agent de code open source (Apache-2.0, TypeScript) pour le terminal, avec plugins d'éditeur : issu de Gemini CLI, il parle aux API OpenAI, Anthropic, Gemini et Qwen et aux modèles locaux Ollama et vLLM.
+- **Skills d'Addy Osmani** — Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.
+- **Skills de Matt Pocock** — Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.
 - **Spec Kit** — CLI de GitHub pour le spec-driven development : une spécification exécutable pilote un agent de codage IA du cahier des charges à l'implémentation (constitution → specify → plan → tasks → implement).
+- **Superpowers** — Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».
 - **swarm-forge** — Orchestrateur tmux d'agents de code (Robert C. Martin, Clojure/Babashka) : chaque agent travaille dans son propre git worktree et passe le relais par handoffs asynchrones validés par une porte d'audit ; aucune licence déclarée.
 - **t3code** — Plan de contrôle au-dessus des CLI d'agents de code installées localement (Claude Code, Codex, Cursor, OpenCode, Grok) : desktop, web et mobile, sans parler lui-même à un LLM.
 - **Zoo Code** — Extension VS Code open source (Apache-2.0, TypeScript), suite communautaire de Roo Code : modes Code, Architect, Ask, Debug et personnalisés, serveurs MCP, et le fournisseur de modèles de son choix dont Ollama et LM Studio.
@@ -829,6 +842,7 @@
 - **Mesurer un projet - DORA, coût des agents et temps passé** — domaines : mlops, ai-eng · alias : DORA, DORA metrics, four keys, métriques de livraison, coût des agents, jetons, time tracking, suivi du temps, Goodhart
 - **Modèle C4** — domaines : ai-eng, mlops, data-eng · alias : C4, C4 model, C4 diagrams, diagrammes C4, Context Containers Components Code, modèle C4 de Simon Brown
 - **PRD et user stories** — domaines : ai-eng, data-eng · alias : PRD, product requirements document, document d'exigences produit, user story, user stories, histoires utilisateur, job stories, critères d'acceptation, INVEST
+- **Quel skill pour quelle étape** — domaines : ai-eng, ml-eng · alias : choisir un skill, skills par étape du cycle de vie, catalogue de skills, quel skill utiliser
 - **Revue, tests et définition de terminé avec un agent** — domaines : ai-eng, ml-eng, mlops · alias : definition of done, DoD, définition de terminé, revue de code d'agent, tests d'abord, test-first avec agent, vérification de code généré
 - **Vibe coding contre ingénierie agentique** — domaines : ai-eng, ml-eng · alias : vibe coding, agentic engineering, ingénierie agentique, vibe engineering
 
@@ -1417,6 +1431,9 @@
 ### devtools/client-api
 - **Comparatif - Clients d'API** — —
 
+### devtools/documentation
+- **Comparatif - Générateurs de documentation** — —
+
 ### devtools/paquet
 - **Comparatif - Gestionnaires de paquets Python** — —
 
@@ -1584,6 +1601,7 @@
 - **Design & diagrammes** — Dessiner — une interface qu'on prototype, ou un système qu'on explique.
 - **DevOps** — Déployer et faire tourner ce qui a été fabriqué — packager en image, et l'exécuter à chaque commit.
 - **Diagrammes** — Expliquer un système par un dessin — à la main sur un canevas, ou en texte versionnable à côté du code.
+- **Documentation technique** — Documenter un projet logiciel dans son dépôt — quoi écrire, et avec quel générateur fabriquer et publier le site.
 - **Documents** — Manipuler des documents comme des documents — un PDF qu'on découpe, une page web qu'on rapatrie en Markdown.
 - **Données industrielles** — Amener la donnée de l'atelier jusqu'au système d'information par les protocoles industriels — brokers MQTT, piles OPC UA, outils de flux — et sécuriser le chemin.
 - **Détection d'anomalies** — Repérer ce qui s'écarte du normal — points, motifs, images — et décider à partir de quel écart on alerte.

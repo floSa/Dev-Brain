@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1117,
+  "count": 1131,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -60,7 +60,13 @@
       "BMAD - tour complet des skills",
       "Fichiers de contexte pour agents",
       "OpenSpec",
-      "i-have-adhd"
+      "Ponytail",
+      "Quel skill pour quelle étape",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
+      "Superpowers",
+      "i-have-adhd",
+      "pm-skills"
     ],
     "agents": [
       "ADR et design docs",
@@ -135,16 +141,21 @@
       "PRD et user stories",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - RAG structuré graphe + human-in-the-loop",
+      "Ponytail",
       "PraisonAI",
       "PydanticAI",
+      "Quel skill pour quelle étape",
       "Qwen Code",
       "RAG agentique",
       "Reliability patterns",
       "Revue, tests et définition de terminé avec un agent",
       "Sandboxing de code généré",
       "Semantic Kernel",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
       "Sous-agents et isolation du contexte",
       "Spec Kit",
+      "Superpowers",
       "Text-to-SQL",
       "Tool use patterns",
       "Vanna",
@@ -162,6 +173,7 @@
       "n8n",
       "open_deep_research",
       "pi",
+      "pm-skills",
       "smolagents",
       "swarm-forge",
       "t3code"
@@ -546,9 +558,13 @@
       "Maka",
       "OpenCode",
       "OpenSpec",
+      "Ponytail",
       "Qwen Code",
       "Revue, tests et définition de terminé avec un agent",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
       "Spec Kit",
+      "Superpowers",
       "Vibe coding contre ingénierie agentique",
       "Zoo Code",
       "ai-memory",
@@ -1134,6 +1150,7 @@
       "Excalidraw",
       "FossFLOW",
       "GitDiagram",
+      "LikeC4",
       "Mermaid",
       "Modèle C4",
       "draw.io"
@@ -1143,6 +1160,7 @@
       "Comparatif - Diagrammes",
       "Diagrammes",
       "Diátaxis et docs-as-code",
+      "LikeC4",
       "Mermaid",
       "Modèle C4"
     ],
@@ -1274,8 +1292,15 @@
     ],
     "documentation": [
       "ADR et design docs",
+      "Comparatif - Générateurs de documentation",
       "Diátaxis et docs-as-code",
-      "Modèle C4"
+      "Documentation technique",
+      "Docusaurus",
+      "MkDocs",
+      "Modèle C4",
+      "Sphinx",
+      "Zensical",
+      "mkdocstrings"
     ],
     "domain-adaptation": [
       "Adaptation de domaine"
@@ -3185,8 +3210,10 @@
       "Modèle C4",
       "OpenSpec",
       "PRD et user stories",
+      "Quel skill pour quelle étape",
       "Revue, tests et définition de terminé avec un agent",
-      "Vibe coding contre ingénierie agentique"
+      "Vibe coding contre ingénierie agentique",
+      "pm-skills"
     ],
     "projection": [
       "Algèbre linéaire",
@@ -3859,7 +3886,13 @@
       "SimPy"
     ],
     "skills": [
-      "Gestion de projet"
+      "Gestion de projet",
+      "Ponytail",
+      "Quel skill pour quelle étape",
+      "Skills d'Addy Osmani",
+      "Skills de Matt Pocock",
+      "Superpowers",
+      "pm-skills"
     ],
     "slo": [
       "SLO et alerting"
@@ -10937,6 +10970,31 @@
       "maturite": null
     },
     {
+      "path": "Design & diagrammes/Diagrammes/LikeC4.md",
+      "nom": "LikeC4",
+      "alias": [
+        "likec4",
+        "Architecture as code",
+        "C4 en code"
+      ],
+      "role": "brique",
+      "categorie": "design/diagramme",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io.",
+      "tags": [
+        "diagram",
+        "diagram-as-code"
+      ],
+      "alternatives": [
+        "[[Mermaid]]",
+        "[[draw.io]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
       "path": "Design & diagrammes/Diagrammes/Mermaid.md",
       "nom": "Mermaid",
       "alias": [
@@ -10956,7 +11014,8 @@
       ],
       "alternatives": [
         "[[draw.io]]",
-        "[[Archify]]"
+        "[[Archify]]",
+        "[[LikeC4]]"
       ],
       "complements": [],
       "maturite": null
@@ -10982,7 +11041,8 @@
         "[[Excalidraw]]",
         "[[Mermaid]]",
         "[[FossFLOW]]",
-        "[[Archify]]"
+        "[[Archify]]",
+        "[[LikeC4]]"
       ],
       "complements": [],
       "maturite": null
@@ -12443,6 +12503,35 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/Ponytail.md",
+      "nom": "Ponytail",
+      "alias": [
+        "DietrichGebert/ponytail",
+        "ponytail skill"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skill MIT qui force l'agent de code à chercher la solution la plus simple avant d'écrire du code, avec cinq commandes de revue, d'audit et de mesure de la sur-ingénierie.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Superpowers]]",
+        "[[Skills d'Addy Osmani]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Qwen Code.md",
       "nom": "Qwen Code",
       "alias": [
@@ -12471,6 +12560,69 @@
         "[[Goose]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Skills d'Addy Osmani.md",
+      "nom": "Skills d'Addy Osmani",
+      "alias": [
+        "agent-skills",
+        "addyosmani/agent-skills",
+        "Addy Osmani agent skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Jeu de 25 skills MIT pour agents de code qui couvre tout le cycle (définir, planifier, construire, vérifier, relire, livrer) avec 9 commandes et des listes de contrôle.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Superpowers]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "complements": [
+        "[[Ponytail]]",
+        "[[pm-skills]]"
+      ],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Skills de Matt Pocock.md",
+      "nom": "Skills de Matt Pocock",
+      "alias": [
+        "mattpocock/skills",
+        "Skills For Real Engineers",
+        "mattpocock-skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skills MIT petits et composables pour de l'ingénierie réelle, pas du vibe coding : interrogatoire d'abord, spécification, tickets, TDD, revue.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Superpowers]]",
+        "[[Skills d'Addy Osmani]]"
+      ],
+      "complements": [
+        "[[Ponytail]]"
+      ],
       "maturite": null
     },
     {
@@ -12504,6 +12656,36 @@
         "[[Aider]]",
         "[[Cline]]",
         "[[Continue]]"
+      ],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/Superpowers.md",
+      "nom": "Superpowers",
+      "alias": [
+        "obra/superpowers",
+        "superpowers skills"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Jeu de 15 skills MIT pour agents de code (Claude Code, Codex, Cursor, Gemini CLI…) qui impose un cycle complet : brainstorming, plan, sous-agents, TDD, revue et vérification avant d'annoncer « terminé ».",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "code-assistant",
+        "agents"
+      ],
+      "alternatives": [
+        "[[Skills d'Addy Osmani]]",
+        "[[Skills de Matt Pocock]]"
+      ],
+      "complements": [
+        "[[Ponytail]]"
       ],
       "maturite": null
     },
@@ -12654,6 +12836,33 @@
         "[[Goose]]"
       ],
       "complements": [],
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Agents de code/pm-skills.md",
+      "nom": "pm-skills",
+      "alias": [
+        "phuryn/pm-skills",
+        "PM Skills Marketplace"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "extension",
+      "langage": "Markdown",
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": "Skills MIT de gestion de produit pour Claude Code et d'autres agents (69 skills, 42 commandes, 9 plugins) : découverte, PRD, histoires, sprints, lancement.",
+      "tags": [
+        "agent-skill",
+        "skills",
+        "project-management",
+        "agents"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Skills d'Addy Osmani]]"
+      ],
       "maturite": null
     },
     {
@@ -30483,7 +30692,24 @@
       "maturite": null
     },
     {
-      "path": "Outils de développement/Diátaxis et docs-as-code.md",
+      "path": "Outils de développement/Documentation technique/Comparatif - Générateurs de documentation.md",
+      "nom": "Comparatif - Générateurs de documentation",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "devtools/documentation",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Documentation technique/Diátaxis et docs-as-code.md",
       "nom": "Diátaxis et docs-as-code",
       "alias": [
         "Diátaxis",
@@ -30513,6 +30739,161 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Outils de développement/Documentation technique/Documentation technique.md",
+      "nom": "Documentation technique",
+      "alias": [
+        "documentation de projet",
+        "générateurs de documentation",
+        "docs-as-code",
+        "static site generator documentation"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-sci",
+        "data-eng",
+        "mlops",
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": "Documenter un projet logiciel dans son dépôt — quoi écrire, et avec quel générateur fabriquer et publier le site.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Documentation technique/Docusaurus.md",
+      "nom": "Docusaurus",
+      "alias": [
+        "docusaurus",
+        "Docusaurus 3"
+      ],
+      "role": "brique",
+      "categorie": "devtools/documentation",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (MIT, TypeScript) : génère un site de documentation sous forme d'application React monopage, avec blog, versions de documentation, traductions et composants MDX — il demande Node et son écosystème.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": [
+        "[[MkDocs]]",
+        "[[Sphinx]]",
+        "[[Zensical]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Documentation technique/MkDocs.md",
+      "nom": "MkDocs",
+      "alias": [
+        "mkdocs",
+        "MkDocs 1.x"
+      ],
+      "role": "brique",
+      "categorie": "devtools/documentation",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (BSD-2-Clause, Python) : génère un site statique de documentation depuis des fichiers Markdown et un seul mkdocs.yml — mais sans version stable depuis 2024-08 ni commit depuis 2025-10.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": [
+        "[[Sphinx]]",
+        "[[Docusaurus]]",
+        "[[Zensical]]"
+      ],
+      "complements": [
+        "[[mkdocstrings]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Documentation technique/Sphinx.md",
+      "nom": "Sphinx",
+      "alias": [
+        "sphinx-doc",
+        "sphinx-build",
+        "reStructuredText"
+      ],
+      "role": "brique",
+      "categorie": "devtools/documentation",
+      "famille": "cli",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (BSD-2-Clause, Python) : générateur de documentation écrit en reStructuredText, qui sort HTML, PDF, EPUB et pages de manuel avec renvois sémantiques et index automatiques — le Markdown passe par l'extension MyST-Parser.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": [
+        "[[MkDocs]]",
+        "[[Docusaurus]]",
+        "[[Zensical]]",
+        "[[mkdocstrings]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Outils de développement/Documentation technique/Zensical.md",
+      "nom": "Zensical",
+      "alias": [
+        "zensical",
+        "Material for MkDocs 2"
+      ],
+      "role": "brique",
+      "categorie": "devtools/documentation",
+      "famille": "cli",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande (MIT, Rust et Python) : générateur de sites statiques de documentation par l'équipe de Material for MkDocs, qui lit les mkdocs.yml existants — encore en versions 0.0.x, avec des remplaçants de plugins MkDocs en cours d'écriture.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": [
+        "[[MkDocs]]",
+        "[[Sphinx]]",
+        "[[Docusaurus]]"
+      ],
+      "complements": [
+        "[[mkdocstrings]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "Outils de développement/Documentation technique/mkdocstrings.md",
+      "nom": "mkdocstrings",
+      "alias": [
+        "mkdocstrings-python",
+        "mkdocs-strings"
+      ],
+      "role": "brique",
+      "categorie": "devtools/documentation",
+      "famille": "extension",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Plugin MkDocs (ISC, Python) : génère la documentation d'API depuis les docstrings et le code source par une simple balise ::: dans le Markdown, avec renvois entre pages et entre projets — un gestionnaire par langage, celui de Python étant le plus employé.",
+      "tags": [
+        "documentation"
+      ],
+      "alternatives": [
+        "[[Sphinx]]"
+      ],
+      "complements": [
+        "[[MkDocs]]",
+        "[[Zensical]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Outils de développement/Gestion de projet/ADR et design docs.md",
@@ -30884,6 +31265,34 @@
       "tags": [
         "project-management",
         "spec-driven",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Outils de développement/Gestion de projet/Quel skill pour quelle étape.md",
+      "nom": "Quel skill pour quelle étape",
+      "alias": [
+        "choisir un skill",
+        "skills par étape du cycle de vie",
+        "catalogue de skills",
+        "quel skill utiliser"
+      ],
+      "role": "notion",
+      "categorie": "devtools/projet",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "project-management",
+        "skills",
+        "agent-skill",
         "agents"
       ],
       "alternatives": null,

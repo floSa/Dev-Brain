@@ -1,8 +1,16 @@
 # LLM & IA générative — carte (2 sur 2)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 70 pages, chacune avec son chemin et une ligne.
-> Couvre : Passerelles, RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
+> 76 pages, chacune avec son chemin et une ligne.
+> Couvre : Observabilité des LLM, Passerelles, RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
+
+## Observabilité des LLM
+- [[Helicone]] · brique · `LLM & IA générative/Observabilité des LLM/Helicone.md` — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et…
+- [[Langfuse]] · brique · `LLM & IA générative/Observabilité des LLM/Langfuse.md` — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié…
+- [[LangSmith]] · brique · `LLM & IA générative/Observabilité des LLM/LangSmith.md` — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de…
+- [[Phoenix Arize]] · brique · `LLM & IA générative/Observabilité des LLM/Phoenix Arize.md` — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et…
+- [[LLM observability]] · notion · `LLM & IA générative/Observabilité des LLM/LLM observability.md` — Comprendre ce que fait une app LLM en production : tracer chaque appel, mesurer coût / latence / erreurs, et noter la qualité sur le trafic réel.
+- [[Comparatif - Observabilité LLM]] · comparatif · `LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md` — comment la trace est captée — proxy sur le chemin critique ou SDK OpenTelemetry —, et sur la licence, qui décide de l'auto-hébergement.
 
 ## Passerelles
 - [[LiteLLM]] · brique · `LLM & IA générative/Passerelles/LiteLLM.md` — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des…

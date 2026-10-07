@@ -9,7 +9,7 @@ domaines: []
 licence_type: open-source
 os: "Web, Windows, macOS, Linux"
 langage: JavaScript
-alternatives: ["[[Excalidraw]]", "[[Mermaid]]", "[[FossFLOW]]", "[[Archify]]"]
+alternatives: ["[[Excalidraw]]", "[[Mermaid]]", "[[FossFLOW]]", "[[Archify]]", "[[LikeC4]]"]
 complements: []
 tags: [diagram]
 url_docs: https://www.drawio.com/docs/
@@ -60,6 +60,7 @@ Aucun compte n'est obligatoire, et les fichiers restent où on veut.
 - [[Mermaid]] — Diagram-as-code open-source (MIT, JavaScript) : décrire flowcharts, séquence, ERD, Gantt… en texte type markdown, versionnable et rendu nativement par GitHub et Obsidian.
 - [[FossFLOW]] — Application web open-source (Unlicense, bâtie sur Isoflow) pour des diagrammes d'infrastructure isométriques 3D : PWA locale dans le navigateur, icônes AWS/Azure/GCP/K8s, export JSON.
 - [[Archify]] — Skill d'agent IA (MIT, JavaScript) pour diagrammes d'architecture : l'agent produit une IR JSON typée, compilée de façon déterministe en HTML autonome validé, avec exports SVG/PNG/WebM.
+- [[LikeC4]] — Outil en ligne de commande (MIT, TypeScript) : décrire une architecture logicielle dans un langage de modélisation inspiré du modèle C4, puis en tirer des vues interactives, un site statique et des exports PNG, Mermaid, D2 ou draw.io. — LikeC4 exporte vers draw.io et importe des fichiers .drawio, mais le modèle reste du texte et les vues ne se placent pas à la main.
 
 ## Ressources
 

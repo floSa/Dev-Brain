@@ -22,12 +22,12 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
 > **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
-> à la clôture du lot 4, le 2026-09-05. Les 510 briques, les **421 notions**, les 74
-> comparatifs (comptes mesurés dans l'index le 2026-10-05), les 9 patterns et les 7 règles vivent dans l'arbre des 20 domaines — une
+> à la clôture du lot 4, le 2026-09-05. Les 521 briques, les **422 notions**, les 75
+> comparatifs (comptes mesurés dans l'index le 2026-10-07), les 9 patterns et les 7 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range — plus « Comparatifs/ » depuis le
-> 2026-09-06, qui ne porte **que son hub** : les 74 comparatifs, eux, restent rangés par
+> 2026-09-06, qui ne porte **que son hub** : les 75 comparatifs, eux, restent rangés par
 > leur `categorie:`, dans le dossier des briques qu'ils départagent. Ce qui suit décrit
 > l'état réel.
 >
@@ -152,10 +152,10 @@ ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : les **421** notions (mesuré le 2026-10-07) sont rangées, réparties comme les briques par leur domaine —
+État actuel : les **422** notions (mesuré le 2026-10-07) sont rangées, réparties comme les briques par leur domaine —
 « Machine Learning/ » (199), « LLM & IA générative/ » (69), « Statistiques & inférence/ » (45),
 « Mathématiques/ » (40), « Data & pipelines/ » (17), « Bases de données/ » (9), « Sécurité/ » (9),
-« Signal & audio/ » (6), « DevOps/ » (3), « Observabilité/ » (3), « Outils de développement/ » (17),
+« Signal & audio/ » (6), « DevOps/ » (3), « Observabilité/ » (3), « Outils de développement/ » (18),
 « Stockage/ » (1), « Web & API/ » (3). Il n'y a plus de lieu d'attente,
 plus de vocabulaire de galaxie, et plus d'exception à « le dossier porte le domaine ».
 
@@ -207,7 +207,7 @@ Patterns/                    ← Patterns.md (hub) + Pattern - <nom>.md   (role:
 Rules/                       ← Rules.md    (hub) + Rule - <nom>.md      (role: rule)
                                groupés par `role:` — aucune `categorie:` ne les range
 
-Comparatifs/                 ← Comparatifs.md (hub) et RIEN d'autre : les 74 pages
+Comparatifs/                 ← Comparatifs.md (hub) et RIEN d'autre : les 75 pages
                                `role: comparatif` restent dans le dossier des briques
                                qu'elles départagent. Ce hub les réunit, il ne les range
                                pas — zone AUTO générée depuis `role:`, lien retour dans
