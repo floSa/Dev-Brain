@@ -29,6 +29,7 @@ tags: [package-manager, linter, testing, config, cli, api-client, data-validatio
 - Notebooks → voir [[Notebooks]].
 - Conduire un projet, avec ou sans agent de code (cycle de vie, spécification, backlog, décisions, contexte, revue, versions, mesure) → [[Gestion de projet]] ; documenter ce projet dans son dépôt → [[Diátaxis et docs-as-code]].
 - Rendre une installation reproductible, y compris sans accès à PyPI (verrou, miroir interne, image Docker) → [[Packaging Python et environnements reproductibles]].
+- Installer les bonnes versions de Node.js, de Python ou de Go pour chaque projet, avec ses variables et ses tâches dans un seul `mise.toml` → [[mise]] ; pour un projet purement Python, [[uv]] suffit. Une liste de commandes sans gestion de versions → [[just]], rangé dans [[Gestion de projet]].
 
 <!-- AUTO:START -->
 ### Sous-domaines
