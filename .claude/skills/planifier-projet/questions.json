@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "regles": [
+    "Une question à la fois. Toujours avec la réponse proposée.",
+    "Sauter une question dont la réponse est déjà dans le message de l'utilisateur ou dans la sonde.",
+    "Sauter une question dont la réponse ne change aucun choix.",
+    "Arrêt : quand on peut prédire la réponse suivante, ou après 10 questions. L'utilisateur peut aussi dire « passe » ou « propose maintenant »."
+  ],
+  "generiques": [
+    {
+      "id": "equipe",
+      "demande": "Tu travailles seul, en équipe, ou quelqu'un reprendra le projet ?",
+      "defaut": "Seul.",
+      "change": "Équipe ou reprise : forge, suivi des tâches, revue de code, documentation plus fournie. Seul : léger.",
+      "saute_si": ["seul", "solo", "en équipe", "équipe de", "le client reprend", "repris par", "collaborat"]
+    },
+    {
+      "id": "poids",
+      "demande": "Projet jetable, outil durable, ou livrable à un client ?",
+      "defaut": "Outil durable.",
+      "change": "Jetable : aucune infrastructure, aucun kit lourd. Durable : tests, paquets, versions. Livrable : plus CI, documentation, licences.",
+      "saute_si": ["jetable", "prototype", "poc", "démo", "livrable", "en production", "à livrer"]
+    },
+    {
+      "id": "commercial",
+      "demande": "Le produit sera vendu ou livré à un client ?",
+      "defaut": "Non.",
+      "change": "Non : on accepte aussi le code visible à usage non commercial et les outils fermés gratuits. Oui : licences permissives seulement, pas de GPL ni AGPL si le produit est fermé.",
+      "saute_si": ["commercialis", "vendre", "vendu", "revendre", "usage interne", "perso", "personnel"]
+    },
+    {
+      "id": "machine_finale",
+      "demande": "La machine sondée est celle où le projet tournera pour de bon ?",
+      "defaut": "Oui.",
+      "change": "Non : poser les questions de la machine cible (GPU, mémoire, réseau).",
+      "apres_sonde": true,
+      "saute_si": ["sur le serveur", "en production sur", "déployé sur", "tourne sur ma machine", "en local"]
+    },
+    {
+      "id": "reseau",
+      "demande": "Cloud autorisé, ou sur site strict, voire sans accès à Internet ?",
+      "defaut": "Sur site, Internet disponible.",
+      "change": "Sur site strict : plus aucun service cloud, plus d'API de modèle externe. Sans Internet : paquets et modèles à embarquer.",
+      "saute_si": ["on-prem", "sur site", "air-gap", "sans internet", "cloud autorisé", "hors ligne", "confidentiel"]
+    },
+    {
+      "id": "donnees_sortent",
+      "demande": "Les données ont-elles le droit de sortir du réseau ?",
+      "defaut": "Non.",
+      "change": "Non : modèles et bases en local seulement. Oui : les API managées redeviennent possibles.",
+      "saute_si": ["rgpd", "confidentiel", "données sensibles", "peuvent sortir", "ne sortent pas", "public"],
+      "si": "reseau n'a pas déjà tranché"
+    },
+    {
+      "id": "agent_dev",
+      "demande": "Avec quel agent tu développes : Claude, Gemini, Antigravity, un autre ?",
+      "defaut": "Claude.",
+      "change": "Décide des fichiers de consignes à écrire et des outils à brancher sur l'agent.",
+      "saute_si": ["claude", "gemini", "antigravity", "cursor", "codex", "copilot"]
+    },
+    {
+      "id": "git",
+      "demande": "Quelle identité git pour ce projet : nom et adresse ?",
+      "defaut": "Celle de la config git globale.",
+      "change": "Écrite dans les consignes du projet. Le contrôle de commit la vérifie.",
+      "toujours": true
+    },
+    {
+      "id": "langue",
+      "demande": "Documentation et consignes en français ou en anglais ?",
+      "defaut": "Français.",
+      "change": "Langue des fichiers générés.",
+      "saute_si": ["en français", "en anglais", "documentation en"]
+    },
+    {
+      "id": "tests",
+      "demande": "Quel niveau de tests : aucun, essentiels, ou stricts avec la CI ?",
+      "defaut": "Essentiels.",
+      "change": "Choix de pytest ou autre, d'une CI, d'un seuil de couverture.",
+      "saute_si": ["tests unitaires", "sans test", "ci/cd", "intégration continue", "couverture"],
+      "si": "poids n'est pas jetable"
+    }
+  ],
+  "par_type": {
+    "analyse": {
+      "reconnaitre": ["notebook", "exploration", "analyse de données", "statistiques", "rapport", "visualisation"],
+      "questions": [
+        {"id": "a_donnees", "demande": "Quelles données, quelle taille ?", "defaut": "Tableau, quelques Go.", "change": "pandas ou polars, DuckDB, un notebook ou un script."},
+        {"id": "a_rendu", "demande": "Le résultat est un rapport, un tableau de bord, ou un modèle ?", "defaut": "Un rapport.", "change": "Quarto, Streamlit, ou un notebook seul."},
+        {"id": "a_repro", "demande": "L'analyse doit-elle être rejouée à l'identique plus tard ?", "defaut": "Oui.", "change": "Graine fixée, environnement figé, données versionnées."}
+      ]
+    },
+    "app_interactive": {
+      "reconnaitre": ["streamlit", "dashboard", "tableau de bord", "interface", "annotation", "appli web de données"],
+      "questions": [
+        {"id": "i_utilisateurs", "demande": "Combien de personnes l'utilisent en même temps ?", "defaut": "Moins de 5.", "change": "Streamlit suffit, ou il faut un vrai backend."},
+        {"id": "i_temps_reel", "demande": "Les données se mettent à jour en direct ?", "defaut": "Non.", "change": "File de messages, rafraîchissement, base adaptée."},
+        {"id": "i_acces", "demande": "Il faut une connexion avec comptes ?", "defaut": "Non.", "change": "Authentification, base d'utilisateurs."}
+      ]
+    },
+    "ml_algo": {
+      "reconnaitre": ["modèle", "entraîner", "entraînement", "détection", "classification", "prédiction", "anomalie", "apprentissage", "reco"],
+      "questions": [
+        {"id": "m_donnees", "demande": "Quel type de données : tableau, texte, image, audio, série temporelle ?", "defaut": "Tableau.", "change": "Famille de modèles et bibliothèques."},
+        {"id": "m_etiquettes", "demande": "Il existe des exemples étiquetés ?", "defaut": "Oui, peu.", "change": "Supervisé, semi-supervisé ou détection d'anomalies."},
+        {"id": "m_entrainement", "demande": "Entraînement sur place, ou inférence seule avec un modèle déjà prêt ?", "defaut": "Inférence seule.", "change": "GPU nécessaire ou non, suivi d'expériences."},
+        {"id": "m_suivi", "demande": "Besoin de suivre les expériences et versionner les modèles ?", "defaut": "Oui, simplement.", "change": "MLflow ou équivalent, registre de modèles."}
+      ]
+    },
+    "pipeline": {
+      "reconnaitre": ["pipeline", "etl", "elt", "ingestion", "collecte", "orchestration", "airflow", "scraping"],
+      "questions": [
+        {"id": "p_sources", "demande": "Quelles sources, et en quel format ?", "defaut": "Fichiers et une base.", "change": "Connecteurs, outil d'ingestion."},
+        {"id": "p_frequence", "demande": "Une fois par jour, en continu, ou à la demande ?", "defaut": "Une fois par jour.", "change": "Planificateur simple ou orchestrateur, flux."},
+        {"id": "p_qualite", "demande": "Il faut contrôler la qualité des données en route ?", "defaut": "Oui, des contrôles de base.", "change": "Validation, alertes."}
+      ]
+    },
+    "rag_llm": {
+      "reconnaitre": ["rag", "llm", "chatbot", "agent", "assistant", "embeddings", "recherche sémantique", "mcp", "modèle de langage"],
+      "questions": [
+        {"id": "r_modele", "demande": "Le modèle de langage tourne par API, ou en local sur ta machine ?", "defaut": "En local.", "change": "Local : Ollama (poste, simple) ou vLLM (serveur, gros débit). API : exclu si sur site strict."},
+        {"id": "r_corpus", "demande": "Combien de documents, de quels types, en quelle langue ?", "defaut": "Quelques milliers de PDF, en français.", "change": "Extraction des documents, taille de l'index, modèle d'embeddings."},
+        {"id": "r_recherche", "demande": "La recherche par le sens suffit, ou il faut aussi les mots exacts et les relations ?", "defaut": "Sens plus mots exacts.", "change": "Base vectorielle seule, recherche hybride, graphe de connaissances."},
+        {"id": "r_postgres", "demande": "Un Postgres existe déjà dans l'infrastructure ?", "defaut": "Oui.", "change": "pgvector peut régler le stockage sans nouveau service."},
+        {"id": "r_eval", "demande": "Comment saura-t-on que les réponses sont bonnes ?", "defaut": "Un jeu de questions de référence.", "change": "Outils d'évaluation, jeu de test."}
+      ]
+    },
+    "tuto": {
+      "reconnaitre": ["tuto", "apprendre", "formation", "découvrir", "prise en main"],
+      "questions": [
+        {"id": "t_cible", "demande": "Pour quel niveau, et en quel format : notebook, dépôt, documentation ?", "defaut": "Dépôt avec documentation.", "change": "Outils de documentation, notebooks."}
+      ]
+    },
+    "service_api": {
+      "reconnaitre": ["api", "service", "backend", "fastapi", "microservice", "endpoint", "serveur"],
+      "questions": [
+        {"id": "s_clients", "demande": "Qui appelle ce service, et à quel rythme ?", "defaut": "Une appli interne, quelques appels par seconde.", "change": "Taille du service, mise à l'échelle, authentification."},
+        {"id": "s_etat", "demande": "Le service garde un état ou des données ?", "defaut": "Oui, une base.", "change": "Base de données, migrations."},
+        {"id": "s_deploiement", "demande": "Où et comment est-il déployé : un conteneur, un serveur, Kubernetes ?", "defaut": "Un conteneur.", "change": "Docker, orchestrateur, CI."}
+      ]
+    },
+    "jeu": {
+      "reconnaitre": ["jeu", "réplique", "simulation", "mcts", "règles du jeu"],
+      "questions": [
+        {"id": "j_ia", "demande": "L'IA doit jouer, ou seulement le moteur de règles ?", "defaut": "Le moteur d'abord, l'IA séparée.", "change": "Pattern moteur pur plus IA séparée."}
+      ]
+    }
+  },
+  "boucle_de_decision": [
+    "Pour chaque besoin déduit des réponses, nommer le besoin, puis : candidats = candidats.py besoin ...",
+    "Lire le comparatif du domaine avant de trancher (candidats.py comparatif).",
+    "Écarter ce qui est déjà en place (sonde) : un vLLM qui répond rend Ollama inutile.",
+    "Proposer 1 choix principal et 1 alternative, avec une raison de deux lignes.",
+    "Dire « hors DevBrain » si le choix vient de la connaissance du modèle et non d'une page du brain.",
+    "Si l'utilisateur choisit autre chose que le brain : challenger une seule fois, puis suivre."
+  ]
+}
