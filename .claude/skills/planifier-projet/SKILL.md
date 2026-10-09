@@ -88,19 +88,19 @@ Une ligne par besoin. Mentionner « hors DevBrain » quand c'est le cas. Puis de
 
 ## Étape 5 — Initialiser (après validation seulement)
 
-Écrire dans le **dossier du projet**, jamais dans le DevBrain. Adapter au poids du projet : jetable = `AGENTS.md` très court et un `docs/cadrage.md` de cinq lignes, rien d'autre. Durable ou livrable = le jeu complet.
+Écrire dans le **dossier du projet**, jamais dans le DevBrain. Adapter au poids du projet : jetable = `AGENTS.md` très court et un `documentation/cadrage.md` de cinq lignes, rien d'autre. Durable ou livrable = le jeu complet.
 
 Chaque chose va là où elle doit aller (modèles dans `modeles/`) :
 
 | Fichier | Contenu |
 |---|---|
 | `AGENTS.md` | Ce qui change un geste de l'agent à chaque tâche : commandes, identité git, aucun co-auteur, tests, règles `MUST` (dix au plus), ton, renvois. Quarante lignes au plus. |
-| `docs/cadrage.md` | Les réponses, la machine, les contraintes. |
-| `docs/decisions/NN-sujet.md` | Un fichier par choix technique : retenu, écartés, raisons, source. |
-| `docs/specification.md` | Ce que fait le projet, critères de réussite. |
+| `documentation/cadrage.md` | Les réponses, la machine, les contraintes. |
+| `documentation/decisions/NN-sujet.md` | Un fichier par choix technique : retenu, écartés, raisons, source. |
+| `documentation/specification.md` | Ce que fait le projet, critères de réussite. |
 | `README.md` | Présentation pour qui arrive. |
 
-Un choix technique (« base de données : Postgres ») va dans `docs/decisions/`, pas dans `AGENTS.md`. Si l'agent de développement n'est pas Claude, `AGENTS.md` reste le fichier de consignes ; ajouter le fichier propre à cet agent seulement s'il ne lit pas `AGENTS.md`, avec un simple renvoi.
+Un choix technique (« base de données : Postgres ») va dans `documentation/decisions/`, pas dans `AGENTS.md`. Si l'agent de développement n'est pas Claude, `AGENTS.md` reste le fichier de consignes ; ajouter le fichier propre à cet agent seulement s'il ne lit pas `AGENTS.md`, avec un simple renvoi.
 
 Puis :
 

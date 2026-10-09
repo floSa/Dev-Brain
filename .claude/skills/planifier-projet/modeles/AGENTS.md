@@ -27,6 +27,6 @@
 
 ## Le reste
 
-- Cadrage : `docs/cadrage.md`
-- Choix techniques et raisons : `docs/decisions/`
-- Spécification : `docs/specification.md`
+- Cadrage : `documentation/cadrage.md`
+- Choix techniques et raisons : `documentation/decisions/`
+- Spécification : `documentation/specification.md`

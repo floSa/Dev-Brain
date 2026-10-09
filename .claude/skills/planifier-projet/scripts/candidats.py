@@ -187,11 +187,19 @@ def cmd_comparatif(vault: Path, pages: list[dict], a) -> None:
 
 
 def cmd_regles(vault: Path, pages: list[dict], a) -> None:
+    """Règles et patterns. Les règles n'ont pas de pitch dans l'index : on cherche le mot
+    dans le nom, les tags et le début de la page (les 40 premières lignes)."""
     mot = (a.mot or "").lower()
     for p in pages:
         if p.get("role") not in ("rule", "pattern"):
             continue
         texte = " ".join([str(p.get("nom", "")), str(p.get("pitch", "")), " ".join(p.get("tags") or [])]).lower()
+        if mot and mot not in texte:
+            try:
+                with open(vault / p["path"], encoding="utf-8") as f:
+                    texte += " ".join(next(f, "") for _ in range(40)).lower()
+            except OSError:
+                pass
         if mot and mot not in texte:
             continue
         print(f"- [{p['role']}] {p['nom']} | page: {p['path']}")
