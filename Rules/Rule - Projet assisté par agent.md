@@ -16,7 +16,7 @@ L'agent produit vite et en volume ; sans critère exécutable, le seul signal de
 
 ## MUST
 
-- Écrire la spécification (quoi, pourquoi, critères d'acceptation) avant le code, dans `docs/specification.md`.
+- Écrire la spécification (quoi, pourquoi, critères d'acceptation) avant le code, dans `documentation/specification.md`.
 - Poser avant la tâche une définition de terminé exécutable : tests, lint et types qui passent.
 - Vérifier avant de rendre la main : lancer les contrôles et montrer leur sortie, sans affirmer le succès.
 - Ne jamais modifier ni supprimer un test rouge pour le faire passer sans le dire.
@@ -29,7 +29,7 @@ L'agent produit vite et en volume ; sans critère exécutable, le seul signal de
 - Relire le diff soi-même avant de fusionner, et découper la tâche quand le diff ne se lit plus en quelques minutes.
 - Placer chaque consigne au bon endroit : valable à chaque session, elle va dans `AGENTS.md` ; liée à certains fichiers, dans une règle à portée de chemin ; une procédure à la demande, dans un skill ; imposée sans exception, dans un hook ou la CI.
 - Écrire `AGENTS.md` à la main, court, et le construire par les échecs : une ligne par erreur de l'agent, une ligne retirée quand l'agent la respecte sans qu'on la donne. Pas de `/init` lancé en pilote automatique.
-- Structurer la spécification, le plan et les tâches par un outil ([[Spec Kit]], [[OpenSpec]]) ou par de simples fichiers Markdown dans `docs/`, selon la taille du projet.
+- Structurer la spécification, le plan et les tâches par un outil ([[Spec Kit]], [[OpenSpec]]) ou par de simples fichiers Markdown dans `documentation/`, selon la taille du projet.
 - Sur un projet de site client ou d'ESN, consigner dans `AGENTS.md` ce qui distingue le poste du client du poste standard : registre interne, pas de `pip install` direct, interdictions contractuelles.
 - Tenir les secrets hors de `AGENTS.md`, des spécifications et des invites ([[Rule - Secrets hors du dépôt]]).
 
@@ -41,7 +41,7 @@ L'agent produit vite et en volume ; sans critère exécutable, le seul signal de
 
 ## Pour AGENTS.md
 
-- Spécification d'abord : `docs/specification.md` avant le code.
+- Spécification d'abord : `documentation/specification.md` avant le code.
 - Vérifier avant de rendre la main : lancer les tests, le lint et les types, et montrer leur sortie.
 - Ne jamais modifier ni supprimer un test rouge pour le faire passer sans le dire.
 - Une branche courte par tâche. Pas de dépendance ajoutée, pas de fichier hors périmètre sans accord.
@@ -55,7 +55,7 @@ L'agent produit vite et en volume ; sans critère exécutable, le seul signal de
 - `uv run pytest` passe, dont le test de bout en bout de la spécification
 - `uv run ruff check . && uv run mypy src` passent
 - aucun fichier hors `src/ingest/` et `tests/` modifié, aucune dépendance ajoutée
-- `README.md` et `docs/` à jour, diff relu par un humain
+- `README.md` et `documentation/` à jour, diff relu par un humain
 ```
 
 ```bash

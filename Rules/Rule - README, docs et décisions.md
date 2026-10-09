@@ -10,18 +10,18 @@ tags: [rule, documentation, adr]
 
 ## Principe
 
-La documentation d'un projet tient en quatre endroits : un `README.md` pour qui arrive, un dossier `docs/` pour le fond (cadrage, spécification, décisions), un `AGENTS.md` court pour l'agent de code, et des décisions consignées une par fichier au format MADR.
+La documentation d'un projet tient en quatre endroits : un `README.md` pour qui arrive, un dossier `documentation/` pour le fond (cadrage, spécification, décisions), un `AGENTS.md` court pour l'agent de code, et des décisions consignées une par fichier au format MADR.
 
 Ce qui se perd dans un projet n'est pas le code, c'est le pourquoi. Un fichier par décision le garde pour la personne ou l'agent qui reprend le projet six mois plus tard.
 
 ## MUST
 
 - Écrire un `README.md` à la racine : ce que fait le projet, comment l'installer, le lancer et le tester.
-- Ranger la documentation de fond dans `docs/` : `cadrage.md`, `specification.md`, `decisions/`.
-- Consigner chaque décision d'architecture dans un fichier `docs/decisions/NNNN-titre.md`, au format MADR.
+- Ranger la documentation de fond dans `documentation/` : `cadrage.md`, `specification.md`, `decisions/`.
+- Consigner chaque décision d'architecture dans un fichier `documentation/decisions/NNNN-titre.md`, au format MADR.
 - Garder `AGENTS.md` court : commandes exactes, conventions qui s'écartent du standard, pièges. Ni résumé du README, ni arborescence.
 - Mettre la documentation touchée à jour dans le même commit que le changement qu'elle décrit.
-- Ne mettre aucun secret dans le `README.md`, `docs/` ni `AGENTS.md` : ils sont versionnés.
+- Ne mettre aucun secret dans le `README.md`, `documentation/` ni `AGENTS.md` : ils sont versionnés.
 
 ## SHOULD
 
@@ -34,15 +34,15 @@ Ce qui se perd dans un projet n'est pas le code, c'est le pourquoi. Un fichier p
 
 ## NICE-TO-HAVE
 
-- Un fichier `docs/glossaire.md` quand le projet a un vocabulaire métier (industrie, ESN, domaine du client).
+- Un fichier `documentation/glossaire.md` quand le projet a un vocabulaire métier (industrie, ESN, domaine du client).
 - Un `CHANGELOG.md` rédigé pour le lecteur du client ([[Rule - Commits conventionnels et versions automatiques]]).
 - Une vérification en CI des liens et du build de la documentation.
 
 ## Pour AGENTS.md
 
-- Documentation de fond dans `docs/` : cadrage, spécification, décisions.
-- Une décision d'architecture = un fichier `docs/decisions/NNNN-titre.md` au format MADR.
-- Mettre à jour le `README.md` et `docs/` dans le même commit que le changement.
+- Documentation de fond dans `documentation/` : cadrage, spécification, décisions.
+- Une décision d'architecture = un fichier `documentation/decisions/NNNN-titre.md` au format MADR.
+- Mettre à jour le `README.md` et `documentation/` dans le même commit que le changement.
 - Garder ce fichier court : commandes, conventions, pièges. Aucun secret.
 
 ## Exemples
@@ -53,7 +53,7 @@ Ce qui se perd dans un projet n'est pas le code, c'est le pourquoi. Un fichier p
 mon-projet/
 ├── README.md              # quoi, installer, lancer, tester
 ├── AGENTS.md              # court : commandes, conventions, pièges
-└── docs/
+└── documentation/
     ├── cadrage.md
     ├── specification.md
     └── decisions/
@@ -87,8 +87,7 @@ mon-projet/
 ## Exceptions
 
 - Script jetable : un commentaire en tête du fichier tient lieu de `README.md`.
-- Projet qui suit déjà [[Rule - Structure de projet]] avec un dossier `documentation/` : garder ce nom, sans en ouvrir un second. Un seul dossier de documentation par projet.
-- Documentation imposée par le client (gabarit, format de livrable) : le gabarit du client prime pour le livrable ; `docs/decisions/` reste le journal interne.
+- Documentation imposée par le client (gabarit, format de livrable) : le gabarit du client prime pour le livrable ; `documentation/decisions/` reste le journal interne.
 
 ## Voir aussi
 
