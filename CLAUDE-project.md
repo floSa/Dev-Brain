@@ -60,14 +60,17 @@ hub dit que la question ne se pose pas.
 
 ## Au kickoff du projet
 
-Invoque le skill **`planifier-projet`** (installé dans le DevBrain, `.claude/skills/planifier-projet/`) — pas dans ce dépôt projet. Il :
+Invoque le skill **`planifier-projet`**. Il vit dans le DevBrain (`.claude/skills/planifier-projet/`) ; pour qu'il se déclenche dans n'importe quel projet, il est lié dans `~/.claude/skills/` (voir `INSTALL.md`). Déroulé :
 
-1. Identifie l'**archétype** du projet (`Documentation/perso/archetypes.md` du brain : analyse de données, app interactive, ML/IA algorithmique, pipeline data, RAG/app LLM, tuto, réplique perso).
-2. Ne pose que les questions pertinentes (`Documentation/perso/conventions.md` et `Documentation/general/questions-projet.md` du brain — cadrage, exécution, données, IA/LLM, légal, qualité ; axe transverse **on-prem / air-gapped**).
-3. Pour chaque brique technique nécessaire, entre par le hub du domaine si besoin, interroge `AI/index/brain-index.json` et propose 2-3 candidats sourcés — chacun avec son pitch, sa **nature** (`famille:`) et son **langage**.
-4. Produit un cahier des charges qui **contraint** la suite du développement. N'écrit rien dans le brain.
+1. **Questions génériques**, une à la fois, avec la réponse proposée : équipe, poids du projet, commercialisation, réseau, agent de développement, identité git. Il sonde la machine et les services déjà en place au lieu de te les demander. Ce que ton premier message dit déjà n'est pas redemandé.
+2. **Questions du projet**, selon son type (RAG, pipeline, analyse, service, etc.).
+3. **Choix des technologies** : il lit les comparatifs du brain, filtre par licence, hébergement et machine, écarte ce qui est déjà en place, et marque « hors DevBrain » ce que le brain ne couvre pas.
+4. **Proposition**, à valider, infirmer ou discuter.
+5. **Initialisation**, après validation seulement : `AGENTS.md` court, `docs/cadrage.md`, `docs/decisions/`, `docs/specification.md`, contrôles de commit. Le journal `Projects/` du brain ne s'écrit que sur ton accord.
 
-Si le skill n'est pas invocable depuis le projet (il vit dans le repo DevBrain, pas dans celui-ci), demande directement à l'utilisateur de lancer `claude` à la racine de son vault DevBrain pour ce cadrage (l'emplacement dépend de la machine — ne suppose aucun chemin), ou interroge le brain toi-même via MCP en suivant le même protocole.
+À tout moment : « passe » saute une question, « propose maintenant » va à la proposition.
+
+Si le skill n'est pas invocable depuis le projet, lance `claude` à la racine du vault DevBrain pour ce cadrage.
 
 ## Avant tout choix techno
 

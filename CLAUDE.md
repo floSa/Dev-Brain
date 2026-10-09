@@ -368,7 +368,7 @@ Skills custom dans `.claude/skills/` :
 
 - **`enrichir-brain`** — capture une techno/concept. Porte la **règle de propagation** de la v3 : le rayon d'une insertion est le **dossier d'accueil plus ses hubs parents**, et le voisinage d'une page est `ls` de son dossier — plus rien à deviner. Crée la page demandée, met à jour le comparatif, la notion et les briques pairs **du dossier**, câble les liens dans les deux sens. Couvre la brique **et** la notion. Triggers : "ajoute X au brain", "documente Y", ou en fin de conversation "mets à jour DevBrain" (mode balayage).
 - **`cloturer-brain`** — clôt TOUTE écriture dans une page du brain : régénère `build_index` / `build_mocs` / `build_bandeau` / `build_links` / `build_carte`, passe `check_brain.py` **et** `check_arbo.py` au vert, vérifie la divergence avec `origin/main`, puis commite et intègre. **Seul endroit où la politique git du vault est écrite** — à la seule exception de la règle d'identité ci-dessus, qui doit être lue avant lui.
-- **`planifier-projet`** — au démarrage d'un projet, identifie l'archétype (cf. `Documentation/perso/archetypes.md`), interroge `AI/index/brain-index.json` et produit un cahier des charges sourcé. N'écrit rien dans le brain.
+- **`planifier-projet`** — au démarrage d'un projet : questions une à la fois (générales, puis propres au type de projet), sonde de la machine, choix des technologies depuis les comparatifs et l'index, proposition à valider, puis initialisation du projet (`AGENTS.md` court, `docs/`, contrôles de commit). Générique, non bloquant. N'écrit dans le brain que le journal `Projects/`, sur accord.
 
 Skills officiels Obsidian (`kepano/obsidian-skills`) — apprend la syntaxe Obsidian (wikilinks, callouts, frontmatter, Bases, Canvas).
 

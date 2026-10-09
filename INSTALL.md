@@ -431,6 +431,14 @@ npx skills add kepano/defuddle
 
 Les **skills custom DevBrain** (`enrichir-brain`, `planifier-projet`) sont déjà dans `.claude/skills/` du repo — pas besoin de les installer séparément, Claude Code les charge automatiquement quand il est lancé depuis le dossier du vault.
 
+**Pour que `planifier-projet` se déclenche dans n'importe quel projet**, lie-le dans les skills de l'utilisateur. Une seule source reste vraie : le dépôt.
+
+```bash
+ln -s ~/Projets/DevBrain/.claude/skills/planifier-projet ~/.claude/skills/planifier-projet
+```
+
+Les scripts du skill trouvent le DevBrain par la variable `DEVBRAIN_PATH`, sinon dans `~/Projets/DevBrain`. Ajoute dans le `CLAUDE.md` global : « Quand je démarre ou décris un nouveau projet, lance le skill `planifier-projet`. »
+
 ---
 
 ## 11.5. Activer le code couleurs des rôles

@@ -7,7 +7,7 @@ tags: [meta, gouvernance, planification]
 
 # Questions de cadrage projet
 
-Checklist du skill planifier-projet. L'archétype (cf. [[archetypes]]) conditionne les questions à poser : ne poser que les pertinentes.
+Checklist d'origine du skill planifier-projet. **La banque de questions vit désormais dans le skill** (`.claude/skills/planifier-projet/questions.json`, avec déclencheurs et réponses par défaut) ; cette page reste la référence de lecture. L'archétype (cf. [[archetypes]]) conditionne les questions à poser : ne poser que les pertinentes.
 
 ## Axe transverse critique : on-premise
 
