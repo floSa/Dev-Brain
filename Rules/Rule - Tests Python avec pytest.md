@@ -41,7 +41,6 @@ Le niveau essentiel vaut pour tout projet. Le niveau strict s'ajoute dès que le
 
 - Tester : `uv run pytest`. Toute la suite passe avant de rendre la main.
 - Un bogue corrigé reçoit d'abord un test qui échoue.
-- Ne jamais modifier ni supprimer un test rouge pour le faire passer sans le dire.
 - Au moins un test de bout en bout : il appelle le point d'entrée réel.
 
 ## Exemples
