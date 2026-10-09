@@ -63,6 +63,7 @@ on-prem industriel, ESN.
 | 12 | Lots 18, 19, 20, 21, 22 (en parallèle) | Lot 17 clos et poussé |
 | 13 | Lot 23 | Lot 19 clos |
 | 14 | Lots 24, 25 (en parallèle) | Lots 1 à 23 clos et poussés |
+| 15 | Lot 27 | Skill `planifier-projet` réécrit et poussé |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -377,6 +378,29 @@ Mets à jour les comparatifs existants de ces dossiers au lieu d'en créer : Dia
 
 **Partie C — les 31 autres pages fermées ou payantes** (floSa les **garde toutes**, par connaissance : AWS S3, SageMaker, Cloudflare R2, Vertex AI, Azure ML, Snowflake, Databricks, Pinecone, Modal, OpenRouter, Cohere Rerank, LlamaParse, LangSmith, Zapier, gumloop, Figma, DataRobot, Alteryx, Comet, Weights & Biases, Postman, GitHub Actions, DataGrip, SQL Server, Dataiku, LM Studio, LM Studio Bionic, Obsidian, TensorRT, Page to Markdown, Superwhisper). floSa autorise ici, pour ces 31 briques seulement, de modifier la **première phrase** et la ligne `alternatives:` / `## Alternatives`, rien d'autre. Pour chacune, la première phrase dit : ce que c'est, et si c'est payant, cloud seulement, ou gratuit en local. Ajoute, si elle existe au brain, l'alternative libre ou sur site (exemple : Zapier renvoie vers n8n). La page ne dit jamais « n'utilise pas » : elle dit ce que c'est, et que rien n'empêche de l'utiliser. Vérifie aussi que LM Studio et LM Studio Bionic se renvoient l'un à l'autre. Pour les pages `open-core` et `source-available` (une soixantaine), ne modifie rien : liste seulement dans ta synthèse celles dont la première phrase ne dit pas la nature.
 
+## Lot 27 — Kits de bonnes pratiques de démarrage (vague 15)
+
+Le skill `planifier-projet` (réécrit le 2026-10-09) initialise un projet avec ses règles écrites. Il les lit dans `Rules/` par `python3 .claude/skills/planifier-projet/scripts/candidats.py regles --mot <sujet>`, puis copie une ligne par règle `MUST` dans l'`AGENTS.md` du nouveau projet (dix lignes au plus). Ce lot écrit les règles qui manquent.
+
+Règles déjà présentes, à lire d'abord et à ne pas doubler : « Toolchain Python », « Structure de projet », « Qualité stricte », « Config typée », « Packaging démo ». Ajoute, ou étends si une page couvre déjà le sujet :
+
+- **Tests** : niveau essentiel (pytest, un test de bout en bout) et niveau strict (CI, seuil de couverture). Lien vers pytest, Hypothesis.
+- **Commits et versions** : commits conventionnels, contrôles avant commit (pre-commit ou Lefthook), versions automatiques (Commitizen, python-semantic-release ou release-please). Lien vers les fiches du lot 20 et 24.
+- **Git et identité** : identité locale du dépôt, aucun co-auteur, petits commits, **contrôle mécanique** (hook commit-msg et pre-commit) plutôt que consigne seule. Retour d'expérience du DevBrain : une consigne écrite a laissé passer cinq commits avec la mauvaise adresse. Le script `scripts/garde_fous.sh` du skill en est l'implémentation.
+- **Docker** : image minimale, utilisateur non root, `.dockerignore`, vérification de santé, aucun secret dans l'image.
+- **Documentation de projet** : `README.md` pour qui arrive, `docs/` (cadrage, décisions, spécification), `AGENTS.md` court, décisions au format MADR, repères Diátaxis.
+- **Projet assisté par agent** : spécification avant le code, vérification avant de rendre la main, branches courtes et worktrees, ce qui va dans `AGENTS.md` et ce qui va ailleurs. S'appuie sur les notions du lot 17.
+- **Secrets et configuration** : fichier `.env` jamais commité, modèle d'exemple, validation au démarrage. Étends « Config typée » si elle couvre déjà l'essentiel.
+
+Contraintes de forme :
+
+- `role: rule`, gabarit `Templates/Rule.md`. Frontmatter complet, avec des `tags:` qui nomment le sujet et le langage (python, docker, tests, git, docs) : c'est par eux que le skill retrouve la règle.
+- Sections `MUST`, `SHOULD`, `NICE-TO-HAVE`. Chaque `MUST` est **une phrase courte, à l'impératif**, qui se recopie telle quelle dans `AGENTS.md`. Pas plus de six `MUST` par règle.
+- Ajoute une section `## Pour AGENTS.md` : trois à cinq lignes prêtes à copier. Vérifie d'abord que le validateur accepte la section ; sinon, mets ces lignes dans les `MUST`.
+- Outils cités : gratuits et déployables sur site (règle 15). Liens nus `[[...]]` vers les briques du brain.
+- Mets à jour le hub `Rules` par la régénération habituelle. Ne touche pas aux règles existantes, sauf pour y ajouter un lien.
+- Recompte `Home.md` et `CLAUDE.md` avec `audit_inventaire.py`.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -404,3 +428,4 @@ Mets à jour les comparatifs existants de ces dossiers au lieu d'en créer : Dia
 - [x] Lot 23 — annuaires et standards, à part
 - [x] Lot 24 — outils manquants
 - [x] Lot 25 — notions voisines et pages fermées déjà au brain
+- [ ] Lot 27 — kits de bonnes pratiques de démarrage
