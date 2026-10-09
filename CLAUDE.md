@@ -23,7 +23,7 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 
 > **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
 > à la clôture du lot 4, le 2026-09-05. Les 555 briques, les **427 notions**, les 77
-> comparatifs (comptes mesurés dans l'index le 2026-10-07), les 9 patterns et les 7 règles vivent dans l'arbre des 20 domaines — une
+> comparatifs (comptes mesurés dans l'index le 2026-10-07), les 9 patterns et les 14 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range — plus « Comparatifs/ » depuis le
