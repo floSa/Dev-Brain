@@ -57,3 +57,4 @@ mon-projet/
 ## Voir aussi
 
 - [[Rule - Toolchain Python]], [[Rule - Config typée]], [[Rule - Packaging démo]]
+- [[Rule - README, docs et décisions]], [[Rule - Tests Python avec pytest]]

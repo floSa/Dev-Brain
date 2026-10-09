@@ -50,3 +50,4 @@ README : « installer Postgres, créer la base, exporter 6 variables, puis... »
 
 - [[Docker]], [[Pattern - Stack démo ML locale multi-services]]
 - [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
+- [[Rule - Image Docker minimale]]

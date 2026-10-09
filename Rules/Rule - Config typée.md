@@ -54,3 +54,4 @@ KEY = os.getenv("API_KEY", "")   # défaut silencieux, type perdu
 
 - [[Pydantic Settings]], [[Pydantic]]
 - [[Rule - Structure de projet]], [[Rule - Qualité stricte]]
+- [[Rule - Secrets hors du dépôt]]

@@ -54,3 +54,4 @@ strict = true
 
 - [[Ruff]], [[pytest]], [[GitHub Actions]]
 - [[Rule - Toolchain Python]], [[Rule - Config typée]]
+- [[Rule - Tests Python avec pytest]], [[Rule - Commits conventionnels et versions automatiques]]
