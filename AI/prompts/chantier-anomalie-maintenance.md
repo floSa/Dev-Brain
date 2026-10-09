@@ -428,4 +428,4 @@ Contraintes de forme :
 - [x] Lot 23 — annuaires et standards, à part
 - [x] Lot 24 — outils manquants
 - [x] Lot 25 — notions voisines et pages fermées déjà au brain
-- [ ] Lot 27 — kits de bonnes pratiques de démarrage
+- [x] Lot 27 — kits de bonnes pratiques de démarrage
