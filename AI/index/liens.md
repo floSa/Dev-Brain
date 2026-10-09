@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1172 pages actives.
+> 1179 pages actives.
 
 ## Par page
 
@@ -48,7 +48,7 @@
 ### AGENTS.md - le format  ·  brique
 - tags : `agents`, `context-engineering`, `code-assistant`
 - liens sortants : [[Agent Skills - la spécification]], [[Agent skills]], [[Context engineering]], [[Fichiers de contexte pour agents]], [[Outils de développement]]
-- liens entrants : [[Agent Skills - la spécification]], [[Fichiers de contexte pour agents]], [[Outils de développement]]
+- liens entrants : [[Agent Skills - la spécification]], [[Fichiers de contexte pour agents]], [[Outils de développement]], [[Rule - Projet assisté par agent]], [[Rule - README, docs et décisions]]
 
 ### Agno  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `multi-agent`
@@ -423,7 +423,7 @@
 ### Commitizen  ·  brique
 - tags : `changelog`, `version-control`, `git-hooks`
 - liens sortants : [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Forgejo]], [[Gestion de projet]], [[GitLab CE]], [[Outils de développement]], [[git-cliff]], [[pre-commit]], [[python-semantic-release]], [[release-please]]
-- liens entrants : [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
+- liens entrants : [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[Rule - Commits conventionnels et versions automatiques]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
 
 ### connectorx  ·  brique
 - tags : `dataframe`, `columnar`
@@ -473,7 +473,7 @@
 ### D2  ·  brique
 - tags : `diagram`, `diagram-as-code`
 - liens sortants : [[Comparatif - Diagrammes]], [[Design & diagrammes]], [[Diagrammes]], [[Kroki]], [[LikeC4]], [[Mermaid]], [[PlantUML]], [[draw.io]]
-- liens entrants : [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Kroki]], [[LikeC4]], [[Mermaid]], [[Modèle C4]], [[PlantUML]]
+- liens entrants : [[Comparatif - Diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Kroki]], [[LikeC4]], [[Mermaid]], [[Modèle C4]], [[PlantUML]], [[Rule - README, docs et décisions]]
 
 ### Dagster  ·  brique
 - tags : `orchestration`, `data-pipeline`
@@ -618,7 +618,7 @@
 ### Docker  ·  brique
 - tags : `container`
 - liens sortants : [[Ansible]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[Garage]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Jenkins]], [[Packaging Python et environnements reproductibles]], [[Podman]], [[SeaweedFS]], [[Trivy]], [[Woodpecker CI]], [[Zot]]
-- liens entrants : [[Ansible]], [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[KServe]], [[Metaflow]], [[Packaging Python et environnements reproductibles]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Trivy]], [[Web-Check]], [[Woodpecker CI]], [[Zot]]
+- liens entrants : [[Ansible]], [[Beszel]], [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker Compose]], [[E2B]], [[Flyte]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Grype]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[KServe]], [[Metaflow]], [[Packaging Python et environnements reproductibles]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Image Docker minimale]], [[Rule - Packaging démo]], [[Seldon Core]], [[Sniffnet]], [[Trivy]], [[Web-Check]], [[Woodpecker CI]], [[Zot]]
 
 ### Docker Compose  ·  brique
 - tags : `container`
@@ -783,7 +783,7 @@
 ### Forgejo  ·  brique
 - tags : `ci-cd`, `version-control`, `self-hosted`
 - liens sortants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[GitHub Actions]], [[GitLab CE]], [[Jenkins]], [[Keycloak]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Woodpecker CI]]
-- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Comparatif - Versions et changelog]], [[Conteneurs & orchestration]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Docker]], [[Forges & CI-CD]], [[Gestion de projet]], [[GitHub Actions]], [[GitLab CE]], [[Harbor]], [[Jenkins]], [[Kanboard]], [[Keycloak]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PR-Agent]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Woodpecker CI]], [[Zot]], [[git-cliff]], [[just]], [[release-please]]
+- liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Comparatif - Versions et changelog]], [[Conteneurs & orchestration]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Docker]], [[Forges & CI-CD]], [[Gestion de projet]], [[GitHub Actions]], [[GitLab CE]], [[Harbor]], [[Jenkins]], [[Kanboard]], [[Keycloak]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PR-Agent]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Rule - Git et identité]], [[Woodpecker CI]], [[Zot]], [[git-cliff]], [[just]], [[release-please]]
 
 ### FossFLOW  ·  brique
 - tags : `diagram`, `isometric`
@@ -813,7 +813,7 @@
 ### git-cliff  ·  brique
 - tags : `changelog`, `version-control`
 - liens sortants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Forgejo]], [[Gestion de projet]], [[GitLab CE]], [[Outils de développement]], [[Woodpecker CI]], [[pre-commit]], [[python-semantic-release]], [[release-please]]
-- liens entrants : [[Commitizen]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[python-semantic-release]], [[release-please]]
+- liens entrants : [[Commitizen]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[Rule - Commits conventionnels et versions automatiques]], [[python-semantic-release]], [[release-please]]
 
 ### GitDiagram  ·  brique
 - tags : `diagram`, `mcp`, `llm`
@@ -833,12 +833,12 @@
 ### GitLab CE  ·  brique
 - tags : `ci-cd`, `version-control`, `self-hosted`
 - liens sortants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Docker]], [[Forgejo]], [[GitHub Actions]], [[Helm]], [[Jenkins]], [[Keycloak]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Woodpecker CI]]
-- liens entrants : [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Comparatif - Versions et changelog]], [[Conteneurs & orchestration]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[Gestion de projet]], [[GitHub Actions]], [[Harbor]], [[Helm]], [[Jenkins]], [[Kanboard]], [[Keycloak]], [[Kubernetes]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Woodpecker CI]], [[Zot]], [[git-cliff]], [[just]], [[release-please]]
+- liens entrants : [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Comparatif - Versions et changelog]], [[Conteneurs & orchestration]], [[DevOps]], [[Diátaxis et docs-as-code]], [[Docker]], [[Forgejo]], [[Forges & CI-CD]], [[Gestion de projet]], [[GitHub Actions]], [[Harbor]], [[Helm]], [[Jenkins]], [[Kanboard]], [[Keycloak]], [[Kubernetes]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Postgres]], [[Redis]], [[Rule - Git et identité]], [[Woodpecker CI]], [[Zot]], [[git-cliff]], [[just]], [[release-please]]
 
 ### Gitleaks  ·  brique
 - tags : `secret-scanning`, `supply-chain`, `ci-cd`
 - liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Supply chain logicielle et SBOM]], [[Trivy]], [[pre-commit]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]], [[pre-commit]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Gestion des secrets]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Secrets hors du dépôt]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]], [[pre-commit]]
 
 ### GLiNER  ·  brique
 - tags : `ner`, `nlp`, `transformers`
@@ -888,7 +888,7 @@
 ### Grype  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `supply-chain`, `container`, `ci-cd`
 - liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Docker]], [[GitHub Actions]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Trivy]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Docker]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Docker]], [[GitHub Actions]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Image Docker minimale]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Trivy]]
 
 ### Guidance  ·  brique
 - tags : `structured-output`, `decoding`, `llm`
@@ -913,7 +913,7 @@
 ### Harbor  ·  brique
 - tags : `container-registry`, `self-hosted`, `supply-chain`
 - liens sortants : [[Authentik]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Grafana]], [[Helm]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Postgres]], [[Prometheus]], [[Trivy]], [[Zot]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Trivy]], [[Zot]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Helm]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Keycloak]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Image Docker minimale]], [[Trivy]], [[Zot]]
 
 ### Haystack  ·  brique
 - tags : `llm`, `rag`, `semantic-search`, `hybrid-search`, `agents`
@@ -988,7 +988,7 @@
 ### Hypothesis  ·  brique
 - tags : `testing`, `property-based-testing`
 - liens sortants : [[Outils de développement]], [[Pydantic]], [[numpy]], [[pandas]], [[pytest]]
-- liens entrants : [[Gestion de projet]], [[Outils de développement]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Typage statique en Python]], [[numpy]], [[pandas]], [[pytest]]
+- liens entrants : [[Gestion de projet]], [[Outils de développement]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Tests Python avec pytest]], [[Typage statique en Python]], [[numpy]], [[pandas]], [[pytest]]
 
 ### i-have-adhd  ·  brique
 - tags : `agent-skill`, `prompting`, `code-assistant`, `agents`
@@ -1198,7 +1198,7 @@
 ### Lefthook  ·  brique
 - tags : `git-hooks`
 - liens sortants : [[Outils de développement]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Ruff]], [[pre-commit]]
-- liens entrants : [[Qualité du code]], [[pre-commit]]
+- liens entrants : [[Qualité du code]], [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Git et identité]], [[Rule - Secrets hors du dépôt]], [[pre-commit]]
 
 ### Letta  ·  brique
 - tags : `llm`, `agents`, `tool-use`
@@ -1313,7 +1313,7 @@
 ### MADR - le modèle de fiche  ·  brique
 - tags : `adr`, `documentation`, `project-management`
 - liens sortants : [[ADR et design docs]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[Modèle C4]], [[OpenSpec]], [[Outils de développement]]
-- liens entrants : [[ADR et design docs]], [[Gestion de projet]]
+- liens entrants : [[ADR et design docs]], [[Gestion de projet]], [[Rule - README, docs et décisions]]
 
 ### Mage  ·  brique
 - tags : `orchestration`, `data-pipeline`, `low-code`
@@ -1383,7 +1383,7 @@
 ### Mermaid  ·  brique
 - tags : `diagram`, `diagram-as-code`
 - liens sortants : [[Archify]], [[Comparatif - Diagrammes]], [[D2]], [[Diagrammes]], [[LikeC4]], [[PlantUML]], [[draw.io]]
-- liens entrants : [[ADR et design docs]], [[Archify]], [[Comparatif - Diagrammes]], [[D2]], [[Design & diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Figma]], [[Gestion de projet]], [[GitDiagram]], [[Kroki]], [[LikeC4]], [[Modèle C4]], [[Penpot]], [[PlantUML]], [[draw.io]]
+- liens entrants : [[ADR et design docs]], [[Archify]], [[Comparatif - Diagrammes]], [[D2]], [[Design & diagrammes]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Figma]], [[Gestion de projet]], [[GitDiagram]], [[Kroki]], [[LikeC4]], [[Modèle C4]], [[Penpot]], [[PlantUML]], [[Rule - README, docs et décisions]], [[draw.io]]
 
 ### Metabase  ·  brique
 - tags : `bi`, `dashboard`, `self-hosted`
@@ -1448,12 +1448,12 @@
 ### MkDocs  ·  brique
 - tags : `documentation`
 - liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[Docusaurus]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
-- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[Obsidian]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[Obsidian]], [[Outils de développement]], [[Rule - README, docs et décisions]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
 
 ### mkdocstrings  ·  brique
 - tags : `documentation`
 - liens sortants : [[Comparatif - Générateurs de documentation]], [[Diátaxis et docs-as-code]], [[Documentation technique]], [[MkDocs]], [[Outils de développement]], [[Sphinx]], [[Zensical]]
-- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Sphinx]], [[Zensical]]
+- liens entrants : [[Comparatif - Générateurs de documentation]], [[Documentation technique]], [[Docusaurus]], [[MkDocs]], [[Rule - README, docs et décisions]], [[Sphinx]], [[Zensical]]
 
 ### MLflow  ·  brique
 - tags : `experiment-tracking`, `model-registry`
@@ -1623,7 +1623,7 @@
 ### OpenBao  ·  brique
 - tags : `secrets-management`, `cryptography`, `self-hosted`, `kubernetes`
 - liens sortants : [[Gestion des secrets]], [[Kubernetes]], [[OpenTofu]], [[SOPS]], [[Sécurité]]
-- liens entrants : [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[SOPS]], [[Sécurité]]
+- liens entrants : [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[Rule - Secrets hors du dépôt]], [[SOPS]], [[Sécurité]]
 
 ### OpenClaw  ·  brique
 - tags : `llm`, `agents`, `tool-use`, `mcp`
@@ -1683,7 +1683,7 @@
 ### OpenSpec  ·  brique
 - tags : `spec-driven`, `code-assistant`, `agent-skill`, `project-management`, `cli`
 - liens sortants : [[Agent OS]], [[Agent skills]], [[Agents de code]], [[BMAD]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Comparatif - Assistants de code IA]], [[Développement piloté par la spécification]], [[Spec Kit]]
-- liens entrants : [[Agent OS]], [[Agents de code]], [[BMAD]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog.md - l'outil]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[MADR - le modèle de fiche]]
+- liens entrants : [[Agent OS]], [[Agents de code]], [[BMAD]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog.md - l'outil]], [[Comparatif - Assistants de code IA]], [[Gestion de projet]], [[MADR - le modèle de fiche]], [[Rule - Projet assisté par agent]]
 
 ### OpenSpiel  ·  brique
 - tags : `reinforcement-learning`, `game-theory`
@@ -1863,7 +1863,7 @@
 ### Podman  ·  brique
 - tags : `container`, `self-hosted`
 - liens sortants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Trivy]]
-- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Trivy]]
+- liens entrants : [[Comparatif - Orchestration de conteneurs]], [[Conteneurs & orchestration]], [[Docker]], [[Docker Compose]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Grype]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Rule - Image Docker minimale]], [[Trivy]]
 
 ### Polars  ·  brique
 - tags : `dataframe`, `columnar`, `lazy-evaluation`, `out-of-core`
@@ -1898,7 +1898,7 @@
 ### pre-commit  ·  brique
 - tags : `git-hooks`
 - liens sortants : [[Gitleaks]], [[Lefthook]], [[Outils de développement]], [[Pyright]], [[Qualité du code]], [[Ruff]], [[Semgrep]], [[mypy]]
-- liens entrants : [[Agent OS]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Gitleaks]], [[Lefthook]], [[Notebooks-as-code]], [[Outils de développement]], [[PR-Agent]], [[Pyright]], [[Qualité du code]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Ruff]], [[Semgrep]], [[Skills de Matt Pocock]], [[Typage statique en Python]], [[git-cliff]], [[mypy]]
+- liens entrants : [[Agent OS]], [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Diátaxis et docs-as-code]], [[Gestion de projet]], [[Gitleaks]], [[Lefthook]], [[Notebooks-as-code]], [[Outils de développement]], [[PR-Agent]], [[Pyright]], [[Qualité du code]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Ruff]], [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Git et identité]], [[Rule - Secrets hors du dépôt]], [[Semgrep]], [[Skills de Matt Pocock]], [[Typage statique en Python]], [[git-cliff]], [[mypy]]
 
 ### Prefect  ·  brique
 - tags : `orchestration`, `data-pipeline`
@@ -2023,7 +2023,7 @@
 ### pytest  ·  brique
 - tags : `testing`
 - liens sortants : [[Hypothesis]], [[Outils de développement]], [[testcontainers]]
-- liens entrants : [[Gestion de projet]], [[Hypothesis]], [[Notebooks-as-code]], [[Outils de développement]], [[PRD et user stories]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Qualité stricte]], [[Typage statique en Python]], [[jupytext]], [[mcpjam]], [[testcontainers]]
+- liens entrants : [[Gestion de projet]], [[Hypothesis]], [[Notebooks-as-code]], [[Outils de développement]], [[PRD et user stories]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Qualité du code]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Qualité stricte]], [[Rule - Tests Python avec pytest]], [[Typage statique en Python]], [[jupytext]], [[mcpjam]], [[testcontainers]]
 
 ### python-dotenv  ·  brique
 - tags : `config`
@@ -2033,7 +2033,7 @@
 ### python-semantic-release  ·  brique
 - tags : `changelog`, `version-control`
 - liens sortants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[Outils de développement]], [[git-cliff]], [[release-please]]
-- liens entrants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[git-cliff]], [[release-please]]
+- liens entrants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[Rule - Commits conventionnels et versions automatiques]], [[git-cliff]], [[release-please]]
 
 ### PyTorch  ·  brique
 - tags : `deep-learning`, `gpu`, `autograd`, `distributed`
@@ -2158,7 +2158,7 @@
 ### release-please  ·  brique
 - tags : `changelog`, `version-control`
 - liens sortants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Forgejo]], [[Gestion de projet]], [[GitLab CE]], [[Outils de développement]], [[git-cliff]], [[python-semantic-release]]
-- liens entrants : [[Commitizen]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[git-cliff]], [[python-semantic-release]]
+- liens entrants : [[Commitizen]], [[Comparatif - Versions et changelog]], [[Gestion de projet]], [[Rule - Commits conventionnels et versions automatiques]], [[git-cliff]], [[python-semantic-release]]
 
 ### Repomix  ·  brique
 - tags : `context-engineering`, `token-optimization`, `mcp`
@@ -2368,7 +2368,7 @@
 ### SOPS  ·  brique
 - tags : `secrets-management`, `cryptography`
 - liens sortants : [[Ansible]], [[Argo CD]], [[Gestion des secrets]], [[Kubernetes]], [[OpenBao]], [[Sécurité]]
-- liens entrants : [[Ansible]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenBao]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Sécurité]]
+- liens entrants : [[Ansible]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[OpenBao]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Secrets hors du dépôt]], [[Sécurité]]
 
 ### spaCy  ·  brique
 - tags : `nlp`, `ner`, `sequence-labeling`, `tokenization`
@@ -2383,7 +2383,7 @@
 ### Spec Kit  ·  brique
 - tags : `code-assistant`, `code-generation`, `agents`, `cli`
 - liens sortants : [[Agents de code]], [[Aider]], [[BMAD]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]]
-- liens entrants : [[Agent OS]], [[Agents de code]], [[Aider]], [[BMAD]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Boucle de Ralph]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[OpenSpec]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[i-have-adhd]]
+- liens entrants : [[Agent OS]], [[Agents de code]], [[Aider]], [[BMAD]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Boucle de Ralph]], [[Cline]], [[Comparatif - Assistants de code IA]], [[Continue]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[OpenSpec]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Rule - Projet assisté par agent]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[i-have-adhd]]
 
 ### Sphinx  ·  brique
 - tags : `documentation`
@@ -2528,7 +2528,7 @@
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
 - liens sortants : [[Outils de développement]], [[pytest]]
-- liens entrants : [[Branches courtes et worktrees pour agents]], [[DevOps]], [[Gestion de projet]], [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[Revue, tests et définition de terminé avec un agent]], [[pytest]]
+- liens entrants : [[Branches courtes et worktrees pour agents]], [[DevOps]], [[Gestion de projet]], [[Outils de développement]], [[Pattern - Stack démo ML locale multi-services]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Tests Python avec pytest]], [[pytest]]
 
 ### Text Embeddings Inference  ·  brique
 - tags : `embeddings`, `model-serving`, `inference`, `semantic-search`, `reranking`, `self-hosted`
@@ -2593,7 +2593,7 @@
 ### Trivy  ·  brique
 - tags : `vulnerability-scanning`, `sbom`, `secret-scanning`, `supply-chain`, `container`, `ci-cd`
 - liens sortants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Kubernetes]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Zot]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Zot]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Docker]], [[GitHub Actions]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Podman]], [[Rule - Image Docker minimale]], [[Supply chain logicielle et SBOM]], [[Sécurité]], [[Zot]]
 
 ### TRL  ·  brique
 - tags : `fine-tuning`, `alignment`, `reinforcement-learning`, `transformers`, `llm`
@@ -2778,7 +2778,7 @@
 ### Zot  ·  brique
 - tags : `container-registry`, `self-hosted`, `supply-chain`
 - liens sortants : [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[Docker]], [[Forgejo]], [[GitLab CE]], [[Harbor]], [[Kubernetes]], [[Trivy]]
-- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Trivy]]
+- liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[Conteneurs & orchestration]], [[DevOps]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Harbor]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Kubernetes]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Rule - Image Docker minimale]], [[Trivy]]
 
 ### Comparatif - Apps data & démos ML  ·  comparatif
 - tags : `data-app`, `dashboard`, `ml-demo`, `web-framework`
@@ -3148,7 +3148,7 @@
 ### Comparatif - Versions et changelog  ·  comparatif
 - tags : `changelog`
 - liens sortants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog.base]], [[Comparatifs]], [[Forgejo]], [[Gestion de projet]], [[GitLab CE]], [[git-cliff]], [[pre-commit]], [[python-semantic-release]], [[release-please]]
-- liens entrants : [[Commitizen]], [[Comparatifs]], [[Gestion de projet]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
+- liens entrants : [[Commitizen]], [[Comparatifs]], [[Gestion de projet]], [[Rule - Commits conventionnels et versions automatiques]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
 
 ### Comparatif - Visualisation  ·  comparatif
 - tags : `dataviz`, `static-viz`, `interactive-viz`, `declarative-viz`
@@ -3522,7 +3522,7 @@
 
 ### Rules  ·  hub
 - tags : —
-- liens sortants : [[Rule - Config typée]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Packaging démo]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]], [[Rule - Évaluer une anomalie par événement, pas par point]]
+- liens sortants : [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Config typée]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Git et identité]], [[Rule - Image Docker minimale]], [[Rule - Packaging démo]], [[Rule - Projet assisté par agent]], [[Rule - Qualité stricte]], [[Rule - README, docs et décisions]], [[Rule - Secrets hors du dépôt]], [[Rule - Structure de projet]], [[Rule - Tests Python avec pytest]], [[Rule - Toolchain Python]], [[Rule - Évaluer une anomalie par événement, pas par point]]
 - liens entrants : [[Comparatifs]], [[Patterns]]
 
 ### Runtimes  ·  hub
@@ -3693,7 +3693,7 @@
 ### ADR et design docs  ·  notion
 - tags : `adr`, `project-management`, `documentation`, `agents`, `context-engineering`
 - liens sortants : [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[MADR - le modèle de fiche]], [[Mermaid]], [[Modèle C4]]
-- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[MADR - le modèle de fiche]], [[Modèle C4]], [[PRD et user stories]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]]
+- liens entrants : [[Cycle de vie d'un projet assisté par agent]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[MADR - le modèle de fiche]], [[Modèle C4]], [[PRD et user stories]], [[Rule - README, docs et décisions]], [[Skills d'Addy Osmani]], [[Skills de Matt Pocock]]
 
 ### Advanced RAG  ·  notion
 - tags : `rag`, `llm`, `retrieval`
@@ -3938,12 +3938,12 @@
 ### Boucle de Ralph  ·  notion
 - tags : `agents`, `code-generation`, `testing`, `project-management`, `context-engineering`
 - liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Branches courtes et worktrees pour agents]], [[Context engineering]], [[Développement piloté par la spécification]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[swarm-forge]]
-- liens entrants : [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]]
+- liens entrants : [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Projet assisté par agent]]
 
 ### Branches courtes et worktrees pour agents  ·  notion
 - tags : `agents`, `version-control`, `ci-cd`, `code-assistant`, `project-management`
 - liens sortants : [[Agents de code]], [[Boucle de Ralph]], [[Claude Squad]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe Kanban]], [[swarm-forge]], [[t3code]], [[testcontainers]], [[uv]]
-- liens entrants : [[BMAD - la méthode]], [[Backlog, Kanban, Scrum et Shape Up]], [[Beads]], [[Boucle de Ralph]], [[Claude Squad]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Revue, tests et définition de terminé avec un agent]], [[Vibe Kanban]]
+- liens entrants : [[BMAD - la méthode]], [[Backlog, Kanban, Scrum et Shape Up]], [[Beads]], [[Boucle de Ralph]], [[Claude Squad]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Git et identité]], [[Rule - Projet assisté par agent]], [[Vibe Kanban]]
 
 ### CA  ·  notion
 - tags : `dimensionality-reduction`, `factor-analysis`
@@ -4068,7 +4068,7 @@
 ### Commits conventionnels, versions et changelog  ·  notion
 - tags : `project-management`, `git-hooks`, `ci-cd`
 - liens sortants : [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Revue, tests et définition de terminé avec un agent]], [[pre-commit]], [[python-semantic-release]]
-- liens entrants : [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Comparatif - Versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
+- liens entrants : [[Branches courtes et worktrees pour agents]], [[Commitizen]], [[Comparatif - Versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Rule - Commits conventionnels et versions automatiques]], [[git-cliff]], [[python-semantic-release]], [[release-please]]
 
 ### Compromis biais-variance  ·  notion
 - tags : `model-evaluation`, `supervised`
@@ -4138,7 +4138,7 @@
 ### Cycle de vie d'un projet assisté par agent  ·  notion
 - tags : `project-management`, `agents`, `code-assistant`, `spec-driven`
 - liens sortants : [[ADR et design docs]], [[Agent evaluation]], [[Agent patterns]], [[Agent skills]], [[Agents de code]], [[Aider]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Cline]], [[Commits conventionnels, versions et changelog]], [[Context engineering]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Graphify]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Modèle C4]], [[OpenCode]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]], [[ai-memory]], [[i-have-adhd]], [[swarm-forge]], [[t3code]]
-- liens entrants : [[ADR et design docs]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Claude-Code-Usage-Monitor]], [[Commits conventionnels, versions et changelog]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[ccusage]], [[just]]
+- liens entrants : [[ADR et design docs]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Branches courtes et worktrees pour agents]], [[Claude-Code-Usage-Monitor]], [[Commits conventionnels, versions et changelog]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Projet assisté par agent]], [[Superpowers]], [[Vibe coding contre ingénierie agentique]], [[ccusage]], [[just]]
 
 ### Data drift  ·  notion
 - tags : `data-drift`, `concept-drift`, `model-monitoring`
@@ -4198,7 +4198,7 @@
 ### Diátaxis et docs-as-code  ·  notion
 - tags : `documentation`, `project-management`, `ci-cd`, `diagram-as-code`
 - liens sortants : [[ADR et design docs]], [[D2]], [[Diagrammes]], [[Excalidraw]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitHub Actions]], [[GitLab CE]], [[Kroki]], [[Mermaid]], [[Modèle C4]], [[Obsidian]], [[Outils de développement]], [[PlantUML]], [[Woodpecker CI]], [[draw.io]], [[pre-commit]]
-- liens entrants : [[ADR et design docs]], [[Comparatif - Générateurs de documentation]], [[Cycle de vie d'un projet assisté par agent]], [[DeepWiki-Open]], [[Documentation technique]], [[Docusaurus]], [[Gestion de projet]], [[LikeC4]], [[MkDocs]], [[Modèle C4]], [[Outils de développement]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
+- liens entrants : [[ADR et design docs]], [[Comparatif - Générateurs de documentation]], [[Cycle de vie d'un projet assisté par agent]], [[DeepWiki-Open]], [[Documentation technique]], [[Docusaurus]], [[Gestion de projet]], [[LikeC4]], [[MkDocs]], [[Modèle C4]], [[Outils de développement]], [[Rule - README, docs et décisions]], [[Sphinx]], [[Zensical]], [[mkdocstrings]]
 
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
@@ -4263,7 +4263,7 @@
 ### Développement piloté par la spécification  ·  notion
 - tags : `project-management`, `spec-driven`, `agents`, `code-generation`, `context-engineering`
 - liens sortants : [[ADR et design docs]], [[Agent OS]], [[Agent skills]], [[BMAD]], [[Backlog.md - l'outil]], [[Context engineering]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[PRD et user stories]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[Vibe coding contre ingénierie agentique]]
-- liens entrants : [[ADR et design docs]], [[Agent OS]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Backlog.md - l'outil]], [[Boucle de Ralph]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[MADR - le modèle de fiche]], [[OpenSpec]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Skills de Matt Pocock]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[ADR et design docs]], [[Agent OS]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Backlog.md - l'outil]], [[Boucle de Ralph]], [[Cycle de vie d'un projet assisté par agent]], [[Fichiers de contexte pour agents]], [[Gestion de projet]], [[MADR - le modèle de fiche]], [[OpenSpec]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Projet assisté par agent]], [[Skills de Matt Pocock]], [[Vibe coding contre ingénierie agentique]]
 
 ### EDA automatisée & profiling  ·  notion
 - tags : `eda`, `feature-engineering`, `missing-data`
@@ -4353,7 +4353,7 @@
 ### Fichiers de contexte pour agents  ·  notion
 - tags : `agents`, `context-engineering`, `agent-skill`, `code-assistant`, `project-management`
 - liens sortants : [[AGENTS.md - le format]], [[Agent OS]], [[Agent memory]], [[Agent skills]], [[Agents de code]], [[Aider]], [[Cline]], [[Context engineering]], [[Développement piloté par la spécification]], [[Gitingest]], [[Prompt engineering]], [[Repomix]], [[ai-memory]], [[i-have-adhd]]
-- liens entrants : [[ADR et design docs]], [[AGENTS.md - le format]], [[Agent OS]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog.md - l'outil]], [[Beads]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[DeepWiki-Open]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Gitingest]], [[MADR - le modèle de fiche]], [[Modèle C4]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Repomix]], [[Revue, tests et définition de terminé avec un agent]], [[Serena]], [[Skills d'Anthropic]], [[Task]], [[Vibe coding contre ingénierie agentique]], [[awesome-claude-code]], [[just]]
+- liens entrants : [[ADR et design docs]], [[AGENTS.md - le format]], [[Agent OS]], [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog.md - l'outil]], [[Beads]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[DeepWiki-Open]], [[Diátaxis et docs-as-code]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Gitingest]], [[MADR - le modèle de fiche]], [[Modèle C4]], [[PRD et user stories]], [[Quel skill pour quelle étape]], [[Repomix]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Git et identité]], [[Rule - Projet assisté par agent]], [[Rule - README, docs et décisions]], [[Serena]], [[Skills d'Anthropic]], [[Task]], [[Vibe coding contre ingénierie agentique]], [[awesome-claude-code]], [[just]]
 
 ### Filtrage numérique  ·  notion
 - tags : `signal-processing`, `digital-filter`
@@ -4423,7 +4423,7 @@
 ### Gestion des secrets  ·  notion
 - tags : `secrets-management`, `cryptography`, `self-hosted`
 - liens sortants : [[Ansible]], [[Authentik]], [[Docker Compose]], [[Gitleaks]], [[Journalisation structurée et traçabilité]], [[Keycloak]], [[Kubernetes]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Pydantic Settings]], [[Reverse proxy et TLS]], [[SOPS]], [[python-dotenv]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Ansible]], [[Authentification]], [[Gitleaks]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Journalisation structurée et traçabilité]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Packaging Python et environnements reproductibles]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[SOPS]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Ansible]], [[Authentification]], [[Gitleaks]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Journalisation structurée et traçabilité]], [[OAuth2 et OpenID Connect]], [[OpenBao]], [[OpenTofu]], [[Packaging Python et environnements reproductibles]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[Reverse proxy et TLS]], [[Rule - Secrets hors du dépôt]], [[SOPS]], [[Supply chain logicielle et SBOM]], [[Sécurité]]
 
 ### GLM  ·  notion
 - tags : `regression`, `linear-model`, `supervised`, `maximum-likelihood`
@@ -5333,7 +5333,7 @@
 ### Revue, tests et définition de terminé avec un agent  ·  notion
 - tags : `project-management`, `testing`, `agents`, `code-assistant`, `git-hooks`
 - liens sortants : [[Agent evaluation]], [[Agent patterns]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Forges & CI-CD]], [[Hypothesis]], [[Ruff]], [[Vibe coding contre ingénierie agentique]], [[mypy]], [[pre-commit]], [[pytest]], [[testcontainers]]
-- liens entrants : [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Lefthook]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PR-Agent]], [[PRD et user stories]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Vibe Kanban]], [[Vibe coding contre ingénierie agentique]]
+- liens entrants : [[BMAD - la méthode]], [[BMAD - tour complet des skills]], [[Backlog, Kanban, Scrum et Shape Up]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Lefthook]], [[Mesurer un projet - DORA, coût des agents et temps passé]], [[PR-Agent]], [[PRD et user stories]], [[Ponytail]], [[Quel skill pour quelle étape]], [[Rule - Projet assisté par agent]], [[Rule - Tests Python avec pytest]], [[Vibe Kanban]], [[Vibe coding contre ingénierie agentique]]
 
 ### Reward modeling  ·  notion
 - tags : `alignment`, `reinforcement-learning`, `llm`
@@ -5553,7 +5553,7 @@
 ### Supply chain logicielle et SBOM  ·  notion
 - tags : `sbom`, `supply-chain`, `vulnerability-scanning`
 - liens sortants : [[Dependency-Track]], [[Gestion des secrets]], [[Gitleaks]], [[Grype]], [[Semgrep]], [[Trivy]]
-- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Gitleaks]], [[Grype]], [[Semgrep]], [[Sécurité]], [[Trivy]]
+- liens entrants : [[Analyse de vulnérabilités]], [[Comparatif - Scanners de sécurité]], [[Dependency-Track]], [[Gitleaks]], [[Grype]], [[Rule - Image Docker minimale]], [[Rule - Secrets hors du dépôt]], [[Semgrep]], [[Sécurité]], [[Trivy]]
 
 ### Surveillance conditionnelle et modes de défaillance  ·  notion
 - tags : `predictive-maintenance`, `condition-monitoring`
@@ -5830,30 +5830,65 @@
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Bases NoSQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Stockage objet]], [[Docker]], [[FastAPI]], [[Garage]], [[MinIO]], [[MongoDB]], [[Postgres]], [[SeaweedFS]], [[Streamlit]], [[Uvicorn]], [[testcontainers]]
 - liens entrants : [[Patterns]], [[Rule - Packaging démo]]
 
+### Rule - Commits conventionnels et versions automatiques  ·  rule
+- tags : `rule`, `git-hooks`, `changelog`, `version-control`
+- liens sortants : [[Commitizen]], [[Commits conventionnels, versions et changelog]], [[Comparatif - Versions et changelog]], [[Lefthook]], [[Rule - Git et identité]], [[Rule - Qualité stricte]], [[git-cliff]], [[pre-commit]], [[python-semantic-release]], [[release-please]]
+- liens entrants : [[Rule - Git et identité]], [[Rule - Qualité stricte]], [[Rule - README, docs et décisions]], [[Rules]]
+
 ### Rule - Config typée  ·  rule
 - tags : `rule`, `config`, `data-validation`, `type-hints`
-- liens sortants : [[Pydantic]], [[Pydantic Settings]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]]
-- liens entrants : [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rules]]
+- liens sortants : [[Pydantic]], [[Pydantic Settings]], [[Rule - Qualité stricte]], [[Rule - Secrets hors du dépôt]], [[Rule - Structure de projet]]
+- liens entrants : [[Rule - Image Docker minimale]], [[Rule - Qualité stricte]], [[Rule - Secrets hors du dépôt]], [[Rule - Structure de projet]], [[Rules]]
 
 ### Rule - Entraîner sur du normal vérifié  ·  rule
 - tags : `rule`, `anomaly-detection`, `data-leakage`, `thresholding`
 - liens sortants : [[Anomalie visuelle zero-shot et few-shot]], [[DVC]], [[Data drift]], [[Data leakage]], [[Détection d'anomalies visuelle]], [[Jeux de données d'anomalies]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Score et seuil d'alerte]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[Détection d'anomalies]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Rules]]
 
+### Rule - Git et identité  ·  rule
+- tags : `rule`, `git-hooks`, `version-control`
+- liens sortants : [[Branches courtes et worktrees pour agents]], [[Fichiers de contexte pour agents]], [[Forgejo]], [[GitLab CE]], [[Lefthook]], [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Projet assisté par agent]], [[pre-commit]]
+- liens entrants : [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Projet assisté par agent]], [[Rule - Secrets hors du dépôt]], [[Rules]]
+
+### Rule - Image Docker minimale  ·  rule
+- tags : `rule`, `container`, `secrets-management`, `reproducibility`
+- liens sortants : [[Docker]], [[Grype]], [[Harbor]], [[Podman]], [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Secrets hors du dépôt]], [[Supply chain logicielle et SBOM]], [[Trivy]], [[Zot]]
+- liens entrants : [[Rule - Packaging démo]], [[Rule - Secrets hors du dépôt]], [[Rules]]
+
 ### Rule - Packaging démo  ·  rule
 - tags : `rule`, `container`, `ci-cd`, `reproducibility`
-- liens sortants : [[Docker]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
-- liens entrants : [[Rule - Structure de projet]], [[Rules]]
+- liens sortants : [[Docker]], [[Pattern - Stack démo ML locale multi-services]], [[Rule - Image Docker minimale]], [[Rule - Structure de projet]], [[Rule - Toolchain Python]]
+- liens entrants : [[Rule - Image Docker minimale]], [[Rule - Structure de projet]], [[Rules]]
+
+### Rule - Projet assisté par agent  ·  rule
+- tags : `rule`, `agents`, `spec-driven`, `code-review`, `context-engineering`
+- liens sortants : [[AGENTS.md - le format]], [[Boucle de Ralph]], [[Branches courtes et worktrees pour agents]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[OpenSpec]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Git et identité]], [[Rule - README, docs et décisions]], [[Rule - Secrets hors du dépôt]], [[Rule - Tests Python avec pytest]], [[Spec Kit]]
+- liens entrants : [[Rule - Git et identité]], [[Rule - README, docs et décisions]], [[Rule - Tests Python avec pytest]], [[Rules]]
 
 ### Rule - Qualité stricte  ·  rule
 - tags : `rule`, `linter`, `type-hints`, `testing`, `ci-cd`
-- liens sortants : [[GitHub Actions]], [[Ruff]], [[Rule - Config typée]], [[Rule - Toolchain Python]], [[pytest]]
-- liens entrants : [[Rule - Config typée]], [[Rule - Toolchain Python]], [[Rules]]
+- liens sortants : [[GitHub Actions]], [[Ruff]], [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Config typée]], [[Rule - Tests Python avec pytest]], [[Rule - Toolchain Python]], [[pytest]]
+- liens entrants : [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Config typée]], [[Rule - Tests Python avec pytest]], [[Rule - Toolchain Python]], [[Rules]]
+
+### Rule - README, docs et décisions  ·  rule
+- tags : `rule`, `documentation`, `adr`
+- liens sortants : [[ADR et design docs]], [[AGENTS.md - le format]], [[D2]], [[Diátaxis et docs-as-code]], [[Fichiers de contexte pour agents]], [[MADR - le modèle de fiche]], [[Mermaid]], [[MkDocs]], [[Rule - Commits conventionnels et versions automatiques]], [[Rule - Projet assisté par agent]], [[Rule - Structure de projet]], [[mkdocstrings]]
+- liens entrants : [[Rule - Projet assisté par agent]], [[Rule - Structure de projet]], [[Rules]]
+
+### Rule - Secrets hors du dépôt  ·  rule
+- tags : `rule`, `secrets-management`, `secret-scanning`, `config`
+- liens sortants : [[Gestion des secrets]], [[Gitleaks]], [[Lefthook]], [[OpenBao]], [[Rule - Config typée]], [[Rule - Git et identité]], [[Rule - Image Docker minimale]], [[SOPS]], [[Supply chain logicielle et SBOM]], [[pre-commit]]
+- liens entrants : [[Rule - Config typée]], [[Rule - Image Docker minimale]], [[Rule - Projet assisté par agent]], [[Rules]]
 
 ### Rule - Structure de projet  ·  rule
 - tags : `rule`, `reproducibility`
-- liens sortants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Toolchain Python]]
-- liens entrants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - Toolchain Python]], [[Rules]]
+- liens sortants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - README, docs et décisions]], [[Rule - Tests Python avec pytest]], [[Rule - Toolchain Python]]
+- liens entrants : [[Rule - Config typée]], [[Rule - Packaging démo]], [[Rule - README, docs et décisions]], [[Rule - Tests Python avec pytest]], [[Rule - Toolchain Python]], [[Rules]]
+
+### Rule - Tests Python avec pytest  ·  rule
+- tags : `rule`, `testing`, `property-based-testing`, `ci-cd`
+- liens sortants : [[Hypothesis]], [[Revue, tests et définition de terminé avec un agent]], [[Rule - Projet assisté par agent]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[pytest]], [[testcontainers]]
+- liens entrants : [[Rule - Projet assisté par agent]], [[Rule - Qualité stricte]], [[Rule - Structure de projet]], [[Rules]]
 
 ### Rule - Toolchain Python  ·  rule
 - tags : `rule`, `package-manager`, `linter`, `formatter`
@@ -5869,10 +5904,10 @@
 
 - `ab-testing` : A/B testing, CUPED
 - `accessibility` : OpenDataLoader PDF  — pas de page concept dédiée
-- `adr` : ADR et design docs, Gestion de projet, MADR - le modèle de fiche
+- `adr` : ADR et design docs, Gestion de projet, MADR - le modèle de fiche, Rule - README, docs et décisions
 - `agent-memory` : Agents, Assistants, Cognee, Comparatif - Mémoire pour agents, Graphiti, Mem0, Mémoire des agents, OpenViking, ai-memory
 - `agent-skill` : Agent Skills - la spécification, Agents de code, Archify, Assistants, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Fichiers de contexte pour agents, OpenSpec, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Superpowers, awesome-claude-code, i-have-adhd, pm-skills
-- `agents` : ADR et design docs, AGENTS.md - le format, Activepieces, Agent OS, Agent Skills - la spécification, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Backlog, Kanban, Scrum et Shape Up, Backlog.md - l'outil, Beads, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Claude Squad, Claude-Code-Usage-Monitor, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Serena, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, awesome-claude-code, ccusage, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code  — pas de page concept dédiée
+- `agents` : ADR et design docs, AGENTS.md - le format, Activepieces, Agent OS, Agent Skills - la spécification, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Backlog, Kanban, Scrum et Shape Up, Backlog.md - l'outil, Beads, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Claude Squad, Claude-Code-Usage-Monitor, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Rule - Projet assisté par agent, Sandboxing de code généré, Semantic Kernel, Serena, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, awesome-claude-code, ccusage, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code  — pas de page concept dédiée
 - `ai-security` : AI security, Apprentissage fédéré, Confidentialité différentielle, Daytona, Données personnelles et anonymisation pour LLM, E2B, Llama Guard, Maka, NeMo Guardrails, Presidio, Prompt injection, Sandboxing de code généré, Systèmes IA, Sécurité, garak, promptfoo
 - `alerting` : Alertmanager, Netdata, Prometheus, SLO et alerting, Uptime Kuma, Zabbix
 - `alignment` : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL  — pas de page concept dédiée
@@ -5898,9 +5933,9 @@
 - `causal-inference` : CausalImpact, Causalité de Granger, Cause racine d'une anomalie, Comparatif - Outils stats, Diff-in-Diff, Découverte causale, Inférence causale, Modélisation d'uplift, Méthodes causales, Statistiques & inférence
 - `cdc` : Airbyte, Change Data Capture (CDC), Debezium, Ingestion de données
 - `change-point` : Détection de ruptures, Kats, Merlion, ruptures  — pas de page concept dédiée
-- `changelog` : Commitizen, Comparatif - Versions et changelog, git-cliff, python-semantic-release, release-please  — pas de page concept dédiée
+- `changelog` : Commitizen, Comparatif - Versions et changelog, Rule - Commits conventionnels et versions automatiques, git-cliff, python-semantic-release, release-please  — pas de page concept dédiée
 - `chunking` : Chunking strategies, RAG & retrieval, RAGFlow
-- `ci-cd` : Argo CD, Branches courtes et worktrees pour agents, CI-CD pour le ML, Commits conventionnels, versions et changelog, Comparatif - CI-CD auto-hébergé, DevOps, Diátaxis et docs-as-code, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Mesurer un projet - DORA, coût des agents et temps passé, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI  — pas de page concept dédiée
+- `ci-cd` : Argo CD, Branches courtes et worktrees pour agents, CI-CD pour le ML, Commits conventionnels, versions et changelog, Comparatif - CI-CD auto-hébergé, DevOps, Diátaxis et docs-as-code, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Mesurer un projet - DORA, coût des agents et temps passé, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Rule - Tests Python avec pytest, Semgrep, Trivy, Woodpecker CI  — pas de page concept dédiée
 - `class-imbalance` : Classification de texte, Imbalanced classification, Maintenance prédictive avec peu de pannes, Tabulaire, imbalanced-learn, Évaluer une détection d'anomalies
 - `classification` : AdaBoost, Analyse discriminante, Apprentissage supervisé, Arbres de décision, Calibration, Classification, Classification de texte, Classification metrics, Cross-entropy, Extra Trees, Imbalanced classification, Méthodes à noyau, Naive Bayes, Perceptron et MLP, ROC-AUC / courbe PR, Régression et classification multi-sorties, Régression logistique, SVM, Socle, Types de données et choix de modèle, aeon, imbalanced-learn, k-NN, sktime, Équité et biais algorithmique, Évaluation de modèles
 - `cli` : Comparatif - Frameworks CLI, OpenSpec, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge  — pas de page concept dédiée
@@ -5908,7 +5943,7 @@
 - `cnn` : Architectures CNN, CNN, Classification audio par spectrogramme, Classification d'images, RUL par apprentissage profond, Vision, Vision par ordinateur, timm, torchvision
 - `code-assistant` : AGENTS.md - le format, Agents de code, Aider, Archify, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, OpenSpec, Ponytail, Qwen Code, Revue, tests et définition de terminé avec un agent, Skills d'Addy Osmani, Skills de Matt Pocock, Spec Kit, Superpowers, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code  — pas de page concept dédiée
 - `code-generation` : Agents de code, Aider, BMAD, Boucle de Ralph, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, Développement piloté par la spécification, Kilo Code, LM Studio Bionic, OpenCode, OpenHands, Qwen Code, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, freebuff, t3code  — pas de page concept dédiée
-- `code-review` : PR-Agent  — pas de page concept dédiée
+- `code-review` : PR-Agent, Rule - Projet assisté par agent  — pas de page concept dédiée
 - `columnar` : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx  — pas de page concept dédiée
 - `combinatorial-optimization` : Comparatif - Solveurs d'optimisation, HGS-CVRP, HiGHS, OR-Tools, Optimisation, Optimisation combinatoire, Ordonnancement d'atelier (job-shop, flow-shop), Pattern - Pipeline scraping → matching → optimisation, Plannings de personnel (rostering), Programmation linéaire en nombres entiers (MIP), Programmation par contraintes, PuLP, PyVRP, Pyomo, Quantité économique de commande et tailles de lot, Tournées de véhicules (VRP)
 - `computer-vision` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Apprentissage auto-supervisé en vision, Architectures CNN, Augmentation d'images, CNN, CVAT, Classification d'images, Comparatif - Détection & segmentation, Comparatif - Détection d'anomalies visuelles, Detectron2, Dinomaly, Détection d'anomalies visuelle, Détection d'objets, EasyOCR, Estimation de pose, Kornia, Label Studio, Metric learning & ré-identification, Modèles de fondation vision, Métriques vision, OCR, OpenCV, PaddleOCR, Pattern - Inspection visuelle en ligne de production, Rendu neuronal 3D & estimation de profondeur, Segment Anything (SAM), Segmentation, Suivi d'objets, Transfer learning vision, Ultralytics YOLO, Vision, Vision Transformers (ViT), Vision par ordinateur, albumentations, anomalib, docTR, patchcore-inspection, segment-anything, supervision, timm, torchvision
@@ -5916,12 +5951,12 @@
 - `concept-drift` : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River  — pas de page concept dédiée
 - `condition-monitoring` : Analyse vibratoire, Anomalie acoustique, Cause racine d'une anomalie, Diagnostic de défauts de roulements, Indicateurs de santé, Santé de batterie (SOH et RUL), Surveillance conditionnelle et modes de défaillance, T² et SPE  — pas de page concept dédiée
 - `confidence-interval` : Bootstrap, Intervalles de confiance, Prédiction conforme, Tests & estimation, scipy.stats
-- `config` : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
+- `config` : Outils de développement, Pydantic Settings, Rule - Config typée, Rule - Secrets hors du dépôt, dynaconf, hydra, python-dotenv  — pas de page concept dédiée
 - `constrained-optimization` : CVXPY, Optimisation sous contrainte, Pyomo
 - `constraint-programming` : OR-Tools, Ordonnancement d'atelier (job-shop, flow-shop), Plannings de personnel (rostering), Programmation par contraintes
-- `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers  — pas de page concept dédiée
+- `container` : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Image Docker minimale, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers  — pas de page concept dédiée
 - `container-registry` : Comparatif - Registres d'images, Harbor, Zot  — pas de page concept dédiée
-- `context-engineering` : ADR et design docs, AGENTS.md - le format, Agent OS, Agent Skills - la spécification, Agent skills, Architecture deep agent, Boucle de Ralph, Claude Video, Context engineering, Contexte long, Deep Agents, Deep research, Développement piloté par la spécification, Fichiers de contexte pour agents, Gitingest, Graphify, Harnais d'agent, Headroom, Mémoire des agents, OmniRoute, OpenViking, Repomix, Serena, Sous-agents et isolation du contexte, ai-memory, prompt-caching
+- `context-engineering` : ADR et design docs, AGENTS.md - le format, Agent OS, Agent Skills - la spécification, Agent skills, Architecture deep agent, Boucle de Ralph, Claude Video, Context engineering, Contexte long, Deep Agents, Deep research, Développement piloté par la spécification, Fichiers de contexte pour agents, Gitingest, Graphify, Harnais d'agent, Headroom, Mémoire des agents, OmniRoute, OpenViking, Repomix, Rule - Projet assisté par agent, Serena, Sous-agents et isolation du contexte, ai-memory, prompt-caching
 - `convergence` : Loi des grands nombres, Probabilités, Théorème central limite  — pas de page concept dédiée
 - `convexity` : CVXPY, Convexity, Optimisation, Optimisation sous contrainte
 - `cross-entropy` : Cross-entropy, Théorie de l'information
@@ -5963,7 +5998,7 @@
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
 - `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
-- `documentation` : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Sphinx, Zensical, mkdocstrings  — pas de page concept dédiée
+- `documentation` : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Rule - README, docs et décisions, Sphinx, Zensical, mkdocstrings  — pas de page concept dédiée
 - `domain-adaptation` : Adaptation de domaine
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot  — pas de page concept dédiée
@@ -5996,7 +6031,7 @@
 - `gan` : GANs, Orion, SDV
 - `generalization-bound` : Generalization bounds, Théorie de l'apprentissage
 - `generative-model` : Diffusion models, GANs, Image generation, SDV, Video generation  — pas de page concept dédiée
-- `git-hooks` : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, pre-commit  — pas de page concept dédiée
+- `git-hooks` : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit  — pas de page concept dédiée
 - `gitops` : Argo CD, Du Compose à Kubernetes — quand changer d'échelle
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
@@ -6140,7 +6175,7 @@
 - `prompt-injection` : Prompt injection, Systèmes IA, Sécurité, garak
 - `prompt-optimization` : DSPy  — pas de page concept dédiée
 - `prompting` : Chain-of-Thought, Prompt engineering, i-have-adhd  — pas de page concept dédiée
-- `property-based-testing` : Hypothesis  — pas de page concept dédiée
+- `property-based-testing` : Hypothesis, Rule - Tests Python avec pytest  — pas de page concept dédiée
 - `pruning` : Pruning
 - `quantization` : Apprentissage profond, Choisir un modèle d'embedding, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Fine-tuning, LM Studio, LiteRT, ONNX Runtime, Ollama, OpenVINO, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization, Runtimes, TensorRT, TensorRT-LLM, Unsloth, llama.cpp, llmfit, needle, text-generation-webui
 - `query-engine` : OLTP, OLAP et lakehouse, Trino  — pas de page concept dédiée
@@ -6162,7 +6197,7 @@
 - `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Hallucinations des LLM, Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
-- `reproducibility` : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill  — pas de page concept dédiée
+- `reproducibility` : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill  — pas de page concept dédiée
 - `reranking` : Cohere Rerank, Comparatif - Rerankers, FastEmbed, FlashRank, Infinity, Jina Reranker, Late-interaction retrieval, Qwen3-Embedding, RAG & retrieval, RAGatouille, Reranking, Text Embeddings Inference, bge-reranker, sentence-transformers
 - `resampling` : Bootstrap, Tests & estimation, Validation croisée, Walk-forward CV, Évaluation de modèles
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG agentique, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
@@ -6170,7 +6205,7 @@
 - `reward-shaping` : Reward shaping and hacking
 - `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading
 - `rul` : Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Loi de Weibull, Politique de maintenance et coût, PyBaMM, RUL par analyse de survie, RUL par apprentissage profond, Santé de batterie (SOH et RUL), scikit-survival
-- `rule` : Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point  — pas de page concept dédiée
+- `rule` : Rule - Commits conventionnels et versions automatiques, Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Git et identité, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Projet assisté par agent, Rule - Qualité stricte, Rule - README, docs et décisions, Rule - Secrets hors du dépôt, Rule - Structure de projet, Rule - Tests Python avec pytest, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point  — pas de page concept dédiée
 - `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS
 - `safety` : AI security, Guardrails, Jailbreaking and defenses, Llama Guard, NeMo Guardrails  — pas de page concept dédiée
 - `sast` : Analyse de vulnérabilités, Semgrep, Sécurité  — pas de page concept dédiée
@@ -6181,8 +6216,8 @@
 - `schema-evolution` : API REST, GraphQL et gRPC, Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt  — pas de page concept dédiée
 - `search` : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai  — pas de page concept dédiée
 - `second-order` : Newton & quasi-Newton, Optimisation  — pas de page concept dédiée
-- `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy  — pas de page concept dédiée
-- `secrets-management` : Gestion des secrets, OpenBao, SOPS, Sécurité
+- `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Rule - Secrets hors du dépôt, Sécurité, Trivy  — pas de page concept dédiée
+- `secrets-management` : Gestion des secrets, OpenBao, Rule - Image Docker minimale, Rule - Secrets hors du dépôt, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
 - `self-hosted` : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
@@ -6196,7 +6231,7 @@
 - `skills` : Agent Skills - la spécification, Gestion de projet, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Superpowers, awesome-claude-code, pm-skills
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
-- `spec-driven` : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories  — pas de page concept dédiée
+- `spec-driven` : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories, Rule - Projet assisté par agent  — pas de page concept dédiée
 - `spectrogram` : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
 - `sso` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
@@ -6220,7 +6255,7 @@
 - `templating` : Jinja2, Web & API  — pas de page concept dédiée
 - `temporal-difference` : Q-learning and DQN  — pas de page concept dédiée
 - `terminal-ui` : Comparatif - Frameworks CLI, OpenCode, Qwen Code, Rich, llmfit, pi  — pas de page concept dédiée
-- `testing` : Boucle de Ralph, DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Revue, tests et définition de terminé avec un agent, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
+- `testing` : Boucle de Ralph, DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Revue, tests et définition de terminé avec un agent, Rule - Qualité stricte, Rule - Tests Python avec pytest, mcpjam, promptfoo, pytest, testcontainers  — pas de page concept dédiée
 - `text-classification` : Classification de texte, Comparatif - NLP, NLP, NLTK, SetFit
 - `text-to-sql` : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI  — pas de page concept dédiée
 - `thresholding` : Merlion, Pattern - Détection d'anomalies en deux étages, Politique de maintenance et coût, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, Score et seuil d'alerte, time-series-anomaly-detector  — pas de page concept dédiée
@@ -6245,7 +6280,7 @@
 - `vector-db` : Annoy, Bases de données, Bases de données vectorielles, Chroma, Comparatif - Bases vectorielles, Faiss, Index ANN — internes, LanceDB, Marqo, Milvus, Pinecone, Qdrant, ScaNN, Vespa, Weaviate, hnswlib, pgvector, txtai
 - `vector-norm` : Algèbre linéaire, Vector norms  — pas de page concept dédiée
 - `vehicle-routing` : HGS-CVRP, OR-Tools, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP)  — pas de page concept dédiée
-- `version-control` : Aider, Branches courtes et worktrees pour agents, Bruno, Claude Squad, Commitizen, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, Vibe Kanban, git-cliff, jupytext, python-semantic-release, release-please, swarm-forge  — pas de page concept dédiée
+- `version-control` : Aider, Branches courtes et worktrees pour agents, Bruno, Claude Squad, Commitizen, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, Vibe Kanban, git-cliff, jupytext, python-semantic-release, release-please, swarm-forge  — pas de page concept dédiée
 - `vibration-analysis` : Analyse vibratoire, Diagnostic de défauts de roulements
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
@@ -6266,7 +6301,7 @@
 
 **Tags sans page concept dédiée** (sujets candidats à créer) :
 - `accessibility` (porté par : OpenDataLoader PDF)
-- `agents` (porté par : ADR et design docs, AGENTS.md - le format, Activepieces, Agent OS, Agent Skills - la spécification, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Backlog, Kanban, Scrum et Shape Up, Backlog.md - l'outil, Beads, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Claude Squad, Claude-Code-Usage-Monitor, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Sandboxing de code généré, Semantic Kernel, Serena, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, awesome-claude-code, ccusage, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code)
+- `agents` (porté par : ADR et design docs, AGENTS.md - le format, Activepieces, Agent OS, Agent Skills - la spécification, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agents de code, Agno, AnythingLLM, Archify, Architecture deep agent, Assistants, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Backlog, Kanban, Scrum et Shape Up, Backlog.md - l'outil, Beads, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude Agent SDK, Claude Squad, Claude-Code-Usage-Monitor, Cline, Cognee, Comparatif - Assistants de code IA, Comparatif - Automatisation no-code, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Mémoire pour agents, Comparatif - Plateformes LLM auto-hébergées, Context engineering, Continue, CrewAI, Cycle de vie d'un projet assisté par agent, Daytona, Deep Agents, Deep research, Dify, Développement piloté par la spécification, E2B, Fichiers de contexte pour agents, Flowise, Goose, Graphiti, Harnais d'agent, Haystack, Hermes Agent, Human-in-the-loop, Inspect AI, Kilo Code, LLM & IA générative, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, Langflow, Letta, LibreChat, LlamaIndex, Maka, Mem0, Modal, Multi-agent systems, Mémoire des agents, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenViking, PRD et user stories, Pattern - Agent sur LLM auto-hébergé, Pattern - RAG structuré graphe + human-in-the-loop, Ponytail, PraisonAI, PydanticAI, Quel skill pour quelle étape, Qwen Code, RAG agentique, Reliability patterns, Revue, tests et définition de terminé avec un agent, Rule - Projet assisté par agent, Sandboxing de code généré, Semantic Kernel, Serena, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Sous-agents et isolation du contexte, Spec Kit, Superpowers, Text-to-SQL, Tool use patterns, Vanna, Vibe coding contre ingénierie agentique, WrenAI, Zapier, Zoo Code, a2a-protocol, agent-loops, awesome-claude-code, ccusage, fastmcp, freebuff, gumloop, i-have-adhd, mcp-protocol, n8n, open_deep_research, pi, pm-skills, smolagents, swarm-forge, t3code)
 - `alignment` (porté par : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API)
 - `array` (porté par : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray)
@@ -6281,18 +6316,18 @@
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
 - `change-point` (porté par : Détection de ruptures, Kats, Merlion, ruptures)
-- `changelog` (porté par : Commitizen, Comparatif - Versions et changelog, git-cliff, python-semantic-release, release-please)
-- `ci-cd` (porté par : Argo CD, Branches courtes et worktrees pour agents, CI-CD pour le ML, Commits conventionnels, versions et changelog, Comparatif - CI-CD auto-hébergé, DevOps, Diátaxis et docs-as-code, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Mesurer un projet - DORA, coût des agents et temps passé, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Semgrep, Trivy, Woodpecker CI)
+- `changelog` (porté par : Commitizen, Comparatif - Versions et changelog, Rule - Commits conventionnels et versions automatiques, git-cliff, python-semantic-release, release-please)
+- `ci-cd` (porté par : Argo CD, Branches courtes et worktrees pour agents, CI-CD pour le ML, Commits conventionnels, versions et changelog, Comparatif - CI-CD auto-hébergé, DevOps, Diátaxis et docs-as-code, Du Compose à Kubernetes — quand changer d'échelle, Forgejo, Forges & CI-CD, GitHub Actions, GitLab CE, Gitleaks, Grype, Jenkins, Mesurer un projet - DORA, coût des agents et temps passé, Pipelines CI-CD on-prem — runners, secrets et artefacts, Rule - Packaging démo, Rule - Qualité stricte, Rule - Tests Python avec pytest, Semgrep, Trivy, Woodpecker CI)
 - `cli` (porté par : Comparatif - Frameworks CLI, OpenSpec, Outils de développement, Spec Kit, Typer, croc, freebuff, swarm-forge)
 - `code-assistant` (porté par : AGENTS.md - le format, Agents de code, Aider, Archify, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Branches courtes et worktrees pour agents, Cline, Comparatif - Assistants de code IA, Continue, Cycle de vie d'un projet assisté par agent, Fichiers de contexte pour agents, Goose, Graphify, Kilo Code, Maka, OpenCode, OpenSpec, Ponytail, Qwen Code, Revue, tests et définition de terminé avec un agent, Skills d'Addy Osmani, Skills de Matt Pocock, Spec Kit, Superpowers, Vibe coding contre ingénierie agentique, Zoo Code, ai-memory, freebuff, i-have-adhd, pi, swarm-forge, t3code)
 - `code-generation` (porté par : Agents de code, Aider, BMAD, Boucle de Ralph, Cline, Code and math benchmarks, Comparatif - Assistants de code IA, Continue, Développement piloté par la spécification, Kilo Code, LM Studio Bionic, OpenCode, OpenHands, Qwen Code, Spec Kit, Vibe coding contre ingénierie agentique, Zoo Code, freebuff, t3code)
-- `code-review` (porté par : PR-Agent)
+- `code-review` (porté par : PR-Agent, Rule - Projet assisté par agent)
 - `columnar` (porté par : ADBC, Apache Arrow, Bases de données, ClickHouse, Comparatif - Bases colonnes, Comparatif - Manipulation de données, DuckDB, Formats de fichiers et de tables, LanceDB, OLTP, OLAP et lakehouse, Parquet, Polars, Snowflake, connectorx)
 - `concentration` (porté par : Inégalités de concentration, Probabilités)
 - `concept-drift` (porté par : Data drift, Evidently, Monitoring de modèle en production, Monitoring de modèles, NannyML, River)
 - `condition-monitoring` (porté par : Analyse vibratoire, Anomalie acoustique, Cause racine d'une anomalie, Diagnostic de défauts de roulements, Indicateurs de santé, Santé de batterie (SOH et RUL), Surveillance conditionnelle et modes de défaillance, T² et SPE)
-- `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, dynaconf, hydra, python-dotenv)
-- `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers)
+- `config` (porté par : Outils de développement, Pydantic Settings, Rule - Config typée, Rule - Secrets hors du dépôt, dynaconf, hydra, python-dotenv)
+- `container` (porté par : Beszel, Comparatif - Orchestration de conteneurs, Conteneurs & orchestration, Daytona, DevOps, Docker, Docker Compose, Du Compose à Kubernetes — quand changer d'échelle, E2B, Grype, Kubernetes, Modal, Pattern - Stack démo ML locale multi-services, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Rule - Image Docker minimale, Rule - Packaging démo, Sandboxing de code généré, Traefik, Trivy, Woodpecker CI, k3s, testcontainers)
 - `container-registry` (porté par : Comparatif - Registres d'images, Harbor, Zot)
 - `convergence` (porté par : Loi des grands nombres, Probabilités, Théorème central limite)
 - `cryptography` (porté par : Gestion des secrets, OpenBao, PyJWT, SOPS, Sécurité, croc)
@@ -6319,7 +6354,7 @@
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, Apprentissage fédéré, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : ArangoDB, MongoDB, MongoDB Compass)
 - `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
-- `documentation` (porté par : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Sphinx, Zensical, mkdocstrings)
+- `documentation` (porté par : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Rule - README, docs et décisions, Sphinx, Zensical, mkdocstrings)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot)
 - `education` (porté par : OpenMAIC)
@@ -6339,7 +6374,7 @@
 - `foundation-model` (porté par : Anomalie visuelle zero-shot et few-shot, Chronos, Foundation models et anomalies de séries, Modèles de fondation vision, Séries temporelles, segment-anything)
 - `fourier` (porté par : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
-- `git-hooks` (porté par : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, pre-commit)
+- `git-hooks` (porté par : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
 - `hardware-sizing` (porté par : llmfit)
@@ -6422,7 +6457,7 @@
 - `project-management` (porté par : ADR et design docs, Apache DevLake, BMAD - la méthode, BMAD - tour complet des skills, Backlog, Kanban, Scrum et Shape Up, Backlog.md - l'outil, Beads, Boucle de Ralph, Branches courtes et worktrees pour agents, Claude-Code-Usage-Monitor, Commits conventionnels, versions et changelog, Comparatif - Suivi de projet auto-hébergé, Cycle de vie d'un projet assisté par agent, Diátaxis et docs-as-code, Développement piloté par la spécification, Fichiers de contexte pour agents, Gestion de projet, Kanboard, Kimai, MADR - le modèle de fiche, Mesurer un projet - DORA, coût des agents et temps passé, Modèle C4, OpenSpec, PRD et user stories, Quel skill pour quelle étape, Redmine, Revue, tests et définition de terminé avec un agent, Vibe Kanban, Vibe coding contre ingénierie agentique, Vikunja, Wekan, ccusage, pm-skills)
 - `prompt-optimization` (porté par : DSPy)
 - `prompting` (porté par : Chain-of-Thought, Prompt engineering, i-have-adhd)
-- `property-based-testing` (porté par : Hypothesis)
+- `property-based-testing` (porté par : Hypothesis, Rule - Tests Python avec pytest)
 - `query-engine` (porté par : OLTP, OLAP et lakehouse, Trino)
 - `ranking` (porté par : BM25, Learning to rank, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles)
 - `reasoning` (porté par : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss)
@@ -6433,9 +6468,9 @@
 - `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
 - `reliability` (porté par : Hallucinations des LLM, Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Probing, PyTorch Geometric, embeddings)
-- `reproducibility` (porté par : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill)
+- `reproducibility` (porté par : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill)
 - `retrieval` (porté par : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG agentique, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers)
-- `rule` (porté par : Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Packaging démo, Rule - Qualité stricte, Rule - Structure de projet, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point)
+- `rule` (porté par : Rule - Commits conventionnels et versions automatiques, Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Git et identité, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Projet assisté par agent, Rule - Qualité stricte, Rule - README, docs et décisions, Rule - Secrets hors du dépôt, Rule - Structure de projet, Rule - Tests Python avec pytest, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point)
 - `safety` (porté par : AI security, Guardrails, Jailbreaking and defenses, Llama Guard, NeMo Guardrails)
 - `sast` (porté par : Analyse de vulnérabilités, Semgrep, Sécurité)
 - `scheduler` (porté par : Airflow, Comparatif - Orchestrateurs data)
@@ -6443,13 +6478,13 @@
 - `schema-evolution` (porté par : API REST, GraphQL et gRPC, Apache Iceberg, Avro, Contrats de données & qualité, Delta Lake, Formats de fichiers et de tables, dlt)
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
-- `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Sécurité, Trivy)
+- `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Rule - Secrets hors du dépôt, Sécurité, Trivy)
 - `self-hosted` (porté par : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Anomalie acoustique, Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : API REST, GraphQL et gRPC, Apache Arrow, Avro)
 - `simulation` (porté par : Pattern - Prévoir puis optimiser, SimPy)
-- `spec-driven` (porté par : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories)
+- `spec-driven` (porté par : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories, Rule - Projet assisté par agent)
 - `spectrogram` (porté par : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal)
 - `speech` (porté par : Claude Video, Médias, Speech models, Superwhisper)
 - `sso` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, Sécurité)
@@ -6467,7 +6502,7 @@
 - `templating` (porté par : Jinja2, Web & API)
 - `temporal-difference` (porté par : Q-learning and DQN)
 - `terminal-ui` (porté par : Comparatif - Frameworks CLI, OpenCode, Qwen Code, Rich, llmfit, pi)
-- `testing` (porté par : Boucle de Ralph, DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Revue, tests et définition de terminé avec un agent, Rule - Qualité stricte, mcpjam, promptfoo, pytest, testcontainers)
+- `testing` (porté par : Boucle de Ralph, DeepEval, Faker, Hypothesis, Mimesis, Outils de développement, Revue, tests et définition de terminé avec un agent, Rule - Qualité stricte, Rule - Tests Python avec pytest, mcpjam, promptfoo, pytest, testcontainers)
 - `text-to-sql` (porté par : Comparatif - Frameworks text-to-SQL, DB-GPT, LangChain SQL agent, LlamaIndex NLSQLTableQueryEngine, Text-to-SQL, Vanna, WrenAI)
 - `thresholding` (porté par : Merlion, Pattern - Détection d'anomalies en deux étages, Politique de maintenance et coût, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, Score et seuil d'alerte, time-series-anomaly-detector)
 - `timeseries` (porté par : ARIMA SARIMA, Anomalies multivariées par apprentissage profond, Autocorrelation, Bases de données, CausalImpact, Causalité de Granger, Cause racine d'une anomalie, Chronos, Comparatif - Bases temporelles, Comparatif - Détection d'anomalies en séries temporelles, Comparatif - Forecasting, Contrôle statistique de procédé (SPC), DeepOD, Détection d'anomalies en ligne, Détection de ruptures, Expliquer une anomalie (contribution des capteurs), Exponential smoothing, Forecasting framing, Forecasting metrics, Foundation models et anomalies de séries, Foundation models pour séries temporelles, Hierarchical forecasting, InfluxDB, Intermittent demand, Kats, LSTM et réseaux récurrents, Maintenance prédictive et RUL, Merlion, OEE et rendement global, Orion, Prophet, RUL par apprentissage profond, STUMPY, Santé de batterie (SOH et RUL), Stationarity, Séries temporelles, TSB-AD, Time series anomaly detection, Time series feature engineering, TimescaleDB, Walk-forward CV, aeon, darts, neuralforecast, pmdarima, ruptures, sktime, statsforecast, time-series-anomaly-detector, tsfresh)
@@ -6482,7 +6517,7 @@
 - `uptime` (porté par : Uptime Kuma)
 - `vector-norm` (porté par : Algèbre linéaire, Vector norms)
 - `vehicle-routing` (porté par : HGS-CVRP, OR-Tools, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP))
-- `version-control` (porté par : Aider, Branches courtes et worktrees pour agents, Bruno, Claude Squad, Commitizen, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, Vibe Kanban, git-cliff, jupytext, python-semantic-release, release-please, swarm-forge)
+- `version-control` (porté par : Aider, Branches courtes et worktrees pour agents, Bruno, Claude Squad, Commitizen, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, Vibe Kanban, git-cliff, jupytext, python-semantic-release, release-please, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
 - `vision-language` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)
 - `vulnerability-scanning` (porté par : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy)

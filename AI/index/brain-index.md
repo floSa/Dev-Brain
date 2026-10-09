@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1172 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1179 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1612,11 +1612,18 @@
 ## Rules — règles transverses
 
 ### (sans catégorie)
+- **Rule - Commits conventionnels et versions automatiques** — —
 - **Rule - Config typée** — —
 - **Rule - Entraîner sur du normal vérifié** — —
+- **Rule - Git et identité** — —
+- **Rule - Image Docker minimale** — —
 - **Rule - Packaging démo** — —
+- **Rule - Projet assisté par agent** — —
 - **Rule - Qualité stricte** — —
+- **Rule - README, docs et décisions** — —
+- **Rule - Secrets hors du dépôt** — —
 - **Rule - Structure de projet** — —
+- **Rule - Tests Python avec pytest** — —
 - **Rule - Toolchain Python** — —
 - **Rule - Évaluer une anomalie par événement, pas par point** — —
 
@@ -1694,7 +1701,7 @@
 - **Recherche opérationnelle** — Décider combien commander et quand, puis planifier, ordonnancer et tourner — du vendeur de journaux au plan agrégé, au MRP, à l'atelier, aux plannings de personnel et aux tournées de véhicules.
 - **Relationnel** — Tables à schéma fixe, SQL et transactions ACID — le défaut solide de la majorité des applications.
 - **Reverse proxies** — Exposer des services derrière un nom, un certificat et une répartition de charge — le proxy qui reçoit le monde, et l'autorité qui signe ce qu'il présente.
-- **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.
+- **Rules** — Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, tests, git, conteneurs, documentation, secrets, travail avec un agent.
 - **Runtimes** — Faire tourner un modèle de langage — sur un poste, sur un GPU, ou derrière une API à haut débit.
 - **Réseau** — Voir ce qui circule sur un lien, et faire circuler un fichier d'une machine à l'autre.
 - **Scraping** — Extraire de la donnée depuis des pages web — et tenir face à ce que le site oppose.

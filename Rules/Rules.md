@@ -30,11 +30,18 @@ pitch: Les contraintes qui tiennent quelle que soit la stack — outillage, stru
 
 <!-- AUTO:START -->
 ### Rules
+- [[Rule - Commits conventionnels et versions automatiques]]
 - [[Rule - Config typée]]
 - [[Rule - Entraîner sur du normal vérifié]]
+- [[Rule - Git et identité]]
+- [[Rule - Image Docker minimale]]
 - [[Rule - Packaging démo]]
+- [[Rule - Projet assisté par agent]]
 - [[Rule - Qualité stricte]]
+- [[Rule - README, docs et décisions]]
+- [[Rule - Secrets hors du dépôt]]
 - [[Rule - Structure de projet]]
+- [[Rule - Tests Python avec pytest]]
 - [[Rule - Toolchain Python]]
 - [[Rule - Évaluer une anomalie par événement, pas par point]]
 <!-- AUTO:END -->

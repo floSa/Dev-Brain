@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1172,
+  "count": 1179,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -39,7 +39,8 @@
     "adr": [
       "ADR et design docs",
       "Gestion de projet",
-      "MADR - le modèle de fiche"
+      "MADR - le modèle de fiche",
+      "Rule - README, docs et décisions"
     ],
     "agent-memory": [
       "Agents",
@@ -160,6 +161,7 @@
       "RAG agentique",
       "Reliability patterns",
       "Revue, tests et définition de terminé avec un agent",
+      "Rule - Projet assisté par agent",
       "Sandboxing de code généré",
       "Semantic Kernel",
       "Serena",
@@ -456,6 +458,7 @@
     "changelog": [
       "Commitizen",
       "Comparatif - Versions et changelog",
+      "Rule - Commits conventionnels et versions automatiques",
       "git-cliff",
       "python-semantic-release",
       "release-please"
@@ -485,6 +488,7 @@
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Rule - Packaging démo",
       "Rule - Qualité stricte",
+      "Rule - Tests Python avec pytest",
       "Semgrep",
       "Trivy",
       "Woodpecker CI"
@@ -622,7 +626,8 @@
       "t3code"
     ],
     "code-review": [
-      "PR-Agent"
+      "PR-Agent",
+      "Rule - Projet assisté par agent"
     ],
     "columnar": [
       "ADBC",
@@ -737,6 +742,7 @@
       "Outils de développement",
       "Pydantic Settings",
       "Rule - Config typée",
+      "Rule - Secrets hors du dépôt",
       "dynaconf",
       "hydra",
       "python-dotenv"
@@ -768,6 +774,7 @@
       "Pattern - Stack démo ML locale multi-services",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Podman",
+      "Rule - Image Docker minimale",
       "Rule - Packaging démo",
       "Sandboxing de code généré",
       "Traefik",
@@ -804,6 +811,7 @@
       "OmniRoute",
       "OpenViking",
       "Repomix",
+      "Rule - Projet assisté par agent",
       "Serena",
       "Sous-agents et isolation du contexte",
       "ai-memory",
@@ -1343,6 +1351,7 @@
       "MADR - le modèle de fiche",
       "MkDocs",
       "Modèle C4",
+      "Rule - README, docs et décisions",
       "Sphinx",
       "Zensical",
       "mkdocstrings"
@@ -1659,6 +1668,8 @@
       "Lefthook",
       "Qualité du code",
       "Revue, tests et définition de terminé avec un agent",
+      "Rule - Commits conventionnels et versions automatiques",
+      "Rule - Git et identité",
       "pre-commit"
     ],
     "gitops": [
@@ -3315,7 +3326,8 @@
       "i-have-adhd"
     ],
     "property-based-testing": [
-      "Hypothesis"
+      "Hypothesis",
+      "Rule - Tests Python avec pytest"
     ],
     "pruning": [
       "Pruning"
@@ -3591,6 +3603,7 @@
       "Packaging Python et environnements reproductibles",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
       "Quarto",
+      "Rule - Image Docker minimale",
       "Rule - Packaging démo",
       "Rule - Structure de projet",
       "Suivi d'expériences",
@@ -3695,11 +3708,18 @@
       "scikit-survival"
     ],
     "rule": [
+      "Rule - Commits conventionnels et versions automatiques",
       "Rule - Config typée",
       "Rule - Entraîner sur du normal vérifié",
+      "Rule - Git et identité",
+      "Rule - Image Docker minimale",
       "Rule - Packaging démo",
+      "Rule - Projet assisté par agent",
       "Rule - Qualité stricte",
+      "Rule - README, docs et décisions",
+      "Rule - Secrets hors du dépôt",
       "Rule - Structure de projet",
+      "Rule - Tests Python avec pytest",
       "Rule - Toolchain Python",
       "Rule - Évaluer une anomalie par événement, pas par point"
     ],
@@ -3795,12 +3815,15 @@
     "secret-scanning": [
       "Analyse de vulnérabilités",
       "Gitleaks",
+      "Rule - Secrets hors du dépôt",
       "Sécurité",
       "Trivy"
     ],
     "secrets-management": [
       "Gestion des secrets",
       "OpenBao",
+      "Rule - Image Docker minimale",
+      "Rule - Secrets hors du dépôt",
       "SOPS",
       "Sécurité"
     ],
@@ -4008,7 +4031,8 @@
       "Développement piloté par la spécification",
       "Gestion de projet",
       "OpenSpec",
-      "PRD et user stories"
+      "PRD et user stories",
+      "Rule - Projet assisté par agent"
     ],
     "spectrogram": [
       "Anomalie acoustique",
@@ -4250,6 +4274,7 @@
       "Outils de développement",
       "Revue, tests et définition de terminé avec un agent",
       "Rule - Qualité stricte",
+      "Rule - Tests Python avec pytest",
       "mcpjam",
       "promptfoo",
       "pytest",
@@ -4599,6 +4624,8 @@
       "GitLab CE",
       "Notebooks",
       "Notebooks-as-code",
+      "Rule - Commits conventionnels et versions automatiques",
+      "Rule - Git et identité",
       "Vibe Kanban",
       "git-cliff",
       "jupytext",
@@ -33500,6 +33527,26 @@
       "maturite": null
     },
     {
+      "path": "Rules/Rule - Commits conventionnels et versions automatiques.md",
+      "nom": "Rule - Commits conventionnels et versions automatiques",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "git-hooks",
+        "changelog",
+        "version-control"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Rules/Rule - Config typée.md",
       "nom": "Rule - Config typée",
       "alias": null,
@@ -33540,6 +33587,45 @@
       "maturite": null
     },
     {
+      "path": "Rules/Rule - Git et identité.md",
+      "nom": "Rule - Git et identité",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "git-hooks",
+        "version-control"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Image Docker minimale.md",
+      "nom": "Rule - Image Docker minimale",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "container",
+        "secrets-management",
+        "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Rules/Rule - Packaging démo.md",
       "nom": "Rule - Packaging démo",
       "alias": null,
@@ -33554,6 +33640,27 @@
         "container",
         "ci-cd",
         "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Projet assisté par agent.md",
+      "nom": "Rule - Projet assisté par agent",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "agents",
+        "spec-driven",
+        "code-review",
+        "context-engineering"
       ],
       "alternatives": null,
       "complements": null,
@@ -33581,6 +33688,45 @@
       "maturite": null
     },
     {
+      "path": "Rules/Rule - README, docs et décisions.md",
+      "nom": "Rule - README, docs et décisions",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "documentation",
+        "adr"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Secrets hors du dépôt.md",
+      "nom": "Rule - Secrets hors du dépôt",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "secrets-management",
+        "secret-scanning",
+        "config"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Rules/Rule - Structure de projet.md",
       "nom": "Rule - Structure de projet",
       "alias": null,
@@ -33593,6 +33739,26 @@
       "tags": [
         "rule",
         "reproducibility"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Rules/Rule - Tests Python avec pytest.md",
+      "nom": "Rule - Tests Python avec pytest",
+      "alias": null,
+      "role": "rule",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rule",
+        "testing",
+        "property-based-testing",
+        "ci-cd"
       ],
       "alternatives": null,
       "complements": null,
@@ -33647,7 +33813,7 @@
       "famille": null,
       "langage": null,
       "domaines": null,
-      "pitch": "Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, packaging.",
+      "pitch": "Les contraintes qui tiennent quelle que soit la stack — outillage, structure, qualité, tests, git, conteneurs, documentation, secrets, travail avec un agent.",
       "tags": null,
       "alternatives": null,
       "complements": null,

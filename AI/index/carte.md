@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1075 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1082 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 58 briques · 9 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -76,7 +76,7 @@
   - Notebooks — 5 briques · 1 notion
   - Qualité du code — 5 briques · 1 notion · 1 comparatif
 - **Patterns** — 9 patterns → [détail](carte/Patterns.md)
-- **Rules** — 7 règles → [détail](carte/Rules.md)
+- **Rules** — 14 règles → [détail](carte/Rules.md)
 - **Réseau** — 2 briques → [détail](carte/R%C3%A9seau.md)
 - **Signal & audio** — 3 briques · 6 notions · 1 comparatif → [détail](carte/Signal%20%26%20audio.md)
   - Traitement — 2 briques · 6 notions · 1 comparatif
