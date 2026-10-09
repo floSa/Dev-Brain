@@ -66,7 +66,7 @@ Invoque le skill **`planifier-projet`**. Il vit dans le DevBrain (`.claude/skill
 2. **Questions du projet**, selon son type (RAG, pipeline, analyse, service, etc.).
 3. **Choix des technologies** : il lit les comparatifs du brain, filtre par licence, hébergement et machine, écarte ce qui est déjà en place, et marque « hors DevBrain » ce que le brain ne couvre pas.
 4. **Proposition**, à valider, infirmer ou discuter.
-5. **Initialisation**, après validation seulement : `AGENTS.md` court, `docs/cadrage.md`, `docs/decisions/`, `docs/specification.md`, contrôles de commit. Le journal `Projects/` du brain ne s'écrit que sur ton accord.
+5. **Initialisation**, après validation seulement : `AGENTS.md` court, `documentation/cadrage.md`, `documentation/decisions/`, `documentation/specification.md`, contrôles de commit. Le journal `Projects/` du brain ne s'écrit que sur ton accord.
 
 À tout moment : « passe » saute une question, « propose maintenant » va à la proposition.
 
