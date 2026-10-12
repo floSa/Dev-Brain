@@ -30,8 +30,14 @@ Cadrer, choisir, initialiser. Dans cet ordre. Rien n'est écrit avant la validat
 
 Fichiers de ce skill, à côté de ce fichier :
 `questions.json` (la banque de questions), `scripts/sonde.py`, `scripts/candidats.py`,
-`scripts/garde_fous.sh`, `modeles/`. Le DevBrain se trouve par `DEVBRAIN_PATH`, sinon
-`~/Projets/DevBrain`. Sans DevBrain accessible, le dire et continuer en « hors DevBrain ».
+`scripts/garde_fous.sh`, `modeles/`. Le DevBrain se trouve par `--vault`, sinon
+`DEVBRAIN_PATH`, sinon le dossier parent si le skill y est, sinon `~/Projets/DevBrain`.
+
+**S'il reste introuvable, demander son chemin à l'utilisateur.** Une question, comme les
+autres : « Chemin du DevBrain ? » avec `~/Projets/DevBrain` comme réponse proposée.
+Passer ensuite `--vault <chemin>` à tous les appels, et proposer de l'inscrire dans
+`DEVBRAIN_PATH` pour les prochaines fois. Ne continuer en « hors DevBrain » que s'il
+répond qu'il n'y en a pas sur cette machine, ou s'il passe la question.
 
 ## Étape 0 — Lire
 

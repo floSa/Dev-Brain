@@ -6,8 +6,9 @@ puis ouvre seulement l'en-tête des pages candidates pour lire ce que l'index ne
 porte pas : `licence_type`, `hosted`, `url_repo`. Sortie courte, une ligne par page.
 Bibliothèque standard seulement. Aucune écriture.
 
-Où est le DevBrain : `--vault`, sinon la variable DEVBRAIN_PATH, sinon le dossier
-parent du skill s'il est dans le vault, sinon ~/Projets/DevBrain.
+Où est le DevBrain : `--vault` (avant ou après la sous-commande), sinon la variable
+DEVBRAIN_PATH, sinon le dossier parent du skill s'il est dans le vault, sinon
+~/Projets/DevBrain. Introuvable : demander son chemin à l'utilisateur.
 
     candidats.py domaines
     candidats.py besoin --categorie database/vecteur --commercial non --sur-site
@@ -26,8 +27,19 @@ import sys
 from pathlib import Path
 
 
+def est_vault(p: str | None) -> bool:
+    return bool(p) and (Path(p).expanduser() / "AI" / "index" / "brain-index.json").exists()
+
+
 def trouve_vault(arg: str | None) -> Path:
-    essais = [arg, os.environ.get("DEVBRAIN_PATH")]
+    # Un chemin donne explicitement ne doit jamais etre remplace en silence : une faute
+    # de frappe se verrait sinon comme un DevBrain qui repond, mais pas celui demande.
+    if arg is not None:
+        if est_vault(arg):
+            return Path(arg).expanduser()
+        sys.exit(f"Chemin donné invalide : {arg}\n"
+                 "Aucun AI/index/brain-index.json dessous. Redemander le chemin à l'utilisateur.")
+    essais = [os.environ.get("DEVBRAIN_PATH")]
     ici = Path(__file__).resolve()
     for parent in ici.parents:
         if (parent / "AI" / "index" / "brain-index.json").exists():
@@ -35,9 +47,10 @@ def trouve_vault(arg: str | None) -> Path:
             break
     essais.append(str(Path.home() / "Projets" / "DevBrain"))
     for e in essais:
-        if e and (Path(e) / "AI" / "index" / "brain-index.json").exists():
-            return Path(e)
-    sys.exit("DevBrain introuvable. Donner --vault ou définir DEVBRAIN_PATH.")
+        if est_vault(e):
+            return Path(e).expanduser()
+    sys.exit("DevBrain introuvable. Demander son chemin à l'utilisateur, "
+             "puis relancer avec --vault <chemin>. Sinon définir DEVBRAIN_PATH.")
 
 
 def charge_index(vault: Path) -> list[dict]:
@@ -212,9 +225,14 @@ def cmd_usage(vault: Path, pages: list[dict], a) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--vault")
+    # --vault accepte aussi apres la sous-commande : c'est la position naturelle quand
+    # on rejoue une commande deja ecrite. SUPPRESS evite que le defaut de la sous-commande
+    # ecrase la valeur donnee avant elle.
+    commun = argparse.ArgumentParser(add_help=False)
+    commun.add_argument("--vault", default=argparse.SUPPRESS)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("domaines")
-    b = sub.add_parser("besoin")
+    sub.add_parser("domaines", parents=[commun])
+    b = sub.add_parser("besoin", parents=[commun])
     b.add_argument("--categorie", help="préfixe de categorie:, ex. database/vecteur ou llm")
     b.add_argument("--tag")
     b.add_argument("--famille")
@@ -225,14 +243,14 @@ def main() -> int:
     b.add_argument("--exclure", help="noms à ne pas proposer, séparés par des virgules")
     b.add_argument("--max", type=int, default=8)
     b.add_argument("--json", action="store_true")
-    c = sub.add_parser("comparatif")
+    c = sub.add_parser("comparatif", parents=[commun])
     c.add_argument("--categorie")
-    r = sub.add_parser("regles")
+    r = sub.add_parser("regles", parents=[commun])
     r.add_argument("--mot")
-    u = sub.add_parser("usage")
+    u = sub.add_parser("usage", parents=[commun])
     u.add_argument("nom")
     a = ap.parse_args()
-    vault = trouve_vault(a.vault)
+    vault = trouve_vault(getattr(a, "vault", None))
     pages = charge_index(vault)
     {"domaines": cmd_domaines, "besoin": cmd_besoin, "comparatif": cmd_comparatif,
      "regles": cmd_regles, "usage": cmd_usage}[a.cmd](vault, pages, a)
