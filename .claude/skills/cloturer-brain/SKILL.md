@@ -448,6 +448,7 @@ frontalement (constat C3 de l'axe 3).
 
 - **Identité** : celle de la config locale du dépôt. Jamais `-c user.email`, jamais `--author`, jamais l'email du harnais. Hooks `.githooks/` activés par `core.hooksPath`.
 - Commit et push **d'office** après clôture verte, sans demander.
+- **Une seule branche sur GitHub : `main`.** Ne jamais pousser la branche de la conversation (`claude/…`). Pousser par `git push origin HEAD:main` ou depuis le vault principal. `.githooks/pre-push` refuse toute autre branche. Règle de floSa, 2026-10-16 : 28 branches de conversations s'étaient accumulées.
 - **Jamais** de `--force`, de `push --force-with-lease` ni de `rebase` sans accord explicite de l'utilisateur, formulé pour ce cas précis. Une **réécriture d'historique** non plus, y compris pour corriger une identité déjà poussée : c'est une décision de floSa. Une divergence avec `origin/main` ne rend rien de cela caduc : elle se traite par un **commit de fusion dans la branche de travail** (*Clôture bloquée par une divergence*), qui n'écrit aucun historique déjà poussé.
 - **Jamais** de trailer `Co-Authored-By` : les commits sont attribués à floSa seul. Tenu par `.githooks/commit-msg` et `.githooks/pre-push` depuis le lot 8.
 - **Jamais** de `--no-verify` : les hooks du dépôt portent une règle, pas une gêne.
