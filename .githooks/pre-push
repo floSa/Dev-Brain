@@ -35,6 +35,18 @@ ZERO="0000000000000000000000000000000000000000"
 # git alimente stdin d'une ligne par référence poussée :
 #   <ref locale> <sha local> <ref distante> <sha distant>
 while read -r _ref_locale sha_local _ref_distante sha_distant; do
+    # Une seule branche sur GitHub : main. Toute autre référence est refusée,
+    # sauf sa suppression. Une consigne écrite n'a pas suffi : 28 branches de
+    # conversations s'étaient accumulées sur GitHub.
+    case "$_ref_distante" in
+        refs/heads/main) ;;
+        *) if [ "$sha_local" != "$ZERO" ]; then
+               echo "Push refusé : seule la branche main se pousse ($_ref_distante)." >&2
+               echo "Pousser ainsi : git push origin HEAD:main" >&2
+               exit 1
+           fi ;;
+    esac
+
     [ "$sha_local" = "$ZERO" ] && continue          # suppression de branche
 
     if [ "$sha_distant" = "$ZERO" ]; then
