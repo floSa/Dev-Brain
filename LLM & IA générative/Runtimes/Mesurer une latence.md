@@ -27,7 +27,7 @@ flowchart LR
 ```
 
 - Une mesure « **calcul seul** » commence à l'entrée du modèle sur la carte et finit à sa sortie : elle dit ce que vaut le matériel et le logiciel d'inférence.
-- Une mesure « **aller-retour** » (*end to end*) ajoute le réseau, l'authentification, la file d'attente, la sérialisation : c'est ce que voit un client. Elle dépend du point de départ : pour une même API hébergée, 191 à 205 ms depuis l'Italie contre 342 à 495 ms depuis Bengaluru (un auteur, relevés des 2026-10-01 et 2026-10-03).
+- Une mesure « **aller-retour** » (*end to end*) ajoute le réseau, l'authentification, la file d'attente, la sérialisation : c'est ce que voit un client. Elle dépend du point de départ : pour une même API hébergée, 191 à 205 ms depuis l'Italie contre 342 à 495 ms depuis Bengaluru (relevés d'un auteur, octobre 2026).
 - Une latence éditeur « de 70 à 500 ms », une médiane de testeur et la médiane d'un classement indépendant, pour une même API, sont trois protocoles différents.
 
 ### Médiane, queue, et nombre de mesures
