@@ -63,6 +63,7 @@ tags: [attention, state-space-model, transformers, inference-optimization]
 - [[Mixture of Experts]] — troisième levier, orthogonal : économise le calcul par token, pas la séquence ni le cache.
 - [[Inference optimization]] — l'hybride est un choix d'architecture qui agit sur les mêmes goulots (cache, décodage memory-bound).
 - Alternative : rester **100 % attention** et n'optimiser que l'exécution (FlashAttention + GQA + [[Quantization|quantization]]) — plus simple, plafonné plus bas en contexte.
+- [[Taille du cache KV par token]] — le calcul de κ et du terme fixe d'un modèle hybride.
 
 ## Pour aller plus loin
 

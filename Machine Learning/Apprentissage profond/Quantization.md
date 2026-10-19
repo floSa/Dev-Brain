@@ -68,6 +68,7 @@ tags: [quantization, model-compression, deep-learning, inference-optimization]
 - [[llama.cpp]] — quantization agressive GGUF/K-quants pour l'inférence locale.
 - Voir aussi : [[OpenVINO]], [[Inférence en bordure - modèles sur du matériel d'atelier]].
 - [[Quantification des LLM - GGUF, AWQ, GPTQ]] — la version pour le serving de LLM : poids, activations et cache KV, GGUF, support par les moteurs, pièges
+- [[Plafond de débit d'un GPU (roofline)]] — le plafond de decode selon la précision des poids.
 
 ## Pour aller plus loin
 

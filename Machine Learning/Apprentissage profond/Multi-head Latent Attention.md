@@ -65,6 +65,7 @@ tags: [attention, inference-optimization, transformers, gpu]
 - [[Inference optimization]] — le KV-cache est le poste que MLA attaque ; à combiner avec paged attention et continuous batching.
 - [[SVD]] — le socle mathématique de la compression de rang faible.
 - [[Quantization]] — levier orthogonal : quantizer le cache réduit les **bits** par valeur, MLA réduit le **nombre** de valeurs. Cumulables.
+- [[Taille du cache KV par token]] — la formule du cache et la place du latent parmi ses leviers.
 
 ## Pour aller plus loin
 

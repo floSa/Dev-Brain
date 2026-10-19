@@ -73,6 +73,8 @@ tags: [mixture-of-experts, transformers, deep-learning, scaling-laws]
 - [[PEFT]] — autre façon de découpler capacité et coût, mais côté **adaptation** (adapters, LoRA) plutôt qu'architecture.
 - [[Entraînement distribué]] — l'expert parallelism est un mode de parallélisme à part entière, propre au MoE.
 - [[Fusion de modèles]] — construire un MoE à partir de modèles denses (upcycling, Branch-Train-MiX, mergekit-moe)
+- [[Dimensionner la mémoire d'un serveur LLM]] — tous les experts en mémoire : ce que ça fait au nombre d'utilisateurs.
+- [[Parallélisme en inférence]] — répartir les experts sur plusieurs GPU.
 
 ## Pour aller plus loin
 
