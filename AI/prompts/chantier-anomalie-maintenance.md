@@ -479,6 +479,6 @@ Livrables :
 - [x] Lot 24 — outils manquants
 - [x] Lot 25 — notions voisines et pages fermées déjà au brain
 - [x] Lot 27 — kits de bonnes pratiques de démarrage
-- [ ] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
+- [x] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
 - [ ] Lot 29 — ontologies et RDF : les outils et les comparatifs
 - [ ] Lot 30 — ontologies et RDF : pattern et câblage
