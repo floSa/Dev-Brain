@@ -30,4 +30,5 @@ tags: [graph-db]
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
 - [[Bases de graphes]] — le hub du dossier.
+- [[Comparatif - Moteurs RDF]] — le comparatif voisin pour le modèle RDF (Jena, RDF4J, Oxigraph, QLever, Virtuoso, Fluree, Ontop), quand l'échange de données, le raisonnement ou SHACL comptent plus que Cypher.
 - [[Bases graphe — modèles et langages de requête]] — la notion : modèles, langages de requête, et quand un graphe bat un relationnel.
