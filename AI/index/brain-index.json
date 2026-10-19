@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1191,
+  "count": 1207,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -937,6 +937,7 @@
     ],
     "data-modeling": [
       "Architecture médaillon",
+      "LinkML",
       "Modélisation dimensionnelle"
     ],
     "data-pipeline": [
@@ -1001,6 +1002,7 @@
       "Fiabilité des données",
       "Great Expectations",
       "Instructor",
+      "LinkML",
       "Outils de développement",
       "Pydantic",
       "Pydantic Settings",
@@ -1009,7 +1011,8 @@
       "Soda Core",
       "Sortie typée",
       "Structured outputs",
-      "pandera"
+      "pandera",
+      "pySHACL"
     ],
     "data-versioning": [
       "Apache Iceberg",
@@ -1017,6 +1020,7 @@
       "DVC",
       "Delta Lake",
       "Fiabilité des données",
+      "Fluree",
       "Formats de fichiers et de tables",
       "Versionnage de données",
       "lakeFS"
@@ -1413,6 +1417,7 @@
       "LanceDB",
       "LiteRT",
       "Lucene",
+      "Oxigraph",
       "SQLite",
       "ScaNN",
       "hnswlib"
@@ -1431,6 +1436,7 @@
       "Late-interaction retrieval",
       "LlamaIndex",
       "Plongements de graphe et prédiction de liens",
+      "PyKEEN",
       "Qwen3-Embedding",
       "RAG",
       "RAG visuel - retrouver des documents sans OCR",
@@ -1750,7 +1756,8 @@
       "Memgraph",
       "Nebula Graph",
       "Neo4j",
-      "Pattern - RAG structuré graphe + human-in-the-loop"
+      "Pattern - RAG structuré graphe + human-in-the-loop",
+      "neosemantics"
     ],
     "guardrails": [
       "Comparatif - Garde-fous pour LLM",
@@ -2028,10 +2035,12 @@
       "Théorie de l'information"
     ],
     "knowledge-graph": [
+      "Apache Jena",
       "Bases graphe — modèles et langages de requête",
       "Cognee",
       "Construction de graphes de connaissances",
       "Données liées et vocabulaires partagés",
+      "Fluree",
       "GraphRAG",
       "Graphe de connaissances",
       "Graphify",
@@ -2046,10 +2055,13 @@
       "Ontologies industrielles",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Plongements de graphe et prédiction de liens",
+      "PyKEEN",
       "RAG & retrieval",
       "RDF et triplets",
+      "RDF4J",
       "SHACL",
-      "SPARQL"
+      "SPARQL",
+      "neosemantics"
     ],
     "kubernetes": [
       "Argo CD",
@@ -2150,7 +2162,8 @@
       "S&OP et plan directeur de production"
     ],
     "link-prediction": [
-      "Plongements de graphe et prédiction de liens"
+      "Plongements de graphe et prédiction de liens",
+      "PyKEEN"
     ],
     "linter": [
       "Outils de développement",
@@ -3042,12 +3055,17 @@
       "Trino"
     ],
     "ontology": [
+      "Comparatif - Outils RDF et OWL en Python",
       "Données liées et vocabulaires partagés",
       "Graphe de connaissances",
+      "LinkML",
       "OWL et raisonnement",
       "Ontologie",
       "Ontologies et RDF",
       "Ontologies industrielles",
+      "Ontop",
+      "Owlready2",
+      "Protégé",
       "RDF et triplets",
       "SHACL"
     ],
@@ -3486,14 +3504,27 @@
       "Évaluation de modèles"
     ],
     "rdf": [
+      "Apache Jena",
+      "Comparatif - Moteurs RDF",
+      "Comparatif - Outils RDF et OWL en Python",
       "Données liées et vocabulaires partagés",
+      "Fluree",
       "Graphe de connaissances",
       "OWL et raisonnement",
       "Ontologie",
       "Ontologies et RDF",
+      "Ontop",
+      "Owlready2",
+      "Oxigraph",
+      "QLever",
       "RDF et triplets",
+      "RDF4J",
       "SHACL",
-      "SPARQL"
+      "SPARQL",
+      "Virtuoso Open Source",
+      "neosemantics",
+      "pySHACL",
+      "rdflib"
     ],
     "re-identification": [
       "Metric learning & ré-identification"
@@ -3613,6 +3644,7 @@
       "SQLAlchemy",
       "SQLModel",
       "SQLite",
+      "Virtuoso Open Source",
       "pgAdmin",
       "psycopg2"
     ],
@@ -4069,9 +4101,18 @@
       "needle"
     ],
     "sparql": [
+      "Apache Jena",
+      "Comparatif - Moteurs RDF",
+      "Fluree",
       "Interroger un graphe en langage naturel",
       "Ontologies et RDF",
-      "SPARQL"
+      "Ontop",
+      "Oxigraph",
+      "QLever",
+      "RDF4J",
+      "SPARQL",
+      "Virtuoso Open Source",
+      "rdflib"
     ],
     "spec-driven": [
       "Agent OS",
@@ -5902,6 +5943,74 @@
       "maturite": null
     },
     {
+      "path": "Bases de données/Ontologies et RDF/Apache Jena.md",
+      "nom": "Apache Jena",
+      "alias": [
+        "Jena",
+        "Fuseki",
+        "Apache Jena Fuseki",
+        "Jena Fuseki",
+        "TDB2",
+        "ARQ"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Framework Java pour le web sémantique et serveur SPARQL Fuseki (Apache-2.0) — base RDF transactionnelle TDB2 sur une machine, raisonneurs RDFS et OWL partiels, validation SHACL ; pas de cluster décrit.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "knowledge-graph"
+      ],
+      "alternatives": [
+        "[[RDF4J]]",
+        "[[Oxigraph]]",
+        "[[QLever]]",
+        "[[Virtuoso Open Source]]",
+        "[[Fluree]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Comparatif - Moteurs RDF.md",
+      "nom": "Comparatif - Moteurs RDF",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rdf",
+        "sparql"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Comparatif - Outils RDF et OWL en Python.md",
+      "nom": "Comparatif - Outils RDF et OWL en Python",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "rdf",
+        "ontology"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Bases de données/Ontologies et RDF/Données liées et vocabulaires partagés.md",
       "nom": "Données liées et vocabulaires partagés",
       "alias": [
@@ -5936,6 +6045,33 @@
       "maturite": null
     },
     {
+      "path": "Bases de données/Ontologies et RDF/Fluree.md",
+      "nom": "Fluree",
+      "alias": [
+        "fluree",
+        "Fluree DB",
+        "fluree/db"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Base de graphes RDF en Rust, sous licence BUSL-1.1 — SPARQL, JSON-LD et openCypher, historique interrogeable, SHACL, raisonnement jusqu'à OWL 2 RL ; version 4 récente, et interdit d'en faire un service de base de données.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "knowledge-graph",
+        "data-versioning"
+      ],
+      "alternatives": [
+        "[[Apache Jena]]",
+        "[[Oxigraph]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "Bases de données/Ontologies et RDF/Graphe de connaissances.md",
       "nom": "Graphe de connaissances",
       "alias": [
@@ -5963,6 +6099,31 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/LinkML.md",
+      "nom": "LinkML",
+      "alias": [
+        "linkml",
+        "Linked Data Modeling Language"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Langage de modélisation en YAML et sa boîte à outils Python (Apache-2.0) — un schéma unique génère JSON Schema, SHACL, OWL, ShEx, Pydantic ou SQL, et valide des données JSON, RDF ou TSV.",
+      "tags": [
+        "ontology",
+        "data-modeling",
+        "data-validation"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[rdflib]]",
+        "[[pySHACL]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Bases de données/Ontologies et RDF/OWL et raisonnement.md",
@@ -6099,6 +6260,138 @@
       "maturite": null
     },
     {
+      "path": "Bases de données/Ontologies et RDF/Ontop.md",
+      "nom": "Ontop",
+      "alias": [
+        "ontop",
+        "Ontop VKG",
+        "Virtual Knowledge Graph",
+        "OBDA",
+        "graphe de connaissances virtuel"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Plateforme Java qui expose des bases relationnelles comme un graphe RDF virtuel (Apache-2.0) — requêtes SPARQL traduites en SQL, mappings R2RML, ontologie OWL 2 QL ; les données restent dans la base d'origine.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "ontology"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Protégé]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Owlready2.md",
+      "nom": "Owlready2",
+      "alias": [
+        "owlready2",
+        "Owlready",
+        "programmation orientée ontologie"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Module Python de programmation orientée ontologie (LGPL-3.0) — charge une ontologie OWL 2 comme des objets Python, raisonne avec HermiT ou Pellet (Java requis), stocke dans un quadstore SQLite ; dépôt hébergé sur Bitbucket.",
+      "tags": [
+        "ontology",
+        "rdf"
+      ],
+      "alternatives": [
+        "[[rdflib]]"
+      ],
+      "complements": [
+        "[[Protégé]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Oxigraph.md",
+      "nom": "Oxigraph",
+      "alias": [
+        "oxigraph",
+        "pyoxigraph",
+        "Oxigraph server"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Base RDF et SPARQL en Rust sur RocksDB (Apache-2.0 ou MIT) — serveur en un binaire, bibliothèque Rust et paquet Python ; mono-nœud, sans SHACL ni raisonnement annoncés.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[Apache Jena]]",
+        "[[RDF4J]]",
+        "[[QLever]]",
+        "[[Fluree]]"
+      ],
+      "complements": [
+        "[[pySHACL]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Protégé.md",
+      "nom": "Protégé",
+      "alias": [
+        "Protege",
+        "Protégé Desktop",
+        "WebProtégé"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "application",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Éditeur d'ontologies OWL 2 à interface graphique, en Java (BSD-2-Clause) — classes, propriétés, requêtes DL, raisonneur HermiT intégré, plugins ; WebProtégé est sa version collaborative en ligne.",
+      "tags": [
+        "ontology"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[Owlready2]]",
+        "[[Ontop]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/QLever.md",
+      "nom": "QLever",
+      "alias": [
+        "qlever",
+        "QLever SPARQL engine"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "C++",
+      "domaines": null,
+      "pitch": "Moteur SPARQL en C++ conçu pour de très grands graphes sur une seule machine (Apache-2.0) — SPARQL 1.1 complet, recherche textuelle, requêtes spatiales ; indexation préalable, sans SHACL ni raisonnement annoncés.",
+      "tags": [
+        "rdf",
+        "sparql"
+      ],
+      "alternatives": [
+        "[[Apache Jena]]",
+        "[[Oxigraph]]",
+        "[[Virtuoso Open Source]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
+    },
+    {
       "path": "Bases de données/Ontologies et RDF/RDF et triplets.md",
       "nom": "RDF et triplets",
       "alias": [
@@ -6131,6 +6424,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/RDF4J.md",
+      "nom": "RDF4J",
+      "alias": [
+        "rdf4j",
+        "Eclipse RDF4J",
+        "Sesame",
+        "RDF4J Server",
+        "RDF4J Workbench"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Framework Java pour RDF et SPARQL (BSD-3-Clause, Eclipse) — magasins mémoire et natif, serveur et Workbench à déployer dans Tomcat ou Jetty, validation SHACL à chaque transaction ; mono-nœud.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "knowledge-graph"
+      ],
+      "alternatives": [
+        "[[Apache Jena]]",
+        "[[Oxigraph]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Bases de données/Ontologies et RDF/SHACL.md",
@@ -6191,6 +6512,107 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Virtuoso Open Source.md",
+      "nom": "Virtuoso Open Source",
+      "alias": [
+        "Virtuoso",
+        "VOS",
+        "OpenLink Virtuoso",
+        "virtuoso-opensource"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "plateforme",
+      "langage": "C",
+      "domaines": null,
+      "pitch": "Base multi-modèle (relationnel, graphe RDF, documents) et serveur HTTP en C (GPLv2) — SPARQL et Linked Data, inférence de base (sous-classes, owl:sameAs) ; cluster et réplication réservés à l'édition commerciale.",
+      "tags": [
+        "rdf",
+        "sparql",
+        "relational"
+      ],
+      "alternatives": [
+        "[[Apache Jena]]",
+        "[[QLever]]"
+      ],
+      "complements": [],
+      "maturite": "production"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/neosemantics.md",
+      "nom": "neosemantics",
+      "alias": [
+        "n10s",
+        "Neosemantics",
+        "neosemantics n10s"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "extension",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Plugin Neo4j (Apache-2.0, projet Neo4j Labs expérimental) qui importe et exporte du RDF depuis un graphe de propriétés — validation SHACL, import d'ontologies et de taxonomies, inférence de base ; Community et Enterprise auto-hébergés, pas Aura.",
+      "tags": [
+        "rdf",
+        "knowledge-graph",
+        "graph-db"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/pySHACL.md",
+      "nom": "pySHACL",
+      "alias": [
+        "pyshacl",
+        "pySHACL validator"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Validateur SHACL en Python pur (Apache-2.0), construit sur rdflib — vérifie un graphe RDF contre ses formes, en ligne de commande, en API ou en service HTTP ; peut développer le graphe par RDFS ou OWL-RL avant de valider.",
+      "tags": [
+        "rdf",
+        "data-validation"
+      ],
+      "alternatives": [],
+      "complements": [
+        "[[rdflib]]",
+        "[[LinkML]]",
+        "[[Oxigraph]]"
+      ],
+      "maturite": "beta"
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/rdflib.md",
+      "nom": "rdflib",
+      "alias": [
+        "RDFLib",
+        "RDFLib Python"
+      ],
+      "role": "brique",
+      "categorie": "database/rdf",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python pour manipuler du RDF (BSD-3-Clause) — lit et écrit Turtle, JSON-LD et RDF/XML, interroge en SPARQL 1.1 (requêtes et mises à jour), graphe en mémoire ou persistant ; ce n'est pas un serveur.",
+      "tags": [
+        "rdf",
+        "sparql"
+      ],
+      "alternatives": [
+        "[[Owlready2]]"
+      ],
+      "complements": [
+        "[[pySHACL]]",
+        "[[LinkML]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Bases de données/Prisma.md",
@@ -24797,6 +25219,29 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/PyKEEN.md",
+      "nom": "PyKEEN",
+      "alias": [
+        "pykeen",
+        "PyKEEN 1.0",
+        "knowledge graph embeddings library"
+      ],
+      "role": "brique",
+      "categorie": "ml/graphe",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python (MIT) pour entraîner et comparer des plongements de graphes de connaissances — 40 modèles dont TransE et RotatE, 37 jeux de données, optimisation d'hyperparamètres avec Optuna ; dernière release en avril 2025.",
+      "tags": [
+        "link-prediction",
+        "knowledge-graph",
+        "embeddings"
+      ],
+      "alternatives": [],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Machine Learning/PyTorch Geometric.md",

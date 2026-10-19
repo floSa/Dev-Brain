@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1191 pages actives.
+> 1207 pages actives.
 
 ## Par page
 
@@ -88,7 +88,7 @@
 ### Alembic  ·  brique
 - tags : `migration`, `relational`
 - liens sortants : [[Comparatif - Migrations de schéma]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[Prisma]], [[SQLAlchemy]], [[SQLModel]]
-- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Flyway]], [[Liquibase]], [[Migrations de schéma]], [[SQLAlchemy]], [[SQLModel]], [[psycopg2]]
+- liens entrants : [[Administration]], [[Bases de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - ORM]], [[Flyway]], [[LinkML]], [[Liquibase]], [[Migrations de schéma]], [[SQLAlchemy]], [[SQLModel]], [[psycopg2]]
 
 ### Alertmanager  ·  brique
 - tags : `observability`, `alerting`, `self-hosted`
@@ -154,6 +154,11 @@
 - tags : `lakehouse`, `olap`, `schema-evolution`, `data-versioning`
 - liens sortants : [[Airbyte]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Ceph]], [[Comparatif - Versionnage de données]], [[DataHub]], [[Debezium]], [[Delta Lake]], [[DuckDB]], [[Flink]], [[Garage]], [[MinIO]], [[Parquet]], [[Partitionnement & layout de données]], [[Postgres]], [[SeaweedFS]], [[Spark]], [[Trino]], [[dbt Core]]
 - liens entrants : [[Airbyte]], [[Apache Arrow]], [[Apache NiFi]], [[Architecture médaillon]], [[Avro]], [[Comparatif - Versionnage de données]], [[DVC]], [[Data & pipelines]], [[DataHub]], [[Databricks]], [[Debezium]], [[Delta Lake]], [[Fiabilité des données]], [[Flink]], [[Formats de fichiers et de tables]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Partitionnement & layout de données]], [[Plateforme data & IA — concept]], [[Spark]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[Versionnage de données]], [[dbt Core]], [[lakeFS]]
+
+### Apache Jena  ·  brique
+- tags : `rdf`, `sparql`, `knowledge-graph`
+- liens sortants : [[Bases de graphes]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Protégé]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
@@ -770,6 +775,11 @@
 - liens sortants : [[Advanced RAG]], [[Agent patterns]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Context engineering]], [[Dify]], [[LLM & IA générative]], [[LangChain]], [[LangGraph]], [[Langflow]], [[LiteLLM]], [[OpenRouter]]
 - liens entrants : [[Comparatif - Plateformes LLM auto-hébergées]], [[Dify]], [[LLM & IA générative]], [[Langflow]], [[OpenRouter]], [[RAG documentaire on-prem - clé en main ou assemblé]]
 
+### Fluree  ·  brique
+- tags : `rdf`, `sparql`, `knowledge-graph`, `data-versioning`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[pySHACL]]
+
 ### Flyte  ·  brique
 - tags : `orchestration`, `ml-pipeline`, `kubernetes`
 - liens sortants : [[Airflow]], [[Comparatif - Orchestrateurs ML]], [[Dagster]], [[Docker]], [[Kubeflow]], [[Machine Learning]], [[Metaflow]], [[ZenML]]
@@ -1235,6 +1245,11 @@
 - liens sortants : [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[SHAP]], [[interpreto]], [[Équité et biais algorithmique]]
 - liens entrants : [[Captum]], [[Comparatif - Explicabilité]], [[Explicabilité des modèles]], [[Interprétabilité]], [[SHAP]], [[Valeurs de Shapley]], [[interpreto]], [[Équité et biais algorithmique]]
 
+### LinkML  ·  brique
+- tags : `ontology`, `data-modeling`, `data-validation`
+- liens sortants : [[Alembic]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]], [[SHACL]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]], [[Protégé]], [[pySHACL]], [[rdflib]]
+
 ### Liquibase  ·  brique
 - tags : `migration`, `relational`
 - liens sortants : [[Alembic]], [[Comparatif - Migrations de schéma]], [[Flyway]], [[Migrations de schéma]], [[Prisma]]
@@ -1533,7 +1548,12 @@
 ### Neo4j  ·  brique
 - tags : `graph-db`
 - liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphiti]], [[Memgraph]], [[Nebula Graph]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Memgraph]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]]
+- liens entrants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Memgraph]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]], [[neosemantics]]
+
+### neosemantics  ·  brique
+- tags : `rdf`, `knowledge-graph`, `graph-db`
+- liens sortants : [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Neo4j]], [[Ontologies et RDF]], [[Oxigraph]], [[RDF et triplets]], [[RDF4J]], [[SHACL]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]]
 
 ### Netdata  ·  brique
 - tags : `observability`, `metrics`, `alerting`, `dashboard`, `self-hosted`
@@ -1599,6 +1619,11 @@
 - tags : `inference`, `edge-inference`, `model-serving`, `inference-optimization`, `gpu`, `quantization`
 - liens sortants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Déploiement de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[OpenVINO]], [[PyTorch]], [[TensorFlow]], [[TensorRT]]
 - liens entrants : [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Serving de modèles]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LiteRT]], [[NVIDIA Triton]], [[OpenVINO]], [[Pattern - Inspection visuelle en ligne de production]], [[Serving]], [[TensorRT]]
+
+### Ontop  ·  brique
+- tags : `rdf`, `sparql`, `ontology`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologie]], [[Ontologies et RDF]], [[Oxigraph]], [[Protégé]], [[SPARQL]], [[pySHACL]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Protégé]]
 
 ### Open WebUI  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `self-hosted`
@@ -1739,6 +1764,16 @@
 - tags : `structured-output`, `decoding`, `llm`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Guidance]], [[Instructor]], [[Ollama]], [[Pydantic]], [[SGLang]], [[Structured outputs]], [[TGI]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
 - liens entrants : [[Comparatif - Frameworks LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Guidance]], [[Instructor]], [[LLM & IA générative]], [[Sortie typée]], [[Structured outputs]], [[needle]]
+
+### Owlready2  ·  brique
+- tags : `ontology`, `rdf`
+- liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]], [[Protégé]], [[rdflib]]
+
+### Oxigraph  ·  brique
+- tags : `rdf`, `sparql`, `embedded`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### PaCMAP  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -1940,6 +1975,11 @@
 - liens sortants : [[Chronos]], [[Comparatif - Forecasting]], [[Exponential smoothing]], [[Forecasting framing]], [[Intermittent demand]], [[darts]], [[neuralforecast]], [[statsforecast]]
 - liens entrants : [[Chronos]], [[Comparatif - Forecasting]], [[Forecasting framing]], [[Kats]], [[STUMPY]], [[Séries temporelles]], [[darts]], [[neuralforecast]], [[statsforecast]]
 
+### Protégé  ·  brique
+- tags : `ontology`
+- liens sortants : [[Apache Jena]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[RDF4J]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]]
+
 ### psycopg2  ·  brique
 - tags : `postgres`, `relational`, `db-driver`
 - liens sortants : [[Alembic]], [[Bases de données]], [[Postgres]], [[SQLAlchemy]]
@@ -1985,6 +2025,11 @@
 - liens sortants : [[Apprentissage profond]], [[Kolmogorov-Arnold Networks]], [[PyTorch]], [[Scikit-Learn]], [[Transformer architectures]]
 - liens entrants : [[Apprentissage profond]], [[Kolmogorov-Arnold Networks]], [[PyTorch]]
 
+### PyKEEN  ·  brique
+- tags : `link-prediction`, `knowledge-graph`, `embeddings`
+- liens sortants : [[Graphe de connaissances]], [[Ontologies et RDF]], [[Plongements de graphe et prédiction de liens]], [[PyTorch Geometric]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Machine Learning]], [[Ontologies et RDF]]
+
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
 - liens sortants : [[ArviZ]], [[Chaînes de Markov]], [[Comparatif - Outils stats]], [[Estimation MAP]], [[Inférence bayésienne]], [[JAX]], [[MCMC]], [[Modèles graphiques probabilistes]], [[Modèles à effets mixtes]], [[Monte Carlo et inférence variationnelle]], [[Stan]]
@@ -2020,6 +2065,11 @@
 - liens sortants : [[Comparatif - Vérificateurs de types Python]], [[Outils de développement]], [[Pydantic]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]]
 - liens entrants : [[Comparatif - Vérificateurs de types Python]], [[Notebooks-as-code]], [[Outils de développement]], [[Pydantic]], [[Qualité du code]], [[Ruff]], [[Typage statique en Python]], [[mypy]], [[pre-commit]]
 
+### pySHACL  ·  brique
+- tags : `rdf`, `data-validation`
+- liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[RDF4J]], [[SHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[rdflib]]
+
 ### pytest  ·  brique
 - tags : `testing`
 - liens sortants : [[Hypothesis]], [[Outils de développement]], [[testcontainers]]
@@ -2043,7 +2093,7 @@
 ### PyTorch Geometric  ·  brique
 - tags : `gnn`, `deep-learning`, `gpu`, `representation-learning`
 - liens sortants : [[Graph Neural Networks]], [[Neo4j]], [[PyTorch]], [[XGBoost]], [[torchvision]]
-- liens entrants : [[Apprentissage profond]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Machine Learning]], [[Plongements de graphe et prédiction de liens]]
+- liens entrants : [[Apprentissage profond]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Machine Learning]], [[Plongements de graphe et prédiction de liens]], [[PyKEEN]]
 
 ### PyTorch Lightning  ·  brique
 - tags : `deep-learning`, `gpu`, `distributed`
@@ -2069,6 +2119,11 @@
 - tags : `vector-db`, `rag`, `ann`
 - liens sortants : [[AnythingLLM]], [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[Contexte long]], [[FastEmbed]], [[Index ANN — internes]], [[Mem0]], [[Milvus]], [[Pinecone]], [[RAG agentique]], [[Weaviate]], [[pgvector]]
 - liens entrants : [[AnythingLLM]], [[Bases de données vectorielles]], [[ColPali]], [[Comparatif - Bases vectorielles]], [[Comparatif - Embeddings]], [[Contexte long]], [[DSPy]], [[FastEmbed]], [[Haystack]], [[Hybrid retrieval]], [[LangChain]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Marqo]], [[Mem0]], [[Milvus]], [[OpenViking]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pinecone]], [[RAG agentique]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[Vanna]], [[Vectoriel]], [[Vespa]], [[Weaviate]], [[pgvector]], [[txtai]]
+
+### QLever  ·  brique
+- tags : `rdf`, `sparql`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[SPARQL]], [[Virtuoso Open Source]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[Virtuoso Open Source]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -2134,6 +2189,16 @@
 - tags : `hyperparameter-tuning`, `distributed`, `bayesian`
 - liens sortants : [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Scikit-Learn]]
 - liens entrants : [[Comparatif - Calcul distribué]], [[Comparatif - Optimisation d'hyperparamètres]], [[Hyperopt]], [[Machine Learning]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[Ray]], [[Ray Serve]], [[Recherche d'hyperparamètres]], [[Suivi d'expériences]]
+
+### RDF4J  ·  brique
+- tags : `rdf`, `sparql`, `knowledge-graph`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[Protégé]], [[neosemantics]], [[pySHACL]]
+
+### rdflib  ·  brique
+- tags : `rdf`, `sparql`
+- liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[Oxigraph]], [[RDF et triplets]], [[SPARQL]], [[pySHACL]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[Oxigraph]], [[pySHACL]]
 
 ### Redis  ·  brique
 - tags : `nosql`, `key-value`, `in-memory`
@@ -2695,6 +2760,11 @@
 - liens sortants : [[Backlog, Kanban, Scrum et Shape Up]], [[Comparatif - Suivi de projet auto-hébergé]], [[Gestion de projet]], [[Kanboard]], [[Kimai]], [[Outils de développement]], [[Redmine]], [[Wekan]]
 - liens entrants : [[Backlog, Kanban, Scrum et Shape Up]], [[Backlog.md - l'outil]], [[Beads]], [[Comparatif - Suivi de projet auto-hébergé]], [[Gestion de projet]], [[Kanboard]], [[Redmine]], [[Wekan]]
 
+### Virtuoso Open Source  ·  brique
+- tags : `rdf`, `sparql`, `relational`
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Données liées et vocabulaires partagés]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[QLever]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[QLever]]
+
 ### vLLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[Graphiti]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Llama Guard]], [[Mistral]], [[Ollama]], [[Open WebUI]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[gpt-oss]], [[llama.cpp]], [[text-generation-webui]]
@@ -2802,8 +2872,8 @@
 
 ### Comparatif - Bases graphes  ·  comparatif
 - tags : `graph-db`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes.base]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatifs]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes.base]], [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
 
 ### Comparatif - Bases NoSQL  ·  comparatif
 - tags : `nosql`
@@ -2995,6 +3065,11 @@
 - liens sortants : [[Apache Solr]], [[Comparatif - Moteurs de recherche.base]], [[Comparatifs]], [[Elasticsearch]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
 - liens entrants : [[Apache Solr]], [[Comparatifs]], [[Elasticsearch]], [[Lucene]], [[Marqo]], [[Meilisearch]], [[OpenSearch]], [[Recherche]], [[Typesense]], [[Vespa]], [[bm25s]], [[rank-bm25]], [[txtai]]
 
+### Comparatif - Moteurs RDF  ·  comparatif
+- tags : `rdf`, `sparql`
+- liens sortants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF.base]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatifs]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[pySHACL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatifs]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]]
+
 ### Comparatif - Mémoire pour agents  ·  comparatif
 - tags : `agent-memory`, `agents`, `retrieval`
 - liens sortants : [[Cognee]], [[Comparatif - Mémoire pour agents.base]], [[Comparatifs]], [[Graphiti]], [[Headroom]], [[Letta]], [[Mem0]], [[OpenViking]]
@@ -3039,6 +3114,11 @@
 - tags : `eda`, `data-quality`, `missing-data`
 - liens sortants : [[Comparatif - Outils EDA - profiling.base]], [[Comparatifs]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
 - liens entrants : [[Comparatifs]], [[Data & pipelines]], [[missingno]], [[sweetviz]], [[ydata-profiling]]
+
+### Comparatif - Outils RDF et OWL en Python  ·  comparatif
+- tags : `rdf`, `ontology`
+- liens sortants : [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python.base]], [[Comparatifs]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Owlready2]], [[Protégé]], [[PyKEEN]], [[SHACL]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[pySHACL]], [[rdflib]]
 
 ### Comparatif - Outils stats  ·  comparatif
 - tags : `hypothesis-testing`, `statistical-inference`, `bayesian`, `factor-analysis`, `causal-inference`
@@ -3233,7 +3313,7 @@
 ### Bases de graphes  ·  hub
 - tags : `graph-db`
 - liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Ontologies et RDF]]
+- liens entrants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Ontologies et RDF]], [[neosemantics]]
 
 ### Bayésien  ·  hub
 - tags : `bayesian`, `prior`, `probabilistic-programming`, `monte-carlo`, `markov`, `point-estimation`
@@ -3247,8 +3327,8 @@
 
 ### Comparatifs  ·  hub
 - tags : —
-- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Suivi de projet auto-hébergé]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Versions et changelog]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
-- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Suivi de projet auto-hébergé]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Versions et changelog]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
+- liens sortants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs RDF]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Suivi de projet auto-hébergé]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Versions et changelog]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]], [[Patterns]], [[Rules]]
+- liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Assistants de code IA]], [[Comparatif - Automatisation no-code]], [[Comparatif - BI auto-hébergée]], [[Comparatif - Bases NoSQL]], [[Comparatif - Bases colonnes]], [[Comparatif - Bases graphes]], [[Comparatif - Bases relationnelles]], [[Comparatif - Bases temporelles]], [[Comparatif - Bases vectorielles]], [[Comparatif - Boosting]], [[Comparatif - Brokers MQTT]], [[Comparatif - Brokers de messages]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Calcul distribué]], [[Comparatif - Catalogues et lignage de données]], [[Comparatif - Clients d'API]], [[Comparatif - Clients de bases de données]], [[Comparatif - Design & prototypage]], [[Comparatif - Diagrammes]], [[Comparatif - Détection & segmentation]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Comparatif - Détection d'anomalies visuelles]], [[Comparatif - Embeddings]], [[Comparatif - Explicabilité]], [[Comparatif - Exécution & serving LLM]], [[Comparatif - Fine-tuning LLM]], [[Comparatif - Forecasting]], [[Comparatif - Fournisseurs d'identité]], [[Comparatif - Frameworks CLI]], [[Comparatif - Frameworks LLM]], [[Comparatif - Frameworks text-to-SQL]], [[Comparatif - Frontends web légers]], [[Comparatif - Garde-fous pour LLM]], [[Comparatif - Gestionnaires de paquets Python]], [[Comparatif - Générateurs de documentation]], [[Comparatif - Ingestion de données]], [[Comparatif - Manipulation de données]], [[Comparatif - Migrations de schéma]], [[Comparatif - Modèles de langage open weights]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Moteurs RDF]], [[Comparatif - Moteurs de recherche]], [[Comparatif - Mémoire pour agents]], [[Comparatif - NLP]], [[Comparatif - ORM]], [[Comparatif - Observabilité LLM]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Orchestrateurs data]], [[Comparatif - Orchestration de conteneurs]], [[Comparatif - Outils EDA - profiling]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatif - Outils stats]], [[Comparatif - Parsing de documents]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Qualité de données]], [[Comparatif - Registres d'images]], [[Comparatif - Reinforcement learning]], [[Comparatif - Rerankers]], [[Comparatif - Reverse proxies]], [[Comparatif - Runtimes d'inférence CPU et edge]], [[Comparatif - Réduction de dimension]], [[Comparatif - Scanners de sécurité]], [[Comparatif - Scraping]], [[Comparatif - Serving de modèles]], [[Comparatif - Solveurs d'optimisation]], [[Comparatif - Stockage objet]], [[Comparatif - Suivi d'expériences ML]], [[Comparatif - Suivi de projet auto-hébergé]], [[Comparatif - Traitement du signal]], [[Comparatif - Transformation SQL]], [[Comparatif - Versionnage de données]], [[Comparatif - Versions et changelog]], [[Comparatif - Visualisation]], [[Comparatif - Vérificateurs de types Python]], [[Comparatif - Évaluation LLM]]
 
 ### Conteneurs & orchestration  ·  hub
 - tags : `container`, `kubernetes`
@@ -3367,7 +3447,7 @@
 
 ### Machine Learning  ·  hub
 - tags : `supervised`, `unsupervised`, `model-evaluation`, `feature-engineering`, `hyperparameter-tuning`, `ml-pipeline`, `model-monitoring`, `explainability`, `ensemble`, `clustering`
-- liens sortants : [[Active learning]], [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage fédéré]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Confidentialité différentielle]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Diagnostic de défauts de roulements]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[Jeux de données PHM]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[Plongements de graphe et prédiction de liens]], [[Politique de maintenance et coût]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types d'anomalies et régimes de supervision]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
+- liens sortants : [[Active learning]], [[AdaBoost]], [[Alteryx]], [[Analyse discriminante]], [[Annotation de données]], [[Apprentissage fédéré]], [[Apprentissage non supervisé]], [[Apprentissage par renforcement]], [[Apprentissage profond]], [[Apprentissage semi-supervisé]], [[Apprentissage supervisé]], [[Arbres de décision]], [[Bagging]], [[Boosting]], [[CI-CD pour le ML]], [[CVAT]], [[Calibration]], [[CatBoost]], [[Classification]], [[Classification hiérarchique (CAH)]], [[Classification metrics]], [[Clustering]], [[Clustering evaluation]], [[Clustering hiérarchique par densité]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Embeddings]], [[Comparatif - Monitoring de modèles]], [[Comparatif - Optimisation d'hyperparamètres]], [[Comparatif - Orchestrateurs ML]], [[Comparatif - Plateformes data & IA]], [[Comparatif - Réduction de dimension]], [[Compromis biais-variance]], [[Confidentialité différentielle]], [[DBSCAN]], [[Data & pipelines]], [[Data drift]], [[Data leakage]], [[DataRobot]], [[Dataiku]], [[Deepchecks]], [[Diagnostic de défauts de roulements]], [[Déploiement de modèles]], [[Détection d'anomalies]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection hors distribution (OOD)]], [[EDA automatisée & profiling]], [[Embeddings & encodeurs]], [[Encodage des variables catégorielles]], [[Ensembling]], [[Evidently]], [[Explicabilité des modèles]], [[Extra Trees]], [[Feast]], [[Feature store — concept]], [[Flyte]], [[GAM]], [[GLM]], [[Gaussian Mixture Models (GMM)]], [[Gaussian Process]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Hyperopt]], [[ICA]], [[Imbalanced classification]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Ingénierie des caractéristiques]], [[Interprétabilité]], [[Isolation Forest]], [[Jeux de données PHM]], [[K-Means]], [[LLM & IA générative]], [[Label Studio]], [[LightGBM]], [[Local Outlier Factor]], [[Maintenance prédictive]], [[Maintenance prédictive et RUL]], [[Metaflow]], [[Mise à l'échelle]], [[Model registry & versioning]], [[Monitoring de modèle en production]], [[Monitoring de modèles]], [[Mécanismes de données manquantes]], [[NLP]], [[NMF]], [[Naive Bayes]], [[NannyML]], [[Non supervisé]], [[One-Class SVM]], [[Optimisation bayésienne]], [[Optimisation d'hyperparamètres]], [[Optuna]], [[PaCMAP]], [[Perceptron et MLP]], [[Plateformes data & IA]], [[Plongements de graphe et prédiction de liens]], [[Politique de maintenance et coût]], [[PyKEEN]], [[PyOD]], [[PyTorch Geometric]], [[ROC-AUC / courbe PR]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Random Forest]], [[Ranking metrics]], [[Ray Tune]], [[Recherche d'hyperparamètres]], [[Regression metrics]], [[Reinforcement learning]], [[River]], [[Régression]], [[Régression et classification multi-sorties]], [[Régression linéaire]], [[Régression logistique]], [[Régression quantile]], [[Régularisation]], [[STUMPY]], [[SVM]], [[Scikit-Learn]], [[Score et seuil d'alerte]], [[Serving]], [[Socle]], [[Suivi d'expériences]], [[Systèmes de recommandation]], [[Sélection de variables]], [[Séries temporelles]], [[Tabulaire]], [[Types d'anomalies et régimes de supervision]], [[Types de données et choix de modèle]], [[Validation croisée]], [[Vision]], [[XGBoost]], [[ZenML]], [[datasets]], [[embeddings]], [[evaluate]], [[hdbscan]], [[k-NN]], [[k-médoïds (PAM)]], [[sentence-transformers]], [[seqeval]], [[t-SNE and UMAP]], [[umap-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer une détection d'anomalies]]
 - liens entrants : [[AI Engineering]], [[Analyse factorielle]], [[CVAT]], [[Data Engineering]], [[Data Science]], [[Flyte]], [[HuggingFace]], [[Infrastructure & Ops]], [[LLM & IA générative]], [[Label Studio]], [[ML Engineering]], [[MLOps]], [[Mathématiques]], [[Metaflow]], [[Observabilité des LLM]], [[Optimisation]], [[Plateformes data & IA]], [[Statistiques & inférence]], [[Théorie de l'apprentissage]], [[Traitement]], [[ZenML]], [[datasets]], [[Évaluation]]
 
 ### Maintenance prédictive  ·  hub
@@ -3447,8 +3527,8 @@
 
 ### Ontologies et RDF  ·  hub
 - tags : `knowledge-graph`, `rdf`, `ontology`, `sparql`
-- liens sortants : [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Plongements de graphe et prédiction de liens]]
+- liens sortants : [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Apache Jena]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[LinkML]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### Optimisation  ·  hub
 - tags : `optimization`, `gradient-descent`, `convexity`, `second-order`, `learning-rate`, `linear-programming`, `combinatorial-optimization`
@@ -3907,8 +3987,8 @@
 
 ### Bases graphe — modèles et langages de requête  ·  notion
 - tags : `graph-db`, `knowledge-graph`, `relational`, `distributed`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Dgraph]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Postgres]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Ontologies et RDF]], [[RDF et triplets]], [[SPARQL]]
+- liens sortants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Construction de graphes de connaissances]], [[Dgraph]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[Postgres]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Dgraph]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Ontologies et RDF]], [[RDF et triplets]], [[SPARQL]], [[neosemantics]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -4208,7 +4288,7 @@
 ### Données liées et vocabulaires partagés  ·  notion
 - tags : `rdf`, `ontology`, `knowledge-graph`
 - liens sortants : [[Catalogue de données et lignage]], [[DataHub]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[OpenMetadata]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[RDF et triplets]]
+- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[RDF et triplets]], [[Virtuoso Open Source]]
 
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
@@ -4468,7 +4548,7 @@
 ### Graphe de connaissances  ·  notion
 - tags : `knowledge-graph`, `rdf`, `ontology`, `graph-db`
 - liens sortants : [[Agent memory]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Catalogue de données et lignage]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Modèles graphiques probabilistes]], [[Mémoire des agents]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[PyTorch Geometric]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[PyKEEN]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
 
 ### GraphRAG  ·  notion
 - tags : `rag`, `knowledge-graph`, `graph-db`, `retrieval`, `llm`
@@ -5053,12 +5133,12 @@
 ### Ontologie  ·  notion
 - tags : `ontology`, `knowledge-graph`, `rdf`
 - liens sortants : [[Catalogue de données et lignage]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies industrielles]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[RDF et triplets]], [[SHACL]]
+- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Protégé]], [[RDF et triplets]], [[SHACL]]
 
 ### Ontologies industrielles  ·  notion
 - tags : `ontology`, `digital-twin`, `iiot`, `knowledge-graph`
 - liens sortants : [[Catalogue de données et lignage]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[InfluxDB]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[OWL et raisonnement]], [[Ontologie]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[SHACL]], [[SPARQL]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]]
-- liens entrants : [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]]
+- liens entrants : [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]]
 
 ### Optimal transport  ·  notion
 - tags : `optimization`, `optimal-transport`
@@ -5098,7 +5178,7 @@
 ### OWL et raisonnement  ·  notion
 - tags : `ontology`, `rdf`, `knowledge-graph`
 - liens sortants : [[Modèles graphiques probabilistes]], [[Ontologie]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Owlready2]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[RDF et triplets]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[pySHACL]]
 
 ### PAC learning  ·  notion
 - tags : `learning-theory`, `pac-learning`
@@ -5158,7 +5238,7 @@
 ### Plongements de graphe et prédiction de liens  ·  notion
 - tags : `link-prediction`, `knowledge-graph`, `representation-learning`, `embeddings`
 - liens sortants : [[Apprentissage contrastif]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]], [[SHACL]], [[embeddings]]
-- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[Machine Learning]], [[Ontologies et RDF]]
+- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[Machine Learning]], [[Ontologies et RDF]], [[PyKEEN]]
 
 ### Policy gradient  ·  notion
 - tags : `reinforcement-learning`, `policy-gradient`
@@ -5328,7 +5408,7 @@
 ### RDF et triplets  ·  notion
 - tags : `rdf`, `knowledge-graph`, `ontology`
 - liens sortants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Plongements de graphe et prédiction de liens]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[SHACL]], [[SPARQL]], [[neosemantics]], [[rdflib]]
 
 ### Reasoning models  ·  notion
 - tags : `reasoning`, `llm`, `alignment`
@@ -5523,7 +5603,7 @@
 ### SHACL  ·  notion
 - tags : `ontology`, `rdf`, `knowledge-graph`
 - liens sortants : [[Graphe de connaissances]], [[Great Expectations]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Postgres]], [[RDF et triplets]], [[SPARQL]], [[pandera]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[neosemantics]], [[pySHACL]]
 
 ### Shannon entropy  ·  notion
 - tags : `information-theory`, `entropy`
@@ -5548,7 +5628,7 @@
 ### SPARQL  ·  notion
 - tags : `sparql`, `rdf`, `knowledge-graph`
 - liens sortants : [[Bases graphe — modèles et langages de requête]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[RDF et triplets]], [[SHACL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[Virtuoso Open Source]], [[rdflib]]
 
 ### Sparse autoencoders  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`, `unsupervised`
@@ -6031,12 +6111,12 @@
 - `data-ingestion` : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, Telegraf, asyncua, dlt  — pas de page concept dédiée
 - `data-leakage` : Data leakage, Diagnostic de défauts de roulements, Rule - Entraîner sur du normal vérifié
 - `data-lineage` : Catalogue de données et lignage, Comparatif - Catalogues et lignage de données, DataHub, OpenLineage, OpenMetadata
-- `data-modeling` : Architecture médaillon, Modélisation dimensionnelle  — pas de page concept dédiée
+- `data-modeling` : Architecture médaillon, LinkML, Modélisation dimensionnelle  — pas de page concept dédiée
 - `data-pipeline` : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt  — pas de page concept dédiée
 - `data-quality` : Alteryx, Architecture médaillon, Comparatif - Outils EDA - profiling, Comparatif - Qualité de données, Contrats de données & qualité, Fiabilité des données, Great Expectations, OEE et rendement global, OpenMetadata, SQLMesh, Soda Core, dbt Core, pandera, ydata-profiling
 - `data-transformation` : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core  — pas de page concept dédiée
-- `data-validation` : Comparatif - Qualité de données, Contrats de données & qualité, Deepchecks, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera  — pas de page concept dédiée
-- `data-versioning` : Apache Iceberg, Comparatif - Versionnage de données, DVC, Delta Lake, Fiabilité des données, Formats de fichiers et de tables, Versionnage de données, lakeFS
+- `data-validation` : Comparatif - Qualité de données, Contrats de données & qualité, Deepchecks, Fiabilité des données, Great Expectations, Instructor, LinkML, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera, pySHACL  — pas de page concept dédiée
+- `data-versioning` : Apache Iceberg, Comparatif - Versionnage de données, DVC, Delta Lake, Fiabilité des données, Fluree, Formats de fichiers et de tables, Versionnage de données, lakeFS
 - `dataframe` : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling  — pas de page concept dédiée
 - `dataviz` : Comparatif - Visualisation, Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn  — pas de page concept dédiée
 - `db-client` : Comparatif - Clients de bases de données, DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin  — pas de page concept dédiée
@@ -6067,8 +6147,8 @@
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
-- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
-- `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, ColPali, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Plongements de graphe et prédiction de liens, Qwen3-Embedding, RAG, RAG visuel - retrouver des documents sans OCR, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
+- `embedded` : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, Oxigraph, SQLite, ScaNN, hnswlib  — pas de page concept dédiée
+- `embeddings` : Bases de données vectorielles, Choisir un modèle d'embedding, ColPali, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, HuggingFace, Index ANN — internes, Infinity, Jina Reranker, Late-interaction retrieval, LlamaIndex, Plongements de graphe et prédiction de liens, PyKEEN, Qwen3-Embedding, RAG, RAG visuel - retrouver des documents sans OCR, Recherche sémantique, Systèmes de recommandation, Text Embeddings Inference, bge-m3, bge-reranker, embeddings, sentence-transformers, txtai
 - `ensemble` : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost, scikit-survival  — pas de page concept dédiée
 - `entity-linking` : Liage d'entités
 - `entropy` : Shannon entropy, Théorie de l'information
@@ -6097,7 +6177,7 @@
 - `gnn` : Graph Neural Networks, PyTorch Geometric
 - `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation, Rétropropagation et différentiation automatique
-- `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop  — pas de page concept dédiée
+- `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics  — pas de page concept dédiée
 - `guardrails` : Comparatif - Garde-fous pour LLM, Guardrails, Llama Guard, NeMo Guardrails, Systèmes IA, Sécurité
 - `hardware-sizing` : llmfit  — pas de page concept dédiée
 - `human-in-the-loop` : Active learning, Annotation de données, CVAT, Human-in-the-loop, Label Studio, Pattern - RAG structuré graphe + human-in-the-loop
@@ -6126,7 +6206,7 @@
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité, garak
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
-- `knowledge-graph` : Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, Données liées et vocabulaires partagés, GraphRAG, Graphe de connaissances, Graphify, Graphiti, Interroger un graphe en langage naturel, Liage d'entités, Mémoire des agents, OWL et raisonnement, Obsidian, Ontologie, Ontologies et RDF, Ontologies industrielles, Pattern - RAG structuré graphe + human-in-the-loop, Plongements de graphe et prédiction de liens, RAG & retrieval, RDF et triplets, SHACL, SPARQL
+- `knowledge-graph` : Apache Jena, Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, Données liées et vocabulaires partagés, Fluree, GraphRAG, Graphe de connaissances, Graphify, Graphiti, Interroger un graphe en langage naturel, Liage d'entités, Mémoire des agents, OWL et raisonnement, Obsidian, Ontologie, Ontologies et RDF, Ontologies industrielles, Pattern - RAG structuré graphe + human-in-the-loop, Plongements de graphe et prédiction de liens, PyKEEN, RAG & retrieval, RDF et triplets, RDF4J, SHACL, SPARQL, neosemantics
 - `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, OLTP, OLAP et lakehouse, Partitionnement & layout de données, Plateformes data & IA, Trino
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
@@ -6136,7 +6216,7 @@
 - `linear-algebra` : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms  — pas de page concept dédiée
 - `linear-model` : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle  — pas de page concept dédiée
 - `linear-programming` : CVXPY, Comparatif - Solveurs d'optimisation, HiGHS, Mathématiques, OR-Tools, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, S&OP et plan directeur de production
-- `link-prediction` : Plongements de graphe et prédiction de liens
+- `link-prediction` : Plongements de graphe et prédiction de liens, PyKEEN
 - `linter` : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
 - `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : ARES, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, RAGChecker, TruLens, Évaluation
@@ -6203,7 +6283,7 @@
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
-- `ontology` : Données liées et vocabulaires partagés, Graphe de connaissances, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontologies industrielles, RDF et triplets, SHACL
+- `ontology` : Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Graphe de connaissances, LinkML, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontologies industrielles, Ontop, Owlready2, Protégé, RDF et triplets, SHACL
 - `opc-ua` : Données industrielles, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
 - `optimization` : Adam optimizer, CVXPY, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, HiGHS, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux  — pas de page concept dédiée
@@ -6247,7 +6327,7 @@
 - `rag` : ARES, Advanced RAG, AnythingLLM, Bases de données vectorielles, Chroma, Chunking strategies, Cognee, Cohere Rerank, ColPali, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Rerankers, DB-GPT, DeepWiki-Open, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LibreChat, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, MinerU, Open WebUI, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG agentique, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGChecker, RAGFlow, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
 - `rag-eval` : ARES, Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, RAGChecker, Ragas, Évaluation
 - `ranking` : BM25, Learning to rank, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
-- `rdf` : Données liées et vocabulaires partagés, Graphe de connaissances, OWL et raisonnement, Ontologie, Ontologies et RDF, RDF et triplets, SHACL, SPARQL
+- `rdf` : Apache Jena, Comparatif - Moteurs RDF, Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Fluree, Graphe de connaissances, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontop, Owlready2, Oxigraph, QLever, RDF et triplets, RDF4J, SHACL, SPARQL, Virtuoso Open Source, neosemantics, pySHACL, rdflib
 - `re-identification` : Metric learning & ré-identification
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss  — pas de page concept dédiée
 - `recommender-systems` : Learning to rank, Systèmes de recommandation
@@ -6258,7 +6338,7 @@
 - `regularization` : Augmentation d'images, Double descente et généralisation des grands modèles, Régularisation, Vector norms
 - `reinforcement-learning` : Acme, Actor-Critic methods, AlphaZero and self-play, Apprentissage par renforcement, Bellman equations, Comparatif - Reinforcement learning, Exploration vs exploitation, Fine-tuning, GRPO, Gymnasium, Imitation learning, Markov Decision Process, Model-based RL, Offline RL, OpenSpiel, PPO, Pattern - Moteur de jeu pur + IA séparée, Policy gradient, Q-learning and DQN, RL for LLMs, RLax, Reinforcement learning, Reward modeling, Reward shaping and hacking, Stable-Baselines3, TF-Agents, TRL, Tunix, Value functions
 - `relation-extraction` : Construction de graphes de connaissances  — pas de page concept dédiée
-- `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2  — pas de page concept dédiée
+- `relational` : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, Virtuoso Open Source, pgAdmin, psycopg2  — pas de page concept dédiée
 - `reliability` : Hallucinations des LLM, Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes  — pas de page concept dédiée
 - `representation-learning` : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Plongements de graphe et prédiction de liens, Probing, PyTorch Geometric, embeddings  — pas de page concept dédiée
 - `reproducibility` : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill  — pas de page concept dédiée
@@ -6295,7 +6375,7 @@
 - `skills` : Agent Skills - la spécification, Gestion de projet, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Superpowers, awesome-claude-code, pm-skills
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
-- `sparql` : Interroger un graphe en langage naturel, Ontologies et RDF, SPARQL
+- `sparql` : Apache Jena, Comparatif - Moteurs RDF, Fluree, Interroger un graphe en langage naturel, Ontologies et RDF, Ontop, Oxigraph, QLever, RDF4J, SPARQL, Virtuoso Open Source, rdflib
 - `spec-driven` : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories, Rule - Projet assisté par agent  — pas de page concept dédiée
 - `spectrogram` : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
@@ -6400,10 +6480,10 @@
 - `data-app` (porté par : Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, Interfaces & apps data, Marimo, Pattern - Stack démo ML locale multi-services, Shiny for Python, Streamlit)
 - `data-governance` (porté par : Catalogue de données et lignage, Comparatif - Plateformes data & IA, DataHub, DataRobot, Databricks, Dataiku, OpenLineage, OpenMetadata, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `data-ingestion` (porté par : Airbyte, Apache NiFi, Comparatif - Ingestion de données, Debezium, Ingestion de données, Ingestion incrémentale et curseurs, Node-RED, Telegraf, asyncua, dlt)
-- `data-modeling` (porté par : Architecture médaillon, Modélisation dimensionnelle)
+- `data-modeling` (porté par : Architecture médaillon, LinkML, Modélisation dimensionnelle)
 - `data-pipeline` (porté par : Airbyte, Airflow, Alteryx, Apache NiFi, Architecture médaillon, Beats, Change Data Capture (CDC), Comparatif - Ingestion de données, Comparatif - Orchestrateurs data, Comparatif - Transformation SQL, Dagster, Data & pipelines, Databricks, ELT vs ETL & idempotence, Ingestion de données, Ingestion incrémentale et curseurs, Kestra, Logstash, Mage, Modélisation dimensionnelle, OpenLineage, Orchestration, Pattern - Pipeline scraping → matching → optimisation, Prefect, SQLMesh, Scraping, Stream processing, Web scraping, dbt Core, dlt)
 - `data-transformation` (porté par : Comparatif - Transformation SQL, Data & pipelines, Modélisation dimensionnelle, SQLMesh, dbt Core)
-- `data-validation` (porté par : Comparatif - Qualité de données, Contrats de données & qualité, Deepchecks, Fiabilité des données, Great Expectations, Instructor, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera)
+- `data-validation` (porté par : Comparatif - Qualité de données, Contrats de données & qualité, Deepchecks, Fiabilité des données, Great Expectations, Instructor, LinkML, Outils de développement, Pydantic, Pydantic Settings, Rule - Config typée, SQLModel, Soda Core, Sortie typée, Structured outputs, pandera, pySHACL)
 - `dataframe` (porté par : Comparatif - Manipulation de données, Data & pipelines, DataFrames, Modin, Polars, Spark, connectorx, jupysql, pandas, pandera, sweetviz, ydata-profiling)
 - `dataviz` (porté par : Comparatif - Visualisation, Data & pipelines, Grafana, TensorBoard, Visualisation, altair, bokeh, matplotlib, plotly, seaborn)
 - `db-client` (porté par : Comparatif - Clients de bases de données, DBeaver, DataGrip, HeidiSQL, MongoDB Compass, MySQL Workbench, Redis Insight, pgAdmin)
@@ -6424,7 +6504,7 @@
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot)
 - `education` (porté par : OpenMAIC)
 - `eigenvalue` (porté par : Algèbre linéaire, Eigendecomposition, SVD)
-- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, SQLite, ScaNN, hnswlib)
+- `embedded` (porté par : Annoy, Chroma, DuckDB, Faiss, LanceDB, LiteRT, Lucene, Oxigraph, SQLite, ScaNN, hnswlib)
 - `ensemble` (porté par : AdaBoost, Bagging, Boosting, CatBoost, Comparatif - Boosting, Ensembling, Extra Trees, Gradient Boosting (GBDT), Isolation Forest, LightGBM, Machine Learning, Random Forest, Tabulaire, XGBoost, scikit-survival)
 - `event-driven` (porté par : Architecture pilotée par les événements)
 - `experiment-tracking` (porté par : Aim, ClearML, Comet, Comparatif - Suivi d'expériences ML, MLflow, Model registry & versioning, Suivi d'expériences, TensorBoard, Weights & Biases)
@@ -6441,7 +6521,7 @@
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `git-hooks` (porté par : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit)
 - `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
-- `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop)
+- `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
@@ -6528,7 +6608,7 @@
 - `red-teaming` (porté par : garak, promptfoo)
 - `regret-minimization` (porté par : Counterfactual Regret Minimization)
 - `relation-extraction` (porté par : Construction de graphes de connaissances)
-- `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, pgAdmin, psycopg2)
+- `relational` (porté par : Alembic, Bases de données, Bases graphe — modèles et langages de requête, CockroachDB, Comparatif - Bases relationnelles, DBeaver, DataGrip, Flyway, HeidiSQL, Liquibase, MariaDB, Microsoft SQL Server, Migrations de schéma, MySQL, MySQL Workbench, ORM, Postgres, Prisma, SQLAlchemy, SQLModel, SQLite, Virtuoso Open Source, pgAdmin, psycopg2)
 - `reliability` (porté par : Hallucinations des LLM, Human-in-the-loop, OmniRoute, Reliability patterns, Théorie des valeurs extrêmes)
 - `representation-learning` (porté par : Apprentissage auto-supervisé en vision, Apprentissage contrastif, Autoencodeurs, Graph Neural Networks, Metric learning & ré-identification, Modèles de fondation vision, Plongements de graphe et prédiction de liens, Probing, PyTorch Geometric, embeddings)
 - `reproducibility` (porté par : Ansible, CI-CD pour le ML, Comparatif - Gestionnaires de paquets Python, Comparatif - Orchestrateurs ML, DVC, Infrastructure as code — configuration, provisionnement et idempotence, Marimo, Notebooks, Notebooks-as-code, OpenTofu, Packaging Python et environnements reproductibles, Pipelines CI-CD on-prem — runners, secrets et artefacts, Quarto, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Structure de projet, Suivi d'expériences, jupytext, lakeFS, mise, papermill)

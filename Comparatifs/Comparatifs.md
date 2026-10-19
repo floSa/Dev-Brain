@@ -36,7 +36,9 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 - [[Comparatif - Clients de bases de données]]
 - [[Comparatif - Migrations de schéma]]
 - [[Comparatif - Moteurs de recherche]]
+- [[Comparatif - Moteurs RDF]]
 - [[Comparatif - ORM]]
+- [[Comparatif - Outils RDF et OWL en Python]]
 
 ### Calcul distribué
 - [[Comparatif - Calcul distribué]]

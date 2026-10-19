@@ -1,13 +1,13 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1093 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1109 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
-- **Bases de données** — 58 briques · 17 notions · 10 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
+- **Bases de données** — 71 briques · 17 notions · 12 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
   - Administration — 7 briques · 1 comparatif
   - Bases de graphes — 7 briques · 1 notion · 1 comparatif
-  - Ontologies et RDF — 8 notions
+  - Ontologies et RDF — 13 briques · 8 notions · 2 comparatifs
   - Recherche — 11 briques · 3 notions · 1 comparatif
   - Relationnel — 6 briques · 1 comparatif
   - Vectoriel — 11 briques · 2 notions · 1 comparatif
@@ -44,7 +44,7 @@
   - Sortie typée — 3 briques · 2 notions → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Text-to-SQL — 5 briques · 1 notion · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
   - Évaluation — 8 briques · 7 notions · 1 comparatif → [détail](carte/LLM%20%26%20IA%20g%C3%A9n%C3%A9rative%20-%202%20sur%202.md)
-- **Machine Learning** — 122 briques · 205 notions · 18 comparatifs → [1/4](carte/Machine%20Learning%20-%201%20sur%204.md) · [2/4](carte/Machine%20Learning%20-%202%20sur%204.md) · [3/4](carte/Machine%20Learning%20-%203%20sur%204.md) · [4/4](carte/Machine%20Learning%20-%204%20sur%204.md)
+- **Machine Learning** — 123 briques · 205 notions · 18 comparatifs → [1/4](carte/Machine%20Learning%20-%201%20sur%204.md) · [2/4](carte/Machine%20Learning%20-%202%20sur%204.md) · [3/4](carte/Machine%20Learning%20-%203%20sur%204.md) · [4/4](carte/Machine%20Learning%20-%204%20sur%204.md)
   - Apprentissage par renforcement — 6 briques · 17 notions · 1 comparatif → [détail](carte/Machine%20Learning%20-%201%20sur%204.md)
   - Apprentissage profond — 8 briques · 34 notions → [détail](carte/Machine%20Learning%20-%201%20sur%204.md)
   - Détection d'anomalies — 15 briques · 24 notions · 3 comparatifs → [détail](carte/Machine%20Learning%20-%202%20sur%204.md)
