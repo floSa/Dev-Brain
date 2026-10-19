@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]"]
+alternatives: ["[[Mistral]]", "[[Gemma]]", "[[gpt-oss]]", "[[DeepSeek-V4.1-Flash]]", "[[MiMo-V2.6]]"]
 complements: ["[[vLLM]]", "[[SGLang]]", "[[Ollama]]", "[[llama.cpp]]", "[[Unsloth]]", "[[LLaMA-Factory]]", "[[Qwen3-Embedding]]"]
 tags: [llm, local-llm, reasoning, tool-use, vision-language]
 url_docs: https://huggingface.co/Qwen/Qwen3.8-27B
@@ -62,6 +62,8 @@ Famille de modèles de langage de l'équipe Qwen d'Alibaba, publiée en poids ou
 - [[Mistral]] — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement. — le français cité et des tailles de 3 à 24 B en Apache-2.0, mais un MIT modifié plafonné à 20 M$ de revenu mensuel sur Medium 3.5.
 - [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — Apache-2.0 sur toute la génération 4 et un QAT 4 bits officiel, là où Qwen mêle Apache-2.0 et licences propres dans une génération.
 - [[gpt-oss]] — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire. — Apache-2.0 sans seuil, sur un GPU de 80 Go ou dans 16 Go, mais texte seul et sans langue citée.
+- [[DeepSeek-V4.1-Flash]] — Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU. — MIT sans clause de service et un million de tokens à cache compressé, mais 510 Go de poids là où le 27 B de Qwen tient sur un GPU.
+- [[MiMo-V2.6]] — Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU. — l'audio en entrée et une licence MIT déclarée sur toute la famille, mais aucun modèle de la taille d'un GPU.
 
 ### Compléments
 

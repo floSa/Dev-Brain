@@ -8,7 +8,7 @@ famille: modele
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[Qwen]]", "[[Mistral]]", "[[Gemma]]"]
+alternatives: ["[[Qwen]]", "[[Mistral]]", "[[Gemma]]", "[[DeepSeek-V4.1-Flash]]"]
 complements: ["[[vLLM]]", "[[Ollama]]", "[[llama.cpp]]", "[[LM Studio]]"]
 tags: [llm, local-llm, reasoning, tool-use]
 url_docs: https://huggingface.co/openai/gpt-oss-120b
@@ -61,6 +61,7 @@ Les deux modèles à poids ouverts d'OpenAI, dépôts Hugging Face créés le 20
 - [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — image et vidéo en entrée et un 27 B dense en Apache-2.0, mais des licences propres sur les gros modèles.
 - [[Mistral]] — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement. — le français cité et des modèles de 3 à 24 B en Apache-2.0, mais un MIT modifié sur Medium 3.5.
 - [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — image et audio en entrée, Apache-2.0 depuis Gemma 4, et des tailles de 2 à 31 B.
+- [[DeepSeek-V4.1-Flash]] — Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU. — un million de tokens et une entrée image, mais 510 Go de poids sur un nœud multi-GPU.
 
 ### Compléments
 

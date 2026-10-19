@@ -7,7 +7,7 @@ categorie: llm/modele
 famille: modele
 licence_type: open-source
 maturite: production
-alternatives: ["[[gpt-oss]]", "[[Qwen]]"]
+alternatives: ["[[gpt-oss]]", "[[Qwen]]", "[[MiMo-V2.6]]"]
 tags: [llm, local-llm, reasoning, tool-use]
 url_docs: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 url_repo: 
@@ -58,6 +58,7 @@ Modèle de langage à poids ouverts de DeepSeek-AI, dépôt Hugging Face `deepse
 
 - [[gpt-oss]] — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire. — Apache-2.0 sur un seul GPU, là où DeepSeek demande un nœud, mais 131 072 tokens au lieu d'un million.
 - [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — un 27 B dense en Apache-2.0 sur un GPU, mais un contexte natif de 262 144 tokens et une clause de service sur les gros modèles.
+- [[MiMo-V2.6]] — Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU. — l'audio et la vidéo en entrée et un Flash de 178 Go, mais 29 fois plus de cache KV par token à un million de tokens.
 
 ## Ressources
 
