@@ -484,4 +484,4 @@ Livrables :
 - [x] Lot 27 — kits de bonnes pratiques de démarrage
 - [x] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
 - [x] Lot 29 — ontologies et RDF : les outils et les comparatifs
-- [ ] Lot 30 — ontologies et RDF : pattern et câblage
+- [x] Lot 30 — ontologies et RDF : pattern et câblage
