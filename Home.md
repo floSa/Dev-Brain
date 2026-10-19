@@ -43,7 +43,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Rangés par `role:` — aucune `categorie:` ne les range
 
-- [[Patterns]] — 9 architectures type, chacune enjambant plusieurs domaines
+- [[Patterns]] — 10 architectures type, chacune enjambant plusieurs domaines
 - [[Rules]] — 14 règles transverses, applicables quelle que soit la stack
 
 ## Réunis par `role:` — les comparatifs
