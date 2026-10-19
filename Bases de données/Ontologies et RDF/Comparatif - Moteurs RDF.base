@@ -1,0 +1,50 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de rôle garde les notions
+    # rangées sous la même catégorie hors de la vue. La clause de famille sépare
+    # les moteurs (plateforme) des outils du comparatif des outils Python : à elles
+    # deux, les deux vues couvrent toutes les briques de `database/rdf`.
+    - role == "brique"
+    - categorie == "database/rdf"
+    - famille == "plateforme"
+views:
+  - type: table
+    name: Moteurs RDF
+    order:
+      - file.name
+      - pitch
+      - langage
+      - licence_type
+      - hosted
+      - scaling
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Libres
+    filters:
+      and:
+        - licence_type == "open-source"
+    order:
+      - file.name
+      - pitch
+      - langage
+      - scaling
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Licence restrictive
+    filters:
+      and:
+        - licence_type != "open-source"
+    order:
+      - file.name
+      - licence_type
+      - pitch
+      - hosted
+    sort:
+      - property: file.name
+        direction: asc
