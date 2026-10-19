@@ -535,7 +535,7 @@ Briques (poids ouverts, sur site ; vérifie chaque licence au dépôt) : **DeepS
 - [x] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
 - [x] Lot 29 — ontologies et RDF : les outils et les comparatifs
 - [x] Lot 30 — ontologies et RDF : pattern et câblage
-- [ ] Lot 31 — inférence : mémoire, débit, coût d'un token
+- [x] Lot 31 — inférence : mémoire, débit, coût d'un token
 - [ ] Lot 32 — lire un tarif, un score, un service
 - [ ] Lot 33 — modèles de décision
 - [ ] Lot 34 — OCR et documents
