@@ -62,8 +62,8 @@ Deux modèles à poids ouverts de l'équipe MiMo de Xiaomi, dépôts Hugging Fac
 ## Ressources
 
 - Documentation — carte du Pro : https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Carte du Flash : https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
-- Rapport technique : https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
+- Documentation — carte du Flash : https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Papier — rapport technique : https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
 
 ## Voir aussi
 

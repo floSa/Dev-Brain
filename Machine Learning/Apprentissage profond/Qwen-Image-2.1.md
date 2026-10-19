@@ -62,7 +62,7 @@ url_repo:
 ## Ressources
 
 - Documentation — carte du modèle : https://huggingface.co/Qwen/Qwen-Image-2.1
-- Texte de la licence : https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
+- Documentation — texte de la licence : https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 
 ## Voir aussi
 

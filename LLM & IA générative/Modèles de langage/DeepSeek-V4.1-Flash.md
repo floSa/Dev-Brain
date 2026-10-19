@@ -63,7 +63,7 @@ Modèle de langage à poids ouverts de DeepSeek-AI, dépôt Hugging Face `deepse
 ## Ressources
 
 - Documentation — carte du modèle : https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
-- Rapport technique (PDF, 51 pages) : https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/DeepSeek_V41_Tech_Report.pdf
+- Papier — rapport technique (PDF, 51 pages) : https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/DeepSeek_V41_Tech_Report.pdf
 
 ## Voir aussi
 
