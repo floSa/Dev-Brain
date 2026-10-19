@@ -938,6 +938,26 @@ axes:
               pipeline de retrieval (GraphRAG). Un moteur multi-modele dont le
               graphe est l un des modeles (ArangoDB) s y range par arbitrage,
               faute de valeur « multi-modele » dans le vocabulaire.
+          rdf:
+            libelle: "Ontologies et RDF"
+            motif: >
+              Ouvert le 2026-10-19 (lot 28 du chantier anomalie-maintenance, sur
+              demande de floSa : regrouper en un seul endroit tout ce qui touche
+              l ontologie, le graphe de connaissances et le web semantique, pour
+              le retrouver d un coup d oeil). Valeur sous database et non nouveau
+              prefixe racine. Libelle verifie unique, insensible a la casse. Et NON
+              « RDF » seul : le hub du dossier serait un nom de trois lettres qui
+              dit le format et pas le sujet ; le sujet couvre aussi l ontologie,
+              OWL et SHACL.
+            frontiere: >
+              Le modele RDF et ce qui l entoure : triplets, ontologie, SPARQL, OWL
+              et raisonnement, SHACL, donnees liees et vocabulaires partages, et
+              les moteurs qui stockent et interrogent du RDF (Jena, Oxigraph...).
+              La page d entree « Graphe de connaissances » y vit aussi. Distinct
+              de database/graphe (le graphe de proprietes : Neo4j, Memgraph, Cypher),
+              de ml/graphe (APPRENDRE sur un graphe : plongements, GNN), de
+              ml/nlp (le liage d entites a partir du texte) et de llm/rag
+              (GraphRAG : un pipeline de retrieval, pas le modele de donnees).
           analytique: {}
           recherche:
             libelle: "Recherche"

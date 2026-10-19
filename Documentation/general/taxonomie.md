@@ -12,7 +12,7 @@ Une page du brain est rangée sur **deux axes indépendants**, tous deux à voca
 
 | Axe | Question à laquelle il répond | Valeurs |
 |-----|-------------------------------|---------|
-| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 120 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
+| `categorie:` | **De quoi ça parle** — le domaine, le sujet | 121 valeurs sous le bloc `domaine`, plus 6 sous `skill/*` — cf. section *Axe `categorie:`* |
 | `famille:` | **Ce que c'est** — la nature de la chose | 9 valeurs, cf. section *Axe `famille:`* |
 
 `famille:` porte la **NATURE**, `categorie:` porte le **DOMAINE**. Les deux sont contrôlés par
@@ -170,7 +170,7 @@ Motif du refus de l'exonération : `categorie:` est un champ requis contrôlé (
 R7 (toute page atteignable depuis un MOC). Une exonération pour 2 pages sur 336 serait une
 exception que personne ne retient, au prix d'une page injoignable.
 
-## Axe `categorie:` — le domaine (120 valeurs, 20 préfixes de tête)
+## Axe `categorie:` — le domaine (121 valeurs, 20 préfixes de tête)
 
 `categorie:` répond à **une seule** question : *de quoi la page parle-t-elle ?* Elle ne dit
 rien de la nature de l'objet — c'est `famille:` qui la porte. Le vocabulaire est **fermé** et
@@ -187,7 +187,7 @@ ml/{socle, tabulaire, apprentissage-profond, vision, nlp, series-temporelles, rl
 llm/{socle, modele, prompt, agents, agent-de-code, assistant, rag, memoire,
      sortie-structuree, text-to-sql, low-code, protocole, passerelle, runtime,
      finetuning, eval, observabilite, outillage}
-database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe,
+database/{relationnel, document, cle-valeur, vecteur, series-temporelles, graphe, rdf,
           analytique, recherche, driver, orm, migration, admin}
 data/{ingestion, parsing, scraping, tableau, format, orchestration, streaming,
       synthetique, eda, viz, fiabilite, transformation, messagerie, catalogue, industrie, bi}
@@ -292,6 +292,15 @@ valeurs disparues et ne sont pas reconduites.
 - `database/driver` — pilote / adaptateur bas niveau d'accès à une base (DB-API 2.0, wrapper
   libpq) : psycopg2, ADBC. Distinct de `database/orm` (mapping objet) : le driver transporte le
   SQL, il n'abstrait pas le schéma. Et distinct de `data/ingestion` par D-R6.
+- `database/rdf` — **ontologies et RDF** : le modèle de données RDF (triplets, IRI, graphes nommés),
+  l'ontologie, SPARQL, OWL et le raisonnement, SHACL, les données liées et les vocabulaires partagés
+  (schema.org, SKOS), les moteurs RDF, et la page d'entrée « Graphe de connaissances ». Ouvert le
+  2026-10-19 (lot 28), sur demande de floSa de tout regrouper ; libellé « Ontologies et RDF ». Distinct
+  de `database/graphe` (le graphe de **propriétés** : Neo4j, Cypher), de `ml/graphe` (**apprendre**
+  sur un graphe : plongements, GNN), de `ml/nlp` (le liage d'entités depuis le texte) et de `llm/rag`
+  (GraphRAG, un pipeline de retrieval). Les pages voisines suivent la taxonomie : plongements de
+  graphe en `ml/graphe`, liage d'entités en `ml/nlp`, interrogation en langage naturel en
+  `llm/text-to-sql`.
 - `data/ingestion` — **promu en dossier le 2026-09-30** (9 pages : 7 briques, 2 notions). Amener la
   donnée d'une **source** (base, API, fichier, journal) vers sa destination **sans la remodeler** :
   outils d'ingestion (Airbyte, dlt, Apache NiFi), capture de changements (Debezium), collecte de

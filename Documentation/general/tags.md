@@ -356,6 +356,11 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `sequence-labeling` | Étiquetage de séquence — attribuer un label à chaque token (schémas IOB/BILOU, CRF, décodage de Viterbi) |
 | `text-classification` | Classification de texte — assigner une ou plusieurs catégories à un document (baseline TF-IDF → embeddings → LLM) |
 | `knowledge-graph` | Graphe de connaissances — entités typées reliées par des relations sémantiques, comme représentation interrogeable des connaissances (distinct du moteur de stockage `graph-db`) |
+| `rdf` | RDF — le modèle de données du web sémantique : triplets sujet–prédicat–objet, IRI, graphes nommés, Turtle et JSON-LD ; moteurs et bibliothèques qui le stockent ou le manipulent ; distinct de `graph-db` (le graphe de propriétés, Cypher) |
+| `ontology` | Ontologie — description formelle des types de choses d'un domaine et de leurs relations (OWL, SKOS, SHACL, vocabulaires partagés) ; distinct de `knowledge-graph` (les données elles-mêmes) |
+| `sparql` | SPARQL — langage W3C d'interrogation d'un graphe RDF (motifs de triplets, chemins de propriétés, Fuseki, QLever) ; distinct de Cypher et de SQL |
+| `entity-linking` | Liage d'entités — relier une mention dans un texte, ou un enregistrement, à l'entité unique d'une base de connaissances (Wikidata) ; distinct de `ner` (repérer la mention) |
+| `link-prediction` | Prédiction de liens — deviner les arêtes manquantes d'un graphe de connaissances par plongements (TransE, PyKEEN) ; distinct de `gnn` (réseau sur graphe, famille plus large) |
 | `relation-extraction` | Extraction de relations entre entités à partir de texte (triplets sujet–relation–objet) — brique de construction d'un graphe de connaissances |
 | `human-in-the-loop` | Intervention humaine dans une boucle automatisée / agent — validation, approbation ou correction d'une action à fort enjeu (HITL) |
 | `annotation` | Annotation de données — étiqueter images, texte, audio, vidéo ou séries pour produire un jeu d'entraînement supervisé (interface, pré-annotation, revue, export) : Label Studio, CVAT ; distinct de `data-quality` (vérifier un jeu livré) |
