@@ -52,6 +52,7 @@ tags: [knowledge-graph, relation-extraction, ner, llm]
 - [[NER et étiquetage de séquence]] — l'étape d'extraction d'entités, en amont des relations.
 - [[Structured outputs]] — le mécanisme qui contraint la sortie LLM en triplets valides.
 - [[Neo4j]] — où vit le graphe produit.
+- [[Graphe de connaissances]] — la page d'entrée du sujet ; [[Ontologie]] — le schéma à imposer en amont ; [[SHACL]] — vérifier le graphe produit ; [[Liage d'entités]] — relier une mention à un référentiel connu, à ne pas confondre avec la résolution d'entités ci-dessus.
 - [[embeddings]] — la résolution d'entités s'appuie souvent sur la similarité d'embeddings pour repérer les doublons.
 - Alternative : ne pas construire de graphe et rester en [[RAG]] vectoriel — préférable si les questions ne sont pas relationnelles et que le coût de construction ne se justifie pas.
 

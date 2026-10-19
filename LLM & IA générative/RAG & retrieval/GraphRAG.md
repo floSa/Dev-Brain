@@ -50,6 +50,7 @@ tags: [rag, knowledge-graph, graph-db, retrieval, llm]
 - [[Construction de graphes de connaissances]] — la brique amont qui produit le graphe interrogé ici.
 - [[Hybrid retrieval]] — combiner dense + structurel relève de la même logique d'hybridation.
 - [[Bases de données vectorielles]] / [[Neo4j]] — les deux mémoires interrogeables (vecteurs vs graphe), souvent associées.
+- [[Graphe de connaissances]] — ce qu'est le graphe qu'on interroge ici, avec son [[Ontologie|ontologie]] ; [[Interroger un graphe en langage naturel]] — l'autre façon de s'en servir : faire écrire une requête plutôt que lire des extraits.
 - Alternative : rester en [[RAG]] vectoriel + [[Reranking|reranking]] — plus simple et moins cher quand les questions ne sont pas relationnelles.
 
 ## Pour aller plus loin

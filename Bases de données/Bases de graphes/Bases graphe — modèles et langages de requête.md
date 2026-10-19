@@ -62,6 +62,7 @@ tags: [graph-db, knowledge-graph, relational, distributed]
 - [[Comparatif - Bases graphes]] — ce qui les départage : un nœud ou un cluster, le prix d'exploitation, la licence.
 - [[Bases de données]] — le domaine, et les autres familles de moteurs ; [[Postgres]] en est le défaut relationnel.
 - [[GraphRAG]], [[Construction de graphes de connaissances]] — l'usage du graphe de connaissances côté LLM.
+- [[Graphe de connaissances]] — la page d'entrée du sujet côté RDF et sens partagé ; [[RDF et triplets]], [[SPARQL]], [[OWL et raisonnement]], [[SHACL]] — le versant RDF détaillé dans [[Ontologies et RDF]].
 - [[Graph Neural Networks]] — l'apprentissage sur un graphe, branché sur les données stockées ici.
 - **Écartés du dossier, faute d'être éprouvés** : FalkorDB (SSPL, projet de 2023 dont le moteur vient d'être réécrit en Rust) et Kùzu (dépôt archivé le 2025-10-10, forks jeunes) — mentionnés ici et dans le comparatif, sans fiche.
 
