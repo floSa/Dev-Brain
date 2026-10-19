@@ -450,6 +450,9 @@ Livrables :
 - **Pattern - Graphe de connaissances industriel sur site** : ontologie + RDF + SHACL + SPARQL + interrogation par LLM, pour la maintenance prédictive et l'usine. Schéma Mermaid. Relie-le aux notions du lot 28, aux outils du lot 29, au pattern « Pipeline de maintenance prédictive on-prem » et à « Pattern - RAG structuré graphe + human-in-the-loop ».
 - **Câblage final** : le hub « Ontologies et RDF » et les hubs voisins (Bases de graphes, Mémoire des agents, RAG & retrieval) renvoient vers la section. Vérifie que la page « Graphe de connaissances » (lot 28) est bien le point d'entrée : chaque autre page y est citée.
 - **Balayage** : liens morts, pages orphelines, comptes de `Home.md` et `CLAUDE.md`.
+- **Les onze notions du lot 28** ont été créées par ce chantier : tu peux y ajouter des **liens seuls** vers les briques du lot 29 (SPARQL vers Jena, Oxigraph, QLever ; SHACL vers pySHACL ; OWL vers Owlready2 et Protégé ; RDF vers rdflib ; plongements vers PyKEEN ; etc.). Ne réécris pas leur texte.
+- **Deux phrases fausses** dans des notions de floSa, à lui **proposer** dans ta synthèse sans les modifier : la ligne 23 de « Bases graphe — modèles et langages de requête » dit « Aucun moteur RDF n'est dans le brain » ; la notion « Plongements de graphe et prédiction de liens » annonce la fiche PyKEEN dans le dossier Ontologies et RDF alors qu'elle est dans Machine Learning. Cite le texte exact et le texte proposé.
+- Pas de fiche TerminusDB (décision du pilote : pas de SPARQL, hors RDF).
 
 ## Suivi
 
