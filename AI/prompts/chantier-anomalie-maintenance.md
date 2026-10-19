@@ -68,6 +68,10 @@ on-prem industriel, ESN.
 | 16 | Lot 28 | Lots 1 à 27 clos et poussés |
 | 17 | Lot 29 | Lot 28 clos et poussé (il crée la valeur de catégorie) |
 | 18 | Lot 30 | Lots 28 et 29 clos et poussés |
+| 19 | Lots 31, 32 (en parallèle) | Lots 1 à 30 clos et poussés |
+| 20 | Lots 33, 34 (en parallèle) | Lots 31 et 32 clos et poussés |
+| 21 | Lots 35, 36 (en parallèle) | Lots 33 et 34 clos et poussés |
+| 22 | Lot 37 | Lots 35 et 36 clos et poussés |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -454,6 +458,52 @@ Livrables :
 - **Deux phrases fausses** dans des notions de floSa, à lui **proposer** dans ta synthèse sans les modifier : la ligne 23 de « Bases graphe — modèles et langages de requête » dit « Aucun moteur RDF n'est dans le brain » ; la notion « Plongements de graphe et prédiction de liens » annonce la fiche PyKEEN dans le dossier Ontologies et RDF alors qu'elle est dans Machine Learning. Cite le texte exact et le texte proposé.
 - Pas de fiche TerminusDB (décision du pilote : pas de SPARQL, hors RDF).
 
+## Lots 31 à 37 — Ressources de formation de floSa (règles communes)
+
+floSa a rédigé 29 documents de formation. La proposition validée est dans `AI/prompts/proposition-ressources-formation.md` (lis la section de ton lot). Les documents sont à `/mnt/c/Users/FlorianHorellou/OneDrive - Aosis Consulting/Documents/Ressources_Formation_IA/<dossier>/<dossier>.md` (vu de WSL), avec leurs images dans `slides/` et leurs scripts et mesures dans `annexes/`.
+
+Règles propres à ces lots :
+
+- **Lis le document source en entier**, pas seulement la proposition. Ouvre les images utiles avec l'outil de lecture d'image : elles contiennent des schémas.
+- **Ne copie aucune image dans le dépôt.** Ce sont des captures de vidéos d'autres auteurs, avec sous-titres incrustés, et le dépôt est public. **Refais chaque schéma utile en Mermaid** (ou tableau) et cite la vidéo d'origine avec son horodatage, tel que le document la donne.
+- **Dates.** Tout fait qui vieillit (prix, versions, classements, sorties) porte sa date (« relevé le … ») et va dans une section « Repères datés » courte. Une notion porte les **méthodes et formules durables**, pas les chiffres de produits.
+- **Vérifie à la source** les faits durables et la licence de chaque outil (fichier LICENSE du dépôt, dernier push). Licence introuvable, service payant ou cloud seulement : texte simple, pas de page (règle 15 corrigée). Dis dans ta synthèse ce que tu n'as pas pu vérifier.
+- **Notions** : gabarit `Templates/Concept-Wiki.md`, première phrase = ce que c'est, mots simples, un exemple chiffré ou concret, schéma Mermaid si ça aide, sources en « Pour aller plus loin ». **Briques** : première phrase = nature (règle 17), une page par commit.
+- **Avant d'écrire une page**, cherche si elle existe : `python3 AI/scripts/query_index.py --name "<nom>"` et un `grep` des mots clés. Ne double rien. Si le sujet existe en partie, écris le complément et relie.
+- **Catégories** : utilise des valeurs existantes. Si aucune ne convient, n'en crée pas : dis-le dans ta synthèse.
+- **Pages existantes de floSa** (`role: notion` d'avant ce chantier) : liens seuls autorisés vers tes nouvelles pages, aucune réécriture. Les enrichissements de texte se **proposent** dans ta synthèse (texte exact actuel, texte proposé). Tu peux ajouter des liens et réécrire librement dans les pages créées par les lots 28 à 30.
+- Hooks : `git config --local core.hooksPath .githooks` dans ton worktree. Un lot parallèle peut pousser avant toi : applique la procédure de divergence de `cloturer-brain` (commit de fusion, jamais de rebase).
+
+## Lot 31 — Inférence : mémoire, débit, coût d'un token (vague 19)
+
+Sources : `Inference_LLM_sur_GPU_vLLM_SGLang_Quantization`, `Servir_un_LLM_vLLM_Batching_Disaggregation_et_MoE`, `Economie_de_l-Inference_IA_Plateformes_et_Marges`, `DeepSeek-V4.1-Flash_Architecture_du_Cache_KV`, et le calcul de débit de `LightOnOCR-3_Famille_0.8B_1B_4B_Test_Local`. Les scripts `annexes/recalcul-chiffres.py` et `annexes/recalcul-moe.py` donnent les calculs : relis-les, exécute-les si possible, et cite les résultats.
+
+Notions (existantes à ne pas doubler : « Inference optimization », « Quantization », « Mixture of Experts », « Contexte long », « Multi-head Latent Attention », « Speculative decoding » ; relie-toi à elles) :
+
+1. **Plafond de débit d'un GPU** (roofline) — pourquoi la génération attend la mémoire : tok/s ≈ bande passante ÷ octets lus par token.
+2. **Dimensionner la mémoire d'un serveur LLM** — poids, cache KV, état fixe, nombre d'utilisateurs maximum, réplication des têtes KV en parallélisme tensoriel.
+3. **Taille du cache KV par token** — la formule, les leviers (têtes partagées, latent, couches qui stockent, précision FP4).
+4. **Prefill par morceaux et désagrégation prefill/decode** — TTFT, ITL, goodput ; ce que la désagrégation règle et ne règle pas.
+5. **Parallélisme en inférence** — tenseurs, données, experts.
+6. **Coût d'un token et taux d'utilisation** — coût par million de tokens = 10⁶·p ÷ (3600·v·u) ; pourquoi la marge d'un fournisseur de modèles ouverts dépend du taux d'utilisation des GPU.
+7. **Mesurer une latence** — calcul seul contre aller-retour réseau, p50 et p95, matériel nommé.
+
+Optimisations de noyaux (CUDA graphs, fusion, overlap) : une section de la notion 1 ou 4, pas une page. Aucune brique dans ce lot, sauf si une licence vérifiée et un manque réel l'exigent.
+
+## Lot 32 — Lire un tarif, un score, un service (vague 19)
+
+Sources : `Claude-Opus-5.5_Effort_Cout_et_Duree`, `GPT-6-Sol-et-Luna_Tarifs_et_Niveau_Reel`, `Xiaomi-MiMo-V2.6_Pro_et_Flash_Lecture_des_Chiffres`, `Gemini-3.8-Live_Extended_Thinking_Voix`, `Qwen-Image-2.1_Alpha_Natif_et_Licence`, `Modeles_Nerfes_Ce_Qui_Change_Derriere_une_API`.
+
+Notions (existantes : « LLM benchmarks », « Reasoning models », « Licences de modèles open weights », « Routing and cascading » ; relie-toi à elles) :
+
+1. **Tarif catalogue contre coût par tâche** — pourquoi un prix par token ne dit pas ce que coûte une tâche.
+2. **Effort de raisonnement et courbe coût/qualité** — de `medium` à `max` : points gagnés contre coût ; règle de décision.
+3. **Lire un score publié** — version de l'indice, qui l'a exécuté, checkpoint, banc saturé, incertitude ; le piège du score de vitrine.
+4. **Ce qui change derrière une API** — les molettes de service (effort par défaut, quantification, routage, prompt système, cache, quotas) ; un identifiant épinglé n'épingle pas le service ; variation de mesure contre variation de service.
+5. **Canari de dérive d'un LLM en API** — jeu figé, tirages multiples, bande de bruit, témoin à poids ouverts. Si le sujet est assez structuré, propose-le en pattern dans ta synthèse plutôt que de le créer.
+
+Briques (poids ouverts, sur site ; vérifie chaque licence au dépôt) : **DeepSeek-V4.1-Flash** (MIT selon le document), **MiMo-V2.6** (Flash et Pro, MIT), **Qwen-Image** et **Qwen-Image-Layered** (Apache-2.0 selon le document : à relire), **Qwen-Image-2.1** (licence `qwen-research`, non commerciale : accepté pour floSa, mais dis-le dans la première phrase et déconseille toute livraison à un client). Pas de page pour les modèles fermés ou payants (Claude, GPT-6, Gemini, Grok). Comparatif : ajoute les nouvelles briques au comparatif des modèles de langage open weights s'il existe, sinon propose-le.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -485,3 +535,10 @@ Livrables :
 - [x] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
 - [x] Lot 29 — ontologies et RDF : les outils et les comparatifs
 - [x] Lot 30 — ontologies et RDF : pattern et câblage
+- [ ] Lot 31 — inférence : mémoire, débit, coût d'un token
+- [ ] Lot 32 — lire un tarif, un score, un service
+- [ ] Lot 33 — modèles de décision
+- [ ] Lot 34 — OCR et documents
+- [ ] Lot 35 — RAG : droits, multimodal, hiérarchique
+- [ ] Lot 36 — agents : garde-fous hors modèle
+- [ ] Lot 37 — fondamentaux : méthodes et culture
