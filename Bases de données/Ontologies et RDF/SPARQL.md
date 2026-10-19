@@ -122,6 +122,7 @@ SPARQL 1.2 est en cours au W3C : le projet de requête était un *Working Draft*
 - [[Interroger un graphe en langage naturel]] — produire du SPARQL ou du Cypher à partir d'une phrase.
 - [[Graphe de connaissances]] — l'entrée du sujet.
 - **Alternative** : `rdflib` en Python, qui offre le même langage en bibliothèque, sans serveur, pour de petits graphes (à examiner à la fiche d'outil).
+- **Moteurs et outils** : [[Apache Jena]] (serveur Fuseki), [[RDF4J]], [[Oxigraph]], [[QLever]] et [[Virtuoso Open Source]] servent SPARQL ; [[Ontop]] le traduit en SQL sur des tables existantes ; [[rdflib]] l'offre en bibliothèque Python. Le choix est dans [[Comparatif - Moteurs RDF]].
 
 ## Pour aller plus loin
 

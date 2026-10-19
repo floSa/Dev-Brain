@@ -97,6 +97,7 @@ La même chose en N-Triples : trois lignes, chaque triplet avec ses IRI complèt
 - [[Bases graphe — modèles et langages de requête]] — le graphe de propriétés, l'autre modèle, et la comparaison des langages.
 - [[Données liées et vocabulaires partagés]] — les IRI à réutiliser.
 - [[Neo4j]] — un moteur de graphe de propriétés, pour comparer avec le modèle RDF.
+- **Outils** : [[rdflib]] lit et écrit Turtle, JSON-LD et RDF/XML en Python ; les moteurs qui les stockent sont départagés dans [[Comparatif - Moteurs RDF]], les bibliothèques dans [[Comparatif - Outils RDF et OWL en Python]] ; [[neosemantics]] importe du RDF dans [[Neo4j]].
 
 ## Pour aller plus loin
 

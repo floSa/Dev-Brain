@@ -81,6 +81,7 @@ Les faits ci-dessous viennent des dépôts, à la lecture ; l'activité et les l
 - [[SPARQL]] — les régimes d'implication (RDFS, OWL) changent les réponses d'une requête.
 - [[Modèles graphiques probabilistes]] — un tout autre raisonnement : sur l'incertain, pas sur le logique.
 - **Alternative sans OWL** : des règles écrites à la main (SQL, SPARQL `CONSTRUCT`) pour les deux ou trois déductions qui comptent. Moins élégant, mais plus simple à tenir qu'une ontologie complète quand les besoins sont limités.
+- **Outils** : [[Protégé]] pour éditer et raisonner à la main ; [[Owlready2]] pour raisonner depuis Python ; [[Apache Jena]], [[Fluree]] et [[Ontop]] raisonnent en partie dans le moteur. Voir [[Comparatif - Moteurs RDF]] et [[Comparatif - Outils RDF et OWL en Python]].
 
 ## Pour aller plus loin
 

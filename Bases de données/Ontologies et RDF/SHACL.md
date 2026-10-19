@@ -89,6 +89,7 @@ Une version 1.2 est en cours de rédaction par le groupe de travail du W3C : plu
 - [[RDF et triplets]] — les formes sont du RDF ; [[SPARQL]] — l'extension SHACL-SPARQL.
 - [[Graphe de connaissances]] — l'entrée du sujet ; [[Liage d'entités]] — traite les doublons, que SHACL ne voit pas.
 - **Hors RDF** : [[Postgres]] et ses contraintes déclaratives pour les données tabulaires ; [[pandera]] ou [[Great Expectations]] pour des DataFrames, si le graphe n'est pas en jeu.
+- **Outils** : [[pySHACL]] valide en Python ; [[Apache Jena]], [[RDF4J]] et [[Fluree]] valident dans le moteur ; [[neosemantics]] valide dans Neo4j ; [[LinkML]] génère des formes SHACL depuis un schéma. Voir [[Comparatif - Outils RDF et OWL en Python]].
 
 ## Pour aller plus loin
 
