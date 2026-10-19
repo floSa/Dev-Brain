@@ -1,0 +1,41 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de rôle garde les notions
+    # rangées sous la même catégorie hors de la vue. Les moteurs (famille
+    # plateforme) ont leur comparatif ; ici le reste de `database/rdf`, avec les
+    # outils Python en premier onglet et l'éditeur et la passerelle en second.
+    - role == "brique"
+    - categorie == "database/rdf"
+    - famille != "plateforme"
+views:
+  - type: table
+    name: Outils Python
+    filters:
+      and:
+        - langage == "Python"
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - maturite
+      - complements
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Hors Python
+    filters:
+      and:
+        - langage != "Python"
+    order:
+      - file.name
+      - pitch
+      - famille
+      - langage
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
