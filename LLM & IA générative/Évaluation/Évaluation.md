@@ -38,7 +38,9 @@ tags: [llm-eval, benchmark, rag-eval, llm-as-judge, model-evaluation]
 <!-- AUTO:START -->
 ### Notions
 - [[Agent evaluation]] — domaines : ai-eng
+- [[Ce qui change derrière une API]] — domaines : ai-eng, mlops
 - [[Code and math benchmarks]] — domaines : ai-eng, ml-eng
+- [[Lire un score publié]] — domaines : ai-eng, ml-eng
 - [[LLM benchmarks]] — domaines : ai-eng, ml-eng
 - [[LLM eval metrics]] — domaines : ai-eng
 - [[LLM-as-judge]] — domaines : ai-eng

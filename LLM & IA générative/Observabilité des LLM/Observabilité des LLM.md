@@ -30,6 +30,7 @@ tags: [llm-observability, tracing, observability]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Canari de dérive d'un LLM en API]] — domaines : ai-eng, mlops
 - [[LLM observability]] — domaines : ai-eng, mlops
 
 ### Briques

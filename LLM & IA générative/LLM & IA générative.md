@@ -59,6 +59,7 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - [[Context engineering]] — domaines : ai-eng
 - [[mcp-protocol]] — domaines : ai-eng
 - [[Prompt engineering]] — domaines : ai-eng
+- [[Tarif catalogue contre coût par tâche]] — domaines : ai-eng
 
 ### Briques
 - [[Dify]] — Plateforme LLMOps low-code (source-available, LangGenius) — interface visuelle qui combine workflows agentiques, pipelines RAG, gestion de modèles et observabilité, du prototype à la production ; self-host Docker ou Dify Cloud.

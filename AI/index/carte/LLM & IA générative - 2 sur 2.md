@@ -1,7 +1,7 @@
 # LLM & IA générative — carte (2 sur 2)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 77 pages, chacune avec son chemin et une ligne.
+> 80 pages, chacune avec son chemin et une ligne.
 > Couvre : Observabilité des LLM, Passerelles, RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
 
 ## Observabilité des LLM
@@ -9,6 +9,7 @@
 - [[Langfuse]] · brique · `LLM & IA générative/Observabilité des LLM/Langfuse.md` — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié…
 - [[LangSmith]] · brique · `LLM & IA générative/Observabilité des LLM/LangSmith.md` — Plateforme propriétaire d'observabilité et d'éval LLM de LangChain — traçage, dashboards, évaluations et déploiement d'agents, framework-agnostique au-delà de…
 - [[Phoenix Arize]] · brique · `LLM & IA générative/Observabilité des LLM/Phoenix Arize.md` — Plateforme open-source d'observabilité et d'éval LLM d'Arize (Elastic License 2.0) — traçage bâti sur OpenTelemetry/OpenInference, évals par LLM, datasets et…
+- [[Canari de dérive d'un LLM en API]] · notion · `LLM & IA générative/Observabilité des LLM/Canari de dérive d'un LLM en API.md` — Un canari est un petit jeu de prompts figés, rejoué périodiquement contre une API de modèle, dont on suit la distribution des résultats dans le temps.
 - [[LLM observability]] · notion · `LLM & IA générative/Observabilité des LLM/LLM observability.md` — Comprendre ce que fait une app LLM en production : tracer chaque appel, mesurer coût / latence / erreurs, et noter la qualité sur le trafic réel.
 - [[Comparatif - Observabilité LLM]] · comparatif · `LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md` — comment la trace est captée — proxy sur le chemin critique ou SDK OpenTelemetry —, et sur la licence, qui décide de l'auto-hébergement.
 
@@ -87,7 +88,9 @@
 - [[RAGChecker]] · brique · `LLM & IA générative/Évaluation/RAGChecker.md` — Framework de diagnostic de RAG (Apache-2.0, Amazon Science) — extrait des claims de la réponse et les vérifie par entailment pour séparer les fautes du…
 - [[TruLens]] · brique · `LLM & IA générative/Évaluation/TruLens.md` — Bibliothèque d'évaluation et de traçage d'apps LLM (MIT, TruEra/Snowflake) — instrumente n'importe quel stack et note la qualité via des feedback functions…
 - [[Agent evaluation]] · notion · `LLM & IA générative/Évaluation/Agent evaluation.md` — Mesurer si un agent LLM accomplit réellement sa tâche — pas la qualité d'une réponse isolée, mais une trajectoire entière d'étapes, d'appels d'outils et de…
+- [[Ce qui change derrière une API]] · notion · `LLM & IA générative/Évaluation/Ce qui change derrière une API.md` — Quand un modèle servi par API « paraît moins bon » quelques semaines après sa sortie, les preuves publiques ne montrent pas d'échange de poids.
 - [[Code and math benchmarks]] · notion · `LLM & IA générative/Évaluation/Code and math benchmarks.md` — Sous-famille des LLM benchmarks où la réponse est vérifiable mécaniquement : on exécute le code ou on vérifie le résultat numérique.
+- [[Lire un score publié]] · notion · `LLM & IA générative/Évaluation/Lire un score publié.md` — Un score publié (« 46 sur l'indice », « premier open weights », « 99,6 % ») est un relevé, pas une propriété du modèle : il dépend de la version de l'indice…
 - [[LLM benchmarks]] · notion · `LLM & IA générative/Évaluation/LLM benchmarks.md` — Un benchmark = un jeu de tâches standardisé + une métrique agrégée, qui permet de comparer des modèles sur une base commune.
 - [[LLM eval metrics]] · notion · `LLM & IA générative/Évaluation/LLM eval metrics.md` — Évaluer un LLM est dur : la sortie est ouverte (plusieurs réponses correctes, aucun gold unique) et la qualité est multi-dimensionnelle (exactitude…
 - [[LLM-as-judge]] · notion · `LLM & IA générative/Évaluation/LLM-as-judge.md` — Utiliser un LLM (souvent fort) pour noter la sortie d'un autre, selon des critères en langage naturel.

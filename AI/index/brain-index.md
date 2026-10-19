@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1208 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1218 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -446,8 +446,10 @@
 - **OpenViking** — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
 ### llm/modele
+- **DeepSeek-V4.1-Flash** — Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU.
 - **Gemma** — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.
 - **gpt-oss** — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.
+- **MiMo-V2.6** — Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU.
 - **Mistral** — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.
 - **Qwen** — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.
 
@@ -556,6 +558,9 @@
 - **pykan** — Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.
 - **PyTorch** — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
 - **PyTorch Lightning** — Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.
+- **Qwen-Image** — Modèle de génération et d'édition d'images d'Alibaba (Apache-2.0, 20 B) — texte vers image avec un rendu de texte soigné, anglais et chinois, 1328 × 1328 en carré ; la base livrable de la lignée Qwen-Image, avant la 2.1 sous licence de recherche.
+- **Qwen-Image-2.1** — Modèle d'image d'Alibaba sous licence de recherche non commerciale (qwen-research) — texte vers image, édition jusqu'à 10 références et canal alpha natif en un seul checkpoint de 7 B (16,6 B pour la chaîne complète) ; recherche et évaluation seulement, jamais de livraison à un client.
+- **Qwen-Image-Layered** — Modèle d'Alibaba qui décompose une image en couches RGBA éditables (Apache-2.0, 20 B) — chaque couche se redimensionne, se déplace ou se recolore sans toucher aux autres ; la voie livrable vers la transparence.
 - **TensorFlow** — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 
 ### ml/embeddings
@@ -933,7 +938,9 @@
 
 ### llm/eval
 - **Agent evaluation** — domaines : ai-eng · alias : évaluation d'agents, agent evaluation, agent eval
+- **Ce qui change derrière une API** — domaines : ai-eng, mlops · alias : modèle nerfé, nerfed, dérive de service, molettes de service, variation de service, variation de mesure, identifiant épinglé, pinned version, drift d'un LLM en API
 - **Code and math benchmarks** — domaines : ai-eng, ml-eng · alias : benchmarks code, benchmarks maths, HumanEval, MBPP, SWE-bench, GSM8K, MATH, AIME, pass@k, éval par exécution
+- **Lire un score publié** — domaines : ai-eng, ml-eng · alias : lire un benchmark, score de vitrine, indice composite, version d'indice, banc saturé, score publié, lire un classement de modèles
 - **LLM benchmarks** — domaines : ai-eng, ml-eng · alias : bancs d'essai LLM, benchmarks LLM, leaderboard, MMLU, GPQA, BBH, IFEval, MT-Bench, Chatbot Arena, LMArena, HELM
 - **LLM eval metrics** — domaines : ai-eng · alias : métriques d'évaluation LLM, évaluation LLM, LLM evaluation, exact match, BLEU, ROUGE, BERTScore, pass@k, G-Eval, offline eval
 - **LLM-as-judge** — domaines : ai-eng · alias : LLM as a judge, LLM juge, LLM évaluateur, G-Eval, pairwise comparison, reference-free evaluation, MT-Bench
@@ -957,6 +964,7 @@
 ### llm/modele
 - **Contexte long** — domaines : ai-eng, ml-eng · alias : fenêtre de contexte, longueur de contexte, long context, context window, contexte étendu, lost in the middle, needle in a haystack, NIAH, RULER, longueur effective, context rot, extension de contexte, RoPE scaling, YaRN, interpolation de positions
 - **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
+- **Effort de raisonnement et courbe coût-qualité** — domaines : ai-eng · alias : effort de raisonnement, reasoning effort, thinkingLevel, réglage d'effort, low medium high xhigh max, budget de réflexion, courbe coût-qualité
 - **Hallucinations des LLM** — domaines : ai-eng · alias : hallucination, hallucinations, confabulation, confabulations, factualité, fidélité au contexte, faithfulness hallucination, factuality hallucination, SelfCheckGPT, FActScore, entropie sémantique
 - **Licences de modèles open weights** — domaines : ai-eng, ml-eng · alias : open weights, poids ouverts, licences de modèles, licence d'un modèle de langage, open-weight licensing, Llama Community License, open washing
 - **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
@@ -967,7 +975,11 @@
 - **Vision Language Models** — domaines : ml-eng, ai-eng · alias : VLM, vision-language models, modèles vision-langage, multimodal LLM, MLLM, image-text
 
 ### llm/observabilite
+- **Canari de dérive d'un LLM en API** — domaines : ai-eng, mlops · alias : canari LLM, canary prompts, jeu de prompts figé, détection de dérive d'un modèle servi, bande de bruit, témoin à poids ouverts
 - **LLM observability** — domaines : ai-eng, mlops · alias : observabilité LLM, observabilité des apps LLM, tracing LLM, online eval, monitoring LLM, traces, spans, coûts tokens
+
+### llm/outillage
+- **Tarif catalogue contre coût par tâche** — domaines : ai-eng · alias : prix par million de tokens, coût par tâche, coût par tâche accomplie, cost per task, tarif catalogue, prix au token, coût réel d'un LLM
 
 ### llm/passerelle
 - **LLM caching** — domaines : ai-eng · alias : response caching, cache de réponses LLM, semantic cache, cache sémantique, exact-match cache, GPTCache

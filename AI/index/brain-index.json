@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1208,
+  "count": 1218,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -382,20 +382,24 @@
     ],
     "benchmark": [
       "Anomalies multivariées par apprentissage profond",
+      "Ce qui change derrière une API",
       "Choisir un modèle d'embedding",
       "Code and math benchmarks",
       "Comparatif - Détection d'anomalies en séries temporelles",
       "Diagnostic de défauts de roulements",
+      "Effort de raisonnement et courbe coût-qualité",
       "Foundation models et anomalies de séries",
       "Inspect AI",
       "Jeux de données PHM",
       "Jeux de données d'anomalies",
       "LLM benchmarks",
+      "Lire un score publié",
       "Merlion",
       "OCR classique vs modèles vision-langage pour documents",
       "Orion",
       "RAG benchmarks",
       "TSB-AD",
+      "Tarif catalogue contre coût par tâche",
       "Text-to-SQL",
       "evaluate",
       "llmfit",
@@ -1221,6 +1225,9 @@
     "diffusion": [
       "Diffusion models",
       "Image generation",
+      "Qwen-Image",
+      "Qwen-Image-2.1",
+      "Qwen-Image-Layered",
       "Video generation"
     ],
     "digital-filter": [
@@ -1670,6 +1677,9 @@
       "Diffusion models",
       "GANs",
       "Image generation",
+      "Qwen-Image",
+      "Qwen-Image-2.1",
+      "Qwen-Image-Layered",
       "SDV",
       "Video generation"
     ],
@@ -1867,7 +1877,10 @@
     ],
     "image-generation": [
       "GANs",
-      "Image generation"
+      "Image generation",
+      "Qwen-Image",
+      "Qwen-Image-2.1",
+      "Qwen-Image-Layered"
     ],
     "imitation-learning": [
       "Apprentissage par renforcement",
@@ -1938,6 +1951,7 @@
       "Attention linéaire",
       "Calculs adaptatifs",
       "Contexte long",
+      "Effort de raisonnement et courbe coût-qualité",
       "Flash Attention and efficient attention",
       "Inference optimization",
       "Multi-Token Prediction",
@@ -1950,6 +1964,7 @@
       "Serving",
       "Speculative decoding",
       "State Space Models",
+      "Tarif catalogue contre coût par tâche",
       "TensorRT",
       "prompt-caching"
     ],
@@ -2189,6 +2204,8 @@
       "Architecture deep agent",
       "AutoGen",
       "Axolotl",
+      "Canari de dérive d'un LLM en API",
+      "Ce qui change derrière une API",
       "Chain-of-Thought",
       "Claude Agent SDK",
       "Cline",
@@ -2207,8 +2224,10 @@
       "Deep Agents",
       "Deep research",
       "DeepEval",
+      "DeepSeek-V4.1-Flash",
       "Dify",
       "E2B",
+      "Effort de raisonnement et courbe coût-qualité",
       "Flowise",
       "Fusion de modèles",
       "GRPO",
@@ -2251,10 +2270,12 @@
       "Letta",
       "LibreChat",
       "Licences de modèles open weights",
+      "Lire un score publié",
       "LiteLLM",
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
+      "MiMo-V2.6",
       "Mistral",
       "Modal",
       "Modèles de langage",
@@ -2316,6 +2337,7 @@
       "Synthetic data generation",
       "TGI",
       "TRL",
+      "Tarif catalogue contre coût par tâche",
       "TensorRT-LLM",
       "Text-to-SQL",
       "Tokenization",
@@ -2357,6 +2379,8 @@
     "llm-eval": [
       "ARES",
       "Agent evaluation",
+      "Canari de dérive d'un LLM en API",
+      "Ce qui change derrière une API",
       "Code and math benchmarks",
       "Comparatif - Évaluation LLM",
       "DeepEval",
@@ -2368,6 +2392,7 @@
       "LLM-as-judge",
       "LangSmith",
       "Langfuse",
+      "Lire un score publié",
       "Phoenix Arize",
       "Prometheus-Eval",
       "RAG benchmarks",
@@ -2388,6 +2413,7 @@
       "Passerelles"
     ],
     "llm-observability": [
+      "Canari de dérive d'un LLM en API",
       "Comparatif - Observabilité LLM",
       "Helicone",
       "LLM & IA générative",
@@ -2411,6 +2437,7 @@
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
+      "DeepSeek-V4.1-Flash",
       "Gemma",
       "Goose",
       "Graphiti",
@@ -2421,6 +2448,7 @@
       "Licences de modèles open weights",
       "Llama Guard",
       "Mem0",
+      "MiMo-V2.6",
       "Mistral",
       "Ollama",
       "Open WebUI",
@@ -2693,6 +2721,7 @@
     ],
     "model-evaluation": [
       "Calibration",
+      "Ce qui change derrière une API",
       "Classification metrics",
       "Clustering evaluation",
       "Comparatif - Explicabilité",
@@ -2705,6 +2734,7 @@
       "Interprétabilité",
       "LLM benchmarks",
       "LLM eval metrics",
+      "Lire un score publié",
       "Machine Learning",
       "Monitoring de modèles",
       "Métriques vision",
@@ -2732,6 +2762,7 @@
       "timm"
     ],
     "model-monitoring": [
+      "Canari de dérive d'un LLM en API",
       "Comparatif - Monitoring de modèles",
       "Data drift",
       "DataRobot",
@@ -2846,6 +2877,9 @@
       "LanceDB",
       "Marqo",
       "Médias",
+      "Qwen-Image",
+      "Qwen-Image-2.1",
+      "Qwen-Image-Layered",
       "RAG visuel - retrouver des documents sans OCR",
       "Speech models",
       "Superwhisper",
@@ -3540,8 +3574,11 @@
       "Calculs adaptatifs",
       "Chain-of-Thought",
       "Code and math benchmarks",
+      "DeepSeek-V4.1-Flash",
+      "Effort de raisonnement et courbe coût-qualité",
       "GRPO",
       "Gemma",
+      "MiMo-V2.6",
       "Mistral",
       "Modèles de langage",
       "Qwen",
@@ -3778,7 +3815,8 @@
       "OmniRoute",
       "OpenRouter",
       "Passerelles",
-      "Routing and cascading"
+      "Routing and cascading",
+      "Tarif catalogue contre coût par tâche"
     ],
     "rul": [
       "Indicateurs de santé",
@@ -4494,6 +4532,7 @@
       "Claude Agent SDK",
       "CrewAI",
       "Deep Agents",
+      "DeepSeek-V4.1-Flash",
       "Gemma",
       "Goose",
       "Harnais d'agent",
@@ -4503,6 +4542,7 @@
       "LangGraph",
       "Letta",
       "Maka",
+      "MiMo-V2.6",
       "Mistral",
       "OpenAI Agents SDK",
       "OpenClaw",
@@ -4750,6 +4790,7 @@
       "AnomalyCLIP",
       "ColPali",
       "Gemma",
+      "MiMo-V2.6",
       "MinerU",
       "Mistral",
       "Modèles de fondation vision",
@@ -15716,6 +15757,66 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/DeepSeek-V4.1-Flash.md",
+      "nom": "DeepSeek-V4.1-Flash",
+      "alias": [
+        "DeepSeek V4.1 Flash",
+        "deepseek-flash",
+        "DeepSeek-V4.1",
+        "DeepSeek Flash",
+        "CSA2"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use"
+      ],
+      "alternatives": [
+        "[[gpt-oss]]",
+        "[[Qwen]]",
+        "[[MiMo-V2.6]]"
+      ],
+      "complements": null,
+      "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Effort de raisonnement et courbe coût-qualité.md",
+      "nom": "Effort de raisonnement et courbe coût-qualité",
+      "alias": [
+        "effort de raisonnement",
+        "reasoning effort",
+        "thinkingLevel",
+        "réglage d'effort",
+        "low medium high xhigh max",
+        "budget de réflexion",
+        "courbe coût-qualité"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reasoning",
+        "llm",
+        "inference-optimization",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Modèles de langage/Gemma.md",
       "nom": "Gemma",
       "alias": [
@@ -15816,6 +15917,37 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/MiMo-V2.6.md",
+      "nom": "MiMo-V2.6",
+      "alias": [
+        "MiMo-V2.6-Pro",
+        "MiMo-V2.6-Flash",
+        "MiMo-V2.6-Pro-RL",
+        "MiMo-V2.6-Flash-RL",
+        "Xiaomi MiMo",
+        "MiMo V2.6"
+      ],
+      "role": "brique",
+      "categorie": "llm/modele",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU.",
+      "tags": [
+        "llm",
+        "local-llm",
+        "reasoning",
+        "tool-use",
+        "vision-language"
+      ],
+      "alternatives": [
+        "[[DeepSeek-V4.1-Flash]]",
+        "[[Qwen]]"
+      ],
+      "complements": null,
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Modèles de langage/Mistral.md",
@@ -15932,7 +16064,9 @@
       "alternatives": [
         "[[Mistral]]",
         "[[Gemma]]",
-        "[[gpt-oss]]"
+        "[[gpt-oss]]",
+        "[[DeepSeek-V4.1-Flash]]",
+        "[[MiMo-V2.6]]"
       ],
       "complements": [
         "[[vLLM]]",
@@ -16114,7 +16248,8 @@
       "alternatives": [
         "[[Qwen]]",
         "[[Mistral]]",
-        "[[Gemma]]"
+        "[[Gemma]]",
+        "[[DeepSeek-V4.1-Flash]]"
       ],
       "complements": [
         "[[vLLM]]",
@@ -16381,6 +16516,36 @@
       ],
       "complements": [],
       "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Observabilité des LLM/Canari de dérive d'un LLM en API.md",
+      "nom": "Canari de dérive d'un LLM en API",
+      "alias": [
+        "canari LLM",
+        "canary prompts",
+        "jeu de prompts figé",
+        "détection de dérive d'un modèle servi",
+        "bande de bruit",
+        "témoin à poids ouverts"
+      ],
+      "role": "notion",
+      "categorie": "llm/observabilite",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm-observability",
+        "model-monitoring",
+        "llm-eval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Observabilité des LLM/Comparatif - Observabilité LLM.md",
@@ -18131,6 +18296,36 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Tarif catalogue contre coût par tâche.md",
+      "nom": "Tarif catalogue contre coût par tâche",
+      "alias": [
+        "prix par million de tokens",
+        "coût par tâche",
+        "coût par tâche accomplie",
+        "cost per task",
+        "tarif catalogue",
+        "prix au token",
+        "coût réel d'un LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/outillage",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "benchmark",
+        "routing",
+        "inference-optimization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Text-to-SQL/Comparatif - Frameworks text-to-SQL.md",
       "nom": "Comparatif - Frameworks text-to-SQL",
       "alias": null,
@@ -18541,6 +18736,39 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Évaluation/Ce qui change derrière une API.md",
+      "nom": "Ce qui change derrière une API",
+      "alias": [
+        "modèle nerfé",
+        "nerfed",
+        "dérive de service",
+        "molettes de service",
+        "variation de service",
+        "variation de mesure",
+        "identifiant épinglé",
+        "pinned version",
+        "drift d'un LLM en API"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "llm-eval",
+        "model-evaluation",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Évaluation/Code and math benchmarks.md",
       "nom": "Code and math benchmarks",
       "alias": [
@@ -18743,6 +18971,37 @@
       "tags": [
         "llm-as-judge",
         "llm-eval",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Évaluation/Lire un score publié.md",
+      "nom": "Lire un score publié",
+      "alias": [
+        "lire un benchmark",
+        "score de vitrine",
+        "indice composite",
+        "version d'indice",
+        "banc saturé",
+        "score publié",
+        "lire un classement de modèles"
+      ],
+      "role": "notion",
+      "categorie": "llm/eval",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "benchmark",
+        "llm-eval",
+        "model-evaluation",
         "llm"
       ],
       "alternatives": null,
@@ -20855,6 +21114,90 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Qwen-Image-2.1.md",
+      "nom": "Qwen-Image-2.1",
+      "alias": [
+        "Qwen Image 2.1",
+        "Qwen/Qwen-Image-2.1",
+        "QwenImage21Pipeline",
+        "qwen-research"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle d'image d'Alibaba sous licence de recherche non commerciale (qwen-research) — texte vers image, édition jusqu'à 10 références et canal alpha natif en un seul checkpoint de 7 B (16,6 B pour la chaîne complète) ; recherche et évaluation seulement, jamais de livraison à un client.",
+      "tags": [
+        "generative-model",
+        "image-generation",
+        "diffusion",
+        "multimodal"
+      ],
+      "alternatives": [
+        "[[Qwen-Image]]",
+        "[[Qwen-Image-Layered]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Qwen-Image-Layered.md",
+      "nom": "Qwen-Image-Layered",
+      "alias": [
+        "Qwen Image Layered",
+        "Qwen/Qwen-Image-Layered",
+        "QwenImageLayeredPipeline"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle d'Alibaba qui décompose une image en couches RGBA éditables (Apache-2.0, 20 B) — chaque couche se redimensionne, se déplace ou se recolore sans toucher aux autres ; la voie livrable vers la transparence.",
+      "tags": [
+        "generative-model",
+        "image-generation",
+        "diffusion",
+        "multimodal"
+      ],
+      "alternatives": [
+        "[[Qwen-Image-2.1]]"
+      ],
+      "complements": [
+        "[[Qwen-Image]]"
+      ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Apprentissage profond/Qwen-Image.md",
+      "nom": "Qwen-Image",
+      "alias": [
+        "Qwen Image",
+        "Qwen/Qwen-Image",
+        "Qwen-Image 20B"
+      ],
+      "role": "brique",
+      "categorie": "ml/apprentissage-profond",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle de génération et d'édition d'images d'Alibaba (Apache-2.0, 20 B) — texte vers image avec un rendu de texte soigné, anglais et chinois, 1328 × 1328 en carré ; la base livrable de la lignée Qwen-Image, avant la 2.1 sous licence de recherche.",
+      "tags": [
+        "generative-model",
+        "image-generation",
+        "diffusion",
+        "multimodal"
+      ],
+      "alternatives": [
+        "[[Qwen-Image-2.1]]"
+      ],
+      "complements": [
+        "[[Qwen-Image-Layered]]"
+      ],
+      "maturite": "production"
     },
     {
       "path": "Machine Learning/Apprentissage profond/Rétropropagation et différentiation automatique.md",
