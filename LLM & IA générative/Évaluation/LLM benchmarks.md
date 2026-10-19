@@ -50,6 +50,7 @@ tags: [benchmark, llm-eval, model-evaluation, llm]
 - [[Reasoning models]] — évalués sur les benchmarks de raisonnement les plus durs (GPQA, AIME).
 - [[Scaling laws]] — les benchmarks mesurent ce que l'échelle fait gagner.
 - [[Perplexity]] — métrique intrinsèque, hors benchmark de tâche.
+- [[Mesurer une latence]] — lire un chiffre de latence : matériel, protocole, médiane et queue.
 
 ## Pour aller plus loin
 
