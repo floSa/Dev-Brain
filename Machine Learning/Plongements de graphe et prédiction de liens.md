@@ -66,6 +66,7 @@ flowchart LR
 - [[embeddings]] et [[Apprentissage contrastif]] — même idée : rapprocher les vrais, éloigner les faux, avec des négatifs fabriqués.
 - [[OWL et raisonnement]] — **déduire** des faits avec certitude à partir d'axiomes ; le plongement **induit** des faits plausibles à partir de régularités. Les deux se complètent.
 - **Alternative** : des règles de fouille (« si A est lié à B par r1 et B à C par r2, alors A est lié à C par r3 ») : moins générales, mais lisibles et justifiables.
+- **Outil** : [[PyKEEN]] entraîne et compare des plongements de graphe de connaissances en Python.
 
 ## Pour aller plus loin
 
