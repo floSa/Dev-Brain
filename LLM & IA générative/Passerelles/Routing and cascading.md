@@ -52,6 +52,7 @@ tags: [routing, llm, rag]
 - [[RAG eval]] — pour valider que le routeur dirige bien et que la cascade ne dégrade pas.
 - [[LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
 - Passerelles qui l'implémentent : [[OmniRoute]] (bascule sur quota épuisé), [[LiteLLM]], [[OpenRouter]].
+- [[Tarif catalogue contre coût par tâche]] — ce qu'une cascade économise réellement : le coût par tâche, pas le prix au token.
 
 ## Pour aller plus loin
 

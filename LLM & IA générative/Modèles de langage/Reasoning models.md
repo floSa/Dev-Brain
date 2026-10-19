@@ -51,6 +51,7 @@ tags: [reasoning, llm, alignment]
 - [[GRPO]], [[RL for LLMs]], [[Reward modeling]] — la mécanique d'entraînement détaillée.
 - Servir ces modèles : [[vLLM]], [[SGLang]] (débit sur longues sorties).
 - Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[gpt-oss]], [[Qwen]], [[Mistral]].
+- [[Effort de raisonnement et courbe coût-qualité]] — le réglage d'effort et ce que chaque cran rapporte, chiffres à l'appui.
 
 ## Pour aller plus loin
 

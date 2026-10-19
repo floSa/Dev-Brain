@@ -49,6 +49,7 @@ tags: [llm-observability, tracing, llm]
 - [[agent-loops]] — le tracing par span est ce qui rend un agent débogable.
 - [[prompt-caching]] — le cache hit est un signal clé de coût.
 - [[Tool use patterns]] — chaque appel d'outil devient un span observable.
+- [[Canari de dérive d'un LLM en API]] — rejouer un jeu figé pour détecter un changement de service ; [[Ce qui change derrière une API]] liste ce qui peut avoir bougé.
 
 ## Pour aller plus loin
 
