@@ -61,6 +61,8 @@ tags: [llm, local-llm, self-hosted]
 ## Approches voisines & alternatives
 
 - [[Qwen]] · [[Mistral]] · [[Gemma]] · [[gpt-oss]] — les quatre familles, avec leur licence lue dépôt par dépôt.
+- [[DeepSeek-V4.1-Flash]] · [[MiMo-V2.6]] — deux familles sous MIT, lues le 2026-10-20 : fichier `LICENSE` pour la première, champ de carte sans fichier pour la seconde.
+- [[Qwen-Image-2.1]] — une licence de recherche (`qwen-research`) dans une lignée restée sous Apache-2.0 ([[Qwen-Image]], [[Qwen-Image-Layered]]).
 - [[Comparatif - Modèles de langage open weights]] — ce que chaque licence permet à une ESN, famille par famille.
 - [[Small Language Models]] — les modèles compacts exploitables en local, sans les répéter ici.
 - [[Fine-tuning]] — ce qui produit un dérivé, donc ce qui déclenche la clause de dérivé ; [[LoRA et QLoRA]] pour l'adaptateur.

@@ -50,6 +50,7 @@ tags: [benchmark, llm-eval, model-evaluation, llm]
 - [[Reasoning models]] — évalués sur les benchmarks de raisonnement les plus durs (GPQA, AIME).
 - [[Scaling laws]] — les benchmarks mesurent ce que l'échelle fait gagner.
 - [[Perplexity]] — métrique intrinsèque, hors benchmark de tâche.
+- [[Lire un score publié]] — la grille de lecture d'un score : version de l'indice, qui l'a exécuté, banc saturé, incertitude.
 
 ## Pour aller plus loin
 

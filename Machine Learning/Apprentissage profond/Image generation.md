@@ -46,6 +46,7 @@ tags: [generative-model, image-generation, diffusion, multimodal]
 - [[Vision Language Models]] — voie inverse (image → texte, *comprendre*) vs ici (texte → image, *générer*) ; réunies dans les modèles « omni ».
 - [[GANs]] — l'approche générative **historique** (jeu adversarial), supplantée par la diffusion mais encore utile en super-résolution et génération rapide.
 - [[PEFT]] — LoRA adapte un générateur à un style/sujet sans tout réentraîner.
+- [[Qwen-Image]] · [[Qwen-Image-Layered]] · [[Qwen-Image-2.1]] — une lignée open-weight : base Apache-2.0, décomposition en couches RGBA, et version à canal alpha natif sous licence de recherche.
 - [[Vision par ordinateur]] — la synthèse d'images est le **versant génératif** de la vision.
 
 ## Pour aller plus loin
