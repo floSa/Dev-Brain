@@ -44,6 +44,7 @@ on-prem industriel, ESN.
 16. **Mentions.** Un service payant, cloud seulement ou fermé peut être cité en **texte simple**, sans lien `[[...]]` et sans page, quand c'est utile (un client l'utilise, il a fermé, il sert de comparaison). Jamais en brique.
 
 17. **Nature affichée (règle de floSa, 2026-10-07).** La première phrase de chaque brique dit ce que c'est, en mots simples : agent, skill, jeu de skills, serveur MCP, outil en ligne de commande, application à héberger, plugin, bibliothèque, format. Les alternatives payantes (Jira, Linear, Notion…) se citent en texte simple dans la section Alternatives, sans page.
+18. **Fin de lot : une seule branche, main, tout poussé (règle de floSa, 2026-10-16).** Ne pousse jamais une autre branche que `main` (`git push origin HEAD:main`). Le contrôle `.githooks/pre-push` refuse le reste. Avant ta synthèse, lance `bash AI/scripts/verifier_depot.sh` : il doit afficher « GitHub : main seule » et « main local = origin/main », sans ligne PROBLÈME. Cite ces deux lignes dans ta synthèse. Un seul PROBLÈME : corrige avant de rendre la main.
 
 ## Vagues
 
@@ -64,6 +65,9 @@ on-prem industriel, ESN.
 | 13 | Lot 23 | Lot 19 clos |
 | 14 | Lots 24, 25 (en parallèle) | Lots 1 à 23 clos et poussés |
 | 15 | Lot 27 | Skill `planifier-projet` réécrit et poussé |
+| 16 | Lot 28 | Lots 1 à 27 clos et poussés |
+| 17 | Lot 29 | Lot 28 clos et poussé (il crée la valeur de catégorie) |
+| 18 | Lot 30 | Lots 28 et 29 clos et poussés |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -401,6 +405,52 @@ Contraintes de forme :
 - Mets à jour le hub `Rules` par la régénération habituelle. Ne touche pas aux règles existantes, sauf pour y ajouter un lien.
 - Recompte `Home.md` et `CLAUDE.md` avec `audit_inventaire.py`.
 
+## Lot 28 — Ontologies, RDF et graphes de connaissances : les notions (vague 16)
+
+floSa a demandé : ontologie, graphe de connaissances, triplets RDF, et les sujets voisins. Aujourd'hui le brain ne couvre que le graphe de propriétés ([[Bases graphe — modèles et langages de requête]], qui consacre un paragraphe à RDF) et la **fabrication** d'un graphe par LLM ([[Construction de graphes de connaissances]], où la définition tient en deux lignes). Aucune page n'explique ce qu'est un graphe de connaissances, ni l'ontologie, ni RDF, ni SPARQL, ni OWL, ni SHACL. floSa veut que tout soit **regroupé** : qu'il retrouve le sujet d'un coup d'œil, sans se perdre.
+
+**Première étape, à pousser tout de suite : le vocabulaire.** Par la procédure « nouvelle valeur de catégorie » d'`enrichir-brain` (brain.yml, taxonomie.md, tags, même commit), crée la valeur `database/rdf`, libellé « Ontologies et RDF », et pousse ce commit **avant** d'écrire les pages (le lot 29 en dépend). Les notions RDF, SPARQL, OWL, SHACL, ontologie et données liées y vont. Les autres suivent la taxonomie : plongements de graphe sous `ml/graphe`, liage d'entités sous `ml/nlp`, interrogation en langage naturel sous `llm/text-to-sql`. Si l'arbre de décision de `taxonomie.md` donne autre chose, suis-le et dis-le dans ta synthèse. Le sous-dossier « Ontologies et RDF » apparaît à 5 pages : fais la promotion proprement (`cloturer-brain`).
+
+**Onze notions** (`role: notion`, gabarit `Templates/Concept-Wiki.md`, schéma Mermaid quand il aide, exemple d'usine ou de capteur quand c'est possible). Explique en mots simples, première phrase = ce que c'est :
+
+1. **Graphe de connaissances** — la page d'entrée. Ce que c'est, ce que ça apporte, les deux modèles (graphe de propriétés, RDF), et une **carte** : un lien vers chacune des autres pages, vers les bases de graphes, GraphRAG, la mémoire des agents. C'est la page qui évite de se perdre.
+2. **Ontologie** — décrire les types de choses et leurs relations d'un domaine ; différence avec taxonomie, vocabulaire, schéma de base de données.
+3. **RDF et triplets** — sujet, prédicat, objet ; IRI ; graphes nommés ; Turtle, N-Triples, JSON-LD.
+4. **SPARQL** — interroger un graphe RDF ; chemins de propriétés ; comparaison avec Cypher et SQL.
+5. **OWL et raisonnement** — déduire des faits non écrits ; monde ouvert contre monde fermé ; raisonneurs.
+6. **SHACL** — valider qu'un graphe respecte ses règles ; SHACL contre OWL.
+7. **Données liées et vocabulaires partagés** — Linked Data, schema.org, SKOS, Wikidata : réutiliser plutôt que réinventer.
+8. **Plongements de graphe et prédiction de liens** — TransE et famille ; à quoi ça sert.
+9. **Liage d'entités** — reconnaître que deux noms désignent la même chose ; différence avec la résolution d'entités déjà décrite dans « Construction de graphes de connaissances ».
+10. **Interroger un graphe en langage naturel** — texte vers Cypher ou SPARQL ; pièges.
+11. **Ontologies industrielles** — capteurs, machines, jumeau numérique ; ce que sont SOSA/SSN, ISA-95, la coque d'administration d'actif (Asset Administration Shell) ; lien avec la maintenance prédictive du brain. **Vérifie chaque affirmation à la source** : ces standards évoluent.
+
+Appuie-toi sur Internet pour les faits (normes W3C, versions, usages) et cite tes sources dans la section « Pour aller plus loin ». Les pages existantes `role: notion` ne se modifient pas ; ajoute les liens **vers** tes nouvelles pages par la procédure habituelle de liens (ajout de lien seul autorisé) dans « Bases graphe — modèles et langages de requête », « Construction de graphes de connaissances » et « GraphRAG ». Recompte `Home.md` et `CLAUDE.md` avec `audit_inventaire.py`.
+
+## Lot 29 — Ontologies et RDF : les outils et les comparatifs (vague 17)
+
+Règle 15 corrigée : gratuit, déployable sur site. **Cherche sur Internet** les moteurs et outils RDF actuels, vérifie chaque licence et l'activité du dépôt **à la source**, et complète la liste ci-dessous si tu trouves mieux. Licence introuvable, outil abandonné ou payant : texte simple dans le comparatif, pas de page. Catégorie : `database/rdf` (créée par le lot 28). Première phrase de chaque fiche : ce que c'est, en mots simples (règle 17).
+
+Candidats à vérifier, avec leurs adresses probables à confirmer :
+
+- **Moteurs et bases RDF** : Apache Jena et Fuseki, Oxigraph, RDF4J, QLever, Virtuoso Open Source. À examiner aussi : TerminusDB, Blazegraph (probablement abandonné), GraphDB et Stardog et AllegroGraph (probablement payants : texte simple).
+- **Bibliothèques et outils** : rdflib, pySHACL, Owlready2, LinkML, Ontop (graphe RDF virtuel au-dessus de bases SQL), Protégé (éditeur d'ontologies), PyKEEN (plongements de graphe, `ml/graphe`).
+- **Passerelles** : neosemantics (n10s, RDF dans Neo4j) si la licence le permet.
+
+Livrables :
+
+- Une fiche par outil retenu.
+- **Comparatif - Moteurs RDF** (`.md` + `.base`) : modèle, langage de requête, raisonnement, validation SHACL, mono-nœud ou cluster, licence, entretien.
+- **Comparatif - Outils RDF et OWL en Python** (`.md` + `.base`).
+- Relie les moteurs RDF au comparatif existant « Comparatif - Bases graphes » et à la notion « Bases graphe — modèles et langages de requête » (lien seul).
+- Recompte `Home.md` et `CLAUDE.md` avec `audit_inventaire.py`.
+
+## Lot 30 — Ontologies et RDF : pattern et câblage (vague 18)
+
+- **Pattern - Graphe de connaissances industriel sur site** : ontologie + RDF + SHACL + SPARQL + interrogation par LLM, pour la maintenance prédictive et l'usine. Schéma Mermaid. Relie-le aux notions du lot 28, aux outils du lot 29, au pattern « Pipeline de maintenance prédictive on-prem » et à « Pattern - RAG structuré graphe + human-in-the-loop ».
+- **Câblage final** : le hub « Ontologies et RDF » et les hubs voisins (Bases de graphes, Mémoire des agents, RAG & retrieval) renvoient vers la section. Vérifie que la page « Graphe de connaissances » (lot 28) est bien le point d'entrée : chaque autre page y est citée.
+- **Balayage** : liens morts, pages orphelines, comptes de `Home.md` et `CLAUDE.md`.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -429,3 +479,6 @@ Contraintes de forme :
 - [x] Lot 24 — outils manquants
 - [x] Lot 25 — notions voisines et pages fermées déjà au brain
 - [x] Lot 27 — kits de bonnes pratiques de démarrage
+- [ ] Lot 28 — ontologies, RDF et graphes de connaissances : les notions
+- [ ] Lot 29 — ontologies et RDF : les outils et les comparatifs
+- [ ] Lot 30 — ontologies et RDF : pattern et câblage
