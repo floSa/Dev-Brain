@@ -42,3 +42,4 @@ L'extraction d'entités et de relations (NER + relation extraction) se fait hors
 - Services : [[Neo4j]], [[LangGraph]], [[LangChain]], [[Qdrant]], [[sentence-transformers]]
 - Concepts : [[GraphRAG]], [[RAG]], [[Advanced RAG]], [[Construction de graphes de connaissances]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[NER et étiquetage de séquence]]
 - Comparatifs : [[Comparatif - Bases graphes]], [[Comparatif - Frameworks LLM]]
+- Patterns : [[Pattern - Graphe de connaissances industriel sur site]] — le graphe côté RDF (ontologie, SHACL, SPARQL) pour l'usine, avec interrogation par LLM en lecture seule ; [[Graphe de connaissances]] — l'entrée du sujet

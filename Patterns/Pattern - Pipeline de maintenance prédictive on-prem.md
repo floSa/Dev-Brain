@@ -100,4 +100,5 @@ Le comparatif des brokers est [[Comparatif - Brokers MQTT]].
 - [[Maintenance prédictive et RUL]] — la notion qui cadre le sujet
 - [[Pattern - Détection d'anomalies en deux étages]] — règles et SPC d'abord, apprentissage ensuite
 - [[Pattern - Inspection visuelle en ligne de production]] — la même idée côté caméra
+- [[Pattern - Graphe de connaissances industriel sur site]] — relier les mesures, les équipements et les ordres de travail dans un graphe RDF validé, pour interroger la chaîne par ses relations
 - [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]]
