@@ -1,7 +1,7 @@
 # LLM & IA générative — carte (2 sur 2)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 76 pages, chacune avec son chemin et une ligne.
+> 77 pages, chacune avec son chemin et une ligne.
 > Couvre : Observabilité des LLM, Passerelles, RAG & retrieval, Runtimes, Sortie typée, Text-to-SQL, Évaluation.
 
 ## Observabilité des LLM
@@ -74,6 +74,7 @@
 - [[LlamaIndex NLSQLTableQueryEngine]] · brique · `LLM & IA générative/Text-to-SQL/LlamaIndex NLSQLTableQueryEngine.md` — Module text-to-SQL de LlamaIndex : query engine qui introspecte le schéma, fait générer le SQL, l'exécute et synthétise la réponse ; variante…
 - [[Vanna]] · brique · `LLM & IA générative/Text-to-SQL/Vanna.md` — Framework Python text-to-SQL par RAG (MIT) : s'entraîne sur le DDL, la doc et des paires question/SQL, marche avec n'importe quelle base et n'importe quel LLM…
 - [[WrenAI]] · brique · `LLM & IA générative/Text-to-SQL/WrenAI.md` — Plateforme GenBI open-source (Apache-2.0) : text-to-SQL gouverné via une couche sémantique MDL qui encode le modèle métier (entités, relations, métriques…
+- [[Interroger un graphe en langage naturel]] · notion · `LLM & IA générative/Text-to-SQL/Interroger un graphe en langage naturel.md` — Faire écrire par un LLM la requête (Cypher pour un graphe de propriétés, SPARQL pour un graphe RDF) qui répond à une question en langage naturel, l'exécuter…
 - [[Comparatif - Frameworks text-to-SQL]] · comparatif · `LLM & IA générative/Text-to-SQL/Comparatif - Frameworks text-to-SQL.md` — ce sur quoi le modèle raisonne — le schéma physique ou une couche sémantique métier — et sur ce qu'on livre : une brique dans une app Python, ou une UI pour…
 
 ## Évaluation

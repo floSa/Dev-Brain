@@ -30,4 +30,13 @@ tags: [knowledge-graph, rdf, ontology, sparql]
 - Pas de besoin de raisonnement ni d'échange entre systèmes → un graphe de propriétés ([[Bases de graphes]]) ou [[Postgres]] suffit souvent.
 
 <!-- AUTO:START -->
+### Notions
+- [[Données liées et vocabulaires partagés]] — domaines : data-eng, ai-eng
+- [[Graphe de connaissances]] — domaines : data-eng, ai-eng
+- [[Ontologie]] — domaines : data-eng, ai-eng
+- [[Ontologies industrielles]] — domaines : data-eng, ai-eng
+- [[OWL et raisonnement]] — domaines : data-eng, ai-eng
+- [[RDF et triplets]] — domaines : data-eng, ai-eng
+- [[SHACL]] — domaines : data-eng, ai-eng
+- [[SPARQL]] — domaines : data-eng, ai-eng
 <!-- AUTO:END -->

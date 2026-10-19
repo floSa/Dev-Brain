@@ -89,7 +89,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 
 <!-- AUTO:START -->
 ### Sous-domaines
-- [[Administration]] · [[Bases de graphes]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
+- [[Administration]] · [[Bases de graphes]] · [[Ontologies et RDF]] · [[Recherche]] · [[Relationnel]] · [[Vectoriel]]
 
 ### Notions
 - [[Migrations de schéma]] — domaines : data-eng

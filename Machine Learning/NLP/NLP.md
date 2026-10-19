@@ -38,6 +38,7 @@ tags: [nlp, ner, sequence-labeling, text-classification, information-retrieval, 
 - [[BM25]] — domaines : ai-eng, data-sci
 - [[Classification de texte]] — domaines : data-sci, ml-eng
 - [[Fuzzy matching & similarité de chaînes]] — domaines : data-eng, data-sci
+- [[Liage d'entités]] — domaines : ai-eng, data-sci
 - [[NER et étiquetage de séquence]] — domaines : data-sci, ml-eng
 - [[Recherche d'information]] — domaines : ai-eng, data-sci
 - [[TF-IDF]] — domaines : data-sci, ai-eng

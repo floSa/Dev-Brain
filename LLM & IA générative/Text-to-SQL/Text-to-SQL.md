@@ -61,6 +61,9 @@ tags: [text-to-sql, llm, rag, agents, benchmark]
 - Sujets liés : [[RAG]], [[Agent patterns]], [[LLM benchmarks]].
 
 <!-- AUTO:START -->
+### Notions
+- [[Interroger un graphe en langage naturel]] — domaines : ai-eng
+
 ### Briques
 - [[DB-GPT]] — Framework open-source (MIT) d'agents data IA-natifs : text-to-SQL multi-agent avec langage de workflow AWEL, RAG et fine-tuning Text2SQL intégrés ; très complet mais courbe d'apprentissage raide, self-host Python.
 - [[LangChain SQL agent]] — Module text-to-SQL de LangChain : agent qui inspecte le schéma, écrit le SQL, l'exécute et se corrige en boucle (SQLDatabaseToolkit + create_sql_agent, aujourd'hui via LangGraph) ; brique à assembler soi-même, pas un produit clé en main, à privilégier si LangChain est déjà le socle.

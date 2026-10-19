@@ -1,7 +1,7 @@
 # Machine Learning — carte (2 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 98 pages, chacune avec son chemin et une ligne.
+> 99 pages, chacune avec son chemin et une ligne.
 > Couvre : Détection d'anomalies, Embeddings & encodeurs, Interprétabilité, Maintenance prédictive, Monitoring de modèles, NLP.
 
 ## Détection d'anomalies
@@ -108,6 +108,7 @@
 - [[BM25]] · notion · `Machine Learning/NLP/BM25.md` — Fonction de classement (ranking) de référence pour la recherche lexicale : score la pertinence d'un document pour une requête à partir des fréquences de…
 - [[Classification de texte]] · notion · `Machine Learning/NLP/Classification de texte.md` — Assigner une ou plusieurs catégories à un document : sentiment, thème, intention, spam, langue.
 - [[Fuzzy matching & similarité de chaînes]] · notion · `Machine Learning/NLP/Fuzzy matching & similarité de chaînes.md` — Mesurer à quel point deux chaînes se ressemblent malgré fautes, abréviations, variations d'ordre ou de casse — pour rapprocher des libellés qui ne sont pas…
+- [[Liage d'entités]] · notion · `Machine Learning/NLP/Liage d'entités.md` — Le liage d'entités (entity linking) relie une mention dans un texte (« la P101 », « pompe 101 », « P-101 ») à l'entrée unique d'une base de connaissances…
 - [[NER et étiquetage de séquence]] · notion · `Machine Learning/NLP/NER et étiquetage de séquence.md` — NER (reconnaissance d'entités nommées) : repérer et typer les mentions d'un texte — personnes, organisations, lieux, dates, montants.
 - [[Recherche d'information]] · notion · `Machine Learning/NLP/Recherche d'information.md` — Trouver, dans une grande collection, les documents les plus pertinents pour une requête, puis les ordonner.
 - [[TF-IDF]] · notion · `Machine Learning/NLP/TF-IDF.md` — Pondérer chaque terme d'un document par sa fréquence locale (TF) corrigée de sa rareté dans le corpus (IDF) : un mot fréquent dans ce document mais rare…

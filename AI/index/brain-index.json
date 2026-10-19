@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1179,
+  "count": 1191,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1226,6 +1226,7 @@
     ],
     "digital-twin": [
       "Jumeau numérique et modèles hybrides",
+      "Ontologies industrielles",
       "PyBaMM",
       "Santé de batterie (SOH et RUL)"
     ],
@@ -1429,6 +1430,7 @@
       "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex",
+      "Plongements de graphe et prédiction de liens",
       "Qwen3-Embedding",
       "RAG",
       "RAG visuel - retrouver des documents sans OCR",
@@ -1457,6 +1459,9 @@
       "Tabulaire",
       "XGBoost",
       "scikit-survival"
+    ],
+    "entity-linking": [
+      "Liage d'entités"
     ],
     "entropy": [
       "Shannon entropy",
@@ -1740,6 +1745,7 @@
       "Comparatif - Bases graphes",
       "Dgraph",
       "GraphRAG",
+      "Graphe de connaissances",
       "JanusGraph",
       "Memgraph",
       "Nebula Graph",
@@ -1840,6 +1846,7 @@
       "Mosquitto",
       "Node-RED",
       "OEE et rendement global",
+      "Ontologies industrielles",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Telegraf",
@@ -2024,13 +2031,25 @@
       "Bases graphe — modèles et langages de requête",
       "Cognee",
       "Construction de graphes de connaissances",
+      "Données liées et vocabulaires partagés",
       "GraphRAG",
+      "Graphe de connaissances",
       "Graphify",
       "Graphiti",
+      "Interroger un graphe en langage naturel",
+      "Liage d'entités",
       "Mémoire des agents",
+      "OWL et raisonnement",
       "Obsidian",
+      "Ontologie",
+      "Ontologies et RDF",
+      "Ontologies industrielles",
       "Pattern - RAG structuré graphe + human-in-the-loop",
-      "RAG & retrieval"
+      "Plongements de graphe et prédiction de liens",
+      "RAG & retrieval",
+      "RDF et triplets",
+      "SHACL",
+      "SPARQL"
     ],
     "kubernetes": [
       "Argo CD",
@@ -2130,6 +2149,9 @@
       "Pyomo",
       "S&OP et plan directeur de production"
     ],
+    "link-prediction": [
+      "Plongements de graphe et prédiction de liens"
+    ],
     "linter": [
       "Outils de développement",
       "Qualité du code",
@@ -2193,6 +2215,7 @@
       "Instructor",
       "Interprétabilité",
       "Interprétabilité mécaniste",
+      "Interroger un graphe en langage naturel",
       "Jailbreaking and defenses",
       "Kilo Code",
       "LLM & IA générative",
@@ -2833,6 +2856,7 @@
       "Données personnelles et anonymisation pour LLM",
       "GLiNER",
       "Label Studio",
+      "Liage d'entités",
       "NER et étiquetage de séquence",
       "NLP",
       "Presidio",
@@ -2865,6 +2889,7 @@
       "GLiNER",
       "HuggingFace",
       "LLM eval metrics",
+      "Liage d'entités",
       "NER et étiquetage de séquence",
       "NLP",
       "NLTK",
@@ -3015,6 +3040,16 @@
       "Partitionnement & layout de données",
       "Snowflake",
       "Trino"
+    ],
+    "ontology": [
+      "Données liées et vocabulaires partagés",
+      "Graphe de connaissances",
+      "OWL et raisonnement",
+      "Ontologie",
+      "Ontologies et RDF",
+      "Ontologies industrielles",
+      "RDF et triplets",
+      "SHACL"
     ],
     "opc-ua": [
       "Données industrielles",
@@ -3450,6 +3485,16 @@
       "rank-bm25",
       "Évaluation de modèles"
     ],
+    "rdf": [
+      "Données liées et vocabulaires partagés",
+      "Graphe de connaissances",
+      "OWL et raisonnement",
+      "Ontologie",
+      "Ontologies et RDF",
+      "RDF et triplets",
+      "SHACL",
+      "SPARQL"
+    ],
     "re-identification": [
       "Metric learning & ré-identification"
     ],
@@ -3585,6 +3630,7 @@
       "Graph Neural Networks",
       "Metric learning & ré-identification",
       "Modèles de fondation vision",
+      "Plongements de graphe et prédiction de liens",
       "Probing",
       "PyTorch Geometric",
       "embeddings"
@@ -4022,6 +4068,11 @@
       "Small Language Models",
       "needle"
     ],
+    "sparql": [
+      "Interroger un graphe en langage naturel",
+      "Ontologies et RDF",
+      "SPARQL"
+    ],
     "spec-driven": [
       "Agent OS",
       "BMAD - la méthode",
@@ -4290,6 +4341,7 @@
     "text-to-sql": [
       "Comparatif - Frameworks text-to-SQL",
       "DB-GPT",
+      "Interroger un graphe en langage naturel",
       "LangChain SQL agent",
       "LlamaIndex NLSQLTableQueryEngine",
       "Text-to-SQL",
@@ -5844,6 +5896,297 @@
       "tags": [
         "orm",
         "relational"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Données liées et vocabulaires partagés.md",
+      "nom": "Données liées et vocabulaires partagés",
+      "alias": [
+        "Linked Data",
+        "Linked Open Data",
+        "LOD",
+        "données liées",
+        "vocabulaires partagés",
+        "schema.org",
+        "SKOS",
+        "Wikidata",
+        "PROV-O",
+        "réutiliser un vocabulaire",
+        "web sémantique"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rdf",
+        "ontology",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Graphe de connaissances.md",
+      "nom": "Graphe de connaissances",
+      "alias": [
+        "knowledge graph",
+        "KG",
+        "graphe de connaissance",
+        "base de connaissances en graphe",
+        "graphes de connaissances"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "knowledge-graph",
+        "rdf",
+        "ontology",
+        "graph-db"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/OWL et raisonnement.md",
+      "nom": "OWL et raisonnement",
+      "alias": [
+        "OWL",
+        "OWL 2",
+        "Web Ontology Language",
+        "raisonnement",
+        "raisonneur",
+        "reasoner",
+        "inférence",
+        "monde ouvert",
+        "open world assumption",
+        "OWL 2 EL",
+        "OWL 2 QL",
+        "OWL 2 RL",
+        "logique de description"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ontology",
+        "rdf",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Ontologie.md",
+      "nom": "Ontologie",
+      "alias": [
+        "ontology",
+        "ontologies",
+        "ontologie formelle",
+        "ontologie de domaine",
+        "TBox",
+        "ABox"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ontology",
+        "knowledge-graph",
+        "rdf"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Ontologies et RDF.md",
+      "nom": "Ontologies et RDF",
+      "alias": [
+        "ontologies et RDF",
+        "web sémantique",
+        "semantic web",
+        "graphes de connaissances",
+        "knowledge graphs",
+        "RDF",
+        "ontologies",
+        "données liées"
+      ],
+      "role": "hub",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": "Décrire des choses et leurs relations avec un sens partagé — ontologie, triplets RDF, SPARQL, OWL, SHACL, données liées — et tout ce qui s'y rattache, regroupé pour ne pas se perdre.",
+      "tags": [
+        "knowledge-graph",
+        "rdf",
+        "ontology",
+        "sparql"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/Ontologies industrielles.md",
+      "nom": "Ontologies industrielles",
+      "alias": [
+        "ontologies pour l'industrie",
+        "SOSA",
+        "SSN",
+        "SOSA/SSN",
+        "ISA-95",
+        "IEC 62264",
+        "Asset Administration Shell",
+        "AAS",
+        "coque d'administration d'actif",
+        "IOF",
+        "Industrial Ontologies Foundry",
+        "jumeau numérique sémantique",
+        "Industrie 4.0 sémantique"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ontology",
+        "digital-twin",
+        "iiot",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/RDF et triplets.md",
+      "nom": "RDF et triplets",
+      "alias": [
+        "RDF",
+        "Resource Description Framework",
+        "triplet RDF",
+        "triplets",
+        "triple RDF",
+        "Turtle",
+        "N-Triples",
+        "JSON-LD",
+        "graphe nommé",
+        "named graph",
+        "IRI"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rdf",
+        "knowledge-graph",
+        "ontology"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/SHACL.md",
+      "nom": "SHACL",
+      "alias": [
+        "Shapes Constraint Language",
+        "shapes RDF",
+        "validation de graphe RDF",
+        "validation RDF",
+        "node shape",
+        "property shape",
+        "SHACL-SPARQL"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ontology",
+        "rdf",
+        "knowledge-graph"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Bases de données/Ontologies et RDF/SPARQL.md",
+      "nom": "SPARQL",
+      "alias": [
+        "SPARQL 1.1",
+        "langage de requête RDF",
+        "SPARQL endpoint",
+        "point d'accès SPARQL",
+        "chemins de propriétés",
+        "property paths",
+        "SPARQL Update"
+      ],
+      "role": "notion",
+      "categorie": "database/rdf",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "sparql",
+        "rdf",
+        "knowledge-graph"
       ],
       "alternatives": null,
       "complements": null,
@@ -17406,6 +17749,38 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Text-to-SQL/Interroger un graphe en langage naturel.md",
+      "nom": "Interroger un graphe en langage naturel",
+      "alias": [
+        "text-to-SPARQL",
+        "text-to-Cypher",
+        "Text2Cypher",
+        "NL2SPARQL",
+        "NL2Cypher",
+        "question answering sur graphe de connaissances",
+        "KGQA",
+        "interroger un graphe de connaissances avec un LLM",
+        "langage naturel vers graphe"
+      ],
+      "role": "notion",
+      "categorie": "llm/text-to-sql",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "text-to-sql",
+        "knowledge-graph",
+        "sparql",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Text-to-SQL/LangChain SQL agent.md",
       "nom": "LangChain SQL agent",
       "alias": [
@@ -23218,6 +23593,40 @@
       "maturite": "beta"
     },
     {
+      "path": "Machine Learning/NLP/Liage d'entités.md",
+      "nom": "Liage d'entités",
+      "alias": [
+        "entity linking",
+        "liaison d'entités",
+        "désambiguïsation d'entités",
+        "entity disambiguation",
+        "wikification",
+        "entity matching",
+        "appariement d'entités",
+        "record linkage",
+        "rapprochement d'enregistrements",
+        "NIL"
+      ],
+      "role": "notion",
+      "categorie": "ml/nlp",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "entity-linking",
+        "nlp",
+        "knowledge-graph",
+        "ner"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Machine Learning/NLP/NER et étiquetage de séquence.md",
       "nom": "NER et étiquetage de séquence",
       "alias": [
@@ -24353,6 +24762,41 @@
         "[[Streamlit]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Plongements de graphe et prédiction de liens.md",
+      "nom": "Plongements de graphe et prédiction de liens",
+      "alias": [
+        "knowledge graph embedding",
+        "KGE",
+        "plongements de graphe de connaissances",
+        "TransE",
+        "RotatE",
+        "ComplEx",
+        "DistMult",
+        "link prediction",
+        "prédiction de liens",
+        "complétion de graphe de connaissances",
+        "knowledge graph completion"
+      ],
+      "role": "notion",
+      "categorie": "ml/graphe",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "data-sci"
+      ],
+      "pitch": null,
+      "tags": [
+        "link-prediction",
+        "knowledge-graph",
+        "representation-learning",
+        "embeddings"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Machine Learning/PyTorch Geometric.md",

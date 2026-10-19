@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1179 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1191 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -841,6 +841,16 @@
 ### database/orm
 - **ORM** — domaines : data-eng · alias : orm, object-relational mapping, mapping objet-relationnel
 
+### database/rdf
+- **Données liées et vocabulaires partagés** — domaines : data-eng, ai-eng · alias : Linked Data, Linked Open Data, LOD, données liées, vocabulaires partagés, schema.org, SKOS, Wikidata, PROV-O, réutiliser un vocabulaire, web sémantique
+- **Graphe de connaissances** — domaines : data-eng, ai-eng · alias : knowledge graph, KG, graphe de connaissance, base de connaissances en graphe, graphes de connaissances
+- **Ontologie** — domaines : data-eng, ai-eng · alias : ontology, ontologies, ontologie formelle, ontologie de domaine, TBox, ABox
+- **Ontologies industrielles** — domaines : data-eng, ai-eng · alias : ontologies pour l'industrie, SOSA, SSN, SOSA/SSN, ISA-95, IEC 62264, Asset Administration Shell, AAS, coque d'administration d'actif, IOF, Industrial Ontologies Foundry, jumeau numérique sémantique, Industrie 4.0 sémantique
+- **OWL et raisonnement** — domaines : data-eng, ai-eng · alias : OWL, OWL 2, Web Ontology Language, raisonnement, raisonneur, reasoner, inférence, monde ouvert, open world assumption, OWL 2 EL, OWL 2 QL, OWL 2 RL, logique de description
+- **RDF et triplets** — domaines : data-eng, ai-eng · alias : RDF, Resource Description Framework, triplet RDF, triplets, triple RDF, Turtle, N-Triples, JSON-LD, graphe nommé, named graph, IRI
+- **SHACL** — domaines : data-eng, ai-eng · alias : Shapes Constraint Language, shapes RDF, validation de graphe RDF, validation RDF, node shape, property shape, SHACL-SPARQL
+- **SPARQL** — domaines : data-eng, ai-eng · alias : SPARQL 1.1, langage de requête RDF, SPARQL endpoint, point d'accès SPARQL, chemins de propriétés, property paths, SPARQL Update
+
 ### database/recherche
 - **Index inversé** — domaines : data-eng, ai-eng · alias : inverted index, index inverse, postings list, liste de postings
 - **Recherche sémantique** — domaines : data-eng, ai-eng · alias : semantic search, recherche par le sens, recherche dense
@@ -982,6 +992,9 @@
 - **Constrained decoding** — domaines : ai-eng · alias : génération contrainte, décodage contraint, structured generation, grammar-constrained decoding
 - **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
 
+### llm/text-to-sql
+- **Interroger un graphe en langage naturel** — domaines : ai-eng · alias : text-to-SPARQL, text-to-Cypher, Text2Cypher, NL2SPARQL, NL2Cypher, question answering sur graphe de connaissances, KGQA, interroger un graphe de connaissances avec un LLM, langage naturel vers graphe
+
 ### math/algebre-lineaire
 - **Eigendecomposition** — domaines : data-sci, ml-eng · alias : décomposition spectrale, diagonalisation, valeurs propres, vecteurs propres, eigenvalue decomposition, EVD
 - **Matrix decompositions** — domaines : data-sci, ml-eng · alias : factorisation matricielle, décompositions matricielles, matrix factorization
@@ -1116,6 +1129,9 @@
 ### ml/feature-store
 - **Feature store — concept** — domaines : mlops, data-eng · alias : feature store, magasin de features, online store, offline store, point-in-time correctness, train/serve skew
 
+### ml/graphe
+- **Plongements de graphe et prédiction de liens** — domaines : ml-eng, data-sci · alias : knowledge graph embedding, KGE, plongements de graphe de connaissances, TransE, RotatE, ComplEx, DistMult, link prediction, prédiction de liens, complétion de graphe de connaissances, knowledge graph completion
+
 ### ml/hyperopt
 - **Optimisation bayésienne** — domaines : data-sci, ml-eng · alias : Bayesian optimization, BO, Optimisation bayesienne, Optimisation de boîte noire, Black-box optimization, Expected improvement, GP-UCB, SMBO, Sequential model-based optimization, Tree-structured Parzen Estimator
 - **Optimisation d'hyperparamètres** — domaines : data-sci, ml-eng · alias : Hyperparameter tuning, GridSearch, RandomSearch, HPO, Réglage des hyperparamètres
@@ -1149,6 +1165,7 @@
 - **BM25** — domaines : ai-eng, data-sci · alias : Okapi BM25, best matching 25, bm25
 - **Classification de texte** — domaines : data-sci, ml-eng · alias : text classification, classification de documents, catégorisation de texte, analyse de sentiment
 - **Fuzzy matching & similarité de chaînes** — domaines : data-eng, data-sci · alias : fuzzy matching, similarité de chaînes, string matching, approximate string matching, distance d'édition, Levenshtein, Jaro-Winkler, record linkage, déduplication
+- **Liage d'entités** — domaines : ai-eng, data-sci · alias : entity linking, liaison d'entités, désambiguïsation d'entités, entity disambiguation, wikification, entity matching, appariement d'entités, record linkage, rapprochement d'enregistrements, NIL
 - **NER et étiquetage de séquence** — domaines : data-sci, ml-eng · alias : NER, named entity recognition, reconnaissance d'entités nommées, étiquetage de séquence, sequence labeling, token classification, BiLSTM-CRF
 - **Recherche d'information** — domaines : ai-eng, data-sci · alias : information retrieval, IR, recherche documentaire, retrieval lexical dense hybride
 - **TF-IDF** — domaines : data-sci, ai-eng · alias : tf-idf, term frequency-inverse document frequency, pondération tf-idf
@@ -1686,6 +1703,7 @@
 - **Notebooks** — Exécuter du code par cellules, avec le résultat à côté — et le faire sans sacrifier le diff, la revue et le versionnage.
 - **Observabilité** — Savoir ce qu'un système fait en production — métriques, logs et traces, puis un endroit unique pour les regarder.
 - **Observabilité des LLM** — Voir ce qu'une application LLM fait en production — traces, coût, latence, qualité sur le trafic réel.
+- **Ontologies et RDF** — Décrire des choses et leurs relations avec un sens partagé — ontologie, triplets RDF, SPARQL, OWL, SHACL, données liées — et tout ce qui s'y rattache, regroupé pour ne pas se perdre.
 - **Optimisation** — Minimiser une fonction — le mécanisme qui fait apprendre un modèle, les garanties qu'on a ou non, et la branche discrète qu'on délègue à un solveur.
 - **Orchestration** — Faire tourner des traitements dans le bon ordre, à l'heure, et savoir quoi rejouer quand l'un d'eux échoue.
 - **Outils de développement** — Fabriquer du logiciel — écrire, valider, tester, configurer, packager — par opposition au déployer, qui est du DevOps.
