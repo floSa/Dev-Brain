@@ -41,3 +41,6 @@ venv/
 
 # Node (si jamais)
 node_modules/
+
+# Copies de travail des conversations (une par lot)
+.claude/worktrees/
