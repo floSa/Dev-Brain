@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1207 pages actives.
+> 1208 pages actives.
 
 ## Par page
 
@@ -158,7 +158,7 @@
 ### Apache Jena  ·  brique
 - tags : `rdf`, `sparql`, `knowledge-graph`
 - liens sortants : [[Bases de graphes]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Protégé]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[QLever]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### Apache NiFi  ·  brique
 - tags : `data-ingestion`, `data-pipeline`, `low-code`, `self-hosted`
@@ -208,7 +208,7 @@
 ### asyncua  ·  brique
 - tags : `opc-ua`, `iiot`, `data-ingestion`
 - liens sortants : [[Comparatif - Brokers MQTT]], [[Données industrielles]], [[Node-RED]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[open62541]]
-- liens entrants : [[Données industrielles]], [[Node-RED]], [[Ontologies industrielles]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[open62541]]
+- liens entrants : [[Données industrielles]], [[Node-RED]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[open62541]]
 
 ### Authelia  ·  brique
 - tags : `authentication`, `sso`, `identity-provider`, `self-hosted`, `reverse-proxy`
@@ -778,7 +778,7 @@
 ### Fluree  ·  brique
 - tags : `rdf`, `sparql`, `knowledge-graph`, `data-versioning`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[pySHACL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[SHACL]], [[pySHACL]]
 
 ### Flyte  ·  brique
 - tags : `orchestration`, `ml-pipeline`, `kubernetes`
@@ -1018,7 +1018,7 @@
 ### InfluxDB  ·  brique
 - tags : `timeseries`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[Postgres]], [[Telegraf]], [[TimescaleDB]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[TimescaleDB]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[Grafana]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]], [[TimescaleDB]]
 
 ### Inspect AI  ·  brique
 - tags : `llm`, `llm-eval`, `llm-as-judge`, `agents`, `benchmark`
@@ -1248,7 +1248,7 @@
 ### LinkML  ·  brique
 - tags : `ontology`, `data-modeling`, `data-validation`
 - liens sortants : [[Alembic]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]], [[SHACL]], [[pySHACL]], [[rdflib]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]], [[Protégé]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[SHACL]], [[pySHACL]], [[rdflib]]
 
 ### Liquibase  ·  brique
 - tags : `migration`, `relational`
@@ -1548,12 +1548,12 @@
 ### Neo4j  ·  brique
 - tags : `graph-db`
 - liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphiti]], [[Memgraph]], [[Nebula Graph]], [[Postgres]]
-- liens entrants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Memgraph]], [[Nebula Graph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]], [[neosemantics]]
+- liens entrants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Memgraph]], [[Nebula Graph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]], [[neosemantics]]
 
 ### neosemantics  ·  brique
 - tags : `rdf`, `knowledge-graph`, `graph-db`
 - liens sortants : [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Neo4j]], [[Ontologies et RDF]], [[Oxigraph]], [[RDF et triplets]], [[RDF4J]], [[SHACL]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[RDF et triplets]], [[SHACL]]
 
 ### Netdata  ·  brique
 - tags : `observability`, `metrics`, `alerting`, `dashboard`, `self-hosted`
@@ -1603,7 +1603,7 @@
 ### Ollama  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
 - liens sortants : [[AnythingLLM]], [[Cognee]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[Graphiti]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[LibreChat]], [[Llama Guard]], [[Mem0]], [[Mistral]], [[Open WebUI]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAGFlow]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[gpt-oss]], [[llama.cpp]], [[needle]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[AnythingLLM]], [[Cognee]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[DeepWiki-Open]], [[Données personnelles et anonymisation pour LLM]], [[Gemma]], [[Graphiti]], [[Harnais d'agent]], [[Interroger un graphe en langage naturel]], [[LM Studio]], [[LibreChat]], [[Licences de modèles open weights]], [[LiteLLM]], [[Llama Guard]], [[Mem0]], [[Mistral]], [[Open WebUI]], [[OpenViking]], [[Outlines]], [[PR-Agent]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAGFlow]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[Vanna]], [[garak]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[AnythingLLM]], [[Cognee]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[DeepWiki-Open]], [[Données personnelles et anonymisation pour LLM]], [[Gemma]], [[Graphiti]], [[Harnais d'agent]], [[Interroger un graphe en langage naturel]], [[LM Studio]], [[LibreChat]], [[Licences de modèles open weights]], [[LiteLLM]], [[Llama Guard]], [[Mem0]], [[Mistral]], [[Open WebUI]], [[OpenViking]], [[Outlines]], [[PR-Agent]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Graphe de connaissances industriel sur site]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAGFlow]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[Vanna]], [[garak]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[needle]], [[text-generation-webui]], [[vLLM]]
 
 ### olmOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`, `markdown-conversion`, `vision-language`, `gpu`, `self-hosted`
@@ -1623,7 +1623,7 @@
 ### Ontop  ·  brique
 - tags : `rdf`, `sparql`, `ontology`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologie]], [[Ontologies et RDF]], [[Oxigraph]], [[Protégé]], [[SPARQL]], [[pySHACL]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Protégé]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[SPARQL]]
 
 ### Open WebUI  ·  brique
 - tags : `llm`, `local-llm`, `rag`, `self-hosted`
@@ -1768,12 +1768,12 @@
 ### Owlready2  ·  brique
 - tags : `ontology`, `rdf`
 - liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]], [[pySHACL]], [[rdflib]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Ontologies et RDF]], [[Protégé]], [[rdflib]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[rdflib]]
 
 ### Oxigraph  ·  brique
 - tags : `rdf`, `sparql`, `embedded`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[pySHACL]], [[rdflib]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Fluree]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Ontop]], [[Pattern - Graphe de connaissances industriel sur site]], [[QLever]], [[RDF4J]], [[SPARQL]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### PaCMAP  ·  brique
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -1913,7 +1913,7 @@
 ### Postgres  ·  brique
 - tags : `relational`, `postgres`
 - liens sortants : [[Airbyte]], [[Apache AGE]], [[Apache NiFi]], [[Apache Superset]], [[Bases de données]], [[CVAT]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[DataHub]], [[Debezium]], [[Forgejo]], [[GitLab CE]], [[Great Expectations]], [[Label Studio]], [[MariaDB]], [[Metabase]], [[Microsoft SQL Server]], [[MySQL]], [[Open WebUI]], [[OpenMetadata]], [[SQLAlchemy]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[TimescaleDB]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
-- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Apache Superset]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[Comparatif - Plateformes LLM auto-hébergées]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Forgejo]], [[GitLab CE]], [[Graphe de connaissances]], [[Great Expectations]], [[Harbor]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[Langflow]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Metabase]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Open WebUI]], [[OpenMetadata]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Redis]], [[Relationnel]], [[SHACL]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[Trino]], [[Woodpecker CI]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
+- liens entrants : [[Airbyte]], [[Airflow]], [[Apache AGE]], [[Apache Cassandra]], [[Apache Iceberg]], [[Apache NiFi]], [[Apache Solr]], [[Apache Superset]], [[Architecture pilotée par les événements]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[CVAT]], [[Celery]], [[ClickHouse]], [[CockroachDB]], [[Comparatif - Bases relationnelles]], [[Comparatif - Brokers de messages]], [[Comparatif - Plateformes LLM auto-hébergées]], [[DataHub]], [[Debezium]], [[DuckDB]], [[Elasticsearch]], [[Feast]], [[Forgejo]], [[GitLab CE]], [[Graphe de connaissances]], [[Great Expectations]], [[Harbor]], [[InfluxDB]], [[JanusGraph]], [[Kafka]], [[Label Studio]], [[Langflow]], [[MariaDB]], [[Memgraph]], [[Messagerie]], [[Metabase]], [[Microsoft SQL Server]], [[MongoDB]], [[MySQL]], [[Nebula Graph]], [[Neo4j]], [[OLTP, OLAP et lakehouse]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Open WebUI]], [[OpenMetadata]], [[Parquet]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Stack démo ML locale multi-services]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Redis]], [[Relationnel]], [[SHACL]], [[SQLMesh]], [[SQLite]], [[Soda Core]], [[Temporal]], [[TimescaleDB]], [[Trino]], [[Woodpecker CI]], [[dbt Core]], [[dlt]], [[lakeFS]], [[pgAdmin]], [[pgvector]], [[psycopg2]]
 
 ### Postman  ·  brique
 - tags : `api-client`
@@ -1978,7 +1978,7 @@
 ### Protégé  ·  brique
 - tags : `ontology`
 - liens sortants : [[Apache Jena]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[RDF4J]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Pattern - Graphe de connaissances industriel sur site]]
 
 ### psycopg2  ·  brique
 - tags : `postgres`, `relational`, `db-driver`
@@ -2028,7 +2028,7 @@
 ### PyKEEN  ·  brique
 - tags : `link-prediction`, `knowledge-graph`, `embeddings`
 - liens sortants : [[Graphe de connaissances]], [[Ontologies et RDF]], [[Plongements de graphe et prédiction de liens]], [[PyTorch Geometric]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Machine Learning]], [[Ontologies et RDF]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[Machine Learning]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]]
 
 ### PyMC  ·  brique
 - tags : `bayesian`, `probabilistic-programming`, `monte-carlo`, `markov`, `prior`
@@ -2068,7 +2068,7 @@
 ### pySHACL  ·  brique
 - tags : `rdf`, `data-validation`
 - liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[RDF4J]], [[SHACL]], [[rdflib]]
-- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[rdflib]]
+- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[LinkML]], [[Ontologies et RDF]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[SHACL]], [[rdflib]]
 
 ### pytest  ·  brique
 - tags : `testing`
@@ -2123,7 +2123,7 @@
 ### QLever  ·  brique
 - tags : `rdf`, `sparql`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[SPARQL]], [[Virtuoso Open Source]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[Virtuoso Open Source]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[SPARQL]], [[Virtuoso Open Source]]
 
 ### Quarto  ·  brique
 - tags : `notebook`, `reproducibility`
@@ -2193,12 +2193,12 @@
 ### RDF4J  ·  brique
 - tags : `rdf`, `sparql`, `knowledge-graph`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[Oxigraph]], [[Protégé]], [[neosemantics]], [[pySHACL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[SHACL]], [[SPARQL]], [[neosemantics]], [[pySHACL]]
 
 ### rdflib  ·  brique
 - tags : `rdf`, `sparql`
 - liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[Oxigraph]], [[RDF et triplets]], [[SPARQL]], [[pySHACL]]
-- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[Oxigraph]], [[pySHACL]]
+- liens entrants : [[Comparatif - Outils RDF et OWL en Python]], [[Graphe de connaissances]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[RDF et triplets]], [[SPARQL]], [[pySHACL]]
 
 ### Redis  ·  brique
 - tags : `nosql`, `key-value`, `in-memory`
@@ -2623,7 +2623,7 @@
 ### TimescaleDB  ·  brique
 - tags : `timeseries`, `postgres`
 - liens sortants : [[Bases de données]], [[ClickHouse]], [[Comparatif - Bases temporelles]], [[EMQX]], [[InfluxDB]], [[Postgres]], [[Telegraf]], [[pgvector]]
-- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]]
+- liens entrants : [[Bases de données]], [[Comparatif - Bases temporelles]], [[Données industrielles]], [[EMQX]], [[InfluxDB]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[Telegraf]]
 
 ### timm  ·  brique
 - tags : `computer-vision`, `cnn`, `vit`, `transfer-learning`, `fine-tuning`, `deep-learning`, `model-hub`
@@ -2763,7 +2763,7 @@
 ### Virtuoso Open Source  ·  brique
 - tags : `rdf`, `sparql`, `relational`
 - liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Données liées et vocabulaires partagés]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Oxigraph]], [[QLever]], [[SPARQL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Ontologies et RDF]], [[QLever]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[QLever]], [[SPARQL]]
 
 ### vLLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
@@ -2873,7 +2873,7 @@
 ### Comparatif - Bases graphes  ·  comparatif
 - tags : `graph-db`
 - liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes.base]], [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - RAG structuré graphe + human-in-the-loop]]
 
 ### Comparatif - Bases NoSQL  ·  comparatif
 - tags : `nosql`
@@ -3068,7 +3068,7 @@
 ### Comparatif - Moteurs RDF  ·  comparatif
 - tags : `rdf`, `sparql`
 - liens sortants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF.base]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatifs]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[pySHACL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatifs]], [[Fluree]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]]
+- liens entrants : [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Outils RDF et OWL en Python]], [[Comparatifs]], [[Fluree]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[Virtuoso Open Source]]
 
 ### Comparatif - Mémoire pour agents  ·  comparatif
 - tags : `agent-memory`, `agents`, `retrieval`
@@ -3118,7 +3118,7 @@
 ### Comparatif - Outils RDF et OWL en Python  ·  comparatif
 - tags : `rdf`, `ontology`
 - liens sortants : [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python.base]], [[Comparatifs]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Owlready2]], [[Protégé]], [[PyKEEN]], [[SHACL]], [[neosemantics]], [[pySHACL]], [[rdflib]]
-- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[LinkML]], [[Ontologies et RDF]], [[Owlready2]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Comparatif - Moteurs RDF]], [[Comparatifs]], [[Graphe de connaissances]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Owlready2]], [[Pattern - Graphe de connaissances industriel sur site]], [[RDF et triplets]], [[SHACL]], [[pySHACL]], [[rdflib]]
 
 ### Comparatif - Outils stats  ·  comparatif
 - tags : `hypothesis-testing`, `statistical-inference`, `bayesian`, `factor-analysis`, `causal-inference`
@@ -3312,7 +3312,7 @@
 
 ### Bases de graphes  ·  hub
 - tags : `graph-db`
-- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Postgres]]
+- liens sortants : [[Apache AGE]], [[ArangoDB]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Postgres]]
 - liens entrants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Dgraph]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Ontologies et RDF]], [[neosemantics]]
 
 ### Bayésien  ·  hub
@@ -3492,7 +3492,7 @@
 
 ### Mémoire des agents  ·  hub
 - tags : `agent-memory`, `agents`, `context-engineering`, `retrieval`, `knowledge-graph`
-- liens sortants : [[Agent memory]], [[Cognee]], [[Comparatif - Mémoire pour agents]], [[Graphiti]], [[Headroom]], [[Letta]], [[Mem0]], [[OpenViking]], [[ai-memory]]
+- liens sortants : [[Agent memory]], [[Cognee]], [[Comparatif - Mémoire pour agents]], [[Graphe de connaissances]], [[Graphiti]], [[Headroom]], [[Letta]], [[Mem0]], [[Ontologies et RDF]], [[OpenViking]], [[ai-memory]]
 - liens entrants : [[Cognee]], [[Graphe de connaissances]], [[Graphiti]], [[LLM & IA générative]], [[Mem0]]
 
 ### Méthodes causales  ·  hub
@@ -3528,7 +3528,7 @@
 ### Ontologies et RDF  ·  hub
 - tags : `knowledge-graph`, `rdf`, `ontology`, `sparql`
 - liens sortants : [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
-- liens entrants : [[Apache Jena]], [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[LinkML]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Apache Jena]], [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[Graphe de connaissances]], [[LinkML]], [[Mémoire des agents]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RAG & retrieval]], [[RDF4J]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
 
 ### Optimisation  ·  hub
 - tags : `optimization`, `gradient-descent`, `convexity`, `second-order`, `learning-rate`, `linear-programming`, `combinatorial-optimization`
@@ -3557,7 +3557,7 @@
 
 ### Patterns  ·  hub
 - tags : —
-- liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
+- liens sortants : [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Pipeline scraping → matching → optimisation]], [[Pattern - Prévoir puis optimiser]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Pattern - Stack démo ML locale multi-services]], [[Rules]]
 - liens entrants : [[Comparatifs]]
 
 ### Plateformes data & IA  ·  hub
@@ -3577,7 +3577,7 @@
 
 ### RAG & retrieval  ·  hub
 - tags : `rag`, `retrieval`, `chunking`, `reranking`, `semantic-search`, `knowledge-graph`
-- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Cohere Rerank]], [[ColPali]], [[Comparatif - Rerankers]], [[Construction de graphes de connaissances]], [[FlashRank]], [[GraphRAG]], [[Haystack]], [[Hybrid retrieval]], [[Jina Reranker]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG agentique]], [[RAG benchmarks]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG eval]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[bge-reranker]], [[sentence-transformers]], [[Évaluation]]
+- liens sortants : [[Advanced RAG]], [[Chunking strategies]], [[Cohere Rerank]], [[ColPali]], [[Comparatif - Rerankers]], [[Construction de graphes de connaissances]], [[FlashRank]], [[GraphRAG]], [[Graphe de connaissances]], [[Haystack]], [[Hybrid retrieval]], [[Interroger un graphe en langage naturel]], [[Jina Reranker]], [[Late-interaction retrieval]], [[LlamaIndex]], [[Ontologies et RDF]], [[Passerelles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Query transformations]], [[RAG]], [[RAG agentique]], [[RAG benchmarks]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG eval]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[RAGatouille]], [[Recherche]], [[Reranking]], [[Routing and cascading]], [[Vectoriel]], [[bge-reranker]], [[sentence-transformers]], [[Évaluation]]
 - liens entrants : [[ColPali]], [[LLM & IA générative]], [[RAGFlow]]
 
 ### Recherche  ·  hub
@@ -3988,7 +3988,7 @@
 ### Bases graphe — modèles et langages de requête  ·  notion
 - tags : `graph-db`, `knowledge-graph`, `relational`, `distributed`
 - liens sortants : [[Apache AGE]], [[Apache Jena]], [[ArangoDB]], [[Bases de données]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Construction de graphes de connaissances]], [[Dgraph]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphe de connaissances]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontop]], [[Oxigraph]], [[Postgres]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]]
-- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Dgraph]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Ontologies et RDF]], [[RDF et triplets]], [[SPARQL]], [[neosemantics]]
+- liens entrants : [[Apache AGE]], [[ArangoDB]], [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Dgraph]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[JanusGraph]], [[Memgraph]], [[Nebula Graph]], [[Neo4j]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[RDF et triplets]], [[SPARQL]], [[neosemantics]]
 
 ### Bellman equations  ·  notion
 - tags : `reinforcement-learning`, `dynamic-programming`, `value-function`
@@ -4288,7 +4288,7 @@
 ### Données liées et vocabulaires partagés  ·  notion
 - tags : `rdf`, `ontology`, `knowledge-graph`
 - liens sortants : [[Catalogue de données et lignage]], [[DataHub]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[OpenMetadata]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[RDF et triplets]], [[Virtuoso Open Source]]
+- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[RDF et triplets]], [[Virtuoso Open Source]]
 
 ### Données personnelles et anonymisation pour LLM  ·  notion
 - tags : `privacy`, `ai-security`, `ner`
@@ -4547,13 +4547,13 @@
 
 ### Graphe de connaissances  ·  notion
 - tags : `knowledge-graph`, `rdf`, `ontology`, `graph-db`
-- liens sortants : [[Agent memory]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Catalogue de données et lignage]], [[Cognee]], [[Comparatif - Bases graphes]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Modèles graphiques probabilistes]], [[Mémoire des agents]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies industrielles]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[PyTorch Geometric]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases de données]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[PyKEEN]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
+- liens sortants : [[Agent memory]], [[Apache Jena]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Catalogue de données et lignage]], [[Cognee]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graph Neural Networks]], [[GraphRAG]], [[Graphiti]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[LinkML]], [[Modèles graphiques probabilistes]], [[Mémoire des agents]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Plongements de graphe et prédiction de liens]], [[Postgres]], [[Protégé]], [[PyKEEN]], [[PyTorch Geometric]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Bases de données]], [[Bases de graphes]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Interroger un graphe en langage naturel]], [[Liage d'entités]], [[Mémoire des agents]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Plongements de graphe et prédiction de liens]], [[PyKEEN]], [[RAG & retrieval]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
 
 ### GraphRAG  ·  notion
 - tags : `rag`, `knowledge-graph`, `graph-db`, `retrieval`, `llm`
 - liens sortants : [[Advanced RAG]], [[Bases de données vectorielles]], [[Construction de graphes de connaissances]], [[Graphe de connaissances]], [[Hybrid retrieval]], [[Interroger un graphe en langage naturel]], [[LangChain]], [[LlamaIndex]], [[Neo4j]], [[Ontologie]], [[Query transformations]], [[RAG]], [[RAG eval]], [[Reranking]]
-- liens entrants : [[Advanced RAG]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LLM & IA générative]], [[Neo4j]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG documentaire on-prem - clé en main ou assemblé]]
+- liens entrants : [[Advanced RAG]], [[Bases graphe — modèles et langages de requête]], [[Construction de graphes de connaissances]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LLM & IA générative]], [[Neo4j]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG documentaire on-prem - clé en main ou assemblé]]
 
 ### GRPO  ·  notion
 - tags : `reinforcement-learning`, `reasoning`, `alignment`, `llm`
@@ -4588,7 +4588,7 @@
 ### Human-in-the-loop  ·  notion
 - tags : `human-in-the-loop`, `agents`, `reliability`, `llm`
 - liens sortants : [[Agent evaluation]], [[CrewAI]], [[Guardrails]], [[LLM observability]], [[LangGraph]], [[PydanticAI]], [[Reliability patterns]], [[Tool use patterns]], [[agent-loops]]
-- liens entrants : [[Agent patterns]], [[Agents]], [[Assistants]], [[Guardrails]], [[LLM & IA générative]], [[LangGraph]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[a2a-protocol]], [[agent-loops]]
+- liens entrants : [[Agent patterns]], [[Agents]], [[Assistants]], [[Guardrails]], [[LLM & IA générative]], [[LangGraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Reliability patterns]], [[Sandboxing de code généré]], [[Systèmes IA]], [[a2a-protocol]], [[agent-loops]]
 
 ### Hybrid retrieval  ·  notion
 - tags : `retrieval`, `hybrid-search`, `semantic-search`, `search`, `rag`
@@ -4693,7 +4693,7 @@
 ### Interroger un graphe en langage naturel  ·  notion
 - tags : `text-to-sql`, `knowledge-graph`, `sparql`, `llm`
 - liens sortants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Frameworks text-to-SQL]], [[GraphRAG]], [[Graphe de connaissances]], [[LangChain SQL agent]], [[Liage d'entités]], [[Memgraph]], [[Neo4j]], [[Ollama]], [[Ontologie]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[SHACL]], [[SPARQL]], [[Structured outputs]], [[Text-to-SQL]], [[Vanna]], [[WrenAI]]
-- liens entrants : [[GraphRAG]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[SPARQL]], [[Text-to-SQL]]
+- liens entrants : [[GraphRAG]], [[Graphe de connaissances]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[RAG & retrieval]], [[SPARQL]], [[Text-to-SQL]]
 
 ### Intervalles de confiance  ·  notion
 - tags : `statistical-inference`, `confidence-interval`
@@ -4728,7 +4728,7 @@
 ### Jumeau numérique et modèles hybrides  ·  notion
 - tags : `digital-twin`, `predictive-maintenance`, `rul`
 - liens sortants : [[Cause racine d'une anomalie]], [[Data drift]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Mouvement brownien]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[Time series anomaly detection]]
-- liens entrants : [[Cause racine d'une anomalie]], [[Diagnostic de défauts de roulements]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Ontologies industrielles]], [[PyBaMM]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens entrants : [[Cause racine d'une anomalie]], [[Diagnostic de défauts de roulements]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[PyBaMM]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### K-Means  ·  notion
 - tags : `clustering`, `unsupervised`
@@ -4773,7 +4773,7 @@
 ### Liage d'entités  ·  notion
 - tags : `entity-linking`, `nlp`, `knowledge-graph`, `ner`
 - liens sortants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GLiNER]], [[Graphe de connaissances]], [[NER et étiquetage de séquence]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[Structured outputs]], [[embeddings]], [[sentence-transformers]], [[spaCy]]
-- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[NLP]], [[Ontologies et RDF]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[SHACL]]
+- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[NLP]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[SHACL]]
 
 ### Licences de modèles open weights  ·  notion
 - tags : `llm`, `local-llm`, `self-hosted`
@@ -4843,7 +4843,7 @@
 ### Maintenance prédictive et RUL  ·  notion
 - tags : `timeseries`, `survival-analysis`, `regression`
 - liens sortants : [[Diagnostic de défauts de roulements]], [[Détection d'outliers multivariée]], [[Forecasting framing]], [[Imputation des valeurs manquantes]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Maintenance prédictive avec peu de pannes]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Regression metrics]], [[STUMPY]], [[Time series anomaly detection]], [[Time series feature engineering]], [[Walk-forward CV]], [[darts]], [[lifelines]], [[scikit-survival]], [[sktime]], [[tsfresh]]
-- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Cause racine d'une anomalie]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[LSTM et réseaux récurrents]], [[Loi de Weibull]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Time series anomaly detection]], [[T² et SPE]], [[scikit-survival]], [[sktime]], [[time-series-anomaly-detector]], [[tsfresh]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Cause racine d'une anomalie]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Jeux de données PHM]], [[Jumeau numérique et modèles hybrides]], [[LSTM et réseaux récurrents]], [[Loi de Weibull]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[OEE et rendement global]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Santé de batterie (SOH et RUL)]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Time series anomaly detection]], [[T² et SPE]], [[scikit-survival]], [[sktime]], [[time-series-anomaly-detector]], [[tsfresh]]
 
 ### Manifold learning  ·  notion
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
@@ -5132,13 +5132,13 @@
 
 ### Ontologie  ·  notion
 - tags : `ontology`, `knowledge-graph`, `rdf`
-- liens sortants : [[Catalogue de données et lignage]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[OWL et raisonnement]], [[Ontologies industrielles]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Protégé]], [[RDF et triplets]], [[SHACL]]
+- liens sortants : [[Catalogue de données et lignage]], [[Comparatif - Outils RDF et OWL en Python]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies industrielles]], [[Owlready2]], [[Protégé]], [[RDF et triplets]], [[SHACL]]
+- liens entrants : [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[GraphRAG]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]], [[RDF et triplets]], [[SHACL]]
 
 ### Ontologies industrielles  ·  notion
 - tags : `ontology`, `digital-twin`, `iiot`, `knowledge-graph`
 - liens sortants : [[Catalogue de données et lignage]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[InfluxDB]], [[Jumeau numérique et modèles hybrides]], [[Maintenance prédictive et RUL]], [[OWL et raisonnement]], [[Ontologie]], [[Postgres]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[SHACL]], [[SPARQL]], [[Time series anomaly detection]], [[TimescaleDB]], [[asyncua]]
-- liens entrants : [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]], [[Protégé]]
+- liens entrants : [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Ontologie]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protégé]]
 
 ### Optimal transport  ·  notion
 - tags : `optimization`, `optimal-transport`
@@ -5177,8 +5177,8 @@
 
 ### OWL et raisonnement  ·  notion
 - tags : `ontology`, `rdf`, `knowledge-graph`
-- liens sortants : [[Modèles graphiques probabilistes]], [[Ontologie]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Owlready2]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[RDF et triplets]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[pySHACL]]
+- liens sortants : [[Apache Jena]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[Modèles graphiques probabilistes]], [[Ontologie]], [[Ontop]], [[Owlready2]], [[Protégé]], [[RDF et triplets]], [[SHACL]], [[SPARQL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[LinkML]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Owlready2]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]], [[Protégé]], [[RDF et triplets]], [[SHACL]], [[SPARQL]], [[Virtuoso Open Source]], [[pySHACL]]
 
 ### PAC learning  ·  notion
 - tags : `learning-theory`, `pac-learning`
@@ -5237,8 +5237,8 @@
 
 ### Plongements de graphe et prédiction de liens  ·  notion
 - tags : `link-prediction`, `knowledge-graph`, `representation-learning`, `embeddings`
-- liens sortants : [[Apprentissage contrastif]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyTorch Geometric]], [[RDF et triplets]], [[SHACL]], [[embeddings]]
-- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[Machine Learning]], [[Ontologies et RDF]], [[PyKEEN]]
+- liens sortants : [[Apprentissage contrastif]], [[Graph Neural Networks]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[PyKEEN]], [[PyTorch Geometric]], [[RDF et triplets]], [[SHACL]], [[embeddings]]
+- liens entrants : [[Graphe de connaissances]], [[Liage d'entités]], [[Machine Learning]], [[Ontologies et RDF]], [[Pattern - Graphe de connaissances industriel sur site]], [[PyKEEN]]
 
 ### Policy gradient  ·  notion
 - tags : `reinforcement-learning`, `policy-gradient`
@@ -5248,7 +5248,7 @@
 ### Politique de maintenance et coût  ·  notion
 - tags : `predictive-maintenance`, `rul`, `thresholding`, `optimization`
 - liens sortants : [[Analyse de survie]], [[Apprentissage par renforcement]], [[Calibration]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Markov Decision Process]], [[OEE et rendement global]], [[Processus de Poisson]], [[Prédiction conforme]], [[RUL par analyse de survie]], [[Régression quantile]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Cause racine d'une anomalie]], [[Classification ABC-XYZ]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Loi de Weibull]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
+- liens entrants : [[Cause racine d'une anomalie]], [[Classification ABC-XYZ]], [[Indicateurs de fiabilité (MTBF, MTTR, disponibilité)]], [[Indicateurs de santé]], [[Jumeau numérique et modèles hybrides]], [[Loi de Weibull]], [[Machine Learning]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[OEE et rendement global]], [[Ordonnancement d'atelier (job-shop, flow-shop)]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - Prévoir puis optimiser]], [[RUL par analyse de survie]], [[RUL par apprentissage profond]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]]
 
 ### Politiques de réapprovisionnement (s,S) et (R,Q)  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `markov-decision-process`
@@ -5407,8 +5407,8 @@
 
 ### RDF et triplets  ·  notion
 - tags : `rdf`, `knowledge-graph`, `ontology`
-- liens sortants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[SHACL]], [[SPARQL]]
-- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Oxigraph]], [[Plongements de graphe et prédiction de liens]], [[SHACL]], [[SPARQL]], [[neosemantics]], [[rdflib]]
+- liens sortants : [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[Neo4j]], [[OWL et raisonnement]], [[Ontologie]], [[SHACL]], [[SPARQL]], [[neosemantics]], [[rdflib]]
+- liens entrants : [[Bases graphe — modèles et langages de requête]], [[Données liées et vocabulaires partagés]], [[Graphe de connaissances]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]], [[SHACL]], [[SPARQL]], [[neosemantics]], [[rdflib]]
 
 ### Reasoning models  ·  notion
 - tags : `reasoning`, `llm`, `alignment`
@@ -5568,7 +5568,7 @@
 ### Score et seuil d'alerte  ·  notion
 - tags : `anomaly-detection`, `thresholding`
 - liens sortants : [[Calibration]], [[Classification metrics]], [[Data drift]], [[Data leakage]], [[Imbalanced classification]], [[Isolation Forest]], [[Local Outlier Factor]], [[One-Class SVM]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[Tests d'hypothèse]], [[Théorie des valeurs extrêmes]], [[Types d'anomalies et régimes de supervision]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Anomalie acoustique]], [[Anomalies multivariées par apprentissage profond]], [[Cause racine d'une anomalie]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Indicateurs de santé]], [[LSTM et réseaux récurrents]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Merlion]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Surveillance conditionnelle et modes de défaillance]], [[Types d'anomalies et régimes de supervision]], [[T² et SPE]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Anomalie acoustique]], [[Anomalies multivariées par apprentissage profond]], [[Cause racine d'une anomalie]], [[Contrôle statistique de procédé (SPC)]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'anomalies visuelle]], [[Détection de ruptures]], [[Détection hors distribution (OOD)]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Indicateurs de santé]], [[LSTM et réseaux récurrents]], [[Machine Learning]], [[Maintenance prédictive avec peu de pannes]], [[Merlion]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Politique de maintenance et coût]], [[PyOD]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[Surveillance conditionnelle et modes de défaillance]], [[Types d'anomalies et régimes de supervision]], [[T² et SPE]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### Segment Anything (SAM)  ·  notion
 - tags : `segmentation`, `computer-vision`, `transformers`, `deep-learning`
@@ -5602,8 +5602,8 @@
 
 ### SHACL  ·  notion
 - tags : `ontology`, `rdf`, `knowledge-graph`
-- liens sortants : [[Graphe de connaissances]], [[Great Expectations]], [[Liage d'entités]], [[OWL et raisonnement]], [[Ontologie]], [[Postgres]], [[RDF et triplets]], [[SPARQL]], [[pandera]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[neosemantics]], [[pySHACL]]
+- liens sortants : [[Apache Jena]], [[Comparatif - Outils RDF et OWL en Python]], [[Fluree]], [[Graphe de connaissances]], [[Great Expectations]], [[Liage d'entités]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Postgres]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[neosemantics]], [[pandera]], [[pySHACL]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Outils RDF et OWL en Python]], [[Construction de graphes de connaissances]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[LinkML]], [[OWL et raisonnement]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Pattern - Graphe de connaissances industriel sur site]], [[Plongements de graphe et prédiction de liens]], [[RDF et triplets]], [[RDF4J]], [[SPARQL]], [[neosemantics]], [[pySHACL]]
 
 ### Shannon entropy  ·  notion
 - tags : `information-theory`, `entropy`
@@ -5627,8 +5627,8 @@
 
 ### SPARQL  ·  notion
 - tags : `sparql`, `rdf`, `knowledge-graph`
-- liens sortants : [[Bases graphe — modèles et langages de requête]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[RDF et triplets]], [[SHACL]]
-- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[Virtuoso Open Source]], [[rdflib]]
+- liens sortants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Moteurs RDF]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontop]], [[Oxigraph]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[Virtuoso Open Source]], [[rdflib]]
+- liens entrants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Fluree]], [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[OWL et raisonnement]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Oxigraph]], [[Pattern - Graphe de connaissances industriel sur site]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[Virtuoso Open Source]], [[rdflib]]
 
 ### Sparse autoencoders  ·  notion
 - tags : `explainability`, `deep-learning`, `llm`, `unsupervised`
@@ -5773,7 +5773,7 @@
 ### Time series anomaly detection  ·  notion
 - tags : `timeseries`, `anomaly-detection`
 - liens sortants : [[ARIMA SARIMA]], [[Anomalies multivariées par apprentissage profond]], [[Autocorrelation]], [[Autoencodeurs]], [[Contrôle statistique de procédé (SPC)]], [[DBSCAN]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Exponential smoothing]], [[Forecasting framing]], [[Foundation models et anomalies de séries]], [[Imbalanced classification]], [[Jeux de données d'anomalies]], [[Maintenance prédictive et RUL]], [[Modèles de Markov cachés et filtre de Kalman]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Scikit-Learn]], [[Stationarity]], [[Time series feature engineering]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Causalité de Granger]], [[Cause racine d'une anomalie]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Jumeau numérique et modèles hybrides]], [[Kats]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Ontologies industrielles]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
+- liens entrants : [[Analyse vibratoire]], [[Anomalies multivariées par apprentissage profond]], [[Autoencodeurs]], [[Causalité de Granger]], [[Cause racine d'une anomalie]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Diagnostic de défauts de roulements]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[Détection d'outliers multivariée]], [[Détection d'outliers univariée]], [[Détection de ruptures]], [[Expliquer une anomalie (contribution des capteurs)]], [[Foundation models et anomalies de séries]], [[Isolation Forest]], [[Jeux de données d'anomalies]], [[Jumeau numérique et modèles hybrides]], [[Kats]], [[LSTM et réseaux récurrents]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Merlion]], [[Modèles de Markov cachés et filtre de Kalman]], [[Ondelettes]], [[Ontologies industrielles]], [[Orion]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Graphe de connaissances industriel sur site]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[STUMPY]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[TSB-AD]], [[Théorie des valeurs extrêmes]], [[Traitement du signal]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[time-series-anomaly-detector]], [[Évaluer une détection d'anomalies]]
 
 ### Time series feature engineering  ·  notion
 - tags : `forecasting`, `timeseries`, `feature-engineering`
@@ -5928,12 +5928,17 @@
 ### Pattern - Agent sur LLM auto-hébergé  ·  pattern
 - tags : `pattern`, `agents`, `llm`, `local-llm`, `tool-use`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Frameworks LLM]], [[Context engineering]], [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[OpenRouter]], [[SGLang]], [[Sandboxing de code généré]], [[Tool use patterns]], [[agent-loops]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[Patterns]]
+- liens entrants : [[Harnais d'agent]], [[Hermes Agent]], [[LM Studio]], [[LM Studio Bionic]], [[Ollama]], [[OpenClaw]], [[Pattern - Graphe de connaissances industriel sur site]], [[Patterns]]
 
 ### Pattern - Détection d'anomalies en deux étages  ·  pattern
 - tags : `pattern`, `anomaly-detection`, `statistical-process-control`, `thresholding`, `predictive-maintenance`
 - liens sortants : [[Anomalies multivariées par apprentissage profond]], [[Comparatif - Détection d'anomalies]], [[Comparatif - Détection d'anomalies en séries temporelles]], [[Contrôle statistique de procédé (SPC)]], [[Data drift]], [[Détection d'anomalies en ligne]], [[Détection de ruptures]], [[Isolation Forest]], [[Local Outlier Factor]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[Types d'anomalies et régimes de supervision]], [[aeon]], [[ruptures]], [[Évaluer une détection d'anomalies]]
-- liens entrants : [[Détection d'anomalies]], [[Maintenance prédictive]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Patterns]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]]
+- liens entrants : [[Détection d'anomalies]], [[Maintenance prédictive]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Patterns]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]]
+
+### Pattern - Graphe de connaissances industriel sur site  ·  pattern
+- tags : `pattern`, `knowledge-graph`, `rdf`, `ontology`, `sparql`, `predictive-maintenance`, `iiot`, `llm`
+- liens sortants : [[Apache Jena]], [[Bases graphe — modèles et langages de requête]], [[Comparatif - Bases graphes]], [[Comparatif - Moteurs RDF]], [[Comparatif - Outils RDF et OWL en Python]], [[Données liées et vocabulaires partagés]], [[Fluree]], [[GraphRAG]], [[Graphe de connaissances]], [[Human-in-the-loop]], [[InfluxDB]], [[Interroger un graphe en langage naturel]], [[Jumeau numérique et modèles hybrides]], [[Liage d'entités]], [[LinkML]], [[Maintenance prédictive et RUL]], [[Neo4j]], [[OWL et raisonnement]], [[Ollama]], [[Ontologie]], [[Ontologies et RDF]], [[Ontologies industrielles]], [[Ontop]], [[Owlready2]], [[Oxigraph]], [[Pattern - Agent sur LLM auto-hébergé]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Plongements de graphe et prédiction de liens]], [[Politique de maintenance et coût]], [[Postgres]], [[Protégé]], [[PyKEEN]], [[QLever]], [[RDF et triplets]], [[RDF4J]], [[SHACL]], [[SPARQL]], [[Score et seuil d'alerte]], [[Time series anomaly detection]], [[TimescaleDB]], [[Virtuoso Open Source]], [[asyncua]], [[neosemantics]], [[pySHACL]], [[rdflib]]
+- liens entrants : [[Bases de graphes]], [[Graphe de connaissances]], [[Pattern - Pipeline de maintenance prédictive on-prem]], [[Pattern - RAG structuré graphe + human-in-the-loop]], [[Patterns]], [[RAG & retrieval]]
 
 ### Pattern - Inspection visuelle en ligne de production  ·  pattern
 - tags : `pattern`, `industrial-inspection`, `anomaly-detection`, `computer-vision`, `edge-inference`
@@ -5947,8 +5952,8 @@
 
 ### Pattern - Pipeline de maintenance prédictive on-prem  ·  pattern
 - tags : `pattern`, `predictive-maintenance`, `iiot`, `opc-ua`, `mqtt`, `anomaly-detection`
-- liens sortants : [[Alertmanager]], [[Comparatif - Brokers MQTT]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[EMQX]], [[Grafana]], [[Indicateurs de santé]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[darts]], [[open62541]]
-- liens entrants : [[Maintenance prédictive]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Prévoir puis optimiser]], [[Patterns]], [[Rule - Évaluer une anomalie par événement, pas par point]]
+- liens sortants : [[Alertmanager]], [[Comparatif - Brokers MQTT]], [[Contrôle statistique de procédé (SPC)]], [[Données industrielles]], [[Détection d'anomalies]], [[Détection d'anomalies en ligne]], [[EMQX]], [[Grafana]], [[Indicateurs de santé]], [[InfluxDB]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[Maintenance prédictive]], [[Maintenance prédictive avec peu de pannes]], [[Maintenance prédictive et RUL]], [[Mosquitto]], [[Node-RED]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Inspection visuelle en ligne de production]], [[Politique de maintenance et coût]], [[Protocoles de l'atelier - MQTT, OPC UA et Modbus]], [[PyOD]], [[River]], [[Rule - Entraîner sur du normal vérifié]], [[Rule - Évaluer une anomalie par événement, pas par point]], [[STUMPY]], [[Score et seuil d'alerte]], [[Surveillance conditionnelle et modes de défaillance]], [[Séries temporelles]], [[Telegraf]], [[TimescaleDB]], [[asyncua]], [[darts]], [[open62541]]
+- liens entrants : [[Graphe de connaissances]], [[Maintenance prédictive]], [[Pattern - Détection d'anomalies en deux étages]], [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Inspection visuelle en ligne de production]], [[Pattern - Prévoir puis optimiser]], [[Patterns]], [[Rule - Évaluer une anomalie par événement, pas par point]]
 
 ### Pattern - Pipeline scraping → matching → optimisation  ·  pattern
 - tags : `pattern`, `web-scraping`, `string-matching`, `combinatorial-optimization`, `linear-programming`, `data-pipeline`
@@ -5962,8 +5967,8 @@
 
 ### Pattern - RAG structuré graphe + human-in-the-loop  ·  pattern
 - tags : `pattern`, `rag`, `knowledge-graph`, `graph-db`, `human-in-the-loop`, `agents`
-- liens sortants : [[Advanced RAG]], [[Comparatif - Bases graphes]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[GraphRAG]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[LangChain]], [[LangGraph]], [[NER et étiquetage de séquence]], [[Neo4j]], [[Qdrant]], [[RAG]], [[sentence-transformers]]
-- liens entrants : [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[Patterns]], [[Plongements de graphe et prédiction de liens]]
+- liens sortants : [[Advanced RAG]], [[Comparatif - Bases graphes]], [[Comparatif - Frameworks LLM]], [[Construction de graphes de connaissances]], [[GraphRAG]], [[Graphe de connaissances]], [[Human-in-the-loop]], [[Hybrid retrieval]], [[LangChain]], [[LangGraph]], [[NER et étiquetage de séquence]], [[Neo4j]], [[Pattern - Graphe de connaissances industriel sur site]], [[Qdrant]], [[RAG]], [[sentence-transformers]]
+- liens entrants : [[Graphe de connaissances]], [[Interroger un graphe en langage naturel]], [[Pattern - Graphe de connaissances industriel sur site]], [[Patterns]], [[Plongements de graphe et prédiction de liens]]
 
 ### Pattern - Stack démo ML locale multi-services  ·  pattern
 - tags : `pattern`, `ml-demo`, `data-app`, `container`, `object-storage`
@@ -6187,7 +6192,7 @@
 - `hypothesis-testing` : A/B testing, Analyse de puissance, Causalité de Granger, Comparatif - Outils stats, Correction des tests multiples, Diff-in-Diff, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Sequential testing, Test du khi-deux, Test t et ANOVA, Tests & estimation, Tests d'hypothèse, Tests non paramétriques, pingouin, scipy.stats, statsmodels
 - `idempotence` : API REST, GraphQL et gRPC, Architecture pilotée par les événements, ELT vs ETL & idempotence, Fiabilité des données, Ingestion incrémentale et curseurs, Orchestration, Stream processing
 - `identity-provider` : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité  — pas de page concept dédiée
-- `iiot` : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, OEE et rendement global, Ontologies industrielles, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
+- `iiot` : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, OEE et rendement global, Ontologies industrielles, Pattern - Graphe de connaissances industriel sur site, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541  — pas de page concept dédiée
 - `image-classification` : Classification d'images, Vision
 - `image-generation` : GANs, Image generation
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
@@ -6206,7 +6211,7 @@
 - `jailbreak` : Jailbreaking and defenses, Systèmes IA, Sécurité, garak
 - `key-value` : Redis, Redis Insight  — pas de page concept dédiée
 - `kl-divergence` : Jensen-Shannon divergence, KL divergence, Théorie de l'information
-- `knowledge-graph` : Apache Jena, Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, Données liées et vocabulaires partagés, Fluree, GraphRAG, Graphe de connaissances, Graphify, Graphiti, Interroger un graphe en langage naturel, Liage d'entités, Mémoire des agents, OWL et raisonnement, Obsidian, Ontologie, Ontologies et RDF, Ontologies industrielles, Pattern - RAG structuré graphe + human-in-the-loop, Plongements de graphe et prédiction de liens, PyKEEN, RAG & retrieval, RDF et triplets, RDF4J, SHACL, SPARQL, neosemantics
+- `knowledge-graph` : Apache Jena, Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, Données liées et vocabulaires partagés, Fluree, GraphRAG, Graphe de connaissances, Graphify, Graphiti, Interroger un graphe en langage naturel, Liage d'entités, Mémoire des agents, OWL et raisonnement, Obsidian, Ontologie, Ontologies et RDF, Ontologies industrielles, Pattern - Graphe de connaissances industriel sur site, Pattern - RAG structuré graphe + human-in-the-loop, Plongements de graphe et prédiction de liens, PyKEEN, RAG & retrieval, RDF et triplets, RDF4J, SHACL, SPARQL, neosemantics
 - `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, OLTP, OLAP et lakehouse, Partitionnement & layout de données, Plateformes data & IA, Trino
 - `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
@@ -6218,7 +6223,7 @@
 - `linear-programming` : CVXPY, Comparatif - Solveurs d'optimisation, HiGHS, Mathématiques, OR-Tools, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, S&OP et plan directeur de production
 - `link-prediction` : Plongements de graphe et prédiction de liens, PyKEEN
 - `linter` : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : ARES, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, RAGChecker, TruLens, Évaluation
 - `llm-eval` : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Hallucinations des LLM, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, garak, promptfoo, Évaluation  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
@@ -6283,7 +6288,7 @@
 - `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
-- `ontology` : Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Graphe de connaissances, LinkML, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontologies industrielles, Ontop, Owlready2, Protégé, RDF et triplets, SHACL
+- `ontology` : Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Graphe de connaissances, LinkML, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontologies industrielles, Ontop, Owlready2, Pattern - Graphe de connaissances industriel sur site, Protégé, RDF et triplets, SHACL
 - `opc-ua` : Données industrielles, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541
 - `optimal-transport` : Optimal transport, Théorie de l'information, Wasserstein distance
 - `optimization` : Adam optimizer, CVXPY, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, HiGHS, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux  — pas de page concept dédiée
@@ -6298,7 +6303,7 @@
 - `parallel` : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Programmation asynchrone en Python, Ray  — pas de page concept dédiée
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
-- `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
+- `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Graphe de connaissances industriel sur site, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
 - `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `pii` : Presidio
@@ -6308,7 +6313,7 @@
 - `pose-estimation` : Estimation de pose, Ultralytics YOLO
 - `positional-encoding` : Contexte long, Positional encoding
 - `postgres` : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2  — pas de page concept dédiée
-- `predictive-maintenance` : Adaptation de domaine, Diagnostic de défauts de roulements, Indicateurs de fiabilité (MTBF, MTTR, disponibilité), Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Loi de Weibull, Maintenance prédictive, Maintenance prédictive avec peu de pannes, Pattern - Détection d'anomalies en deux étages, Pattern - Pipeline de maintenance prédictive on-prem, Politique de maintenance et coût, PyBaMM, RUL par analyse de survie, RUL par apprentissage profond, Santé de batterie (SOH et RUL), Surveillance conditionnelle et modes de défaillance
+- `predictive-maintenance` : Adaptation de domaine, Diagnostic de défauts de roulements, Indicateurs de fiabilité (MTBF, MTTR, disponibilité), Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Loi de Weibull, Maintenance prédictive, Maintenance prédictive avec peu de pannes, Pattern - Détection d'anomalies en deux étages, Pattern - Graphe de connaissances industriel sur site, Pattern - Pipeline de maintenance prédictive on-prem, Politique de maintenance et coût, PyBaMM, RUL par analyse de survie, RUL par apprentissage profond, Santé de batterie (SOH et RUL), Surveillance conditionnelle et modes de défaillance
 - `prior` : A priori conjugués, Bayésien, Estimation MAP, Inférence bayésienne, PyMC  — pas de page concept dédiée
 - `privacy` : ActivityWatch, Apprentissage fédéré, Confidentialité différentielle, Données personnelles et anonymisation pour LLM, OpenCut, Page to Markdown, Presidio, SmartTube  — pas de page concept dédiée
 - `probabilistic-programming` : Bayésien, Monte Carlo et inférence variationnelle, PyMC, Stan  — pas de page concept dédiée
@@ -6327,7 +6332,7 @@
 - `rag` : ARES, Advanced RAG, AnythingLLM, Bases de données vectorielles, Chroma, Chunking strategies, Cognee, Cohere Rerank, ColPali, Comparatif - Frameworks LLM, Comparatif - Frameworks text-to-SQL, Comparatif - Parsing de documents, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Rerankers, DB-GPT, DeepWiki-Open, Dify, Docling, FlashRank, Flowise, GraphRAG, Haystack, Hybrid retrieval, Jina Reranker, LLM & IA générative, LangChain, Langflow, Late-interaction retrieval, LibreChat, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LlamaParse, Marker, Milvus, MinerU, Open WebUI, OpenDataLoader PDF, OpenViking, Pattern - RAG structuré graphe + human-in-the-loop, Pinecone, Qdrant, Query transformations, RAG, RAG & retrieval, RAG agentique, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGChecker, RAGFlow, RAGatouille, Ragas, Reranking, Routing and cascading, Text-to-SQL, Unstructured, Vanna, Weaviate, bge-reranker, pgvector, txtai
 - `rag-eval` : ARES, Comparatif - Évaluation LLM, RAG benchmarks, RAG eval, RAGChecker, Ragas, Évaluation
 - `ranking` : BM25, Learning to rank, Ranking metrics, Recherche d'information, Reranking, Systèmes de recommandation, Vespa, bm25s, rank-bm25, Évaluation de modèles  — pas de page concept dédiée
-- `rdf` : Apache Jena, Comparatif - Moteurs RDF, Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Fluree, Graphe de connaissances, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontop, Owlready2, Oxigraph, QLever, RDF et triplets, RDF4J, SHACL, SPARQL, Virtuoso Open Source, neosemantics, pySHACL, rdflib
+- `rdf` : Apache Jena, Comparatif - Moteurs RDF, Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Fluree, Graphe de connaissances, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontop, Owlready2, Oxigraph, Pattern - Graphe de connaissances industriel sur site, QLever, RDF et triplets, RDF4J, SHACL, SPARQL, Virtuoso Open Source, neosemantics, pySHACL, rdflib
 - `re-identification` : Metric learning & ré-identification
 - `reasoning` : Calculs adaptatifs, Chain-of-Thought, Code and math benchmarks, GRPO, Gemma, Mistral, Modèles de langage, Qwen, Reasoning models, gpt-oss  — pas de page concept dédiée
 - `recommender-systems` : Learning to rank, Systèmes de recommandation
@@ -6375,7 +6380,7 @@
 - `skills` : Agent Skills - la spécification, Gestion de projet, Ponytail, Quel skill pour quelle étape, Skills d'Addy Osmani, Skills d'Anthropic, Skills de Matt Pocock, Superpowers, awesome-claude-code, pm-skills
 - `slo` : SLO et alerting
 - `small-language-model` : Distillation, Modèles de langage, Small Language Models, needle
-- `sparql` : Apache Jena, Comparatif - Moteurs RDF, Fluree, Interroger un graphe en langage naturel, Ontologies et RDF, Ontop, Oxigraph, QLever, RDF4J, SPARQL, Virtuoso Open Source, rdflib
+- `sparql` : Apache Jena, Comparatif - Moteurs RDF, Fluree, Interroger un graphe en langage naturel, Ontologies et RDF, Ontop, Oxigraph, Pattern - Graphe de connaissances industriel sur site, QLever, RDF4J, SPARQL, Virtuoso Open Source, rdflib
 - `spec-driven` : Agent OS, BMAD - la méthode, BMAD - tour complet des skills, Backlog.md - l'outil, Cycle de vie d'un projet assisté par agent, Développement piloté par la spécification, Gestion de projet, OpenSpec, PRD et user stories, Rule - Projet assisté par agent  — pas de page concept dédiée
 - `spectrogram` : Anomalie acoustique, Classification audio par spectrogramme, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, librosa, scipy.signal  — pas de page concept dédiée
 - `speech` : Claude Video, Médias, Speech models, Superwhisper  — pas de page concept dédiée
@@ -6525,7 +6530,7 @@
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
 - `identity-provider` (porté par : Authelia, Authentification, Authentik, Comparatif - Fournisseurs d'identité, Keycloak, OAuth2 et OpenID Connect, Sécurité)
-- `iiot` (porté par : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, OEE et rendement global, Ontologies industrielles, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
+- `iiot` (porté par : Données industrielles, EMQX, Inférence en bordure - modèles sur du matériel d'atelier, Mosquitto, Node-RED, OEE et rendement global, Ontologies industrielles, Pattern - Graphe de connaissances industriel sur site, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf, asyncua, open62541)
 - `in-memory` (porté par : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas)
 - `industrial-inspection` (porté par : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Comparatif - Détection d'anomalies visuelles, Dinomaly, Détection d'anomalies visuelle, Pattern - Inspection visuelle en ligne de production, anomalib, patchcore-inspection)
 - `information-theory` (porté par : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance)
@@ -6543,7 +6548,7 @@
 - `linear-algebra` (porté par : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
 - `linter` (porté par : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Hallucinations des LLM, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, garak, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
 - `load-balancer` (porté par : HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
@@ -6588,7 +6593,7 @@
 - `package-manager` (porté par : Comparatif - Gestionnaires de paquets Python, Outils de développement, Packaging Python et environnements reproductibles, Rule - Toolchain Python, mise, pip, uv)
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Programmation asynchrone en Python, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
-- `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
+- `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Graphe de connaissances industriel sur site, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
 - `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1207 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1208 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -1638,6 +1638,7 @@
 ### (sans catégorie)
 - **Pattern - Agent sur LLM auto-hébergé** — —
 - **Pattern - Détection d'anomalies en deux étages** — —
+- **Pattern - Graphe de connaissances industriel sur site** — —
 - **Pattern - Inspection visuelle en ligne de production** — —
 - **Pattern - Moteur de jeu pur + IA séparée** — —
 - **Pattern - Pipeline de maintenance prédictive on-prem** — —

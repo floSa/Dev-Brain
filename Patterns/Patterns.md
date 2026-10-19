@@ -27,6 +27,7 @@ pitch: Des combinaisons de briques déjà éprouvées — ce qui marche ensemble
 ### Patterns
 - [[Pattern - Agent sur LLM auto-hébergé]]
 - [[Pattern - Détection d'anomalies en deux étages]]
+- [[Pattern - Graphe de connaissances industriel sur site]]
 - [[Pattern - Inspection visuelle en ligne de production]]
 - [[Pattern - Moteur de jeu pur + IA séparée]]
 - [[Pattern - Pipeline de maintenance prédictive on-prem]]

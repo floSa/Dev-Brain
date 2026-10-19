@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1207,
+  "count": 1208,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -1854,6 +1854,7 @@
       "Node-RED",
       "OEE et rendement global",
       "Ontologies industrielles",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Protocoles de l'atelier - MQTT, OPC UA et Modbus",
       "Telegraf",
@@ -2053,6 +2054,7 @@
       "Ontologie",
       "Ontologies et RDF",
       "Ontologies industrielles",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Plongements de graphe et prédiction de liens",
       "PyKEEN",
@@ -2273,6 +2275,7 @@
       "PEFT",
       "PR-Agent",
       "Pattern - Agent sur LLM auto-hébergé",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Perplexity",
       "Phoenix Arize",
       "PraisonAI",
@@ -3065,6 +3068,7 @@
       "Ontologies industrielles",
       "Ontop",
       "Owlready2",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Protégé",
       "RDF et triplets",
       "SHACL"
@@ -3204,6 +3208,7 @@
     "pattern": [
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - Détection d'anomalies en deux étages",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Pattern - Inspection visuelle en ligne de production",
       "Pattern - Moteur de jeu pur + IA séparée",
       "Pattern - Pipeline de maintenance prédictive on-prem",
@@ -3278,6 +3283,7 @@
       "Maintenance prédictive",
       "Maintenance prédictive avec peu de pannes",
       "Pattern - Détection d'anomalies en deux étages",
+      "Pattern - Graphe de connaissances industriel sur site",
       "Pattern - Pipeline de maintenance prédictive on-prem",
       "Politique de maintenance et coût",
       "PyBaMM",
@@ -3516,6 +3522,7 @@
       "Ontop",
       "Owlready2",
       "Oxigraph",
+      "Pattern - Graphe de connaissances industriel sur site",
       "QLever",
       "RDF et triplets",
       "RDF4J",
@@ -4108,6 +4115,7 @@
       "Ontologies et RDF",
       "Ontop",
       "Oxigraph",
+      "Pattern - Graphe de connaissances industriel sur site",
       "QLever",
       "RDF4J",
       "SPARQL",
@@ -34244,6 +34252,30 @@
         "statistical-process-control",
         "thresholding",
         "predictive-maintenance"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Patterns/Pattern - Graphe de connaissances industriel sur site.md",
+      "nom": "Pattern - Graphe de connaissances industriel sur site",
+      "alias": null,
+      "role": "pattern",
+      "categorie": null,
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "pattern",
+        "knowledge-graph",
+        "rdf",
+        "ontology",
+        "sparql",
+        "predictive-maintenance",
+        "iiot",
+        "llm"
       ],
       "alternatives": null,
       "complements": null,
