@@ -35,6 +35,7 @@ tags: [relational, nosql, columnar, timeseries, graph-db, vector-db, search]
 ### Graphe
 - Nœuds et arêtes typées ; idéal pour les données fortement connectées et le parcours de relations profondes que SQL exprime mal.
 - Implémentations : [[Neo4j]] (natif, mono-instance en Community), [[Memgraph]] (en mémoire), [[Apache AGE]] (extension Postgres), [[ArangoDB]] (multi-modèle) et les distribués [[Nebula Graph]], [[Dgraph]] et [[JanusGraph]]. Le sous-domaine a son hub : [[Bases de graphes]].
+- Le modèle **RDF** (triplets, ontologie, SPARQL, OWL, SHACL, données liées) et le graphe de connaissances ont le leur : [[Ontologies et RDF]], dont la page d'entrée est [[Graphe de connaissances]].
 
 ### Vectoriel
 - Stocke des embeddings et retrouve les plus proches par recherche ANN. Détail : [[Bases de données vectorielles]].
