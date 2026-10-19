@@ -46,6 +46,7 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - Exposer mes outils à n'importe quel agent → [[fastmcp]], puis [[mcpjam]] pour vérifier.
 - Garder de la mémoire entre les sessions → [[Mémoire des agents]] (faits par utilisateur : [[Mem0]] ; faits datés : [[Graphiti]] ; agent qui réécrit sa mémoire : [[Letta]]) ; réduire le contexte sans le perdre → [[Headroom]].
 - Savoir quel modèle local tient sur ma machine → [[llmfit]].
+- Comparer deux modèles ou deux fournisseurs sur le prix : ce qu'une tâche coûte vraiment, au-delà du tarif au token → [[Tarif catalogue contre coût par tâche]].
 - Entraîner un modèle depuis zéro, ou produire autre chose que du texte → [[Machine Learning]], pas ce domaine.
 
 <!-- AUTO:START -->

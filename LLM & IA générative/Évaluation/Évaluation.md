@@ -30,6 +30,8 @@ tags: [llm-eval, benchmark, rag-eval, llm-as-judge, model-evaluation]
 - Faire tourner le juge lui-même en local, avec un modèle ouvert entraîné pour ça → [[Prometheus-Eval]].
 - Savoir si un RAG rate côté retriever ou côté générateur, claim par claim → [[RAGChecker]].
 - Un score RAG avec un intervalle de confiance, en échange de quelques dizaines d'annotations humaines → [[ARES]].
+- Lire un score ou un classement publié sans se faire piéger (version de l'indice, qui l'a exécuté, banc saturé, incertitude) → [[Lire un score publié]].
+- Comprendre pourquoi un modèle servi par API change de comportement sans changer de nom → [[Ce qui change derrière une API]].
 - Regarder le trafic réel plutôt qu'un jeu figé → [[Observabilité des LLM]].
 - Évaluer un modèle ML classique (accuracy, F1, BLEU) plutôt qu'un système LLM → [[Machine Learning]].
 

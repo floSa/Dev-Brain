@@ -37,6 +37,7 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - Un graphe en entrée → [[PyTorch Geometric]], au niveau du domaine.
 - Récupérer un modèle pré-entraîné plutôt que d'en entraîner un → [[HuggingFace]], et [[timm]] pour les backbones vision.
 - Une séquence de capteurs ou une série, avec un réseau à état plutôt qu'un Transformer → [[LSTM et réseaux récurrents]].
+- Générer des images, avec un livrable sous Apache-2.0 → [[Qwen-Image]] ; les décomposer en couches RGBA → [[Qwen-Image-Layered]] ; un canal alpha natif en évaluation seulement, sous licence de recherche → [[Qwen-Image-2.1]].
 
 <!-- AUTO:START -->
 ### Notions

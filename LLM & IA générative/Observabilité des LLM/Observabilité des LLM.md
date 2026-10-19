@@ -24,6 +24,7 @@ tags: [llm-observability, tracing, observability]
 - Standard ouvert, instrumentation OpenTelemetry réutilisable ailleurs → [[Phoenix Arize]].
 - Écosystème LangChain / LangGraph déjà en place, managé accepté → [[LangSmith]].
 - Un proxy à poser devant l'API sans toucher au code → [[Helicone]], en tenant compte de son état de maintenance.
+- Savoir si le modèle servi par une API a dérivé, sur un jeu figé rejoué avec ses tirages multiples et sa bande de bruit → [[Canari de dérive d'un LLM en API]], et [[Ce qui change derrière une API]] pour ce qui peut avoir bougé.
 - Noter la qualité sur un jeu figé plutôt que sur le trafic → [[Évaluation]].
 - Surveiller la dérive d'un modèle entraîné maison → [[Machine Learning]].
 
