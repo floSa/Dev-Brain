@@ -83,6 +83,10 @@ La requête « tous les capteurs de vibration des équipements de la ligne 2 » 
 | Comment poser une question en français ? | [[Interroger un graphe en langage naturel]] |
 | Capteurs, machines, jumeau numérique ? | [[Ontologies industrielles]] |
 | Où le stocker, dans quel moteur de graphe de propriétés ? | [[Bases de graphes]], [[Comparatif - Bases graphes]], [[Neo4j]] |
+| Où le stocker, dans quel moteur RDF ? | [[Comparatif - Moteurs RDF]] : [[Apache Jena]], [[Oxigraph]], [[RDF4J]], [[QLever]], [[Virtuoso Open Source]], [[Fluree]], [[Ontop]] ; le dossier [[Ontologies et RDF]] |
+| Quels outils pour manipuler, valider, concevoir en Python ? | [[Comparatif - Outils RDF et OWL en Python]] : [[rdflib]], [[pySHACL]], [[Owlready2]], [[LinkML]] ; l'éditeur graphique [[Protégé]] ; [[neosemantics]] pour entrer du RDF dans Neo4j |
+| Entraîner des plongements de graphe ? | [[PyKEEN]] |
+| Comment l'assembler dans une usine ? | [[Pattern - Graphe de connaissances industriel sur site]], [[Pattern - Pipeline de maintenance prédictive on-prem]] |
 | Comment le construire depuis du texte avec un LLM ? | [[Construction de graphes de connaissances]] |
 | Comment s'en servir pour un RAG ? | [[GraphRAG]], [[Pattern - RAG structuré graphe + human-in-the-loop]] |
 | Comment un agent s'en sert comme mémoire ? | [[Mémoire des agents]], [[Agent memory]], [[Graphiti]], [[Cognee]] |
