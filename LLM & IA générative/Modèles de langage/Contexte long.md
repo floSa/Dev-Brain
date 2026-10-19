@@ -104,6 +104,8 @@ tags: [llm, context-engineering, attention, inference-optimization, positional-e
 - [[Scaling laws]] et [[LLM benchmarks]] — où se placent les évaluations de contexte long.
 - [[Hallucinations des LLM]] — un contexte long mal exploité augmente les erreurs de fidélité.
 - Briques : [[vLLM]], [[SGLang]], [[TensorRT-LLM]], [[llama.cpp]], [[Ollama]] — les moteurs où la longueur et le cache se règlent ; [[Qdrant]] — l'alternative RAG côté recherche.
+- [[Taille du cache KV par token]] — la formule du cache KV et ses leviers.
+- [[Dimensionner la mémoire d'un serveur LLM]] — combien de sessions de cette longueur tiennent sur un nœud.
 
 ## Pour aller plus loin
 

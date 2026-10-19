@@ -53,6 +53,7 @@ tags: [routing, llm, rag]
 - [[LiteLLM]] — routage / fallback multi-fournisseurs au niveau passerelle.
 - Passerelles qui l'implémentent : [[OmniRoute]] (bascule sur quota épuisé), [[LiteLLM]], [[OpenRouter]].
 - [[Tarif catalogue contre coût par tâche]] — ce qu'une cascade économise réellement : le coût par tâche, pas le prix au token.
+- [[Coût d'un token et taux d'utilisation]] — le coût d'un token côté fournisseur, à distinguer du coût d'une tâche.
 
 ## Pour aller plus loin
 

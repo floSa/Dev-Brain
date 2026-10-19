@@ -45,6 +45,7 @@ tags: [distributed-training, deep-learning, gpu, memory-optimization]
 - [[Gradient checkpointing]] — échange du calcul contre de la mémoire d'activations, combiné à FSDP/ZeRO sur les gros modèles.
 - [[PyTorch]] — DDP et FSDP natifs (`torch.distributed`, `torch.distributed.fsdp`).
 - [[DeepSpeed]] — implémentation de référence de ZeRO (sharding des états, offload CPU/NVMe, 3D-parallelism).
+- [[Parallélisme en inférence]] — les mêmes familles de parallélisme, côté serving.
 
 ## Pour aller plus loin
 

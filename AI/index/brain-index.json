@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1218,
+  "count": 1225,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -314,6 +314,7 @@
       "Multi-head Latent Attention",
       "Positional encoding",
       "Self-attention",
+      "Taille du cache KV par token",
       "Transformer architectures"
     ],
     "audio-classification": [
@@ -395,6 +396,7 @@
       "LLM benchmarks",
       "Lire un score publié",
       "Merlion",
+      "Mesurer une latence",
       "OCR classique vs modèles vision-langage pour documents",
       "Orion",
       "RAG benchmarks",
@@ -1705,9 +1707,11 @@
       "Apprentissage profond",
       "Calcul distribué",
       "Comparatif - Calcul distribué",
+      "Coût d'un token et taux d'utilisation",
       "CuPy",
       "DeepSpeed",
       "Detectron2",
+      "Dimensionner la mémoire d'un serveur LLM",
       "Entraînement distribué",
       "Flash Attention and efficient attention",
       "Gradient checkpointing",
@@ -1716,12 +1720,16 @@
       "Keras",
       "Kornia",
       "LM Studio",
+      "Mesurer une latence",
       "Mixed precision",
       "Modal",
       "Multi-head Latent Attention",
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ollama",
+      "Parallélisme en inférence",
+      "Plafond de débit d'un GPU (roofline)",
+      "Prefill par morceaux et désagrégation prefill-decode",
       "PyTorch",
       "PyTorch Geometric",
       "PyTorch Lightning",
@@ -1730,6 +1738,7 @@
       "SGLang",
       "Serving",
       "TGI",
+      "Taille du cache KV par token",
       "TensorFlow",
       "TensorFlow Serving",
       "TensorRT",
@@ -1915,6 +1924,8 @@
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Runtimes d'inférence CPU et edge",
       "Comparatif - Serving de modèles",
+      "Coût d'un token et taux d'utilisation",
+      "Dimensionner la mémoire d'un serveur LLM",
       "Déploiement de modèles",
       "Embeddings & encodeurs",
       "FastEmbed",
@@ -1925,11 +1936,15 @@
       "LM Studio",
       "LiteLLM",
       "LiteRT",
+      "Mesurer une latence",
       "NVIDIA Triton",
       "ONNX Runtime",
       "Ollama",
       "OpenRouter",
       "OpenVINO",
+      "Parallélisme en inférence",
+      "Plafond de débit d'un GPU (roofline)",
+      "Prefill par morceaux et désagrégation prefill-decode",
       "Ray Serve",
       "Runtimes",
       "SGLang",
@@ -1937,6 +1952,7 @@
       "Serving",
       "Speculative decoding",
       "TGI",
+      "Taille du cache KV par token",
       "TensorFlow Serving",
       "TensorRT",
       "TensorRT-LLM",
@@ -1951,12 +1967,18 @@
       "Attention linéaire",
       "Calculs adaptatifs",
       "Contexte long",
+      "Coût d'un token et taux d'utilisation",
+      "Dimensionner la mémoire d'un serveur LLM",
       "Effort de raisonnement et courbe coût-qualité",
       "Flash Attention and efficient attention",
       "Inference optimization",
+      "Mesurer une latence",
       "Multi-Token Prediction",
       "Multi-head Latent Attention",
       "ONNX Runtime",
+      "Parallélisme en inférence",
+      "Plafond de débit d'un GPU (roofline)",
+      "Prefill par morceaux et désagrégation prefill-decode",
       "Pruning",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Quantization",
@@ -1964,6 +1986,7 @@
       "Serving",
       "Speculative decoding",
       "State Space Models",
+      "Taille du cache KV par token",
       "Tarif catalogue contre coût par tâche",
       "TensorRT",
       "prompt-caching"
@@ -2216,6 +2239,7 @@
       "Context engineering",
       "Contexte long",
       "Continue",
+      "Coût d'un token et taux d'utilisation",
       "CrewAI",
       "DB-GPT",
       "DSPy",
@@ -2226,6 +2250,7 @@
       "DeepEval",
       "DeepSeek-V4.1-Flash",
       "Dify",
+      "Dimensionner la mémoire d'un serveur LLM",
       "E2B",
       "Effort de raisonnement et courbe coût-qualité",
       "Flowise",
@@ -2275,6 +2300,7 @@
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
+      "Mesurer une latence",
       "MiMo-V2.6",
       "Mistral",
       "Modal",
@@ -2295,11 +2321,14 @@
       "Outlines",
       "PEFT",
       "PR-Agent",
+      "Parallélisme en inférence",
       "Pattern - Agent sur LLM auto-hébergé",
       "Pattern - Graphe de connaissances industriel sur site",
       "Perplexity",
       "Phoenix Arize",
+      "Plafond de débit d'un GPU (roofline)",
       "PraisonAI",
+      "Prefill par morceaux et désagrégation prefill-decode",
       "Prometheus-Eval",
       "Prompt engineering",
       "Prompt injection",
@@ -2337,6 +2366,7 @@
       "Synthetic data generation",
       "TGI",
       "TRL",
+      "Taille du cache KV par token",
       "Tarif catalogue contre coût par tâche",
       "TensorRT-LLM",
       "Text-to-SQL",
@@ -2793,6 +2823,8 @@
       "BentoML",
       "Comparatif - Exécution & serving LLM",
       "Comparatif - Serving de modèles",
+      "Coût d'un token et taux d'utilisation",
+      "Dimensionner la mémoire d'un serveur LLM",
       "Déploiement de modèles",
       "Embeddings & encodeurs",
       "Google Cloud Vertex AI",
@@ -2803,6 +2835,8 @@
       "NVIDIA Triton",
       "ONNX Runtime",
       "OpenVINO",
+      "Parallélisme en inférence",
+      "Prefill par morceaux et désagrégation prefill-decode",
       "Ray Serve",
       "Runtimes",
       "SGLang",
@@ -17610,6 +17644,74 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Runtimes/Coût d'un token et taux d'utilisation.md",
+      "nom": "Coût d'un token et taux d'utilisation",
+      "alias": [
+        "coût par million de tokens",
+        "coût d'inférence",
+        "marge d'un fournisseur de modèles ouverts",
+        "taux d'utilisation des GPU",
+        "utilisation GPU",
+        "économie de l'inférence",
+        "coût de production d'un token",
+        "seuil de rentabilité d'un GPU",
+        "tokenomics"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "llm",
+        "gpu",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Dimensionner la mémoire d'un serveur LLM.md",
+      "nom": "Dimensionner la mémoire d'un serveur LLM",
+      "alias": [
+        "budget mémoire GPU",
+        "nombre d'utilisateurs maximum",
+        "capacité d'un serveur LLM",
+        "VRAM d'un serveur LLM",
+        "gpu-memory-utilization",
+        "réplication des têtes KV",
+        "dimensionnement vLLM",
+        "empreinte mémoire d'un LLM",
+        "combien d'utilisateurs sur un GPU"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "gpu",
+        "llm",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Runtimes/Inference optimization.md",
       "nom": "Inference optimization",
       "alias": [
@@ -17679,6 +17781,39 @@
         "[[AnythingLLM]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Mesurer une latence.md",
+      "nom": "Mesurer une latence",
+      "alias": [
+        "latence d'inférence",
+        "p50 et p95",
+        "médiane et percentile",
+        "latence de calcul contre aller-retour réseau",
+        "protocole de mesure de latence",
+        "comparer des latences",
+        "latence sur matériel nommé",
+        "benchmark de latence"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference",
+        "inference-optimization",
+        "llm",
+        "gpu",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/Multi-Token Prediction.md",
@@ -17754,6 +17889,120 @@
         "[[Cognee]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Parallélisme en inférence.md",
+      "nom": "Parallélisme en inférence",
+      "alias": [
+        "parallélisme de tenseurs",
+        "tensor parallelism",
+        "TP",
+        "parallélisme de données",
+        "data parallelism",
+        "DP",
+        "parallélisme d'experts",
+        "expert parallelism",
+        "EP",
+        "parallélisme de pipeline",
+        "all-reduce",
+        "répartir un LLM sur plusieurs GPU",
+        "multi-GPU inférence"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "llm",
+        "gpu",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Plafond de débit d'un GPU (roofline).md",
+      "nom": "Plafond de débit d'un GPU (roofline)",
+      "alias": [
+        "roofline",
+        "modèle roofline",
+        "mur mémoire",
+        "memory wall",
+        "memory-bound",
+        "compute-bound",
+        "intensité arithmétique",
+        "point d'inflexion",
+        "bande passante mémoire",
+        "plafond de decode",
+        "débit maximal d'un utilisateur"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "gpu",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Prefill par morceaux et désagrégation prefill-decode.md",
+      "nom": "Prefill par morceaux et désagrégation prefill-decode",
+      "alias": [
+        "chunked prefill",
+        "prefill par tranches",
+        "désagrégation prefill/decode",
+        "disaggregated serving",
+        "disaggregated prefilling",
+        "TTFT",
+        "ITL",
+        "TPOT",
+        "inter-token latency",
+        "time to first token",
+        "goodput",
+        "interférence prefill decode",
+        "continuous batching",
+        "planification par itération"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "llm",
+        "gpu",
+        "model-serving"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/Quantification des LLM - GGUF, AWQ, GPTQ.md",
@@ -17948,6 +18197,40 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Runtimes/Taille du cache KV par token.md",
+      "nom": "Taille du cache KV par token",
+      "alias": [
+        "formule du cache KV",
+        "octets de cache par token",
+        "KV cache size",
+        "empreinte du cache KV",
+        "kappa",
+        "cache KV global",
+        "réduction du cache KV",
+        "compression du cache KV"
+      ],
+      "role": "notion",
+      "categorie": "llm/runtime",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "mlops",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "inference-optimization",
+        "inference",
+        "llm",
+        "attention",
+        "gpu"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Runtimes/TensorRT-LLM.md",

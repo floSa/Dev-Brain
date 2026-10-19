@@ -48,6 +48,8 @@ tags: [caching, inference-optimization, llm, context-engineering]
 - [[Inference optimization]] — le socle technique (KV-cache, prefix / RadixAttention) sur lequel ceci repose.
 - [[LLM caching]] — le cran au-dessus : cache de la réponse entière, au niveau applicatif.
 - [[Context engineering]] — l'organisation du contexte conditionne directement ce qui est cachable.
+- [[Taille du cache KV par token]] — ce que le cache de préfixe garde en mémoire côté serveur.
+- [[Coût d'un token et taux d'utilisation]] — le tarif « cache touché » dans le coût d'un token.
 
 ## Pour aller plus loin
 

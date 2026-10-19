@@ -59,6 +59,7 @@ tags: [inference-optimization, decoding, llm, inference]
 - [[Quantization]] — accélération sans spéculation, orthogonale et cumulable : réduit les octets à lire, ce qui attaque le même goulot memory-bound.
 - [[Calculs adaptatifs]] — autre façon de moduler le calcul selon la difficulté, au niveau des couches traversées plutôt que des tokens validés par passe.
 - Accélération **sans** spéculation : [[Inference optimization|continuous batching, KV-cache, paged attention]].
+- [[Plafond de débit d'un GPU (roofline)]] — pourquoi vérifier plusieurs tokens coûte presque autant qu'un seul au decode.
 
 ## Pour aller plus loin
 

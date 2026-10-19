@@ -15,6 +15,7 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 
 - Le clivage qui décide de tout est **un poste de travail contre un serveur de production**, et il ne se rattrape pas après coup. Un runtime de poste optimise la latence d'une conversation à la fois et la simplicité d'installation ([[Ollama]], [[LM Studio]], [[llama.cpp]]) ; un moteur de serving optimise le **débit** de dizaines de requêtes concurrentes sur GPU ([[vLLM]], [[SGLang]], [[TGI]], [[TensorRT-LLM]]). Les seconds sont plus lents que les premiers sur une requête unique, et c'est le comportement attendu.
 - Le débit sur GPU se gagne sur deux mécanismes, et ce sont eux qui départagent les moteurs : le **batching continu** (une requête finie libère sa place immédiatement, au lieu d'attendre son lot) et la **gestion du cache KV** — pagination chez [[vLLM]], réutilisation automatique des préfixes chez [[SGLang]]. Cf. [[Inference optimization]].
+- Avant de choisir un moteur, **le calcul se fait sur papier** : un serveur LLM est limité par la bande passante mémoire de ses GPU plus que par leur calcul. [[Plafond de débit d'un GPU (roofline)]] donne le débit maximal d'un utilisateur, [[Dimensionner la mémoire d'un serveur LLM]] le nombre d'utilisateurs qui tiennent (poids, [[Taille du cache KV par token]], état fixe), [[Parallélisme en inférence]] ce que coûte de répartir un modèle sur plusieurs cartes, et [[Prefill par morceaux et désagrégation prefill-decode]] comment protéger les réponses en cours des longs prompts. Le coût d'un token suit de ces nombres : [[Coût d'un token et taux d'utilisation]]. Une latence ne se compare qu'avec son matériel et son protocole : [[Mesurer une latence]].
 - La **quantization** est ce qui rend l'exécution locale possible : réduire la précision des poids fait tenir un modèle dans la VRAM disponible, au prix d'une dégradation qu'il faut mesurer et non supposer. Le format GGUF de [[llama.cpp]] est l'écosystème de fait du local ; [[llmfit]] répond en amont à la seule question qui compte — quel modèle tient réellement sur cette machine.
 - Il y a une **couche basse et des couches d'emballage**, et les confondre fait choisir le mauvais outil. [[llama.cpp]] est le moteur ; [[Ollama]], [[LM Studio]] et [[text-generation-webui]] l'enveloppent d'une ergonomie et d'une API. Descendre à la couche basse se paie en réglages, monter se paie en opacité sur ce qui est réellement exécuté.
 - L'**API OpenAI-compatible est devenue le format commun** de tous ces runtimes. C'est ce qui rend une application portable d'un moteur à l'autre, et ce qui permet de développer en local pour déployer sur GPU sans réécrire le code d'appel.
@@ -34,17 +35,26 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - Extraire la dernière latence d'un parc NVIDIA, compilation acceptée → [[TensorRT-LLM]].
 - De l'appel d'outils et de l'extraction structurée sur un appareil contraint → [[needle]].
 - Savoir ce que ma machine peut faire tourner avant de télécharger → [[llmfit]].
+- Savoir si un modèle tient sur mes GPU, combien d'utilisateurs il sert et à quelle vitesse → [[Dimensionner la mémoire d'un serveur LLM]] et [[Plafond de débit d'un GPU (roofline)]].
+- Estimer ce que coûte un million de tokens sur mon matériel, ou juger un tarif → [[Coût d'un token et taux d'utilisation]].
 - Appeler des modèles hébergés par d'autres plutôt que les héberger → [[LiteLLM]] ou [[OpenRouter]], et non ce dossier.
 - Choisir un format de quantification pour servir un LLM (GGUF, AWQ, GPTQ, FP8) et savoir ce qu'il coûte en qualité → [[Quantification des LLM - GGUF, AWQ, GPTQ]].
 
 <!-- AUTO:START -->
 ### Notions
+- [[Coût d'un token et taux d'utilisation]] — domaines : ai-eng, mlops
+- [[Dimensionner la mémoire d'un serveur LLM]] — domaines : ai-eng, mlops
 - [[Inference optimization]] — domaines : ai-eng, mlops
+- [[Mesurer une latence]] — domaines : ai-eng, mlops
 - [[Multi-Token Prediction]] — domaines : ml-eng, ai-eng
+- [[Parallélisme en inférence]] — domaines : ai-eng, mlops, ml-eng
+- [[Plafond de débit d'un GPU (roofline)]] — domaines : ai-eng, mlops, ml-eng
+- [[Prefill par morceaux et désagrégation prefill-decode]] — domaines : ai-eng, mlops
 - [[prompt-caching]] — domaines : ai-eng
 - [[Quantification des LLM - GGUF, AWQ, GPTQ]] — domaines : ai-eng, mlops, ml-eng
 - [[Server-Sent Events & streaming LLM]] — domaines : ai-eng
 - [[Speculative decoding]] — domaines : ai-eng
+- [[Taille du cache KV par token]] — domaines : ai-eng, mlops, ml-eng
 
 ### Briques
 - [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.

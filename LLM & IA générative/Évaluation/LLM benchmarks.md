@@ -51,6 +51,7 @@ tags: [benchmark, llm-eval, model-evaluation, llm]
 - [[Scaling laws]] — les benchmarks mesurent ce que l'échelle fait gagner.
 - [[Perplexity]] — métrique intrinsèque, hors benchmark de tâche.
 - [[Lire un score publié]] — la grille de lecture d'un score : version de l'indice, qui l'a exécuté, banc saturé, incertitude.
+- [[Mesurer une latence]] — lire un chiffre de latence : matériel, protocole, médiane et queue.
 
 ## Pour aller plus loin
 

@@ -60,6 +60,13 @@ tags: [inference-optimization, inference, llm, gpu]
 - Runtimes qui implémentent tout ceci : [[vLLM]] (PagedAttention), [[SGLang]] (RadixAttention), [[TGI]] (continuous batching), [[TensorRT-LLM]].
 - [[Quantification des LLM - GGUF, AWQ, GPTQ]] — formats, matériel et pièges de la quantification pour servir un LLM
 - [[Contexte long]] — le coût mémoire du cache KV selon la longueur et ce que valent les longueurs annoncées
+- [[Plafond de débit d'un GPU (roofline)]] — pourquoi le decode attend la mémoire, et ce que chaque levier attaque.
+- [[Dimensionner la mémoire d'un serveur LLM]] — poids, cache, état fixe : combien d'utilisateurs tiennent.
+- [[Taille du cache KV par token]] — la formule du cache et ses quatre leviers.
+- [[Prefill par morceaux et désagrégation prefill-decode]] — TTFT, ITL, goodput ; séparer ou mêler les deux phases.
+- [[Parallélisme en inférence]] — tenseurs, données, experts.
+- [[Coût d'un token et taux d'utilisation]] — du débit par GPU au dollar par million de tokens.
+- [[Mesurer une latence]] — lire une latence : matériel, protocole, p50 et p95.
 
 ## Pour aller plus loin
 

@@ -47,6 +47,7 @@ tags: [streaming, llm, web-framework]
 - **HTTP chunked / NDJSON / gRPC streaming** (pas de page) — autres transports de flux côté serveur.
 - [[Inference optimization]] — continuous batching et KV-cache alimentent plusieurs flux SSE en parallèle côté serveur.
 - [[Programmation asynchrone en Python]] — la boucle d'événements, l'annulation et le blocage derrière un générateur asynchrone.
+- [[Mesurer une latence]] — TTFT et ITL : ce que le flux rend perceptible, et comment le mesurer.
 
 ## Pour aller plus loin
 
