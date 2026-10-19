@@ -22,8 +22,8 @@ reste vrai : `AI/design/brain-v2.md`). Ce vault sert **deux usages** :
 > floSa, on ne la modifie pas sans son accord. Voir *Les pages `role: notion`* ci-dessous.
 
 > **Un seul arbre, et plus rien à côté.** `Dev/` a disparu au lot 3, `Wiki/` et `MOC/`
-> à la clôture du lot 4, le 2026-09-05. Les 555 briques, les **427 notions**, les 77
-> comparatifs (comptes mesurés dans l'index le 2026-10-07), les 9 patterns et les 14 règles vivent dans l'arbre des 20 domaines — une
+> à la clôture du lot 4, le 2026-09-05. Les 555 briques, les **438 notions**, les 77
+> comparatifs (comptes mesurés dans l'index le 2026-10-19), les 9 patterns et les 14 règles vivent dans l'arbre des 20 domaines — une
 > notion et la brique du même sujet dans le même dossier. Il n'existe plus **aucun**
 > dossier de page hors de l'arbre, sauf « Métiers/ », « Patterns/ » et « Rules/ », que
 > `role:` groupe et qu'aucune `categorie:` ne range — plus « Comparatifs/ » depuis le
@@ -163,9 +163,9 @@ ajoute volontiers ; on n'y réécrit pas sans qu'il l'ait demandé.
 - **Modifier** une notion existante : sur demande explicite. Sinon, **proposer** la modification et attendre. Un balayage de fin de conversation propose, il ne réécrit pas.
 - **Supprimer** une notion : jamais sans accord, comme toute page du vault.
 
-État actuel : les **427** notions (mesuré le 2026-10-07) sont rangées, réparties comme les briques par leur domaine —
-« Machine Learning/ » (203), « LLM & IA générative/ » (69), « Statistiques & inférence/ » (46),
-« Mathématiques/ » (40), « Data & pipelines/ » (17), « Bases de données/ » (9), « Sécurité/ » (9),
+État actuel : les **438** notions (mesuré le 2026-10-19) sont rangées, réparties comme les briques par leur domaine —
+« Machine Learning/ » (205), « LLM & IA générative/ » (70), « Statistiques & inférence/ » (46),
+« Mathématiques/ » (40), « Data & pipelines/ » (17), « Bases de données/ » (17), « Sécurité/ » (9),
 « Signal & audio/ » (6), « DevOps/ » (3), « Observabilité/ » (3), « Outils de développement/ » (18),
 « Stockage/ » (1), « Web & API/ » (3). Il n'y a plus de lieu d'attente,
 plus de vocabulaire de galaxie, et plus d'exception à « le dossier porte le domaine ».
@@ -276,7 +276,7 @@ désigne le dossier que la dérivation donne (domaine, ou sous-domaine s'il est 
 Ces deux dernières conventions remplacent la ligne « Entrée REX » retirée avec le pilier REX (cf. `CLAUDE-build.md`, *Corps de la fiche Service/Outil*).
 
 **Deux axes de rangement, pas un.** Une brique porte `categorie:` (le **domaine** — de
-quoi ça parle, 120 valeurs en 20 préfixes, plus 6 sous `skill/*`) *et* `famille:` (la **nature** — ce que c'est, 9
+quoi ça parle, 121 valeurs en 20 préfixes, plus 6 sous `skill/*`) *et* `famille:` (la **nature** — ce que c'est, 9
 valeurs fermées : `paquet`, `plateforme`, `application`, `cli`, `saas`, `extension`,
 `specification`, `modele`, `annuaire`). Ne jamais choisir ces deux valeurs à l'intuition :
 `Documentation/general/taxonomie.md` porte un arbre de décision déterministe, questions
