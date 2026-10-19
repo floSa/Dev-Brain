@@ -119,6 +119,8 @@ tags: [quantization, model-compression, inference-optimization, llm, gpu, local-
 - [[Licences de modèles open weights]] — une version quantifiée d'un modèle reste soumise à sa licence.
 - Briques : [[llama.cpp]] (GGUF, K-quants, imatrice), [[vLLM]] (AWQ, GPTQ, FP8, Marlin), [[TensorRT-LLM]] (FP8, NVFP4, AWQ, GPTQ), [[SGLang]], [[Ollama]] (sert du GGUF), [[Unsloth]] (GGUF « Dynamic » et fine-tuning 4 bits), [[LM Studio]], [[llmfit]] (estime ce qui tient sur une machine).
 - Modèles : [[gpt-oss]] (MXFP4 en post-entraînement), [[Gemma]] (variantes QAT), [[Qwen]], [[Mistral]].
+- [[Plafond de débit d'un GPU (roofline)]] — le plafond de decode selon la précision des poids.
+- [[Dimensionner la mémoire d'un serveur LLM]] — ce que gagne la quantization en nombre d'utilisateurs.
 
 ## Pour aller plus loin
 
