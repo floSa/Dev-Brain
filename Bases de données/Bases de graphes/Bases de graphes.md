@@ -27,6 +27,7 @@ tags: [graph-db]
 - Des documents, des graphes et de la recherche dans un seul moteur → [[ArangoDB]], licence lue en entier.
 - Un graphe qui dépasse un nœud, sans licence restrictive → [[Nebula Graph]] (nGQL, maintenance ralentie) ou [[Dgraph]] (DQL et GraphQL, propriétaire récent) ; surveiller la maintenance de l'un comme de l'autre.
 - Plusieurs milliards d'éléments, des équipes qui savent déjà opérer Cassandra et Elasticsearch, et Gremlin acceptable → [[JanusGraph]], au prix de trois composants à exploiter. Cf. [[Comparatif - Bases graphes]].
+- Des données qui doivent se combiner entre systèmes, avec un schéma écrit, des règles validées ou des faits déduits (RDF, SPARQL, OWL, SHACL) → le dossier voisin [[Ontologies et RDF]], en commençant par [[Graphe de connaissances]] ; les moteurs RDF sont départagés dans [[Comparatif - Moteurs RDF]], et l'usage industriel est décrit dans [[Pattern - Graphe de connaissances industriel sur site]].
 
 <!-- AUTO:START -->
 ### Notions

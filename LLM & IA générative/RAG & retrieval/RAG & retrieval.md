@@ -31,6 +31,7 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - Le bon passage est récupéré mais mal classé → [[Reranking]], puis un reranker : [[bge-reranker]] en local et ouvert, [[FlashRank]] sans GPU, [[Cohere Rerank]] en API, [[Jina Reranker]] pour le contexte long (poids non commerciaux) — départagés dans [[Comparatif - Rerankers]].
 - Les questions sont mal posées, ambiguës ou conversationnelles → [[Query transformations]].
 - La question demande de croiser plusieurs documents → [[GraphRAG]].
+- Les faits sont déjà dans un graphe RDF à schéma écrit et la question demande une liste exacte → interroger plutôt que résumer : [[Interroger un graphe en langage naturel]] ; le sujet commence à [[Graphe de connaissances]], dans le dossier [[Ontologies et RDF]] ; pour l'usine, [[Pattern - Graphe de connaissances industriel sur site]].
 - Rien ne marche et on n'a pas encore regardé le découpage → [[Chunking strategies]], d'abord.
 - Stocker et interroger les vecteurs → [[Vectoriel]] ; un moteur qui indexe aussi du texte → [[Recherche]].
 - Le modèle doit décider quand chercher, relancer ou vérifier, sur des questions à plusieurs sauts → [[RAG agentique]].

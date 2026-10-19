@@ -30,6 +30,7 @@ tags: [agent-memory, agents, context-engineering, retrieval, knowledge-graph]
 - Réduire ce qui part vers le modèle sans rien perdre → [[Headroom]].
 - Départager les six sur le stockage, les modèles locaux et la licence → [[Comparatif - Mémoire pour agents]].
 - Une mémoire partagée entre CLI de code → [[ai-memory]], rangé dans les agents de code.
+- Une mémoire qui est un graphe de connaissances à schéma écrit, partagée entre agents et humains → le sujet commence à [[Graphe de connaissances]] et son dossier [[Ontologies et RDF]] ; [[Graphiti]] et [[Cognee]] en construisent un par LLM.
 
 <!-- AUTO:START -->
 ### Notions
