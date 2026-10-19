@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1208 pages actives.
+> 1215 pages actives.
 
 ## Par page
 
@@ -1258,7 +1258,7 @@
 ### LiteLLM  ·  brique
 - tags : `llm`, `llm-gateway`, `inference`
 - liens sortants : [[AnythingLLM]], [[Comparatif - Frameworks LLM]], [[DSPy]], [[Guardrails]], [[Haystack]], [[LangChain]], [[LibreChat]], [[LlamaIndex]], [[Ollama]], [[OmniRoute]], [[Open WebUI]], [[OpenRouter]], [[Presidio]], [[Routing and cascading]], [[TGI]], [[vLLM]]
-- liens entrants : [[AnythingLLM]], [[DSPy]], [[Dify]], [[Données personnelles et anonymisation pour LLM]], [[Flowise]], [[Guardrails]], [[Haystack]], [[Headroom]], [[Helicone]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Langflow]], [[Langfuse]], [[LibreChat]], [[LlamaIndex]], [[OmniRoute]], [[Open WebUI]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Passerelles]], [[Presidio]], [[Reliability patterns]], [[Routing and cascading]], [[Runtimes]], [[smolagents]], [[tool-use]]
+- liens entrants : [[AnythingLLM]], [[Coût d'un token et taux d'utilisation]], [[DSPy]], [[Dify]], [[Données personnelles et anonymisation pour LLM]], [[Flowise]], [[Guardrails]], [[Haystack]], [[Headroom]], [[Helicone]], [[LLM & IA générative]], [[LLM caching]], [[LangChain]], [[Langflow]], [[Langfuse]], [[LibreChat]], [[LlamaIndex]], [[OmniRoute]], [[Open WebUI]], [[OpenAI Agents SDK]], [[OpenRouter]], [[Passerelles]], [[Presidio]], [[Reliability patterns]], [[Routing and cascading]], [[Runtimes]], [[smolagents]], [[tool-use]]
 
 ### LiteRT  ·  brique
 - tags : `inference`, `edge-inference`, `quantization`, `embedded`
@@ -1278,7 +1278,7 @@
 ### llama.cpp  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Mistral]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[gpt-oss]], [[needle]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[Guidance]], [[LM Studio]], [[Mistral]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[gpt-oss]], [[llmfit]], [[needle]], [[pi]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[Guidance]], [[LM Studio]], [[Mistral]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[TGI]], [[TensorRT-LLM]], [[gpt-oss]], [[llmfit]], [[needle]], [[pi]], [[text-generation-webui]], [[vLLM]]
 
 ### LlamaIndex  ·  brique
 - tags : `llm`, `rag`, `embeddings`, `agents`
@@ -1298,7 +1298,7 @@
 ### llmfit  ·  brique
 - tags : `local-llm`, `hardware-sizing`, `quantization`, `benchmark`, `terminal-ui`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Comparatif - Évaluation LLM]], [[Contexte long]], [[LLM & IA générative]], [[LM Studio]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Small Language Models]], [[Tokenization]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Contexte long]], [[LLM & IA générative]], [[Modèles de langage]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Runtimes]], [[Small Language Models]]
+- liens entrants : [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[LLM & IA générative]], [[Modèles de langage]], [[Plafond de débit d'un GPU (roofline)]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Runtimes]], [[Small Language Models]]
 
 ### LM Studio  ·  brique
 - tags : `llm`, `local-llm`, `inference`, `gpu`, `quantization`
@@ -1698,7 +1698,7 @@
 ### OpenRouter  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `inference`
 - liens sortants : [[Comparatif - Frameworks LLM]], [[Dify]], [[Flowise]], [[LangChain]], [[Langflow]], [[LiteLLM]], [[LlamaIndex]], [[OmniRoute]], [[Reliability patterns]], [[Routing and cascading]], [[TGI]], [[vLLM]]
-- liens entrants : [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[OmniRoute]], [[Passerelles]], [[Pattern - Agent sur LLM auto-hébergé]], [[Routing and cascading]], [[Runtimes]], [[needle]], [[pi]]
+- liens entrants : [[Coût d'un token et taux d'utilisation]], [[Dify]], [[Flowise]], [[Langflow]], [[LiteLLM]], [[OmniRoute]], [[Passerelles]], [[Pattern - Agent sur LLM auto-hébergé]], [[Routing and cascading]], [[Runtimes]], [[needle]], [[pi]]
 
 ### OpenSearch  ·  brique
 - tags : `search`, `distributed`, `hybrid-search`, `semantic-search`
@@ -2368,7 +2368,7 @@
 ### SGLang  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[PyTorch]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[Reasoning models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Flash Attention and efficient attention]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[Reasoning models]], [[Runtimes]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Flash Attention and efficient attention]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Outlines]], [[Parallélisme en inférence]], [[Pattern - Agent sur LLM auto-hébergé]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[Reasoning models]], [[Runtimes]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### SHAP  ·  brique
 - tags : `explainability`, `supervised`
@@ -2583,7 +2583,7 @@
 ### TensorRT-LLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`, `quantization`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[NVIDIA Triton]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
-- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Runtimes]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
+- liens entrants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Inference optimization]], [[LM Studio]], [[Ollama]], [[Parallélisme en inférence]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Runtimes]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[llama.cpp]], [[text-generation-webui]], [[vLLM]]
 
 ### Tesseract  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`
@@ -2768,7 +2768,7 @@
 ### vLLM  ·  brique
 - tags : `llm`, `model-serving`, `inference`, `gpu`
 - liens sortants : [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Gemma]], [[Graphiti]], [[HuggingFace]], [[Inference optimization]], [[LM Studio]], [[Llama Guard]], [[Mistral]], [[Ollama]], [[Open WebUI]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[Reasoning models]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[gpt-oss]], [[llama.cpp]], [[text-generation-webui]]
-- liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Données personnelles et anonymisation pour LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Gemma]], [[Graphiti]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[Licences de modèles open weights]], [[LiteLLM]], [[Llama Guard]], [[Mistral]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Open WebUI]], [[OpenRouter]], [[Outlines]], [[Pattern - Agent sur LLM auto-hébergé]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[RL for LLMs]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[Tunix]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[text-generation-webui]]
+- liens entrants : [[Architectures hybrides LLM]], [[Comparatif - Exécution & serving LLM]], [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Données personnelles et anonymisation pour LLM]], [[Flash Attention and efficient attention]], [[GRPO]], [[Gemma]], [[Graphiti]], [[Guidance]], [[Inference optimization]], [[LM Studio]], [[Licences de modèles open weights]], [[LiteLLM]], [[Llama Guard]], [[Mistral]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Ollama]], [[Open WebUI]], [[OpenRouter]], [[Outlines]], [[Parallélisme en inférence]], [[Pattern - Agent sur LLM auto-hébergé]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Qwen]], [[RL for LLMs]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[Tunix]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[text-generation-webui]]
 
 ### Weaviate  ·  brique
 - tags : `vector-db`, `rag`, `hybrid-search`
@@ -3612,7 +3612,7 @@
 
 ### Runtimes  ·  hub
 - tags : `local-llm`, `inference`, `inference-optimization`, `quantization`, `model-serving`
-- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Constrained decoding]], [[Decoding strategies]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Multi-Token Prediction]], [[Ollama]], [[OpenRouter]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[SGLang]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Comparatif - Exécution & serving LLM]], [[Constrained decoding]], [[Coût d'un token et taux d'utilisation]], [[Decoding strategies]], [[Dimensionner la mémoire d'un serveur LLM]], [[Inference optimization]], [[LM Studio]], [[LiteLLM]], [[Mesurer une latence]], [[Multi-Token Prediction]], [[Ollama]], [[OpenRouter]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[SGLang]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[TGI]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[llama.cpp]], [[llmfit]], [[needle]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
 - liens entrants : [[AI Engineering]], [[LLM & IA générative]], [[Modèles de langage]], [[Passerelles]], [[Serving]]
 
 ### Réseau  ·  hub
@@ -3932,8 +3932,8 @@
 
 ### Architectures hybrides LLM  ·  notion
 - tags : `attention`, `state-space-model`, `transformers`, `inference-optimization`
-- liens sortants : [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Quantization]], [[SGLang]], [[Self-attention]], [[State Space Models]], [[vLLM]]
-- liens entrants : [[Apprentissage profond]], [[Attention Residuals]], [[Attention linéaire]], [[Contexte long]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[State Space Models]], [[Transformer architectures]]
+- liens sortants : [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Quantization]], [[SGLang]], [[Self-attention]], [[State Space Models]], [[Taille du cache KV par token]], [[vLLM]]
+- liens entrants : [[Apprentissage profond]], [[Attention Residuals]], [[Attention linéaire]], [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[State Space Models]], [[Taille du cache KV par token]], [[Transformer architectures]]
 
 ### ARIMA SARIMA  ·  notion
 - tags : `forecasting`, `timeseries`
@@ -4182,8 +4182,8 @@
 
 ### Contexte long  ·  notion
 - tags : `llm`, `context-engineering`, `attention`, `inference-optimization`, `positional-encoding`
-- liens sortants : [[Advanced RAG]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Context engineering]], [[Flash Attention and efficient attention]], [[Gemma]], [[Hallucinations des LLM]], [[Inference optimization]], [[LLM benchmarks]], [[Mistral]], [[Multi-head Latent Attention]], [[Ollama]], [[Positional encoding]], [[Qdrant]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAG]], [[SGLang]], [[Scaling laws]], [[State Space Models]], [[TensorRT-LLM]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[prompt-caching]], [[vLLM]]
-- liens entrants : [[Context engineering]], [[Flash Attention and efficient attention]], [[Gemma]], [[Inference optimization]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Positional encoding]], [[Qdrant]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAG agentique]], [[SGLang]], [[TensorRT-LLM]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
+- liens sortants : [[Advanced RAG]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Context engineering]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Gemma]], [[Hallucinations des LLM]], [[Inference optimization]], [[LLM benchmarks]], [[Mistral]], [[Multi-head Latent Attention]], [[Ollama]], [[Positional encoding]], [[Qdrant]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAG]], [[SGLang]], [[Scaling laws]], [[State Space Models]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Context engineering]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Gemma]], [[Inference optimization]], [[Mistral]], [[Modèles de langage]], [[Ollama]], [[Positional encoding]], [[Qdrant]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Qwen]], [[RAG agentique]], [[SGLang]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
 
 ### Contrats de données & qualité  ·  notion
 - tags : `data-contract`, `data-quality`, `data-validation`, `schema-evolution`
@@ -4209,6 +4209,11 @@
 - tags : `game-theory`, `regret-minimization`, `self-play`
 - liens sortants : [[AlphaZero and self-play]], [[Exploration vs exploitation]], [[Monte Carlo Tree Search]], [[Multi-armed bandits]], [[OpenSpiel]], [[Reinforcement learning]], [[Théorie des jeux]]
 - liens entrants : [[AlphaZero and self-play]], [[Apprentissage par renforcement]], [[Monte Carlo Tree Search]], [[OpenSpiel]], [[Pattern - Moteur de jeu pur + IA séparée]], [[Reinforcement learning]], [[Théorie des jeux]]
+
+### Coût d'un token et taux d'utilisation  ·  notion
+- tags : `inference-optimization`, `inference`, `llm`, `gpu`, `model-serving`
+- liens sortants : [[Dimensionner la mémoire d'un serveur LLM]], [[Inference optimization]], [[LiteLLM]], [[OpenRouter]], [[Plafond de débit d'un GPU (roofline)]], [[Quantization]], [[Routing and cascading]], [[llmfit]], [[prompt-caching]]
+- liens entrants : [[Dimensionner la mémoire d'un serveur LLM]], [[Inference optimization]], [[Mesurer une latence]], [[Plafond de débit d'un GPU (roofline)]], [[Routing and cascading]], [[Runtimes]], [[prompt-caching]]
 
 ### Cross-entropy  ·  notion
 - tags : `information-theory`, `cross-entropy`, `classification`
@@ -4269,6 +4274,11 @@
 - tags : `generative-model`, `diffusion`, `deep-learning`
 - liens sortants : [[Autoencodeurs]], [[Distillation]], [[GANs]], [[Image generation]], [[KL divergence]], [[Quantization]], [[Transformer architectures]], [[Video generation]], [[embeddings]]
 - liens entrants : [[Apprentissage profond]], [[Autoencodeurs]], [[GANs]], [[Image generation]], [[Rendu neuronal 3D & estimation de profondeur]], [[Video generation]], [[Vision par ordinateur]]
+
+### Dimensionner la mémoire d'un serveur LLM  ·  notion
+- tags : `inference-optimization`, `inference`, `gpu`, `llm`, `model-serving`
+- liens sortants : [[Architectures hybrides LLM]], [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Quantization]], [[Taille du cache KV par token]], [[llmfit]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[Mixture of Experts]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Runtimes]], [[Taille du cache KV par token]]
 
 ### Distance de Mahalanobis  ·  notion
 - tags : `anomaly-detection`, `multivariate`, `unsupervised`
@@ -4387,8 +4397,8 @@
 
 ### Entraînement distribué  ·  notion
 - tags : `distributed-training`, `deep-learning`, `gpu`, `memory-optimization`
-- liens sortants : [[DeepSpeed]], [[Gradient checkpointing]], [[Mixed precision]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
-- liens entrants : [[Apprentissage fédéré]], [[Apprentissage profond]], [[Axolotl]], [[DeepSpeed]], [[Gradient checkpointing]], [[LLaMA-Factory]], [[Mixed precision]], [[Mixture of Experts]], [[PyTorch]], [[accelerate]]
+- liens sortants : [[DeepSpeed]], [[Gradient checkpointing]], [[Mixed precision]], [[Parallélisme en inférence]], [[PyTorch]], [[PyTorch Lightning]], [[accelerate]]
+- liens entrants : [[Apprentissage fédéré]], [[Apprentissage profond]], [[Axolotl]], [[DeepSpeed]], [[Gradient checkpointing]], [[LLaMA-Factory]], [[Mixed precision]], [[Mixture of Experts]], [[Parallélisme en inférence]], [[PyTorch]], [[accelerate]]
 
 ### Estimation de pose  ·  notion
 - tags : `pose-estimation`, `computer-vision`, `deep-learning`
@@ -4452,8 +4462,8 @@
 
 ### Flash Attention and efficient attention  ·  notion
 - tags : `attention`, `inference-optimization`, `gpu`, `transformers`
-- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Inference optimization]], [[Multi-head Latent Attention]], [[PyTorch]], [[Quantization]], [[SGLang]], [[Self-attention]], [[Speculative decoding]], [[TGI]], [[Transformer architectures]], [[vLLM]]
-- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Self-attention]], [[State Space Models]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Plafond de débit d'un GPU (roofline)]], [[PyTorch]], [[Quantization]], [[SGLang]], [[Self-attention]], [[Speculative decoding]], [[TGI]], [[Transformer architectures]], [[vLLM]]
+- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Plafond de débit d'un GPU (roofline)]], [[Self-attention]], [[State Space Models]], [[Taille du cache KV par token]], [[Transformer architectures]], [[Vision Transformers (ViT)]]
 
 ### Forecasting framing  ·  notion
 - tags : `forecasting`, `timeseries`
@@ -4647,8 +4657,8 @@
 
 ### Inference optimization  ·  notion
 - tags : `inference-optimization`, `inference`, `llm`, `gpu`
-- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Contexte long]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[TensorRT-LLM]], [[prompt-caching]], [[vLLM]]
-- liens entrants : [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Calculs adaptatifs]], [[Contexte long]], [[Flash Attention and efficient attention]], [[LM Studio]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Ollama]], [[Positional encoding]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[Superwhisper]], [[TGI]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
+- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Decoding strategies]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Mesurer une latence]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[TGI]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Architectures CNN]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Calculs adaptatifs]], [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[LM Studio]], [[Mesurer une latence]], [[Multi-Token Prediction]], [[Multi-head Latent Attention]], [[Ollama]], [[Plafond de débit d'un GPU (roofline)]], [[Positional encoding]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Reasoning models]], [[Runtimes]], [[SGLang]], [[Self-attention]], [[Server-Sent Events & streaming LLM]], [[Small Language Models]], [[Speculative decoding]], [[State Space Models]], [[Superwhisper]], [[TGI]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[llama.cpp]], [[needle]], [[prompt-caching]], [[text-generation-webui]], [[vLLM]]
 
 ### Infrastructure as code — configuration, provisionnement et idempotence  ·  notion
 - tags : `infrastructure-as-code`, `reproducibility`
@@ -4782,8 +4792,8 @@
 
 ### LLM benchmarks  ·  notion
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
-- liens sortants : [[Code and math benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Perplexity]], [[Reasoning models]], [[Scaling laws]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[Contexte long]], [[Fine-tuning]], [[Hallucinations des LLM]], [[Harnais d'agent]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Licences de modèles open weights]], [[Modèles de langage]], [[RAG benchmarks]], [[Text-to-SQL]], [[Évaluation]]
+- liens sortants : [[Code and math benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Mesurer une latence]], [[Perplexity]], [[Reasoning models]], [[Scaling laws]]
+- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[Contexte long]], [[Fine-tuning]], [[Hallucinations des LLM]], [[Harnais d'agent]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Licences de modèles open weights]], [[Mesurer une latence]], [[Modèles de langage]], [[RAG benchmarks]], [[Text-to-SQL]], [[Évaluation]]
 
 ### LLM caching  ·  notion
 - tags : `caching`, `llm`, `semantic-search`, `in-memory`
@@ -4900,6 +4910,11 @@
 - liens sortants : [[Agent evaluation]], [[Apache DevLake]], [[Backlog, Kanban, Scrum et Shape Up]], [[Claude-Code-Usage-Monitor]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Forgejo]], [[Forges & CI-CD]], [[GitHub Actions]], [[GitLab CE]], [[Revue, tests et définition de terminé avec un agent]]
 - liens entrants : [[ActivityWatch]], [[Apache DevLake]], [[Backlog, Kanban, Scrum et Shape Up]], [[Claude-Code-Usage-Monitor]], [[Commits conventionnels, versions et changelog]], [[Cycle de vie d'un projet assisté par agent]], [[Gestion de projet]], [[Kanboard]], [[Kimai]], [[Quel skill pour quelle étape]], [[Redmine]], [[Vibe coding contre ingénierie agentique]], [[ccusage]]
 
+### Mesurer une latence  ·  notion
+- tags : `inference`, `inference-optimization`, `llm`, `gpu`, `benchmark`
+- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[LLM benchmarks]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantization]], [[Server-Sent Events & streaming LLM]]
+- liens entrants : [[Inference optimization]], [[LLM benchmarks]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[Server-Sent Events & streaming LLM]]
+
 ### Metric learning & ré-identification  ·  notion
 - tags : `metric-learning`, `re-identification`, `representation-learning`, `computer-vision`, `deep-learning`
 - liens sortants : [[Apprentissage contrastif]], [[Bases de données vectorielles]], [[CNN]], [[Cross-entropy]], [[Détection d'objets]], [[Suivi d'objets]], [[Vision par ordinateur]], [[embeddings]]
@@ -4927,8 +4942,8 @@
 
 ### Mixture of Experts  ·  notion
 - tags : `mixture-of-experts`, `transformers`, `deep-learning`, `scaling-laws`
-- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Entraînement distribué]], [[Fusion de modèles]], [[PEFT]], [[Quantization]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Transformer architectures]], [[vLLM]]
-- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Calculs adaptatifs]], [[Fusion de modèles]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Scaling laws]], [[State Space Models]], [[Transformer architectures]]
+- liens sortants : [[Architectures hybrides LLM]], [[Calculs adaptatifs]], [[Dimensionner la mémoire d'un serveur LLM]], [[Entraînement distribué]], [[Fusion de modèles]], [[PEFT]], [[Parallélisme en inférence]], [[Quantization]], [[SGLang]], [[Scaling laws]], [[Small Language Models]], [[Transformer architectures]], [[vLLM]]
+- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention Residuals]], [[Calculs adaptatifs]], [[Dimensionner la mémoire d'un serveur LLM]], [[Fusion de modèles]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Scaling laws]], [[State Space Models]], [[Transformer architectures]]
 
 ### Model registry & versioning  ·  notion
 - tags : `model-registry`, `experiment-tracking`
@@ -5017,13 +5032,13 @@
 
 ### Multi-head Latent Attention  ·  notion
 - tags : `attention`, `inference-optimization`, `transformers`, `gpu`
-- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[SGLang]], [[SVD]], [[Self-attention]], [[vLLM]]
-- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[Self-attention]], [[Transformer architectures]]
+- liens sortants : [[Architectures hybrides LLM]], [[Attention linéaire]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[SGLang]], [[SVD]], [[Self-attention]], [[Taille du cache KV par token]], [[vLLM]]
+- liens entrants : [[Apprentissage profond]], [[Architectures hybrides LLM]], [[Attention linéaire]], [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Positional encoding]], [[Quantization]], [[Self-attention]], [[Taille du cache KV par token]], [[Transformer architectures]]
 
 ### Multi-Token Prediction  ·  notion
 - tags : `decoding`, `transformers`, `inference-optimization`, `llm`
 - liens sortants : [[Cross-entropy]], [[Decoding strategies]], [[Inference optimization]], [[Scaling laws]], [[Speculative decoding]], [[Transformer architectures]]
-- liens entrants : [[Decoding strategies]], [[Inference optimization]], [[Runtimes]], [[Speculative decoding]]
+- liens entrants : [[Decoding strategies]], [[Inference optimization]], [[Plafond de débit d'un GPU (roofline)]], [[Runtimes]], [[Speculative decoding]]
 
 ### Mutual information  ·  notion
 - tags : `information-theory`, `mutual-information`
@@ -5190,6 +5205,11 @@
 - liens sortants : [[Comparatif - Gestionnaires de paquets Python]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Gestion des secrets]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Notebooks-as-code]], [[Ruff]], [[Typage statique en Python]], [[pip]], [[uv]]
 - liens entrants : [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Notebooks-as-code]], [[Outils de développement]], [[Ruff]], [[mise]], [[pip]], [[uv]]
 
+### Parallélisme en inférence  ·  notion
+- tags : `inference-optimization`, `inference`, `llm`, `gpu`, `model-serving`
+- liens sortants : [[Dimensionner la mémoire d'un serveur LLM]], [[Entraînement distribué]], [[Mixture of Experts]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[SGLang]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[vLLM]]
+- liens entrants : [[Dimensionner la mémoire d'un serveur LLM]], [[Entraînement distribué]], [[Inference optimization]], [[Mixture of Experts]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[Taille du cache KV par token]]
+
 ### Partitionnement & layout de données  ·  notion
 - tags : `partitioning`, `file-format`, `lakehouse`, `olap`
 - liens sortants : [[Apache Iceberg]], [[Architecture médaillon]], [[ELT vs ETL & idempotence]], [[Parquet]], [[Stream processing]], [[Trino]]
@@ -5224,6 +5244,11 @@
 - tags : `ci-cd`, `self-hosted`, `container`, `supply-chain`, `reproducibility`
 - liens sortants : [[Airflow]], [[Argo CD]], [[CI-CD pour le ML]], [[Ceph]], [[Comparatif - CI-CD auto-hébergé]], [[Comparatif - Registres d'images]], [[DVC]], [[Dependency-Track]], [[Docker]], [[Du Compose à Kubernetes — quand changer d'échelle]], [[Forgejo]], [[Garage]], [[Gestion des secrets]], [[GitHub Actions]], [[GitLab CE]], [[Gitleaks]], [[Grype]], [[Harbor]], [[Jenkins]], [[MinIO]], [[OpenBao]], [[Ruff]], [[SOPS]], [[SeaweedFS]], [[Semgrep]], [[Trivy]], [[Woodpecker CI]], [[Zot]], [[pytest]], [[uv]]
 - liens entrants : [[Comparatif - CI-CD auto-hébergé]], [[DevOps]], [[Forgejo]], [[Forges & CI-CD]], [[Gestion des secrets]], [[GitHub Actions]], [[GitLab CE]], [[Infrastructure as code — configuration, provisionnement et idempotence]], [[Jenkins]], [[Woodpecker CI]]
+
+### Plafond de débit d'un GPU (roofline)  ·  notion
+- tags : `inference-optimization`, `inference`, `gpu`, `llm`
+- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mesurer une latence]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Parallélisme en inférence]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[Taille du cache KV par token]], [[llama.cpp]], [[llmfit]], [[vLLM]]
+- liens entrants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mesurer une latence]], [[Parallélisme en inférence]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Runtimes]], [[Speculative decoding]], [[Taille du cache KV par token]]
 
 ### Plannings de personnel (rostering)  ·  notion
 - tags : `scheduling`, `constraint-programming`, `combinatorial-optimization`
@@ -5270,6 +5295,11 @@
 - liens sortants : [[ADR et design docs]], [[BMAD]], [[Backlog, Kanban, Scrum et Shape Up]], [[Développement piloté par la spécification]], [[Fichiers de contexte pour agents]], [[Revue, tests et définition de terminé avec un agent]], [[Spec Kit]], [[pytest]]
 - liens entrants : [[BMAD - la méthode]], [[Backlog, Kanban, Scrum et Shape Up]], [[Cycle de vie d'un projet assisté par agent]], [[Développement piloté par la spécification]], [[Gestion de projet]], [[Quel skill pour quelle étape]], [[pm-skills]]
 
+### Prefill par morceaux et désagrégation prefill-decode  ·  notion
+- tags : `inference-optimization`, `inference`, `llm`, `gpu`, `model-serving`
+- liens sortants : [[Inference optimization]], [[Mesurer une latence]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[SGLang]], [[Speculative decoding]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[llama.cpp]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Inference optimization]], [[Mesurer une latence]], [[Parallélisme en inférence]], [[Runtimes]], [[Taille du cache KV par token]]
+
 ### Probing  ·  notion
 - tags : `explainability`, `deep-learning`, `representation-learning`
 - liens sortants : [[Attribution par gradient]], [[Data leakage]], [[Explicabilité des modèles]], [[Guardrails]], [[Interprétabilité mécaniste]], [[Régression logistique]], [[Scikit-Learn]], [[Sparse autoencoders]], [[Superposition]], [[Transfer learning vision]], [[TransformerLens]], [[Validation croisée]], [[embeddings]], [[interpreto]], [[nnsight]]
@@ -5312,8 +5342,8 @@
 
 ### prompt-caching  ·  notion
 - tags : `caching`, `inference-optimization`, `llm`, `context-engineering`
-- liens sortants : [[Context engineering]], [[Inference optimization]], [[LLM caching]]
-- liens entrants : [[Context engineering]], [[Contexte long]], [[Inference optimization]], [[LLM & IA générative]], [[LLM caching]], [[LLM observability]], [[Passerelles]], [[Runtimes]], [[SGLang]]
+- liens sortants : [[Context engineering]], [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[LLM caching]], [[Taille du cache KV par token]]
+- liens entrants : [[Context engineering]], [[Contexte long]], [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Inference optimization]], [[LLM & IA générative]], [[LLM caching]], [[LLM observability]], [[Passerelles]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[SGLang]], [[Taille du cache KV par token]]
 
 ### Protocoles de l'atelier - MQTT, OPC UA et Modbus  ·  notion
 - tags : `mqtt`, `opc-ua`, `iiot`, `networking`
@@ -5337,8 +5367,8 @@
 
 ### Quantification des LLM - GGUF, AWQ, GPTQ  ·  notion
 - tags : `quantization`, `model-compression`, `inference-optimization`, `llm`, `gpu`, `local-llm`
-- liens sortants : [[Contexte long]], [[Distillation]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[Licences de modèles open weights]], [[LoRA et QLoRA]], [[Mistral]], [[Mixed precision]], [[Mixture of Experts]], [[Ollama]], [[PEFT]], [[Pruning]], [[Quantization]], [[Qwen]], [[SGLang]], [[Small Language Models]], [[TensorRT-LLM]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
-- liens entrants : [[Contexte long]], [[Fusion de modèles]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[LoRA et QLoRA]], [[Mistral]], [[Ollama]], [[Quantization]], [[Qwen]], [[Runtimes]], [[SGLang]], [[TensorRT-LLM]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
+- liens sortants : [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Distillation]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[Licences de modèles open weights]], [[LoRA et QLoRA]], [[Mistral]], [[Mixed precision]], [[Mixture of Experts]], [[Ollama]], [[PEFT]], [[Plafond de débit d'un GPU (roofline)]], [[Pruning]], [[Quantization]], [[Qwen]], [[SGLang]], [[Small Language Models]], [[TensorRT-LLM]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
+- liens entrants : [[Contexte long]], [[Fusion de modèles]], [[Gemma]], [[Inference optimization]], [[LM Studio]], [[LoRA et QLoRA]], [[Mistral]], [[Ollama]], [[Plafond de débit d'un GPU (roofline)]], [[Quantization]], [[Qwen]], [[Runtimes]], [[SGLang]], [[TensorRT-LLM]], [[Unsloth]], [[gpt-oss]], [[llama.cpp]], [[llmfit]], [[vLLM]]
 
 ### Quantité économique de commande et tailles de lot  ·  notion
 - tags : `inventory`, `optimization`, `dynamic-programming`, `combinatorial-optimization`
@@ -5347,8 +5377,8 @@
 
 ### Quantization  ·  notion
 - tags : `quantization`, `model-compression`, `deep-learning`, `inference-optimization`
-- liens sortants : [[Distillation]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
-- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Diffusion models]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pattern - Inspection visuelle en ligne de production]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
+- liens sortants : [[Distillation]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LoRA et QLoRA]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Plafond de débit d'un GPU (roofline)]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Small Language Models]], [[llama.cpp]], [[vLLM]]
+- liens entrants : [[Adam optimizer]], [[Apprentissage profond]], [[Architectures CNN]], [[Architectures hybrides LLM]], [[Axolotl]], [[Calculs adaptatifs]], [[Coût d'un token et taux d'utilisation]], [[Diffusion models]], [[Dimensionner la mémoire d'un serveur LLM]], [[Distillation]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Inférence en bordure - modèles sur du matériel d'atelier]], [[LLaMA-Factory]], [[LoRA et QLoRA]], [[Mesurer une latence]], [[Mixed precision]], [[Mixture of Experts]], [[Multi-head Latent Attention]], [[OpenVINO]], [[PEFT]], [[Pattern - Inspection visuelle en ligne de production]], [[Plafond de débit d'un GPU (roofline)]], [[Pruning]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Serving]], [[Small Language Models]], [[Speculative decoding]], [[Superwhisper]], [[Taille du cache KV par token]], [[TensorRT-LLM]], [[Unsloth]], [[Vision par ordinateur]], [[llama.cpp]], [[llmfit]], [[needle]], [[vLLM]]
 
 ### Quel skill pour quelle étape  ·  notion
 - tags : `project-management`, `skills`, `agent-skill`, `agents`
@@ -5492,8 +5522,8 @@
 
 ### Routing and cascading  ·  notion
 - tags : `routing`, `llm`, `rag`
-- liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG eval]], [[needle]]
+- liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[Coût d'un token et taux d'utilisation]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[embeddings]]
+- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[Coût d'un token et taux d'utilisation]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG eval]], [[needle]]
 
 ### RUL par analyse de survie  ·  notion
 - tags : `rul`, `predictive-maintenance`, `survival-analysis`, `regression`
@@ -5592,8 +5622,8 @@
 
 ### Server-Sent Events & streaming LLM  ·  notion
 - tags : `streaming`, `llm`, `web-framework`
-- liens sortants : [[Decoding strategies]], [[FastAPI]], [[Inference optimization]], [[LLM observability]], [[Programmation asynchrone en Python]], [[Reliability patterns]], [[Structured outputs]], [[Tokenization]]
-- liens entrants : [[API REST, GraphQL et gRPC]], [[Decoding strategies]], [[Programmation asynchrone en Python]], [[Runtimes]], [[TGI]]
+- liens sortants : [[Decoding strategies]], [[FastAPI]], [[Inference optimization]], [[LLM observability]], [[Mesurer une latence]], [[Programmation asynchrone en Python]], [[Reliability patterns]], [[Structured outputs]], [[Tokenization]]
+- liens entrants : [[API REST, GraphQL et gRPC]], [[Decoding strategies]], [[Mesurer une latence]], [[Programmation asynchrone en Python]], [[Runtimes]], [[TGI]]
 
 ### SFT  ·  notion
 - tags : `fine-tuning`, `llm`
@@ -5637,8 +5667,8 @@
 
 ### Speculative decoding  ·  notion
 - tags : `inference-optimization`, `decoding`, `llm`, `inference`
-- liens sortants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Inference optimization]], [[Multi-Token Prediction]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[vLLM]]
-- liens entrants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Multi-Token Prediction]], [[Runtimes]], [[SGLang]], [[TGI]], [[vLLM]]
+- liens sortants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Inference optimization]], [[Multi-Token Prediction]], [[Plafond de débit d'un GPU (roofline)]], [[Quantization]], [[SGLang]], [[TGI]], [[TensorRT-LLM]], [[vLLM]]
+- liens entrants : [[Calculs adaptatifs]], [[Decoding strategies]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Multi-Token Prediction]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[SGLang]], [[TGI]], [[vLLM]]
 
 ### Speech models  ·  notion
 - tags : `speech`, `deep-learning`, `multimodal`
@@ -5729,6 +5759,11 @@
 - tags : `dimensionality-reduction`, `manifold`, `unsupervised`
 - liens sortants : [[Clustering hiérarchique par densité]], [[Manifold learning]], [[PCA]], [[PaCMAP]], [[Réduction de dimension]], [[embeddings]], [[umap-learn]]
 - liens entrants : [[Analyse factorielle]], [[Apprentissage non supervisé]], [[Autoencodeurs]], [[Machine Learning]], [[Manifold learning]], [[Non supervisé]], [[PCA]], [[PGA]], [[PaCMAP]], [[Réduction de dimension]], [[Statistiques & inférence]], [[embeddings]], [[umap-learn]]
+
+### Taille du cache KV par token  ·  notion
+- tags : `inference-optimization`, `inference`, `llm`, `attention`, `gpu`
+- liens sortants : [[Architectures hybrides LLM]], [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantization]], [[prompt-caching]], [[vLLM]]
+- liens entrants : [[Architectures hybrides LLM]], [[Contexte long]], [[Dimensionner la mémoire d'un serveur LLM]], [[Inference optimization]], [[Multi-head Latent Attention]], [[Parallélisme en inférence]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[prompt-caching]]
 
 ### Test du khi-deux  ·  notion
 - tags : `hypothesis-testing`, `p-value`
@@ -6061,7 +6096,7 @@
 - `anomaly-detection` : Anomalie acoustique, Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, Anomalies multivariées par apprentissage profond, Cause racine d'une anomalie, Comparatif - Détection d'anomalies, Contrôle statistique de procédé (SPC), Distance de Mahalanobis, Détection d'anomalies, Détection d'anomalies en ligne, Détection d'anomalies visuelle, Détection d'outliers multivariée, Détection d'outliers univariée, Détection de ruptures, Détection hors distribution (OOD), Expliquer une anomalie (contribution des capteurs), Foundation models et anomalies de séries, Isolation Forest, Local Outlier Factor, Maintenance prédictive avec peu de pannes, Non supervisé, One-Class SVM, Pattern - Détection d'anomalies en deux étages, Pattern - Inspection visuelle en ligne de production, Pattern - Pipeline de maintenance prédictive on-prem, PyOD, Rule - Entraîner sur du normal vérifié, Rule - Évaluer une anomalie par événement, pas par point, STUMPY, Score et seuil d'alerte, Séries temporelles, Théorie des valeurs extrêmes, Time series anomaly detection, Types d'anomalies et régimes de supervision, T² et SPE, Évaluer une détection d'anomalies
 - `api-client` : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API  — pas de page concept dédiée
 - `array` : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray  — pas de page concept dédiée
-- `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures  — pas de page concept dédiée
+- `attention` : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Taille du cache KV par token, Transformer architectures  — pas de page concept dédiée
 - `audio-classification` : Anomalie acoustique, Classification audio par spectrogramme, Signal & audio
 - `audit-log` : Maka  — pas de page concept dédiée
 - `authentication` : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, PyJWT, Sécurité  — pas de page concept dédiée
@@ -6069,7 +6104,7 @@
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence  — pas de page concept dédiée
-- `benchmark` : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
+- `benchmark` : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
 - `bi` : Apache Superset, Comparatif - BI auto-hébergée, Metabase  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
@@ -6180,7 +6215,7 @@
 - `git-hooks` : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit  — pas de page concept dédiée
 - `gitops` : Argo CD, Du Compose à Kubernetes — quand changer d'échelle
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation, Rétropropagation et différentiation automatique
 - `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics  — pas de page concept dédiée
 - `guardrails` : Comparatif - Garde-fous pour LLM, Guardrails, Llama Guard, NeMo Guardrails, Systèmes IA, Sécurité
@@ -6198,8 +6233,8 @@
 - `imitation-learning` : Apprentissage par renforcement, Imitation learning
 - `in-memory` : Apache Arrow, Faiss, LLM caching, Memgraph, Redis, Redis Insight, ScaNN, hnswlib, numpy, pandas  — pas de page concept dédiée
 - `industrial-inspection` : Anomalie visuelle par banque de mémoire, Anomalie visuelle par reconstruction, distillation et flux, Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, Comparatif - Détection d'anomalies visuelles, Dinomaly, Détection d'anomalies visuelle, Pattern - Inspection visuelle en ligne de production, anomalib, patchcore-inspection  — pas de page concept dédiée
-- `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM
-- `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Contexte long, Flash Attention and efficient attention, Inference optimization, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, TensorRT, prompt-caching
+- `inference` : BentoML, Comparatif - Exécution & serving LLM, Comparatif - Runtimes d'inférence CPU et edge, Comparatif - Serving de modèles, Coût d'un token et taux d'utilisation, Dimensionner la mémoire d'un serveur LLM, Déploiement de modèles, Embeddings & encodeurs, FastEmbed, Inference optimization, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, LM Studio, LiteLLM, LiteRT, Mesurer une latence, NVIDIA Triton, ONNX Runtime, Ollama, OpenRouter, OpenVINO, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, Speculative decoding, TGI, Taille du cache KV par token, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, llama.cpp, text-generation-webui, vLLM
+- `inference-optimization` : Architectures hybrides LLM, Attention linéaire, Calculs adaptatifs, Contexte long, Coût d'un token et taux d'utilisation, Dimensionner la mémoire d'un serveur LLM, Flash Attention and efficient attention, Inference optimization, Mesurer une latence, Multi-Token Prediction, Multi-head Latent Attention, ONNX Runtime, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization, Runtimes, Serving, Speculative decoding, State Space Models, Taille du cache KV par token, TensorRT, prompt-caching
 - `information-retrieval` : BM25, ColPali, Comparatif - NLP, Fuzzy matching & similarité de chaînes, Index inversé, Late-interaction retrieval, Learning to rank, NLP, RAG visuel - retrouver des documents sans OCR, Recherche d'information, TF-IDF, bm25s, rank-bm25
 - `information-theory` : Cross-entropy, Jensen-Shannon divergence, KL divergence, Mathématiques, Mutual information, Shannon entropy, Théorie de l'information, Wasserstein distance  — pas de page concept dédiée
 - `infrastructure-as-code` : Ansible, Infrastructure as code — configuration, provisionnement et idempotence, OpenTofu
@@ -6223,7 +6258,7 @@
 - `linear-programming` : CVXPY, Comparatif - Solveurs d'optimisation, HiGHS, Mathématiques, OR-Tools, Optimisation, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, S&OP et plan directeur de production
 - `link-prediction` : Plongements de graphe et prédiction de liens, PyKEEN
 - `linter` : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python  — pas de page concept dédiée
-- `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
+- `llm` : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, Coût d'un token et taux d'utilisation, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, Dimensionner la mémoire d'un serveur LLM, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mesurer une latence, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Parallélisme en inférence, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, Plafond de débit d'un GPU (roofline), PraisonAI, Prefill par morceaux et désagrégation prefill-decode, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, Taille du cache KV par token, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM  — pas de page concept dédiée
 - `llm-as-judge` : ARES, Comparatif - Évaluation LLM, DeepEval, Inspect AI, LLM-as-judge, Prometheus-Eval, RAGChecker, TruLens, Évaluation
 - `llm-eval` : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Hallucinations des LLM, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, garak, promptfoo, Évaluation  — pas de page concept dédiée
 - `llm-gateway` : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles  — pas de page concept dédiée
@@ -6260,7 +6295,7 @@
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Détection hors distribution (OOD), Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Suivi d'expériences, Weights & Biases
-- `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
+- `model-serving` : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Coût d'un token et taux d'utilisation, Dimensionner la mémoire d'un serveur LLM, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Parallélisme en inférence, Prefill par morceaux et désagrégation prefill-decode, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM  — pas de page concept dédiée
 - `monte-carlo` : ArviZ, Bayésien, MCMC, Monte Carlo Tree Search, Monte Carlo et inférence variationnelle, Probabilités, PyMC, Stan
 - `mqtt` : Comparatif - Brokers MQTT, Données industrielles, EMQX, Mosquitto, Pattern - Pipeline de maintenance prédictive on-prem, Protocoles de l'atelier - MQTT, OPC UA et Modbus, Telegraf
 - `multi-agent` : Agents, Agno, Architecture deep agent, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Claude Agent SDK, Claude Squad, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, Vibe Kanban, a2a-protocol, freebuff, open_deep_research, swarm-forge  — pas de page concept dédiée
@@ -6455,13 +6490,13 @@
 - `alignment` (porté par : Comparatif - Fine-tuning LLM, Fine-tuning, GRPO, RL for LLMs, RLHF and DPO, Reasoning models, Reward modeling, Reward shaping and hacking, TRL)
 - `api-client` (porté par : Bruno, Comparatif - Clients d'API, Outils de développement, Postman, Web & API)
 - `array` (porté par : Comparatif - Manipulation de données, CuPy, DataFrames, JAX, numpy, xarray)
-- `attention` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Transformer architectures)
+- `attention` (porté par : Apprentissage profond, Architectures hybrides LLM, Attention Residuals, Attention linéaire, Contexte long, Flash Attention and efficient attention, Multi-head Latent Attention, Positional encoding, Self-attention, Taille du cache KV par token, Transformer architectures)
 - `audit-log` (porté par : Maka)
 - `authentication` (porté par : Authelia, Authentification, Authentik, Keycloak, OAuth2 et OpenID Connect, PyJWT, Sécurité)
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, Rétropropagation et différentiation automatique, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence)
-- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation)
+- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Text-to-SQL, evaluate, llmfit, Évaluation)
 - `bi` (porté par : Apache Superset, Comparatif - BI auto-hébergée, Metabase)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
@@ -6525,7 +6560,7 @@
 - `fourier` (porté par : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, SDV, Video generation)
 - `git-hooks` (porté par : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit)
-- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, CuPy, DeepSpeed, Detectron2, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
@@ -6548,7 +6583,7 @@
 - `linear-algebra` (porté par : Algèbre linéaire, Eigendecomposition, Mathématiques, Matrix decompositions, Matrix products, Projections, SVD, Vector norms)
 - `linear-model` (porté par : Analyse discriminante, GAM, GLM, Modèles à effets mixtes, Régression linéaire, Régression logistique, Régression quantile, Régularisation, Socle)
 - `linter` (porté par : Outils de développement, Qualité du code, Ruff, Rule - Qualité stricte, Rule - Toolchain Python)
-- `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, PraisonAI, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
+- `llm` (porté par : AI security, ARES, Advanced RAG, Agent evaluation, Agent memory, Agent patterns, Agent skills, Agents, Agno, Aider, AnythingLLM, Architecture deep agent, AutoGen, Axolotl, Chain-of-Thought, Claude Agent SDK, Cline, Code and math benchmarks, Comparatif - Fine-tuning LLM, Comparatif - Modèles de langage open weights, Construction de graphes de connaissances, Context engineering, Contexte long, Continue, Coût d'un token et taux d'utilisation, CrewAI, DB-GPT, DSPy, Daytona, Decoding strategies, Deep Agents, Deep research, DeepEval, Dify, Dimensionner la mémoire d'un serveur LLM, E2B, Flowise, Fusion de modèles, GRPO, Gemma, GitDiagram, Google Cloud Vertex AI, GraphRAG, Guardrails, Guidance, Hallucinations des LLM, Harnais d'agent, Haystack, Headroom, Helicone, Hermes Agent, Human-in-the-loop, Inference optimization, Inspect AI, Instructor, Interprétabilité, Interprétabilité mécaniste, Interroger un graphe en langage naturel, Jailbreaking and defenses, Kilo Code, LLM & IA générative, LLM benchmarks, LLM caching, LLM eval metrics, LLM observability, LLM-as-judge, LLaMA-Factory, LM Studio, LM Studio Bionic, LangChain, LangChain SQL agent, LangGraph, LangSmith, Langflow, Langfuse, Letta, LibreChat, Licences de modèles open weights, LiteLLM, LlamaIndex, LlamaIndex NLSQLTableQueryEngine, LoRA et QLoRA, Mesurer une latence, Mistral, Modal, Modèles de langage, Multi-Token Prediction, Multi-agent systems, Méta-apprentissage et few-shot learning, NeMo Guardrails, Ollama, OmniRoute, Open WebUI, OpenAI Agents SDK, OpenClaw, OpenCode, OpenHands, OpenMAIC, OpenRouter, Outlines, PEFT, PR-Agent, Parallélisme en inférence, Pattern - Agent sur LLM auto-hébergé, Pattern - Graphe de connaissances industriel sur site, Perplexity, Phoenix Arize, Plafond de débit d'un GPU (roofline), PraisonAI, Prefill par morceaux et désagrégation prefill-decode, Prometheus-Eval, Prompt engineering, Prompt injection, PydanticAI, Quantification des LLM - GGUF, AWQ, GPTQ, Query transformations, Qwen, Qwen Code, RAG, RAG agentique, RAG documentaire on-prem - clé en main ou assemblé, RAGChecker, RAGFlow, RL for LLMs, RLHF and DPO, Ragas, Reasoning models, Reliability patterns, Reward modeling, Routing and cascading, SAELens, SFT, SGLang, Sandboxing de code généré, Scaling laws, Semantic Kernel, Server-Sent Events & streaming LLM, Small Language Models, Snowflake, Sous-agents et isolation du contexte, Sparse autoencoders, Speculative decoding, Structured outputs, Superposition, Synthetic data generation, TGI, TRL, Taille du cache KV par token, TensorRT-LLM, Text-to-SQL, Tokenization, Tool use patterns, TransformerLens, TruLens, Tunix, Unsloth, Vanna, Vision Language Models, WrenAI, Zoo Code, a2a-protocol, agent-loops, gpt-oss, interpreto, llama.cpp, mcp-protocol, nnsight, open_deep_research, prompt-caching, promptfoo, smolagents, text-generation-webui, tool-use, vLLM)
 - `llm-eval` (porté par : ARES, Agent evaluation, Code and math benchmarks, Comparatif - Évaluation LLM, DeepEval, Hallucinations des LLM, Inspect AI, LLM & IA générative, LLM benchmarks, LLM eval metrics, LLM-as-judge, LangSmith, Langfuse, Phoenix Arize, Prometheus-Eval, RAG benchmarks, RAG eval, RAGChecker, Ragas, TruLens, garak, promptfoo, Évaluation)
 - `llm-gateway` (porté par : Helicone, LLM & IA générative, LiteLLM, OmniRoute, OpenRouter, Passerelles)
 - `load-balancer` (porté par : HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik)
@@ -6571,7 +6606,7 @@
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization)
 - `model-evaluation` (porté par : Calibration, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Rule - Évaluer une anomalie par événement, pas par point, Scikit-Learn, TSB-AD, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles, Évaluer une détection d'anomalies)
 - `model-hub` (porté par : HuggingFace, timm)
-- `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
+- `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Coût d'un token et taux d'utilisation, Dimensionner la mémoire d'un serveur LLM, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Parallélisme en inférence, Prefill par morceaux et désagrégation prefill-decode, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Claude Agent SDK, Claude Squad, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, Vibe Kanban, a2a-protocol, freebuff, open_deep_research, swarm-forge)
 - `multi-armed-bandit` (porté par : Exploration vs exploitation, Multi-armed bandits, Optimisation bayésienne)
 - `multimodal` (porté par : Apprentissage contrastif, Claude Video, ColPali, Image generation, LanceDB, Marqo, Médias, RAG visuel - retrouver des documents sans OCR, Speech models, Superwhisper, Video generation, Vision Language Models)

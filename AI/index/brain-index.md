@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1208 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1215 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -997,12 +997,19 @@
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
 
 ### llm/runtime
+- **Coût d'un token et taux d'utilisation** — domaines : ai-eng, mlops · alias : coût par million de tokens, coût d'inférence, marge d'un fournisseur de modèles ouverts, taux d'utilisation des GPU, utilisation GPU, économie de l'inférence, coût de production d'un token, seuil de rentabilité d'un GPU, tokenomics
+- **Dimensionner la mémoire d'un serveur LLM** — domaines : ai-eng, mlops · alias : budget mémoire GPU, nombre d'utilisateurs maximum, capacité d'un serveur LLM, VRAM d'un serveur LLM, gpu-memory-utilization, réplication des têtes KV, dimensionnement vLLM, empreinte mémoire d'un LLM, combien d'utilisateurs sur un GPU
 - **Inference optimization** — domaines : ai-eng, mlops · alias : optimisation de l'inférence, KV-cache, cache KV, continuous batching, batching dynamique, PagedAttention, débit LLM, latence LLM
+- **Mesurer une latence** — domaines : ai-eng, mlops · alias : latence d'inférence, p50 et p95, médiane et percentile, latence de calcul contre aller-retour réseau, protocole de mesure de latence, comparer des latences, latence sur matériel nommé, benchmark de latence
 - **Multi-Token Prediction** — domaines : ml-eng, ai-eng · alias : MTP, prédiction multi-tokens, MTP heads, têtes MTP, MTP-1, self-speculative decoding
+- **Parallélisme en inférence** — domaines : ai-eng, mlops, ml-eng · alias : parallélisme de tenseurs, tensor parallelism, TP, parallélisme de données, data parallelism, DP, parallélisme d'experts, expert parallelism, EP, parallélisme de pipeline, all-reduce, répartir un LLM sur plusieurs GPU, multi-GPU inférence
+- **Plafond de débit d'un GPU (roofline)** — domaines : ai-eng, mlops, ml-eng · alias : roofline, modèle roofline, mur mémoire, memory wall, memory-bound, compute-bound, intensité arithmétique, point d'inflexion, bande passante mémoire, plafond de decode, débit maximal d'un utilisateur
+- **Prefill par morceaux et désagrégation prefill-decode** — domaines : ai-eng, mlops · alias : chunked prefill, prefill par tranches, désagrégation prefill/decode, disaggregated serving, disaggregated prefilling, TTFT, ITL, TPOT, inter-token latency, time to first token, goodput, interférence prefill decode, continuous batching, planification par itération
 - **prompt-caching** — domaines : ai-eng · alias : prompt caching, cache de préfixes de prompt, prefix caching, cache de prompt, context caching
 - **Quantification des LLM - GGUF, AWQ, GPTQ** — domaines : ai-eng, mlops, ml-eng · alias : Quantification des LLM : GGUF, AWQ, GPTQ, quantification de modèles de langage, quantification pour le serving, Q4_K_M, imatrix, SmoothQuant, NF4, W4A16, W8A8, quantification du cache KV, LLM.int8, bitsandbytes
 - **Server-Sent Events & streaming LLM** — domaines : ai-eng · alias : SSE, server-sent events, streaming LLM, streaming de tokens, sse-starlette, text/event-stream, EventSource
 - **Speculative decoding** — domaines : ai-eng · alias : décodage spéculatif, speculative sampling, échantillonnage spéculatif, draft model, modèle brouillon, EAGLE, Medusa, DSpark, DeepSpec, semi-autoregressive, ordonnanceur de confiance
+- **Taille du cache KV par token** — domaines : ai-eng, mlops, ml-eng · alias : formule du cache KV, octets de cache par token, KV cache size, empreinte du cache KV, kappa, cache KV global, réduction du cache KV, compression du cache KV
 
 ### llm/sortie-structuree
 - **Constrained decoding** — domaines : ai-eng · alias : génération contrainte, décodage contraint, structured generation, grammar-constrained decoding

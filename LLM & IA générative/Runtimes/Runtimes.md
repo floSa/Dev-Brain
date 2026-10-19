@@ -42,12 +42,19 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 
 <!-- AUTO:START -->
 ### Notions
+- [[Coût d'un token et taux d'utilisation]] — domaines : ai-eng, mlops
+- [[Dimensionner la mémoire d'un serveur LLM]] — domaines : ai-eng, mlops
 - [[Inference optimization]] — domaines : ai-eng, mlops
+- [[Mesurer une latence]] — domaines : ai-eng, mlops
 - [[Multi-Token Prediction]] — domaines : ml-eng, ai-eng
+- [[Parallélisme en inférence]] — domaines : ai-eng, mlops, ml-eng
+- [[Plafond de débit d'un GPU (roofline)]] — domaines : ai-eng, mlops, ml-eng
+- [[Prefill par morceaux et désagrégation prefill-decode]] — domaines : ai-eng, mlops
 - [[prompt-caching]] — domaines : ai-eng
 - [[Quantification des LLM - GGUF, AWQ, GPTQ]] — domaines : ai-eng, mlops, ml-eng
 - [[Server-Sent Events & streaming LLM]] — domaines : ai-eng
 - [[Speculative decoding]] — domaines : ai-eng
+- [[Taille du cache KV par token]] — domaines : ai-eng, mlops, ml-eng
 
 ### Briques
 - [[llama.cpp]] — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
