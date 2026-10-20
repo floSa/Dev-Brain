@@ -29,7 +29,7 @@ tags: [timeseries, forecasting, anomaly-detection, foundation-model]
 - Une prévision correcte sans expertise séries temporelles, avec saisonnalités et jours fériés → [[Prophet]].
 - Des réseaux de neurones de prévision, récents et prêts à l'emploi → [[neuralforecast]].
 - Une API unique pour comparer statistique et neuronal sur le même jeu → [[darts]].
-- Prévoir sans entraîner de modèle par série → Chronos. Cf. [[Comparatif - Forecasting]].
+- Prévoir sans entraîner de modèle par série → [[Foundation models pour séries temporelles]] (les modèles eux-mêmes ne sont pas des fiches du brain). Cf. [[Comparatif - Forecasting]].
 - Une API commune pour la prévision, la classification et la régression de séries, avec pipelines et réglage → [[sktime]].
 - Fabriquer des centaines de caractéristiques d'une fenêtre puis filtrer celles qui comptent → [[tsfresh]].
 - Chercher des motifs répétés ou des ruptures de forme → [[STUMPY]], par matrix profile, rangé dans [[Détection d'anomalies]].

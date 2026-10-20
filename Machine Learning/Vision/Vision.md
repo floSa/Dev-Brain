@@ -26,9 +26,9 @@ tags: [computer-vision, cnn, vit, object-detection, segmentation, image-classifi
 
 - Le point de départ d'un projet vision sous PyTorch → [[torchvision]] : datasets, transformations et backbones dans une seule dépendance.
 - Un backbone pré-entraîné, quel qu'il soit → [[timm]], la plus large collection avec une API unique.
-- De la détection ou de la segmentation à faire tourner vite, entraînement et export compris → Ultralytics YOLO, en vérifiant la licence AGPL avant tout usage fermé.
+- De la détection ou de la segmentation à faire tourner vite, entraînement et export compris → [[Détection d'objets]] ; les détecteurs comme YOLO sont des modèles, sans fiche ici, et leur licence (AGPL pour Ultralytics) se vérifie avant tout usage fermé.
 - Des implémentations de référence à étendre pour de la recherche → [[Detectron2]].
-- Pré-segmenter sans classe, ou accélérer une campagne d'annotation → segment-anything.
+- Pré-segmenter sans classe, ou accélérer une campagne d'annotation → [[Segment Anything (SAM)]].
 - Augmenter des images avec leurs boîtes et leurs masques → [[albumentations]].
 - Rendre des opérations de vision différentiables et les mettre dans le graphe d'autograd → [[Kornia]].
 - Du traitement d'image classique — géométrie, calibration, filtres, lecture vidéo → [[OpenCV]], sans modèle appris.

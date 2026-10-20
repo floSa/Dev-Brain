@@ -25,10 +25,9 @@ tags: [embeddings, semantic-search, retrieval, model-serving, inference]
 - Les calculer sur CPU, sans PyTorch, avec un catalogue fermé de modèles convertis → [[FastEmbed]].
 - Un service partagé, maintenu par Hugging Face, avec métriques et gRPC → [[Text Embeddings Inference]].
 - Un service qui sert aussi ColBERT, ColPali ou CLIP, en acceptant un mainteneur unique → [[Infinity]].
-- Un modèle multilingue qui produit dense, sparse et multi-vecteur → bge-m3.
-- Un modèle à contexte long et à dimension réglable, de 0,6 B à 8 B → Qwen3-Embedding.
-- Une question en texte qui doit retrouver une image, une vidéo ou un extrait audio : un modèle multimodal, après avoir lu [[Embedding multimodal et modality gap]] — EmbeddingGemma 2 (cinq modalités, 740 M), Qwen3-VL-Embedding (documents visuels, contexte long, 2 B et 8 B) ou SigLIP 2 (image et texte) ; sans classement, les scores étant ceux de chaque éditeur.
-- Reclasser un top-k avec un cross-encoder → bge-reranker (domaine [[LLM & IA générative]]). Cf. [[Comparatif - Embeddings]].
+- Un modèle multilingue qui produit dense, sparse et multi-vecteur, ou à contexte long et dimension réglable → [[Choisir un modèle d'embedding]] ; les modèles d'embedding ne sont pas des fiches du brain, la notion les cite en texte simple.
+- Une question en texte qui doit retrouver une image, une vidéo ou un extrait audio : un embedding multimodal, après avoir lu [[Embedding multimodal et modality gap]] ; sans classement, les scores étant ceux de chaque éditeur.
+- Reclasser un top-k avec un cross-encoder → [[Reranking]] et [[Comparatif - Rerankers]] (domaine [[LLM & IA générative]]). Cf. [[Comparatif - Embeddings]].
 
 <!-- AUTO:START -->
 ### Notions
