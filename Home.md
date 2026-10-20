@@ -10,7 +10,7 @@ tags: [meta]
 Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 
 - [[Machine Learning]] — 126 briques, 18 sous-domaines : [[Apprentissage profond]], [[Apprentissage par renforcement]], [[Séries temporelles]], [[NLP]], [[Serving]], [[Vision]], [[Suivi d'expériences]], [[Interprétabilité]], [[Tabulaire]], [[Embeddings & encodeurs]], [[Monitoring de modèles]], [[Non supervisé]], [[Détection d'anomalies]], [[Maintenance prédictive]], [[Plateformes data & IA]], [[Recherche d'hyperparamètres]], [[Socle]], [[Évaluation de modèles]]
-- [[LLM & IA générative]] — 114 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
+- [[LLM & IA générative]] — 115 briques, 13 sous-domaines : [[Agents de code]], [[Runtimes]], [[Agents]], [[Fine-tuning]], [[Text-to-SQL]], [[Assistants]], [[Modèles de langage]], [[Mémoire des agents]], [[Observabilité des LLM]], [[Passerelles]], [[RAG & retrieval]], [[Sortie typée]], [[Évaluation]]
 - [[Bases de données]] — 71 briques, 6 sous-domaines
 - [[Statistiques & inférence]] — 10 briques, 5 sous-domaines
 - [[Data & pipelines]] — 88 briques, 10 sous-domaines
@@ -24,7 +24,7 @@ Un dossier par domaine, à la racine ; sa page `role: hub` porte son nom.
 - [[Automatisation no-code]] — 5 briques
 - [[Médias]] — 4 briques
 - [[Interfaces & apps data]] — 4 briques
-- [[Sécurité]] — 17 briques, 3 sous-domaines
+- [[Sécurité]] — 19 briques, 3 sous-domaines
 - [[Observabilité]] — 12 briques
 - [[Réseau]] — 2 briques
 - [[Documents]] — 2 briques
@@ -48,7 +48,7 @@ Le seul axe qui traverse l'arbre technique : il se lit dans le champ `domaines:`
 
 ## Réunis par `role:` — les comparatifs
 
-- [[Comparatifs]] — 80 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
+- [[Comparatifs]] — 81 comparatifs, groupés par domaine. Eux, une `categorie:` les range :
   chacun reste dans le dossier des briques qu'il départage, et ne déménage pas. Ce hub ne
   contient donc aucune page — il est la seule qui les réunisse toutes.
 
