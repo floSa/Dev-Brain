@@ -33,14 +33,18 @@ tags: [embeddings, semantic-search, retrieval, model-serving, inference]
 <!-- AUTO:START -->
 ### Notions
 - [[Choisir un modèle d'embedding]] — domaines : data-sci, ai-eng
+- [[Embedding multimodal et modality gap]] — domaines : ai-eng, ml-eng
 - [[embeddings]] — domaines : data-sci, ai-eng
 
 ### Briques
 - [[bge-m3]] — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.
+- [[EmbeddingGemma 2]] — Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.
 - [[FastEmbed]] — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.
 - [[Infinity]] — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique.
 - [[Qwen3-Embedding]] — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.
+- [[Qwen3-VL-Embedding]] — Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.
 - [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.
+- [[SigLIP 2]] — Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.
 - [[Text Embeddings Inference]] — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026.
 
 ### Comparatifs

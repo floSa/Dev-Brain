@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1241,
+  "count": 1250,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -201,6 +201,7 @@
       "Confidentialité différentielle",
       "Daytona",
       "Données personnelles et anonymisation pour LLM",
+      "Droits d'accès dans un RAG",
       "E2B",
       "Llama Guard",
       "Maka",
@@ -386,6 +387,7 @@
       "Ce qui change derrière une API",
       "Choisir un modèle d'embedding",
       "Code and math benchmarks",
+      "Coller le corpus ou récupérer",
       "Comparatif - Détection d'anomalies en séries temporelles",
       "Diagnostic de défauts de roulements",
       "Effort de raisonnement et courbe coût-qualité",
@@ -427,6 +429,7 @@
       "Page to Markdown"
     ],
     "caching": [
+      "Coller le corpus ou récupérer",
       "Headroom",
       "LLM caching",
       "Passerelles",
@@ -481,6 +484,7 @@
     "chunking": [
       "Chunking strategies",
       "RAG & retrieval",
+      "RAG hiérarchique",
       "RAGFlow"
     ],
     "ci-cd": [
@@ -821,6 +825,7 @@
       "Architecture deep agent",
       "Boucle de Ralph",
       "Claude Video",
+      "Coller le corpus ou récupérer",
       "Context engineering",
       "Contexte long",
       "Deep Agents",
@@ -1451,6 +1456,7 @@
       "Annoy",
       "Chroma",
       "DuckDB",
+      "EmbeddingGemma 2",
       "Faiss",
       "LanceDB",
       "LiteRT",
@@ -1465,6 +1471,8 @@
       "Choisir un modèle d'embedding",
       "ColPali",
       "Comparatif - Embeddings",
+      "Embedding multimodal et modality gap",
+      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FastEmbed",
       "HuggingFace",
@@ -1476,9 +1484,11 @@
       "Plongements de graphe et prédiction de liens",
       "PyKEEN",
       "Qwen3-Embedding",
+      "Qwen3-VL-Embedding",
       "RAG",
       "RAG visuel - retrouver des documents sans OCR",
       "Recherche sémantique",
+      "SigLIP 2",
       "Systèmes de recommandation",
       "Text Embeddings Inference",
       "bge-m3",
@@ -1802,6 +1812,7 @@
       "GraphRAG",
       "Graphe de connaissances",
       "JanusGraph",
+      "LightRAG",
       "Memgraph",
       "Nebula Graph",
       "Neo4j",
@@ -1829,6 +1840,7 @@
     ],
     "hybrid-search": [
       "Choisir un modèle d'embedding",
+      "Coller le corpus ou récupérer",
       "FastEmbed",
       "Haystack",
       "Hybrid retrieval",
@@ -2116,6 +2128,8 @@
       "Graphiti",
       "Interroger un graphe en langage naturel",
       "Liage d'entités",
+      "LightRAG",
+      "Microsoft GraphRAG",
       "Mémoire des agents",
       "OWL et raisonnement",
       "Obsidian",
@@ -2127,6 +2141,7 @@
       "Plongements de graphe et prédiction de liens",
       "PyKEEN",
       "RAG & retrieval",
+      "RAG hiérarchique",
       "RDF et triplets",
       "RDF4J",
       "SHACL",
@@ -2332,6 +2347,7 @@
       "Letta",
       "LibreChat",
       "Licences de modèles open weights",
+      "LightRAG",
       "Lire un score publié",
       "LiteLLM",
       "LlamaIndex",
@@ -2339,6 +2355,7 @@
       "LoRA et QLoRA",
       "Mesurer une latence",
       "MiMo-V2.6",
+      "Microsoft GraphRAG",
       "Mistral",
       "Modal",
       "Modèle de décision",
@@ -2948,6 +2965,8 @@
       "Claude Video",
       "Clef",
       "ColPali",
+      "Embedding multimodal et modality gap",
+      "EmbeddingGemma 2",
       "Image generation",
       "LanceDB",
       "Marqo",
@@ -2955,7 +2974,9 @@
       "Qwen-Image",
       "Qwen-Image-2.1",
       "Qwen-Image-Layered",
+      "Qwen3-VL-Embedding",
       "RAG visuel - retrouver des documents sans OCR",
+      "SigLIP 2",
       "Speech models",
       "Superwhisper",
       "Video generation",
@@ -3424,6 +3445,7 @@
       "Apprentissage fédéré",
       "Confidentialité différentielle",
       "Données personnelles et anonymisation pour LLM",
+      "Droits d'accès dans un RAG",
       "OpenCut",
       "Page to Markdown",
       "Presidio",
@@ -3554,6 +3576,7 @@
       "Cognee",
       "Cohere Rerank",
       "ColPali",
+      "Coller le corpus ou récupérer",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
       "Comparatif - Parsing de documents",
@@ -3563,6 +3586,7 @@
       "DeepWiki-Open",
       "Dify",
       "Docling",
+      "Droits d'accès dans un RAG",
       "FlashRank",
       "Flowise",
       "GraphRAG",
@@ -3574,10 +3598,12 @@
       "Langflow",
       "Late-interaction retrieval",
       "LibreChat",
+      "LightRAG",
       "LlamaIndex",
       "LlamaIndex NLSQLTableQueryEngine",
       "LlamaParse",
       "Marker",
+      "Microsoft GraphRAG",
       "Milvus",
       "MinerU",
       "Open WebUI",
@@ -3593,6 +3619,7 @@
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
+      "RAG hiérarchique",
       "RAG visuel - retrouver des documents sans OCR",
       "RAGChecker",
       "RAGFlow",
@@ -3830,6 +3857,7 @@
       "Jina Reranker",
       "Late-interaction retrieval",
       "Qwen3-Embedding",
+      "Qwen3-VL-Embedding",
       "RAG & retrieval",
       "RAGatouille",
       "Reranking",
@@ -3851,9 +3879,13 @@
       "Chunking strategies",
       "Cohere Rerank",
       "ColPali",
+      "Coller le corpus ou récupérer",
       "Comparatif - Mémoire pour agents",
       "Comparatif - Rerankers",
       "Deep research",
+      "Droits d'accès dans un RAG",
+      "Embedding multimodal et modality gap",
+      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FlashRank",
       "GraphRAG",
@@ -3861,23 +3893,28 @@
       "Hybrid retrieval",
       "Jina Reranker",
       "Late-interaction retrieval",
+      "LightRAG",
       "LlamaIndex NLSQLTableQueryEngine",
       "Mem0",
+      "Microsoft GraphRAG",
       "Mémoire des agents",
       "OpenViking",
       "Query transformations",
       "Qwen3-Embedding",
+      "Qwen3-VL-Embedding",
       "RAG",
       "RAG & retrieval",
       "RAG agentique",
       "RAG benchmarks",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "RAG eval",
+      "RAG hiérarchique",
       "RAG visuel - retrouver des documents sans OCR",
       "RAGFlow",
       "RAGatouille",
       "Recherche d'information",
       "Reranking",
+      "SigLIP 2",
       "Systèmes de recommandation",
       "ai-memory",
       "bge-m3",
@@ -4158,6 +4195,8 @@
       "Bases de données vectorielles",
       "Choisir un modèle d'embedding",
       "Comparatif - Embeddings",
+      "Embedding multimodal et modality gap",
+      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FastEmbed",
       "Haystack",
@@ -4831,6 +4870,7 @@
       "Bases de données vectorielles",
       "Chroma",
       "Comparatif - Bases vectorielles",
+      "Droits d'accès dans un RAG",
       "Faiss",
       "Index ANN — internes",
       "LanceDB",
@@ -4892,6 +4932,7 @@
       "Anomalie visuelle zero-shot et few-shot",
       "AnomalyCLIP",
       "ColPali",
+      "Embedding multimodal et modality gap",
       "Gemma",
       "LightOnOCR-3",
       "MiMo-V2.6",
@@ -4901,7 +4942,9 @@
       "OCR classique vs modèles vision-langage pour documents",
       "OCR vision-langage en une passe avec grounding",
       "Qwen",
+      "Qwen3-VL-Embedding",
       "RAG visuel - retrouver des documents sans OCR",
+      "SigLIP 2",
       "Surya",
       "Vision Language Models",
       "olmOCR"
@@ -4972,7 +5015,8 @@
     "zero-shot": [
       "Anomalie visuelle zero-shot et few-shot",
       "AnomalyCLIP",
-      "Foundation models et anomalies de séries"
+      "Foundation models et anomalies de séries",
+      "SigLIP 2"
     ]
   },
   "pages": [
@@ -17372,6 +17416,38 @@
       "maturite": "deprecated"
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/Coller le corpus ou récupérer.md",
+      "nom": "Coller le corpus ou récupérer",
+      "alias": [
+        "contexte long ou RAG",
+        "long contexte contre RAG",
+        "le RAG est-il mort",
+        "coller tout le corpus dans le prompt",
+        "cache chaud contre récupération",
+        "grep contre embeddings",
+        "règle de décision long contexte"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "retrieval",
+        "context-engineering",
+        "caching",
+        "hybrid-search",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/Comparatif - Rerankers.md",
       "nom": "Comparatif - Rerankers",
       "alias": null,
@@ -17413,6 +17489,39 @@
         "relation-extraction",
         "ner",
         "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Droits d'accès dans un RAG.md",
+      "nom": "Droits d'accès dans un RAG",
+      "alias": [
+        "permissions dans un RAG",
+        "contrôle d'accès RAG",
+        "security trimming",
+        "filtrage par droits",
+        "RAG et ACL",
+        "sur-partage",
+        "oversharing",
+        "index centralisé ou requête fédérée"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "data-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "retrieval",
+        "ai-security",
+        "privacy",
+        "vector-db"
       ],
       "alternatives": null,
       "complements": null,
@@ -17593,6 +17702,33 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/RAG & retrieval/LightRAG.md",
+      "nom": "LightRAG",
+      "alias": [
+        "lightrag-hku",
+        "HKUDS/LightRAG",
+        "LightRAG Server"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Framework RAG sur graphe (HKUDS, MIT) — extraction d'entités et de relations par LLM, récupération à deux niveaux (détails et concepts) sur graphe et vecteurs, ajout et suppression incrémentaux de documents ; serveur avec interface web et API, v1.5.7 en septembre 2026.",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "retrieval",
+        "graph-db",
+        "llm"
+      ],
+      "alternatives": [
+        "[[Microsoft GraphRAG]]"
+      ],
+      "complements": null,
+      "maturite": "production"
+    },
+    {
       "path": "LLM & IA générative/RAG & retrieval/LlamaIndex.md",
       "nom": "LlamaIndex",
       "alias": [
@@ -17625,6 +17761,33 @@
         "[[ColPali]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/Microsoft GraphRAG.md",
+      "nom": "Microsoft GraphRAG",
+      "alias": [
+        "graphrag (paquet)",
+        "microsoft/graphrag",
+        "GraphRAG de Microsoft",
+        "Microsoft Research GraphRAG"
+      ],
+      "role": "brique",
+      "categorie": "llm/rag",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Bibliothèque Python de recherche (Microsoft, MIT) qui extrait un graphe d'un corpus par LLM, le découpe en communautés avec un rapport par communauté, puis répond en recherche locale, globale ou DRIFT ; projet en mode maintenance (corrections et mises à jour de dépendances seulement), v3.3.0 en octobre 2026.",
+      "tags": [
+        "rag",
+        "knowledge-graph",
+        "retrieval",
+        "llm"
+      ],
+      "alternatives": [
+        "[[LightRAG]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/RAG & retrieval/Query transformations.md",
@@ -17745,6 +17908,38 @@
         "retrieval",
         "local-llm",
         "self-hosted"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/RAG & retrieval/RAG hiérarchique.md",
+      "nom": "RAG hiérarchique",
+      "alias": [
+        "hierarchical RAG",
+        "tree RAG",
+        "RAPTOR",
+        "parent-enfant",
+        "récupération parent-document",
+        "auto-merging retriever",
+        "pointer vers la bonne section",
+        "STAIR",
+        "RAG par table des matières"
+      ],
+      "role": "notion",
+      "categorie": "llm/rag",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "rag",
+        "retrieval",
+        "chunking",
+        "knowledge-graph"
       ],
       "alternatives": null,
       "complements": null,
@@ -23639,6 +23834,67 @@
       "maturite": null
     },
     {
+      "path": "Machine Learning/Embeddings & encodeurs/Embedding multimodal et modality gap.md",
+      "nom": "Embedding multimodal et modality gap",
+      "alias": [
+        "embeddings multimodaux",
+        "embedding joint texte-image",
+        "modality gap",
+        "espace commun texte et image",
+        "RAG multimodal",
+        "recherche d'images par une question",
+        "embedding image-texte"
+      ],
+      "role": "notion",
+      "categorie": "ml/embeddings",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "embeddings",
+        "multimodal",
+        "vision-language",
+        "retrieval",
+        "semantic-search"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/EmbeddingGemma 2.md",
+      "nom": "EmbeddingGemma 2",
+      "alias": [
+        "EmbeddingGemma2",
+        "embeddinggemma-2",
+        "google/embeddinggemma-2",
+        "EmbeddingGemma v2"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.",
+      "tags": [
+        "embeddings",
+        "multimodal",
+        "semantic-search",
+        "retrieval",
+        "embedded"
+      ],
+      "alternatives": [
+        "[[Qwen3-VL-Embedding]]",
+        "[[SigLIP 2]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
       "path": "Machine Learning/Embeddings & encodeurs/Embeddings & encodeurs.md",
       "nom": "Embeddings & encodeurs",
       "alias": [
@@ -23758,6 +24014,64 @@
         "[[Text Embeddings Inference]]",
         "[[Qwen]]"
       ],
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/Qwen3-VL-Embedding.md",
+      "nom": "Qwen3-VL-Embedding",
+      "alias": [
+        "Qwen3 VL Embedding",
+        "Qwen3-VL-Embedding-2B",
+        "Qwen3-VL-Embedding-8B",
+        "Qwen3-VL-Reranker"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.",
+      "tags": [
+        "embeddings",
+        "multimodal",
+        "vision-language",
+        "retrieval",
+        "reranking"
+      ],
+      "alternatives": [
+        "[[EmbeddingGemma 2]]",
+        "[[SigLIP 2]]"
+      ],
+      "complements": null,
+      "maturite": "production"
+    },
+    {
+      "path": "Machine Learning/Embeddings & encodeurs/SigLIP 2.md",
+      "nom": "SigLIP 2",
+      "alias": [
+        "SigLIP2",
+        "google/siglip2",
+        "siglip2-so400m-patch14-384",
+        "SigLIP 2 So400m"
+      ],
+      "role": "brique",
+      "categorie": "ml/embeddings",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.",
+      "tags": [
+        "embeddings",
+        "multimodal",
+        "vision-language",
+        "zero-shot",
+        "retrieval"
+      ],
+      "alternatives": [
+        "[[EmbeddingGemma 2]]",
+        "[[Qwen3-VL-Embedding]]"
+      ],
+      "complements": null,
       "maturite": "production"
     },
     {
