@@ -28,7 +28,7 @@ tags: [authentication, sso, identity-provider, secrets-management, vulnerability
 - Savoir ce que contient une image ou un paquet qu'on livre, chercher un secret oublié dans un dépôt, passer le code en revue ou suivre les versions livrées → [[Analyse de vulnérabilités]] : [[Trivy]] ou [[Grype]] pour les composants, [[Gitleaks]] pour les secrets, [[Semgrep]] pour le code, [[Dependency-Track]] pour le suivi ([[Comparatif - Scanners de sécurité]]).
 - Auditer un site depuis sa seule URL, en défense comme en reconnaissance → [[Web-Check]].
 - Chercher par où commencer une recherche en source ouverte → [[osint4all]].
-- Tout ce qui touche à la sécurité d'un système qui embarque un modèle → [[Systèmes IA]] : le panorama ([[AI security]]), l'entrée non fiable qui détourne les instructions ([[Prompt injection]]), le contournement de l'alignement ([[Jailbreaking and defenses]]), le filtrage d'entrée et de sortie ([[Guardrails]]) et l'isolation du code généré ([[Sandboxing de code généré]]).
+- Tout ce qui touche à la sécurité d'un système qui embarque un modèle → [[Systèmes IA]] : le panorama ([[AI security]]), l'entrée non fiable qui détourne les instructions ([[Prompt injection]]), le contournement de l'alignement ([[Jailbreaking and defenses]]), le filtrage d'entrée et de sortie ([[Guardrails]]) l'isolation du code généré ([[Sandboxing de code généré]]) et les règles appliquées hors du modèle ([[Garde-fous hors modèle]], [[Excessive agency et lethal trifecta]], [[Isolation par politique déclarative]] ; [[OpenShell]] et [[sandbox-runtime]] pour les mettre en œuvre).
 - Les briques qui appliquent tout ça (passerelles, observabilité, sortie structurée) → [[LLM & IA générative]], qui garde les outils là où ce domaine garde la discipline.
 
 <!-- AUTO:START -->
