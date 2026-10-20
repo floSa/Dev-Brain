@@ -1,7 +1,7 @@
 ---
 role: brique
 nom: Clef
-alias: [Clef-flash, Clef-omni, Cloudflare Clef, Cloudflare/clef, clef-flash, clef-omni]
+alias: [Clef-flash, Clef-omni, Cloudflare Clef, Cloudflare/clef]
 pitch: "Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur."
 categorie: llm/sortie-structuree
 famille: modele
