@@ -53,6 +53,7 @@ tags: [prompting, llm]
 - [[SFT]] — quand le prompting plafonne, entraîner le modèle sur des exemples ; plus coûteux, plus durable.
 - [[DSPy]] — Programmation et optimisation de prompts — déclare des signatures et compile les prompts (ou un fine-tune) à partir d'exemples et d'une métrique, plutôt que de bricoler des chaînes de caractères.
 - [[Méta-apprentissage et few-shot learning]] — l'apprentissage en contexte (démonstrations dans le prompt) lu comme du méta-apprentissage, et la discussion apprentissage ou reconnaissance.
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — d'où vient l'apprentissage en contexte (zéro, un, quelques exemples) et ce que « zero-shot » veut dire.
 
 ## Pour aller plus loin
 

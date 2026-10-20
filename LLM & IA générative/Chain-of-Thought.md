@@ -50,6 +50,7 @@ tags: [prompting, reasoning, llm]
 - [[Decoding strategies]] — la self-consistency repose sur l'échantillonnage à température.
 - [[Structured outputs]] — pour isoler proprement raisonnement et réponse.
 - [[Reasoning models]] — internalisent le CoT par entraînement plutôt que par prompt.
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — les exemples dans le prompt, du zero-shot au few-shot.
 
 ## Pour aller plus loin
 

@@ -51,6 +51,7 @@ tags: [fine-tuning, llm]
 - [[Prompt engineering]] — levier sans entraînement à épuiser avant le SFT.
 - [[RAG]] — pour injecter de la **connaissance** à jour ; le SFT est meilleur pour le **comportement / format**.
 - [[Synthetic data generation]] — produit les démonstrations quand les données humaines manquent.
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — l'affinage situé entre le pré-entraînement et l'apprentissage en contexte.
 
 ## Pour aller plus loin
 

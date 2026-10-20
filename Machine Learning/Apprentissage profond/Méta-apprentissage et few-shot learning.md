@@ -88,6 +88,7 @@ tags: [transfer-learning, deep-learning, llm]
 - [[SetFit]] — few-shot sur texte par fine-tuning contrastif.
 - [[sentence-transformers]] — l'encodeur qui sert d'embedding pour ces approches côté texte.
 - [[PyTorch]] et [[JAX]] — `backward(create_graph=True)` d'un côté, `grad` appliqué à sa propre sortie de l'autre : les deux permettent de différencier à travers une mise à jour de gradient.
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — l'autre sens de « few-shot » : quelques exemples dans le prompt d'un modèle de langage, sans mise à jour des poids.
 
 ## Pour aller plus loin
 

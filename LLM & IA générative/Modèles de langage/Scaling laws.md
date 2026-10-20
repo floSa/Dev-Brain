@@ -50,6 +50,7 @@ tags: [scaling-laws, llm, deep-learning]
 - [[Maximal Update Parametrization]] — complément indispensable : les lois d'échelle disent **quelle taille** entraîner, µP dit **avec quels hyperparamètres** sans les rechercher à l'échelle cible.
 - [[Attention Residuals]] — exemple de gain présenté comme un déplacement de la frontière compute ↔ qualité (1,25×) plutôt qu'un changement d'échelle.
 - [[Calculs adaptatifs]] — introduit un axe supplémentaire : le calcul dépensé varie selon l'entrée, ce que $C \approx 6ND$ ne modélise pas.
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — la valeur de l'exposant de Kaplan (environ −5 % de perte par doublement de N) replacée dans les trois étapes de GPT-1 à GPT-3.
 
 ## Pour aller plus loin
 
