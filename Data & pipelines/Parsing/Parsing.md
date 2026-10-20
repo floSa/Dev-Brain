@@ -17,6 +17,7 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Le clivage qui décide de tout est **le PDF porte-t-il du texte natif ou une image**. Natif, l'extraction est déterministe et rapide ([[PyMuPDF]], [[pdfplumber]]). Scanné, il faut de l'[[OCR]] ([[docTR]]) et le résultat devient probabiliste. Un corpus réel est mixte, d'où l'intérêt de **classer avant de router** ([[pdf-inspector]]) : ne payer l'OCR que sur les pages qui en ont besoin.
 - Les **tableaux** sont le point où les outils se séparent vraiment. Le texte, tout le monde le sort ; une structure de lignes et de colonnes fidèle, presque personne. C'est le critère à tester sur ses propres fichiers avant de choisir, et non à lire dans une documentation.
 - Sur un document scanné, un second choix s'ouvre : un **pipeline OCR en étages** ([[Tesseract]], [[docTR]], [[PaddleOCR]]) ou un **modèle vision-langage** qui lit la page entière ([[olmOCR]], [[MinerU]]). Le premier se trompe en bruit local ; le second lit mieux les tableaux, les formules et les colonnes, mais peut réécrire ce qu'il lit, et demande un GPU. Les sources de 2026 ne donnent pas de vainqueur : cf. [[OCR classique vs modèles vision-langage pour documents]].
+- Deux gestes de méthode avant de choisir un moteur d'OCR. **Lire la couche de texte quand elle existe** et la vérifier : un PDF « numérique » peut porter un texte inexploitable (polices anciennes, ordre inversé), et un 0 % d'erreur sur un PDF à couche ne mesure pas l'OCR ([[Couche de texte d'un PDF contre OCR]]). **Mesurer sur ses pages** avec une métrique qui dit ce qu'elle compte, et annoncer le nombre de pages ([[Évaluer un OCR]]). Quand un modèle vision-langage lit tout, boîtes comprises, en une génération, le temps suit la densité du texte ([[OCR vision-langage en une passe avec grounding]]) ; un petit OCR sur CPU en première passe et un contrôle arithmétique des totaux réduisent ce qu'il faut lui confier ([[Cascade OCR et contrôle arithmétique des factures]]).
 - Un second clivage traverse le domaine : **quelle sortie**. Un accès objet par objet, pour piloter l'extraction soi-même ([[pdfplumber]], [[PyMuPDF]]) ; ou du Markdown prêt à découper et embarquer pour un RAG ([[Marker]], [[Docling]], [[Unstructured]]). Cf. [[Chunking strategies]].
 - La **licence** est ici un critère de premier rang, plus que dans le reste du brain : [[PyMuPDF]] est AGPL ou commerciale, [[Marker]] est GPL avec des poids à licence restreinte, [[LlamaParse]] n'est pas ouvert du tout. Sur un projet client, ce point se règle avant le benchmark.
 
@@ -30,9 +31,12 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Trier un corpus mixte et ne router vers l'OCR que le nécessaire → [[pdf-inspector]].
 - Scans et images, pipeline OCR clé en main → [[docTR]].
 - OCR imprimé sur CPU seul, sans framework de deep learning, ou PDF cherchable à produire → [[Tesseract]].
+- Première passe sur CPU seul, sans PyTorch, avec boîtes et ordre de lecture, poids sous seuil de 20 M$ à faire valider avant livraison à un client → [[Indra OCR]].
 - OCR multilingue et mise en page, tableaux ou formules dans le même outil, Apache 2.0 → [[PaddleOCR]].
 - Prototype OCR Python multilingue en quelques lignes, sans exigence de maintenance → [[EasyOCR]].
 - Gros corpus de PDF en Markdown par un modèle vision-langage, GPU disponible, code et poids Apache 2.0 → [[olmOCR]].
+- Page entière lue en une génération avec étiquette et boîte par bloc, trois tailles de modèle (0,8B, 1B, 4B), Apache-2.0, vLLM → [[LightOnOCR-3]].
+- Mise en page, ordre de lecture et tableaux par un modèle de 650 millions de paramètres, code Apache-2.0, poids sous seuil de 5 M$ → [[Surya]].
 - Mise en page lourde, formules et tableaux, qualité réglable du CPU au GPU, licence non standard à faire valider → [[MinerU]].
 - Documents variés (PDF, Office, HTML, e-mails) à partitionner pour un RAG → [[Unstructured]].
 - Mise en page et tableaux complexes, exécution locale, Apache/MIT → [[Docling]].
