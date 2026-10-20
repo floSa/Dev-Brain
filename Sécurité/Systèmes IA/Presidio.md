@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[spaCy]]", "[[GLiNER]]", "[[LiteLLM]]", "[[NeMo Guardrails]]"]
+complements: ["[[spaCy]]", "[[LiteLLM]]", "[[NeMo Guardrails]]"]
 tags: [privacy, ner, ai-security, pii]
 url_docs: https://presidio.dataprivacystack.org/
 url_repo: https://github.com/data-privacy-stack/presidio
@@ -39,7 +39,7 @@ Relevé le 2026-10-01 : **v2.2.364** (2026-07-22), 11 120 étoiles, dernier comm
 | Tout garder en local : analyse et anonymisation tournent dans le processus ou dans deux conteneurs internes, sans appel à un service tiers | Une garantie de détection : la documentation écrit qu'il n'y en a aucune |
 | Une pseudonymisation **réversible** : l'opérateur de chiffrement AES s'inverse avec la même clé | Une anonymisation au sens du RGPD : masquer des champs détectés ne la prouve pas, voir [[Données personnelles et anonymisation pour LLM]] |
 | Brancher la détection sur une passerelle ([[LiteLLM]]) ou un framework de garde-fous ([[NeMo Guardrails]]) qui l'appelle déjà | Une couverture que la documentation reconnaît meilleure dans les services en SaaS ; Presidio vaut par sa personnalisation |
-| Étendre la détection avec ses propres règles, listes de refus ou un modèle de NER ([[GLiNER]], Transformers) | Un site qui ne veut ni écrire de règles ni maintenir des modèles de NER |
+| Étendre la détection avec ses propres règles, listes de refus ou un modèle de NER (GLiNER, Transformers) | Un site qui ne veut ni écrire de règles ni maintenir des modèles de NER |
 
 ## Mise en œuvre
 
@@ -62,12 +62,11 @@ Relevé le 2026-10-01 : **v2.2.364** (2026-07-22), 11 120 étoiles, dernier comm
 
 ### Alternatives
 
-- *Aucune alternative déclarée : le brain ne contient pas d'autre détecteur de données personnelles. Les services en SaaS (Azure AI Language, Google Cloud DLP, AWS Comprehend) exigent d'envoyer le texte chez un tiers, ce qui défait l'objet ; [[GLiNER]] est un modèle de NER qu'on branche **dans** Presidio, pas un concurrent.*
+- *Aucune alternative déclarée : le brain ne contient pas d'autre détecteur de données personnelles. Les services en SaaS (Azure AI Language, Google Cloud DLP, AWS Comprehend) exigent d'envoyer le texte chez un tiers, ce qui défait l'objet ; GLiNER est un modèle de NER qu'on branche **dans** Presidio, pas un concurrent.*
 
 ### Compléments
 
 - [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs. — le moteur de NER par défaut de l'analyseur ; les modèles français (`fr_core_news_*`) sont à déclarer à la main.
-- [[GLiNER]] — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger. — se branche comme reconnaisseur personnalisé (la documentation de Presidio cite GLiNER parmi les moteurs possibles) ; utile pour des types d'entités qu'aucune règle ne décrit.
 - [[LiteLLM]] — Passerelle LLM unifiée (SDK + proxy) de BerriAI — appelle 100+ fournisseurs (OpenAI, Anthropic, Bedrock, Azure…) au format OpenAI, avec routage, suivi des coûts, load-balancing et garde-fous. — son garde-fou `presidio` appelle les deux services REST (analyseur et anonymiseur) avant et après l'appel au modèle, en masquant ou en bloquant.
 - [[NeMo Guardrails]] — Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits en YAML et en Colang, avec des rails prêts à l'emploi (sûreté du contenu, jailbreak, thème, PII) ; chaque contrôle sémantique rappelle un LLM, d'où une latence ajoutée. — son rail de données personnelles s'appuie sur Presidio (et sur un modèle GLiNER dédié).
 

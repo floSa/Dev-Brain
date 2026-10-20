@@ -49,9 +49,9 @@ tags: [guardrails, safety, llm]
 - [[LLM-as-judge]] — sert de garde-fou sémantique (notation de conformité).
 - [[LLM observability]] — mesurer l'efficacité et la dérive des garde-fous.
 - [[Human-in-the-loop]] — au lieu de bloquer, router une action douteuse vers une revue humaine.
-- Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[Comparatif - Garde-fous pour LLM]].
+- Voir aussi : [[Presidio]], [[NeMo Guardrails]], Llama Guard, [[Comparatif - Garde-fous pour LLM]].
 - [[Hallucinations des LLM]] — la typologie des hallucinations et les limites des détecteurs d'ancrage
-- [[Modèle de décision]] — un garde-fou qui lit des probabilités au lieu de générer un verdict ; [[Comparatif - Modèles de décision]] ; pour une décision irréversible, une règle dure devant ([[Choisir entre règle, classifieur, modèle de décision et LLM]]).
+- [[Modèle de décision]] — un garde-fou qui lit des probabilités au lieu de générer un verdict ; Comparatif - Modèles de décision ; pour une décision irréversible, une règle dure devant ([[Choisir entre règle, classifieur, modèle de décision et LLM]]).
 - [[Garde-fous hors modèle]] — les mêmes contrôles vus sous l'angle de qui les applique (le runtime, pas le modèle) : isolation, autorisation, approbation, hooks.
 
 ## Pour aller plus loin

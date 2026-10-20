@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[Presidio]]", "[[Llama Guard]]", "[[garak]]"]
+complements: ["[[Presidio]]", "[[garak]]"]
 tags: [guardrails, ai-security, safety, llm]
 url_docs: https://docs.nvidia.com/nemo/guardrails/
 url_repo: https://github.com/NVIDIA-NeMo/Guardrails
@@ -37,14 +37,14 @@ Relevé le 2026-10-01 : **v0.24.1** (2026-09-16), 7 229 étoiles, dernier commit
 |---|---|
 | Des politiques de conversation **déclaratives** (sujets autorisés, refus, enchaînements) qu'un non-développeur peut relire dans un fichier versionné | Un simple filtre de sortie à schéma : un validateur Pydantic suffit → [[Instructor]] |
 | Un serveur de garde-fous compatible OpenAI devant un modèle local (`nemoguardrails server`) | Zéro latence ajoutée : chaque rail sémantique est un appel de modèle de plus |
-| Assembler en un seul endroit un classifieur de sûreté ([[Llama Guard]], ShieldGemma, modèles NemoGuard), de la détection de données personnelles ([[Presidio]]) et des règles maison | Une garantie : la documentation du détecteur de jailbreak annonce elle-même qu'il « échoue ouvert » (voir *Limites*) |
+| Assembler en un seul endroit un classifieur de sûreté (Llama Guard, ShieldGemma, modèles NemoGuard), de la détection de données personnelles ([[Presidio]]) et des règles maison | Une garantie : la documentation du détecteur de jailbreak annonce elle-même qu'il « échoue ouvert » (voir *Limites*) |
 | Des documents ou des tours d'agent à contrôler avant l'outil : rails de récupération et d'exécution | Un jailbreak en dehors de l'anglais : les heuristiques de perplexité sont, de l'aveu de la documentation, pour l'anglais seul |
 
 ## Mise en œuvre
 
 - Installation — `pip install nemoguardrails` ; l'extra `[server]` ajoute le serveur ; LangChain est devenu optionnel à partir de la 0.22.0. Python : voir PyPI
 - Point d'entrée — un répertoire `config/` (`config.yml`, fichiers `.co`), chargé par `RailsConfig.from_path` puis `LLMRails(config).generate(...)` ; ou `nemoguardrails server --config <répertoire>` pour un point d'accès compatible OpenAI avec une interface de chat intégrée
-- Prérequis — **un LLM** : les rails dits *self-check* (entrée, sortie, faits) demandent au modèle de l'application de juger, d'après un prompt à écrire ; la documentation dit que la qualité « dépend fortement » du modèle et conseille un modèle dédié au contrôle, déclaré dans `config.yml`. **Hors ligne** : le moteur Ollama est intégré (`localhost:11434/v1`) et tout point d'accès compatible OpenAI sert de modèle, de sorte qu'un site sans internet peut tout garder en interne ; les rails à base de modèle de garde supposent d'héberger ce modèle (voir [[Llama Guard]] pour un exemple)
+- Prérequis — **un LLM** : les rails dits *self-check* (entrée, sortie, faits) demandent au modèle de l'application de juger, d'après un prompt à écrire ; la documentation dit que la qualité « dépend fortement » du modèle et conseille un modèle dédié au contrôle, déclaré dans `config.yml`. **Hors ligne** : le moteur Ollama est intégré (`localhost:11434/v1`) et tout point d'accès compatible OpenAI sert de modèle, de sorte qu'un site sans internet peut tout garder en interne ; les rails à base de modèle de garde supposent d'héberger ce modèle (voir Llama Guard pour un exemple)
 - Exécution — un processus Python embarqué dans l'application, ou un service HTTP ; un moteur plus récent (*IORails*, depuis la 0.21.0, mars 2026) exécute en parallèle les rails des modèles NemoGuard, sans prise en charge de l'heuristique de jailbreak
 - Coût — gratuit sous Apache-2.0 ; le coût réel est la latence et les jetons des appels de contrôle (un prompt complexe, dit la documentation, « ajoute de la latence » ; aucun chiffre publié n'a été lu)
 
@@ -61,12 +61,11 @@ Relevé le 2026-10-01 : **v0.24.1** (2026-09-16), 7 229 étoiles, dernier commit
 
 ### Alternatives
 
-- *Aucune alternative déclarée : les deux autres frameworks de garde-fous candidats n'ont pas de fiche — Guardrails AI (Apache-2.0) a fermé son Hub de validateurs le 2026-08-25 puis a été racheté par Harvey en septembre 2026 ; LLM Guard (MIT) est archivé depuis le 2026-07-09. Le [[Comparatif - Garde-fous pour LLM]] dit pourquoi, et compare avec [[Llama Guard]] qui n'est pas un framework mais le classifieur qu'on lui branche.*
+- *Aucune alternative déclarée : les deux autres frameworks de garde-fous candidats n'ont pas de fiche — Guardrails AI (Apache-2.0) a fermé son Hub de validateurs le 2026-08-25 puis a été racheté par Harvey en septembre 2026 ; LLM Guard (MIT) est archivé depuis le 2026-07-09. Le [[Comparatif - Garde-fous pour LLM]] dit pourquoi, et compare avec Llama Guard qui n'est pas un framework mais le classifieur qu'on lui branche.*
 
 ### Compléments
 
 - [[Presidio]] — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France. — c'est le moteur du rail de données personnelles du catalogue.
-- [[Llama Guard]] — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher. — cité par la documentation de NeMo Guardrails parmi les modèles du rail de sûreté du contenu.
 - [[garak]] — Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites, génération de code malveillant) lancées contre un modèle local ou distant, avec détecteurs, rapports JSONL et HTML ; la plupart des détecteurs tournent en local, les attaques multi-tours demandent un modèle juge. — son générateur `NeMoGuardrails` enveloppe une configuration de rails : de quoi mesurer ce qu'elle retient.
 
 ## Ressources

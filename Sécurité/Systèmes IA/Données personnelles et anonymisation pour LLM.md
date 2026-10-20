@@ -33,7 +33,7 @@ tags: [privacy, ai-security, ner]
 
 ### Détection : règles, modèle, dictionnaire
 - **Règles** (expressions régulières avec validation : somme de contrôle d'un IBAN ou d'une carte, format d'un numéro de sécurité sociale) : précises sur les formats rigides, aveugles à tout le reste.
-- **Modèle de reconnaissance d'entités nommées** (spaCy, Transformers, [[GLiNER]]) : repère les noms de personnes, de lieux, d'organisations par le contexte ; plus de rappel, plus de faux positifs, et une dépendance à la langue du modèle.
+- **Modèle de reconnaissance d'entités nommées** (spaCy, Transformers, GLiNER) : repère les noms de personnes, de lieux, d'organisations par le contexte ; plus de rappel, plus de faux positifs, et une dépendance à la langue du modèle.
 - **Dictionnaire ou liste de refus** : les noms de clients, de projets, de produits de l'entreprise, que ni règle ni modèle ne reconnaissent comme sensibles ; efficace, à maintenir.
 - Aucune ne suffit seule ; [[Presidio]] assemble les trois dans un même moteur, en local.
 
@@ -77,7 +77,7 @@ tags: [privacy, ai-security, ner]
 - [[Presidio]] — la brique de détection et de masquage, locale, avec chiffrement réversible.
 - [[NeMo Guardrails]] — son rail de données personnelles s'appuie sur Presidio ; un moyen d'imposer le masquage à toute l'application.
 - [[LiteLLM]] — le garde-fou Presidio de la passerelle : masquer ou bloquer avant l'appel, et restaurer dans la réponse.
-- [[GLiNER]] — un modèle de reconnaissance d'entités sans réentraînement, pour des types que les règles ne décrivent pas.
+- GLiNER — un modèle de reconnaissance d'entités sans réentraînement, pour des types que les règles ne décrivent pas.
 - [[Guardrails]] et [[AI security]] — le cadre : où se place le filtrage, et quelles menaces il adresse.
 - **Alternatives** : chiffrer le corpus et ne le déchiffrer qu'à l'intérieur du périmètre ; exclure les sources trop sensibles de l'assistant ; données synthétiques pour les essais (la documentation de Presidio en donne un exemple de génération) ; les services de détection en SaaS, qui supposent d'envoyer le texte à un tiers et défont l'objet.
 

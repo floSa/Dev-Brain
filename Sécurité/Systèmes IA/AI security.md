@@ -48,7 +48,7 @@ tags: [ai-security, safety, llm]
 - [[mcp-protocol]] — élargit la surface (serveurs tiers, *resources*) → confiance et permissions.
 - [[Reliability patterns]] — moindre privilège, idempotence, bornage des boucles : recoupe la sécurité côté agents.
 - [[LLM observability]] — détecter abus et anomalies en production.
-- Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[garak]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]].
+- Voir aussi : [[Presidio]], [[NeMo Guardrails]], Llama Guard, [[garak]], [[Comparatif - Garde-fous pour LLM]], [[Données personnelles et anonymisation pour LLM]].
 - [[Confidentialité différentielle]] — une garantie formelle sur la participation d'un individu aux données d'entraînement, là où la confidentialité est vue ici côté exfiltration.
 - [[Excessive agency et lethal trifecta]] — LLM06 en détail, et la combinaison de trois capacités qui ouvre un trajet d'exfiltration ; [[Garde-fous hors modèle]] — les règles qu'applique le runtime, indépendamment du modèle.
 
