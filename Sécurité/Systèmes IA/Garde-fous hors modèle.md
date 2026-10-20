@@ -87,6 +87,7 @@ flowchart LR
 - [[Harnais d'agent]] — là où ces couches se branchent : le harnais exécute, le modèle propose.
 - [[OpenShell]] · [[sandbox-runtime]] · [[NeMo Guardrails]] — trois mises en œuvre fichées, à des endroits différents de la chaîne.
 - Alternative : **ne rien faire hors du modèle** et compter sur le prompt système. Acceptable pour un assistant sans outils ; insuffisant dès que l'agent peut écrire, envoyer ou supprimer.
+- [[Vérificateur externe et loi de Goodhart]] — un vérificateur d'agent doit être hors de portée de ce qu'il vérifie : le même principe.
 
 ## Pour aller plus loin
 

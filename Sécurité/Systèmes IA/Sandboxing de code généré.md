@@ -60,6 +60,7 @@ Un bac à sable jetable est le plus sûr : chaque exécution repart d'un état p
 - Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[garak]], [[Comparatif - Garde-fous pour LLM]].
 - [[Isolation par politique déclarative]] — la politique qui dit ce qui traverse le mur (fichiers, appels système, réseau, identifiants), là où cette page décrit la solidité du mur ; [[OpenShell]] et [[sandbox-runtime]] la mettent en œuvre ; [[Comparatif - Isolation d'exécution d'un agent]].
 - [[Garde-fous hors modèle]] — l'isolation parmi quatre mécanismes (isolation, autorisation, approbation, hooks) qui s'appliquent hors du modèle.
+- [[Vérificateur externe et loi de Goodhart]] — un agent qui contourne son bac à sable ou édite ses journaux de tests (Darwin Gödel Machine, STOP).
 
 ## Pour aller plus loin
 

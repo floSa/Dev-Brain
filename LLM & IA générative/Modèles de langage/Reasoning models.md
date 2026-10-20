@@ -52,6 +52,7 @@ tags: [reasoning, llm, alignment]
 - Servir ces modèles : [[vLLM]], [[SGLang]] (débit sur longues sorties).
 - Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[gpt-oss]], [[Qwen]], [[Mistral]].
 - [[Effort de raisonnement et courbe coût-qualité]] — le réglage d'effort et ce que chaque cran rapporte, chiffres à l'appui.
+- [[Récompense vérifiable (RLVR)]] — la source de récompense qui a rendu ces modèles courants.
 
 ## Pour aller plus loin
 

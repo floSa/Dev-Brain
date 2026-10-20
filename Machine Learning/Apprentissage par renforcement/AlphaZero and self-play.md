@@ -54,6 +54,7 @@ tags: [self-play, planning, deep-learning, reinforcement-learning]
 - [[Value functions]] — la tête « valeur » du réseau, qui remplace les rollouts aléatoires.
 - [[Model-based RL]] — MuZero apprend le modèle au lieu de le supposer connu.
 - [[Counterfactual Regret Minimization]] — l'alternative en information imparfaite, où le self-play par MCTS échoue.
+- [[Vérificateur externe et loi de Goodhart]] — pourquoi l'auto-jeu converge : le jeu note, le modèle ne se note pas.
 
 ## Pour aller plus loin
 

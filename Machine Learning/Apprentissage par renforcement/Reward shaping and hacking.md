@@ -50,6 +50,8 @@ tags: [reinforcement-learning, reward-shaping, alignment]
 - [[Reward modeling]] — quand la récompense est **apprise** (RLHF), elle devient une cible privilégiée du hacking (over-optimization, sycophancy).
 - [[RL for LLMs]] — terrain où le reward hacking est central ; la pénalité KL et les récompenses vérifiables sont les contre-mesures.
 - [[Exploration vs exploitation]] — une exploration trop agressive accélère la découverte des failles de récompense.
+- [[Vérificateur externe et loi de Goodhart]] — le détournement observé sur des boucles d'agents (faux journaux de tests) et la contrainte d'isolation du juge.
+- [[Récompense vérifiable (RLVR)]] — la récompense à règles, qui réduit le détournement sans le supprimer.
 
 ## Pour aller plus loin
 
