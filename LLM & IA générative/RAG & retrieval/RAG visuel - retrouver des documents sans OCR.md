@@ -62,6 +62,7 @@ tags: [rag, retrieval, embeddings, vision-language, multimodal, ocr, document-pa
 - [[bge-m3]] et [[Qwen3-Embedding]] — les embeddings textuels, base de la chaîne de parsing contre laquelle le papier de ColPali se mesure (BGE-M3).
 - [[Hybrid retrieval]] — la fusion lexical et dense, à croiser avec un retriever visuel.
 - [[LlamaIndex]] — documente un reclassement ColPali (`ColPaliRerank`).
+- [[Couche de texte d'un PDF contre OCR]] — la voie du texte : lire la couche d'un PDF numérique, ou reconnaître l'image, avant d'indexer.
 
 ## Pour aller plus loin
 

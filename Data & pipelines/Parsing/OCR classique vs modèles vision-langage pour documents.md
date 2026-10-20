@@ -58,6 +58,11 @@ tags: [ocr, document-parsing, vision-language, layout-analysis, benchmark]
 - [[Parsing]] et [[Comparatif - Parsing de documents]] — les outils, et ce qui les départage.
 - [[Marker]] — un pipeline vision multi-étapes entre les deux familles, à poids sous licence restreinte.
 - Texte déjà natif dans le PDF : [[PyMuPDF]], [[pdfplumber]], [[pypdfium2]] — pas d'OCR du tout, ce qui est la première question à se poser.
+- [[Évaluer un OCR]] — CER, F1 de boîtes, graphique et cellules de tableau : ce que chaque mesure compte, et annoncer le nombre de pages.
+- [[OCR vision-langage en une passe avec grounding]] — le texte, l'étiquette et la boîte de chaque bloc en une génération.
+- [[Cascade OCR et contrôle arithmétique des factures]] — un petit OCR d'abord, un gros modèle sur les pages douteuses, un total qui se recalcule.
+- [[Couche de texte d'un PDF contre OCR]] — quand lire le texte intégré, quand reconnaître l'image.
+- [[LightOnOCR-3]], [[Surya]] et [[Indra OCR]] — trois moteurs récents : deux modèles vision-langage, un OCR pour processeur seul.
 
 ## Pour aller plus loin
 

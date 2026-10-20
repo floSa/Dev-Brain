@@ -106,6 +106,7 @@ Relevé le 2026-09-30 / 2026-10 dans les cours de floSa ; les caractéristiques 
 - [[Coût d'un token et taux d'utilisation]] — traduire le débit par GPU en dollars.
 - [[llmfit]] — savoir quel modèle tient sur une machine avant de le télécharger.
 - Les moteurs qui appliquent ces leviers : [[vLLM]], [[SGLang]], [[llama.cpp]].
+- [[LightOnOCR-3]] — trois tailles d'un même modèle dont les débits mesurés suivent le plafond de bande passante.
 
 ## Pour aller plus loin
 
