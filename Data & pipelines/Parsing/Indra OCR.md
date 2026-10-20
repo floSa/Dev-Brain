@@ -32,7 +32,7 @@ url_repo: https://github.com/datalab-to/indra
 
 | Prendre si | Écarter si |
 |---|---|
-| Un gros volume d'imprimé propre, de formulaires, de pages tournées, sur machines **sans GPU** (indexation, recherche, RAG) | Manuscrit, reçus, tableaux à cellules fusionnées ou à texte sur plusieurs lignes, scans anciens : l'éditeur lui-même renvoie vers son offre payante → [[LightOnOCR-3]], [[olmOCR]] |
+| Un gros volume d'imprimé propre, de formulaires, de pages tournées, sur machines **sans GPU** (indexation, recherche, RAG) | Manuscrit, reçus, tableaux à cellules fusionnées ou à texte sur plusieurs lignes, scans anciens : l'éditeur lui-même renvoie vers son offre payante → LightOnOCR-3, [[olmOCR]] |
 | Une **première passe** rapide avant un gros modèle sur les seules pages douteuses → [[Cascade OCR et contrôle arithmétique des factures]] | Une livraison à un client ou un produit dans une société de plus de 20 M$ de revenu ou de financement : les poids ne sont pas libres (le cas d'un consultant qui traite des documents pour un client n'est pas tranché par les textes, à faire valider) |
 | Une installation en une ligne, sans PyTorch, sur Linux ou Mac Apple Silicon | Une écriture hors des quatre recognizers : le texte d'une image reste faux, seule la couche d'un PDF numérique passe → [[Couche de texte d'un PDF contre OCR]] |
 | Des boîtes de lignes et de blocs, une étiquette et un ordre de lecture sans GPU | Un paquet jeune, qui bouge vite : six versions en une semaine, journal des modifications à relire avant tout usage |

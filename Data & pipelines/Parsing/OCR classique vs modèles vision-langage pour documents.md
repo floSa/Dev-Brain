@@ -62,7 +62,7 @@ tags: [ocr, document-parsing, vision-language, layout-analysis, benchmark]
 - [[OCR vision-langage en une passe avec grounding]] — le texte, l'étiquette et la boîte de chaque bloc en une génération.
 - [[Cascade OCR et contrôle arithmétique des factures]] — un petit OCR d'abord, un gros modèle sur les pages douteuses, un total qui se recalcule.
 - [[Couche de texte d'un PDF contre OCR]] — quand lire le texte intégré, quand reconnaître l'image.
-- [[LightOnOCR-3]], [[Surya]] et [[Indra OCR]] — trois moteurs récents : deux modèles vision-langage, un OCR pour processeur seul.
+- LightOnOCR-3, [[Surya]] et [[Indra OCR]] — trois moteurs récents : deux modèles vision-langage, un OCR pour processeur seul.
 
 ## Pour aller plus loin
 

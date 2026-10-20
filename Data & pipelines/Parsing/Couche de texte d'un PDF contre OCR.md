@@ -55,7 +55,7 @@ Un test de validité de la couche (écriture, ordre, polices) précède donc sa 
 
 - **Première question à se poser** : ce PDF porte-t-il du texte ? Si oui, [[PyMuPDF]], [[pdfplumber]], [[pypdfium2]] ou [[pdfminer.six]] extraient sans OCR, avec les positions.
 - **Vérifier la couche** : comparer quelques lignes de la couche avec ce que l'image montre. Une page « numérique » dont le texte sort en caractères latins sur un document devanagari est à passer à l'OCR.
-- **Les OCR de bout en bout** qui ne lisent que l'image (un modèle vision-langage comme [[LightOnOCR-3]]) ignorent la couche : le client rend chaque page en image. Le texte natif n'est pas exploité, et le temps par page ne dépend pas de la couche.
+- **Les OCR de bout en bout** qui ne lisent que l'image (un modèle vision-langage comme LightOnOCR-3) ignorent la couche : le client rend chaque page en image. Le texte natif n'est pas exploité, et le temps par page ne dépend pas de la couche.
 - **Un OCR qui lit la couche** ([[Indra OCR]], mode `auto`) change ce que mesure un test : cf. plus haut.
 - **PDF cherchable** : produire un PDF qui porte la couche d'un OCR est une sortie de [[Tesseract]], utile pour retrouver une page par mot-clé sans changer l'image.
 - **Écritures hors liste** : si l'OCR ne gère pas l'écriture (kannada, tamoul, arabe en image), la couche d'un PDF numérique est parfois le seul chemin ; pour une image, c'est un autre moteur ou un VLM.

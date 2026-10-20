@@ -77,7 +77,7 @@ Les chiffres d'une facture sont liés entre eux : somme des lignes, taxe, total.
 - **Même matériel ou non** : l'exemple compare un OCR sur CPU et un modèle sur le GPU du même portable. Ce n'est pas un rapport à matériel égal, et il ne se transporte pas sur un serveur (cf. [[Mesurer une latence]]).
 - **Ce que le contrôle ne voit pas** : un libellé faux, un chiffre faux **qui laisse les égalités vraies** (deux erreurs qui se compensent, un total lu de travers avec les mêmes lignes), l'appariement entre libellé et montant. Un ticket lu en deux blocs, libellés puis montants, passe un contrôle de somme et reste inutilisable pour extraire les lignes.
 - **Ce qu'il ne dit pas non plus** : zéro erreur sur **une** facture synthétique propre n'établit pas un taux d'erreur sur des factures réelles (tampons, plis, reflets, lignes multiples).
-- **Quel gros modèle** : un modèle vision-langage sur mémoire unifiée ou GPU ([[LightOnOCR-3]], [[olmOCR]]) ; **quel petit OCR** : [[Indra OCR]] ou [[Tesseract]] sur CPU.
+- **Quel gros modèle** : un modèle vision-langage sur mémoire unifiée ou GPU (LightOnOCR-3, [[olmOCR]]) ; **quel petit OCR** : [[Indra OCR]] ou [[Tesseract]] sur CPU.
 - **Avant la cascade, une question plus simple** : le PDF porte-t-il déjà son texte ? (cf. [[Couche de texte d'un PDF contre OCR]]). Un classeur de pages ([[pdf-inspector]]) décide page par page.
 
 ## Repères datés
