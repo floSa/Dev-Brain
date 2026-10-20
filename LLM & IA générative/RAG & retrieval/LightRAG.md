@@ -62,7 +62,7 @@ Une bibliothèque Python et un **serveur** (interface web et API REST) de RAG su
 
 - Documentation — dépôt et README : https://github.com/HKUDS/LightRAG
 - Article — Guo et al., *LightRAG: Simple and Fast Retrieval-Augmented Generation*, arXiv 2410.05779 : https://arxiv.org/abs/2410.05779
-- Paquet — https://pypi.org/project/lightrag-hku/
+- Dépôt — le paquet sur PyPI : https://pypi.org/project/lightrag-hku/
 - Vidéo — « RAG vs GRAPH RAG. Lequel choisir ? », Benoit Ferrere, 2 min 46 : https://www.youtube.com/watch?v=ZaOMbq3c0Jg (frameworks et bases de graphes à 1 min 56)
 
 ## Voir aussi
