@@ -252,6 +252,7 @@ Liste fermée des tags autorisés dans le champ `tags:` du frontmatter (pages De
 | `red-teaming` | Test d'attaque d'un système LLM — sondes automatisées, attaques adverses, mesure de la résistance aux jailbreaks et aux injections ; se distingue de `ai-security` (panorama des risques) et de `jailbreak` (une technique d'attaque) |
 | `guardrails` | Garde-fous d'entrée/sortie autour des appels LLM (validation de schéma, filtrage, modération, détection d'injection) |
 | `safety` | Sûreté et alignement comportemental d'un modèle (refus, contenu nuisible, usage abusif) |
+| `sandbox` | Bac à sable d'exécution — confiner le code ou le processus d'un agent (fichiers, appels système, réseau) ; se distingue de `container` (packager une application de confiance) et de `guardrails` (filtrer ce qui entre et sort du modèle) |
 | `linear-algebra` | Algèbre linéaire — vecteurs, matrices, espaces vectoriels et applications linéaires |
 | `matrix-decomposition` | Factorisation d'une matrice en facteurs structurés (LU, QR, Cholesky, eigen, SVD) |
 | `eigenvalue` | Valeurs et vecteurs propres — spectre d'une matrice (diagonalisation, décomposition spectrale) |
