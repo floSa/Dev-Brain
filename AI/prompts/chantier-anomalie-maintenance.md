@@ -564,7 +564,7 @@ Briques (vérifie chaque licence au dépôt) : **LightOnOCR-3** (famille 0,8B, 1
 - [x] Lot 31 — inférence : mémoire, débit, coût d'un token
 - [x] Lot 32 — lire un tarif, un score, un service
 - [ ] Lot 33 — modèles de décision
-- [ ] Lot 34 — OCR et documents
+- [x] Lot 34 — OCR et documents
 - [ ] Lot 35 — RAG : droits, multimodal, hiérarchique
 - [ ] Lot 36 — agents : garde-fous hors modèle
 - [ ] Lot 37 — fondamentaux : méthodes et culture
