@@ -5,7 +5,7 @@ filters:
     - categorie == "ml/embeddings"
 views:
   - type: table
-    name: Outils et modèles d'embedding
+    name: Outils d'embedding
     order:
       - file.name
       - famille
