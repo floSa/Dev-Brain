@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: []
-complements: ["[[Ultralytics YOLO]]", "[[Detectron2]]", "[[segment-anything]]", "[[OpenCV]]"]
+complements: ["[[Detectron2]]", "[[OpenCV]]"]
 tags: [object-detection, object-tracking, computer-vision]
 url_docs: https://supervision.roboflow.com/
 url_repo: https://github.com/roboflow/supervision
@@ -57,9 +57,7 @@ produit les détections.
 
 ### Compléments
 
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — un des modèles en amont dont il exploite les sorties
 - [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture. — un des modèles en amont dont il exploite les sorties
-- [[segment-anything]] — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte). — le modèle dont il exploite les masques
 - [[OpenCV]] — Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning. — la couche bas niveau sur laquelle il s'appuie pour le rendu
 
 ## Ressources
