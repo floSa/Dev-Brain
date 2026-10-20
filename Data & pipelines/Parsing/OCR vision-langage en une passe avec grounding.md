@@ -59,7 +59,7 @@ Schéma refait d'après une diapositive de la vidéo *LightOnOCR-3 Is HERE* (AI 
 - **Ce que ça ne règle pas** : un VLM peut **réécrire** ce qu'il lit, avec une sortie fluide (cf. [[OCR classique vs modèles vision-langage pour documents]]) ; télécopies et manuscrits restent des limites ; les étiquettes de zones rares sont peu fiables.
 - **Critères d'évaluation** : un F1 de boîtes à IoU 0,5 avec étiquette obligatoire, pas un score d'ordre de lecture (cf. [[Évaluer un OCR]]).
 - **Contrôler les chiffres** à part : un contrôle arithmétique rattrape un total mal lu (cf. [[Cascade OCR et contrôle arithmétique des factures]]).
-- **Deux écoles de sortie** : un VLM de bout en bout ([[LightOnOCR-3]], [[Surya]] dans sa version 2, qui fait mise en page, OCR et tableaux par un seul modèle) contre un pipeline de petits réseaux qui sort lui aussi des boîtes, sur CPU ([[Indra OCR]]).
+- **Deux écoles de sortie** : un VLM de bout en bout (LightOnOCR-3, [[Surya]] dans sa version 2, qui fait mise en page, OCR et tableaux par un seul modèle) contre un pipeline de petits réseaux qui sort lui aussi des boîtes, sur CPU ([[Indra OCR]]).
 
 ## Repères datés
 

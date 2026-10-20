@@ -8,7 +8,7 @@ famille: paquet
 licence_type: source-available
 maturite: beta
 langage: Python
-alternatives: ["[[olmOCR]]", "[[LightOnOCR-3]]", "[[PaddleOCR]]", "[[Indra OCR]]"]
+alternatives: ["[[olmOCR]]", "[[PaddleOCR]]", "[[Indra OCR]]"]
 tags: [ocr, document-parsing, layout-analysis, vision-language, self-hosted]
 url_docs: https://github.com/datalab-to/surya
 url_repo: https://github.com/datalab-to/surya
@@ -35,7 +35,7 @@ url_repo: https://github.com/datalab-to/surya
 | Une **mise en page avec ordre de lecture** et des tableaux par un seul modèle, en 90 langues et plus, sur ses propres machines → [[OCR vision-langage en une passe avec grounding]] | Une société de plus de 5 M$ de revenu ou de financement, ou un produit concurrent de Datalab : les poids exigent une licence commerciale |
 | Un code Apache-2.0 à intégrer, avec une sortie structurée (blocs, HTML, polygones, confiance par bloc) | Une migration depuis la v1 sans temps pour réécrire : les schémas de sortie ont changé (`text_lines` devient `blocks`, plus de `top_k`, cellules de tableau sans `is_header` ni `colspan`) |
 | Un serveur local sur Apple Silicon ou CPU via llama.cpp | Aucun serveur d'inférence à gérer : le gestionnaire lance un conteneur vLLM ou un `llama-server` → [[Indra OCR]] ou [[Tesseract]] |
-| Un banc de comparaison avec [[LightOnOCR-3]] ou [[olmOCR]] | Des scores indépendants : le 83,3 % sur olmOCR-bench est annoncé par l'éditeur |
+| Un banc de comparaison avec LightOnOCR-3 ou [[olmOCR]] | Des scores indépendants : le 83,3 % sur olmOCR-bench est annoncé par l'éditeur |
 
 ## Mise en œuvre
 
@@ -57,7 +57,6 @@ url_repo: https://github.com/datalab-to/surya
 ### Alternatives
 
 - [[olmOCR]] — Toolkit d'Ai2 qui convertit PDF et images en Markdown avec un modèle vision-langage de 7 milliards de paramètres affiné pour l'OCR : tableaux, équations et ordre de lecture, traitement en lot sur GPU via vLLM ; code et poids Apache 2.0, GPU obligatoire.
-- [[LightOnOCR-3]] — Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.
 - [[PaddleOCR]] — Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.
 - [[Indra OCR]] — OCR de Datalab pour processeur seul : un paquet de petits réseaux ONNX (reconnaisseur latin d'environ 1,25 million de paramètres, 76 Mo au total) qui lit PDF et images en Markdown ou JSON avec boîtes, étiquettes de blocs et ordre de lecture ; code Apache-2.0, poids OpenRAIL-M modifiée (gratuit sous 20 M$ de revenu ou de financement), sans PyTorch ni GPU.
 - voisin : [[Marker]] — le convertisseur PDF vers Markdown de Datalab, bâti sur Surya.
