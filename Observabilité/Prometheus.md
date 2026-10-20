@@ -29,7 +29,7 @@ url_repo: https://github.com/prometheus/prometheus
 
 ## Définition
 
-Serveur de supervision du projet Prometheus, distinct du modèle juge [[Prometheus-Eval]]. Il **va chercher**
+Serveur de supervision du projet Prometheus, distinct du modèle juge Prometheus-Eval. Il **va chercher**
 (*scrape*) à intervalle régulier les métriques que les applications et les exporters exposent en HTTP,
 les range dans une base locale sous forme de séries identifiées par un nom et des **labels**, et les
 interroge en **PromQL**. Chaque serveur est autonome, sans stockage distribué : la documentation en tire
@@ -90,5 +90,5 @@ de valeurs de chaque label.
 - [[Observabilité]] — le hub du domaine
 - [[Métriques, logs et traces]] — la notion : ce que mesure une métrique, et ce qu'elle ne dit pas
 - [[SLO et alerting]] — la notion : de la règle d'alerte au budget d'erreur
-- [[Prometheus-Eval]] — homonyme sans rapport : un modèle juge de LLM, pas ce système de supervision
+- Prometheus-Eval — homonyme sans rapport : un modèle juge de LLM, pas ce système de supervision
 - [[Journalisation structurée et traçabilité]] — la notion : événements structurés, contexte, corrélation avec les traces, ce qu'il ne faut pas journaliser

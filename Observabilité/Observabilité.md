@@ -18,7 +18,7 @@ tags: [observability, logging, metrics, dashboard, self-hosted]
 - L'idée qui a rendu [[Loki]] adoptable : **indexer les labels, pas le contenu**. On paye l'index sur quelques dimensions (service, environnement, niveau) et on garde les corps de logs en blocs compressés. Le compromis est assumé — la recherche plein texte y est lente, la recherche par label immédiate.
 - Côté MLops, l'observabilité d'infrastructure ne suffit pas : la dérive de données et la dégradation d'un modèle ne se voient pas dans le CPU. C'est un sujet distinct, à traiter avec les briques de suivi de modèle.
 - Deux notions tiennent le domaine : [[Métriques, logs et traces]] dit ce que chaque signal apporte et ce qu'il coûte ; [[SLO et alerting]] dit à partir de quel niveau de service réveiller quelqu'un, et pourquoi le symptôme prime sur la cause.
-- Ne pas confondre : le [[Prometheus]] d'ici est le système de supervision ; [[Prometheus-Eval]], dans l'évaluation des LLM, est un modèle juge sans rapport.
+- Ne pas confondre : le [[Prometheus]] d'ici est le système de supervision ; Prometheus-Eval, dans l'évaluation des LLM, est un modèle juge sans rapport.
 
 ## Choisir
 
