@@ -38,6 +38,7 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 - Un réseau de neurones → [[Apprentissage profond]].
 - Quelques étiquettes et beaucoup de données brutes → [[Apprentissage semi-supervisé]], après avoir réglé une baseline supervisée et essayé un modèle pré-entraîné ; choisir lesquelles étiqueter → [[Active learning]].
 - Des données qui ne peuvent pas être centralisées → [[Apprentissage fédéré]] ; une garantie formelle de confidentialité sur ce que le modèle laisse fuiter → [[Confidentialité différentielle]].
+- Replacer une méthode dans son histoire, avec ses dates et ses attributions corrigées, et lire une annonce du moment avec les leçons des deux hivers → [[Histoire de l'IA (1943-2026)]].
 
 <!-- AUTO:START -->
 ### Notions

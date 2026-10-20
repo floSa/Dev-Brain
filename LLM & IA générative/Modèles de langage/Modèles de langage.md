@@ -35,6 +35,8 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning, ll
 - Faire tourner concrètement l'un de ces modèles → [[Runtimes]] ; l'ajuster → [[Fine-tuning]].
 - Une réponse plausible mais fausse, et savoir si la cause est le modèle, le contexte ou l'évaluation → [[Hallucinations des LLM]].
 - Une fenêtre annoncée à plusieurs centaines de milliers de jetons : ce qu'elle coûte en mémoire et ce qu'elle vaut à l'usage → [[Contexte long]].
+- Comprendre les trois étapes de la vie d'un modèle — pré-entraîner, affiner, apprendre en contexte — et le piège du mot « zero-shot » → [[Pré-entraînement, affinage et apprentissage en contexte]].
+- Comprendre d'où viennent les modèles actuels, et ce qui a changé de 2011 à GPT-3 → [[Généalogie des modèles de langage (2011-GPT-3)]].
 
 <!-- AUTO:START -->
 ### Notions

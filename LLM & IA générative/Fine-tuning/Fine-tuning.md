@@ -34,6 +34,7 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - Injecter de la connaissance à jour → [[RAG]], pas ce dossier.
 - Changer seulement le comportement, sans entraînement → [[Prompt engineering]] d'abord.
 - Combiner des modèles ou des adaptateurs déjà ajustés, sans réentraîner → [[Fusion de modèles]].
+- Une récompense qui est une règle ou un test exécutable : c'est une source de récompense, pas un optimiseur, et elle se combine avec GRPO ou PPO → [[Récompense vérifiable (RLVR)]] ; pourquoi le juge doit rester hors de portée du modèle, et ce que devient une boucle qui se note elle-même → [[Vérificateur externe et loi de Goodhart]].
 
 <!-- AUTO:START -->
 ### Notions

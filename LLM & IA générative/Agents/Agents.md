@@ -39,6 +39,7 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - Un projet de recherche multi-agents conversationnel → [[AutoGen]], en sachant qu'il est en maintenance depuis fin 2025.
 - Un agent qui édite du code, déjà écrit et installable → [[Agents de code]], pas ce dossier.
 - Une application conversationnelle à déployer telle quelle → [[Assistants]].
+- Lire une annonce d'« auto-amélioration » d'agent : ce qui change, qui juge, où la boucle s'arrête → [[Boucle d'amélioration d'un agent]] ; ce qu'un assistant de preuve garantit quand un agent produit une preuve → [[Preuve formelle et assistant de preuve]].
 
 <!-- AUTO:START -->
 ### Notions
