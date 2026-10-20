@@ -98,7 +98,7 @@ $$z_t=\sigma(W_z[x_t,h_{t-1}]),\quad r_t=\sigma(W_r[x_t,h_{t-1}]),\quad \tilde h
 - [[Attention linéaire]] — l'autre lignée « récurrente en inférence, parallèle à l'entraînement ».
 - [[Autoencodeurs]] — le LSTM-AE en est la version pour séquences.
 - [[Time series feature engineering]] — la voie sans réseau : caractéristiques extraites à la main, puis un modèle classique.
-- [[Chronos]] et [[Foundation models pour séries temporelles]] — l'alternative pré-entraînée, sans entraînement propre.
+- Chronos et [[Foundation models pour séries temporelles]] — l'alternative pré-entraînée, sans entraînement propre.
 - [[PyTorch]] et [[Keras]] — les deux bibliothèques où le LSTM se pose en une ligne.
 - [[Généalogie des modèles de langage (2011-GPT-3)]] — les LSTM de 2011 à 2016 sur le langage, avant l'attention.
 
