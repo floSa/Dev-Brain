@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[TRL]]", "[[Unsloth]]", "[[Axolotl]]", "[[Tunix]]"]
-complements: ["[[Qwen]]"]
+complements: []
 tags: [fine-tuning, declarative-config, low-code, distributed-training, llm]
 url_docs: https://llamafactory.readthedocs.io/en/latest/
 url_repo: https://github.com/hiyouga/LLaMA-Factory
@@ -63,7 +63,6 @@ ligne. Sous le capot, l'écosystème Hugging Face et TRL, avec des accélératio
 
 ### Compléments
 
-- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — cité par le README de Qwen3.8.
 
 ## Ressources
 

@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: Python
 alternatives: ["[[Unsloth]]", "[[Axolotl]]", "[[LLaMA-Factory]]", "[[Tunix]]"]
-complements: ["[[Gemma]]"]
+complements: []
 tags: [fine-tuning, alignment, reinforcement-learning, transformers, llm]
 url_docs: https://huggingface.co/docs/trl
 url_repo: https://github.com/huggingface/trl
@@ -65,7 +65,6 @@ sans attendre qu'un wrapper la supporte. Intégration native avec `transformers`
 
 ### Compléments
 
-- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — décrit dans la documentation Gemma pour le finetuning complet.
 
 ## Ressources
 
