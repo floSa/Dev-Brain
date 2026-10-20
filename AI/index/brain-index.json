@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1225,
+  "count": 1232,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -405,7 +405,8 @@
       "Text-to-SQL",
       "evaluate",
       "llmfit",
-      "Évaluation"
+      "Évaluation",
+      "Évaluer un OCR"
     ],
     "bi": [
       "Apache Superset",
@@ -1329,21 +1330,27 @@
       "MongoDB Compass"
     ],
     "document-parsing": [
+      "Cascade OCR et contrôle arithmétique des factures",
       "Comparatif - Parsing de documents",
       "Comparatif - Scraping",
+      "Couche de texte d'un PDF contre OCR",
       "Data & pipelines",
       "Docling",
       "EasyOCR",
+      "Indra OCR",
+      "LightOnOCR-3",
       "LlamaParse",
       "Marker",
       "MinerU",
       "OCR classique vs modèles vision-langage pour documents",
+      "OCR vision-langage en une passe avec grounding",
       "OpenDataLoader PDF",
       "PaddleOCR",
       "Parsing",
       "PyMuPDF",
       "RAG visuel - retrouver des documents sans OCR",
       "RAGFlow",
+      "Surya",
       "Tesseract",
       "Unstructured",
       "docTR",
@@ -1353,7 +1360,8 @@
       "pdfplumber",
       "pypdf",
       "pypdfium2",
-      "selectolax"
+      "selectolax",
+      "Évaluer un OCR"
     ],
     "documentation": [
       "ADR et design docs",
@@ -1394,6 +1402,7 @@
     ],
     "edge-inference": [
       "Comparatif - Runtimes d'inférence CPU et edge",
+      "Indra OCR",
       "Inférence en bordure - modèles sur du matériel d'atelier",
       "LiteRT",
       "ONNX Runtime",
@@ -1720,6 +1729,7 @@
       "Keras",
       "Kornia",
       "LM Studio",
+      "LightOnOCR-3",
       "Mesurer une latence",
       "Mixed precision",
       "Modal",
@@ -2137,10 +2147,14 @@
     "layout-analysis": [
       "Comparatif - Parsing de documents",
       "Docling",
+      "Indra OCR",
+      "LightOnOCR-3",
       "MinerU",
       "OCR classique vs modèles vision-langage pour documents",
+      "OCR vision-langage en une passe avec grounding",
       "OpenDataLoader PDF",
       "PaddleOCR",
+      "Surya",
       "docTR",
       "pdf-inspector",
       "pdfminer.six"
@@ -2751,6 +2765,7 @@
     ],
     "model-evaluation": [
       "Calibration",
+      "Cascade OCR et contrôle arithmétique des factures",
       "Ce qui change derrière une API",
       "Classification metrics",
       "Clustering evaluation",
@@ -2785,6 +2800,7 @@
       "Équité et biais algorithmique",
       "Évaluation",
       "Évaluation de modèles",
+      "Évaluer un OCR",
       "Évaluer une détection d'anomalies"
     ],
     "model-hub": [
@@ -3091,23 +3107,30 @@
       "Zabbix"
     ],
     "ocr": [
+      "Cascade OCR et contrôle arithmétique des factures",
       "Comparatif - Parsing de documents",
+      "Couche de texte d'un PDF contre OCR",
       "Documents",
       "EasyOCR",
+      "Indra OCR",
+      "LightOnOCR-3",
       "LlamaParse",
       "Marker",
       "MinerU",
       "OCR",
       "OCR classique vs modèles vision-langage pour documents",
+      "OCR vision-langage en une passe avec grounding",
       "PaddleOCR",
       "Parsing",
       "RAG visuel - retrouver des documents sans OCR",
       "Stirling PDF",
+      "Surya",
       "Tesseract",
       "Unstructured",
       "docTR",
       "olmOCR",
-      "pdf-inspector"
+      "pdf-inspector",
+      "Évaluer un OCR"
     ],
     "offline-rl": [
       "Apprentissage par renforcement",
@@ -3287,7 +3310,9 @@
     ],
     "pdf": [
       "Comparatif - Parsing de documents",
+      "Couche de texte d'un PDF contre OCR",
       "Documents",
+      "Indra OCR",
       "Marker",
       "MinerU",
       "OpenDataLoader PDF",
@@ -3846,6 +3871,7 @@
       "Reward shaping and hacking"
     ],
     "routing": [
+      "Cascade OCR et contrôle arithmétique des factures",
       "OmniRoute",
       "OpenRouter",
       "Passerelles",
@@ -4029,6 +4055,7 @@
       "GitLab CE",
       "HAProxy",
       "Harbor",
+      "Indra OCR",
       "Infinity",
       "Jenkins",
       "Kafka",
@@ -4041,6 +4068,7 @@
       "Label Studio",
       "LibreChat",
       "Licences de modèles open weights",
+      "LightOnOCR-3",
       "Meilisearch",
       "Metabase",
       "Mosquitto",
@@ -4065,6 +4093,7 @@
       "Reverse proxy et TLS",
       "Stirling PDF",
       "Stockage",
+      "Surya",
       "Tempo",
       "Text Embeddings Inference",
       "Traefik",
@@ -4824,13 +4853,16 @@
       "AnomalyCLIP",
       "ColPali",
       "Gemma",
+      "LightOnOCR-3",
       "MiMo-V2.6",
       "MinerU",
       "Mistral",
       "Modèles de fondation vision",
       "OCR classique vs modèles vision-langage pour documents",
+      "OCR vision-langage en une passe avec grounding",
       "Qwen",
       "RAG visuel - retrouver des documents sans OCR",
+      "Surya",
       "Vision Language Models",
       "olmOCR"
     ],
@@ -10494,6 +10526,38 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Parsing/Cascade OCR et contrôle arithmétique des factures.md",
+      "nom": "Cascade OCR et contrôle arithmétique des factures",
+      "alias": [
+        "cascade OCR",
+        "OCR en cascade",
+        "petit OCR puis gros modèle",
+        "OCR first pass",
+        "contrôle arithmétique de facture",
+        "validation par recalcul",
+        "total qui ne se recalcule pas",
+        "tri des pages difficiles"
+      ],
+      "role": "notion",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "routing",
+        "model-evaluation"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Data & pipelines/Parsing/Comparatif - Parsing de documents.md",
       "nom": "Comparatif - Parsing de documents",
       "alias": null,
@@ -10509,6 +10573,37 @@
         "ocr",
         "rag",
         "layout-analysis"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Parsing/Couche de texte d'un PDF contre OCR.md",
+      "nom": "Couche de texte d'un PDF contre OCR",
+      "alias": [
+        "text layer",
+        "couche de texte",
+        "PDF numérique ou scanné",
+        "PDF natif contre scan",
+        "lire la couche de texte",
+        "born-digital",
+        "mode auto OCR",
+        "PDF cherchable"
+      ],
+      "role": "notion",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "pdf"
       ],
       "alternatives": null,
       "complements": null,
@@ -10583,6 +10678,72 @@
         "[[pypdfium2]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Indra OCR.md",
+      "nom": "Indra OCR",
+      "alias": [
+        "indra-ocr",
+        "Indra",
+        "datalab-to/indra",
+        "indra OCR 1M"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "OCR de Datalab pour processeur seul : un paquet de petits réseaux ONNX (reconnaisseur latin d'environ 1,25 million de paramètres, 76 Mo au total) qui lit PDF et images en Markdown ou JSON avec boîtes, étiquettes de blocs et ordre de lecture ; code Apache-2.0, poids OpenRAIL-M modifiée (gratuit sous 20 M$ de revenu ou de financement), sans PyTorch ni GPU.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "pdf",
+        "layout-analysis",
+        "edge-inference",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[Tesseract]]",
+        "[[PaddleOCR]]",
+        "[[docTR]]",
+        "[[Surya]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
+      "path": "Data & pipelines/Parsing/LightOnOCR-3.md",
+      "nom": "LightOnOCR-3",
+      "alias": [
+        "LightOnOCR 3",
+        "LightOnOCR-3-0.8B",
+        "LightOnOCR-3-1B",
+        "LightOnOCR-3-4B",
+        "lightonai/LightOnOCR-3-4B",
+        "LightOn OCR"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "vision-language",
+        "layout-analysis",
+        "gpu",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[olmOCR]]",
+        "[[PaddleOCR]]",
+        "[[MinerU]]",
+        "[[Surya]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
     },
     {
       "path": "Data & pipelines/Parsing/LlamaParse.md",
@@ -10675,7 +10836,8 @@
         "[[olmOCR]]",
         "[[Marker]]",
         "[[Docling]]",
-        "[[PaddleOCR]]"
+        "[[PaddleOCR]]",
+        "[[LightOnOCR-3]]"
       ],
       "complements": [
         "[[RAGFlow]]"
@@ -10707,6 +10869,37 @@
         "vision-language",
         "layout-analysis",
         "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Data & pipelines/Parsing/OCR vision-langage en une passe avec grounding.md",
+      "nom": "OCR vision-langage en une passe avec grounding",
+      "alias": [
+        "grounding OCR",
+        "OCR en une passe",
+        "single-pass OCR",
+        "OCR avec boîtes englobantes",
+        "lecture et mise en page en une génération",
+        "document grounding",
+        "ancrage de blocs"
+      ],
+      "role": "notion",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "vision-language",
+        "layout-analysis"
       ],
       "alternatives": null,
       "complements": null,
@@ -10778,7 +10971,10 @@
         "[[Tesseract]]",
         "[[EasyOCR]]",
         "[[olmOCR]]",
-        "[[MinerU]]"
+        "[[MinerU]]",
+        "[[LightOnOCR-3]]",
+        "[[Indra OCR]]",
+        "[[Surya]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10843,6 +11039,37 @@
       "maturite": "production"
     },
     {
+      "path": "Data & pipelines/Parsing/Surya.md",
+      "nom": "Surya",
+      "alias": [
+        "surya-ocr",
+        "Surya OCR",
+        "datalab-to/surya",
+        "Surya 2"
+      ],
+      "role": "brique",
+      "categorie": "data/parsing",
+      "famille": "paquet",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Boîte à outils OCR de Datalab à base d'un modèle vision-langage de 650 millions de paramètres : texte, mise en page avec ordre de lecture et tableaux d'une page en plus de 90 langues ; code Apache-2.0, poids sous OpenRAIL-M modifiée (gratuit sous 5 M$ de revenu ou de financement), servi par vLLM ou llama.cpp.",
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "layout-analysis",
+        "vision-language",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[olmOCR]]",
+        "[[LightOnOCR-3]]",
+        "[[PaddleOCR]]",
+        "[[Indra OCR]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
       "path": "Data & pipelines/Parsing/Tesseract.md",
       "nom": "Tesseract",
       "alias": [
@@ -10864,7 +11091,8 @@
       "alternatives": [
         "[[docTR]]",
         "[[PaddleOCR]]",
-        "[[EasyOCR]]"
+        "[[EasyOCR]]",
+        "[[Indra OCR]]"
       ],
       "complements": [
         "[[PyMuPDF]]",
@@ -10930,7 +11158,8 @@
       "alternatives": [
         "[[PaddleOCR]]",
         "[[Tesseract]]",
-        "[[EasyOCR]]"
+        "[[EasyOCR]]",
+        "[[Indra OCR]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -10963,7 +11192,9 @@
         "[[MinerU]]",
         "[[Marker]]",
         "[[Docling]]",
-        "[[PaddleOCR]]"
+        "[[PaddleOCR]]",
+        "[[LightOnOCR-3]]",
+        "[[Surya]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -11112,6 +11343,40 @@
         "[[EasyOCR]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Data & pipelines/Parsing/Évaluer un OCR.md",
+      "nom": "Évaluer un OCR",
+      "alias": [
+        "évaluation d'un OCR",
+        "banc de test OCR",
+        "CER",
+        "taux d'erreur de caractères",
+        "F1 de boîtes",
+        "IoU 0",
+        5,
+        "vérité terrain OCR",
+        "mesurer un OCR",
+        "tester un OCR"
+      ],
+      "role": "notion",
+      "categorie": "data/parsing",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "data-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "ocr",
+        "document-parsing",
+        "model-evaluation",
+        "benchmark"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "Data & pipelines/SDV.md",

@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1225 pages actives.
+> 1232 pages actives.
 
 ## Par page
 
@@ -642,8 +642,8 @@
 
 ### docTR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Détection d'objets]], [[EasyOCR]], [[Indra OCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyTorch]], [[Segmentation]], [[Tesseract]], [[Vision Language Models]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Indra OCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[pypdf]]
 
 ### Docusaurus  ·  brique
 - tags : `documentation`
@@ -1015,6 +1015,11 @@
 - liens sortants : [[Calibration]], [[Data leakage]], [[Imbalanced classification]], [[LightGBM]], [[Scikit-Learn]], [[XGBoost]]
 - liens entrants : [[Classification]], [[Faker]], [[Imbalanced classification]], [[Mimesis]], [[SDV]], [[Tabulaire]]
 
+### Indra OCR  ·  brique
+- tags : `ocr`, `document-parsing`, `pdf`, `layout-analysis`, `edge-inference`, `self-hosted`
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Surya]], [[Tesseract]], [[docTR]], [[olmOCR]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[Surya]], [[Tesseract]], [[docTR]], [[Évaluer un OCR]]
+
 ### Infinity  ·  brique
 - tags : `embeddings`, `model-serving`, `inference`, `semantic-search`, `reranking`, `self-hosted`
 - liens sortants : [[Choisir un modèle d'embedding]], [[Comparatif - Embeddings]], [[FastEmbed]], [[Serving]], [[Text Embeddings Inference]], [[sentence-transformers]]
@@ -1240,6 +1245,11 @@
 - liens sortants : [[Arbres de décision]], [[CatBoost]], [[Comparatif - Boosting]], [[Gradient Boosting (GBDT)]], [[Learning to rank]], [[Scikit-Learn]], [[XGBoost]]
 - liens entrants : [[Apprentissage supervisé]], [[Arbres de décision]], [[Boosting]], [[CatBoost]], [[Classification]], [[Comparatif - Boosting]], [[Ensembling]], [[Explicabilité des modèles]], [[Gradient Boosting (GBDT)]], [[HuggingFace]], [[Imbalanced classification]], [[Learning to rank]], [[Machine Learning]], [[Optuna]], [[PyTorch]], [[Régression]], [[Régression quantile]], [[SHAP]], [[Scikit-Learn]], [[Tabulaire]], [[Valeurs de Shapley]], [[XGBoost]], [[darts]], [[imbalanced-learn]]
 
+### LightOnOCR-3  ·  brique
+- tags : `ocr`, `document-parsing`, `vision-language`, `layout-analysis`, `gpu`, `self-hosted`
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Indra OCR]], [[Lire un score publié]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[Plafond de débit d'un GPU (roofline)]], [[Surya]], [[Tesseract]], [[olmOCR]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Indra OCR]], [[Mesurer une latence]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[Plafond de débit d'un GPU (roofline)]], [[Surya]], [[olmOCR]], [[Évaluer un OCR]]
+
 ### LikeC4  ·  brique
 - tags : `diagram`, `diagram-as-code`
 - liens sortants : [[Comparatif - Diagrammes]], [[D2]], [[Diagrammes]], [[Diátaxis et docs-as-code]], [[Excalidraw]], [[GitDiagram]], [[Mermaid]], [[Modèle C4]], [[draw.io]]
@@ -1358,7 +1368,7 @@
 ### Marker  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `rag`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[LlamaParse]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[Surya]], [[Unstructured]], [[olmOCR]], [[pdf-inspector]]
 
 ### Marqo  ·  brique
 - tags : `search`, `vector-db`, `semantic-search`, `multimodal`
@@ -1442,8 +1452,8 @@
 
 ### MinerU  ·  brique
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`, `layout-analysis`, `table-extraction`, `vision-language`, `rag`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAGFlow]], [[Vision Language Models]], [[olmOCR]]
-- liens entrants : [[ColPali]], [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[Tesseract]], [[olmOCR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LightOnOCR-3]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAGFlow]], [[Vision Language Models]], [[olmOCR]]
+- liens entrants : [[ColPali]], [[Comparatif - Parsing de documents]], [[Docling]], [[LightOnOCR-3]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAG visuel - retrouver des documents sans OCR]], [[RAGFlow]], [[Tesseract]], [[olmOCR]]
 
 ### minim  ·  brique
 - tags : `web-scraping`
@@ -1617,8 +1627,8 @@
 
 ### olmOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`, `markdown-conversion`, `vision-language`, `gpu`, `self-hosted`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[Vision Language Models]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[LightOnOCR-3]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[Surya]], [[Tesseract]], [[Vision Language Models]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Docling]], [[Indra OCR]], [[LightOnOCR-3]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]], [[Surya]]
 
 ### OmniRoute  ·  brique
 - tags : `llm`, `llm-gateway`, `routing`, `reliability`, `context-engineering`
@@ -1792,8 +1802,8 @@
 
 ### PaddleOCR  ·  brique
 - tags : `ocr`, `document-parsing`, `layout-analysis`, `table-extraction`, `computer-vision`, `deep-learning`
-- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Surya]], [[Tesseract]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]], [[Surya]], [[Tesseract]], [[docTR]], [[olmOCR]], [[pypdf]]
 
 ### Page to Markdown  ·  brique
 - tags : `browser-extension`, `markdown-conversion`, `note-taking`, `privacy`
@@ -1828,17 +1838,17 @@
 ### pdf-inspector  ·  brique
 - tags : `pdf`, `document-parsing`, `ocr`, `markdown-conversion`, `layout-analysis`
 - liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[RAG]], [[pdfplumber]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[Firecrawl]], [[Marker]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]]
 
 ### pdfminer.six  ·  brique
 - tags : `pdf`, `document-parsing`, `layout-analysis`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Parsing]], [[PyMuPDF]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### pdfplumber  ·  brique
 - tags : `pdf`, `table-extraction`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### Penpot  ·  brique
 - tags : `design-tool`
@@ -2048,7 +2058,7 @@
 ### PyMuPDF  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OpenDataLoader PDF]], [[Parsing]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### PyOD  ·  brique
 - tags : `anomaly-detection`, `unsupervised`
@@ -2068,7 +2078,7 @@
 ### pypdfium2  ·  brique
 - tags : `pdf`, `document-parsing`
 - liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[EasyOCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pypdf]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[EasyOCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[pdfminer.six]], [[pypdf]]
 
 ### Pyright  ·  brique
 - tags : `type-checker`, `type-hints`
@@ -2550,6 +2560,11 @@
 - liens sortants : [[Claude Video]], [[Inference optimization]], [[Médias]], [[Quantization]], [[Speech models]]
 - liens entrants : [[Claude Video]], [[Médias]], [[Speech models]]
 
+### Surya  ·  brique
+- tags : `ocr`, `document-parsing`, `layout-analysis`, `vision-language`, `self-hosted`
+- liens sortants : [[Comparatif - Parsing de documents]], [[Indra OCR]], [[LightOnOCR-3]], [[Marker]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[olmOCR]], [[Évaluer un OCR]]
+- liens entrants : [[Comparatif - Parsing de documents]], [[Indra OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[olmOCR]]
+
 ### swarm-forge  ·  brique
 - tags : `multi-agent`, `agents`, `code-assistant`, `cli`, `version-control`
 - liens sortants : [[Agent patterns]], [[Agents de code]], [[AutoGen]], [[Comparatif - Assistants de code IA]], [[CrewAI]], [[Harnais d'agent]], [[Multi-agent systems]], [[agent-loops]]
@@ -2612,8 +2627,8 @@
 
 ### Tesseract  ·  brique
 - tags : `ocr`, `document-parsing`, `pdf`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pypdfium2]]
-- liens entrants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
+- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Unstructured]], [[docTR]], [[pypdfium2]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Surya]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdfminer.six]], [[pypdf]], [[pypdfium2]]
 
 ### testcontainers  ·  brique
 - tags : `testing`, `container`
@@ -3152,8 +3167,8 @@
 
 ### Comparatif - Parsing de documents  ·  comparatif
 - tags : `document-parsing`, `pdf`, `ocr`, `rag`, `layout-analysis`
-- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Comparatifs]], [[Docling]], [[Documents]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens sortants : [[Comparatif - Parsing de documents.base]], [[Comparatifs]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Surya]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatifs]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[Documents]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Page to Markdown]], [[Parsing]], [[PyMuPDF]], [[Stirling PDF]], [[Surya]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Comparatif - Plateformes data & IA  ·  comparatif
 - tags : `ml-platform`, `data-governance`, `automl`, `low-code`
@@ -3572,8 +3587,8 @@
 
 ### Parsing  ·  hub
 - tags : `document-parsing`, `pdf`, `ocr`, `markdown-conversion`
-- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
-- liens entrants : [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Surya]], [[Tesseract]], [[Unstructured]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[Data & pipelines]], [[Data Engineering]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[LlamaParse]], [[Marker]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[PyMuPDF]], [[Surya]], [[Tesseract]], [[Unstructured]], [[Vision]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdf]], [[pypdfium2]]
 
 ### Passerelles  ·  hub
 - tags : `llm-gateway`, `routing`, `caching`
@@ -4068,12 +4083,17 @@
 ### Calibration  ·  notion
 - tags : `model-evaluation`, `calibration`, `classification`
 - liens sortants : [[Classification metrics]], [[Hallucinations des LLM]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[Régression logistique]], [[Scikit-Learn]], [[Validation croisée]]
-- liens entrants : [[Active learning]], [[Adaptation de domaine]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modèle du vendeur de journaux (newsvendor)]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Pattern - Prévoir puis optimiser]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[RUL par apprentissage profond]], [[SVM]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Stock de sécurité et taux de service]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]]
+- liens entrants : [[Active learning]], [[Adaptation de domaine]], [[Apprentissage semi-supervisé]], [[Attribution par gradient]], [[Cascade OCR et contrôle arithmétique des factures]], [[Classification]], [[Classification d'images]], [[Classification metrics]], [[Cross-entropy]], [[Data drift]], [[De la prévision probabiliste à la quantité commandée]], [[Détection hors distribution (OOD)]], [[Hallucinations des LLM]], [[Imbalanced classification]], [[Machine Learning]], [[Modèle du vendeur de journaux (newsvendor)]], [[Modélisation d'uplift]], [[Monitoring de modèle en production]], [[Naive Bayes]], [[Pattern - Prévoir puis optimiser]], [[Politique de maintenance et coût]], [[Prédiction conforme]], [[ROC-AUC / courbe PR]], [[RUL par apprentissage profond]], [[SVM]], [[Santé de batterie (SOH et RUL)]], [[Score et seuil d'alerte]], [[Stock de sécurité et taux de service]], [[Tabulaire]], [[imbalanced-learn]], [[Équité et biais algorithmique]], [[Évaluation de modèles]], [[Évaluer un OCR]]
 
 ### Canari de dérive d'un LLM en API  ·  notion
 - tags : `llm-observability`, `model-monitoring`, `llm-eval`, `llm`
 - liens sortants : [[Bootstrap]], [[Ce qui change derrière une API]], [[Data drift]], [[Inspect AI]], [[Intervalles de confiance]], [[LLM eval metrics]], [[LLM observability]], [[LLM-as-judge]], [[Langfuse]], [[Lire un score publié]], [[Ollama]], [[promptfoo]], [[vLLM]]
 - liens entrants : [[Ce qui change derrière une API]], [[LLM observability]], [[Observabilité des LLM]]
+
+### Cascade OCR et contrôle arithmétique des factures  ·  notion
+- tags : `ocr`, `document-parsing`, `routing`, `model-evaluation`
+- liens sortants : [[Calibration]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Indra OCR]], [[LightOnOCR-3]], [[Mesurer une latence]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Parsing]], [[Routing and cascading]], [[Tesseract]], [[olmOCR]], [[pdf-inspector]], [[Évaluer un OCR]]
+- liens entrants : [[Indra OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Parsing]], [[Évaluer un OCR]]
 
 ### Catalogue de données et lignage  ·  notion
 - tags : `data-catalog`, `data-lineage`, `data-governance`
@@ -4118,7 +4138,7 @@
 ### Chunking strategies  ·  notion
 - tags : `rag`, `chunking`, `retrieval`
 - liens sortants : [[Advanced RAG]], [[Docling]], [[Hybrid retrieval]], [[LangChain]], [[LlamaIndex]], [[LlamaParse]], [[RAG]], [[Reranking]], [[Unstructured]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[AnythingLLM]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGChecker]], [[RAGFlow]], [[Reranking]], [[bge-reranker]], [[pdf-inspector]]
+- liens entrants : [[Advanced RAG]], [[AnythingLLM]], [[Couche de texte d'un PDF contre OCR]], [[Haystack]], [[LLM & IA générative]], [[LangChain]], [[LlamaIndex]], [[OpenDataLoader PDF]], [[Parsing]], [[RAG]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGChecker]], [[RAGFlow]], [[Reranking]], [[bge-reranker]], [[pdf-inspector]]
 
 ### CI-CD pour le ML  ·  notion
 - tags : `ci-cd`, `ml-pipeline`, `deployment-strategy`, `reproducibility`, `model-registry`
@@ -4203,7 +4223,7 @@
 ### Constrained decoding  ·  notion
 - tags : `decoding`, `structured-output`, `tokenization`
 - liens sortants : [[Decoding strategies]], [[Guidance]], [[Instructor]], [[Outlines]], [[Pydantic]], [[Structured outputs]], [[Tokenization]]
-- liens entrants : [[Decoding strategies]], [[Guidance]], [[Instructor]], [[Outlines]], [[Runtimes]], [[Sortie typée]], [[Structured outputs]], [[needle]]
+- liens entrants : [[Decoding strategies]], [[Guidance]], [[Instructor]], [[OCR vision-langage en une passe avec grounding]], [[Outlines]], [[Runtimes]], [[Sortie typée]], [[Structured outputs]], [[needle]]
 
 ### Construction de graphes de connaissances  ·  notion
 - tags : `knowledge-graph`, `relation-extraction`, `ner`, `llm`
@@ -4239,6 +4259,11 @@
 - tags : `hypothesis-testing`, `multiple-testing`, `p-value`
 - liens sortants : [[Analyse de puissance]], [[Facteurs de Bayes et tailles d'effet]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests d'hypothèse]]
 - liens entrants : [[A/B testing]], [[Analyse de puissance]], [[Causalité de Granger]], [[Facteurs de Bayes et tailles d'effet]], [[MANOVA et tests multivariés]], [[Sequential testing]], [[Test t et ANOVA]], [[Tests & estimation]], [[Tests d'hypothèse]]
+
+### Couche de texte d'un PDF contre OCR  ·  notion
+- tags : `ocr`, `document-parsing`, `pdf`
+- liens sortants : [[Chunking strategies]], [[Comparatif - Parsing de documents]], [[Indra OCR]], [[LightOnOCR-3]], [[Mesurer une latence]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Parsing]], [[PyMuPDF]], [[RAG visuel - retrouver des documents sans OCR]], [[Tesseract]], [[pdf-inspector]], [[pdfminer.six]], [[pdfplumber]], [[pypdfium2]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Indra OCR]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Parsing]], [[RAG visuel - retrouver des documents sans OCR]], [[Évaluer un OCR]]
 
 ### Counterfactual Regret Minimization  ·  notion
 - tags : `game-theory`, `regret-minimization`, `self-play`
@@ -4833,12 +4858,12 @@
 ### Lire un score publié  ·  notion
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
 - liens sortants : [[Bootstrap]], [[Ce qui change derrière une API]], [[Code and math benchmarks]], [[DeepSeek-V4.1-Flash]], [[Effort de raisonnement et courbe coût-qualité]], [[Inspect AI]], [[Intervalles de confiance]], [[LLM benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Licences de modèles open weights]], [[MiMo-V2.6]], [[Qwen-Image-2.1]], [[Tarif catalogue contre coût par tâche]], [[promptfoo]]
-- liens entrants : [[Canari de dérive d'un LLM en API]], [[Ce qui change derrière une API]], [[DeepSeek-V4.1-Flash]], [[Effort de raisonnement et courbe coût-qualité]], [[LLM benchmarks]], [[MiMo-V2.6]], [[Modèles de langage]], [[Qwen-Image]], [[Qwen-Image-2.1]], [[Tarif catalogue contre coût par tâche]], [[Évaluation]]
+- liens entrants : [[Canari de dérive d'un LLM en API]], [[Ce qui change derrière une API]], [[DeepSeek-V4.1-Flash]], [[Effort de raisonnement et courbe coût-qualité]], [[LLM benchmarks]], [[LightOnOCR-3]], [[MiMo-V2.6]], [[Modèles de langage]], [[Qwen-Image]], [[Qwen-Image-2.1]], [[Tarif catalogue contre coût par tâche]], [[Évaluation]], [[Évaluer un OCR]]
 
 ### LLM benchmarks  ·  notion
 - tags : `benchmark`, `llm-eval`, `model-evaluation`, `llm`
 - liens sortants : [[Code and math benchmarks]], [[LLM eval metrics]], [[LLM-as-judge]], [[Lire un score publié]], [[Mesurer une latence]], [[Perplexity]], [[Reasoning models]], [[Scaling laws]]
-- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[Contexte long]], [[Fine-tuning]], [[Hallucinations des LLM]], [[Harnais d'agent]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Licences de modèles open weights]], [[Lire un score publié]], [[Mesurer une latence]], [[Modèles de langage]], [[RAG benchmarks]], [[Tarif catalogue contre coût par tâche]], [[Text-to-SQL]], [[Évaluation]]
+- liens entrants : [[Agent evaluation]], [[Code and math benchmarks]], [[Contexte long]], [[Fine-tuning]], [[Hallucinations des LLM]], [[Harnais d'agent]], [[LLM & IA générative]], [[LLM eval metrics]], [[LLM-as-judge]], [[Licences de modèles open weights]], [[Lire un score publié]], [[Mesurer une latence]], [[Modèles de langage]], [[RAG benchmarks]], [[Tarif catalogue contre coût par tâche]], [[Text-to-SQL]], [[Évaluation]], [[Évaluer un OCR]]
 
 ### LLM caching  ·  notion
 - tags : `caching`, `llm`, `semantic-search`, `in-memory`
@@ -4957,8 +4982,8 @@
 
 ### Mesurer une latence  ·  notion
 - tags : `inference`, `inference-optimization`, `llm`, `gpu`, `benchmark`
-- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[LLM benchmarks]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantization]], [[Server-Sent Events & streaming LLM]]
-- liens entrants : [[Inference optimization]], [[LLM benchmarks]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[Server-Sent Events & streaming LLM]]
+- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Inference optimization]], [[LLM benchmarks]], [[LightOnOCR-3]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantization]], [[Server-Sent Events & streaming LLM]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[Inference optimization]], [[LLM benchmarks]], [[OCR vision-langage en une passe avec grounding]], [[Plafond de débit d'un GPU (roofline)]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Runtimes]], [[Server-Sent Events & streaming LLM]], [[Évaluer un OCR]]
 
 ### Metric learning & ré-identification  ·  notion
 - tags : `metric-learning`, `re-identification`, `representation-learning`, `computer-vision`, `deep-learning`
@@ -5157,13 +5182,18 @@
 
 ### OCR  ·  notion
 - tags : `ocr`, `computer-vision`, `deep-learning`
-- liens sortants : [[Détection d'objets]], [[EasyOCR]], [[MinerU]], [[Métriques vision]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Tesseract]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]]
-- liens entrants : [[Détection d'objets]], [[EasyOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]]
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[Détection d'objets]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[MinerU]], [[Métriques vision]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Recherche d'information]], [[Segmentation]], [[Stirling PDF]], [[Surya]], [[Tesseract]], [[Traitement du langage naturel]], [[Vision Language Models]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[Évaluer un OCR]]
+- liens entrants : [[Couche de texte d'un PDF contre OCR]], [[Détection d'objets]], [[EasyOCR]], [[Indra OCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[OpenDataLoader PDF]], [[PaddleOCR]], [[Parsing]], [[Stirling PDF]], [[Tesseract]], [[Vision]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[Évaluer un OCR]]
 
 ### OCR classique vs modèles vision-langage pour documents  ·  notion
 - tags : `ocr`, `document-parsing`, `vision-language`, `layout-analysis`, `benchmark`
-- liens sortants : [[Comparatif - Parsing de documents]], [[Docling]], [[EasyOCR]], [[Marker]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Tesseract]], [[Vision Language Models]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]]
-- liens entrants : [[EasyOCR]], [[MinerU]], [[OCR]], [[PaddleOCR]], [[Parsing]], [[Tesseract]], [[docTR]], [[olmOCR]]
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[Marker]], [[MinerU]], [[OCR]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[PyMuPDF]], [[Surya]], [[Tesseract]], [[Vision Language Models]], [[docTR]], [[olmOCR]], [[pdf-inspector]], [[pdfplumber]], [[pypdfium2]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[EasyOCR]], [[Indra OCR]], [[LightOnOCR-3]], [[MinerU]], [[OCR]], [[OCR vision-langage en une passe avec grounding]], [[PaddleOCR]], [[Parsing]], [[Surya]], [[Tesseract]], [[docTR]], [[olmOCR]], [[Évaluer un OCR]]
+
+### OCR vision-langage en une passe avec grounding  ·  notion
+- tags : `ocr`, `document-parsing`, `vision-language`, `layout-analysis`
+- liens sortants : [[Cascade OCR et contrôle arithmétique des factures]], [[Comparatif - Parsing de documents]], [[Constrained decoding]], [[Couche de texte d'un PDF contre OCR]], [[Indra OCR]], [[LightOnOCR-3]], [[Mesurer une latence]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Plafond de débit d'un GPU (roofline)]], [[RAG visuel - retrouver des documents sans OCR]], [[Surya]], [[Vision Language Models]], [[Évaluer un OCR]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Parsing]], [[Surya]], [[Évaluer un OCR]]
 
 ### OEE et rendement global  ·  notion
 - tags : `iiot`, `timeseries`, `statistical-process-control`, `data-quality`
@@ -5292,8 +5322,8 @@
 
 ### Plafond de débit d'un GPU (roofline)  ·  notion
 - tags : `inference-optimization`, `inference`, `gpu`, `llm`
-- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mesurer une latence]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Parallélisme en inférence]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[Taille du cache KV par token]], [[llama.cpp]], [[llmfit]], [[vLLM]]
-- liens entrants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[Mesurer une latence]], [[Parallélisme en inférence]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Runtimes]], [[Speculative decoding]], [[Taille du cache KV par token]]
+- liens sortants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LightOnOCR-3]], [[Mesurer une latence]], [[Mixture of Experts]], [[Multi-Token Prediction]], [[Parallélisme en inférence]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[SGLang]], [[Speculative decoding]], [[Taille du cache KV par token]], [[llama.cpp]], [[llmfit]], [[vLLM]]
+- liens entrants : [[Coût d'un token et taux d'utilisation]], [[Dimensionner la mémoire d'un serveur LLM]], [[Flash Attention and efficient attention]], [[Inference optimization]], [[LightOnOCR-3]], [[Mesurer une latence]], [[OCR vision-langage en une passe avec grounding]], [[Parallélisme en inférence]], [[Prefill par morceaux et désagrégation prefill-decode]], [[Quantification des LLM - GGUF, AWQ, GPTQ]], [[Quantization]], [[Runtimes]], [[Speculative decoding]], [[Taille du cache KV par token]]
 
 ### Plannings de personnel (rostering)  ·  notion
 - tags : `scheduling`, `constraint-programming`, `combinatorial-optimization`
@@ -5467,8 +5497,8 @@
 
 ### RAG visuel - retrouver des documents sans OCR  ·  notion
 - tags : `rag`, `retrieval`, `embeddings`, `vision-language`, `multimodal`, `ocr`, `document-parsing`, `information-retrieval`
-- liens sortants : [[ColPali]], [[Docling]], [[Gemma]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[MinerU]], [[PaddleOCR]], [[Qdrant]], [[Qwen]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGatouille]], [[Weaviate]], [[bge-m3]], [[olmOCR]], [[sentence-transformers]]
-- liens entrants : [[ColPali]], [[Late-interaction retrieval]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]]
+- liens sortants : [[ColPali]], [[Couche de texte d'un PDF contre OCR]], [[Docling]], [[Gemma]], [[Hybrid retrieval]], [[Late-interaction retrieval]], [[LlamaIndex]], [[MinerU]], [[PaddleOCR]], [[Qdrant]], [[Qwen]], [[Qwen3-Embedding]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGatouille]], [[Weaviate]], [[bge-m3]], [[olmOCR]], [[sentence-transformers]]
+- liens entrants : [[ColPali]], [[Couche de texte d'un PDF contre OCR]], [[Late-interaction retrieval]], [[OCR vision-langage en une passe avec grounding]], [[RAG & retrieval]], [[RAG documentaire on-prem - clé en main ou assemblé]]
 
 ### Random Forest  ·  notion
 - tags : `supervised`, `tree-based`, `ensemble`, `bagging`
@@ -5568,7 +5598,7 @@
 ### Routing and cascading  ·  notion
 - tags : `routing`, `llm`, `rag`
 - liens sortants : [[Advanced RAG]], [[Calculs adaptatifs]], [[Coût d'un token et taux d'utilisation]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Query transformations]], [[RAG eval]], [[Small Language Models]], [[Tarif catalogue contre coût par tâche]], [[embeddings]]
-- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[Coût d'un token et taux d'utilisation]], [[Effort de raisonnement et courbe coût-qualité]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG eval]], [[Tarif catalogue contre coût par tâche]], [[needle]]
+- liens entrants : [[Advanced RAG]], [[Calculs adaptatifs]], [[Cascade OCR et contrôle arithmétique des factures]], [[Coût d'un token et taux d'utilisation]], [[Effort de raisonnement et courbe coût-qualité]], [[LLM & IA générative]], [[LLM caching]], [[LiteLLM]], [[OmniRoute]], [[OpenRouter]], [[Passerelles]], [[Query transformations]], [[RAG]], [[RAG & retrieval]], [[RAG agentique]], [[RAG eval]], [[Tarif catalogue contre coût par tâche]], [[needle]]
 
 ### RUL par analyse de survie  ·  notion
 - tags : `rul`, `predictive-maintenance`, `survival-analysis`, `regression`
@@ -5973,7 +6003,7 @@
 ### Vision Language Models  ·  notion
 - tags : `vision-language`, `multimodal`, `transformers`, `llm`
 - liens sortants : [[Architectures CNN]], [[CNN]], [[Comparatif - Modèles de langage open weights]], [[Gemma]], [[Image generation]], [[Licences de modèles open weights]], [[Mistral]], [[Modèles de fondation vision]], [[PEFT]], [[Qwen]], [[SFT]], [[Self-attention]], [[Transformer architectures]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[embeddings]], [[gpt-oss]]
-- liens entrants : [[Gemma]], [[Image generation]], [[MiMo-V2.6]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[Qwen]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
+- liens entrants : [[Gemma]], [[Image generation]], [[MiMo-V2.6]], [[MinerU]], [[Modèles de fondation vision]], [[Modèles de langage]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Qwen]], [[Segment Anything (SAM)]], [[Speech models]], [[Vision]], [[Vision Transformers (ViT)]], [[Vision par ordinateur]], [[docTR]], [[olmOCR]]
 
 ### Vision par ordinateur  ·  notion
 - tags : `computer-vision`, `cnn`, `deep-learning`
@@ -6004,6 +6034,11 @@
 - tags : `model-evaluation`, `classification`, `supervised`
 - liens sortants : [[Annotation de données]], [[Calibration]], [[Classification metrics]], [[Confidentialité différentielle]], [[Data drift]], [[Data leakage]], [[Explicabilité des modèles]], [[Imbalanced classification]], [[LIME]], [[Monitoring de modèle en production]], [[ROC-AUC / courbe PR]], [[SHAP]], [[Synthetic data generation]]
 - liens entrants : [[Confidentialité différentielle]], [[Imbalanced classification]], [[LIME]], [[Machine Learning]], [[SHAP]], [[Évaluation de modèles]]
+
+### Évaluer un OCR  ·  notion
+- tags : `ocr`, `document-parsing`, `model-evaluation`, `benchmark`
+- liens sortants : [[Calibration]], [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[Indra OCR]], [[LLM benchmarks]], [[LightOnOCR-3]], [[Lire un score publié]], [[Mesurer une latence]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]]
+- liens entrants : [[Cascade OCR et contrôle arithmétique des factures]], [[Couche de texte d'un PDF contre OCR]], [[Indra OCR]], [[LightOnOCR-3]], [[OCR]], [[OCR classique vs modèles vision-langage pour documents]], [[OCR vision-langage en une passe avec grounding]], [[Parsing]], [[Surya]]
 
 ### Évaluer une détection d'anomalies  ·  notion
 - tags : `anomaly-detection`, `model-evaluation`, `class-imbalance`
@@ -6154,7 +6189,7 @@
 - `automl` : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA  — pas de page concept dédiée
 - `bagging` : Bagging, Random Forest
 - `bayesian` : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence  — pas de page concept dédiée
-- `benchmark` : Anomalies multivariées par apprentissage profond, Ce qui change derrière une API, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Effort de raisonnement et courbe coût-qualité, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Lire un score publié, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Tarif catalogue contre coût par tâche, Text-to-SQL, evaluate, llmfit, Évaluation  — pas de page concept dédiée
+- `benchmark` : Anomalies multivariées par apprentissage profond, Ce qui change derrière une API, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Effort de raisonnement et courbe coût-qualité, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Lire un score publié, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Tarif catalogue contre coût par tâche, Text-to-SQL, evaluate, llmfit, Évaluation, Évaluer un OCR  — pas de page concept dédiée
 - `bi` : Apache Superset, Comparatif - BI auto-hébergée, Metabase  — pas de page concept dédiée
 - `boosting` : AdaBoost, Boosting, CatBoost, Comparatif - Boosting, Gradient Boosting (GBDT), LightGBM, Tabulaire, XGBoost
 - `browser-extension` : Page to Markdown  — pas de page concept dédiée
@@ -6227,13 +6262,13 @@
 - `distributed` : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, Apprentissage fédéré, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast  — pas de page concept dédiée
 - `distributed-training` : Apprentissage profond, Axolotl, Calcul distribué, DeepSpeed, Entraînement distribué, LLaMA-Factory, accelerate
 - `document-db` : ArangoDB, MongoDB, MongoDB Compass  — pas de page concept dédiée
-- `document-parsing` : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax  — pas de page concept dédiée
+- `document-parsing` : Cascade OCR et contrôle arithmétique des factures, Comparatif - Parsing de documents, Comparatif - Scraping, Couche de texte d'un PDF contre OCR, Data & pipelines, Docling, EasyOCR, Indra OCR, LightOnOCR-3, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Surya, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax, Évaluer un OCR  — pas de page concept dédiée
 - `documentation` : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Rule - README, docs et décisions, Sphinx, Zensical, mkdocstrings  — pas de page concept dédiée
 - `domain-adaptation` : Adaptation de domaine
 - `durable-execution` : Comparatif - Orchestrateurs data, Orchestration, Temporal  — pas de page concept dédiée
 - `dynamic-programming` : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot  — pas de page concept dédiée
 - `eda` : Comparatif - Outils EDA - profiling, EDA automatisée & profiling, missingno, sweetviz, ydata-profiling
-- `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, Pattern - Inspection visuelle en ligne de production, TensorRT, anomalib
+- `edge-inference` : Comparatif - Runtimes d'inférence CPU et edge, Indra OCR, Inférence en bordure - modèles sur du matériel d'atelier, LiteRT, ONNX Runtime, OpenVINO, Pattern - Inspection visuelle en ligne de production, TensorRT, anomalib
 - `education` : OpenMAIC  — pas de page concept dédiée
 - `effect-size` : Analyse de puissance, Facteurs de Bayes et tailles d'effet, MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin
 - `eigenvalue` : Algèbre linéaire, Eigendecomposition, SVD  — pas de page concept dédiée
@@ -6265,7 +6300,7 @@
 - `git-hooks` : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit  — pas de page concept dédiée
 - `gitops` : Argo CD, Du Compose à Kubernetes — quand changer d'échelle
 - `gnn` : Graph Neural Networks, PyTorch Geometric
-- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
+- `gpu` : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, LightOnOCR-3, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM  — pas de page concept dédiée
 - `gradient-descent` : Adam optimizer, Gradient descent, Optimisation, Rétropropagation et différentiation automatique
 - `graph-db` : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics  — pas de page concept dédiée
 - `guardrails` : Comparatif - Garde-fous pour LLM, Guardrails, Llama Guard, NeMo Guardrails, Systèmes IA, Sécurité
@@ -6299,7 +6334,7 @@
 - `knowledge-graph` : Apache Jena, Bases graphe — modèles et langages de requête, Cognee, Construction de graphes de connaissances, Données liées et vocabulaires partagés, Fluree, GraphRAG, Graphe de connaissances, Graphify, Graphiti, Interroger un graphe en langage naturel, Liage d'entités, Mémoire des agents, OWL et raisonnement, Obsidian, Ontologie, Ontologies et RDF, Ontologies industrielles, Pattern - Graphe de connaissances industriel sur site, Pattern - RAG structuré graphe + human-in-the-loop, Plongements de graphe et prédiction de liens, PyKEEN, RAG & retrieval, RDF et triplets, RDF4J, SHACL, SPARQL, neosemantics
 - `kubernetes` : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s  — pas de page concept dédiée
 - `lakehouse` : Apache Iceberg, Architecture médaillon, Databricks, Delta Lake, Formats de fichiers et de tables, OLTP, OLAP et lakehouse, Partitionnement & layout de données, Plateformes data & IA, Trino
-- `layout-analysis` : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
+- `layout-analysis` : Comparatif - Parsing de documents, Docling, Indra OCR, LightOnOCR-3, MinerU, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, OpenDataLoader PDF, PaddleOCR, Surya, docTR, pdf-inspector, pdfminer.six  — pas de page concept dédiée
 - `lazy-evaluation` : Dask, DataFrames, Polars  — pas de page concept dédiée
 - `learning-rate` : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation  — pas de page concept dédiée
 - `learning-theory` : Double descente et généralisation des grands modèles, Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension  — pas de page concept dédiée
@@ -6341,7 +6376,7 @@
 - `ml-platform` : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake  — pas de page concept dédiée
 - `model-based-rl` : Model-based RL, Monte Carlo Tree Search
 - `model-compression` : Apprentissage profond, Distillation, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization  — pas de page concept dédiée
-- `model-evaluation` : Calibration, Ce qui change derrière une API, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Lire un score publié, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Rule - Évaluer une anomalie par événement, pas par point, Scikit-Learn, TSB-AD, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles, Évaluer une détection d'anomalies  — pas de page concept dédiée
+- `model-evaluation` : Calibration, Cascade OCR et contrôle arithmétique des factures, Ce qui change derrière une API, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Lire un score publié, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Rule - Évaluer une anomalie par événement, pas par point, Scikit-Learn, TSB-AD, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles, Évaluer un OCR, Évaluer une détection d'anomalies  — pas de page concept dédiée
 - `model-hub` : HuggingFace, timm  — pas de page concept dédiée
 - `model-monitoring` : Canari de dérive d'un LLM en API, Comparatif - Monitoring de modèles, Data drift, DataRobot, Deepchecks, Détection hors distribution (OOD), Evidently, Machine Learning, Monitoring de modèle en production, Monitoring de modèles, NannyML
 - `model-registry` : AWS SageMaker, CI-CD pour le ML, ClearML, Comet, Comparatif - Suivi d'expériences ML, DataRobot, Google Cloud Vertex AI, MLflow, Microsoft Azure Machine Learning, Model registry & versioning, Suivi d'expériences, Weights & Biases
@@ -6370,7 +6405,7 @@
 - `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Ultralytics YOLO, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Journalisation structurée et traçabilité, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
-- `ocr` : Comparatif - Parsing de documents, Documents, EasyOCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector
+- `ocr` : Cascade OCR et contrôle arithmétique des factures, Comparatif - Parsing de documents, Couche de texte d'un PDF contre OCR, Documents, EasyOCR, Indra OCR, LightOnOCR-3, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Surya, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, Évaluer un OCR
 - `offline-rl` : Apprentissage par renforcement, Offline RL
 - `olap` : Apache Iceberg, ClickHouse, Comparatif - Bases colonnes, Databricks, DuckDB, OLTP, OLAP et lakehouse, Parquet, Partitionnement & layout de données, Snowflake, Trino
 - `ontology` : Comparatif - Outils RDF et OWL en Python, Données liées et vocabulaires partagés, Graphe de connaissances, LinkML, OWL et raisonnement, Ontologie, Ontologies et RDF, Ontologies industrielles, Ontop, Owlready2, Pattern - Graphe de connaissances industriel sur site, Protégé, RDF et triplets, SHACL
@@ -6389,7 +6424,7 @@
 - `parametric-test` : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels  — pas de page concept dédiée
 - `partitioning` : Partitionnement & layout de données
 - `pattern` : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Graphe de connaissances industriel sur site, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services  — pas de page concept dédiée
-- `pdf` : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
+- `pdf` : Comparatif - Parsing de documents, Couche de texte d'un PDF contre OCR, Documents, Indra OCR, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2  — pas de page concept dédiée
 - `perplexity` : Perplexity
 - `pii` : Presidio
 - `planning` : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée  — pas de page concept dédiée
@@ -6437,7 +6472,7 @@
 - `retrieval` : Advanced RAG, Agent memory, Choisir un modèle d'embedding, Chunking strategies, Cohere Rerank, ColPali, Comparatif - Mémoire pour agents, Comparatif - Rerankers, Deep research, Embeddings & encodeurs, FlashRank, GraphRAG, Graphiti, Hybrid retrieval, Jina Reranker, Late-interaction retrieval, LlamaIndex NLSQLTableQueryEngine, Mem0, Mémoire des agents, OpenViking, Query transformations, Qwen3-Embedding, RAG, RAG & retrieval, RAG agentique, RAG benchmarks, RAG documentaire on-prem - clé en main ou assemblé, RAG eval, RAG visuel - retrouver des documents sans OCR, RAGFlow, RAGatouille, Recherche d'information, Reranking, Systèmes de recommandation, ai-memory, bge-m3, bge-reranker, open_deep_research, sentence-transformers  — pas de page concept dédiée
 - `reverse-proxy` : Authelia, Caddy, Comparatif - Reverse proxies, HAProxy, Nginx, Reverse proxies, Reverse proxy et TLS, Traefik
 - `reward-shaping` : Reward shaping and hacking
-- `routing` : OmniRoute, OpenRouter, Passerelles, Routing and cascading, Tarif catalogue contre coût par tâche
+- `routing` : Cascade OCR et contrôle arithmétique des factures, OmniRoute, OpenRouter, Passerelles, Routing and cascading, Tarif catalogue contre coût par tâche
 - `rul` : Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Loi de Weibull, Politique de maintenance et coût, PyBaMM, RUL par analyse de survie, RUL par apprentissage profond, Santé de batterie (SOH et RUL), scikit-survival
 - `rule` : Rule - Commits conventionnels et versions automatiques, Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Git et identité, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Projet assisté par agent, Rule - Qualité stricte, Rule - README, docs et décisions, Rule - Secrets hors du dépôt, Rule - Structure de projet, Rule - Tests Python avec pytest, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point  — pas de page concept dédiée
 - `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS
@@ -6453,7 +6488,7 @@
 - `secret-scanning` : Analyse de vulnérabilités, Gitleaks, Rule - Secrets hors du dépôt, Sécurité, Trivy  — pas de page concept dédiée
 - `secrets-management` : Gestion des secrets, OpenBao, Rule - Image Docker minimale, Rule - Secrets hors du dépôt, SOPS, Sécurité
 - `segmentation` : CVAT, Comparatif - Détection & segmentation, Detectron2, Métriques vision, Segment Anything (SAM), Segmentation, Ultralytics YOLO, Vision, albumentations, segment-anything
-- `self-hosted` : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
+- `self-hosted` : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Indra OCR, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, LightOnOCR-3, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Surya, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR  — pas de page concept dédiée
 - `self-play` : AlphaZero and self-play, Apprentissage par renforcement, Comparatif - Reinforcement learning, Counterfactual Regret Minimization, Pattern - Moteur de jeu pur + IA séparée
 - `self-supervised` : Anomalie acoustique, Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision  — pas de page concept dédiée
 - `semantic-search` : Bases de données vectorielles, Choisir un modèle d'embedding, Comparatif - Embeddings, Embeddings & encodeurs, FastEmbed, Haystack, Hybrid retrieval, Infinity, LLM caching, Late-interaction retrieval, Marqo, Meilisearch, OpenSearch, Pinecone, Qwen3-Embedding, RAG, RAG & retrieval, Recherche d'information, Recherche sémantique, Recherche vectorielle approximative, Text Embeddings Inference, bge-m3, embeddings, sentence-transformers, txtai
@@ -6519,7 +6554,7 @@
 - `vibration-analysis` : Analyse vibratoire, Diagnostic de défauts de roulements
 - `video-editing` : Médias, OpenCut  — pas de page concept dédiée
 - `video-generation` : Video generation
-- `vision-language` : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MiMo-V2.6, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR  — pas de page concept dédiée
+- `vision-language` : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, LightOnOCR-3, MiMo-V2.6, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, Qwen, RAG visuel - retrouver des documents sans OCR, Surya, Vision Language Models, olmOCR  — pas de page concept dédiée
 - `vit` : Vision, Vision Transformers (ViT), timm
 - `vulnerability-scanning` : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy  — pas de page concept dédiée
 - `wavelet` : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement  — pas de page concept dédiée
@@ -6546,7 +6581,7 @@
 - `autograd` (porté par : Apprentissage profond, JAX, Kornia, PyTorch, Rétropropagation et différentiation automatique, TensorFlow)
 - `automl` (porté par : AWS SageMaker, Comparatif - Plateformes data & IA, DataRobot, Dataiku, Google Cloud Vertex AI, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA)
 - `bayesian` (porté par : A priori conjugués, Analyse discriminante, ArviZ, Bayésien, CausalImpact, Comparatif - Outils stats, Estimation MAP, Facteurs de Bayes et tailles d'effet, Gaussian Process, Hyperopt, Inférence bayésienne, MCMC, Modèles graphiques probabilistes, Monte Carlo et inférence variationnelle, Naive Bayes, Optimisation bayésienne, Optimisation d'hyperparamètres, Optuna, PyMC, Ray Tune, Recherche d'hyperparamètres, Stan, Statistiques & inférence)
-- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Ce qui change derrière une API, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Effort de raisonnement et courbe coût-qualité, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Lire un score publié, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Tarif catalogue contre coût par tâche, Text-to-SQL, evaluate, llmfit, Évaluation)
+- `benchmark` (porté par : Anomalies multivariées par apprentissage profond, Ce qui change derrière une API, Choisir un modèle d'embedding, Code and math benchmarks, Comparatif - Détection d'anomalies en séries temporelles, Diagnostic de défauts de roulements, Effort de raisonnement et courbe coût-qualité, Foundation models et anomalies de séries, Inspect AI, Jeux de données PHM, Jeux de données d'anomalies, LLM benchmarks, Lire un score publié, Merlion, Mesurer une latence, OCR classique vs modèles vision-langage pour documents, Orion, RAG benchmarks, TSB-AD, Tarif catalogue contre coût par tâche, Text-to-SQL, evaluate, llmfit, Évaluation, Évaluer un OCR)
 - `bi` (porté par : Apache Superset, Comparatif - BI auto-hébergée, Metabase)
 - `browser-extension` (porté par : Page to Markdown)
 - `caching` (porté par : Headroom, LLM caching, Passerelles, prompt-caching)
@@ -6588,7 +6623,7 @@
 - `diagram-as-code` (porté par : Archify, Comparatif - Diagrammes, D2, Diagrammes, Diátaxis et docs-as-code, Kroki, LikeC4, Mermaid, Modèle C4, PlantUML)
 - `distributed` (porté par : AWS SageMaker, Apache Cassandra, Apache Solr, Apache Superset, Apprentissage fédéré, ArangoDB, Bases graphe — modèles et langages de requête, Calcul distribué, Celery, ClickHouse, CockroachDB, Comparatif - Calcul distribué, Dask, Databricks, Dgraph, EMQX, Elasticsearch, Flink, Hyperopt, JanusGraph, Kafka, LightGBM, Loki, Modin, NATS, Nebula Graph, OpenSearch, Optuna, PyTorch, PyTorch Lightning, RabbitMQ, Ray, Ray Serve, Ray Tune, Redpanda, Snowflake, Spark, Temporal, TensorFlow, Trino, Vespa, XGBoost, statsforecast)
 - `document-db` (porté par : ArangoDB, MongoDB, MongoDB Compass)
-- `document-parsing` (porté par : Comparatif - Parsing de documents, Comparatif - Scraping, Data & pipelines, Docling, EasyOCR, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax)
+- `document-parsing` (porté par : Cascade OCR et contrôle arithmétique des factures, Comparatif - Parsing de documents, Comparatif - Scraping, Couche de texte d'un PDF contre OCR, Data & pipelines, Docling, EasyOCR, Indra OCR, LightOnOCR-3, LlamaParse, Marker, MinerU, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, OpenDataLoader PDF, PaddleOCR, Parsing, PyMuPDF, RAG visuel - retrouver des documents sans OCR, RAGFlow, Surya, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2, selectolax, Évaluer un OCR)
 - `documentation` (porté par : ADR et design docs, Comparatif - Générateurs de documentation, DeepWiki-Open, Diátaxis et docs-as-code, Documentation technique, Docusaurus, MADR - le modèle de fiche, MkDocs, Modèle C4, Rule - README, docs et décisions, Sphinx, Zensical, mkdocstrings)
 - `durable-execution` (porté par : Comparatif - Orchestrateurs data, Orchestration, Temporal)
 - `dynamic-programming` (porté par : Bellman equations, Model-based RL, Optimisation combinatoire, Politiques de réapprovisionnement (s,S) et (R,Q), Quantité économique de commande et tailles de lot)
@@ -6610,7 +6645,7 @@
 - `fourier` (porté par : Analyse vibratoire, Comparatif - Traitement du signal, STFT et spectrogramme, Signal & audio, Traitement, Transformée de Fourier, scipy.signal)
 - `generative-model` (porté par : Diffusion models, GANs, Image generation, Qwen-Image, Qwen-Image-2.1, Qwen-Image-Layered, SDV, Video generation)
 - `git-hooks` (porté par : Commitizen, Commits conventionnels, versions et changelog, Lefthook, Qualité du code, Revue, tests et définition de terminé avec un agent, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, pre-commit)
-- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
+- `gpu` (porté par : Apprentissage profond, Calcul distribué, Comparatif - Calcul distribué, Coût d'un token et taux d'utilisation, CuPy, DeepSpeed, Detectron2, Dimensionner la mémoire d'un serveur LLM, Entraînement distribué, Flash Attention and efficient attention, Gradient checkpointing, Inference optimization, JAX, Keras, Kornia, LM Studio, LightOnOCR-3, Mesurer une latence, Mixed precision, Modal, Multi-head Latent Attention, NVIDIA Triton, ONNX Runtime, Ollama, Parallélisme en inférence, Plafond de débit d'un GPU (roofline), Prefill par morceaux et désagrégation prefill-decode, PyTorch, PyTorch Geometric, PyTorch Lightning, Quantification des LLM - GGUF, AWQ, GPTQ, Ray, SGLang, Serving, TGI, Taille du cache KV par token, TensorFlow, TensorFlow Serving, TensorRT, TensorRT-LLM, TorchServe, Ultralytics YOLO, Unsloth, accelerate, llama.cpp, neuralforecast, olmOCR, segment-anything, text-generation-webui, torchvision, vLLM)
 - `graph-db` (porté par : Apache AGE, ArangoDB, Bases de données, Bases de graphes, Bases graphe — modèles et langages de requête, Comparatif - Bases graphes, Dgraph, GraphRAG, Graphe de connaissances, JanusGraph, Memgraph, Nebula Graph, Neo4j, Pattern - RAG structuré graphe + human-in-the-loop, neosemantics)
 - `hardware-sizing` (porté par : llmfit)
 - `hypermedia` (porté par : Comparatif - Frontends web légers, HTMX, Web & API)
@@ -6626,7 +6661,7 @@
 - `issue-tracking` (porté par : Comparatif - Suivi de projet auto-hébergé, Kanboard, Redmine, Vikunja, Wekan)
 - `key-value` (porté par : Redis, Redis Insight)
 - `kubernetes` (porté par : Argo CD, Comparatif - Serving de modèles, Conteneurs & orchestration, DataRobot, Du Compose à Kubernetes — quand changer d'échelle, Flyte, Helm, KServe, Kubeflow, Kubernetes, Microsoft Azure Machine Learning, Nginx, OpenBao, Reverse proxy et TLS, Seldon Core, Serving, Traefik, k3s)
-- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, MinerU, OCR classique vs modèles vision-langage pour documents, OpenDataLoader PDF, PaddleOCR, docTR, pdf-inspector, pdfminer.six)
+- `layout-analysis` (porté par : Comparatif - Parsing de documents, Docling, Indra OCR, LightOnOCR-3, MinerU, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, OpenDataLoader PDF, PaddleOCR, Surya, docTR, pdf-inspector, pdfminer.six)
 - `lazy-evaluation` (porté par : Dask, DataFrames, Polars)
 - `learning-rate` (porté par : Adam optimizer, Learning rate schedules, Maximal Update Parametrization, Optimisation)
 - `learning-theory` (porté par : Double descente et généralisation des grands modèles, Generalization bounds, Mathématiques, No Free Lunch theorem, PAC learning, Rademacher complexity, Théorie de l'apprentissage, VC dimension)
@@ -6654,7 +6689,7 @@
 - `ml-pipeline` (porté par : AWS SageMaker, CI-CD pour le ML, Comparatif - Orchestrateurs ML, DVC, Dataiku, Flyte, Google Cloud Vertex AI, Kubeflow, Machine Learning, Metaflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Socle, Suivi d'expériences, ZenML)
 - `ml-platform` (porté par : AWS SageMaker, Alteryx, Comparatif - Plateformes data & IA, DataRobot, Databricks, Dataiku, Google Cloud Vertex AI, Kubeflow, Microsoft Azure Machine Learning, Plateforme data & IA — concept, Plateformes data & IA, Snowflake)
 - `model-compression` (porté par : Apprentissage profond, Distillation, Pruning, Quantification des LLM - GGUF, AWQ, GPTQ, Quantization)
-- `model-evaluation` (porté par : Calibration, Ce qui change derrière une API, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Lire un score publié, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Rule - Évaluer une anomalie par événement, pas par point, Scikit-Learn, TSB-AD, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles, Évaluer une détection d'anomalies)
+- `model-evaluation` (porté par : Calibration, Cascade OCR et contrôle arithmétique des factures, Ce qui change derrière une API, Classification metrics, Clustering evaluation, Comparatif - Explicabilité, Comparatif - Monitoring de modèles, Compromis biais-variance, Data leakage, Deepchecks, Evidently, Forecasting metrics, Interprétabilité, LLM benchmarks, LLM eval metrics, Lire un score publié, Machine Learning, Monitoring de modèles, Métriques vision, NannyML, Optimisation d'hyperparamètres, Perplexity, Prédiction conforme, ROC-AUC / courbe PR, Ranking metrics, Regression metrics, Rule - Évaluer une anomalie par événement, pas par point, Scikit-Learn, TSB-AD, Validation croisée, Walk-forward CV, evaluate, seqeval, Équité et biais algorithmique, Évaluation, Évaluation de modèles, Évaluer un OCR, Évaluer une détection d'anomalies)
 - `model-hub` (porté par : HuggingFace, timm)
 - `model-serving` (porté par : AWS SageMaker, BentoML, Comparatif - Exécution & serving LLM, Comparatif - Serving de modèles, Coût d'un token et taux d'utilisation, Dimensionner la mémoire d'un serveur LLM, Déploiement de modèles, Embeddings & encodeurs, Google Cloud Vertex AI, Infinity, Inférence en bordure - modèles sur du matériel d'atelier, KServe, Microsoft Azure Machine Learning, NVIDIA Triton, ONNX Runtime, OpenVINO, Parallélisme en inférence, Prefill par morceaux et désagrégation prefill-decode, Ray Serve, Runtimes, SGLang, Seldon Core, Serving, TGI, TensorFlow Serving, TensorRT, TensorRT-LLM, Text Embeddings Inference, TorchServe, vLLM)
 - `multi-agent` (porté par : Agents, Agno, Architecture deep agent, AutoGen, BMAD, BMAD - la méthode, BMAD - tour complet des skills, Claude Agent SDK, Claude Squad, Comparatif - Frameworks LLM, CrewAI, DB-GPT, Deep Agents, Deep research, Multi-agent systems, OpenAI Agents SDK, OpenMAIC, PraisonAI, Sous-agents et isolation du contexte, Vibe Kanban, a2a-protocol, freebuff, open_deep_research, swarm-forge)
@@ -6679,7 +6714,7 @@
 - `parallel` (porté par : Calcul distribué, Comparatif - Calcul distribué, Dask, Modin, Programmation asynchrone en Python, Ray)
 - `parametric-test` (porté par : MANOVA et tests multivariés, Test t et ANOVA, Tests & estimation, pingouin, scipy.stats, statsmodels)
 - `pattern` (porté par : Pattern - Agent sur LLM auto-hébergé, Pattern - Détection d'anomalies en deux étages, Pattern - Graphe de connaissances industriel sur site, Pattern - Inspection visuelle en ligne de production, Pattern - Moteur de jeu pur + IA séparée, Pattern - Pipeline de maintenance prédictive on-prem, Pattern - Pipeline scraping → matching → optimisation, Pattern - Prévoir puis optimiser, Pattern - RAG structuré graphe + human-in-the-loop, Pattern - Stack démo ML locale multi-services)
-- `pdf` (porté par : Comparatif - Parsing de documents, Documents, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2)
+- `pdf` (porté par : Comparatif - Parsing de documents, Couche de texte d'un PDF contre OCR, Documents, Indra OCR, Marker, MinerU, OpenDataLoader PDF, Parsing, PyMuPDF, Stirling PDF, Tesseract, olmOCR, pdf-inspector, pdfminer.six, pdfplumber, pypdf, pypdfium2)
 - `planning` (porté par : AlphaZero and self-play, Monte Carlo Tree Search, Pattern - Moteur de jeu pur + IA séparée)
 - `point-estimation` (porté par : Bayésien, Estimation MAP, Maximum de vraisemblance)
 - `postgres` (porté par : Apache AGE, Postgres, TimescaleDB, pgAdmin, pgvector, psycopg2)
@@ -6712,7 +6747,7 @@
 - `search` (porté par : Apache Solr, BM25, Bases de données, Comparatif - Moteurs de recherche, Elasticsearch, Hybrid retrieval, Index inversé, Lucene, Marqo, Meilisearch, OpenSearch, Recherche sémantique, Recherche vectorielle approximative, Typesense, Vespa, bm25s, rank-bm25, txtai)
 - `second-order` (porté par : Newton & quasi-Newton, Optimisation)
 - `secret-scanning` (porté par : Analyse de vulnérabilités, Gitleaks, Rule - Secrets hors du dépôt, Sécurité, Trivy)
-- `self-hosted` (porté par : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
+- `self-hosted` (porté par : ActivityWatch, Airbyte, Alertmanager, Annotation de données, AnythingLLM, Apache DevLake, Apache NiFi, Apache Superset, Argo CD, Authelia, Authentik, Automatisation no-code, Beszel, CVAT, Caddy, Choisir un modèle d'embedding, Comparatif - BI auto-hébergée, Comparatif - CI-CD auto-hébergé, Comparatif - Modèles de langage open weights, Comparatif - Plateformes LLM auto-hébergées, Comparatif - Registres d'images, Dataiku, Debezium, DeepWiki-Open, Dependency-Track, EMQX, Forgejo, Forges & CI-CD, Gestion des secrets, GitLab CE, HAProxy, Harbor, Indra OCR, Infinity, Jenkins, Kafka, Kanboard, Keycloak, Kimai, Kroki, Kubeflow, Kubernetes, Label Studio, LibreChat, Licences de modèles open weights, LightOnOCR-3, Meilisearch, Metabase, Mosquitto, NATS, Netdata, Nginx, Node-RED, Observabilité, Open WebUI, OpenBao, OpenMAIC, OpenTelemetry, PR-Agent, Pipelines CI-CD on-prem — runners, secrets et artefacts, Podman, Prometheus, RAG documentaire on-prem - clé en main ou assemblé, RAGFlow, RabbitMQ, Redmine, Redpanda, Reverse proxy et TLS, Stirling PDF, Stockage, Surya, Tempo, Text Embeddings Inference, Traefik, Typesense, Uptime Kuma, VictoriaMetrics, Vikunja, Web-Check, Wekan, Woodpecker CI, Zabbix, Zot, croc, k3s, lakeFS, olmOCR)
 - `self-supervised` (porté par : Anomalie acoustique, Apprentissage auto-supervisé en vision, Apprentissage contrastif, Dinomaly, Modèles de fondation vision)
 - `sequential-analysis` (porté par : Sequential testing)
 - `serialization` (porté par : API REST, GraphQL et gRPC, Apache Arrow, Avro)
@@ -6752,7 +6787,7 @@
 - `vehicle-routing` (porté par : HGS-CVRP, OR-Tools, PyVRP, Recherche opérationnelle, Tournées de véhicules (VRP))
 - `version-control` (porté par : Aider, Branches courtes et worktrees pour agents, Bruno, Claude Squad, Commitizen, Comparatif - Clients d'API, Forgejo, Forges & CI-CD, GitLab CE, Notebooks, Notebooks-as-code, Rule - Commits conventionnels et versions automatiques, Rule - Git et identité, Vibe Kanban, git-cliff, jupytext, python-semantic-release, release-please, swarm-forge)
 - `video-editing` (porté par : Médias, OpenCut)
-- `vision-language` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, MiMo-V2.6, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, Qwen, RAG visuel - retrouver des documents sans OCR, Vision Language Models, olmOCR)
+- `vision-language` (porté par : Anomalie visuelle zero-shot et few-shot, AnomalyCLIP, ColPali, Gemma, LightOnOCR-3, MiMo-V2.6, MinerU, Mistral, Modèles de fondation vision, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, Qwen, RAG visuel - retrouver des documents sans OCR, Surya, Vision Language Models, olmOCR)
 - `vulnerability-scanning` (porté par : Analyse de vulnérabilités, Comparatif - Scanners de sécurité, Dependency-Track, Grype, Supply chain logicielle et SBOM, Sécurité, Trivy)
 - `wavelet` (porté par : Comparatif - Traitement du signal, Ondelettes, PyWavelets, Signal & audio, Traitement)
 - `web-framework` (porté par : API REST, GraphQL et gRPC, Comparatif - Apps data & démos ML, Comparatif - Frontends web légers, Dash, FastAPI, Flask, Gradio, Programmation asynchrone en Python, Server-Sent Events & streaming LLM, Shiny for Python, Streamlit, Uvicorn, Web & API)

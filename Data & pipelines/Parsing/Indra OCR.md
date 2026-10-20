@@ -21,7 +21,7 @@ url_repo: https://github.com/datalab-to/indra
 
 | Nature | Licence | Exécution | Maturité | Fraîcheur |
 |---|---|---|---|---|
-| Paquet | source-available | en ligne de commande, rien à héberger | beta | amont non sondé |
+| Librairie Python | source-available | en bibliothèque, rien à héberger | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1225 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1232 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -89,6 +89,8 @@
 - **Docling** — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - **docTR** — Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.
 - **EasyOCR** — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
+- **Indra OCR** — OCR de Datalab pour processeur seul : un paquet de petits réseaux ONNX (reconnaisseur latin d'environ 1,25 million de paramètres, 76 Mo au total) qui lit PDF et images en Markdown ou JSON avec boîtes, étiquettes de blocs et ordre de lecture ; code Apache-2.0, poids OpenRAIL-M modifiée (gratuit sous 20 M$ de revenu ou de financement), sans PyTorch ni GPU.
+- **LightOnOCR-3** — Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.
 - **LlamaParse** — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - **Marker** — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - **MinerU** — Extracteur de documents d'OpenDataLab vers Markdown, HTML, LaTeX et JSON : quatre niveaux de qualité, du traitement natif sur CPU jusqu'à un modèle vision-langage de 1,2 milliard de paramètres ; licence propre (Apache 2.0 plus conditions, seuils à 100 M d'utilisateurs ou 20 M$ de revenu mensuel), version 4.0 incompatible avec la 3.x.
@@ -101,6 +103,7 @@
 - **PyMuPDF** — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
 - **pypdf** — Bibliothèque Python pure sous BSD-3 pour lire, fusionner, découper, chiffrer, annoter et remplir des PDF, avec extraction de texte (modes plain et layout) ; aucune dépendance obligatoire, ni OCR ni rendu d'image.
 - **pypdfium2** — Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page.
+- **Surya** — Boîte à outils OCR de Datalab à base d'un modèle vision-langage de 650 millions de paramètres : texte, mise en page avec ordre de lecture et tableaux d'une page en plus de 90 langues ; code Apache-2.0, poids sous OpenRAIL-M modifiée (gratuit sous 5 M$ de revenu ou de financement), servi par vLLM ou llama.cpp.
 - **Tesseract** — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux.
 - **Unstructured** — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
 
@@ -842,7 +845,11 @@
 - **Architecture pilotée par les événements** — domaines : data-eng · alias : event-driven architecture, EDA, architecture événementielle, pub/sub, at-least-once, exactly-once, dead letter queue, outbox pattern, idempotent consumer, contre-pression
 
 ### data/parsing
+- **Cascade OCR et contrôle arithmétique des factures** — domaines : data-eng, ai-eng · alias : cascade OCR, OCR en cascade, petit OCR puis gros modèle, OCR first pass, contrôle arithmétique de facture, validation par recalcul, total qui ne se recalcule pas, tri des pages difficiles
+- **Couche de texte d'un PDF contre OCR** — domaines : data-eng, ai-eng · alias : text layer, couche de texte, PDF numérique ou scanné, PDF natif contre scan, lire la couche de texte, born-digital, mode auto OCR, PDF cherchable
 - **OCR classique vs modèles vision-langage pour documents** — domaines : data-eng, ai-eng · alias : OCR vs VLM, OCR classique ou VLM, pipeline OCR vs VLM, OCR end-to-end, VLM pour l'OCR
+- **OCR vision-langage en une passe avec grounding** — domaines : data-eng, ai-eng · alias : grounding OCR, OCR en une passe, single-pass OCR, OCR avec boîtes englobantes, lecture et mise en page en une génération, document grounding, ancrage de blocs
+- **Évaluer un OCR** — domaines : data-eng, ai-eng · alias : évaluation d'un OCR, banc de test OCR, CER, taux d'erreur de caractères, F1 de boîtes, IoU 0, 5, vérité terrain OCR, mesurer un OCR, tester un OCR
 
 ### data/scraping
 - **Web scraping** — domaines : data-eng · alias : scraping, web scraping, crawling, extraction de données web, headless browsing

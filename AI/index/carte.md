@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1127 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1134 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 71 briques · 17 notions · 12 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -12,7 +12,7 @@
   - Relationnel — 6 briques · 1 comparatif
   - Vectoriel — 11 briques · 2 notions · 1 comparatif
 - **Calcul distribué** — 7 briques · 1 comparatif → [détail](carte/Calcul%20distribu%C3%A9.md)
-- **Data & pipelines** — 85 briques · 17 notions · 14 comparatifs → [1/2](carte/Data%20%26%20pipelines%20-%201%20sur%202.md) · [2/2](carte/Data%20%26%20pipelines%20-%202%20sur%202.md)
+- **Data & pipelines** — 88 briques · 21 notions · 14 comparatifs → [1/2](carte/Data%20%26%20pipelines%20-%201%20sur%202.md) · [2/2](carte/Data%20%26%20pipelines%20-%202%20sur%202.md)
   - DataFrames — 5 briques · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Données industrielles — 6 briques · 3 notions · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Fiabilité des données — 5 briques · 5 notions · 2 comparatifs → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
@@ -20,8 +20,8 @@
   - Ingestion de données — 7 briques · 2 notions · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Messagerie — 5 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
   - Orchestration — 6 briques · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
-  - Parsing — 17 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
-  - Scraping — 10 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
+  - Parsing — 20 briques · 5 notions · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%201%20sur%202.md)
+  - Scraping — 10 briques · 1 notion · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%202%20sur%202.md)
   - Visualisation — 5 briques · 1 comparatif → [détail](carte/Data%20%26%20pipelines%20-%202%20sur%202.md)
 - **Design & diagrammes** — 12 briques · 2 comparatifs → [détail](carte/Design%20%26%20diagrammes.md)
   - Diagrammes — 10 briques · 1 comparatif
