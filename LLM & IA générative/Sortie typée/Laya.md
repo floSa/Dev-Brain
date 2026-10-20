@@ -65,7 +65,7 @@ Un [[Modèle de décision|modèle de décision]] **à ajuster** de Convai Innova
 ## Ressources
 
 - Documentation — carte du modèle : https://huggingface.co/convaiinnovations/laya
-- Dépôt : https://github.com/NandhaKishorM/laya
+- Dépôt — dépôt GitHub de Convai Innovations (Apache-2.0) : https://github.com/NandhaKishorM/laya
 - Tutoriel — ajustement sur 2 × T4 (Kaggle) : https://github.com/NandhaKishorM/laya/blob/main/notebooks/laya_finetune_typed_decisions_2xT4_kaggle.ipynb
 - Vidéo — « Laya », AI WITH Rithesh, 9 min 08 : https://www.youtube.com/watch?v=7O3TaHf9cmg
 
