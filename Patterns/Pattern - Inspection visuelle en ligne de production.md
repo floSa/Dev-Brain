@@ -18,7 +18,7 @@ Le montage tient en cinq étages, de la caméra à la boucle de retour :
 caméra → prétraitement → modèle d'anomalie (en bord) → décision → retour
 ```
 
-À appliquer quand la pièce est présentée de façon répétable (cadrage, éclairage), qu'on dispose d'images de bon vérifiées, et que la décision se prend sur place, sans aller-retour vers un serveur central. Quand les défauts sont nombreux, étiquetés et stables, un détecteur supervisé reste le bon outil (cf. [[Détection d'objets]], [[Ultralytics YOLO]]).
+À appliquer quand la pièce est présentée de façon répétable (cadrage, éclairage), qu'on dispose d'images de bon vérifiées, et que la décision se prend sur place, sans aller-retour vers un serveur central. Quand les défauts sont nombreux, étiquetés et stables, un détecteur supervisé reste le bon outil (cf. [[Détection d'objets]], Ultralytics YOLO).
 
 ## Stack
 

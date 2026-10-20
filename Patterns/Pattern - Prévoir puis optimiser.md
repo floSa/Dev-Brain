@@ -26,7 +26,7 @@ historique → loi de la demande → quantité → plan sous contraintes → sim
 |---|---|---|
 | Prévoir | [[statsforecast]] | beaucoup de séries, méthodes statistiques rapides |
 | Prévoir | [[darts]] | échantillons de trajectoires, backtesting, une API pour plusieurs modèles |
-| Prévoir | [[Chronos]], [[Foundation models pour séries temporelles]] | peu d'historique par série ; les quantiles natifs se vérifient |
+| Prévoir | Chronos, [[Foundation models pour séries temporelles]] | peu d'historique par série ; les quantiles natifs se vérifient |
 | Prévoir | [[Hierarchical forecasting]], [[Intermittent demand]] | familles de produits ; demande par à-coups (pièces de rechange) |
 | Borne | [[Prédiction conforme]] | une borne haute à couverture annoncée, sans loi |
 | Quantité | [[De la prévision probabiliste à la quantité commandée]], [[Modèle du vendeur de journaux (newsvendor)]] | toute commande dont le coût de rupture et de surstock est connu |
