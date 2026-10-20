@@ -54,6 +54,7 @@ tags: [alignment, reinforcement-learning, llm]
 - [[LLM-as-judge]] — un LLM évaluateur ; brique du **RLAIF** pour générer les préférences.
 - [[Reward shaping and hacking]] — le RM appris est une cible privilégiée du **reward hacking** (over-optimization, sycophancy) ; les garde-fous (KL, ensembles) y sont détaillés.
 - *Verifiable rewards / RLVR* (cf. [[Reasoning models]]) — récompense **calculée** plutôt qu'apprise, quand la correction est vérifiable.
+- [[Récompense vérifiable (RLVR)]] — remplacer le modèle de récompense par une fonction de vérification ; [[Vérificateur externe et loi de Goodhart]].
 
 ## Pour aller plus loin
 

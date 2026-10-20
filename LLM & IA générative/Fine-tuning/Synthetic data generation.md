@@ -59,6 +59,7 @@ tags: [synthetic-data, fine-tuning, llm]
 - [[Faker]] — génération de **données factices par règles** (providers, locales) pour tests, fixtures, démos.
 - [[Mimesis]] — même usage que Faker, **plus rapide** et entièrement typé.
 - [[Confidentialité différentielle]] — la garantie formelle de confidentialité ; une donnée synthétique n'en porte pas d'office (raisonnement de la page, sans source lue).
+- [[Vérificateur externe et loi de Goodhart]] — l'effondrement des modèles par remplacement total et les parades (accumuler, filtrer par vérification).
 
 ## Pour aller plus loin
 

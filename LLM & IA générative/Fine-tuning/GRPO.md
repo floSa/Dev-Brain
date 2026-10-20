@@ -50,6 +50,7 @@ tags: [reinforcement-learning, reasoning, alignment, llm]
 - [[Reward modeling]] — fournit la récompense quand elle n'est pas vérifiable.
 - [[Reasoning models]] — le débouché phare de GRPO.
 - [[PPO]] — l'algorithme dont GRPO retire le modèle de valeur.
+- [[Récompense vérifiable (RLVR)]] — la source de récompense avec laquelle GRPO se combine le plus souvent : deux décisions, pas une.
 
 ## Pour aller plus loin
 

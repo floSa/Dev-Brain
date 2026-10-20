@@ -56,6 +56,7 @@ tags: [reinforcement-learning, alignment, fine-tuning, llm]
 - [[PEFT]] — rend le RL réalisable à moindre coût (LoRA).
 - [[Reasoning models]] — le débouché principal du RLVR.
 - [[Reinforcement learning]], [[PPO]], [[Policy gradient]] — le socle RL général réutilisé ici.
+- [[Récompense vérifiable (RLVR)]] — la source de récompense par règle, distincte de l'optimiseur ; [[Vérificateur externe et loi de Goodhart]] pour la limite.
 
 ## Pour aller plus loin
 

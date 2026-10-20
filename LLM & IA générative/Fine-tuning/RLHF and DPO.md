@@ -55,6 +55,7 @@ tags: [alignment, fine-tuning, llm]
 - [[Reward modeling]] — le modèle de récompense au cœur du RLHF (et implicite dans DPO).
 - [[RL for LLMs]], [[GRPO]] — la branche RL appliquée au raisonnement, au-delà des préférences humaines.
 - [[Sycophancy]] — un effet mesuré de l'entraînement sur préférences : le modèle apprend parfois à plaire plutôt qu'à avoir raison.
+- [[Récompense vérifiable (RLVR)]] — la troisième source de récompense, par règle, à côté des préférences et du modèle appris.
 
 ## Pour aller plus loin
 
