@@ -53,6 +53,8 @@ tags: [model-evaluation, calibration, classification]
 - [[Validation croisée]] — recalibrer dans les plis pour éviter la fuite d'information.
 - [[Prédiction conforme]] — une garantie de couverture qui n'exige pas de probabilités fiables ; à ne pas confondre avec la calibration, qui rend les probabilités prédites fiables.
 - [[Hallucinations des LLM]] — la calibration comme hypothèse de la borne de Kalai et Vempala, et l'abstention
+- [[Entraîner pour la calibration]] — la calibration visée à l'entraînement : règles de notation strictement propres, recettes de trois éditeurs de modèles de décision, ECE publiés.
+- [[Décomposer une question en signaux étroits]] — une recomposition ajustée sur étiquettes recalibre au passage (ECE de 0,154 à 0,027 sur un banc public).
 
 ## Pour aller plus loin
 
