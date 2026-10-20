@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ONNX Runtime]]"]
-complements: ["[[Ultralytics YOLO]]"]
+complements: []
 tags: [inference, edge-inference, quantization, embedded]
 url_docs: https://ai.google.dev/edge/litert
 url_repo: https://github.com/google-ai-edge/LiteRT
@@ -50,7 +50,7 @@ README.
 | Un modèle déjà au format TensorFlow, Keras ou `.tflite`, à exécuter sur CPU Linux ou Windows, ARM64 ou x86_64, sans GPU | Un processeur Intel dont on veut tirer le GPU ou le NPU : [[OpenVINO]] |
 | Un parc hétérogène où le même `.tflite` doit tourner du téléphone au PC industriel | L'ONNX comme format pivot : aucune lecture directe d'ONNX, la conversion passe par un outil tiers (`onnx2tf`) |
 | Une bibliothèque minuscule à lier dans une application C++, sans serveur ni démon | Un serveur de modèles avec batching et API réseau : [[NVIDIA Triton]], [[BentoML]] ou [[KServe]] |
-| Un détecteur YOLO exporté en `litert` depuis [[Ultralytics YOLO]] sur Linux x86 | Une cible Linux ARMv7 : pas de roue `ai-edge-litert` ; `tflite-runtime` n'a plus de version depuis 2023-10-03 |
+| Un détecteur YOLO exporté en `litert` depuis Ultralytics YOLO sur Linux x86 | Une cible Linux ARMv7 : pas de roue `ai-edge-litert` ; `tflite-runtime` n'a plus de version depuis 2023-10-03 |
 
 ## Mise en œuvre
 
@@ -63,7 +63,7 @@ README.
 ## Licence et gouvernance
 
 - **Apache-2.0** (fichier `LICENSE` et API GitHub) pour LiteRT, `litert-torch` et `ai-edge-quantizer`.
-- **Ce que permet la licence** : utiliser chez un client, embarquer dans un produit livré et le revendre, en conservant les notices. Les licences des modèles convertis sont une autre question : l'[[Ultralytics YOLO]] qui sert à les produire est sous AGPL-3.0. **Lecture, sans valeur juridique.**
+- **Ce que permet la licence** : utiliser chez un client, embarquer dans un produit livré et le revendre, en conservant les notices. Les licences des modèles convertis sont une autre question : l'Ultralytics YOLO qui sert à les produire est sous AGPL-3.0. **Lecture, sans valeur juridique.**
 - **Gouvernance** : Google AI Edge. Le dépôt a été créé le 2024-09-04 et le renommage a déplacé la documentation à deux reprises (tensorflow.org, ai.google.dev, developers.google.com) : vérifier les noms de paquets et les liens avant de s'appuyer sur un tutoriel plus ancien.
 
 ## Limites à connaître
@@ -83,7 +83,6 @@ README.
 
 ### Compléments
 
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — exporte vers `litert`, `openvino`, `onnx` et d'autres formats selon son `exporter.py`.
 
 ## Ressources
 

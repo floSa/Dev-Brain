@@ -9,7 +9,7 @@ licence_type: open-source
 maturite: production
 langage: C++
 alternatives: ["[[ONNX Runtime]]", "[[TensorRT]]"]
-complements: ["[[NVIDIA Triton]]", "[[Ultralytics YOLO]]"]
+complements: ["[[NVIDIA Triton]]"]
 tags: [inference, edge-inference, model-serving, quantization]
 url_docs: https://docs.openvino.ai/
 url_repo: https://github.com/openvinotoolkit/openvino
@@ -44,7 +44,7 @@ OVMS 2026.4.0 (2026-09-17), 940 étoiles.
 | Prendre si | Écarter si |
 |---|---|
 | Un parc de PC industriels à processeur Intel, sans GPU : le plug-in CPU et le GPU ou le NPU intégrés sont la cible nominale | Du matériel AMD : Intel écrit que les Ryzen « ne sont ni validés ni supportés » (article de support) |
-| Une vision ou un modèle de maintenance prédictive exporté d'[[Ultralytics YOLO]], de PyTorch ou de TensorFlow, à servir sur place | Un GPU NVIDIA à exploiter à fond : [[TensorRT]], ou [[NVIDIA Triton]] |
+| Une vision ou un modèle de maintenance prédictive exporté d'Ultralytics YOLO, de PyTorch ou de TensorFlow, à servir sur place | Un GPU NVIDIA à exploiter à fond : [[TensorRT]], ou [[NVIDIA Triton]] |
 | Quantifier en INT8 après entraînement avec NNCF, puis valider la précision | Un modèle déjà au format `.tflite`, sur un équipement non Intel : [[LiteRT]] |
 | Un serveur de modèle léger en conteneur (OVMS : API KServe, 237 Mo compressés pour l'image CPU) | Un seul runtime pour tous les matériels de l'atelier : [[ONNX Runtime]] |
 
@@ -82,7 +82,6 @@ OVMS 2026.4.0 (2026-09-17), 940 étoiles.
 ### Compléments
 
 - [[NVIDIA Triton]] — Serveur d'inférence multi-framework de NVIDIA (TensorRT, PyTorch, ONNX, TensorFlow…) — batching dynamique et exécution concurrente sur GPU/CPU, optimisé débit/latence ; intégré à la plateforme Dynamo. — son backend OpenVINO (CPU Intel seulement dans l'image publique) sert des modèles IR, ONNX, TensorFlow, TFLite et Paddle.
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — il exporte au format `openvino` ; un détecteur entraîné s'exécute ensuite sur CPU et GPU Intel.
 
 ## Ressources
 
