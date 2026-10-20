@@ -593,5 +593,5 @@ Briques (vérifie chaque licence au dépôt) : **OpenShell** (NVIDIA, Apache-2.0
 - [x] Lot 33 — modèles de décision
 - [x] Lot 34 — OCR et documents
 - [ ] Lot 35 — RAG : droits, multimodal, hiérarchique
-- [ ] Lot 36 — agents : garde-fous hors modèle
+- [x] Lot 36 — agents : garde-fous hors modèle
 - [ ] Lot 37 — fondamentaux : méthodes et culture
