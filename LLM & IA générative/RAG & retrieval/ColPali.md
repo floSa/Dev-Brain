@@ -52,8 +52,8 @@ Licence des poids, lue sur les cartes Hugging Face le 2026-10-01 :
 | Poids | Carte | Modèle de base | Ce que la licence implique pour une ESN |
 |---|---|---|---|
 | ColQwen2 v1.0 | Apache-2.0 | Qwen2-VL-2B, Apache-2.0 | Aucune condition particulière : le choix le plus simple |
-| ColPali v1.1 à v1.3 | MIT | PaliGemma-3B, licence **Gemma** | Usage commercial permis sous la politique d'usage de Google ; redistribuer ou **héberger comme service par API** vaut « distribution » et impose de transmettre les termes ; Google peut restreindre l'usage en cas de violation (cf. [[Gemma]]) |
-| ColQwen2.5 v0.1 et v0.2 | MIT | Qwen2.5-VL-3B, **Qwen Research License** | **Non commercial** : un usage commercial exige l'accord d'Alibaba Cloud (cf. [[Qwen]]). Le champ MIT de la carte ne le dit pas, et le tableau du README annonce Apache-2.0 à tort |
+| ColPali v1.1 à v1.3 | MIT | PaliGemma-3B, licence **Gemma** | Usage commercial permis sous la politique d'usage de Google ; redistribuer ou **héberger comme service par API** vaut « distribution » et impose de transmettre les termes ; Google peut restreindre l'usage en cas de violation (cf. Gemma) |
+| ColQwen2.5 v0.1 et v0.2 | MIT | Qwen2.5-VL-3B, **Qwen Research License** | **Non commercial** : un usage commercial exige l'accord d'Alibaba Cloud (cf. Qwen). Le champ MIT de la carte ne le dit pas, et le tableau du README annonce Apache-2.0 à tort |
 | ColSmol-256M et 500M | MIT | SmolVLM, Apache-2.0 | Sans condition particulière ; retrait de précision à mesurer |
 
 ## Mise en œuvre
@@ -92,5 +92,5 @@ Licence des poids, lue sur les cartes Hugging Face le 2026-10-01 :
 - [[RAG visuel - retrouver des documents sans OCR]] — la notion : pourquoi l'OCR perd l'information, coût, évaluation, quand le parsing reste préférable
 - [[Late-interaction retrieval]] — le mécanisme MaxSim, vu sur du texte
 - [[RAG documentaire on-prem - clé en main ou assemblé]] — où placer cette voie dans un RAG documentaire on-prem
-- [[bge-m3]] — la base textuelle contre laquelle le papier mesure ColPali
+- bge-m3 — la base textuelle contre laquelle le papier mesure ColPali
 - [[RAG & retrieval]] — le hub du dossier

@@ -40,7 +40,7 @@ tags: [knowledge-graph, relation-extraction, ner, llm]
 
 ## En pratique
 
-- Outillage entités : [[spaCy]] (NER industriel rapide), [[GLiNER]] (NER zero-shot sur types décrits en langage naturel). Pour l'extraction LLM de triplets : [[LlamaIndex]] (*KnowledgeGraphIndex* / *property graph*) et [[LangChain]] (*LLMGraphTransformer*).
+- Outillage entités : [[spaCy]] (NER industriel rapide), GLiNER (NER zero-shot sur types décrits en langage naturel). Pour l'extraction LLM de triplets : [[LlamaIndex]] (*KnowledgeGraphIndex* / *property graph*) et [[LangChain]] (*LLMGraphTransformer*).
 - Stockage : ranger les triplets dans une base de graphes — [[Neo4j]] (Cypher, contraintes d'unicité pour la déduplication).
 - Verrou qualité : la **résolution d'entités**. Sans elle, le graphe se fragmente en doublons et les parcours multi-hop cassent.
 - Contraindre l'extraction LLM par un **schéma** (liste fermée de types de relations) réduit le bruit et facilite l'interrogation aval.

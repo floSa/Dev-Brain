@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: beta
 langage: Python
-alternatives: ["[[bge-reranker]]", "[[Cohere Rerank]]", "[[Jina Reranker]]"]
+alternatives: ["[[Cohere Rerank]]"]
 complements: []
 tags: [retrieval, reranking, rag]
 url_docs: https://github.com/PrithivirajDamodaran/FlashRank
@@ -39,7 +39,7 @@ meilleur cross-encoder du lot) à `ms-marco-MultiBERT-L-12` (~150 Mo, 100+ langu
 
 | Prendre si | Écarter si |
 |---|---|
-| Reranker **sans GPU** : CPU, conteneur minuscule, démarrage à froid rapide (serverless) | Multilingue exigeant ou modèle plus récent recherché : la liste ne compte qu'un `MultiBERT` pour les 100+ langues → [[bge-reranker]] ; la qualité relative n'est pas mesurée dans cette fiche, à évaluer sur son corpus ([[RAG eval]]) |
+| Reranker **sans GPU** : CPU, conteneur minuscule, démarrage à froid rapide (serverless) | Multilingue exigeant ou modèle plus récent recherché : la liste ne compte qu'un `MultiBERT` pour les 100+ langues → bge-reranker ; la qualité relative n'est pas mesurée dans cette fiche, à évaluer sur son corpus ([[RAG eval]]) |
 | Ajouter un étage de reclassement en quelques lignes à un pipeline existant | Aucun modèle à héberger, un appel d'API suffit → [[Cohere Rerank]] |
 | Environnement **contraint** : poste industriel, machine sans accès GPU, image légère | **Maintenance** ralentie : dernière release PyPI (0.2.10) en janvier 2025, dernière release GitHub (0.2.9) en novembre 2024 |
 | Prototyper vite un gain de précision avant d'investir dans un modèle plus lourd | Le `max_length` se règle sur la taille des passages : une valeur trop grande (512 pour des passages courts) alourdit la latence sans gain |
@@ -56,9 +56,7 @@ meilleur cross-encoder du lot) à `ms-marco-MultiBERT-L-12` (~150 Mo, 100+ langu
 
 ### Alternatives
 
-- [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - [[Cohere Rerank]] — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
-- [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 
 ## Ressources
 

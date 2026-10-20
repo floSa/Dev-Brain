@@ -9,7 +9,7 @@ licence_type: proprietary
 hosted: [managed]
 maturite: production
 scaling: serverless
-alternatives: ["[[bge-reranker]]", "[[FlashRank]]", "[[Jina Reranker]]"]
+alternatives: ["[[FlashRank]]"]
 complements: []
 tags: [retrieval, reranking, rag]
 url_docs: https://docs.cohere.com/docs/rerank
@@ -41,7 +41,7 @@ documents semi-structurés (JSON). Rien à télécharger.
 
 | Prendre si | Écarter si |
 |---|---|
-| Ajouter un reranker à un pipeline sans GPU ni modèle à héberger : un appel d'API sur le top-k | Les documents **ne peuvent pas quitter** le réseau : l'API managée envoie le texte chez l'éditeur → [[bge-reranker]] en local |
+| Ajouter un reranker à un pipeline sans GPU ni modèle à héberger : un appel d'API sur le top-k | Les documents **ne peuvent pas quitter** le réseau : l'API managée envoie le texte chez l'éditeur → bge-reranker en local |
 | Corpus **multilingue**, ou documents JSON semi-structurés | Le volume de requêtes rend un service à l'appel plus cher qu'un GPU dédié : tarif non publié sur la page produit, à demander |
 | Brancher un reranker par un connecteur de framework, sans code de modèle | Un modèle qu'on veut **figer** et rejouer à l'identique : les poids ne sont pas téléchargeables, seul l'éditeur tient les versions (aucune dépréciation annoncée dans la documentation consultée) |
 | Un déploiement **privé** est acceptable : VPC ou on-prem, proposés par Cohere sur devis | Le budget est nul et la latence doit rester locale → [[FlashRank]] sur CPU |
@@ -58,9 +58,7 @@ documents semi-structurés (JSON). Rien à télécharger.
 
 ### Alternatives
 
-- [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - [[FlashRank]] — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
-- [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 
 ## Ressources
 
