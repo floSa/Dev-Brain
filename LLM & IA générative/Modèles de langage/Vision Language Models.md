@@ -26,7 +26,7 @@ tags: [vision-language, multimodal, transformers, llm]
 - Qwen3-VL utilise **SigLIP 2** ; Gemma 3 en utilise la version 1 (SigLIP, 400 M) ; Ministral 3 branche un ViT de 410 M gelé, de type Pixtral ; le 12 B de Gemma 4 **supprime** l'encodeur et projette directement les patchs d'image dans le LLM. Une image produit **beaucoup de tokens** → compression (merger de Qwen, *token pruning*) pour tenir le budget de contexte.
 
 ### Modèles
-- Open weights nativement multimodaux : [[Qwen]] (3.5 de 0,8 B à 9 B, et 3.8), [[Gemma]] 4 (toutes tailles, audio en plus sur E2B, E4B et 12 B), [[Mistral]] (Ministral 3, Small 4) ; LLaVA reste la référence historique de l'architecture. Fermés : GPT-4o, Gemini, Claude. [[gpt-oss]] est texte seul.
+- Open weights nativement multimodaux : Qwen (3.5 de 0,8 B à 9 B, et 3.8), Gemma 4 (toutes tailles, audio en plus sur E2B, E4B et 12 B), Mistral (Ministral 3, Small 4) ; LLaVA reste la référence historique de l'architecture. Fermés : GPT-4o, Gemini, Claude. gpt-oss est texte seul.
 
 ## Les maths, simplement
 
@@ -48,7 +48,7 @@ tags: [vision-language, multimodal, transformers, llm]
 - [[SFT]] / [[PEFT]] — l'instruction-tuning multimodal (et LoRA) adapte le LLM à la vision.
 - [[Self-attention]] — le mécanisme qui mêle tokens d'image et de texte.
 - [[Vision par ordinateur]] — le champ d'ensemble ; l'encodeur visuel d'un VLM (ViT) prolonge l'héritage des [[CNN]] et des [[Architectures CNN]].
-- Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[Qwen]], [[Gemma]], [[Mistral]].
+- Voir aussi : [[Licences de modèles open weights]], Comparatif - Modèles de langage open weights, Qwen, Gemma, Mistral.
 
 ## Pour aller plus loin
 
