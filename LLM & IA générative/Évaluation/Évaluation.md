@@ -27,7 +27,7 @@ tags: [llm-eval, benchmark, rag-eval, llm-as-judge, model-evaluation]
 - Comparer des prompts et des modèles, chercher les régressions et les failles → [[promptfoo]].
 - Instrumenter un stack existant sans le réécrire → [[TruLens]].
 - Évaluer des agents, ou lancer un des 200+ bancs d'essai existants sur un modèle → [[Inspect AI]].
-- Faire tourner le juge lui-même en local, avec un modèle ouvert entraîné pour ça → Prometheus-Eval.
+- Faire tourner le juge lui-même en local, avec un modèle ouvert entraîné pour ça → [[LLM-as-judge]] (les juges ouverts sont des modèles, sans fiche).
 - Savoir si un RAG rate côté retriever ou côté générateur, claim par claim → [[RAGChecker]].
 - Un score RAG avec un intervalle de confiance, en échange de quelques dizaines d'annotations humaines → [[ARES]].
 - Lire un score ou un classement publié sans se faire piéger (version de l'indice, qui l'a exécuté, banc saturé, incertitude) → [[Lire un score publié]].

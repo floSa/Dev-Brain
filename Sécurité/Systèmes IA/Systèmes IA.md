@@ -27,7 +27,7 @@ tags: [ai-security, prompt-injection, jailbreak, guardrails]
 - L'application suit des instructions venues d'un document ou d'une page → [[Prompt injection]].
 - Le modèle produit ce qu'il devrait refuser → [[Jailbreaking and defenses]].
 - Filtrer les entrées et valider les sorties → [[Guardrails]].
-- Appliquer une politique déclarative autour du modèle (sujets, refus, rails d'entrée et de sortie) → [[NeMo Guardrails]] ; héberger un classifieur de sûreté → Llama Guard ; choisir entre les deux → [[Comparatif - Garde-fous pour LLM]].
+- Appliquer une politique déclarative autour du modèle (sujets, refus, rails d'entrée et de sortie) → [[NeMo Guardrails]] ; héberger un classifieur de sûreté (un modèle, sans fiche ici) et le brancher dans ce framework → [[Comparatif - Garde-fous pour LLM]].
 - Masquer les noms, courriels et numéros avant d'appeler un modèle → [[Presidio]], et la notion [[Données personnelles et anonymisation pour LLM]] pour ce que le masquage ne garantit pas.
 - Éprouver un assistant contre les attaques connues avant de le livrer → [[garak]], ou [[promptfoo]] si le red-teaming doit vivre dans la suite d'évaluation.
 - L'agent exécute du code qu'il a écrit → [[Sandboxing de code généré]].

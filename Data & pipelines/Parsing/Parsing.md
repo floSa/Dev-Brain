@@ -35,7 +35,7 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - OCR multilingue et mise en page, tableaux ou formules dans le même outil, Apache 2.0 → [[PaddleOCR]].
 - Prototype OCR Python multilingue en quelques lignes, sans exigence de maintenance → [[EasyOCR]].
 - Gros corpus de PDF en Markdown par un modèle vision-langage, GPU disponible, code et poids Apache 2.0 → [[olmOCR]].
-- Page entière lue en une génération avec étiquette et boîte par bloc, trois tailles de modèle (0,8B, 1B, 4B), Apache-2.0, vLLM → LightOnOCR-3.
+- Page entière lue en une génération avec étiquette et boîte par bloc → [[OCR vision-langage en une passe avec grounding]].
 - Mise en page, ordre de lecture et tableaux par un modèle de 650 millions de paramètres, code Apache-2.0, poids sous seuil de 5 M$ → [[Surya]].
 - Mise en page lourde, formules et tableaux, qualité réglable du CPU au GPU, licence non standard à faire valider → [[MinerU]].
 - Documents variés (PDF, Office, HTML, e-mails) à partitionner pour un RAG → [[Unstructured]].
