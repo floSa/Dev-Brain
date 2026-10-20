@@ -52,7 +52,7 @@ tags: [ocr, computer-vision, deep-learning]
 - OCR appliqué à un document sortant : [[Stirling PDF]] — rend un PDF scanné cherchable, côté manipulation de fichier plutôt que côté pipeline de données.
 - Voir aussi : [[Tesseract]], [[PaddleOCR]], [[EasyOCR]], [[olmOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]].
 - Évaluer un OCR, lire en une passe, lire la couche de texte, enchaîner petit et gros modèle : [[Évaluer un OCR]], [[OCR vision-langage en une passe avec grounding]], [[Couche de texte d'un PDF contre OCR]], [[Cascade OCR et contrôle arithmétique des factures]].
-- Moteurs récents, un modèle vision-langage et un OCR pour processeur seul : [[LightOnOCR-3]], [[Surya]], [[Indra OCR]].
+- Moteurs récents, un modèle vision-langage et un OCR pour processeur seul : LightOnOCR-3, [[Surya]], [[Indra OCR]].
 
 ## Pour aller plus loin
 

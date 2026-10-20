@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python/C++
-alternatives: ["[[Ultralytics YOLO]]", "[[segment-anything]]"]
+alternatives: []
 complements: ["[[supervision]]", "[[CVAT]]"]
 tags: [object-detection, segmentation, computer-vision, deep-learning, gpu]
 url_docs: https://detectron2.readthedocs.io/
@@ -56,8 +56,6 @@ remplace sans réécrire le pipeline. Elle embarque des ops C++/CUDA custom, ce 
 
 ### Alternatives
 
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.
-- [[segment-anything]] — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).
 
 ### Compléments
 
