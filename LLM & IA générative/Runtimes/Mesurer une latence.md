@@ -88,6 +88,7 @@ Valeurs relevées dans les cours de floSa en octobre 2026 ; ce sont des mesures 
 - [[Coût d'un token et taux d'utilisation]] — le débit saturé et le débit sous charge réelle ne sont pas le même nombre.
 - [[Quantization]] — change la latence autant que la précision.
 - [[Comparatif - Modèles de décision]] — un modèle, trois matériels : 8, 30 et 78 ms pour d1-3B, rangés une ligne par matériel.
+- [[LightOnOCR-3]] — l'exemple d'OCR dont les temps par page sont cités plus haut, avec son matériel.
 
 ## Pour aller plus loin
 

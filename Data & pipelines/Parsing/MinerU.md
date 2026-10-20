@@ -8,7 +8,7 @@ famille: cli
 licence_type: source-available
 maturite: production
 langage: Python
-alternatives: ["[[olmOCR]]", "[[Marker]]", "[[Docling]]", "[[PaddleOCR]]"]
+alternatives: ["[[olmOCR]]", "[[Marker]]", "[[Docling]]", "[[PaddleOCR]]", "[[LightOnOCR-3]]"]
 complements: ["[[RAGFlow]]"]
 tags: [document-parsing, pdf, ocr, markdown-conversion, layout-analysis, table-extraction, vision-language, rag]
 url_docs: https://opendatalab.github.io/MinerU/
@@ -83,6 +83,7 @@ licence non standard, qu'un service juridique doit lire.
 - [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[PaddleOCR]] — Boîte à outils OCR et parsing de documents de Baidu (PaddlePaddle) : pipeline détection-reconnaissance PP-OCRv6 sur des dizaines de langues, PP-StructureV3 pour tableaux, formules et mise en page, et modèle vision-langage PaddleOCR-VL de 0,9 milliard de paramètres ; Apache 2.0, CPU ou GPU.
+- [[LightOnOCR-3]] — Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.
 
 ### Compléments
 

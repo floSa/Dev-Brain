@@ -51,6 +51,8 @@ tags: [ocr, computer-vision, deep-learning]
 - Parsing sans OCR quand le texte est déjà présent : [[OpenDataLoader PDF]] — extraction déterministe du texte natif, l'OCR n'intervenant qu'en mode hybride.
 - OCR appliqué à un document sortant : [[Stirling PDF]] — rend un PDF scanné cherchable, côté manipulation de fichier plutôt que côté pipeline de données.
 - Voir aussi : [[Tesseract]], [[PaddleOCR]], [[EasyOCR]], [[olmOCR]], [[MinerU]], [[OCR classique vs modèles vision-langage pour documents]].
+- Évaluer un OCR, lire en une passe, lire la couche de texte, enchaîner petit et gros modèle : [[Évaluer un OCR]], [[OCR vision-langage en une passe avec grounding]], [[Couche de texte d'un PDF contre OCR]], [[Cascade OCR et contrôle arithmétique des factures]].
+- Moteurs récents, un modèle vision-langage et un OCR pour processeur seul : [[LightOnOCR-3]], [[Surya]], [[Indra OCR]].
 
 ## Pour aller plus loin
 

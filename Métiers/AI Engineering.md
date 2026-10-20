@@ -30,10 +30,10 @@ Axe métier **AI Engineering** (`ai-eng`) — explorer par sous-domaine, puis de
 - [[Outils de développement]] — 46 page(s)
 - [[Bases de données]] — 14 page(s)
 - [[Sécurité]] — 7 page(s)
+- [[Data & pipelines]] — 5 page(s)
 - [[Design & diagrammes]] — 5 page(s)
 - [[Mathématiques]] — 3 page(s)
 - [[Web & API]] — 3 page(s)
 - [[Médias]] — 2 page(s)
-- [[Data & pipelines]] — 1 page(s)
 - [[Documents]] — 1 page(s)
 <!-- AUTO:END -->

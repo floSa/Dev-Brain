@@ -17,6 +17,7 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Le clivage qui décide de tout est **le PDF porte-t-il du texte natif ou une image**. Natif, l'extraction est déterministe et rapide ([[PyMuPDF]], [[pdfplumber]]). Scanné, il faut de l'[[OCR]] ([[docTR]]) et le résultat devient probabiliste. Un corpus réel est mixte, d'où l'intérêt de **classer avant de router** ([[pdf-inspector]]) : ne payer l'OCR que sur les pages qui en ont besoin.
 - Les **tableaux** sont le point où les outils se séparent vraiment. Le texte, tout le monde le sort ; une structure de lignes et de colonnes fidèle, presque personne. C'est le critère à tester sur ses propres fichiers avant de choisir, et non à lire dans une documentation.
 - Sur un document scanné, un second choix s'ouvre : un **pipeline OCR en étages** ([[Tesseract]], [[docTR]], [[PaddleOCR]]) ou un **modèle vision-langage** qui lit la page entière ([[olmOCR]], [[MinerU]]). Le premier se trompe en bruit local ; le second lit mieux les tableaux, les formules et les colonnes, mais peut réécrire ce qu'il lit, et demande un GPU. Les sources de 2026 ne donnent pas de vainqueur : cf. [[OCR classique vs modèles vision-langage pour documents]].
+- Deux gestes de méthode avant de choisir un moteur d'OCR. **Lire la couche de texte quand elle existe** et la vérifier : un PDF « numérique » peut porter un texte inexploitable (polices anciennes, ordre inversé), et un 0 % d'erreur sur un PDF à couche ne mesure pas l'OCR ([[Couche de texte d'un PDF contre OCR]]). **Mesurer sur ses pages** avec une métrique qui dit ce qu'elle compte, et annoncer le nombre de pages ([[Évaluer un OCR]]). Quand un modèle vision-langage lit tout, boîtes comprises, en une génération, le temps suit la densité du texte ([[OCR vision-langage en une passe avec grounding]]) ; un petit OCR sur CPU en première passe et un contrôle arithmétique des totaux réduisent ce qu'il faut lui confier ([[Cascade OCR et contrôle arithmétique des factures]]).
 - Un second clivage traverse le domaine : **quelle sortie**. Un accès objet par objet, pour piloter l'extraction soi-même ([[pdfplumber]], [[PyMuPDF]]) ; ou du Markdown prêt à découper et embarquer pour un RAG ([[Marker]], [[Docling]], [[Unstructured]]). Cf. [[Chunking strategies]].
 - La **licence** est ici un critère de premier rang, plus que dans le reste du brain : [[PyMuPDF]] est AGPL ou commerciale, [[Marker]] est GPL avec des poids à licence restreinte, [[LlamaParse]] n'est pas ouvert du tout. Sur un projet client, ce point se règle avant le benchmark.
 
@@ -30,9 +31,12 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - Trier un corpus mixte et ne router vers l'OCR que le nécessaire → [[pdf-inspector]].
 - Scans et images, pipeline OCR clé en main → [[docTR]].
 - OCR imprimé sur CPU seul, sans framework de deep learning, ou PDF cherchable à produire → [[Tesseract]].
+- Première passe sur CPU seul, sans PyTorch, avec boîtes et ordre de lecture, poids sous seuil de 20 M$ à faire valider avant livraison à un client → [[Indra OCR]].
 - OCR multilingue et mise en page, tableaux ou formules dans le même outil, Apache 2.0 → [[PaddleOCR]].
 - Prototype OCR Python multilingue en quelques lignes, sans exigence de maintenance → [[EasyOCR]].
 - Gros corpus de PDF en Markdown par un modèle vision-langage, GPU disponible, code et poids Apache 2.0 → [[olmOCR]].
+- Page entière lue en une génération avec étiquette et boîte par bloc, trois tailles de modèle (0,8B, 1B, 4B), Apache-2.0, vLLM → [[LightOnOCR-3]].
+- Mise en page, ordre de lecture et tableaux par un modèle de 650 millions de paramètres, code Apache-2.0, poids sous seuil de 5 M$ → [[Surya]].
 - Mise en page lourde, formules et tableaux, qualité réglable du CPU au GPU, licence non standard à faire valider → [[MinerU]].
 - Documents variés (PDF, Office, HTML, e-mails) à partitionner pour un RAG → [[Unstructured]].
 - Mise en page et tableaux complexes, exécution locale, Apache/MIT → [[Docling]].
@@ -42,12 +46,18 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 
 <!-- AUTO:START -->
 ### Notions
+- [[Cascade OCR et contrôle arithmétique des factures]] — domaines : data-eng, ai-eng
+- [[Couche de texte d'un PDF contre OCR]] — domaines : data-eng, ai-eng
 - [[OCR classique vs modèles vision-langage pour documents]] — domaines : data-eng, ai-eng
+- [[OCR vision-langage en une passe avec grounding]] — domaines : data-eng, ai-eng
+- [[Évaluer un OCR]] — domaines : data-eng, ai-eng
 
 ### Briques
 - [[Docling]] — Bibliothèque de conversion de documents d'IBM Research : compréhension fine de la mise en page et des tableaux (PDF, DOCX, PPTX…), export Markdown / HTML / JSON et intégrations gen AI ; modèles légers exécutables en local.
 - [[docTR]] — Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.
 - [[EasyOCR]] — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
+- [[Indra OCR]] — OCR de Datalab pour processeur seul : un paquet de petits réseaux ONNX (reconnaisseur latin d'environ 1,25 million de paramètres, 76 Mo au total) qui lit PDF et images en Markdown ou JSON avec boîtes, étiquettes de blocs et ordre de lecture ; code Apache-2.0, poids OpenRAIL-M modifiée (gratuit sous 20 M$ de revenu ou de financement), sans PyTorch ni GPU.
+- [[LightOnOCR-3]] — Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.
 - [[LlamaParse]] — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - [[Marker]] — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - [[MinerU]] — Extracteur de documents d'OpenDataLab vers Markdown, HTML, LaTeX et JSON : quatre niveaux de qualité, du traitement natif sur CPU jusqu'à un modèle vision-langage de 1,2 milliard de paramètres ; licence propre (Apache 2.0 plus conditions, seuils à 100 M d'utilisateurs ou 20 M$ de revenu mensuel), version 4.0 incompatible avec la 3.x.
@@ -60,6 +70,7 @@ tags: [document-parsing, pdf, ocr, markdown-conversion]
 - [[PyMuPDF]] — Binding Python de MuPDF (moteur C) : extraction et manipulation de PDF très rapides — texte, images, tableaux, annotations, rendu — avec accès bas niveau au modèle objet PDF ; licence AGPL ou commerciale.
 - [[pypdf]] — Bibliothèque Python pure sous BSD-3 pour lire, fusionner, découper, chiffrer, annoter et remplir des PDF, avec extraction de texte (modes plain et layout) ; aucune dépendance obligatoire, ni OCR ni rendu d'image.
 - [[pypdfium2]] — Binding Python de PDFium, le moteur PDF de Chromium : rendu de pages en image, extraction de texte, objets de page et CLI, en roues précompilées et sous licence permissive (Apache 2.0 ou BSD-3) ; rapide, mais PDFium n'est pas thread-safe et aucune analyse de mise en page.
+- [[Surya]] — Boîte à outils OCR de Datalab à base d'un modèle vision-langage de 650 millions de paramètres : texte, mise en page avec ordre de lecture et tableaux d'une page en plus de 90 langues ; code Apache-2.0, poids sous OpenRAIL-M modifiée (gratuit sous 5 M$ de revenu ou de financement), servi par vLLM ou llama.cpp.
 - [[Tesseract]] — Moteur OCR historique en C++ sous Apache 2.0 : reconnaissance par réseau LSTM sur plus de 100 langues, sorties texte, hOCR, TSV, ALTO et PDF cherchable ; CPU seul, sans framework de deep learning, mais sensible à la qualité de l'image et sans analyse de tableaux.
 - [[Unstructured]] — Boîte à outils ETL open-source pour documents : partitionne plus de 60 formats (PDF, Office, HTML, e-mails, images) en éléments structurés et typés (titres, paragraphes, tableaux, listes) prêts à chunker et embarquer pour le RAG.
 
