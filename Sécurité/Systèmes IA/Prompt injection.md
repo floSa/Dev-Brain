@@ -53,6 +53,7 @@ tags: [prompt-injection, ai-security, llm]
 - [[mcp-protocol]] — *resources* et outils tiers sont des vecteurs d'injection indirecte.
 - [[RAG]] — le contenu récupéré est une entrée non fiable comme une autre.
 - Voir aussi : [[garak]], [[NeMo Guardrails]].
+- [[Excessive agency et lethal trifecta]] — ce qui rend une injection dangereuse : données privées, contenu non fiable et canal sortant dans le même agent ; [[Garde-fous hors modèle]] — des règles qui tiennent même quand l'injection réussit.
 
 ## Pour aller plus loin
 
