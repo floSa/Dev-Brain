@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 alternatives: ["[[Label Studio]]"]
-complements: ["[[Ultralytics YOLO]]", "[[Detectron2]]", "[[segment-anything]]", "[[Postgres]]", "[[Docker Compose]]", "[[Kubernetes]]", "[[Keycloak]]"]
+complements: ["[[Detectron2]]", "[[Postgres]]", "[[Docker Compose]]", "[[Kubernetes]]", "[[Keycloak]]"]
 tags: [annotation, computer-vision, object-detection, segmentation, human-in-the-loop, self-hosted]
 url_docs: https://docs.cvat.ai
 url_repo: https://github.com/cvat-ai/cvat
@@ -79,9 +79,7 @@ voisines.
 
 ### Compléments
 
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — cinq formats d'export Ultralytics (détection, segmentation, pose, boîtes orientées, classification) ; la fonction serverless fournie détecte avec YOLOv7, pas avec Ultralytics.
 - [[Detectron2]] — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture. — fonction serverless `pytorch/facebookresearch/detectron2` dans le dépôt, pour la détection et la segmentation d'instances.
-- [[segment-anything]] — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte). — fonction serverless `pytorch/facebookresearch/sam` pour segmenter par clic ; SAM 2 et SAM 3 sont réservés à Enterprise et Online.
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — base du fichier Compose (PostgreSQL 15).
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling. — mode d'installation officiel de l'édition Community.
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — chart Helm documenté, avec PostgreSQL, Redis, ClickHouse en option et Nuclio.

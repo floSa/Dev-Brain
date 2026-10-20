@@ -10,7 +10,7 @@ hosted: [self, managed]
 maturite: production
 langage: Python
 alternatives: ["[[CVAT]]"]
-complements: ["[[Ultralytics YOLO]]", "[[segment-anything]]", "[[spaCy]]", "[[GLiNER]]", "[[Postgres]]", "[[Docker Compose]]", "[[Kubernetes]]"]
+complements: ["[[spaCy]]", "[[Postgres]]", "[[Docker Compose]]", "[[Kubernetes]]"]
 tags: [annotation, human-in-the-loop, self-hosted, computer-vision, ner]
 url_docs: https://labelstud.io/guide
 url_repo: https://github.com/HumanSignal/label-studio
@@ -46,7 +46,7 @@ HumanSignal (ex-Heartex).
 | Prendre si | Écarter si |
 |---|---|
 | Plusieurs types de données à étiqueter avec un seul outil — texte, images, audio, vidéo, séries — sur une machine sans cloud | Des images et des vidéos seulement, avec suivi d'objets, squelettes ou cuboïdes à grande échelle → [[CVAT]] |
-| Pré-annoter avec un modèle maison ou un modèle public : le dépôt du SDK livre des exemples pour [[Ultralytics YOLO]], [[segment-anything]], [[spaCy]] et [[GLiNER]] | Plusieurs équipes, des rôles distincts, l'affectation automatique des tâches et des workspaces : ces fonctions sont payantes |
+| Pré-annoter avec un modèle maison ou un modèle public : le dépôt du SDK livre des exemples pour Ultralytics YOLO, segment-anything, [[spaCy]] et GLiNER | Plusieurs équipes, des rôles distincts, l'affectation automatique des tâches et des workspaces : ces fonctions sont payantes |
 | Un outil gratuit à installer en quelques minutes (`pip` ou Docker) pour un petit lot ou un prototype | Un accord inter-annotateurs à mesurer sans le calculer soi-même : les métriques d'accord, les tableaux de bord et la performance par annotateur sont payants |
 | Garder les données sur site : SQLite ou PostgreSQL, stockage local, aucun appel sortant exigé par l'application | Un SSO d'entreprise : SAML seulement, et seulement en Enterprise ; aucune page relevée ne décrit Keycloak, Authentik ou OIDC |
 | | Une boucle d'active learning **automatique** : la documentation la réserve à Enterprise, la Community se contente d'un tri manuel des tâches |
@@ -81,10 +81,7 @@ HumanSignal (ex-Heartex).
 
 ### Compléments
 
-- [[Ultralytics YOLO]] — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0. — exemple officiel `yolo` du dépôt du SDK pour la pré-annotation en détection, et export au format YOLO.
-- [[segment-anything]] — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte). — exemples officiels `segment_anything_model`, `segment_anything_2_image` et `segment_anything_2_video` : segmentation interactive à partir de points ou de boîtes.
 - [[spaCy]] — Bibliothèque NLP industrielle en Python — pipelines pré-entraînés multilingues (tokenisation, POS, dépendances, NER) rapides et prêts à l'emploi, intégrables avec les transformeurs. — exemple officiel `spacy` pour pré-annoter des entités, et export au format spaCy.
-- [[GLiNER]] — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger. — exemple officiel `gliner` : reconnaissance d'entités à zéro exemple, sans entraînement préalable sur les étiquettes du projet.
 - [[Postgres]] — SGBD relationnel-objet open-source avancé : très extensible, standard de fait du backend moderne. — base recommandée en production (PostgreSQL 14 ou plus), là où SQLite suffit à l'essai.
 - [[Docker Compose]] — Décrit une pile multi-conteneurs dans un fichier compose.yaml et la lance d'une commande (Apache-2.0, Go) — sur un seul hôte : ni multi-nœuds, ni autoscaling. — mode d'installation documenté, avec PostgreSQL.
 - [[Kubernetes]] — Orchestrateur de conteneurs de référence (Apache-2.0, Go, CNCF) — déploie, replace, met à l'échelle et met à jour des applications sur un parc de machines ; réseau, stockage et ingress restent à choisir et à exploiter. — chart Helm documenté (une réplique, 1 Gio et 1 CPU demandés par défaut).
