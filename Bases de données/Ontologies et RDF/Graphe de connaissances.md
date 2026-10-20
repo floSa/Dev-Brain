@@ -113,6 +113,7 @@ La requête « tous les capteurs de vibration des équipements de la ligne 2 » 
 - [[GraphRAG]] — le graphe comme index de retrieval.
 - [[Modèles graphiques probabilistes]] — un autre « graphe » : il représente des dépendances probabilistes entre variables, pas des faits sur des choses.
 - **Alternatives** : une base relationnelle avec clés étrangères ([[Postgres]]), un catalogue de métadonnées ([[Catalogue de données et lignage]]) ou un simple dictionnaire de données, quand le besoin est de décrire les tables et pas de raisonner sur les choses.
+- [[Microsoft GraphRAG]] · [[LightRAG]] — deux frameworks qui construisent un graphe de connaissances à partir d'un corpus par extraction LLM, sans ontologie au sens d'OWL, pour y répondre en RAG.
 
 ## Pour aller plus loin
 

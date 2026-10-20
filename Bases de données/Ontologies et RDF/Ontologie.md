@@ -93,6 +93,7 @@ Un raisonneur qui lit ce fragment et le fait `ex:P-101 ex:équipéeDe ex:T-17` e
 - [[Catalogue de données et lignage]] — décrit les jeux de données (glossaire, propriétaire), pas les choses du monde.
 - **Alternative légère** : un simple schéma de validation ([[SHACL]]) ou une table de référence, quand aucun raisonnement n'est attendu.
 - **Outils** : [[Protégé]] pour construire et tester une ontologie ; [[LinkML]] pour partir d'un schéma YAML ; [[Owlready2]] pour la manipuler en Python. Voir [[Comparatif - Outils RDF et OWL en Python]].
+- [[Droits d'accès dans un RAG]] — certaines plateformes appellent « ontologie » une couche qui porte aussi des permissions par objet : un autre sens que celui d'OWL, et un autre sujet que le filtre de droits d'un RAG.
 
 ## Pour aller plus loin
 
