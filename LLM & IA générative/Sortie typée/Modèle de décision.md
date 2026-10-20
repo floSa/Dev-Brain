@@ -21,7 +21,7 @@ tags: [structured-output, classification, calibration, llm]
 - **L'état** : un texte, un JSON, une image, parfois un clip audio. **Les questions** : nommées, **déclarées à l'appel**, donc l'ensemble des réponses possibles n'est pas figé à l'entraînement.
 - Trois types, identiques chez tous les éditeurs : `noul` (oui ou non ; le nom est celui de TypeSafe, il remplace *bool*), `choice` (une option parmi des options nommées) et `score` (un niveau sur une échelle ordonnée de 2 à 10 niveaux).
 - La réponse porte une probabilité par option. Un `noul` rend la probabilité de « oui » (`0,93`), un `choice` l'option choisie et une `confidence`, un `score` une **espérance** (un score peut tomber entre deux niveaux). La facturation et la mesure parlent de `output_tokens = 0`.
-- Le point d'accès local ou hébergé est le même : `/v1/systemone`. Jev (fermé), [[Clef]], [[d1-3B]] et [[Laya]] parlent ce schéma ; passer de l'un à l'autre change l'URL, la clé et le champ `model`, pas la qualité ni les seuils.
+- Le point d'accès local ou hébergé est le même : `/v1/systemone`. Jev (fermé), Clef, d1-3B et Laya parlent ce schéma ; passer de l'un à l'autre change l'URL, la clé et le champ `model`, pas la qualité ni les seuils.
 
 ```mermaid
 flowchart LR
@@ -39,7 +39,7 @@ flowchart LR
 - Une invite de conversation est construite ; chaque option reçoit un **code d'un seul token** (A, B, C…) ; la consigne est « répondre par le code seul ». Le modèle s'arrête **à l'emplacement où il commencerait à répondre**.
 - À cet endroit, la tête de langage donne des logits sur tout le vocabulaire. Seuls les **jetons d'options** sont gardés ; un softmax restreint à eux donne les probabilités. Rien n'est tiré, rien n'est analysé : une réponse invalide est **impossible**, pas improbable.
 - **Plusieurs questions** : l'état (et les images) forme un **tronc** lu une fois ; chaque question est une **branche**. Trois questions sur le même état coûtent peu de plus qu'une seule (30 ms contre 41 ms sur Apple M5 Pro, mesure de Liquid).
-- Les variantes à **encodeur** ([[d1-omni-600M]], [[Laya]]) mettent un marqueur `<mask>` par option et lisent une tête de décision à chacun. [[Clef]] branche une tête de schéma conjointe sur un modèle Qwen gelé et note toutes les options de toutes les questions ensemble.
+- Les variantes à **encodeur** (d1-omni-600M, Laya) mettent un marqueur `<mask>` par option et lisent une tête de décision à chacun. Clef branche une tête de schéma conjointe sur un modèle Qwen gelé et note toutes les options de toutes les questions ensemble.
 
 ```mermaid
 flowchart LR
@@ -59,7 +59,7 @@ flowchart LR
 ### Ce que ce n'est pas
 - **Pas un LLM** : aucun texte, aucune explication, aucun raisonnement. Si la bonne réponse n'est dans aucune option, le modèle renvoie **quand même** une option de la liste.
 - **Pas du décodage contraint** : la garantie de type est la même, mais elle vient de la lecture sur un ensemble fermé de jetons, pas d'un masque appliqué pendant une génération ([[Constrained decoding]]).
-- **Pas un modèle de garde** : [[Llama Guard]] *génère* un court verdict ; un modèle de décision lit des probabilités.
+- **Pas un modèle de garde** : Llama Guard *génère* un court verdict ; un modèle de décision lit des probabilités.
 - **Pas un classifieur ordinaire** : les étiquettes entrent dans l'entrée, à l'appel.
 - **« 0 % d'erreur de type » n'est pas « 0 % d'erreur »** : le type est garanti, la réponse ne l'est pas.
 
@@ -94,9 +94,9 @@ Relevés le 2026-10-10 dans un document de synthèse, puis recoupés à la sourc
 - [[Structured outputs]] — le cadre des trois mécanismes (JSON mode, validation avec reprise, décodage contraint) ; un modèle de décision en est un quatrième, qui ne génère pas.
 - [[Calibration]] — la propriété que ces modèles disent viser : ECE, diagramme de fiabilité, recalibrage.
 - [[Routing and cascading]] — l'usage le plus courant : aiguiller une requête, et escalader sous un seuil de confiance.
-- [[Guardrails]] et [[Llama Guard]] — filtrer les entrées et les sorties d'un LLM ; un modèle de décision peut tenir ce rôle sans générer.
+- [[Guardrails]] et Llama Guard — filtrer les entrées et les sorties d'un LLM ; un modèle de décision peut tenir ce rôle sans générer.
 - [[Choisir entre règle, classifieur, modèle de décision et LLM]] · [[Décomposer une question en signaux étroits]] · [[Entraîner pour la calibration]] — les trois notions qui complètent celle-ci.
-- [[Clef]] · [[d1-3B]] · [[d1-omni-600M]] · [[Laya]] — les quatre fiches à poids ouverts, départagées dans [[Comparatif - Modèles de décision]].
+- Clef · d1-3B · d1-omni-600M · Laya — les quatre fiches à poids ouverts, départagées dans Comparatif - Modèles de décision.
 
 ## Pour aller plus loin
 

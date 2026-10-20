@@ -24,7 +24,7 @@ tags: [structured-output, classification, calibration, llm]
 
 ### Les questions sont indépendantes
 - Chez un LLM, empiler les questions dans un même appel dégrade les réponses : elles partagent un même bloc-notes de raisonnement (observation d'un testeur de Jev, un témoignage et non une mesure).
-- Chez un modèle de décision, l'état est lu **une fois** (le tronc), chaque question en est une **branche** : en ajouter ne dégrade pas les autres, et coûte peu (30 ms pour une question, 41 ms pour trois, sur Apple M5 Pro, mesure de Liquid pour [[d1-3B]]).
+- Chez un modèle de décision, l'état est lu **une fois** (le tronc), chaque question en est une **branche** : en ajouter ne dégrade pas les autres, et coûte peu (30 ms pour une question, 41 ms pour trois, sur Apple M5 Pro, mesure de Liquid pour d1-3B).
 
 ### Poser, recomposer, calibrer
 1. **Écrire les signaux avant de regarder le jeu de test.** Des signaux rédigés après lecture de la taxonomie du jeu de données « savent » comment il a été fabriqué : l'auteur du banc l'écrit lui-même.

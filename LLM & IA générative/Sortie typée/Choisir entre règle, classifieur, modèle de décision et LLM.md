@@ -13,7 +13,7 @@ tags: [structured-output, classification, routing, llm]
 
 - Quatre outils répondent à « que faire de cette entrée ? » : une **règle** (`if`), un **classifieur ajusté**, un [[Modèle de décision|modèle de décision]] et un **LLM**. Le moins cher qui tient la barre de qualité gagne.
 - **Le vrai concurrent d'un modèle de décision, c'est le `if`** : gratuit, instantané, déterministe, auditable, testable, sans réseau. Comparer un modèle de décision à un LLM ne mène nulle part (ils ne font pas le même travail) ; le comparer à une règle écrite à la main mène à une question tranchable.
-- Cette page donne la règle de décision. Les modèles eux-mêmes sont dans [[Clef]], [[d1-3B]], [[d1-omni-600M]] et [[Laya]].
+- Cette page donne la règle de décision. Les modèles eux-mêmes sont dans Clef, d1-3B, d1-omni-600M et Laya.
 
 ## Concepts clés
 
@@ -56,8 +56,8 @@ flowchart TD
 | Si… | Alors plutôt… | Raison |
 |---|---|---|
 | l'entrée est structurée et le prédicat exprimable | **une règle** | gratuite, déterministe, auditable |
-| un petit LLM est déjà auto-hébergé, avec un seul jeu de questions fixes | **ce LLM, lu sur les log-probabilités de jetons d'options** | c'est le mécanisme même de [[d1-3B]] ; on perd la calibration entraînée et le partage de tronc, pas le principe |
-| les catégories sont stables, ≥ 1 000 exemples étiquetés, volume élevé | **un classifieur ajusté** (encodeur de la famille BERT) ou [[Laya]] ajusté | coût nul par appel, aucune dépendance réseau, souvent 90 % et plus sur un domaine fermé |
+| un petit LLM est déjà auto-hébergé, avec un seul jeu de questions fixes | **ce LLM, lu sur les log-probabilités de jetons d'options** | c'est le mécanisme même de d1-3B ; on perd la calibration entraînée et le partage de tronc, pas le principe |
+| les catégories sont stables, ≥ 1 000 exemples étiquetés, volume élevé | **un classifieur ajusté** (encodeur de la famille BERT) ou Laya ajusté | coût nul par appel, aucune dépendance réseau, souvent 90 % et plus sur un domaine fermé |
 | la bonne réponse peut n'être dans aucune option | **un LLM** | un modèle de décision renvoie toujours une option de la liste |
 | il faut expliquer la décision à un auditeur | **un LLM** (ou une règle) | un modèle de décision ne produit aucun texte |
 | la décision est irréversible (suppression, paiement, accès) | **une règle d'abord** | le modèle complète, il n'autorise pas seul |
@@ -75,7 +75,7 @@ flowchart TD
 - **Escalade à trois étages.** Automatiser au-dessus d'un seuil, passer à un LLM entre deux seuils, à un humain en dessous : la forme est bonne ([[Routing and cascading]]), mais les seuils se posent **après recalibrage sur ses données**, par type de question. Une étude indépendante conclut « ne pas seuiller sur le champ `confidence` » pour Jev ([[Entraîner pour la calibration]]).
 - **Le testeur de la latence.** À 4 s, un classifieur LLM exige une heuristique qui décide quand l'appeler (un `if`) ; à 150 ms, l'appel est systématique et l'heuristique disparaît. C'est la vraie bascule, plus que le prix.
 - **Décision irréversible** : l'auteur de la vidéo d1 garde « une règle dure » devant les écrans de paiement et de connexion, parce que ses deux seuls échecs sur dix captures sont précisément ceux-là (arrêt demandé à 0,27 et 0,22). Dix cas fabriqués par un seul testeur : un comportement, pas un taux.
-- **Avant d'adopter, essayer** : 200 à 1 000 cas étiquetés, deux candidats ouverts au moins ([[Comparatif - Modèles de décision]]), la règle comme base, l'intervalle des écarts.
+- **Avant d'adopter, essayer** : 200 à 1 000 cas étiquetés, deux candidats ouverts au moins (Comparatif - Modèles de décision), la règle comme base, l'intervalle des écarts.
 
 ### Repères datés
 
