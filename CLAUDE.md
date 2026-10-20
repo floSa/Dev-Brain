@@ -96,6 +96,7 @@ d'usage commercial : une licence qui limite l'usage commercial (`source-availabl
 fermé mais gratuit en local est accepté, la première phrase de la fiche le dit. **Pas de page**
 pour un service payant, un service cloud seulement, un logiciel fermé et payant, ni pour une
 licence non vérifiée à la source (pas de fichier LICENSE). Ces cas se citent en texte simple.
+**Pas de modèles** (règle de floSa, 2026-10-20) : le brain décrit des technologies et des outils, jamais des modèles (poids de LLM, d'embedding, de reranker, d'OCR, de vision, de série temporelle). Un modèle se cite en texte simple dans la notion qui explique le sujet ; les outils qui utilisent un modèle restent permis.
 Ni Claude Code, ni Codex, ni Gemini CLI. Au moindre doute, demande.
 
 ## Ce que tu NE fais PAS sans confirmation explicite
