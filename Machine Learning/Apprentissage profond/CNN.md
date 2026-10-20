@@ -49,6 +49,7 @@ tags: [cnn, computer-vision, deep-learning]
 - [[Classification d'images]] / [[Détection d'objets]] / [[Segmentation]] — les tâches bâties sur un backbone convolutif.
 - [[Classification audio par spectrogramme]] — le CNN appliqué hors vision, sur des spectrogrammes audio.
 - [[Transformer architectures]] — le ViT remplace la convolution par l'[[Self-attention|attention]] sur des patchs : biais inductif plus faible, plus gourmand en données.
+- [[Histoire de l'IA (1943-2026)]] — le CNN de Fukushima, Waibel et LeCun, et ImageNet, GPU et AlexNet comme un seul événement.
 
 ## Pour aller plus loin
 

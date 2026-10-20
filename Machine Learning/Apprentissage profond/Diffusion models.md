@@ -47,6 +47,7 @@ tags: [generative-model, diffusion, deep-learning]
 - [[KL divergence]] — la borne variationnelle qui justifie l'objectif de débruitage.
 - [[Distillation]] — réduit le nombre de pas d'échantillonnage (consistency / turbo).
 - [[GANs]] — la famille générative que la diffusion a supplantée sur l'image (jeu adversarial unique vs débruitage itératif) ; encore utilisée en super-résolution et comme perte adversariale dans la distillation *turbo*.
+- [[Histoire de l'IA (1943-2026)]] — l'origine de la diffusion en 2015 et sa version compétitive en 2020, avant les produits de 2022.
 
 ## Pour aller plus loin
 

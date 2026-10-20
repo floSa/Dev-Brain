@@ -45,6 +45,7 @@ tags: [gan, generative-model, image-generation, deep-learning]
 - [[Image generation]] — l'application principale ; les générateurs actuels sont surtout des modèles de diffusion, les GAN y interviennent en super-résolution / accélération.
 - [[Jensen-Shannon divergence]] — ce que minimise le GAN original ; sa faiblesse motive le passage au transport optimal (WGAN).
 - [[Vision par ordinateur]] — la génération adversariale est l'un des versants **génératifs** de la vision.
+- [[Histoire de l'IA (1943-2026)]] — la paternité des GAN, disputée entre Goodfellow et al. (2014) et Schmidhuber (1992).
 
 ## Pour aller plus loin
 

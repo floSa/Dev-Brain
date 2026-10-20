@@ -71,6 +71,7 @@ tags: [supervised, deep-learning, classification, regression]
 - [[Kolmogorov-Arnold Networks]] — alternative récente : apprendre les activations plutôt que les poids.
 - [[Types de données et choix de modèle]] — quand un réseau se justifie.
 - [[Rétropropagation et différentiation automatique]] — comment le gradient d'un MLP se calcule, couche par couche.
+- [[Histoire de l'IA (1943-2026)]] — le perceptron de 1957-1958, le livre de 1969, la rétropropagation de 1986 et leurs prétendants.
 
 ## Pour aller plus loin
 
