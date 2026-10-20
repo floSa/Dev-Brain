@@ -47,6 +47,7 @@ tags: [tokenization, llm, nlp]
 - [[Decoding strategies]] — la génération produit des tokens un à un, dans ce même vocabulaire.
 - [[Perplexity]] — se calcule **par token**, donc dépend directement du tokenizer.
 - [[Context engineering]] — la fenêtre de contexte se mesure en tokens, pas en mots.
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — du caractère à l'octet, au mot, puis au token, de 2011 à GPT-3.
 
 ## Pour aller plus loin
 

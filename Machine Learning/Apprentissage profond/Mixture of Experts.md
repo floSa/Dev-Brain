@@ -75,6 +75,7 @@ tags: [mixture-of-experts, transformers, deep-learning, scaling-laws]
 - [[Fusion de modèles]] — construire un MoE à partir de modèles denses (upcycling, Branch-Train-MiX, mergekit-moe)
 - [[Dimensionner la mémoire d'un serveur LLM]] — tous les experts en mémoire : ce que ça fait au nombre d'utilisateurs.
 - [[Parallélisme en inférence]] — répartir les experts sur plusieurs GPU.
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — la couche d'experts de 2017 (137 milliards de paramètres) replacée dans la lignée.
 
 ## Pour aller plus loin
 

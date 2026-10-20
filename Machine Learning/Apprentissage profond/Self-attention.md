@@ -50,6 +50,7 @@ tags: [attention, transformers, deep-learning]
 - [[Multi-head Latent Attention]] — garde le softmax exact mais ne met en cache qu'une projection latente de rang faible.
 - [[Attention Residuals]] — le même mécanisme d'attention appliqué à l'axe **profondeur** (entre couches) au lieu de l'axe séquence.
 - [[Inference optimization]] — le KV-cache et le batching s'appuient directement sur la structure de l'attention.
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — de la récurrence à l'attention : le goulot de 2014 et le choix de 2017 de garder l'attention seule.
 
 ## Pour aller plus loin
 

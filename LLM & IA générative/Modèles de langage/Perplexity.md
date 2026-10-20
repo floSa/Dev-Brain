@@ -44,6 +44,7 @@ tags: [perplexity, llm, model-evaluation, nlp]
 - [[Cross-entropy]] — la perplexité en est l'exponentielle ; même information, autre échelle.
 - [[Shannon entropy]] — l'entropie dont la perplexité est l'exponentielle ; facteur de branchement effectif.
 - Alternative pour évaluer un LLM applicatif : métriques **extrinsèques** (exactitude sur tâche, jugement humain ou LLM-juge) plutôt qu'intrinsèques.
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — la perplexité de 51,3 à 28,0 sur « 1B Word », et ce que ces chiffres comparent.
 
 ## Pour aller plus loin
 

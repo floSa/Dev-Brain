@@ -53,6 +53,7 @@ tags: [transformers, deep-learning, attention, nlp]
 - [[State Space Models]] — Mamba et alternatives sous-quadratiques au Transformer.
 - [[Attention linéaire]] — le cadre qui unifie ces alternatives : attention sans softmax = mémoire associative à état fixe.
 - [[Architectures hybrides LLM]] — ce que sont réellement les modèles de 2026 : ni Transformer pur, ni linéaire pur.
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — les ancêtres du Transformer et les modèles qui en dérivent, de BERT à GPT-3.
 
 ## Pour aller plus loin
 
