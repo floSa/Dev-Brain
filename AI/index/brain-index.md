@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1225 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1234 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -498,8 +498,12 @@
 - **LangChain** — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 
 ### llm/sortie-structuree
+- **Clef** — Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur.
+- **d1-3B** — Modèle de décision à poids ouverts de Liquid AI (3,1 Md, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel, à lire avant de livrer chez un client) — un état en texte ou en image et des questions typées donnent une probabilité par option en une passe, sans texte ; 6,25 Go en BF16, 8 ms sur RTX 4090 et 30 ms sur Apple M5 Pro selon Liquid.
+- **d1-omni-600M** — Modèle de décision expérimental à poids ouverts de Liquid AI (587 M, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel) — un état en texte avec une image ou un clip audio de 30 s en anglais donne des probabilités typées en une passe ; 2,35 Go en FP32 ; aucune latence publiée par l'éditeur ; 2 documents sur 8 triés dans l'essai d'un tiers.
 - **Guidance** — Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.
 - **Instructor** — Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
+- **Laya** — Modèle de décision à poids ouverts de Convai Innovations (Apache-2.0), à ajuster avant usage — encodeur ModernBERT de 421 M (mmBERT de 322 M en multilingue) dont les poids de base font 0,362 sur son banc, sous la classe majoritaire (0,461), contre 0,766 pour le checkpoint ajusté ; texte seul, 512 à 1 024 tokens de contexte ; 0,84 Go en FP16, 33 ms sur Tesla T4 en multilingue.
 - **Outlines** — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.
 
 ### llm/text-to-sql
@@ -1024,7 +1028,11 @@
 - **Taille du cache KV par token** — domaines : ai-eng, mlops, ml-eng · alias : formule du cache KV, octets de cache par token, KV cache size, empreinte du cache KV, kappa, cache KV global, réduction du cache KV, compression du cache KV
 
 ### llm/sortie-structuree
+- **Choisir entre règle, classifieur, modèle de décision et LLM** — domaines : ai-eng, ml-eng · alias : règle ou modèle de décision, le vrai concurrent est le if, quand utiliser un modèle de décision, règle contre classifieur contre LLM
 - **Constrained decoding** — domaines : ai-eng · alias : génération contrainte, décodage contraint, structured generation, grammar-constrained decoding
+- **Décomposer une question en signaux étroits** — domaines : ai-eng, ml-eng · alias : signaux étroits, décomposition en signaux, plusieurs questions étroites, question large contre signaux, décomposition de la décision
+- **Entraîner pour la calibration** — domaines : ai-eng, ml-eng · alias : RLCD, règle de notation strictement propre, strictly proper scoring rule, score propre, calibration à l'entraînement, récompense calibrée
+- **Modèle de décision** — domaines : ai-eng, ml-eng · alias : modèles de décision, decision model, decision models, System One, modèle System One, décision typée, modèle à décisions typées
 - **Structured outputs** — domaines : ai-eng · alias : sorties structurées, sortie structurée, JSON mode
 
 ### llm/text-to-sql
@@ -1572,6 +1580,9 @@
 
 ### llm/runtime
 - **Comparatif - Exécution & serving LLM** — —
+
+### llm/sortie-structuree
+- **Comparatif - Modèles de décision** — —
 
 ### llm/text-to-sql
 - **Comparatif - Frameworks text-to-SQL** — —

@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1225,
+  "count": 1234,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -433,8 +433,16 @@
     ],
     "calibration": [
       "Calibration",
+      "Clef",
+      "Comparatif - Modèles de décision",
       "De la prévision probabiliste à la quantité commandée",
+      "Décomposer une question en signaux étroits",
+      "Entraîner pour la calibration",
       "Hallucinations des LLM",
+      "Laya",
+      "Modèle de décision",
+      "d1-3B",
+      "d1-omni-600M",
       "Évaluation de modèles"
     ],
     "causal-inference": [
@@ -513,12 +521,19 @@
       "Apprentissage supervisé",
       "Arbres de décision",
       "Calibration",
+      "Choisir entre règle, classifieur, modèle de décision et LLM",
       "Classification",
       "Classification de texte",
       "Classification metrics",
+      "Clef",
+      "Comparatif - Modèles de décision",
       "Cross-entropy",
+      "Décomposer une question en signaux étroits",
+      "Entraîner pour la calibration",
       "Extra Trees",
       "Imbalanced classification",
+      "Laya",
+      "Modèle de décision",
       "Méthodes à noyau",
       "Naive Bayes",
       "Perceptron et MLP",
@@ -529,6 +544,8 @@
       "Socle",
       "Types de données et choix de modèle",
       "aeon",
+      "d1-3B",
+      "d1-omni-600M",
       "imbalanced-learn",
       "k-NN",
       "sktime",
@@ -1395,12 +1412,15 @@
     "edge-inference": [
       "Comparatif - Runtimes d'inférence CPU et edge",
       "Inférence en bordure - modèles sur du matériel d'atelier",
+      "Laya",
       "LiteRT",
       "ONNX Runtime",
       "OpenVINO",
       "Pattern - Inspection visuelle en ligne de production",
       "TensorRT",
-      "anomalib"
+      "anomalib",
+      "d1-3B",
+      "d1-omni-600M"
     ],
     "education": [
       "OpenMAIC"
@@ -2230,7 +2250,9 @@
       "Canari de dérive d'un LLM en API",
       "Ce qui change derrière une API",
       "Chain-of-Thought",
+      "Choisir entre règle, classifieur, modèle de décision et LLM",
       "Claude Agent SDK",
+      "Clef",
       "Cline",
       "Code and math benchmarks",
       "Comparatif - Fine-tuning LLM",
@@ -2251,6 +2273,7 @@
       "DeepSeek-V4.1-Flash",
       "Dify",
       "Dimensionner la mémoire d'un serveur LLM",
+      "Décomposer une question en signaux étroits",
       "E2B",
       "Effort de raisonnement et courbe coût-qualité",
       "Flowise",
@@ -2304,6 +2327,7 @@
       "MiMo-V2.6",
       "Mistral",
       "Modal",
+      "Modèle de décision",
       "Modèles de langage",
       "Multi-Token Prediction",
       "Multi-agent systems",
@@ -2906,6 +2930,7 @@
     "multimodal": [
       "Apprentissage contrastif",
       "Claude Video",
+      "Clef",
       "ColPali",
       "Image generation",
       "LanceDB",
@@ -2918,7 +2943,9 @@
       "Speech models",
       "Superwhisper",
       "Video generation",
-      "Vision Language Models"
+      "Vision Language Models",
+      "d1-3B",
+      "d1-omni-600M"
     ],
     "multiple-testing": [
       "Correction des tests multiples"
@@ -3673,6 +3700,7 @@
       "Apprentissage par renforcement",
       "Bellman equations",
       "Comparatif - Reinforcement learning",
+      "Entraîner pour la calibration",
       "Exploration vs exploitation",
       "Fine-tuning",
       "GRPO",
@@ -3846,6 +3874,7 @@
       "Reward shaping and hacking"
     ],
     "routing": [
+      "Choisir entre règle, classifieur, modèle de décision et LLM",
       "OmniRoute",
       "OpenRouter",
       "Passerelles",
@@ -4220,7 +4249,8 @@
       "Claude Video",
       "Médias",
       "Speech models",
-      "Superwhisper"
+      "Superwhisper",
+      "d1-omni-600M"
     ],
     "sso": [
       "Authelia",
@@ -4305,15 +4335,24 @@
       "Pattern - Pipeline scraping → matching → optimisation"
     ],
     "structured-output": [
+      "Choisir entre règle, classifieur, modèle de décision et LLM",
+      "Clef",
       "Comparatif - Frameworks LLM",
+      "Comparatif - Modèles de décision",
       "Constrained decoding",
+      "Décomposer une question en signaux étroits",
+      "Entraîner pour la calibration",
       "Guidance",
       "Instructor",
       "LLM & IA générative",
+      "Laya",
+      "Modèle de décision",
       "Outlines",
       "PydanticAI",
       "Sortie typée",
       "Structured outputs",
+      "d1-3B",
+      "d1-omni-600M",
       "needle",
       "tool-use"
     ],
@@ -4455,6 +4494,7 @@
     "text-classification": [
       "Classification de texte",
       "Comparatif - NLP",
+      "Laya",
       "NLP",
       "NLTK",
       "SetFit"
@@ -18433,6 +18473,82 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Sortie typée/Choisir entre règle, classifieur, modèle de décision et LLM.md",
+      "nom": "Choisir entre règle, classifieur, modèle de décision et LLM",
+      "alias": [
+        "règle ou modèle de décision",
+        "le vrai concurrent est le if",
+        "quand utiliser un modèle de décision",
+        "règle contre classifieur contre LLM"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "structured-output",
+        "classification",
+        "routing",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Clef.md",
+      "nom": "Clef",
+      "alias": [
+        "Clef-flash",
+        "Clef-omni",
+        "Cloudflare Clef",
+        "Cloudflare/clef"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur.",
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "multimodal",
+        "llm"
+      ],
+      "alternatives": [
+        "[[d1-3B]]",
+        "[[Laya]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Comparatif - Modèles de décision.md",
+      "nom": "Comparatif - Modèles de décision",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Sortie typée/Constrained decoding.md",
       "nom": "Constrained decoding",
       "alias": [
@@ -18453,6 +18569,65 @@
         "decoding",
         "structured-output",
         "tokenization"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Décomposer une question en signaux étroits.md",
+      "nom": "Décomposer une question en signaux étroits",
+      "alias": [
+        "signaux étroits",
+        "décomposition en signaux",
+        "plusieurs questions étroites",
+        "question large contre signaux",
+        "décomposition de la décision"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Entraîner pour la calibration.md",
+      "nom": "Entraîner pour la calibration",
+      "alias": [
+        "RLCD",
+        "règle de notation strictement propre",
+        "strictly proper scoring rule",
+        "score propre",
+        "calibration à l'entraînement",
+        "récompense calibrée"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "calibration",
+        "reinforcement-learning",
+        "structured-output",
+        "classification"
       ],
       "alternatives": null,
       "complements": null,
@@ -18506,6 +18681,68 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Laya.md",
+      "nom": "Laya",
+      "alias": [
+        "Laya decision model",
+        "laya-typed-decisions",
+        "laya-multilingual",
+        "convaiinnovations/laya",
+        "Convai Laya"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "modele",
+      "langage": "Python",
+      "domaines": null,
+      "pitch": "Modèle de décision à poids ouverts de Convai Innovations (Apache-2.0), à ajuster avant usage — encodeur ModernBERT de 421 M (mmBERT de 322 M en multilingue) dont les poids de base font 0,362 sur son banc, sous la classe majoritaire (0,461), contre 0,766 pour le checkpoint ajusté ; texte seul, 512 à 1 024 tokens de contexte ; 0,84 Go en FP16, 33 ms sur Tesla T4 en multilingue.",
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "text-classification",
+        "edge-inference"
+      ],
+      "alternatives": [
+        "[[Clef]]",
+        "[[d1-3B]]",
+        "[[d1-omni-600M]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/Modèle de décision.md",
+      "nom": "Modèle de décision",
+      "alias": [
+        "modèles de décision",
+        "decision model",
+        "decision models",
+        "System One",
+        "modèle System One",
+        "décision typée",
+        "modèle à décisions typées"
+      ],
+      "role": "notion",
+      "categorie": "llm/sortie-structuree",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Sortie typée/Outlines.md",
@@ -18577,6 +18814,66 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/d1-3B.md",
+      "nom": "d1-3B",
+      "alias": [
+        "d1",
+        "Liquid d1-3B",
+        "LiquidAI/d1-3B",
+        "Open d1",
+        "Liquid d1"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle de décision à poids ouverts de Liquid AI (3,1 Md, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel, à lire avant de livrer chez un client) — un état en texte ou en image et des questions typées donnent une probabilité par option en une passe, sans texte ; 6,25 Go en BF16, 8 ms sur RTX 4090 et 30 ms sur Apple M5 Pro selon Liquid.",
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "multimodal",
+        "edge-inference"
+      ],
+      "alternatives": [
+        "[[Clef]]",
+        "[[d1-omni-600M]]",
+        "[[Laya]]"
+      ],
+      "complements": null,
+      "maturite": "beta"
+    },
+    {
+      "path": "LLM & IA générative/Sortie typée/d1-omni-600M.md",
+      "nom": "d1-omni-600M",
+      "alias": [
+        "d1-omni",
+        "Liquid d1-omni",
+        "LiquidAI/d1-omni-600M"
+      ],
+      "role": "brique",
+      "categorie": "llm/sortie-structuree",
+      "famille": "modele",
+      "langage": null,
+      "domaines": null,
+      "pitch": "Modèle de décision expérimental à poids ouverts de Liquid AI (587 M, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel) — un état en texte avec une image ou un clip audio de 30 s en anglais donne des probabilités typées en une passe ; 2,35 Go en FP32 ; aucune latence publiée par l'éditeur ; 2 documents sur 8 triés dans l'essai d'un tiers.",
+      "tags": [
+        "structured-output",
+        "classification",
+        "calibration",
+        "multimodal",
+        "speech",
+        "edge-inference"
+      ],
+      "alternatives": [
+        "[[d1-3B]]",
+        "[[Laya]]"
+      ],
+      "complements": null,
+      "maturite": "experimental"
     },
     {
       "path": "LLM & IA générative/Tarif catalogue contre coût par tâche.md",
