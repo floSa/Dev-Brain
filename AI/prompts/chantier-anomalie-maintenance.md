@@ -45,6 +45,7 @@ on-prem industriel, ESN.
 
 17. **Nature affichée (règle de floSa, 2026-10-07).** La première phrase de chaque brique dit ce que c'est, en mots simples : agent, skill, jeu de skills, serveur MCP, outil en ligne de commande, application à héberger, plugin, bibliothèque, format. Les alternatives payantes (Jira, Linear, Notion…) se citent en texte simple dans la section Alternatives, sans page.
 18. **Fin de lot : une seule branche, main, tout poussé (règle de floSa, 2026-10-16).** Ne pousse jamais une autre branche que `main` (`git push origin HEAD:main`). Le contrôle `.githooks/pre-push` refuse le reste. Avant ta synthèse, lance `bash AI/scripts/verifier_depot.sh` : il doit afficher « GitHub : main seule » et « main local = origin/main », sans ligne PROBLÈME. Cite ces deux lignes dans ta synthèse. Un seul PROBLÈME : corrige avant de rendre la main.
+19. **Pas de modèles (règle de floSa, 2026-10-20).** Le brain décrit des **technologies et des outils**, jamais des **modèles** (poids de LLM, d'embedding, de reranker, d'OCR, de vision, de série temporelle, de décision, de sûreté). Aucune fiche de brique pour un modèle (`famille: modele`). Un modèle se cite en **texte simple**, dans la notion qui explique le sujet. Les outils qui **utilisent** un modèle (bibliothèque, serveur, moteur d'OCR, éditeur) restent permis. Les notions qui expliquent un concept restent permises. Au moindre doute sur un candidat, demande.
 
 ## Vagues
 
@@ -72,6 +73,7 @@ on-prem industriel, ESN.
 | 20 | Lots 33, 34 (en parallèle) | Lots 31 et 32 clos et poussés |
 | 21 | Lots 35, 36 (en parallèle) | Lots 33 et 34 clos et poussés |
 | 22 | Lot 37 | Lots 35 et 36 clos et poussés |
+| 23 | Lot 38 | Lots 1 à 37 clos et poussés |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -576,6 +578,24 @@ Pages de culture, datées, avec leurs schémas Mermaid (le document Généalogie
 
 Briques : aucune par défaut. Si tu juges qu'un outil manque vraiment (verl, OpenRLHF, Lean 4, Darwin Gödel Machine), vérifie sa licence au dépôt et **propose-le dans ta synthèse** plutôt que de le créer. Texte simple : AlphaEvolve (fermé), les modèles fermés. Écarte : prix et classements de benchmarks, comptes arXiv de 2026, démos.
 
+## Lot 38 — Retrait des fiches de modèles (vague 23)
+
+floSa (2026-10-20) : « Je ne veux pas de modèles dans mon DevBrain, seulement des technologies et des outils. S'il y en avait, je n'en veux pas. Corrige. » Cette consigne vaut **accord explicite de suppression** pour les fiches ci-dessous et pour la conversion des liens qui y mènent. Sauvegarde déjà faite : `Documents\DevBrain-sauvegardes\devbrain-avant-retrait-modeles-20261020.bundle`. L'historique git garde chaque page.
+
+**Pages à retirer** (`role: brique`, `famille: modele` ; vérifie la liste dans l'index avant d'agir : `python3 AI/scripts/query_index.py --famille modele --role brique`). 28 attendues : LightOnOCR-3, Prometheus-Eval, DeepSeek-V4.1-Flash, Gemma, MiMo-V2.6, Mistral, Qwen, gpt-oss, Jina Reranker, bge-reranker, needle, Clef, Laya, d1-3B, d1-omni-600M, Qwen-Image, Qwen-Image-2.1, Qwen-Image-Layered, EmbeddingGemma 2, Qwen3-Embedding, Qwen3-VL-Embedding, SigLIP 2, bge-m3, GLiNER, Chronos, Ultralytics YOLO, segment-anything, Llama Guard. Quatre cas limites, à retirer aussi puisque leur nature déclarée est « modèle », mais à **signaler dans ta synthèse** pour que floSa puisse en rétablir un : Ultralytics YOLO (aussi un cadre logiciel), segment-anything, GLiNER, Prometheus-Eval (aussi une bibliothèque). **Ne retire pas** : Indra OCR, Surya, olmOCR, DeepSeek Harness, Prophet, anomalib, RAGatouille, Superwhisper : ce sont des outils. Si tu trouves d'autres fiches qui sont en réalité des modèles malgré une autre nature, **liste-les dans ta synthèse sans les retirer**.
+
+**Procédure** (celle d'`enrichir-brain`, « mode mise à jour », cas suppression ; applique-la page par page, une page ou un petit groupe par commit, `git rm` et jamais `rm`) :
+
+1. Pour chaque page retirée, relève ses consommateurs : lignes `alternatives:` et `complements:` des autres briques, liens `[[Nom]]` et `[[Nom|texte]]` dans les corps de page, puces des comparatifs, corps de hubs, `Home.md`.
+2. **Liens** : remplace `[[Nom]]` par `Nom` et `[[Nom|texte]]` par `texte`, dans les briques, les hubs, les comparatifs **et les notions** (pour les notions de floSa, c'est la **seule** modification autorisée : retirer les crochets, rien d'autre). Retire le nom des listes `alternatives:` et `complements:` ; si une brique se retrouve avec `alternatives:` vide, laisse-la telle quelle (avertissement R20 accepté).
+3. **Comparatifs** : un comparatif dont les membres sont tous des modèles disparaît (page `.md` et `.base`) : attendus « Comparatif - Modèles de langage open weights » et « Comparatif - Modèles de décision » ; examine « Comparatif - Rerankers » et « Comparatif - Embeddings » : s'il reste moins de deux membres qui ne sont pas des modèles, retire-le aussi ; sinon retire seulement les lignes et puces des modèles et ajuste « Ce qui départage ». Dans « Comparatif - Garde-fous pour LLM », retire seulement la ligne de Llama Guard. Mets à jour le hub `Comparatifs` (zone AUTO régénérée) et les `## Voir aussi`.
+4. **Hubs** : retire les mentions dans les corps des hubs (sections « Choisir » et « Ce qu'il faut comprendre ») en conservant le sens ; les zones AUTO se régénèrent.
+5. Les **notions** qui expliquent un concept (« Modèle de décision », « Choisir un modèle d'embedding », « Lire un score publié », etc.) **restent**. Elles citent les modèles en texte simple.
+6. **Régénère** (build_index, build_mocs, build_bandeau, build_links, build_carte), puis `check_brain`, `check_arbo`, `audit_inventaire`. **Aucun lien non résolu** n'est toléré. Recompte `Home.md` et `CLAUDE.md`. Une `categorie:` dont il ne reste que des notions reste valide.
+7. N'écris **rien** dans `AI/migration/`, `AI/sessions/`, `AI/audit/` ni dans l'historique du plan (les lots passés gardent leur texte).
+
+**Livrables dans ta synthèse** : la liste des pages retirées, des comparatifs retirés ou modifiés, le nombre de liens convertis, les cas limites, les fiches douteuses non retirées, et le compte avant/après de briques, de notions et de comparatifs.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -614,3 +634,4 @@ Briques : aucune par défaut. Si tu juges qu'un outil manque vraiment (verl, Ope
 - [x] Lot 35 — RAG : droits, multimodal, hiérarchique
 - [x] Lot 36 — agents : garde-fous hors modèle
 - [x] Lot 37 — fondamentaux : méthodes et culture
+- [ ] Lot 38 — retrait des fiches de modèles
