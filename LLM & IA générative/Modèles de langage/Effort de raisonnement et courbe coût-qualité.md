@@ -73,7 +73,7 @@ De `medium` à `max` : 7 points pour 4,5 fois le prix (5,98 ÷ 1,34 = 4,46). Un 
 - [[Routing and cascading]] — la même idée à l'échelle de la requête : escalader vers plus cher seulement si nécessaire.
 - [[Speculative decoding]] — accélérer sans changer la réponse, à ne pas confondre avec baisser l'effort.
 - [[Chain-of-Thought]] — l'ancêtre à la main du raisonnement réglable.
-- [[DeepSeek-V4.1-Flash]] — un modèle à poids ouverts dont l'effort maximal consomme jusqu'à 2,5 fois plus de tokens.
+- DeepSeek-V4.1-Flash — un modèle à poids ouverts dont l'effort maximal consomme jusqu'à 2,5 fois plus de tokens.
 
 ## Pour aller plus loin
 

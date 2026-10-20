@@ -56,14 +56,14 @@ tags: [llm, local-llm, self-hosted]
 - **Noter trois choses** dans le cahier des charges : l'identifiant de la licence, la **date de lecture**, et le dépôt exact. La licence d'une famille change entre deux générations et entre deux tailles.
 - **Décider qui est licencié** avant de livrer : l'ESN qui héberge, ou le client qui reçoit les poids et les opère. Ce choix fait passer un même modèle d'une clause à l'autre.
 - **Avant tout finetuning livrable** : relire la clause de dérivé ; pour Llama, prévoir le nom imposé ; pour un MIT modifié à seuil, vérifier le revenu du licencié.
-- **Le vault** range les fiches dans [[Comparatif - Modèles de langage open weights]] : Apache-2.0 sans condition pour [[gpt-oss]], Gemma 4 et le 27 B de [[Qwen]] ; conditions par modèle pour [[Mistral]] et le reste de Qwen.
+- **Le vault** range les fiches dans Comparatif - Modèles de langage open weights : Apache-2.0 sans condition pour gpt-oss, Gemma 4 et le 27 B de Qwen ; conditions par modèle pour Mistral et le reste de Qwen.
 
 ## Approches voisines & alternatives
 
-- [[Qwen]] · [[Mistral]] · [[Gemma]] · [[gpt-oss]] — les quatre familles, avec leur licence lue dépôt par dépôt.
-- [[DeepSeek-V4.1-Flash]] · [[MiMo-V2.6]] — deux familles sous MIT, lues le 2026-10-20 : fichier `LICENSE` pour la première, champ de carte sans fichier pour la seconde.
-- [[Qwen-Image-2.1]] — une licence de recherche (`qwen-research`) dans une lignée restée sous Apache-2.0 ([[Qwen-Image]], [[Qwen-Image-Layered]]).
-- [[Comparatif - Modèles de langage open weights]] — ce que chaque licence permet à une ESN, famille par famille.
+- Qwen · Mistral · Gemma · gpt-oss — les quatre familles, avec leur licence lue dépôt par dépôt.
+- DeepSeek-V4.1-Flash · MiMo-V2.6 — deux familles sous MIT, lues le 2026-10-20 : fichier `LICENSE` pour la première, champ de carte sans fichier pour la seconde.
+- Qwen-Image-2.1 — une licence de recherche (`qwen-research`) dans une lignée restée sous Apache-2.0 (Qwen-Image, Qwen-Image-Layered).
+- Comparatif - Modèles de langage open weights — ce que chaque licence permet à une ESN, famille par famille.
 - [[Small Language Models]] — les modèles compacts exploitables en local, sans les répéter ici.
 - [[Fine-tuning]] — ce qui produit un dérivé, donc ce qui déclenche la clause de dérivé ; [[LoRA et QLoRA]] pour l'adaptateur.
 - [[Unsloth]] · [[TRL]] — finetuning de modèles sous licence d'éditeur ou Apache-2.0.
@@ -71,7 +71,7 @@ tags: [llm, local-llm, self-hosted]
 - [[HuggingFace]] — d'où viennent les poids ; certains dépôts sont à accès sur demande.
 - [[LLM benchmarks]] — le critère qui n'est pas ici : la licence se lit avant les classements.
 - [[Fusion de modèles]] — un modèle fusionné hérite des licences de ses parents
-- [[d1-3B]] — une licence à seuil de chiffre d'affaires (10 M$), gratuite sous le seuil, à lire avant de livrer chez un client · [[Clef]] et [[Laya]] — Apache-2.0 lue dans le fichier du dépôt.
+- d1-3B — une licence à seuil de chiffre d'affaires (10 M$), gratuite sous le seuil, à lire avant de livrer chez un client · Clef et Laya — Apache-2.0 lue dans le fichier du dépôt.
 
 ## Pour aller plus loin
 

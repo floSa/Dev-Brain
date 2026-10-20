@@ -27,7 +27,7 @@ tags: [reasoning, llm, alignment]
 - Le [[Chain-of-Thought|chain-of-thought]] *prompté* demande à un LLM standard de détailler ses étapes ; un modèle de raisonnement l'a **internalisé** par entraînement et produit souvent une trace **cachée**.
 
 ### Exemples
-- o1 / o3 (OpenAI, trace cachée), DeepSeek-R1 (ouvert, trace visible, janvier 2025) ; en poids ouverts aujourd'hui : [[gpt-oss]] (raisonnement réglable low / medium / high), Qwen3.8 (`reasoning_effort` xhigh / medium / low), Mistral Small 4 (`reasoning_effort` none / high) et Ministral 3 Reasoning, Gemma 4 (mode pensée activable). Voir [[Qwen]], [[Mistral]], [[Gemma]].
+- o1 / o3 (OpenAI, trace cachée), DeepSeek-R1 (ouvert, trace visible, janvier 2025) ; en poids ouverts aujourd'hui : gpt-oss (raisonnement réglable low / medium / high), Qwen3.8 (`reasoning_effort` xhigh / medium / low), Mistral Small 4 (`reasoning_effort` none / high) et Ministral 3 Reasoning, Gemma 4 (mode pensée activable). Voir Qwen, Mistral, Gemma.
 
 ## Les maths, simplement
 
@@ -50,7 +50,7 @@ tags: [reasoning, llm, alignment]
 - [[Calculs adaptatifs]] — l'autre échelle d'adaptation du calcul : profondeur variable **dans** une passe, contre nombre de tokens de réflexion **entre** les passes. C'est le second qui a percé industriellement.
 - [[GRPO]], [[RL for LLMs]], [[Reward modeling]] — la mécanique d'entraînement détaillée.
 - Servir ces modèles : [[vLLM]], [[SGLang]] (débit sur longues sorties).
-- Voir aussi : [[Licences de modèles open weights]], [[Comparatif - Modèles de langage open weights]], [[gpt-oss]], [[Qwen]], [[Mistral]].
+- Voir aussi : [[Licences de modèles open weights]], Comparatif - Modèles de langage open weights, gpt-oss, Qwen, Mistral.
 - [[Effort de raisonnement et courbe coût-qualité]] — le réglage d'effort et ce que chaque cran rapporte, chiffres à l'appui.
 - [[Récompense vérifiable (RLVR)]] — la source de récompense qui a rendu ces modèles courants.
 

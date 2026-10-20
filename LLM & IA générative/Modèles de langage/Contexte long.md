@@ -71,7 +71,7 @@ tags: [llm, context-engineering, attention, inference-optimization, positional-e
 ### Longueurs annoncées (état lu le 2026-10-02)
 
 - **Claude** : fenêtre de 1 M de jetons pour Fable 5.1, Opus 5.5, Sonnet 5.5 et d'autres modèles récents, 200 k pour Sonnet 4.5 (documentation Anthropic) ; 1 M par défaut, sans en-tête bêta, au tarif standard.
-- **Poids ouverts** : Qwen3.8-2.4T-A95B, 262 144 en natif, extensible à environ 1 010 000 (carte du modèle) ; Mistral Medium 3.5 et Gemma 4 31B, 262 144 dans la config (256 k annoncés) ; gpt-oss-120b, 131 072. Voir [[Qwen]], [[Mistral]], [[Gemma]], [[gpt-oss]].
+- **Poids ouverts** : Qwen3.8-2.4T-A95B, 262 144 en natif, extensible à environ 1 010 000 (carte du modèle) ; Mistral Medium 3.5 et Gemma 4 31B, 262 144 dans la config (256 k annoncés) ; gpt-oss-120b, 131 072. Voir Qwen, Mistral, Gemma, gpt-oss.
 - Les cartes de modèles publient aussi des scores RULER ou MRCR : ce sont des chiffres de constructeur, jamais reproduits ici.
 
 ## Les maths, simplement
