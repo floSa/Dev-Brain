@@ -1,0 +1,36 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de rôle garde les notions
+    # (Sandboxing de code généré, Isolation par politique déclarative…) hors de
+    # la vue. Le tag `sandbox` réunit des briques rangées sous trois catégories
+    # (security/ia, compute/a-la-demande, llm/agent-de-code) : aucune valeur de
+    # catégorie ne porte ce thème, et le comparatif n'en crée pas.
+    - role == "brique"
+    - file.hasTag("sandbox")
+views:
+  - type: table
+    name: Isolation d'exécution d'un agent
+    order:
+      - file.name
+      - pitch
+      - famille
+      - licence_type
+      - hosted
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Auto-hébergeables
+    filters:
+      and:
+        - hosted.contains("self")
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - maturite
+    sort:
+      - property: file.name
+        direction: asc
