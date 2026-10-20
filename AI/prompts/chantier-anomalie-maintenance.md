@@ -504,6 +504,32 @@ Notions (existantes : « LLM benchmarks », « Reasoning models », « Licences 
 
 Briques (poids ouverts, sur site ; vérifie chaque licence au dépôt) : **DeepSeek-V4.1-Flash** (MIT selon le document), **MiMo-V2.6** (Flash et Pro, MIT), **Qwen-Image** et **Qwen-Image-Layered** (Apache-2.0 selon le document : à relire), **Qwen-Image-2.1** (licence `qwen-research`, non commerciale : accepté pour floSa, mais dis-le dans la première phrase et déconseille toute livraison à un client). Pas de page pour les modèles fermés ou payants (Claude, GPT-6, Gemini, Grok). Comparatif : ajoute les nouvelles briques au comparatif des modèles de langage open weights s'il existe, sinon propose-le.
 
+## Lot 33 — Modèles de décision (vague 20)
+
+Une famille absente du brain : les modèles qui répondent à une question par une **valeur typée avec sa probabilité** (booléen, score, catégorie), en une seule passe, au lieu de générer du texte. Sources : `Modeles_de_Decision_Synthese_Jev_Laya_Clef_d1`, `Jev_System_One_Decisions_Typees`, `Jev_Merite-t-il_la_Hype_RLCD`, `Laya_Modele_de_Decision_Open_Weights`, `Cloudflare-Clef_vs_Jev_Modeles_de_Decision`. Aucun de ces documents n'a de schéma Mermaid ni de code exécuté : les schémas sont dans leurs `slides/` (ouvre-les) ; refais-les en Mermaid. Les latences ne valent que rapportées à leur matériel : ne les compare jamais entre elles.
+
+Notions (relie-toi à « Calibration », « Constrained decoding », « Routing and cascading », « Licences de modèles open weights », « LLM benchmarks », « Lire un score publié », « Mesurer une latence » ; ne les réécris pas) :
+
+1. **Modèle de décision** — ce que c'est : un état, des questions typées (`null`, `choice`, `score`), une passe avant, les logits des jetons d'options, un tronc partagé ; ce que ça n'est pas (un LLM).
+2. **Choisir : règle, classifieur ajusté, modèle de décision ou LLM** — les cinq conditions et la règle de décision en cinq lignes du document Jev (§7) ; le vrai concurrent est le `if`.
+3. **Décomposer une question en signaux étroits** — pourquoi plusieurs questions étroites valent mieux qu'une large (exemple de l'hameçonnage de 62,6 % à 95 %).
+4. **Entraîner pour la calibration** — règles de notation strictement propres ; à **dater** : les recettes viennent de trois éditeurs, sans mesure indépendante.
+
+Briques (poids ouverts, sur site ; vérifie chaque licence au dépôt) : **Clef** et **Clef-flash** et **Clef-omni** (Cloudflare, Apache-2.0 selon les documents ; une fiche par modèle ou une fiche de famille, au plus clair), **Laya** (Convai, Apache-2.0 ; dis « à ajuster » dans la première phrase : le score de vitrine vient d'un checkpoint ajusté), **d1-3B** et **d1-omni-600M** (Liquid, LFM Open License : gratuit sous un seuil de chiffre d'affaires ; accepté pour floSa, mais dis le cas de l'intégrateur qui déploie chez un client). **Jev** : texte simple, pas de page (API fermée). Texte simple aussi : GLiDE, GLiNER2.5-Decide, Perplexity Decider, Microsoft-Decision-1. Comparatif : **Comparatif - Modèles de décision** (`.md` + `.base`), avec licence, taille, entrées, mémoire, sortie typée, score daté ; les latences en lignes par matériel. Relie-le au comparatif « Garde-fous pour LLM » seulement si c'est pertinent (lien seul).
+
+## Lot 34 — OCR et documents (vague 20)
+
+Sources : `LightOnOCR-3_Famille_0.8B_1B_4B_Test_Local` et `Indra-OCR_1M_de_Parametres_Test_Local`. Ce sont des tests locaux de floSa (MacBook Air M5) : garde la méthode de banc de test et le matériel nommé. Les mesures sont auto-rapportées par les éditeurs ou par floSa : dis lesquelles.
+
+Notions (relie-toi à « OCR classique vs modèles vision-langage… », « RAG visuel », « Chunking strategies », « Plafond de débit d'un GPU », « Mesurer une latence » ; ne les réécris pas) :
+
+1. **Évaluer un OCR** — taux d'erreur de caractères, F1 de boîtes à IoU 0,5, erreur absolue sur un graphique, banc à vérité terrain, annoncer le nombre de pages testées.
+2. **OCR vision-langage en une passe avec grounding** — une génération donne le texte, l'étiquette et la boîte de chaque bloc ; ce que ça change contre un pipeline en étages.
+3. **Cascade OCR et contrôle arithmétique des factures** — un petit OCR d'abord, un gros modèle sur les lignes douteuses (t = tI + f·tL) ; un total qui ne se recalcule pas révèle un chiffre mal lu. Si le sujet est assez structuré, propose-le en pattern dans ta synthèse plutôt que de le créer.
+4. **Couche de texte d'un PDF contre OCR** — quand lire le texte intégré, quand reconnaître l'image ; un score global n'est pas un taux d'erreur de caractères.
+
+Briques (vérifie chaque licence au dépôt) : **LightOnOCR-3** (famille 0,8B, 1B, 4B ; Apache-2.0 selon les cartes), **Indra OCR** (code Apache-2.0, poids OpenRAIL-M modifiée : usage commercial exclu au-delà d'un seuil ; gratuit pour floSa, `source-available` ; CPU seul). Texte simple : Chandra (plateforme gérée payante), et tout outil dont tu n'as pas lu la licence. Surya : fiche seulement si la licence se lit au dépôt. Ajoute les deux briques au « Comparatif - Parsing de documents » existant (liens et lignes, selon la procédure de mise à jour d'`enrichir-brain`).
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
