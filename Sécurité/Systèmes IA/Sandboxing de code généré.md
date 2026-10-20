@@ -57,7 +57,7 @@ Un bac à sable jetable est le plus sûr : chaque exécution repart d'un état p
 - [[Human-in-the-loop]] — faire valider une action à fort enjeu plutôt que de l'isoler.
 - [[agent-loops]] — l'exécution de code est une action de la boucle, avec son coût et sa latence.
 - Alternative : **ne pas exécuter de code du tout** — restreindre l'agent à des outils fixes et audités. Beaucoup plus sûr, nettement moins capable.
-- Voir aussi : [[Presidio]], [[NeMo Guardrails]], [[Llama Guard]], [[garak]], [[Comparatif - Garde-fous pour LLM]].
+- Voir aussi : [[Presidio]], [[NeMo Guardrails]], Llama Guard, [[garak]], [[Comparatif - Garde-fous pour LLM]].
 - [[Isolation par politique déclarative]] — la politique qui dit ce qui traverse le mur (fichiers, appels système, réseau, identifiants), là où cette page décrit la solidité du mur ; [[OpenShell]] et [[sandbox-runtime]] la mettent en œuvre ; [[Comparatif - Isolation d'exécution d'un agent]].
 - [[Garde-fous hors modèle]] — l'isolation parmi quatre mécanismes (isolation, autorisation, approbation, hooks) qui s'appliquent hors du modèle.
 - [[Vérificateur externe et loi de Goodhart]] — un agent qui contourne son bac à sable ou édite ses journaux de tests (Darwin Gödel Machine, STOP).
