@@ -37,7 +37,7 @@ tags: [rag, retrieval, embeddings, vision-language, multimodal, ocr, document-pa
 
 ### Licence des poids : un critère de choix
 
-- Les poids ColPali ne portent pas tous la même licence : leur modèle de base décide. ColQwen2 repose sur une base Apache-2.0 ; ColPali v1.x sur PaliGemma, sous les conditions de Gemma ([[Gemma]]) ; ColQwen2.5 sur Qwen2.5-VL-3B, sous une licence de recherche **non commerciale** ([[Qwen]]). Le champ « MIT » de la carte ne dit que la licence des adaptateurs. Le tableau est dans [[ColPali]].
+- Les poids ColPali ne portent pas tous la même licence : leur modèle de base décide. ColQwen2 repose sur une base Apache-2.0 ; ColPali v1.x sur PaliGemma, sous les conditions de Gemma (Gemma) ; ColQwen2.5 sur Qwen2.5-VL-3B, sous une licence de recherche **non commerciale** (Qwen). Le champ « MIT » de la carte ne dit que la licence des adaptateurs. Le tableau est dans [[ColPali]].
 
 ## Les maths, simplement
 
@@ -49,7 +49,7 @@ tags: [rag, retrieval, embeddings, vision-language, multimodal, ocr, document-pa
 - **Quand le visuel gagne** : documents riches en figures et en mise en page, corpus scannés de qualité variable, pas de chaîne de parsing maintenable. **Quand le parsing reste préférable** : texte courant en colonnes simples ([[Docling]], [[MinerU]], [[PaddleOCR]], [[olmOCR]]), besoin de texte exact (citation, extraction de champs, recherche lexicale), corpus qui change souvent (chaque page ré-encodée coûte du GPU), stockage ou GPU contraints.
 - **Évaluer sur ses propres documents.** ViDoRe v1 (ColPali, 2024) est jugé saturé par ses auteurs ; ViDoRe v2 (Macé et al., 2025, arXiv 2505.17166) et v3 (Loison et al., 2026, arXiv 2601.08620 : 10 jeux, environ 26 000 pages, 3 099 requêtes vérifiées, 6 langues, nDCG@10) relèvent le niveau. Ce que dit v3 : les retrievers visuels devancent les textuels, mais un **reranker textuel** apporte +13,2 points de nDCG@10 contre un gain marginal pour un reranker visuel, et les tableaux, graphiques et requêtes multi-pages restent les cas difficiles.
 - **Désaccord entre sources, laissé tel quel.** Most et al. (2025, arXiv 2505.05666) comparent ColPali à des chaînes OCR et trouvent que le visuel excelle sur les documents vus à l'entraînement, alors que l'OCR **généralise mieux** à des documents inconnus ; ViDoRe v3 donne l'avantage au visuel. Les corpus et les modèles diffèrent : seul un jeu de test maison tranche.
-- **Hybride** : router par type de document, ou combiner un retriever visuel et un reranker textuel. La génération de la réponse demande ensuite un modèle capable de lire l'image de la page ([[Qwen]] et [[Gemma]] ont des variantes vision) ; v3 relève que des contextes hybrides ou visuels améliorent la qualité de la réponse.
+- **Hybride** : router par type de document, ou combiner un retriever visuel et un reranker textuel. La génération de la réponse demande ensuite un modèle capable de lire l'image de la page (Qwen et Gemma ont des variantes vision) ; v3 relève que des contextes hybrides ou visuels améliorent la qualité de la réponse.
 - **Exploitation on-prem** : le GPU sert à l'indexation et aux requêtes, pas forcément à l'hébergement du moteur ; l'index se range dans un moteur à vecteurs multiples (documenté par [[Qdrant]], [[Weaviate]], Vespa). `colpali-engine` est déprécié au profit de [[sentence-transformers]] v6 : un projet neuf part de là. Byaldi, une surcouche à deux lignes, est dormante (dernière version en novembre 2024) et son index n'est pas compressé.
 - **Pièges** : licence de la base du modèle lue après coup ; index qui gonfle sans pooling ; benchmarks publics à l'avantage du modèle qui les a vus ; images de pages produites à des résolutions différentes de celles de l'entraînement.
 
@@ -59,11 +59,11 @@ tags: [rag, retrieval, embeddings, vision-language, multimodal, ocr, document-pa
 - [[Late-interaction retrieval]] — le mécanisme MaxSim sur du texte (ColBERT), et [[RAGatouille]] pour l'employer.
 - Le parsing puis l'indexation du texte : [[Docling]], [[MinerU]], [[PaddleOCR]], [[olmOCR]] — la voie de référence quand le texte suffit.
 - [[RAG documentaire on-prem - clé en main ou assemblé]] — où ce choix se place dans une architecture de RAG interne.
-- [[bge-m3]] et [[Qwen3-Embedding]] — les embeddings textuels, base de la chaîne de parsing contre laquelle le papier de ColPali se mesure (BGE-M3).
+- bge-m3 et Qwen3-Embedding — les embeddings textuels, base de la chaîne de parsing contre laquelle le papier de ColPali se mesure (BGE-M3).
 - [[Hybrid retrieval]] — la fusion lexical et dense, à croiser avec un retriever visuel.
 - [[LlamaIndex]] — documente un reclassement ColPali (`ColPaliRerank`).
 - [[Couche de texte d'un PDF contre OCR]] — la voie du texte : lire la couche d'un PDF numérique, ou reconnaître l'image, avant d'indexer.
-- [[Embedding multimodal et modality gap]] — l'autre famille, un vecteur par entrée dans un espace commun ; modèles : [[Qwen3-VL-Embedding]], [[EmbeddingGemma 2]], [[SigLIP 2]].
+- [[Embedding multimodal et modality gap]] — l'autre famille, un vecteur par entrée dans un espace commun ; modèles : Qwen3-VL-Embedding, EmbeddingGemma 2, SigLIP 2.
 
 ## Pour aller plus loin
 

@@ -30,7 +30,7 @@ tags: [rag, llm, retrieval, local-llm, self-hosted]
 - **L'évaluation reste extérieure.** Aucune des quatre lectures n'a relevé d'outil d'évaluation intégré de la récupération : il faut constituer un jeu de questions et le rejouer par l'API, comme pour n'importe quelle boîte noire.
 
 ### Ce qu'un assemblage apporte
-- **Chaque pièce se choisit et se teste** : parseur ([[Docling]], [[MinerU]], [[Marker]]), découpage, embeddings ([[sentence-transformers]], [[Text Embeddings Inference]], [[bge-m3]]), base ([[Qdrant]], [[Milvus]], [[pgvector]], [[Elasticsearch]]), reranker ([[bge-reranker]]), orchestration ([[LlamaIndex]] ou [[Haystack]]).
+- **Chaque pièce se choisit et se teste** : parseur ([[Docling]], [[MinerU]], [[Marker]]), découpage, embeddings ([[sentence-transformers]], [[Text Embeddings Inference]], bge-m3), base ([[Qdrant]], [[Milvus]], [[pgvector]], [[Elasticsearch]]), reranker (bge-reranker), orchestration ([[LlamaIndex]] ou [[Haystack]]).
 - **La récupération se règle étage par étage**, et chaque étage se mesure séparément avec [[RAG eval]] ; c'est ce qui permet d'aller au-delà des options d'un moteur.
 - **Le prix** : l'interface, l'authentification, les droits, l'administration et les mises à jour de sécurité sont à fournir — ou à brancher sur une interface de chat ([[Open WebUI]], [[LibreChat]]) qui appelle le pipeline comme un modèle ou un outil.
 
