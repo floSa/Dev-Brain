@@ -52,6 +52,7 @@ tags: [human-in-the-loop, agents, reliability, llm]
 - [[Guardrails]] — alternative ou complément automatique : bloquer/filtrer par règle au lieu d'escalader.
 - [[Agent evaluation]] — mesurer où l'agent échoue aide à cibler les points d'arrêt utiles.
 - Alternative : **pleine autonomie** (aucun point d'arrêt) — acceptable seulement quand toutes les actions sont réversibles et à faible enjeu.
+- [[Checkpointing et reprise]] — la persistance qui rend la pause possible, et le rejeu du nœud interrompu qui impose des outils idempotents ; [[Garde-fous hors modèle]] — l'approbation humaine parmi les quatre mécanismes appliqués hors du modèle.
 
 ## Pour aller plus loin
 

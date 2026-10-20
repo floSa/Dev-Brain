@@ -52,6 +52,7 @@ tags: [reliability, llm, agents]
 - [[Agent evaluation]] — mesurer la fiabilité (taux de réussite, erreur composée) avant et après les garde-fous.
 - [[Context engineering]] — un contexte maîtrisé réduit les échecs (dépassement de fenêtre, dérive).
 - [[Human-in-the-loop]] — le garde-fou humain sur les actions irréversibles à fort enjeu.
+- [[Checkpointing et reprise]] — reprendre après une panne sans rejouer deux fois un effet : un checkpoint rejoue, il n'annule pas.
 
 ## Pour aller plus loin
 
