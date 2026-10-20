@@ -60,12 +60,10 @@ tags: [rag, retrieval, chunking, reranking, semantic-search, knowledge-graph]
 - [[Reranking]] — domaines : ai-eng
 
 ### Briques
-- [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - [[Cohere Rerank]] — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
 - [[ColPali]] — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 - [[FlashRank]] — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - [[Haystack]] — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
-- [[Jina Reranker]] — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 - [[LightRAG]] — Framework RAG sur graphe (HKUDS, MIT) — extraction d'entités et de relations par LLM, récupération à deux niveaux (détails et concepts) sur graphe et vecteurs, ajout et suppression incrémentaux de documents ; serveur avec interface web et API, v1.5.7 en septembre 2026.
 - [[LlamaIndex]] — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - [[Microsoft GraphRAG]] — Bibliothèque Python de recherche (Microsoft, MIT) qui extrait un graphe d'un corpus par LLM, le découpe en communautés avec un rapport par communauté, puis répond en recherche locale, globale ou DRIFT ; projet en mode maintenance (corrections et mises à jour de dépendances seulement), v3.3.0 en octobre 2026.

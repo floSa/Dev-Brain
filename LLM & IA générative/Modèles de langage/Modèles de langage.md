@@ -52,15 +52,4 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning, ll
 - [[Small Language Models]] — domaines : ai-eng
 - [[Tokenization]] — domaines : ai-eng
 - [[Vision Language Models]] — domaines : ml-eng, ai-eng
-
-### Briques
-- [[DeepSeek-V4.1-Flash]] — Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU.
-- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.
-- [[gpt-oss]] — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.
-- [[MiMo-V2.6]] — Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU.
-- [[Mistral]] — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.
-- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.
-
-### Comparatifs
-- [[Comparatif - Modèles de langage open weights]]
 <!-- AUTO:END -->

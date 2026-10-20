@@ -45,7 +45,6 @@ tags: [nlp, ner, sequence-labeling, text-classification, information-retrieval, 
 - [[Traitement du langage naturel]] — domaines : data-sci, ml-eng, ai-eng
 
 ### Briques
-- [[GLiNER]] — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 - [[NLTK]] — Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
 - [[pytorch-crf]] — Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.
 - [[sentencepiece]] — Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.

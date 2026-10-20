@@ -84,9 +84,6 @@ tags: [deep-learning, gpu, autograd, transformers, attention, distributed-traini
 - [[pykan]] — Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.
 - [[PyTorch]] — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
 - [[PyTorch Lightning]] — Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.
-- [[Qwen-Image]] — Modèle de génération et d'édition d'images d'Alibaba (Apache-2.0, 20 B) — texte vers image avec un rendu de texte soigné, anglais et chinois, 1328 × 1328 en carré ; la base livrable de la lignée Qwen-Image, avant la 2.1 sous licence de recherche.
-- [[Qwen-Image-2.1]] — Modèle d'image d'Alibaba sous licence de recherche non commerciale (qwen-research) — texte vers image, édition jusqu'à 10 références et canal alpha natif en un seul checkpoint de 7 B (16,6 B pour la chaîne complète) ; recherche et évaluation seulement, jamais de livraison à un client.
-- [[Qwen-Image-Layered]] — Modèle d'Alibaba qui décompose une image en couches RGBA éditables (Apache-2.0, 20 B) — chaque couche se redimensionne, se déplace ou se recolore sans toucher aux autres ; la voie livrable vers la transparence.
 - [[TensorFlow]] — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 <!-- AUTO:END -->
 

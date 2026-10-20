@@ -37,12 +37,7 @@ tags: [structured-output, decoding, data-validation]
 - [[Structured outputs]] — domaines : ai-eng
 
 ### Briques
-- [[Clef]] — Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur.
-- [[d1-3B]] — Modèle de décision à poids ouverts de Liquid AI (3,1 Md, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel, à lire avant de livrer chez un client) — un état en texte ou en image et des questions typées donnent une probabilité par option en une passe, sans texte ; 6,25 Go en BF16, 8 ms sur RTX 4090 et 30 ms sur Apple M5 Pro selon Liquid.
-- [[d1-omni-600M]] — Modèle de décision expérimental à poids ouverts de Liquid AI (587 M, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel) — un état en texte avec une image ou un clip audio de 30 s en anglais donne des probabilités typées en une passe ; 2,35 Go en FP32 ; aucune latence publiée par l'éditeur ; 2 documents sur 8 triés dans l'essai d'un tiers.
 - [[Guidance]] — Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.
 - [[Instructor]] — Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
-- [[Laya]] — Modèle de décision à poids ouverts de Convai Innovations (Apache-2.0), à ajuster avant usage — encodeur ModernBERT de 421 M (mmBERT de 322 M en multilingue) dont les poids de base font 0,362 sur son banc, sous la classe majoritaire (0,461), contre 0,766 pour le checkpoint ajusté ; texte seul, 512 à 1 024 tokens de contexte ; 0,84 Go en FP16, 33 ms sur Tesla T4 en multilingue.
 - [[Outlines]] — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.
-
 <!-- AUTO:END -->

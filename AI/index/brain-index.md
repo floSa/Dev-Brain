@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1266 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1236 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -90,7 +90,6 @@
 - **docTR** — Bibliothèque OCR de bout en bout de Mindee, sur PyTorch — pipeline détection de texte (DBNet, LinkNet) puis reconnaissance (CRNN, SAR) avec modèles pré-entraînés, et depuis la 1.1.0 analyse de mise en page, structure de tableaux et exports Markdown ; l'OCR open-source clé en main pour documents.
 - **EasyOCR** — Bibliothèque OCR Python de Jaided AI, sous Apache 2.0 : détection CRAFT puis reconnaissance CRNN sur plus de 80 langues, en quelques lignes et sur PyTorch ; texte et boîtes seulement, sans mise en page ni tableaux, dernière release en septembre 2024.
 - **Indra OCR** — OCR de Datalab pour processeur seul : un paquet de petits réseaux ONNX (reconnaisseur latin d'environ 1,25 million de paramètres, 76 Mo au total) qui lit PDF et images en Markdown ou JSON avec boîtes, étiquettes de blocs et ordre de lecture ; code Apache-2.0, poids OpenRAIL-M modifiée (gratuit sous 20 M$ de revenu ou de financement), sans PyTorch ni GPU.
-- **LightOnOCR-3** — Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.
 - **LlamaParse** — Service managé de parsing de documents (LlamaCloud) : extraction agentique par LLM des PDF complexes, tableaux et schémas vers du Markdown propre prêt pour le RAG ; API à crédits, non open-source.
 - **Marker** — Convertisseur PDF (et Office, images) → Markdown / JSON / HTML rapide et précis, bâti sur les modèles OCR Surya ; pipeline vision multi-étapes orienté RAG, code GPL et poids de modèles à licence restreinte.
 - **MinerU** — Extracteur de documents d'OpenDataLab vers Markdown, HTML, LaTeX et JSON : quatre niveaux de qualité, du traitement natif sur CPU jusqu'à un modèle vision-langage de 1,2 milliard de paramètres ; licence propre (Apache 2.0 plus conditions, seuils à 100 M d'utilisateurs ou 20 M$ de revenu mensuel), version 4.0 incompatible avec la 3.x.
@@ -423,7 +422,6 @@
 - **ARES** — Framework d'évaluation de RAG (Apache-2.0, Stanford) — génère des données synthétiques, affine de petits juges LM pour la pertinence du contexte, la fidélité et la pertinence de la réponse, puis corrige leurs scores par prediction-powered inference avec quelques centaines d'annotations humaines ; NAACL 2024.
 - **DeepEval** — Framework d'évaluation LLM « pytest pour les LLM » (Apache-2.0, Confident AI) — 50+ métriques prêtes à l'emploi (G-Eval, hallucination, RAG, agents, sécurité) en assertions de test exécutables en CI ; plateforme managée Confident AI en option.
 - **Inspect AI** — Framework d'évaluation de LLM et d'agents (MIT, UK AI Security Institute et Meridian Labs) — des tâches composées d'un dataset, d'un solver et d'un scorer (texte ou noté par un modèle), 200+ évaluations prêtes à lancer, sandbox pour le code non fiable, visualiseur web et extension VS Code.
-- **Prometheus-Eval** — Modèles-juges ouverts et bibliothèque Python (Apache-2.0) — Prometheus 2 en 7B et 8x7B note une réponse de 1 à 5 selon une rubrique ou choisit entre deux réponses, en local via vLLM ou par API via LiteLLM ; M-Prometheus (3B, 7B, 14B) pour le multilingue.
 - **promptfoo** — Outil open-source de test et d'éval de prompts/agents/RAG en CLI et CI (MIT, racheté par OpenAI en 2026) — configs YAML déclaratives, comparaison de modèles et red-teaming/scan de vulnérabilités ; utilisé par OpenAI et Anthropic.
 - **Ragas** — Framework d'évaluation de pipelines RAG et d'apps LLM (Apache-2.0, explodinggradients) — métriques sans référence calculées par LLM-as-judge (faithfulness, context precision/recall, answer relevancy) et génération de jeux de tests synthétiques ; la référence open-source de l'éval RAG.
 - **RAGChecker** — Framework de diagnostic de RAG (Apache-2.0, Amazon Science) — extrait des claims de la réponse et les vérifie par entailment pour séparer les fautes du retriever (claim recall, context precision) de celles du générateur (fidélité, hallucination, sensibilité au bruit) ; juges via LiteLLM.
@@ -449,14 +447,6 @@
 - **Mem0** — Couche de mémoire pour agents LLM (Apache-2.0, open-core) — un LLM extrait les faits d'une conversation, rangés par utilisateur, agent ou session dans un vector store, puis retrouvés par recherche ; la mémoire graphe, les webhooks et l'export sont réservés à la plateforme hébergée.
 - **OpenViking** — Base de contexte auto-évolutive pour agents (Volcengine/ByteDance, AGPL-3.0) — mémoires, documents et skills exposés en système de fichiers `viking://` parcourable, avec chargement en trois niveaux de détail pour maîtriser le budget de tokens.
 
-### llm/modele
-- **DeepSeek-V4.1-Flash** — Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU.
-- **Gemma** — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.
-- **gpt-oss** — Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.
-- **MiMo-V2.6** — Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU.
-- **Mistral** — Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.
-- **Qwen** — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.
-
 ### llm/observabilite
 - **Helicone** — Plateforme open-source d'observabilité LLM en mode proxy / AI gateway (Apache-2.0) — trace requêtes, coûts, latence et tokens en une ligne, avec cache et rate-limiting ; self-host ou cloud. Rachetée par Mintlify (mars 2026), en maintenance mode.
 - **Langfuse** — Plateforme open-core d'ingénierie LLM (cœur MIT + dossiers ee/) — traçage, gestion de prompts, évals (LLM-as-judge) et datasets dans un workflow unifié ; auto-hébergeable ou Langfuse Cloud, intègre OpenTelemetry.
@@ -476,12 +466,10 @@
 - **mcpjam** — « Postman pour MCP » : inspecteur open-source pour tester, déboguer et évaluer un serveur MCP — exécution manuelle des outils, observabilité JSON-RPC et playground LLM.
 
 ### llm/rag
-- **bge-reranker** — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.
 - **Cohere Rerank** — API de reranking managée de Cohere (propriétaire) — reclasse un top-k de documents par pertinence à la requête ; rerank-v4.0 pro et fast, v3.5 multilingue à 4096 tokens de contexte ; déploiement privé (VPC ou on-prem) proposé sur devis.
 - **ColPali** — Recherche de pages de documents par leur image (ILLUIN, code MIT) — un modèle vision-langage encode chaque page en environ 1 030 vecteurs comparés à la requête par MaxSim, sans OCR ; colpali-engine est déprécié au profit de Sentence Transformers v6, et la licence des poids varie selon le modèle de base.
 - **FlashRank** — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
-- **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
 - **LightRAG** — Framework RAG sur graphe (HKUDS, MIT) — extraction d'entités et de relations par LLM, récupération à deux niveaux (détails et concepts) sur graphe et vecteurs, ajout et suppression incrémentaux de documents ; serveur avec interface web et API, v1.5.7 en septembre 2026.
 - **LlamaIndex** — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
 - **Microsoft GraphRAG** — Bibliothèque Python de recherche (Microsoft, MIT) qui extrait un graphe d'un corpus par LLM, le découpe en communautés avec un rapport par communauté, puis répond en recherche locale, globale ou DRIFT ; projet en mode maintenance (corrections et mises à jour de dépendances seulement), v3.3.0 en octobre 2026.
@@ -491,7 +479,6 @@
 ### llm/runtime
 - **llama.cpp** — Moteur d'inférence LLM en C/C++ (projet ggml) sur CPU et GPU grand public — format GGUF et quantization agressive, dépendances minimales ; la brique bas niveau derrière la plupart des runtimes locaux.
 - **LM Studio** — Application de bureau pour exécuter des LLM en local — GUI soignée (recherche, téléchargement, chat), moteurs llama.cpp (GGUF) et MLX (Apple Silicon) et serveur local à API OpenAI-compatible ; propriétaire mais gratuit.
-- **needle** — Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.
 - **Ollama** — Runtime local de LLM le plus simple — une commande pour récupérer et lancer un modèle open (GGUF, via llama.cpp), API REST OpenAI-compatible et Modelfiles ; pensé pour le poste de dev et le prototypage.
 - **SGLang** — Moteur de serving LLM rapide articulé autour de RadixAttention (réutilisation automatique du cache KV de préfixes) — haut débit GPU, sorties structurées et programmation de pipelines LLM ; écosystème PyTorch/LMSYS.
 - **TensorRT-LLM** — Moteur d'inférence LLM open-source de NVIDIA — compilation TensorRT et kernels CUDA pour le débit et la latence maximaux sur GPU NVIDIA, parallélisme multi-GPU/multi-nœuds ; API Python de haut niveau, runtimes Python et C++.
@@ -504,12 +491,8 @@
 - **LangChain** — Framework d'applications LLM le plus répandu — interfaces standardisées (modèles, embeddings, vector stores, outils) pour composer chaînes et agents ; large écosystème d'intégrations, socle de LangGraph et LangSmith.
 
 ### llm/sortie-structuree
-- **Clef** — Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur.
-- **d1-3B** — Modèle de décision à poids ouverts de Liquid AI (3,1 Md, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel, à lire avant de livrer chez un client) — un état en texte ou en image et des questions typées donnent une probabilité par option en une passe, sans texte ; 6,25 Go en BF16, 8 ms sur RTX 4090 et 30 ms sur Apple M5 Pro selon Liquid.
-- **d1-omni-600M** — Modèle de décision expérimental à poids ouverts de Liquid AI (587 M, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel) — un état en texte avec une image ou un clip audio de 30 s en anglais donne des probabilités typées en une passe ; 2,35 Go en FP32 ; aucune latence publiée par l'éditeur ; 2 documents sur 8 triés dans l'essai d'un tiers.
 - **Guidance** — Langage de contrôle de LLM (guidance-ai, ex-Microsoft Research) : entrelace génération et contrôle (conditionnels, boucles, outils) et contraint la sortie par regex/grammaire, avec token healing.
 - **Instructor** — Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
-- **Laya** — Modèle de décision à poids ouverts de Convai Innovations (Apache-2.0), à ajuster avant usage — encodeur ModernBERT de 421 M (mmBERT de 322 M en multilingue) dont les poids de base font 0,362 sur son banc, sous la classe majoritaire (0,461), contre 0,766 pour le checkpoint ajusté ; texte seul, 512 à 1 024 tokens de contexte ; 0,84 Go en FP16, 33 ms sur Tesla T4 en multilingue.
 - **Outlines** — Bibliothèque de génération structurée (.txt / dottxt-ai) : garantit une sortie conforme à un schéma JSON, une regex ou une grammaire par décodage contraint — masquage des tokens invalides à chaque pas.
 
 ### llm/text-to-sql
@@ -568,20 +551,12 @@
 - **pykan** — Implémentation officielle de référence des Kolmogorov-Arnold Networks (sur PyTorch) — splines apprenables sur les arêtes, raffinement de grille, sparsification et extraction de formule symbolique ; orientée ML scientifique plus que performance.
 - **PyTorch** — Framework de deep learning de référence — tensors GPU et autograd, API Python pythonique (define-by-run) ; torch.compile pour la perf, écosystème dominant en recherche.
 - **PyTorch Lightning** — Surcouche d'organisation de PyTorch — sépare la logique du modèle de l'ingénierie d'entraînement (boucle, multi-GPU, mixed precision, checkpointing) via le Trainer ; moins de boilerplate, runs reproductibles, du laptop à 1000+ GPU sans changer le code.
-- **Qwen-Image** — Modèle de génération et d'édition d'images d'Alibaba (Apache-2.0, 20 B) — texte vers image avec un rendu de texte soigné, anglais et chinois, 1328 × 1328 en carré ; la base livrable de la lignée Qwen-Image, avant la 2.1 sous licence de recherche.
-- **Qwen-Image-2.1** — Modèle d'image d'Alibaba sous licence de recherche non commerciale (qwen-research) — texte vers image, édition jusqu'à 10 références et canal alpha natif en un seul checkpoint de 7 B (16,6 B pour la chaîne complète) ; recherche et évaluation seulement, jamais de livraison à un client.
-- **Qwen-Image-Layered** — Modèle d'Alibaba qui décompose une image en couches RGBA éditables (Apache-2.0, 20 B) — chaque couche se redimensionne, se déplace ou se recolore sans toucher aux autres ; la voie livrable vers la transparence.
 - **TensorFlow** — Framework de deep learning de Google — graphe optimisé et déploiement industriel (Serving, Lite, TPU, JS) ; Keras 3 comme API multi-backend de haut niveau.
 
 ### ml/embeddings
-- **bge-m3** — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.
-- **EmbeddingGemma 2** — Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.
 - **FastEmbed** — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.
 - **Infinity** — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique.
-- **Qwen3-Embedding** — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.
-- **Qwen3-VL-Embedding** — Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.
 - **sentence-transformers** — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.
-- **SigLIP 2** — Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.
 - **Text Embeddings Inference** — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026.
 
 ### ml/eval
@@ -623,7 +598,6 @@
 - **NannyML** — Bibliothèque Python open source d'estimation de performance sans vérité terrain (CBPE, DLE) et de détection de dérive univariée et multivariée sur données tabulaires — édition libre figée depuis juillet 2025, fonctions avancées réservées à NannyML Cloud.
 
 ### ml/nlp
-- **GLiNER** — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 - **NLTK** — Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
 - **pytorch-crf** — Couche CRF (champ aléatoire conditionnel) pour PyTorch — modélise les dépendances entre labels voisins et décode par Viterbi ; brique de sortie classique d'un tagger d'étiquetage de séquence.
 - **sentencepiece** — Tokeniseur sous-mot de Google, indépendant de la langue — BPE et modèle Unigram entraînés directement sur du texte brut (Unicode/octets, sans pré-tokenisation), implémentation C++ et bindings Python.
@@ -660,7 +634,6 @@
 - **TF-Agents** — Bibliothèque RL officielle de l'écosystème TensorFlow — agents prêts à l'emploi (DQN, PPO, SAC, REINFORCE), drivers et replay buffers sous une API homogène ; l'équivalent TensorFlow de Stable-Baselines3, en déclin avec son écosystème.
 
 ### ml/series-temporelles
-- **Chronos** — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).
 - **darts** — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
 - **neuralforecast** — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - **pmdarima** — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une interface scikit-learn ; wrap de statsmodels.
@@ -708,11 +681,9 @@
 - **Detectron2** — Plateforme de détection et segmentation de Meta AI (FAIR) sur PyTorch — implémentations de référence Faster/Mask R-CNN, RetinaNet, panoptique, modulaires et étendables via un model zoo ; la base recherche quand on veut customiser l'architecture.
 - **Kornia** — Bibliothèque de vision par ordinateur différentiable pour PyTorch — opérations classiques (filtres, géométrie) et augmentations rendues différentiables sur GPU, intégrables dans le graphe d'autograd ; la CV qui se branche dans l'entraînement.
 - **OpenCV** — Bibliothèque de vision par ordinateur classique de référence — traitement d'images, géométrie, calibration, détection de features et vidéo, cœur C++ optimisé exposé en Python ; le couteau suisse de la CV hors deep learning.
-- **segment-anything** — Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).
 - **supervision** — Boîte à outils CV model-agnostic de Roboflow — API Detections unifiée, annotateurs, suivi (ByteTrack), zones et comptage qui se branchent sur n'importe quel modèle (YOLO, Detectron2, SAM, Transformers) ; la colle entre un détecteur et une application.
 - **timm** — La plus grande collection de backbones vision pour PyTorch — ResNet, EfficientNet, ConvNeXt, ViT, Swin… avec poids pré-entraînés et API create_model unifiée ; la référence du transfert d'apprentissage en vision.
 - **torchvision** — Bibliothèque vision officielle de PyTorch — datasets, modèles pré-entraînés (backbones CNN et ViT) et transformations d'images (transforms.v2) intégrés au tenseur ; le point de départ d'un projet vision PyTorch.
-- **Ultralytics YOLO** — Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.
 
 ### network/analyse
 - **Sniffnet** — Moniteur de trafic réseau en Rust avec interface graphique multiplateforme : qui parle à qui, ports, protocoles, volumes, filtres, notifications et import/export PCAP.
@@ -749,7 +720,6 @@
 
 ### security/ia
 - **garak** — Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites, génération de code malveillant) lancées contre un modèle local ou distant, avec détecteurs, rapports JSONL et HTML ; la plupart des détecteurs tournent en local, les attaques multi-tours demandent un modèle juge.
-- **Llama Guard** — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher.
 - **NeMo Guardrails** — Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits en YAML et en Colang, avec des rails prêts à l'emploi (sûreté du contenu, jailbreak, thème, PII) ; chaque contrôle sémantique rappelle un LLM, d'où une latence ajoutée.
 - **OpenShell** — Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce.
 - **Presidio** — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France.
@@ -1603,9 +1573,6 @@
 ### llm/memoire
 - **Comparatif - Mémoire pour agents** — —
 
-### llm/modele
-- **Comparatif - Modèles de langage open weights** — —
-
 ### llm/observabilite
 - **Comparatif - Observabilité LLM** — —
 
@@ -1614,9 +1581,6 @@
 
 ### llm/runtime
 - **Comparatif - Exécution & serving LLM** — —
-
-### llm/sortie-structuree
-- **Comparatif - Modèles de décision** — —
 
 ### llm/text-to-sql
 - **Comparatif - Frameworks text-to-SQL** — —

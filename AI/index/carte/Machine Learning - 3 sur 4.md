@@ -1,7 +1,7 @@
 # Machine Learning — carte (3 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 105 pages, chacune avec son chemin et une ligne.
+> 104 pages, chacune avec son chemin et une ligne.
 > Couvre : Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving, Socle, Suivi d'expériences, Séries temporelles.
 
 ## Non supervisé
@@ -101,7 +101,6 @@
 - [[Comparatif - Suivi d'expériences ML]] · comparatif · `Machine Learning/Suivi d'expériences/Comparatif - Suivi d'expériences ML.md` — où partent les données — self-host ou cloud —, et jusqu'où va l'outil au-delà des courbes : registre de modèles, orchestration, ou rien.
 
 ## Séries temporelles
-- [[Chronos]] · brique · `Machine Learning/Séries temporelles/Chronos.md` — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2…
 - [[darts]] · brique · `Machine Learning/Séries temporelles/darts.md` — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection…
 - [[neuralforecast]] · brique · `Machine Learning/Séries temporelles/neuralforecast.md` — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - [[pmdarima]] · brique · `Machine Learning/Séries temporelles/pmdarima.md` — AutoARIMA pur Python façon auto.arima de R — sélection automatique des ordres (p,d,q)(P,D,Q) par tests de racine unitaire et critère d'information, sur une…
@@ -121,4 +120,4 @@
 - [[Stationarity]] · notion · `Machine Learning/Séries temporelles/Stationarity.md` — Une série est stationnaire quand ses propriétés statistiques (moyenne, variance, structure d'autocovariance) ne changent pas dans le temps.
 - [[Time series feature engineering]] · notion · `Machine Learning/Séries temporelles/Time series feature engineering.md` — Transformer une série (ou un parc de séries) en table de features exploitable par un modèle ML/global : gradient boosting, réseaux.
 - [[Walk-forward CV]] · notion · `Machine Learning/Séries temporelles/Walk-forward CV.md` — Protocole d'évaluation temporel : avancer l'origine de prévision dans le temps et toujours tester sur du futur.
-- [[Comparatif - Forecasting]] · comparatif · `Machine Learning/Séries temporelles/Comparatif - Forecasting.md` — entraîner un modèle par série, un modèle global, ou n'en entraîner aucun — puis le nombre de séries à couvrir et le budget de calcul, CPU compilé ou GPU.
+- [[Comparatif - Forecasting]] · comparatif · `Machine Learning/Séries temporelles/Comparatif - Forecasting.md` — entraîner un modèle par série ou un modèle global — puis le nombre de séries à couvrir et le budget de calcul, CPU compilé ou GPU.

@@ -1,7 +1,7 @@
 # Sécurité — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 34 pages, chacune avec son chemin et une ligne.
+> 33 pages, chacune avec son chemin et une ligne.
 > Couvre : Analyse de vulnérabilités, Authentification, Systèmes IA.
 
 ## Au niveau du dossier
@@ -30,7 +30,6 @@
 
 ## Systèmes IA
 - [[garak]] · brique · `Sécurité/Systèmes IA/garak.md` — Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites…
-- [[Llama Guard]] · brique · `Sécurité/Systèmes IA/Llama Guard.md` — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) —…
 - [[NeMo Guardrails]] · brique · `Sécurité/Systèmes IA/NeMo Guardrails.md` — Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits…
 - [[OpenShell]] · brique · `Sécurité/Systèmes IA/OpenShell.md` — Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les…
 - [[Presidio]] · brique · `Sécurité/Systèmes IA/Presidio.md` — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) —…

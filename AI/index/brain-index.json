@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1266,
+  "count": 1236,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -218,7 +218,6 @@
       "Excessive agency et lethal trifecta",
       "Garde-fous hors modèle",
       "Isolation par politique déclarative",
-      "Llama Guard",
       "Maka",
       "NeMo Guardrails",
       "OpenShell",
@@ -457,16 +456,11 @@
     ],
     "calibration": [
       "Calibration",
-      "Clef",
-      "Comparatif - Modèles de décision",
       "De la prévision probabiliste à la quantité commandée",
       "Décomposer une question en signaux étroits",
       "Entraîner pour la calibration",
       "Hallucinations des LLM",
-      "Laya",
       "Modèle de décision",
-      "d1-3B",
-      "d1-omni-600M",
       "Évaluation de modèles"
     ],
     "causal-inference": [
@@ -550,14 +544,11 @@
       "Classification",
       "Classification de texte",
       "Classification metrics",
-      "Clef",
-      "Comparatif - Modèles de décision",
       "Cross-entropy",
       "Décomposer une question en signaux étroits",
       "Entraîner pour la calibration",
       "Extra Trees",
       "Imbalanced classification",
-      "Laya",
       "Modèle de décision",
       "Méthodes à noyau",
       "Naive Bayes",
@@ -569,8 +560,6 @@
       "Socle",
       "Types de données et choix de modèle",
       "aeon",
-      "d1-3B",
-      "d1-omni-600M",
       "imbalanced-learn",
       "k-NN",
       "sktime",
@@ -745,7 +734,6 @@
       "Segmentation",
       "Suivi d'objets",
       "Transfer learning vision",
-      "Ultralytics YOLO",
       "Vision",
       "Vision Transformers (ViT)",
       "Vision par ordinateur",
@@ -753,7 +741,6 @@
       "anomalib",
       "docTR",
       "patchcore-inspection",
-      "segment-anything",
       "supervision",
       "timm",
       "torchvision"
@@ -1149,7 +1136,6 @@
       "CNN",
       "Calculs adaptatifs",
       "Captum",
-      "Chronos",
       "Classification d'images",
       "Confidentialité différentielle",
       "DeepOD",
@@ -1211,7 +1197,6 @@
       "TensorFlow",
       "Transfer learning vision",
       "Transformer architectures",
-      "Ultralytics YOLO",
       "Vision Transformers (ViT)",
       "Vision par ordinateur",
       "accelerate",
@@ -1222,7 +1207,6 @@
       "neuralforecast",
       "pykan",
       "pytorch-crf",
-      "segment-anything",
       "time-series-anomaly-detector",
       "timm",
       "torchvision"
@@ -1273,9 +1257,6 @@
     "diffusion": [
       "Diffusion models",
       "Image generation",
-      "Qwen-Image",
-      "Qwen-Image-2.1",
-      "Qwen-Image-Layered",
       "Video generation"
     ],
     "digital-filter": [
@@ -1383,7 +1364,6 @@
       "Docling",
       "EasyOCR",
       "Indra OCR",
-      "LightOnOCR-3",
       "LlamaParse",
       "Marker",
       "MinerU",
@@ -1449,15 +1429,12 @@
       "Comparatif - Runtimes d'inférence CPU et edge",
       "Indra OCR",
       "Inférence en bordure - modèles sur du matériel d'atelier",
-      "Laya",
       "LiteRT",
       "ONNX Runtime",
       "OpenVINO",
       "Pattern - Inspection visuelle en ligne de production",
       "TensorRT",
-      "anomalib",
-      "d1-3B",
-      "d1-omni-600M"
+      "anomalib"
     ],
     "education": [
       "Généalogie des modèles de langage (2011-GPT-3)",
@@ -1481,7 +1458,6 @@
       "Annoy",
       "Chroma",
       "DuckDB",
-      "EmbeddingGemma 2",
       "Faiss",
       "LanceDB",
       "LiteRT",
@@ -1497,27 +1473,20 @@
       "ColPali",
       "Comparatif - Embeddings",
       "Embedding multimodal et modality gap",
-      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FastEmbed",
       "HuggingFace",
       "Index ANN — internes",
       "Infinity",
-      "Jina Reranker",
       "Late-interaction retrieval",
       "LlamaIndex",
       "Plongements de graphe et prédiction de liens",
       "PyKEEN",
-      "Qwen3-Embedding",
-      "Qwen3-VL-Embedding",
       "RAG",
       "RAG visuel - retrouver des documents sans OCR",
       "Recherche sémantique",
-      "SigLIP 2",
       "Systèmes de recommandation",
       "Text Embeddings Inference",
-      "bge-m3",
-      "bge-reranker",
       "embeddings",
       "sentence-transformers",
       "txtai"
@@ -1674,7 +1643,6 @@
     ],
     "forecasting": [
       "ARIMA SARIMA",
-      "Chronos",
       "Classification ABC-XYZ",
       "Comparatif - Forecasting",
       "De la prévision probabiliste à la quantité commandée",
@@ -1708,11 +1676,9 @@
     ],
     "foundation-model": [
       "Anomalie visuelle zero-shot et few-shot",
-      "Chronos",
       "Foundation models et anomalies de séries",
       "Modèles de fondation vision",
-      "Séries temporelles",
-      "segment-anything"
+      "Séries temporelles"
     ],
     "fourier": [
       "Analyse vibratoire",
@@ -1744,9 +1710,6 @@
       "Diffusion models",
       "GANs",
       "Image generation",
-      "Qwen-Image",
-      "Qwen-Image-2.1",
-      "Qwen-Image-Layered",
       "SDV",
       "Video generation"
     ],
@@ -1785,7 +1748,6 @@
       "Keras",
       "Kornia",
       "LM Studio",
-      "LightOnOCR-3",
       "Mesurer une latence",
       "Mixed precision",
       "Modal",
@@ -1810,13 +1772,11 @@
       "TensorRT",
       "TensorRT-LLM",
       "TorchServe",
-      "Ultralytics YOLO",
       "Unsloth",
       "accelerate",
       "llama.cpp",
       "neuralforecast",
       "olmOCR",
-      "segment-anything",
       "text-generation-webui",
       "torchvision",
       "vLLM"
@@ -1849,7 +1809,6 @@
       "Comparatif - Garde-fous pour LLM",
       "Garde-fous hors modèle",
       "Guardrails",
-      "Llama Guard",
       "NeMo Guardrails",
       "Systèmes IA",
       "Sécurité"
@@ -1877,8 +1836,7 @@
       "Recherche d'information",
       "Typesense",
       "Vespa",
-      "Weaviate",
-      "bge-m3"
+      "Weaviate"
     ],
     "hypermedia": [
       "Comparatif - Frontends web légers",
@@ -1956,10 +1914,7 @@
     ],
     "image-generation": [
       "GANs",
-      "Image generation",
-      "Qwen-Image",
-      "Qwen-Image-2.1",
-      "Qwen-Image-Layered"
+      "Image generation"
     ],
     "imitation-learning": [
       "Apprentissage par renforcement",
@@ -2211,7 +2166,6 @@
       "Comparatif - Parsing de documents",
       "Docling",
       "Indra OCR",
-      "LightOnOCR-3",
       "MinerU",
       "OCR classique vs modèles vision-langage pour documents",
       "OCR vision-langage en une passe avec grounding",
@@ -2311,11 +2265,9 @@
       "Checkpointing et reprise",
       "Choisir entre règle, classifieur, modèle de décision et LLM",
       "Claude Agent SDK",
-      "Clef",
       "Cline",
       "Code and math benchmarks",
       "Comparatif - Fine-tuning LLM",
-      "Comparatif - Modèles de langage open weights",
       "Construction de graphes de connaissances",
       "Context engineering",
       "Contexte long",
@@ -2329,7 +2281,6 @@
       "Deep Agents",
       "Deep research",
       "DeepEval",
-      "DeepSeek-V4.1-Flash",
       "Dify",
       "Dimensionner la mémoire d'un serveur LLM",
       "Décomposer une question en signaux étroits",
@@ -2338,7 +2289,6 @@
       "Flowise",
       "Fusion de modèles",
       "GRPO",
-      "Gemma",
       "GitDiagram",
       "Google Cloud Vertex AI",
       "GraphRAG",
@@ -2386,9 +2336,7 @@
       "LlamaIndex NLSQLTableQueryEngine",
       "LoRA et QLoRA",
       "Mesurer une latence",
-      "MiMo-V2.6",
       "Microsoft GraphRAG",
-      "Mistral",
       "Modal",
       "Modèle de décision",
       "Modèles de langage",
@@ -2417,14 +2365,12 @@
       "PraisonAI",
       "Prefill par morceaux et désagrégation prefill-decode",
       "Preuve formelle et assistant de preuve",
-      "Prometheus-Eval",
       "Prompt engineering",
       "Prompt injection",
       "Pré-entraînement, affinage et apprentissage en contexte",
       "PydanticAI",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Query transformations",
-      "Qwen",
       "Qwen Code",
       "RAG",
       "RAG agentique",
@@ -2474,7 +2420,6 @@
       "Zoo Code",
       "a2a-protocol",
       "agent-loops",
-      "gpt-oss",
       "interpreto",
       "llama.cpp",
       "mcp-protocol",
@@ -2493,7 +2438,6 @@
       "DeepEval",
       "Inspect AI",
       "LLM-as-judge",
-      "Prometheus-Eval",
       "RAGChecker",
       "TruLens",
       "Évaluation"
@@ -2516,7 +2460,6 @@
       "Langfuse",
       "Lire un score publié",
       "Phoenix Arize",
-      "Prometheus-Eval",
       "RAG benchmarks",
       "RAG eval",
       "RAGChecker",
@@ -2558,10 +2501,7 @@
       "Assistants",
       "Cognee",
       "Comparatif - Exécution & serving LLM",
-      "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
-      "DeepSeek-V4.1-Flash",
-      "Gemma",
       "Goose",
       "Graphiti",
       "Kilo Code",
@@ -2569,17 +2509,12 @@
       "LM Studio Bionic",
       "LibreChat",
       "Licences de modèles open weights",
-      "Llama Guard",
       "Mem0",
-      "MiMo-V2.6",
-      "Mistral",
       "Ollama",
       "Open WebUI",
       "OpenCode",
       "Pattern - Agent sur LLM auto-hébergé",
-      "Prometheus-Eval",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
-      "Qwen",
       "Qwen Code",
       "RAG documentaire on-prem - clé en main ou assemblé",
       "Runtimes",
@@ -2587,10 +2522,8 @@
       "Superwhisper",
       "Vanna",
       "Zoo Code",
-      "gpt-oss",
       "llama.cpp",
       "llmfit",
-      "needle",
       "pi",
       "text-generation-webui"
     ],
@@ -3001,26 +2934,17 @@
     "multimodal": [
       "Apprentissage contrastif",
       "Claude Video",
-      "Clef",
       "ColPali",
       "Embedding multimodal et modality gap",
-      "EmbeddingGemma 2",
       "Image generation",
       "LanceDB",
       "Marqo",
       "Médias",
-      "Qwen-Image",
-      "Qwen-Image-2.1",
-      "Qwen-Image-Layered",
-      "Qwen3-VL-Embedding",
       "RAG visuel - retrouver des documents sans OCR",
-      "SigLIP 2",
       "Speech models",
       "Superwhisper",
       "Video generation",
-      "Vision Language Models",
-      "d1-3B",
-      "d1-omni-600M"
+      "Vision Language Models"
     ],
     "multiple-testing": [
       "Correction des tests multiples"
@@ -3040,7 +2964,6 @@
       "Comparatif - NLP",
       "Construction de graphes de connaissances",
       "Données personnelles et anonymisation pour LLM",
-      "GLiNER",
       "Label Studio",
       "Liage d'entités",
       "NER et étiquetage de séquence",
@@ -3072,7 +2995,6 @@
       "DSPy",
       "Decoding strategies",
       "Fuzzy matching & similarité de chaînes",
-      "GLiNER",
       "HuggingFace",
       "LLM eval metrics",
       "Liage d'entités",
@@ -3145,7 +3067,6 @@
       "Métriques vision",
       "OpenCV",
       "Suivi d'objets",
-      "Ultralytics YOLO",
       "Vision",
       "albumentations",
       "supervision"
@@ -3169,7 +3090,6 @@
     "object-tracking": [
       "OpenCV",
       "Suivi d'objets",
-      "Ultralytics YOLO",
       "Vision",
       "supervision"
     ],
@@ -3199,7 +3119,6 @@
       "Documents",
       "EasyOCR",
       "Indra OCR",
-      "LightOnOCR-3",
       "LlamaParse",
       "Marker",
       "MinerU",
@@ -3436,8 +3355,7 @@
       "Policy gradient"
     ],
     "pose-estimation": [
-      "Estimation de pose",
-      "Ultralytics YOLO"
+      "Estimation de pose"
     ],
     "positional-encoding": [
       "Contexte long",
@@ -3592,7 +3510,6 @@
       "Unsloth",
       "llama.cpp",
       "llmfit",
-      "needle",
       "text-generation-webui"
     ],
     "query-engine": [
@@ -3632,7 +3549,6 @@
       "GraphRAG",
       "Haystack",
       "Hybrid retrieval",
-      "Jina Reranker",
       "LLM & IA générative",
       "LangChain",
       "Langflow",
@@ -3671,7 +3587,6 @@
       "Unstructured",
       "Vanna",
       "Weaviate",
-      "bge-reranker",
       "pgvector",
       "txtai"
     ],
@@ -3727,17 +3642,11 @@
       "Calculs adaptatifs",
       "Chain-of-Thought",
       "Code and math benchmarks",
-      "DeepSeek-V4.1-Flash",
       "Effort de raisonnement et courbe coût-qualité",
       "GRPO",
-      "Gemma",
-      "MiMo-V2.6",
-      "Mistral",
       "Modèles de langage",
-      "Qwen",
       "Reasoning models",
-      "Récompense vérifiable (RLVR)",
-      "gpt-oss"
+      "Récompense vérifiable (RLVR)"
     ],
     "recommender-systems": [
       "Learning to rank",
@@ -3900,15 +3809,11 @@
       "FastEmbed",
       "FlashRank",
       "Infinity",
-      "Jina Reranker",
       "Late-interaction retrieval",
-      "Qwen3-Embedding",
-      "Qwen3-VL-Embedding",
       "RAG & retrieval",
       "RAGatouille",
       "Reranking",
       "Text Embeddings Inference",
-      "bge-reranker",
       "sentence-transformers"
     ],
     "resampling": [
@@ -3931,13 +3836,11 @@
       "Deep research",
       "Droits d'accès dans un RAG",
       "Embedding multimodal et modality gap",
-      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FlashRank",
       "GraphRAG",
       "Graphiti",
       "Hybrid retrieval",
-      "Jina Reranker",
       "Late-interaction retrieval",
       "LightRAG",
       "LlamaIndex NLSQLTableQueryEngine",
@@ -3946,8 +3849,6 @@
       "Mémoire des agents",
       "OpenViking",
       "Query transformations",
-      "Qwen3-Embedding",
-      "Qwen3-VL-Embedding",
       "RAG",
       "RAG & retrieval",
       "RAG agentique",
@@ -3960,11 +3861,8 @@
       "RAGatouille",
       "Recherche d'information",
       "Reranking",
-      "SigLIP 2",
       "Systèmes de recommandation",
       "ai-memory",
-      "bge-m3",
-      "bge-reranker",
       "open_deep_research",
       "sentence-transformers"
     ],
@@ -4039,7 +3937,6 @@
       "Excessive agency et lethal trifecta",
       "Guardrails",
       "Jailbreaking and defenses",
-      "Llama Guard",
       "NeMo Guardrails",
       "Preuve formelle et assistant de preuve",
       "Sycophancy"
@@ -4146,10 +4043,8 @@
       "Métriques vision",
       "Segment Anything (SAM)",
       "Segmentation",
-      "Ultralytics YOLO",
       "Vision",
-      "albumentations",
-      "segment-anything"
+      "albumentations"
     ],
     "self-hosted": [
       "ActivityWatch",
@@ -4170,7 +4065,6 @@
       "Choisir un modèle d'embedding",
       "Comparatif - BI auto-hébergée",
       "Comparatif - CI-CD auto-hébergé",
-      "Comparatif - Modèles de langage open weights",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Comparatif - Registres d'images",
       "Dataiku",
@@ -4198,7 +4092,6 @@
       "Label Studio",
       "LibreChat",
       "Licences de modèles open weights",
-      "LightOnOCR-3",
       "Meilisearch",
       "Metabase",
       "Mosquitto",
@@ -4262,7 +4155,6 @@
       "Choisir un modèle d'embedding",
       "Comparatif - Embeddings",
       "Embedding multimodal et modality gap",
-      "EmbeddingGemma 2",
       "Embeddings & encodeurs",
       "FastEmbed",
       "Haystack",
@@ -4274,14 +4166,12 @@
       "Meilisearch",
       "OpenSearch",
       "Pinecone",
-      "Qwen3-Embedding",
       "RAG",
       "RAG & retrieval",
       "Recherche d'information",
       "Recherche sémantique",
       "Recherche vectorielle approximative",
       "Text Embeddings Inference",
-      "bge-m3",
       "embeddings",
       "sentence-transformers",
       "txtai"
@@ -4339,8 +4229,7 @@
     "small-language-model": [
       "Distillation",
       "Modèles de langage",
-      "Small Language Models",
-      "needle"
+      "Small Language Models"
     ],
     "sparql": [
       "Apache Jena",
@@ -4383,8 +4272,7 @@
       "Claude Video",
       "Médias",
       "Speech models",
-      "Superwhisper",
-      "d1-omni-600M"
+      "Superwhisper"
     ],
     "sso": [
       "Authelia",
@@ -4470,24 +4358,18 @@
     ],
     "structured-output": [
       "Choisir entre règle, classifieur, modèle de décision et LLM",
-      "Clef",
       "Comparatif - Frameworks LLM",
-      "Comparatif - Modèles de décision",
       "Constrained decoding",
       "Décomposer une question en signaux étroits",
       "Entraîner pour la calibration",
       "Guidance",
       "Instructor",
       "LLM & IA générative",
-      "Laya",
       "Modèle de décision",
       "Outlines",
       "PydanticAI",
       "Sortie typée",
       "Structured outputs",
-      "d1-3B",
-      "d1-omni-600M",
-      "needle",
       "tool-use"
     ],
     "supervised": [
@@ -4629,7 +4511,6 @@
     "text-classification": [
       "Classification de texte",
       "Comparatif - NLP",
-      "Laya",
       "NLP",
       "NLTK",
       "SetFit"
@@ -4665,7 +4546,6 @@
       "CausalImpact",
       "Causalité de Granger",
       "Cause racine d'une anomalie",
-      "Chronos",
       "Comparatif - Bases temporelles",
       "Comparatif - Détection d'anomalies en séries temporelles",
       "Comparatif - Forecasting",
@@ -4741,8 +4621,6 @@
       "Claude Agent SDK",
       "CrewAI",
       "Deep Agents",
-      "DeepSeek-V4.1-Flash",
-      "Gemma",
       "Goose",
       "Harnais d'agent",
       "Hermes Agent",
@@ -4751,15 +4629,12 @@
       "LangGraph",
       "Letta",
       "Maka",
-      "MiMo-V2.6",
-      "Mistral",
       "OpenAI Agents SDK",
       "OpenClaw",
       "OpenHands",
       "Pattern - Agent sur LLM auto-hébergé",
       "PraisonAI",
       "PydanticAI",
-      "Qwen",
       "Semantic Kernel",
       "Sous-agents et isolation du contexte",
       "Structured outputs",
@@ -4767,10 +4642,8 @@
       "a2a-protocol",
       "agent-loops",
       "fastmcp",
-      "gpt-oss",
       "mcp-protocol",
       "mcpjam",
-      "needle",
       "pi",
       "smolagents",
       "tool-use"
@@ -4811,11 +4684,9 @@
       "Attention Residuals",
       "Attention linéaire",
       "Calculs adaptatifs",
-      "Chronos",
       "Comparatif - Explicabilité",
       "Flash Attention and efficient attention",
       "Foundation models pour séries temporelles",
-      "GLiNER",
       "Généalogie des modèles de langage (2011-GPT-3)",
       "HuggingFace",
       "Interprétabilité",
@@ -4824,16 +4695,13 @@
       "Multi-head Latent Attention",
       "Positional encoding",
       "Pré-entraînement, affinage et apprentissage en contexte",
-      "Qwen3-Embedding",
       "RUL par apprentissage profond",
       "Segment Anything (SAM)",
       "Self-attention",
       "TRL",
       "Transformer architectures",
       "Vision Language Models",
-      "Vision Transformers (ViT)",
-      "bge-m3",
-      "segment-anything"
+      "Vision Transformers (ViT)"
     ],
     "tree-based": [
       "AdaBoost",
@@ -5002,18 +4870,11 @@
       "AnomalyCLIP",
       "ColPali",
       "Embedding multimodal et modality gap",
-      "Gemma",
-      "LightOnOCR-3",
-      "MiMo-V2.6",
       "MinerU",
-      "Mistral",
       "Modèles de fondation vision",
       "OCR classique vs modèles vision-langage pour documents",
       "OCR vision-langage en une passe avec grounding",
-      "Qwen",
-      "Qwen3-VL-Embedding",
       "RAG visuel - retrouver des documents sans OCR",
-      "SigLIP 2",
       "Surya",
       "Vision Language Models",
       "olmOCR"
@@ -5085,8 +4946,7 @@
       "Anomalie visuelle zero-shot et few-shot",
       "AnomalyCLIP",
       "Foundation models et anomalies de séries",
-      "Pré-entraînement, affinage et apprentissage en contexte",
-      "SigLIP 2"
+      "Pré-entraînement, affinage et apprentissage en contexte"
     ]
   },
   "pages": [
@@ -10890,40 +10750,6 @@
       "maturite": "beta"
     },
     {
-      "path": "Data & pipelines/Parsing/LightOnOCR-3.md",
-      "nom": "LightOnOCR-3",
-      "alias": [
-        "LightOnOCR 3",
-        "LightOnOCR-3-0.8B",
-        "LightOnOCR-3-1B",
-        "LightOnOCR-3-4B",
-        "lightonai/LightOnOCR-3-4B",
-        "LightOn OCR"
-      ],
-      "role": "brique",
-      "categorie": "data/parsing",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Famille de trois modèles d'OCR à poids ouverts de LightOn (0,8B, 1B, 4B, Apache-2.0) : un seul modèle vision-langage lit la page en une génération et rend le Markdown ou, en mode grounding, l'étiquette et la boîte de chaque bloc, la description des images et les graphiques en tableaux ; servi par vLLM, scores auto-rapportés.",
-      "tags": [
-        "ocr",
-        "document-parsing",
-        "vision-language",
-        "layout-analysis",
-        "gpu",
-        "self-hosted"
-      ],
-      "alternatives": [
-        "[[olmOCR]]",
-        "[[PaddleOCR]]",
-        "[[MinerU]]",
-        "[[Surya]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
       "path": "Data & pipelines/Parsing/LlamaParse.md",
       "nom": "LlamaParse",
       "alias": [
@@ -11014,8 +10840,7 @@
         "[[olmOCR]]",
         "[[Marker]]",
         "[[Docling]]",
-        "[[PaddleOCR]]",
-        "[[LightOnOCR-3]]"
+        "[[PaddleOCR]]"
       ],
       "complements": [
         "[[RAGFlow]]"
@@ -11150,7 +10975,6 @@
         "[[EasyOCR]]",
         "[[olmOCR]]",
         "[[MinerU]]",
-        "[[LightOnOCR-3]]",
         "[[Indra OCR]]",
         "[[Surya]]"
       ],
@@ -11240,7 +11064,6 @@
       ],
       "alternatives": [
         "[[olmOCR]]",
-        "[[LightOnOCR-3]]",
         "[[PaddleOCR]]",
         "[[Indra OCR]]"
       ],
@@ -11371,7 +11194,6 @@
         "[[Marker]]",
         "[[Docling]]",
         "[[PaddleOCR]]",
-        "[[LightOnOCR-3]]",
         "[[Surya]]"
       ],
       "complements": [],
@@ -15855,9 +15677,7 @@
         "[[Axolotl]]",
         "[[Tunix]]"
       ],
-      "complements": [
-        "[[Qwen]]"
-      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -16146,9 +15966,7 @@
         "[[LLaMA-Factory]]",
         "[[Tunix]]"
       ],
-      "complements": [
-        "[[Gemma]]"
-      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -16209,10 +16027,7 @@
         "[[LLaMA-Factory]]",
         "[[Tunix]]"
       ],
-      "complements": [
-        "[[Qwen]]",
-        "[[Gemma]]"
-      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -16362,25 +16177,6 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/Modèles de langage/Comparatif - Modèles de langage open weights.md",
-      "nom": "Comparatif - Modèles de langage open weights",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "llm/modele",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "llm",
-        "local-llm",
-        "self-hosted"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
       "path": "LLM & IA générative/Modèles de langage/Contexte long.md",
       "nom": "Contexte long",
       "alias": [
@@ -16452,36 +16248,6 @@
       "maturite": null
     },
     {
-      "path": "LLM & IA générative/Modèles de langage/DeepSeek-V4.1-Flash.md",
-      "nom": "DeepSeek-V4.1-Flash",
-      "alias": [
-        "DeepSeek V4.1 Flash",
-        "deepseek-flash",
-        "DeepSeek-V4.1",
-        "DeepSeek Flash",
-        "CSA2"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle de langage à poids ouverts de DeepSeek-AI (MIT, MoE de 552 B dont 8 B actifs au prefill et 16 B au décodage) — contexte de 1 M de tokens, cache KV de 890 octets par token, effort de raisonnement réglable de 1 à 100 ; checkpoint de 510 Go, donc un nœud multi-GPU.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[gpt-oss]]",
-        "[[Qwen]]",
-        "[[MiMo-V2.6]]"
-      ],
-      "complements": null,
-      "maturite": "production"
-    },
-    {
       "path": "LLM & IA générative/Modèles de langage/Effort de raisonnement et courbe coût-qualité.md",
       "nom": "Effort de raisonnement et courbe coût-qualité",
       "alias": [
@@ -16510,44 +16276,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Modèles de langage/Gemma.md",
-      "nom": "Gemma",
-      "alias": [
-        "Gemma 4",
-        "Gemma 3",
-        "Google Gemma",
-        "Gemma-4-31B-it"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use",
-        "vision-language"
-      ],
-      "alternatives": [
-        "[[Qwen]]",
-        "[[Mistral]]",
-        "[[gpt-oss]]"
-      ],
-      "complements": [
-        "[[vLLM]]",
-        "[[SGLang]]",
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]",
-        "[[Unsloth]]",
-        "[[TRL]]"
-      ],
-      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Modèles de langage/Généalogie des modèles de langage (2011-GPT-3).md",
@@ -16646,75 +16374,6 @@
       "maturite": null
     },
     {
-      "path": "LLM & IA générative/Modèles de langage/MiMo-V2.6.md",
-      "nom": "MiMo-V2.6",
-      "alias": [
-        "MiMo-V2.6-Pro",
-        "MiMo-V2.6-Flash",
-        "MiMo-V2.6-Pro-RL",
-        "MiMo-V2.6-Flash-RL",
-        "Xiaomi MiMo",
-        "MiMo V2.6"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèles omnimodaux à poids ouverts de Xiaomi (MIT selon les cartes) — Pro de 1,02 T dont 42 B actifs, Flash de 309 B dont 15 B actifs, entrée texte, image, audio et vidéo, sortie texte seule, 1 M de tokens ; 573 Go et 178 Go de poids, donc des nœuds multi-GPU.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use",
-        "vision-language"
-      ],
-      "alternatives": [
-        "[[DeepSeek-V4.1-Flash]]",
-        "[[Qwen]]"
-      ],
-      "complements": null,
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Modèles de langage/Mistral.md",
-      "nom": "Mistral",
-      "alias": [
-        "Mistral AI",
-        "Mistral Small",
-        "Ministral",
-        "Ministral 3",
-        "Devstral",
-        "Magistral",
-        "Mistral Medium"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèles ouverts de Mistral AI — Small 4 (119 B MoE), Ministral 3 (3, 8, 14 B) et Devstral Small 2 en Apache-2.0 ; Medium 3.5 et Devstral 2 sous MIT modifié, exclu au-delà de 20 M$ de revenu mensuel ; 256k tokens, français cité, outils et raisonnement.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use",
-        "vision-language"
-      ],
-      "alternatives": [
-        "[[Qwen]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]"
-      ],
-      "complements": [
-        "[[vLLM]]",
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "LLM & IA générative/Modèles de langage/Modèles de langage.md",
       "nom": "Modèles de langage",
       "alias": null,
@@ -16799,48 +16458,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Modèles de langage/Qwen.md",
-      "nom": "Qwen",
-      "alias": [
-        "Qwen3.8",
-        "Qwen3.6",
-        "Qwen3.5",
-        "Qwen3.8-27B",
-        "Qwen3 LLM",
-        "Tongyi Qianwen"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use",
-        "vision-language"
-      ],
-      "alternatives": [
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]",
-        "[[DeepSeek-V4.1-Flash]]",
-        "[[MiMo-V2.6]]"
-      ],
-      "complements": [
-        "[[vLLM]]",
-        "[[SGLang]]",
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[Unsloth]]",
-        "[[LLaMA-Factory]]",
-        "[[Qwen3-Embedding]]"
-      ],
-      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Modèles de langage/Reasoning models.md",
@@ -16986,41 +16603,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Modèles de langage/gpt-oss.md",
-      "nom": "gpt-oss",
-      "alias": [
-        "gpt-oss-20b",
-        "gpt-oss-120b",
-        "OpenAI gpt-oss",
-        "GPT OSS"
-      ],
-      "role": "brique",
-      "categorie": "llm/modele",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèles ouverts d'OpenAI (Apache-2.0, 20 B et 120 B MoE en MXFP4) — 131 072 tokens, raisonnement à trois niveaux, appel d'outils ; le 20 B tient dans 16 Go, le 120 B sur un GPU de 80 Go ; texte seul, format harmony obligatoire.",
-      "tags": [
-        "llm",
-        "local-llm",
-        "reasoning",
-        "tool-use"
-      ],
-      "alternatives": [
-        "[[Qwen]]",
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[DeepSeek-V4.1-Flash]]"
-      ],
-      "complements": [
-        "[[vLLM]]",
-        "[[Ollama]]",
-        "[[llama.cpp]]",
-        "[[LM Studio]]"
-      ],
-      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Mémoire des agents/Agent memory.md",
@@ -17752,9 +17334,7 @@
         "rag"
       ],
       "alternatives": [
-        "[[bge-reranker]]",
-        "[[FlashRank]]",
-        "[[Jina Reranker]]"
+        "[[FlashRank]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -17925,9 +17505,7 @@
         "rag"
       ],
       "alternatives": [
-        "[[bge-reranker]]",
-        "[[Cohere Rerank]]",
-        "[[Jina Reranker]]"
+        "[[Cohere Rerank]]"
       ],
       "complements": [],
       "maturite": "beta"
@@ -18017,37 +17595,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/RAG & retrieval/Jina Reranker.md",
-      "nom": "Jina Reranker",
-      "alias": [
-        "jina-reranker",
-        "jina-reranker-v3",
-        "jina-reranker-v2-base-multilingual",
-        "jina-reranker-m0"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.",
-      "tags": [
-        "retrieval",
-        "reranking",
-        "rag",
-        "embeddings"
-      ],
-      "alternatives": [
-        "[[bge-reranker]]",
-        "[[Cohere Rerank]]",
-        "[[FlashRank]]"
-      ],
-      "complements": [
-        "[[sentence-transformers]]"
-      ],
-      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/RAG & retrieval/Late-interaction retrieval.md",
@@ -18471,39 +18018,6 @@
       "maturite": null
     },
     {
-      "path": "LLM & IA générative/RAG & retrieval/bge-reranker.md",
-      "nom": "bge-reranker",
-      "alias": [
-        "FlagEmbedding",
-        "BGE reranker",
-        "bge-reranker-v2-m3",
-        "BAAI reranker"
-      ],
-      "role": "brique",
-      "categorie": "llm/rag",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local.",
-      "tags": [
-        "retrieval",
-        "reranking",
-        "rag",
-        "embeddings"
-      ],
-      "alternatives": [
-        "[[Cohere Rerank]]",
-        "[[FlashRank]]",
-        "[[Jina Reranker]]"
-      ],
-      "complements": [
-        "[[sentence-transformers]]",
-        "[[bge-m3]]",
-        "[[Text Embeddings Inference]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "LLM & IA générative/Runtimes/Comparatif - Exécution & serving LLM.md",
       "nom": "Comparatif - Exécution & serving LLM",
       "alias": null,
@@ -18655,9 +18169,6 @@
       ],
       "complements": [
         "[[LM Studio Bionic]]",
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]",
         "[[AnythingLLM]]"
       ],
       "maturite": "production"
@@ -18751,19 +18262,13 @@
         "[[vLLM]]",
         "[[TGI]]",
         "[[SGLang]]",
-        "[[TensorRT-LLM]]",
-        "[[needle]]"
+        "[[TensorRT-LLM]]"
       ],
       "complements": [
-        "[[Qwen]]",
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]",
         "[[Open WebUI]]",
         "[[LibreChat]]",
         "[[AnythingLLM]]",
         "[[RAGFlow]]",
-        "[[Llama Guard]]",
         "[[Mem0]]",
         "[[Graphiti]]",
         "[[Cognee]]"
@@ -18978,10 +18483,7 @@
         "[[TGI]]",
         "[[TensorRT-LLM]]"
       ],
-      "complements": [
-        "[[Qwen]]",
-        "[[Gemma]]"
-      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -19173,44 +18675,10 @@
         "[[vLLM]]",
         "[[TGI]]",
         "[[SGLang]]",
-        "[[TensorRT-LLM]]",
-        "[[needle]]"
-      ],
-      "complements": [
-        "[[Qwen]]",
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "LLM & IA générative/Runtimes/needle.md",
-      "nom": "needle",
-      "alias": [
-        "cactus-needle",
-        "needle2",
-        "Cactus Needle"
-      ],
-      "role": "brique",
-      "categorie": "llm/runtime",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle spécialisé de 45 M paramètres pour l'appel d'outils et l'extraction structurée (Apache-2.0, poids compris) — quantifié en 2 bits dans un binaire de 14 Mo qui embarque son propre moteur, du Raspberry Pi au WebAssembly ; sortie JSON garantie par grammaire et score de confiance pour escalader vers un gros modèle.",
-      "tags": [
-        "local-llm",
-        "small-language-model",
-        "quantization",
-        "tool-use",
-        "structured-output"
-      ],
-      "alternatives": [
-        "[[llama.cpp]]",
-        "[[Ollama]]"
+        "[[TensorRT-LLM]]"
       ],
       "complements": [],
-      "maturite": "beta"
+      "maturite": "production"
     },
     {
       "path": "LLM & IA générative/Runtimes/prompt-caching.md",
@@ -19302,12 +18770,7 @@
       ],
       "complements": [
         "[[Tunix]]",
-        "[[Qwen]]",
-        "[[Mistral]]",
-        "[[Gemma]]",
-        "[[gpt-oss]]",
         "[[Open WebUI]]",
-        "[[Llama Guard]]",
         "[[Graphiti]]"
       ],
       "maturite": "production"
@@ -19335,54 +18798,6 @@
         "classification",
         "routing",
         "llm"
-      ],
-      "alternatives": null,
-      "complements": null,
-      "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Sortie typée/Clef.md",
-      "nom": "Clef",
-      "alias": [
-        "Clef-flash",
-        "Clef-omni",
-        "Cloudflare Clef",
-        "Cloudflare/clef"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Famille de modèles de décision de Cloudflare à poids ouverts (Apache-2.0) — Clef 27 Md, Clef-flash 9 Md et Clef-omni 30 Md MoE : un état et des questions typées donnent une probabilité par option en une passe, sans texte ; entrée texte, image et vidéo (audio pour Clef-omni) ; 54,7, 18,8 et 70,5 Go en BF16, donc un GPU de serveur.",
-      "tags": [
-        "structured-output",
-        "classification",
-        "calibration",
-        "multimodal",
-        "llm"
-      ],
-      "alternatives": [
-        "[[d1-3B]]",
-        "[[Laya]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
-      "path": "LLM & IA générative/Sortie typée/Comparatif - Modèles de décision.md",
-      "nom": "Comparatif - Modèles de décision",
-      "alias": null,
-      "role": "comparatif",
-      "categorie": "llm/sortie-structuree",
-      "famille": null,
-      "langage": null,
-      "domaines": null,
-      "pitch": null,
-      "tags": [
-        "structured-output",
-        "classification",
-        "calibration"
       ],
       "alternatives": null,
       "complements": null,
@@ -19523,37 +18938,6 @@
       "maturite": "production"
     },
     {
-      "path": "LLM & IA générative/Sortie typée/Laya.md",
-      "nom": "Laya",
-      "alias": [
-        "Laya decision model",
-        "laya-typed-decisions",
-        "laya-multilingual",
-        "convaiinnovations/laya",
-        "Convai Laya"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle de décision à poids ouverts de Convai Innovations (Apache-2.0), à ajuster avant usage — encodeur ModernBERT de 421 M (mmBERT de 322 M en multilingue) dont les poids de base font 0,362 sur son banc, sous la classe majoritaire (0,461), contre 0,766 pour le checkpoint ajusté ; texte seul, 512 à 1 024 tokens de contexte ; 0,84 Go en FP16, 33 ms sur Tesla T4 en multilingue.",
-      "tags": [
-        "structured-output",
-        "classification",
-        "calibration",
-        "text-classification",
-        "edge-inference"
-      ],
-      "alternatives": [
-        "[[Clef]]",
-        "[[d1-3B]]",
-        "[[d1-omni-600M]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
       "path": "LLM & IA générative/Sortie typée/Modèle de décision.md",
       "nom": "Modèle de décision",
       "alias": [
@@ -19654,66 +19038,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Sortie typée/d1-3B.md",
-      "nom": "d1-3B",
-      "alias": [
-        "d1",
-        "Liquid d1-3B",
-        "LiquidAI/d1-3B",
-        "Open d1",
-        "Liquid d1"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle de décision à poids ouverts de Liquid AI (3,1 Md, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel, à lire avant de livrer chez un client) — un état en texte ou en image et des questions typées donnent une probabilité par option en une passe, sans texte ; 6,25 Go en BF16, 8 ms sur RTX 4090 et 30 ms sur Apple M5 Pro selon Liquid.",
-      "tags": [
-        "structured-output",
-        "classification",
-        "calibration",
-        "multimodal",
-        "edge-inference"
-      ],
-      "alternatives": [
-        "[[Clef]]",
-        "[[d1-omni-600M]]",
-        "[[Laya]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
-      "path": "LLM & IA générative/Sortie typée/d1-omni-600M.md",
-      "nom": "d1-omni-600M",
-      "alias": [
-        "d1-omni",
-        "Liquid d1-omni",
-        "LiquidAI/d1-omni-600M"
-      ],
-      "role": "brique",
-      "categorie": "llm/sortie-structuree",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle de décision expérimental à poids ouverts de Liquid AI (587 M, LFM Open License : gratuit sous 10 M$ de chiffre d'affaires annuel) — un état en texte avec une image ou un clip audio de 30 s en anglais donne des probabilités typées en une passe ; 2,35 Go en FP32 ; aucune latence publiée par l'éditeur ; 2 documents sur 8 triés dans l'essai d'un tiers.",
-      "tags": [
-        "structured-output",
-        "classification",
-        "calibration",
-        "multimodal",
-        "speech",
-        "edge-inference"
-      ],
-      "alternatives": [
-        "[[d1-3B]]",
-        "[[Laya]]"
-      ],
-      "complements": null,
-      "maturite": "experimental"
     },
     {
       "path": "LLM & IA générative/Tarif catalogue contre coût par tâche.md",
@@ -20265,8 +19589,7 @@
         "[[Ragas]]",
         "[[TruLens]]",
         "[[promptfoo]]",
-        "[[Inspect AI]]",
-        "[[Prometheus-Eval]]"
+        "[[Inspect AI]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -20427,33 +19750,6 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
-    },
-    {
-      "path": "LLM & IA générative/Évaluation/Prometheus-Eval.md",
-      "nom": "Prometheus-Eval",
-      "alias": [
-        "prometheus-eval",
-        "Prometheus 2",
-        "Prometheus2",
-        "M-Prometheus"
-      ],
-      "role": "brique",
-      "categorie": "llm/eval",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèles-juges ouverts et bibliothèque Python (Apache-2.0) — Prometheus 2 en 7B et 8x7B note une réponse de 1 à 5 selon une rubrique ou choisit entre deux réponses, en local via vLLM ou par API via LiteLLM ; M-Prometheus (3B, 7B, 14B) pour le multilingue.",
-      "tags": [
-        "llm",
-        "llm-eval",
-        "llm-as-judge",
-        "local-llm"
-      ],
-      "alternatives": [
-        "[[DeepEval]]"
-      ],
-      "complements": [],
-      "maturite": "beta"
     },
     {
       "path": "LLM & IA générative/Évaluation/RAG benchmarks.md",
@@ -22536,90 +21832,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Apprentissage profond/Qwen-Image-2.1.md",
-      "nom": "Qwen-Image-2.1",
-      "alias": [
-        "Qwen Image 2.1",
-        "Qwen/Qwen-Image-2.1",
-        "QwenImage21Pipeline",
-        "qwen-research"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle d'image d'Alibaba sous licence de recherche non commerciale (qwen-research) — texte vers image, édition jusqu'à 10 références et canal alpha natif en un seul checkpoint de 7 B (16,6 B pour la chaîne complète) ; recherche et évaluation seulement, jamais de livraison à un client.",
-      "tags": [
-        "generative-model",
-        "image-generation",
-        "diffusion",
-        "multimodal"
-      ],
-      "alternatives": [
-        "[[Qwen-Image]]",
-        "[[Qwen-Image-Layered]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
-      "path": "Machine Learning/Apprentissage profond/Qwen-Image-Layered.md",
-      "nom": "Qwen-Image-Layered",
-      "alias": [
-        "Qwen Image Layered",
-        "Qwen/Qwen-Image-Layered",
-        "QwenImageLayeredPipeline"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle d'Alibaba qui décompose une image en couches RGBA éditables (Apache-2.0, 20 B) — chaque couche se redimensionne, se déplace ou se recolore sans toucher aux autres ; la voie livrable vers la transparence.",
-      "tags": [
-        "generative-model",
-        "image-generation",
-        "diffusion",
-        "multimodal"
-      ],
-      "alternatives": [
-        "[[Qwen-Image-2.1]]"
-      ],
-      "complements": [
-        "[[Qwen-Image]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Apprentissage profond/Qwen-Image.md",
-      "nom": "Qwen-Image",
-      "alias": [
-        "Qwen Image",
-        "Qwen/Qwen-Image",
-        "Qwen-Image 20B"
-      ],
-      "role": "brique",
-      "categorie": "ml/apprentissage-profond",
-      "famille": "modele",
-      "langage": null,
-      "domaines": null,
-      "pitch": "Modèle de génération et d'édition d'images d'Alibaba (Apache-2.0, 20 B) — texte vers image avec un rendu de texte soigné, anglais et chinois, 1328 × 1328 en carré ; la base livrable de la lignée Qwen-Image, avant la 2.1 sous licence de recherche.",
-      "tags": [
-        "generative-model",
-        "image-generation",
-        "diffusion",
-        "multimodal"
-      ],
-      "alternatives": [
-        "[[Qwen-Image-2.1]]"
-      ],
-      "complements": [
-        "[[Qwen-Image-Layered]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Apprentissage profond/Rétropropagation et différentiation automatique.md",
       "nom": "Rétropropagation et différentiation automatique",
       "alias": [
@@ -22955,9 +22167,7 @@
         "[[Label Studio]]"
       ],
       "complements": [
-        "[[Ultralytics YOLO]]",
         "[[Detectron2]]",
-        "[[segment-anything]]",
         "[[Postgres]]",
         "[[Docker Compose]]",
         "[[Kubernetes]]",
@@ -24246,35 +23456,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Embeddings & encodeurs/EmbeddingGemma 2.md",
-      "nom": "EmbeddingGemma 2",
-      "alias": [
-        "EmbeddingGemma2",
-        "embeddinggemma-2",
-        "google/embeddinggemma-2",
-        "EmbeddingGemma v2"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.",
-      "tags": [
-        "embeddings",
-        "multimodal",
-        "semantic-search",
-        "retrieval",
-        "embedded"
-      ],
-      "alternatives": [
-        "[[Qwen3-VL-Embedding]]",
-        "[[SigLIP 2]]"
-      ],
-      "complements": null,
-      "maturite": "beta"
-    },
-    {
       "path": "Machine Learning/Embeddings & encodeurs/Embeddings & encodeurs.md",
       "nom": "Embeddings & encodeurs",
       "alias": [
@@ -24365,96 +23546,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Embeddings & encodeurs/Qwen3-Embedding.md",
-      "nom": "Qwen3-Embedding",
-      "alias": [
-        "Qwen3 Embedding",
-        "Qwen3-Embedding-0.6B",
-        "Qwen3-Embedding-4B",
-        "Qwen3-Embedding-8B"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.",
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "retrieval",
-        "transformers",
-        "reranking"
-      ],
-      "alternatives": [
-        "[[bge-m3]]"
-      ],
-      "complements": [
-        "[[sentence-transformers]]",
-        "[[Text Embeddings Inference]]",
-        "[[Qwen]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Embeddings & encodeurs/Qwen3-VL-Embedding.md",
-      "nom": "Qwen3-VL-Embedding",
-      "alias": [
-        "Qwen3 VL Embedding",
-        "Qwen3-VL-Embedding-2B",
-        "Qwen3-VL-Embedding-8B",
-        "Qwen3-VL-Reranker"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.",
-      "tags": [
-        "embeddings",
-        "multimodal",
-        "vision-language",
-        "retrieval",
-        "reranking"
-      ],
-      "alternatives": [
-        "[[EmbeddingGemma 2]]",
-        "[[SigLIP 2]]"
-      ],
-      "complements": null,
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Embeddings & encodeurs/SigLIP 2.md",
-      "nom": "SigLIP 2",
-      "alias": [
-        "SigLIP2",
-        "google/siglip2",
-        "siglip2-so400m-patch14-384",
-        "SigLIP 2 So400m"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.",
-      "tags": [
-        "embeddings",
-        "multimodal",
-        "vision-language",
-        "zero-shot",
-        "retrieval"
-      ],
-      "alternatives": [
-        "[[EmbeddingGemma 2]]",
-        "[[Qwen3-VL-Embedding]]"
-      ],
-      "complements": null,
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Embeddings & encodeurs/Text Embeddings Inference.md",
       "nom": "Text Embeddings Inference",
       "alias": [
@@ -24482,41 +23573,7 @@
         "[[FastEmbed]]"
       ],
       "complements": [
-        "[[bge-m3]]",
-        "[[Qwen3-Embedding]]",
-        "[[bge-reranker]]",
         "[[RAGFlow]]"
-      ],
-      "maturite": "production"
-    },
-    {
-      "path": "Machine Learning/Embeddings & encodeurs/bge-m3.md",
-      "nom": "bge-m3",
-      "alias": [
-        "BGE-M3",
-        "BAAI/bge-m3",
-        "M3-Embedding"
-      ],
-      "role": "brique",
-      "categorie": "ml/embeddings",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.",
-      "tags": [
-        "embeddings",
-        "semantic-search",
-        "retrieval",
-        "hybrid-search",
-        "transformers"
-      ],
-      "alternatives": [
-        "[[Qwen3-Embedding]]"
-      ],
-      "complements": [
-        "[[sentence-transformers]]",
-        "[[Text Embeddings Inference]]",
-        "[[bge-reranker]]"
       ],
       "maturite": "production"
     },
@@ -24577,11 +23634,7 @@
       "complements": [
         "[[HuggingFace]]",
         "[[SetFit]]",
-        "[[txtai]]",
-        "[[bge-reranker]]",
-        "[[Jina Reranker]]",
-        "[[bge-m3]]",
-        "[[Qwen3-Embedding]]"
+        "[[txtai]]"
       ],
       "maturite": "production"
     },
@@ -25154,10 +24207,7 @@
         "[[CVAT]]"
       ],
       "complements": [
-        "[[Ultralytics YOLO]]",
-        "[[segment-anything]]",
         "[[spaCy]]",
-        "[[GLiNER]]",
         "[[Postgres]]",
         "[[Docker Compose]]",
         "[[Kubernetes]]"
@@ -25878,33 +24928,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/NLP/GLiNER.md",
-      "nom": "GLiNER",
-      "alias": [
-        "gliner",
-        "generalist ner"
-      ],
-      "role": "brique",
-      "categorie": "ml/nlp",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.",
-      "tags": [
-        "ner",
-        "nlp",
-        "transformers"
-      ],
-      "alternatives": [
-        "[[spaCy]]"
-      ],
-      "complements": [
-        "[[Label Studio]]",
-        "[[Presidio]]"
-      ],
-      "maturite": "beta"
-    },
-    {
       "path": "Machine Learning/NLP/Liage d'entités.md",
       "nom": "Liage d'entités",
       "alias": [
@@ -26194,7 +25217,6 @@
         "tokenization"
       ],
       "alternatives": [
-        "[[GLiNER]]",
         "[[NLTK]]"
       ],
       "complements": [
@@ -27522,9 +26544,7 @@
       "alternatives": [
         "[[ONNX Runtime]]"
       ],
-      "complements": [
-        "[[Ultralytics YOLO]]"
-      ],
+      "complements": [],
       "maturite": "production"
     },
     {
@@ -27619,8 +26639,7 @@
         "[[TensorRT]]"
       ],
       "complements": [
-        "[[NVIDIA Triton]]",
-        "[[Ultralytics YOLO]]"
+        "[[NVIDIA Triton]]"
       ],
       "maturite": "production"
     },
@@ -28993,35 +28012,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Séries temporelles/Chronos.md",
-      "nom": "Chronos",
-      "alias": [
-        "Chronos-T5",
-        "Chronos-Bolt",
-        "Chronos-2",
-        "chronos-forecasting"
-      ],
-      "role": "brique",
-      "categorie": "ml/series-temporelles",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params).",
-      "tags": [
-        "forecasting",
-        "timeseries",
-        "foundation-model",
-        "transformers",
-        "deep-learning"
-      ],
-      "alternatives": [
-        "[[darts]]",
-        "[[Prophet]]"
-      ],
-      "complements": [],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Séries temporelles/Comparatif - Forecasting.md",
       "nom": "Comparatif - Forecasting",
       "alias": null,
@@ -29228,8 +28218,7 @@
       "alternatives": [
         "[[statsforecast]]",
         "[[neuralforecast]]",
-        "[[darts]]",
-        "[[Chronos]]"
+        "[[darts]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -29366,7 +28355,6 @@
         "[[statsforecast]]",
         "[[neuralforecast]]",
         "[[pmdarima]]",
-        "[[Chronos]]",
         "[[sktime]]"
       ],
       "complements": [],
@@ -30294,10 +29282,7 @@
         "deep-learning",
         "gpu"
       ],
-      "alternatives": [
-        "[[Ultralytics YOLO]]",
-        "[[segment-anything]]"
-      ],
+      "alternatives": [],
       "complements": [
         "[[supervision]]",
         "[[CVAT]]"
@@ -30735,43 +29720,6 @@
       "maturite": null
     },
     {
-      "path": "Machine Learning/Vision/Ultralytics YOLO.md",
-      "nom": "Ultralytics YOLO",
-      "alias": [
-        "YOLO",
-        "ultralytics",
-        "YOLOv8",
-        "YOLO11",
-        "YOLO26"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Famille de modèles de détection temps réel (YOLOv8 → YOLO11 → YOLO26) avec une API Python unifiée pour détection, segmentation, pose et suivi — entraînement, export et inférence en quelques lignes ; le défaut productif de la détection d'objets, sous licence AGPL-3.0.",
-      "tags": [
-        "object-detection",
-        "segmentation",
-        "pose-estimation",
-        "object-tracking",
-        "computer-vision",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Detectron2]]"
-      ],
-      "complements": [
-        "[[supervision]]",
-        "[[Label Studio]]",
-        "[[CVAT]]",
-        "[[OpenVINO]]",
-        "[[LiteRT]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Vision/Vision Transformers (ViT).md",
       "nom": "Vision Transformers (ViT)",
       "alias": [
@@ -30887,39 +29835,6 @@
       "maturite": "production"
     },
     {
-      "path": "Machine Learning/Vision/segment-anything.md",
-      "nom": "segment-anything",
-      "alias": [
-        "SAM",
-        "Segment Anything Model",
-        "sam2",
-        "sam3"
-      ],
-      "role": "brique",
-      "categorie": "ml/vision",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Code et poids officiels du Segment Anything Model de Meta — segmentation promptable zero-shot (points, boîtes, masques) sans réentraînement par classe ; la brique de référence pour pré-segmenter et annoter, prolongée par SAM 2 (vidéo) et SAM 3 (texte).",
-      "tags": [
-        "segmentation",
-        "foundation-model",
-        "computer-vision",
-        "transformers",
-        "deep-learning",
-        "gpu"
-      ],
-      "alternatives": [
-        "[[Detectron2]]"
-      ],
-      "complements": [
-        "[[supervision]]",
-        "[[Label Studio]]",
-        "[[CVAT]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Machine Learning/Vision/supervision.md",
       "nom": "supervision",
       "alias": [
@@ -30939,9 +29854,7 @@
       ],
       "alternatives": [],
       "complements": [
-        "[[Ultralytics YOLO]]",
         "[[Detectron2]]",
-        "[[segment-anything]]",
         "[[OpenCV]]"
       ],
       "maturite": "production"
@@ -39906,38 +38819,6 @@
       "maturite": null
     },
     {
-      "path": "Sécurité/Systèmes IA/Llama Guard.md",
-      "nom": "Llama Guard",
-      "alias": [
-        "llama guard",
-        "Llama Guard 3",
-        "Llama Guard 4",
-        "Meta Llama Guard",
-        "Llama Prompt Guard",
-        "Prompt Guard 2",
-        "LlamaGuard"
-      ],
-      "role": "brique",
-      "categorie": "security/ia",
-      "famille": "modele",
-      "langage": "Python",
-      "domaines": null,
-      "pitch": "Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher.",
-      "tags": [
-        "guardrails",
-        "safety",
-        "ai-security",
-        "local-llm"
-      ],
-      "alternatives": [],
-      "complements": [
-        "[[NeMo Guardrails]]",
-        "[[vLLM]]",
-        "[[Ollama]]"
-      ],
-      "maturite": "production"
-    },
-    {
       "path": "Sécurité/Systèmes IA/NeMo Guardrails.md",
       "nom": "NeMo Guardrails",
       "alias": [
@@ -39962,7 +38843,6 @@
       "alternatives": [],
       "complements": [
         "[[Presidio]]",
-        "[[Llama Guard]]",
         "[[garak]]"
       ],
       "maturite": "production"
@@ -40020,7 +38900,6 @@
       "alternatives": [],
       "complements": [
         "[[spaCy]]",
-        "[[GLiNER]]",
         "[[LiteLLM]]",
         "[[NeMo Guardrails]]"
       ],
