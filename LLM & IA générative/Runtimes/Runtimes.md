@@ -21,7 +21,7 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - L'**API OpenAI-compatible est devenue le format commun** de tous ces runtimes. C'est ce qui rend une application portable d'un moteur à l'autre, et ce qui permet de développer en local pour déployer sur GPU sans réécrire le code d'appel.
 - Le **décodage** est le réglage qui change le plus la sortie à modèle constant : [[Decoding strategies]] pour les compromis température / top-p / beam, [[Constrained decoding]] quand la sortie doit respecter une grammaire — un mécanisme du runtime, pas de la bibliothèque appelante. [[Speculative decoding]] et [[Multi-Token Prediction]] sont les deux façons de produire plus d'un token par passe.
 - Côté application, une génération se **streame** : [[Server-Sent Events & streaming LLM]] est le protocole que ces serveurs exposent, et le premier token perçu compte plus que le débit total pour l'utilisateur.
-- Un modèle peut être **la brique elle-même** quand il est assez petit pour embarquer son moteur : [[needle]] tient dans 14 Mo et garantit sa sortie par grammaire. C'est la même logique que les [[Small Language Models]] — le bon modèle est le plus petit qui passe l'éval.
+- Un modèle peut être **la brique elle-même** quand il est assez petit pour embarquer son moteur : needle tient dans 14 Mo et garantit sa sortie par grammaire. C'est la même logique que les [[Small Language Models]] — le bon modèle est le plus petit qui passe l'éval.
 
 ## Choisir
 
@@ -33,7 +33,7 @@ tags: [local-llm, inference, inference-optimization, quantization, model-serving
 - Même besoin avec beaucoup de préfixes partagés (prompts systèmes, few-shot) → [[SGLang]].
 - Rester dans l'écosystème Hugging Face, endpoints inclus → [[TGI]].
 - Extraire la dernière latence d'un parc NVIDIA, compilation acceptée → [[TensorRT-LLM]].
-- De l'appel d'outils et de l'extraction structurée sur un appareil contraint → [[needle]].
+- De l'appel d'outils et de l'extraction structurée sur un appareil contraint → needle.
 - Savoir ce que ma machine peut faire tourner avant de télécharger → [[llmfit]].
 - Savoir si un modèle tient sur mes GPU, combien d'utilisateurs il sert et à quelle vitesse → [[Dimensionner la mémoire d'un serveur LLM]] et [[Plafond de débit d'un GPU (roofline)]].
 - Estimer ce que coûte un million de tokens sur mon matériel, ou juger un tarif → [[Coût d'un token et taux d'utilisation]].

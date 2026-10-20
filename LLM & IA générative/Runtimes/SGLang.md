@@ -11,7 +11,7 @@ maturite: production
 langage: Python
 scaling: distributed
 alternatives: ["[[Ollama]]", "[[llama.cpp]]", "[[LM Studio]]", "[[text-generation-webui]]", "[[vLLM]]", "[[TGI]]", "[[TensorRT-LLM]]"]
-complements: ["[[Qwen]]", "[[Gemma]]"]
+complements: []
 tags: [llm, model-serving, inference, gpu]
 url_docs: https://docs.sglang.io/
 url_repo: https://github.com/sgl-project/sglang
@@ -68,8 +68,6 @@ l'écosystème PyTorch depuis mars 2025, avec un support « day-one » des modè
 
 ### Compléments
 
-- [[Qwen]] — Famille de modèles de langage d'Alibaba (Qwen3.8 : 27 B dense en Apache-2.0 ; Flash-Next et 2,4 T sous licences propres à clause « Model as a Service ») — 262 144 tokens, mode pensée réglable, appel d'outils, image et vidéo. — cité par la carte du 27 B.
-- [[Gemma]] — Modèles de langage ouverts de Google DeepMind — Gemma 4 (E2B à 31 B, dont un MoE de 26 B) en Apache-2.0, dépôts sans accès sur demande ; 128K à 256K tokens, image et audio, appel de fonctions et mode pensée ; la génération précédente reste sous Gemma Terms of Use. — cité par la documentation Gemma.
 
 ## Ressources
 
