@@ -25,7 +25,7 @@ tags: [nlp, ner, sequence-labeling, text-classification, information-retrieval, 
 ## Choisir
 
 - Un pipeline NLP industriel — tokenisation, POS, dépendances, NER — rapide et multilingue → [[spaCy]].
-- Extraire des entités dont les types ne sont pas connus à l'avance, sans réentraîner → [[GLiNER]].
+- Extraire des entités dont les types ne sont pas connus à l'avance, sans réentraîner → GLiNER.
 - Classer du texte avec quelques dizaines d'exemples seulement → [[SetFit]].
 - Ajouter une couche CRF à un tagger PyTorch → [[pytorch-crf]].
 - Entraîner ou réutiliser un tokeniseur sous-mot indépendant de la langue → [[sentencepiece]].

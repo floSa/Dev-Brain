@@ -69,7 +69,7 @@ flowchart LR
 
 ## Approches voisines & alternatives
 
-- [[NER et étiquetage de séquence]] — l'étape qui précède : repérer les mentions ; [[GLiNER]] et [[spaCy]] — des outils d'extraction d'entités, à brancher en amont.
+- [[NER et étiquetage de séquence]] — l'étape qui précède : repérer les mentions ; GLiNER et [[spaCy]] — des outils d'extraction d'entités, à brancher en amont.
 - [[Construction de graphes de connaissances]] — la résolution d'entités interne au graphe.
 - [[Graphe de connaissances]] — l'entrée du sujet ; [[RDF et triplets]] — les IRI sont les identifiants du référentiel.
 - [[Plongements de graphe et prédiction de liens]] — une tâche voisine : deviner des **relations** manquantes au lieu d'identités.

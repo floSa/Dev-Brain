@@ -44,7 +44,7 @@ tags: [nlp]
 
 ## En pratique
 
-- Pile Python : [[Scikit-Learn|scikit-learn]] (TF-IDF + classifieurs), [[NLTK]] (NLP classique / pédagogique, corpus), [[spaCy]] (tokenisation, NER, lemmatisation), [[HuggingFace]] / [[sentence-transformers]] (transformeurs, embeddings), [[rank-bm25]] (lexical), [[GLiNER]] / [[SetFit]] (zero / few-shot).
+- Pile Python : [[Scikit-Learn|scikit-learn]] (TF-IDF + classifieurs), [[NLTK]] (NLP classique / pédagogique, corpus), [[spaCy]] (tokenisation, NER, lemmatisation), [[HuggingFace]] / [[sentence-transformers]] (transformeurs, embeddings), [[rank-bm25]] (lexical), GLiNER / [[SetFit]] (zero / few-shot).
 - Pipeline type : **nettoyer / tokeniser** → **représenter** (sparse ou dense) → **tâche** (classer, étiqueter, rechercher) → **évaluer** (F1, NDCG).
 - Pour le français : lemmatiser (flexion riche), choisir des modèles adaptés (CamemBERT, embeddings multilingues).
 - Pièges récurrents : [[Data leakage]] en fittant le vectorizer sur train + test ; ignorer le déséquilibre des classes → [[Imbalanced classification]].

@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python
-alternatives: ["[[GLiNER]]", "[[NLTK]]"]
+alternatives: ["[[NLTK]]"]
 complements: ["[[HuggingFace]]", "[[Label Studio]]", "[[Presidio]]"]
 tags: [nlp, ner, sequence-labeling, tokenization]
 url_docs: https://spacy.io
@@ -42,7 +42,7 @@ directement le compromis vitesse / précision.
 |---|---|
 | Extraire entités, POS, dépendances rapidement, sans entraîner de modèle |  |
 | NER et [[NER et étiquetage de séquence]] de production sur du volume, avec un CPU efficace |  |
-| Pré-traitement linguistique — tokenisation, lemmatisation — en amont d'un pipeline ML | Le NER est limité aux **types appris** par le modèle : des types custom imposent d'entraîner, ou de passer à [[GLiNER]] |
+| Pré-traitement linguistique — tokenisation, lemmatisation — en amont d'un pipeline ML | Le NER est limité aux **types appris** par le modèle : des types custom imposent d'entraîner, ou de passer à GLiNER |
 | Entraîner ou fine-tuner un pipeline custom (`spacy train`, transformeurs via `spacy-transformers`) | Tâches non linguistiques — classification tabulaire, recherche pure → [[Scikit-Learn]] |
 | | Code hérité en v2 : la configuration a été repensée en v3 (config-driven, transformeurs), la migration n'est pas transparente |
 
@@ -58,7 +58,6 @@ directement le compromis vitesse / précision.
 
 ### Alternatives
 
-- [[GLiNER]] — Modèle de NER généraliste zero-shot — extrait n'importe quel type d'entité décrit en langage naturel, sans réentraînement, à partir d'un seul modèle léger.
 - [[NLTK]] — Bibliothèque NLP classique et pédagogique en Python — tokenisation, stemming, POS, corpus et algorithmes de référence, riche pour l'enseignement et le prototypage linguistique.
 
 ### Compléments
