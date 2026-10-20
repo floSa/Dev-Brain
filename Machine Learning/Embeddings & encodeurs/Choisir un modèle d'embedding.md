@@ -23,29 +23,29 @@ tags: [embeddings, semantic-search, retrieval, hybrid-search, benchmark, quantiz
 
 ### Longueur de contexte
 - Les encodeurs plafonnent vers 8 000 tokens ; LongEmbed (Zhu et al., EMNLP 2024) étend à 32 000 **sans réentraînement** par interpolation des positions, et constate que les positions rotatives (RoPE) s'étendent mieux que les positions absolues. ModernBERT (Warner et al., 2024) est natif à 8 192 positions ; ce n'est pas lui un modèle d'embedding, mais une base.
-- Dans le brain : [[bge-m3]] à 8 192 tokens, [[Qwen3-Embedding]] à 32K. Un contexte long ne dispense pas de découper : un vecteur unique sur dix pages dilue les passages utiles.
+- Dans le brain : bge-m3 à 8 192 tokens, Qwen3-Embedding à 32K. Un contexte long ne dispense pas de découper : un vecteur unique sur dix pages dilue les passages utiles.
 
 ### Dimension et Matryoshka
 - La dimension du vecteur fixe le coût de l'index. **Matryoshka Representation Learning** (Kusupati et al., NeurIPS 2022) entraîne le modèle pour que les premières coordonnées suffisent : on tronque sans réentraîner. Dans la documentation de sentence-transformers, un modèle entraîné ainsi garde 98,37 % de sa performance à 8,3 % de la taille, contre 96,46 % pour un modèle standard tronqué — sur un seul jeu, STSBenchmark, donc un exemple, non une garantie.
-- [[Qwen3-Embedding]] règle la dimension de 32 jusqu'au maximum ; [[bge-m3]] ne documente pas Matryoshka sur sa carte.
+- Qwen3-Embedding règle la dimension de 32 jusqu'au maximum ; bge-m3 ne documente pas Matryoshka sur sa carte.
 - **La dimension a une limite théorique.** Weller et al. (ICLR 2026) montrent que le nombre de sous-ensembles « top-k » qu'une requête peut isoler est borné par la dimension, et que leur jeu LIMIT met en échec les modèles actuels sur des requêtes simples. Leur conclusion est que le paradigme mono-vecteur a des limites intrinsèques.
 
 ### Dense, sparse, multi-vecteur
 - **Dense** : un vecteur par texte, comparé au cosinus. Le cas général, compact, sémantique.
 - **Sparse** : un poids par terme, appris (SPLADE, Formal et al., SIGIR 2021) ; se pose sur un index inversé, compétitif avec le dense selon l'article, et plus lisible, puisque les termes actifs se voient.
 - **Multi-vecteur** (ColBERT, Khattab et Zaharia, SIGIR 2020) : un vecteur par token, comparés par « late interaction ». Les documents se pré-calculent ; l'article annonce une latence cent fois plus basse et dix mille fois moins d'opérations par requête que des rerankers BERT. Le prix est un index beaucoup plus gros.
-- BEIR (Thakur et al., 2021) rappelle que BM25 reste une référence robuste et que les modèles denses généralisent moins bien hors de leur domaine : d'où l'intérêt de l'**hybride**. [[bge-m3]] produit les trois formes d'un seul calcul ; [[FastEmbed]] et [[sentence-transformers]] servent aussi le sparse.
+- BEIR (Thakur et al., 2021) rappelle que BM25 reste une référence robuste et que les modèles denses généralisent moins bien hors de leur domaine : d'où l'intérêt de l'**hybride**. bge-m3 produit les trois formes d'un seul calcul ; [[FastEmbed]] et [[sentence-transformers]] servent aussi le sparse.
 
 ### Licence
-- La licence du **code** n'est pas celle des **poids**, ni celle des **données**. Lues dans le dossier : [[bge-m3]] en MIT, [[Qwen3-Embedding]] en Apache-2.0.
+- La licence du **code** n'est pas celle des **poids**, ni celle des **données**. Lues dans le dossier : bge-m3 en MIT, Qwen3-Embedding en Apache-2.0.
 - Des modèles courants sont restreints : `jina-embeddings-v3` est en CC-BY-NC-4.0 (non commercial), `embeddinggemma-300m` est sous licence Gemma, d'après le registre de [[FastEmbed]]. Vérifier le champ `license` de la carte, **par modèle**, avant tout déploiement.
 
 ### Instructions et préfixes
-- Beaucoup de modèles exigent un texte d'accompagnement : une instruction côté requête pour [[Qwen3-Embedding]] (gain annoncé de 1 à 5 %), des préfixes `search_query:` et `search_document:` pour Nomic, des préfixes pour E5. L'oublier dégrade la qualité sans aucune erreur.
+- Beaucoup de modèles exigent un texte d'accompagnement : une instruction côté requête pour Qwen3-Embedding (gain annoncé de 1 à 5 %), des préfixes `search_query:` et `search_document:` pour Nomic, des préfixes pour E5. L'oublier dégrade la qualité sans aucune erreur.
 - Ces réglages sont une source documentée d'écarts : en migrant les scores auto-déclarés vers une vérification centralisée, les mainteneurs de MTEB ont relevé six problèmes de reproductibilité, dont les préfixes E5 et les prompts de tâche Nomic (Chung et al., 2025).
 
 ### Coût de serving
-- **Mémoire du modèle** : environ deux octets par paramètre en BF16 — [[Qwen3-Embedding]] en 0,6 B tient sur un CPU, le 8 B demande un GPU (estimation tirée du nombre de paramètres, la carte ne donne pas d'exigence).
+- **Mémoire du modèle** : environ deux octets par paramètre en BF16 — Qwen3-Embedding en 0,6 B tient sur un CPU, le 8 B demande un GPU (estimation tirée du nombre de paramètres, la carte ne donne pas d'exigence).
 - **Stockage des vecteurs** : voir *Les maths*. Quantifier les vecteurs (binaire, int8) divise la mémoire par 32 ou par 4 pour une perte modérée sur le cas publié.
 - **Outil de service** : en process pour un batch, serveur pour un usage partagé — [[Comparatif - Embeddings]].
 
@@ -63,7 +63,7 @@ tags: [embeddings, semantic-search, retrieval, hybrid-search, benchmark, quantiz
 - **Poser les instructions et préfixes dans le code d'indexation et de requête**, et les versionner avec le modèle.
 - **Ne jamais mélanger deux modèles** dans un même index : deux espaces incompatibles. Changer de modèle, c'est ré-indexer, donc choisir aussi en fonction du coût d'un calcul complet du corpus.
 - **Le choix d'outil est séparé du choix de modèle** : un même modèle se charge en bibliothèque ou se sert par un serveur ; [[Text Embeddings Inference]] ne lit que ses architectures, [[FastEmbed]] que son registre.
-- **Un reranker corrige un top-k, pas un premier étage mal choisi** : [[bge-reranker]], [[Reranking]].
+- **Un reranker corrige un top-k, pas un premier étage mal choisi** : bge-reranker, [[Reranking]].
 
 ### Limites des benchmarks publics
 - **Un agrégat.** MTEB classe par un comptage de Borda (MMTEB) ; un écart de quelques dixièmes de point entre modèles de tête n'est pas nécessairement significatif (neuf modèles équivalents en français).
@@ -78,11 +78,11 @@ tags: [embeddings, semantic-search, retrieval, hybrid-search, benchmark, quantiz
 - [[Comparatif - Embeddings]] — ce qui départage les outils et les modèles du dossier.
 - [[embeddings]] — la notion de base : ce qu'est un vecteur appris et à quoi il sert.
 - [[sentence-transformers]], [[FastEmbed]], [[Text Embeddings Inference]], [[Infinity]] — les outils qui calculent ou servent les embeddings.
-- [[bge-m3]], [[Qwen3-Embedding]] — les deux modèles du dossier : multilingue à trois sorties, et famille à contexte long et dimension réglable.
-- [[bge-reranker]] — le second étage, cross-encoder, qui reclasse le top-k.
+- bge-m3, Qwen3-Embedding — les deux modèles du dossier : multilingue à trois sorties, et famille à contexte long et dimension réglable.
+- bge-reranker — le second étage, cross-encoder, qui reclasse le top-k.
 - [[Bases de données vectorielles]] — où s'indexent les vecteurs, et où la dimension se paie.
 - **nomic-embed-text** n'a pas de fiche ici : Apache-2.0, anglais seulement en v1.5 (137 M, contexte de 8 192 tokens, Matryoshka), multilingue en v2-moe (contexte de 512), préfixes obligatoires, servi par Ollama ; écarté de la capture par le plafond de pages, non par manque de pertinence.
-- [[Embedding multimodal et modality gap]] — quand l'entrée n'est pas que du texte : [[EmbeddingGemma 2]], [[Qwen3-VL-Embedding]], [[SigLIP 2]].
+- [[Embedding multimodal et modality gap]] — quand l'entrée n'est pas que du texte : EmbeddingGemma 2, Qwen3-VL-Embedding, SigLIP 2.
 
 ## Pour aller plus loin
 

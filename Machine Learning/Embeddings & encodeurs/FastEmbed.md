@@ -43,7 +43,7 @@ lus. La bibliothèque n'entraîne ni ne distille rien. Version 0.8.1 le 2026-09-
 | Prendre si | Écarter si |
 |---|---|
 | Des embeddings sur **CPU, sans PyTorch** : image légère, démarrage court | Un modèle **hors catalogue** : le registre est fermé → [[sentence-transformers]], qui charge le Hub |
-| Du **sparse** ou du **ColBERT** dans la même API que le dense | [[bge-m3]] avec ses trois sorties → FlagEmbedding ou [[sentence-transformers]] |
+| Du **sparse** ou du **ColBERT** dans la même API que le dense | bge-m3 avec ses trois sorties → FlagEmbedding ou [[sentence-transformers]] |
 | Déjà sur [[Qdrant]], dont c'est la pile d'embeddings native (`qdrant-client[fastembed]`) | Un **service partagé** à opérer → [[Text Embeddings Inference]] ou [[Infinity]] |
 | Du code permissif : Apache-2.0 | Une **licence de modèle** qui compte : certains modèles embarqués sont sous CC-BY-NC ou sous licence Gemma (voir *Limites*) |
 | Un cache de modèles qui peut se figer pour le hors-ligne | Un cache non volatil sans configuration : le cache par défaut est un dossier temporaire |

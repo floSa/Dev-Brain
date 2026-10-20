@@ -11,7 +11,7 @@ maturite: production
 langage: Rust
 scaling: single-node
 alternatives: ["[[sentence-transformers]]", "[[Infinity]]", "[[FastEmbed]]"]
-complements: ["[[bge-m3]]", "[[Qwen3-Embedding]]", "[[bge-reranker]]", "[[RAGFlow]]"]
+complements: ["[[RAGFlow]]"]
 tags: [embeddings, model-serving, inference, semantic-search, reranking, self-hosted]
 url_docs: https://huggingface.co/docs/text-embeddings-inference
 url_repo: https://github.com/huggingface/text-embeddings-inference
@@ -45,7 +45,7 @@ Face pour les embeddings, et un dépôt actif : v1.9.4 publiée le 2026-09-15, d
 |---|---|
 | Un **service partagé** d'embeddings ou de reranking, appelé par plusieurs applications, avec métriques Prometheus et traces OpenTelemetry | Un script ou un batch qui encode un corpus une fois : [[sentence-transformers]] en process suffit, sans service à opérer |
 | Les modèles sont de la liste : BERT, XLM-R, Qwen3, Gemma3, ModernBERT, Nomic, GTE, Mistral… | Il faut **ColBERT, ColPali ou CLIP** : absents de la doc → [[Infinity]] |
-| Déployer **sans Internet** : poids clonés, volume monté, `--model-id /data/…` | Il faut du **sparse et du multi-vecteur de [[bge-m3]]** : la carte ne documente que le dense côté TEI → FlagEmbedding ou [[sentence-transformers]] |
+| Déployer **sans Internet** : poids clonés, volume monté, `--model-id /data/…` | Il faut du **sparse et du multi-vecteur de bge-m3** : la carte ne documente que le dense côté TEI → FlagEmbedding ou [[sentence-transformers]] |
 | Du gRPC, ou une API compatible `/v1/embeddings` pour remplacer un appel à une API externe | Un parc de GPU **antérieurs à Turing** (V100) : non supportés |
 | Licence sans ambiguïté : Apache-2.0 | Pas de GPU et pas d'envie de serveur : [[FastEmbed]] sur CPU, en process |
 
@@ -74,9 +74,6 @@ Face pour les embeddings, et un dépôt actif : v1.9.4 publiée le 2026-09-15, d
 
 ### Compléments
 
-- [[bge-m3]] — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle. — servi en dense.
-- [[Qwen3-Embedding]] — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche. — cité dans l'exemple du README.
-- [[bge-reranker]] — Famille de rerankers cross-encoders ouverts du BAAI (FlagEmbedding, MIT ; poids v2 Apache-2.0) — bge-reranker-v2-m3 (0,6 B, multilingue), variantes plus lourdes sur base Gemma ; se charge avec FlagReranker ou CrossEncoder, tourne en local. — le point d'appel `/rerank` sert les rerankers XLM-R.
 - [[RAGFlow]] — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
 ## Ressources

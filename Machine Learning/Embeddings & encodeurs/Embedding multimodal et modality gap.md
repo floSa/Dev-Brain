@@ -45,7 +45,7 @@ flowchart LR
 
 1. **Un entraînement contrastif sur des paires.** CLIP (OpenAI, arXiv 2103.00020) rapproche le vecteur d'une image et celui de sa légende, et éloigne les autres paires du lot, sur 400 millions de paires prises sur le web. Sans entraînement conjoint, un vecteur de texte et un vecteur d'image n'ont aucune relation. Voir [[Apprentissage contrastif]].
 2. **Des espaces alignés**, puis une mesure : le cosinus entre le vecteur de la question et ceux des images.
-3. **Des préfixes de tâche** pour certains modèles : la requête porte une consigne, l'image est encodée sans préfixe (cas d'EmbeddingGemma 2 : [[EmbeddingGemma 2]]).
+3. **Des préfixes de tâche** pour certains modèles : la requête porte une consigne, l'image est encodée sans préfixe (cas d'EmbeddingGemma 2 : EmbeddingGemma 2).
 
 ### Le modality gap
 
@@ -90,9 +90,9 @@ Relevés les 2026-10-19 et 2026-10-20 sur les cartes de modèles et dépôts ; �
 
 | Modèle | Modalités | Licence relevée | Remarque |
 |---|---|---|---|
-| [[EmbeddingGemma 2]] (Google, 2026-10-06) | texte, code, image, vidéo, audio | Apache-2.0 | 740 M, 768 dimensions ; MMEB v2 global 59,01 à 768 dimensions, 45,65 à 128 (carte) |
-| [[Qwen3-VL-Embedding]] (Alibaba, 2026-01-07) | texte, image, captures, vidéo ; pas d'audio | Apache-2.0 | 2 B et 8 B ; MMEB-V2 global 73,2 et 77,8 (README) |
-| [[SigLIP 2]] (Google, 2025-02) | texte, image | Apache-2.0 | encodeur double, recherche image-texte et classification zéro exemple |
+| EmbeddingGemma 2 (Google, 2026-10-06) | texte, code, image, vidéo, audio | Apache-2.0 | 740 M, 768 dimensions ; MMEB v2 global 59,01 à 768 dimensions, 45,65 à 128 (carte) |
+| Qwen3-VL-Embedding (Alibaba, 2026-01-07) | texte, image, captures, vidéo ; pas d'audio | Apache-2.0 | 2 B et 8 B ; MMEB-V2 global 73,2 et 77,8 (README) |
+| SigLIP 2 (Google, 2025-02) | texte, image | Apache-2.0 | encodeur double, recherche image-texte et classification zéro exemple |
 | Jina CLIP v2 (2024) | texte, image | CC-BY-NC-4.0 | poids non commerciaux |
 | CLIP (OpenAI, 2021) | texte, image | non relevée ici | le modèle d'origine de l'approche |
 
