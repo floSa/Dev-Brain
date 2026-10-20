@@ -27,7 +27,7 @@ tags: [inventory, newsvendor, forecasting, calibration, optimization]
 ### Les sorties probabilistes et ce qu'elles permettent
 
 - **Grille de quantiles par pas** : directe pour une période isolée. Ne permet **pas** de sommer sur plusieurs périodes (voir plus bas). Chronos-Bolt génère des quantiles multi-pas directement ; le rapport technique de Chronos-2 décrit une sortie $H \times D \times |Q|$ avec 21 quantiles (0,01 à 0,99) ; rien dans les passages lus ne décrit une loi jointe sur les pas.
-- **Échantillons de trajectoires** : le plus souple. Somme, maximum, coût d'une politique de stock simulée : tout se calcule sur les trajectoires. La qualité tient à la dépendance temporelle réellement modélisée. La doc de [[darts]] dit que `predict(num_samples=…)` renvoie des échantillons de Monte-Carlo « décrivant la loi jointe sur le temps et les composantes » ; si le modèle produit des pas indépendants, cette phrase ne vaut plus (non vérifié par modèle). La première génération de [[Chronos]] obtient ses prévisions probabilistes en échantillonnant plusieurs trajectoires futures (README).
+- **Échantillons de trajectoires** : le plus souple. Somme, maximum, coût d'une politique de stock simulée : tout se calcule sur les trajectoires. La qualité tient à la dépendance temporelle réellement modélisée. La doc de [[darts]] dit que `predict(num_samples=…)` renvoie des échantillons de Monte-Carlo « décrivant la loi jointe sur le temps et les composantes » ; si le modèle produit des pas indépendants, cette phrase ne vaut plus (non vérifié par modèle). La première génération de Chronos obtient ses prévisions probabilistes en échantillonnant plusieurs trajectoires futures (README).
 - **Loi paramétrique** (lognormale, binomiale négative…) : un quantile à tout niveau, une ligne de code. Exacte et additive seulement dans des cas fermés (somme de Poisson indépendants = Poisson ; voir [[Processus de Poisson]]) ; la surdispersion et la corrélation sortent de ce cadre.
 - **Ensemble ou borne conforme** : une borne haute à couverture annoncée, sans hypothèse de loi ([[Prédiction conforme]]). Suffit pour **une** quantité ; ne donne pas la loi, donc pas de coût simulé ni de somme.
 
@@ -101,7 +101,7 @@ cout = np.mean(cu*np.maximum(S - q, 0) + co*np.maximum(q - S, 0))
 - Un intervalle central de niveau $\ell$ a pour borne haute le quantile $(1+\ell)/2$ **s'il est à queues égales** (à vérifier par modèle) : `level=90` correspond à $\tau = 0{,}95$.
 - Mesurer, par famille de SKU, la **couverture empirique** des quantiles en backtest, puis recaler. Comparer toujours au coût réalisé d'une référence simple.
 - Outils (licences relevées sur GitHub le 2026-10-04) :
-  - [[Chronos]] (Apache-2.0) : Chronos original en échantillons de trajectoires ; Chronos-Bolt en quantiles directs multi-pas ; Chronos-2 via `predict_df(..., quantile_levels=[...])`.
+  - Chronos (Apache-2.0) : Chronos original en échantillons de trajectoires ; Chronos-Bolt en quantiles directs multi-pas ; Chronos-2 via `predict_df(..., quantile_levels=[...])`.
   - [[statsforecast]] (Apache-2.0) : `predict(h, level=[...])` pour les intervalles ; `ConformalIntervals(n_windows, h, method)` avec au moins 2 fenêtres ; méthodes `conformal_distribution` et `conformal_error`.
   - [[darts]] (Apache-2.0) : `num_samples` pour des échantillons ; la vraisemblance `QuantileRegression` entraîne avec la perte pinball ; des modèles conformes existent.
   - Pour les fondations : [[Foundation models pour séries temporelles]]. Une sortie « probabiliste native » ne dispense pas de mesurer la couverture.
