@@ -74,7 +74,7 @@ Modèles fermés (Claude, GPT-6, Gemini, Grok) : cités en texte simple, sans pa
 - [[Reasoning models]] — la classe de modèles dont la facture suit la réflexion.
 - [[LLM benchmarks]] — d'où viennent les indices qui accompagnent les coûts publiés.
 - [[Inference optimization]] — le côté fournisseur : ce qui fait baisser le coût d'un token.
-- [[DeepSeek-V4.1-Flash]] · [[MiMo-V2.6]] — deux modèles à poids ouverts dont le tarif et le coût par tâche divergent.
+- DeepSeek-V4.1-Flash · MiMo-V2.6 — deux modèles à poids ouverts dont le tarif et le coût par tâche divergent.
 
 ## Pour aller plus loin
 

@@ -36,9 +36,9 @@ tags: [llm, rag, agents, llm-eval, llm-observability, mcp, structured-output, ll
 - Ajuster les poids d'un modèle sur mon domaine → [[Fine-tuning]].
 - Interroger une base relationnelle en langage naturel → [[Text-to-SQL]].
 - Comprendre le modèle lui-même — tokens, décodage, taille, raisonnement → [[Modèles de langage]].
-- Choisir une famille de modèle à poids ouverts, et savoir ce que sa licence permet avant de la livrer chez un client → [[Licences de modèles open weights]] et [[Comparatif - Modèles de langage open weights]], dans [[Modèles de langage]].
+- Choisir une famille de modèle à poids ouverts, et savoir ce que sa licence permet avant de la livrer chez un client → [[Licences de modèles open weights]] et Comparatif - Modèles de langage open weights, dans [[Modèles de langage]].
 - Ancrer les réponses sur mes documents → [[RAG & retrieval]].
-- Garantir la forme de ce qui sort → [[Sortie typée]] ; une décision typée avec sa probabilité, sans générer → [[Modèle de décision]] et [[Comparatif - Modèles de décision]].
+- Garantir la forme de ce qui sort → [[Sortie typée]] ; une décision typée avec sa probabilité, sans générer → [[Modèle de décision]] et Comparatif - Modèles de décision.
 - Une seule API devant plusieurs fournisseurs, du routage, du cache → [[Passerelles]].
 - Savoir ce que vaut mon système avant la production → [[Évaluation]] ; après → [[Observabilité des LLM]].
 - Le socle générique pour composer chaînes et agents → [[LangChain]] ; optimiser les prompts au lieu de les écrire → [[DSPy]].
