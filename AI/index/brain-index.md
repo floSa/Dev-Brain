@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1250 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1259 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -482,7 +482,9 @@
 - **FlashRank** — Bibliothèque Python (Apache-2.0) de reranking léger sur CPU — modèles ONNX de 4 Mo (TinyBERT) à 150 Mo, sans Torch ni Transformers ; conçue pour le serverless et les démarrages à froid ; dernière release PyPI 0.2.10 en janvier 2025.
 - **Haystack** — Framework d'orchestration LLM de deepset (Apache-2.0) — pipelines modulaires et explicites pour RAG, recherche sémantique et agents, pensés pour la production ; contrôle fin du retrieval à la génération.
 - **Jina Reranker** — Rerankers de Jina AI (Elastic) — v3 et v3.5 listwise 0,6 B à 131K tokens de contexte, v2 multilingue cross-encoder, m0 multimodal ; poids CC-BY-NC 4.0 sur HF, usage commercial par l'API, les places de marché cloud ou la licence Jina On-Prem.
+- **LightRAG** — Framework RAG sur graphe (HKUDS, MIT) — extraction d'entités et de relations par LLM, récupération à deux niveaux (détails et concepts) sur graphe et vecteurs, ajout et suppression incrémentaux de documents ; serveur avec interface web et API, v1.5.7 en septembre 2026.
 - **LlamaIndex** — Framework orienté données pour le RAG et les agents — ingestion, indexation et récupération sur tes documents, puis interrogation par LLM ; le plus direct pour brancher un LLM sur une base de connaissances.
+- **Microsoft GraphRAG** — Bibliothèque Python de recherche (Microsoft, MIT) qui extrait un graphe d'un corpus par LLM, le découpe en communautés avec un rapport par communauté, puis répond en recherche locale, globale ou DRIFT ; projet en mode maintenance (corrections et mises à jour de dépendances seulement), v3.3.0 en octobre 2026.
 - **RAGatouille** — Bibliothèque (AnswerDotAI) qui rend les modèles de late-interaction ColBERT simples à entraîner et à utiliser dans un pipeline RAG — indexation PLAID, recherche et reranking par-dessus colbert-ai ; maintenance ralentie (dernière release 0.0.9.post2 en mai 2025).
 - **RAGFlow** — Moteur RAG clé en main (Apache-2.0, InfiniFlow) — parsing de documents par mise en page (DeepDoc, OCR, tables), chunking par modèles, recherche hybride avec reranking, GraphRAG, agents et serveur MCP ; lourd : un moteur de documents, MySQL, MinIO et un cache.
 
@@ -573,10 +575,13 @@
 
 ### ml/embeddings
 - **bge-m3** — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.
+- **EmbeddingGemma 2** — Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.
 - **FastEmbed** — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.
 - **Infinity** — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique.
 - **Qwen3-Embedding** — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.
+- **Qwen3-VL-Embedding** — Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.
 - **sentence-transformers** — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.
+- **SigLIP 2** — Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.
 - **Text Embeddings Inference** — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026.
 
 ### ml/eval
@@ -1013,7 +1018,9 @@
 ### llm/rag
 - **Advanced RAG** — domaines : ai-eng · alias : RAG avancé, advanced retrieval-augmented generation, modular RAG
 - **Chunking strategies** — domaines : ai-eng · alias : chunking, découpage de documents, stratégies de découpage, text splitting
+- **Coller le corpus ou récupérer** — domaines : ai-eng · alias : contexte long ou RAG, long contexte contre RAG, le RAG est-il mort, coller tout le corpus dans le prompt, cache chaud contre récupération, grep contre embeddings, règle de décision long contexte
 - **Construction de graphes de connaissances** — domaines : ai-eng · alias : knowledge graph construction, KG construction, extraction d'entités et de relations, knowledge graph building, peuplement de graphe de connaissances
+- **Droits d'accès dans un RAG** — domaines : ai-eng, data-eng · alias : permissions dans un RAG, contrôle d'accès RAG, security trimming, filtrage par droits, RAG et ACL, sur-partage, oversharing, index centralisé ou requête fédérée
 - **GraphRAG** — domaines : ai-eng · alias : graph RAG, knowledge graph RAG, RAG sur graphe, RAG augmenté par graphe de connaissances
 - **Hybrid retrieval** — domaines : ai-eng · alias : recherche hybride, hybrid search, retrieval hybride, dense + sparse
 - **Late-interaction retrieval** — domaines : ai-eng · alias : colbert, colbertv2, late interaction, interaction tardive, recherche multi-vecteur, plaid, maxsim
@@ -1021,6 +1028,7 @@
 - **RAG** — domaines : ai-eng · alias : Retrieval-Augmented Generation, génération augmentée par récupération, retrieval augmented generation
 - **RAG agentique** — domaines : ai-eng · alias : agentic RAG, RAG agentique, récupération adaptative, adaptive retrieval, Self-RAG, corrective RAG, recherche agentique, agentic search, active retrieval, FLARE, IRCoT, Search-R1
 - **RAG documentaire on-prem - clé en main ou assemblé** — domaines : ai-eng · alias : RAG documentaire on-prem, RAG on-prem, RAG documentaire on-prem : clé en main ou assemblé, moteur RAG clé en main, RAG clé en main ou assemblé, RAG interne
+- **RAG hiérarchique** — domaines : ai-eng · alias : hierarchical RAG, tree RAG, RAPTOR, parent-enfant, récupération parent-document, auto-merging retriever, pointer vers la bonne section, STAIR, RAG par table des matières
 - **RAG visuel - retrouver des documents sans OCR** — domaines : ai-eng, data-eng · alias : RAG visuel : retrouver des documents sans OCR, RAG visuel, visual RAG, visual document retrieval, recherche de pages par image
 - **Reranking** — domaines : ai-eng · alias : reranking, reclassement, re-ranking, rerank
 
@@ -1168,6 +1176,7 @@
 
 ### ml/embeddings
 - **Choisir un modèle d'embedding** — domaines : data-sci, ai-eng · alias : choix d'un modèle d'embedding, sélectionner un modèle d'embeddings, MTEB, limites de MTEB
+- **Embedding multimodal et modality gap** — domaines : ai-eng, ml-eng · alias : embeddings multimodaux, embedding joint texte-image, modality gap, espace commun texte et image, RAG multimodal, recherche d'images par une question, embedding image-texte
 - **embeddings** — domaines : data-sci, ai-eng · alias : représentations vectorielles, plongements, embedding, vector embeddings
 
 ### ml/eval

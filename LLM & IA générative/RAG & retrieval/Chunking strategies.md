@@ -48,6 +48,7 @@ tags: [rag, chunking, retrieval]
 - [[embeddings]] — chaque chunk devient un vecteur ; la taille de chunk conditionne la qualité de l'embedding.
 - [[Advanced RAG]] — parent-child et compression de contexte prolongent le chunking.
 - [[Hybrid retrieval]], [[Reranking]] — en aval, sur les chunks récupérés.
+- [[RAG hiérarchique]] — contourner le découpage plat : parent-enfant, arbre de résumés, table des matières.
 
 ## Pour aller plus loin
 

@@ -100,6 +100,7 @@ tags: [rag, agents, retrieval, llm]
 - [[Reasoning models]], [[RL for LLMs]], [[GRPO]] — le raisonnement et l'entraînement par renforcement qui rendent le modèle capable de chercher.
 - [[Hallucinations des LLM]] — une récupération réussie ne supprime pas l'hallucination.
 - Briques : [[LangGraph]] (graphes cycliques à état, adaptés à une boucle récupérer-évaluer-relancer : raisonnement de cette page), [[Qdrant]] (la base interrogée), [[Ragas]] et [[DeepEval]] (mesurer fidélité et pertinence des étapes), [[Langfuse]] (tracer les trajectoires).
+- [[Droits d'accès dans un RAG]] — le filtre de droits couvre chaque appel de recherche de la boucle ; [[Coller le corpus ou récupérer]] — une boucle consomme 4 à 15 fois les tokens d'un chat ; [[RAG hiérarchique]] — à ne pas confondre avec des agents hiérarchisés.
 
 ## Pour aller plus loin
 

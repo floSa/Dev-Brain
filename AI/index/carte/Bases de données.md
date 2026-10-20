@@ -116,4 +116,4 @@
 - [[Weaviate]] · brique · `Bases de données/Vectoriel/Weaviate.md` — Base vectorielle orientée production, recherche hybride dense+BM25, self-host ou managé.
 - [[Bases de données vectorielles]] · notion · `Bases de données/Vectoriel/Bases de données vectorielles.md` — Stocke des embeddings (vecteurs de flottants) et retrouve les plus proches d'un vecteur requête.
 - [[Index ANN — internes]] · notion · `Bases de données/Vectoriel/Index ANN — internes.md` — Comment les index de recherche vectorielle trouvent les plus proches voisins sans comparer la requête à tous les vecteurs : ils échangent un peu de rappel…
-- [[Comparatif - Bases vectorielles]] · comparatif · `Bases de données/Vectoriel/Comparatif - Bases vectorielles.md` — serveur ou index embarqué, self-host ou managé, filtrage pendant la recherche, volume.
+- [[Comparatif - Bases vectorielles]] · comparatif · `Bases de données/Vectoriel/Comparatif - Bases vectorielles.md` — serveur ou index embarqué, self-host ou managé, filtrage pendant la recherche, volume, et ce que l'équipe devra exploiter une fois le RAG en production.

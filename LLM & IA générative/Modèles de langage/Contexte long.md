@@ -106,6 +106,7 @@ tags: [llm, context-engineering, attention, inference-optimization, positional-e
 - Briques : [[vLLM]], [[SGLang]], [[TensorRT-LLM]], [[llama.cpp]], [[Ollama]] — les moteurs où la longueur et le cache se règlent ; [[Qdrant]] — l'alternative RAG côté recherche.
 - [[Taille du cache KV par token]] — la formule du cache KV et ses leviers.
 - [[Dimensionner la mémoire d'un serveur LLM]] — combien de sessions de cette longueur tiennent sur un nœud.
+- [[Coller le corpus ou récupérer]] — la règle de décision qui s'appuie sur ces mesures : taille, droits, mises à jour, trafic et coût avec cache ; [[Droits d'accès dans un RAG]] — des droits distincts défont le cache d'un corpus collé.
 
 ## Pour aller plus loin
 

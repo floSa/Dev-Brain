@@ -82,6 +82,7 @@ tags: [embeddings, semantic-search, retrieval, hybrid-search, benchmark, quantiz
 - [[bge-reranker]] — le second étage, cross-encoder, qui reclasse le top-k.
 - [[Bases de données vectorielles]] — où s'indexent les vecteurs, et où la dimension se paie.
 - **nomic-embed-text** n'a pas de fiche ici : Apache-2.0, anglais seulement en v1.5 (137 M, contexte de 8 192 tokens, Matryoshka), multilingue en v2-moe (contexte de 512), préfixes obligatoires, servi par Ollama ; écarté de la capture par le plafond de pages, non par manque de pertinence.
+- [[Embedding multimodal et modality gap]] — quand l'entrée n'est pas que du texte : [[EmbeddingGemma 2]], [[Qwen3-VL-Embedding]], [[SigLIP 2]].
 
 ## Pour aller plus loin
 

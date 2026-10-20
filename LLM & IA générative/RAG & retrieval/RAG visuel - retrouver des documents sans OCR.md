@@ -63,6 +63,7 @@ tags: [rag, retrieval, embeddings, vision-language, multimodal, ocr, document-pa
 - [[Hybrid retrieval]] — la fusion lexical et dense, à croiser avec un retriever visuel.
 - [[LlamaIndex]] — documente un reclassement ColPali (`ColPaliRerank`).
 - [[Couche de texte d'un PDF contre OCR]] — la voie du texte : lire la couche d'un PDF numérique, ou reconnaître l'image, avant d'indexer.
+- [[Embedding multimodal et modality gap]] — l'autre famille, un vecteur par entrée dans un espace commun ; modèles : [[Qwen3-VL-Embedding]], [[EmbeddingGemma 2]], [[SigLIP 2]].
 
 ## Pour aller plus loin
 

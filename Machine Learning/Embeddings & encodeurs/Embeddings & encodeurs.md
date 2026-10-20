@@ -27,19 +27,24 @@ tags: [embeddings, semantic-search, retrieval, model-serving, inference]
 - Un service qui sert aussi ColBERT, ColPali ou CLIP, en acceptant un mainteneur unique → [[Infinity]].
 - Un modèle multilingue qui produit dense, sparse et multi-vecteur → [[bge-m3]].
 - Un modèle à contexte long et à dimension réglable, de 0,6 B à 8 B → [[Qwen3-Embedding]].
+- Une question en texte qui doit retrouver une image, une vidéo ou un extrait audio : un modèle multimodal, après avoir lu [[Embedding multimodal et modality gap]] — [[EmbeddingGemma 2]] (cinq modalités, 740 M), [[Qwen3-VL-Embedding]] (documents visuels, contexte long, 2 B et 8 B) ou [[SigLIP 2]] (image et texte) ; sans classement, les scores étant ceux de chaque éditeur.
 - Reclasser un top-k avec un cross-encoder → [[bge-reranker]] (domaine [[LLM & IA générative]]). Cf. [[Comparatif - Embeddings]].
 
 <!-- AUTO:START -->
 ### Notions
 - [[Choisir un modèle d'embedding]] — domaines : data-sci, ai-eng
+- [[Embedding multimodal et modality gap]] — domaines : ai-eng, ml-eng
 - [[embeddings]] — domaines : data-sci, ai-eng
 
 ### Briques
 - [[bge-m3]] — Modèle d'embedding multilingue du BAAI (MIT, 568 M) — 8 192 tokens, plus de 100 langues, vecteurs dense, sparse et multi-vecteur dans un seul modèle.
+- [[EmbeddingGemma 2]] — Modèle d'embedding multimodal ouvert de Google DeepMind (Apache-2.0, 740 M) — texte, code, image, vidéo et audio dans un même espace de 768 dimensions et 8 192 tokens partagés, encodeurs désactivables ; scores publiés par Google seul.
 - [[FastEmbed]] — Bibliothèque d'embeddings en process de Qdrant (Apache-2.0) — ONNX Runtime sans PyTorch, dense, sparse, late-interaction et rerankers ; CPU par défaut.
 - [[Infinity]] — Serveur d'embeddings, de rerankers, de CLIP et de ColPali (MIT, Michael Feil) — API REST de type OpenAI, moteurs PyTorch, ONNX et CTranslate2 ; couverture large mais une seule version en douze mois et un mainteneur unique.
 - [[Qwen3-Embedding]] — Famille de modèles d'embedding d'Alibaba (Apache-2.0, 0,6 B, 4 B, 8 B) — 32K tokens, plus de 100 langues, dimension réglable, instructions de tâche.
+- [[Qwen3-VL-Embedding]] — Famille de modèles d'embedding multimodaux d'Alibaba (Apache-2.0, 2 B et 8 B) — texte, images, captures d'écran et vidéo dans un même espace, 32K tokens, dimension réglable, instructions de tâche ; pas d'audio.
 - [[sentence-transformers]] — Framework d'embeddings de phrases (SBERT) — encode textes et images en vecteurs pour la recherche sémantique, le clustering et le re-ranking ; bi-encoders et cross-encoders prêts à l'emploi.
+- [[SigLIP 2]] — Famille d'encodeurs image-texte de Google (Apache-2.0) — un encodeur d'image et un encodeur de texte alignés, multilingues, pour la classification d'images à zéro exemple et la recherche image-texte.
 - [[Text Embeddings Inference]] — Serveur d'inférence d'embeddings, de rerankers et de classifieurs de Hugging Face (Rust, Apache-2.0) — batching par tokens, images CPU et GPU, API HTTP et gRPC, mode hors-ligne ; v1.9.4 en septembre 2026.
 
 ### Comparatifs
