@@ -530,6 +530,33 @@ Notions (relie-toi à « OCR classique vs modèles vision-langage… », « RAG 
 
 Briques (vérifie chaque licence au dépôt) : **LightOnOCR-3** (famille 0,8B, 1B, 4B ; Apache-2.0 selon les cartes), **Indra OCR** (code Apache-2.0, poids OpenRAIL-M modifiée : usage commercial exclu au-delà d'un seuil ; gratuit pour floSa, `source-available` ; CPU seul). Texte simple : Chandra (plateforme gérée payante), et tout outil dont tu n'as pas lu la licence. Surya : fiche seulement si la licence se lit au dépôt. Ajoute les deux briques au « Comparatif - Parsing de documents » existant (liens et lignes, selon la procédure de mise à jour d'`enrichir-brain`).
 
+## Lot 35 — RAG : droits d'accès, multimodal, hiérarchique (vague 21)
+
+Sources : `RAG_en_2026_Contexte_Long_Grep_et_Recherche_Semantique`, `RAG_Bases_Vectorielles_Graphes_et_Ontologies`, `RAG_Patterns_Multi-Vecteurs_Multimodal_et_Ingestion`. Le brain couvre déjà beaucoup le RAG : ne double rien. Pages existantes à relire d'abord et à relier (liens seuls ; ne les réécris pas) : « Contexte long », « prompt-caching », « Hybrid retrieval », « Choisir un modèle d'embedding », « RAG agentique », « GraphRAG », « Late-interaction retrieval », « Chunking strategies », « RAG visuel », « RAG documentaire on-prem - clé en main ou assemblé » (une section sur les droits d'accès), « Ontologie », « Graphe de connaissances », « Comparatif - Bases vectorielles », « Comparatif - Embeddings ». Les extraits Turtle et SHACL du document « Bases vectorielles, graphes et ontologies » ont été exécutés (pySHACL 0.40.1, rdflib 7.6.0) : tu peux les reprendre en citant le résultat.
+
+Notions :
+
+1. **Droits d'accès dans un RAG** (priorité : profil ESN) — filtrer **avant** le prompt ; index centralisé contre requête fédérée ; aucun des deux ne corrige un sur-partage à la source.
+2. **Coller le corpus ou récupérer** — règle de décision en cinq étapes (mesurer, coller avec cache si le corpus est petit, stable et à droits uniques, sinon récupérer, traiter les droits avant le moteur, valider sur ses propres questions) ; le rapport de coût « 200 pour 1 » est un rapport de tokens qui tombe à 5-40 avec un cache chaud ; un test d'aiguille mesure retrouver, pas synthétiser ; pourquoi grep reste compétitif sur le code.
+3. **Embedding multimodal et modality gap** — un espace commun pour texte et image ; ce que le « gap » change ; un embedding ne restitue pas le texte exact d'une image.
+4. **RAG hiérarchique** — RAPTOR, parent-enfant, STAIR (retrouve la bonne section dans 82,6 % des cas et exige une table des matières) ; sans promettre la fin des hallucinations.
+
+Briques (vérifie chaque licence au dépôt ; pas de fichier de licence lisible = pas de page) : **EmbeddingGemma 2** (Apache-2.0 selon le document ; scores publiés par Google seul), **Qwen3-VL-Embedding**, **SigLIP 2**, **LightRAG** (MIT), **Microsoft GraphRAG** (MIT ; le README annonce un projet en maintenance : dis-le). ripgrep et PyMuPDF4LLM : fiche seulement si la licence se lit au dépôt. Pinecone et MongoDB Atlas : texte simple (service géré, SSPL). Comparatifs : ajoute le critère d'exploitation et le filtrage après l'index de pgvector (40 candidats et un filtre à 10 % donnent en moyenne 4 résultats) au « Comparatif - Bases vectorielles » ; ajoute les embeddings multimodaux au « Comparatif - Embeddings » ; compare LightRAG et Microsoft GraphRAG dans une section du hub concerné ou un petit comparatif, sans classement faute de mesure indépendante. Pas de pattern pour les « sept patterns » du document (grille d'auteur déjà couverte par « Advanced RAG »). À **proposer dans ta synthèse** (notions de floSa, non modifiées) : GraphRAG (facteurs de coût d'indexation 1,6 à 11,7 fois le corpus), Late-interaction retrieval (calcul de stockage en kio, MUVERA), Ontologie (sens « plateforme » et modèle sémantique).
+
+## Lot 36 — Agents : garde-fous hors modèle (vague 21)
+
+Sources : `Securite_des_Agents_IA_OpenShell_et_Garde-fous_Hors_Modele`, `DeepSeek-Harness_Architecture_Plugins_et_Test`, `Agents_IA_Harness_Context_Engineering_et_Vocabulaire`. Le brain a déjà : « Harnais d'agent », « Context engineering », « Guardrails », « Sandboxing de code généré », « Prompt injection », « AI security », « Human-in-the-loop », « Reliability patterns », « Comparatif - Garde-fous pour LLM », les briques E2B et Daytona. Compare avant d'écrire ; relie par liens seuls. Principe central à poser : une règle appliquée par le runtime tient même si le modèle se trompe ; une règle de prompt non.
+
+Notions :
+
+1. **Garde-fous hors modèle** — séparer isolation, autorisation, approbation et hooks ; ce que chacun couvre et ne couvre pas.
+2. **Excessive agency et « lethal trifecta »** — trop de fonctions, de permissions, d'autonomie ; données privées, contenu non fiable et canal sortant réunis.
+3. **Isolation par politique déclarative** — Landlock, seccomp, proxy réseau à politique, identifiants substitués ; différence avec conteneur, gVisor et microVM déjà décrits.
+4. **Checkpointing et reprise** — un checkpoint rejoue le nœud interrompu : il faut de l'idempotence ; reprise n'est pas annulation des effets. Relie « Human-in-the-loop » et « Reliability patterns ».
+5. **Sycophancy** — un modèle entraîné pour plaire ; ce que ça change pour l'évaluation et les agents.
+
+Briques (vérifie chaque licence au dépôt) : **OpenShell** (NVIDIA, Apache-2.0 selon le document ; Linux, noyau 6.2 ou plus ; **daté** : version 0.1.4, une évasion de sandbox, CVE-2026-65093, touche les versions 0.0.33 et antérieures ; inspection par défaut en mode « audit » qui ne bloque pas), **DeepSeek Harness** (MIT ; une fiche qui inclut Cordis, son framework de plugins ; dis que « tout est plugin » ne veut pas dire sans noyau, et qu'un plugin installé tourne dans le processus hôte, hors bac à sable), **sandbox-runtime** (fiche seulement si la licence se lit au dépôt ; ce n'est pas Claude Code lui-même). Texte simple : Pinecone-like services, tout ce qui est payant ou cloud seulement. Comparatif : **Isolation d'exécution d'un agent** (OpenShell, sandbox-runtime, E2B, Daytona, bac à sable de DeepSeek Harness, microVM) **sans classement** : aucune mesure comparable dans les sources ; axes = où s'applique la règle, ce qui est isolé, licence, hébergement. Si moins de quatre briques sont comparables, ajoute plutôt OpenShell au « Comparatif - Garde-fous pour LLM ». À **proposer dans ta synthèse** (notion de floSa, non modifiée) : nommer la **compaction de contexte** dans « Context engineering ». Écarte : la chronologie de l'alliance, le matériel NVIDIA sans disponibilité publique, les citations d'analystes, Claude Code et Codex comme briques.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
