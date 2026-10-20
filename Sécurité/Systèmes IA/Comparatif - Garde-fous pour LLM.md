@@ -54,6 +54,8 @@ Les deux ne se remplacent pas : ils se **superposent**. NeMo Guardrails sait app
 
 Un garde-fou ne dispense pas de [[Sandboxing de code généré]] ni du moindre pouvoir ([[AI security]]) : filtrer ne remplace pas isoler.
 
+**Dans la vue « Toute la catégorie », deux briques d'une autre famille** : [[OpenShell]] et [[sandbox-runtime]]. Ce ne sont pas des filtres d'entrée et de sortie : ce sont des runtimes qui **appliquent hors du modèle** une politique sur les fichiers, les appels système et le réseau d'un agent. Ils se comparent entre eux et avec les microVM dans le [[Comparatif - Isolation d'exécution d'un agent]], sans classement ; le principe qui les distingue des garde-fous de cette page est dans [[Garde-fous hors modèle]].
+
 ## Voir aussi
 
 - [[Comparatifs]] — le hub qui réunit tous les comparatifs du brain, groupés par domaine.
