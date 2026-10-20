@@ -50,6 +50,7 @@ tags: [caching, inference-optimization, llm, context-engineering]
 - [[Context engineering]] — l'organisation du contexte conditionne directement ce qui est cachable.
 - [[Taille du cache KV par token]] — ce que le cache de préfixe garde en mémoire côté serveur.
 - [[Coût d'un token et taux d'utilisation]] — le tarif « cache touché » dans le coût d'un token.
+- [[Coller le corpus ou récupérer]] — le cache de préfixe appliqué au choix coller ou récupérer : le rapport de coût de 200 pour 1 tombe à 5 à 10 avec un cache chaud.
 
 ## Pour aller plus loin
 

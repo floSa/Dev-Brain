@@ -51,6 +51,7 @@ tags: [retrieval, hybrid-search, semantic-search, search, rag]
 - [[Index inversé]] — la structure derrière la moitié lexicale.
 - [[Recherche vectorielle approximative]] — la moitié dense, côté moteur de recherche.
 - [[Recherche sémantique]] — la moitié dense, vue par l'usage.
+- [[Coller le corpus ou récupérer]] — quand le lexical (grep, BM25) suffit, et ce que mesure le jeu LIMIT contre les embeddings à un seul vecteur ; [[Droits d'accès dans un RAG]] — le filtre de droits se pose sur les deux recherches.
 
 ## Pour aller plus loin
 
