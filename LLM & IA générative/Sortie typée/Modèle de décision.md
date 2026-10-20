@@ -96,7 +96,7 @@ Relevés le 2026-10-10 dans un document de synthèse, puis recoupés à la sourc
 - [[Routing and cascading]] — l'usage le plus courant : aiguiller une requête, et escalader sous un seuil de confiance.
 - [[Guardrails]] et Llama Guard — filtrer les entrées et les sorties d'un LLM ; un modèle de décision peut tenir ce rôle sans générer.
 - [[Choisir entre règle, classifieur, modèle de décision et LLM]] · [[Décomposer une question en signaux étroits]] · [[Entraîner pour la calibration]] — les trois notions qui complètent celle-ci.
-- Clef · d1-3B · d1-omni-600M · Laya — les quatre fiches à poids ouverts, départagées dans Comparatif - Modèles de décision.
+- Clef · d1-3B · d1-omni-600M · Laya — les quatre modèles à poids ouverts du sujet, cités ici sans fiche.
 
 ## Pour aller plus loin
 

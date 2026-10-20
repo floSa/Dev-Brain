@@ -74,7 +74,7 @@ Relevés les 2026-09-16, 2026-09-22 et 2026-09-23. À relire avant de citer.
 - [[LLM-as-judge]] — le moteur des arènes à jugement automatique, avec ses biais.
 - [[Licences de modèles open weights]] — la licence se lit avant les classements.
 - MiMo-V2.6 · DeepSeek-V4.1-Flash · Qwen-Image-2.1 — trois fiches dont les scores d'éditeur sont lus avec cette grille.
-- Laya — 0,766 contre 0,362 : le score de vitrine d'un checkpoint ajusté ; Comparatif - Modèles de décision — score public contre score complet, deux relevés datés.
+- Laya — 0,766 contre 0,362 : le score de vitrine d'un checkpoint ajusté ; l'écart entre score public et score complet, relevé à deux dates.
 
 ## Pour aller plus loin
 

@@ -75,7 +75,7 @@ flowchart TD
 - **Escalade à trois étages.** Automatiser au-dessus d'un seuil, passer à un LLM entre deux seuils, à un humain en dessous : la forme est bonne ([[Routing and cascading]]), mais les seuils se posent **après recalibrage sur ses données**, par type de question. Une étude indépendante conclut « ne pas seuiller sur le champ `confidence` » pour Jev ([[Entraîner pour la calibration]]).
 - **Le testeur de la latence.** À 4 s, un classifieur LLM exige une heuristique qui décide quand l'appeler (un `if`) ; à 150 ms, l'appel est systématique et l'heuristique disparaît. C'est la vraie bascule, plus que le prix.
 - **Décision irréversible** : l'auteur de la vidéo d1 garde « une règle dure » devant les écrans de paiement et de connexion, parce que ses deux seuls échecs sur dix captures sont précisément ceux-là (arrêt demandé à 0,27 et 0,22). Dix cas fabriqués par un seul testeur : un comportement, pas un taux.
-- **Avant d'adopter, essayer** : 200 à 1 000 cas étiquetés, deux candidats ouverts au moins (Comparatif - Modèles de décision), la règle comme base, l'intervalle des écarts.
+- **Avant d'adopter, essayer** : 200 à 1 000 cas étiquetés, deux candidats ouverts au moins (par exemple Clef, d1 ou Laya), la règle comme base, l'intervalle des écarts.
 
 ### Repères datés
 
