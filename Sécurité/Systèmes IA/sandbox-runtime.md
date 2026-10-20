@@ -18,13 +18,18 @@ url_repo: https://github.com/anthropics/sandbox-runtime
 # sandbox-runtime
 
 <!-- AUTO:BANDEAU:START -->
+> Outil en ligne de commande et bibliothèque de bac à sable léger d'Anthropic (Apache-2.0, préversion bêta) — restrictions de fichiers et de réseau au niveau du système d'exploitation, sans conteneur : Seatbelt sur macOS, bubblewrap sur Linux, proxy HTTP et SOCKS5 à liste de domaines ; Windows en alpha.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| CLI TypeScript | open-source | en ligne de commande, rien à héberger | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
 
 Outil en ligne de commande (`srt`) et bibliothèque TypeScript qui **enveloppent un processus** dans un bac à sable au niveau du système d'exploitation, sans conteneur : on déclare les chemins lisibles et inscriptibles et les domaines joignables, et tout le reste est refusé. Il sert à confiner un agent, un serveur MCP local, une commande de shell ou un programme quelconque. C'est le paquet ouvert sur lequel Anthropic a bâti le bac à sable de son agent de code ; il ne contient pas cet agent. Fichiers et réseau sont isolés ensemble : sans isolation des fichiers, un processus compromis exfiltre des clés SSH ; sans isolation du réseau, il s'échappe vers Internet. Principe : [[Isolation par politique déclarative]].
 
-Relevé le 2026-10-20 : licence **Apache-2.0** lue dans le fichier `LICENSE` du dépôt `anthropics/sandbox-runtime` ; v0.0.81 publiée le 2026-10-20, dépôt créé le 2025-10-20, 5,6 k étoiles. Le README s'annonce en « **Beta Research Preview** » : API et formats de configuration peuvent changer.
+Relevé le 2026-10-20 : licence **Apache-2.0** lue dans le fichier `LICENSE` du dépôt `anthropics/sandbox-runtime` ; v0.0.81 publiée le 2026-10-20, dépôt créé le 2025-10-20, 5,6 k étoiles. Le README se présente comme un aperçu de recherche destiné à faire avancer l'écosystème : l'API et les formats de configuration peuvent changer.
 
 ## Prendre si / Écarter si
 
