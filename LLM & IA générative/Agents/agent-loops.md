@@ -58,6 +58,7 @@ tags: [agents, llm, tool-use]
 - [[Multi-agent systems]] — plusieurs boucles qui se coordonnent.
 - [[Human-in-the-loop]] — suspendre la boucle avant une action à fort enjeu pour une validation humaine.
 - Alternative : un **enchaînement fixe** (workflow sans boucle) — pas de condition d'arrêt à gérer, mais aucune adaptation aux observations.
+- [[Boucle d'amélioration d'un agent]] — la boucle qui améliore l'agent lui-même, jugée par un vérificateur extérieur.
 
 ## Pour aller plus loin
 

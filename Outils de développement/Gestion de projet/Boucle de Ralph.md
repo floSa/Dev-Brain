@@ -90,6 +90,7 @@ Le code produit se heurte immédiatement à des tests, au typage, à la compilat
 - [[Agent evaluation]] — mesurer si la boucle converge, plutôt que juger sur une démonstration.
 - [[Vibe coding contre ingénierie agentique]] — la boucle de Ralph est du côté ingénierie seulement si les tests existent.
 - Alternative : **un agent interactif supervisé**, une tâche à la fois avec relecture. Plus lent, mais sans risque de dérive silencieuse.
+- [[Boucle d'amélioration d'un agent]] — la même idée d'itération jusqu'au vérificateur, avec l'échafaudage de l'agent comme objet à améliorer.
 
 ## Pour aller plus loin
 

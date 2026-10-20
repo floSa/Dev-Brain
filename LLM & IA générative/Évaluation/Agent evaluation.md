@@ -55,6 +55,7 @@ tags: [agents, llm-eval, llm]
 - [[Multi-agent systems]] — l'éval se complique : à qui imputer l'échec dans une équipe d'agents ?
 - [[LLM observability]] — l'observabilité de prod alimente l'éval (cas réels → jeux de tests).
 - [[RAG agentique]] — évaluer la trajectoire d'un agent de recherche : preuves, arrêt, coût
+- [[Boucle d'amélioration d'un agent]] — mesurer un agent dont l'échafaudage change ; classer une annonce en mesuré, déclaré ou prévu.
 
 ## Pour aller plus loin
 

@@ -73,6 +73,7 @@ Ce qui relevait du harnais migre progressivement dans le modèle : la planificat
 - Harnais fichés : [[pi]] (boucle, TUI et API LLM unifiée), [[Maka]] (journal append-only de chaque décision), [[t3code]] (plan de contrôle au-dessus de plusieurs harnais).
 - Harnais livrés en bibliothèque : [[Deep Agents]] (agnostique du modèle) et [[Claude Agent SDK]] (Claude uniquement).
 - [[DeepSeek Harness]] — un harnais à plugins (Cordis), MIT, en préversion ; son bac à sable ne confine que les fichiers. [[Garde-fous hors modèle]] et [[Checkpointing et reprise]] — deux mécanismes du harnais décrits à part.
+- [[Boucle d'amélioration d'un agent]] — l'échafaudage comme objet à améliorer : ce que les systèmes publiés changent, et ce qu'ils laissent gelé.
 
 ## Pour aller plus loin
 
