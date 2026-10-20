@@ -1,0 +1,33 @@
+filters:
+  and:
+    # Un comparatif compare des briques : la clause de rôle garde les notions du
+    # dossier hors de la vue. La clause de famille sépare les modèles de décision
+    # des bibliothèques de sortie typée (Instructor, Outlines, Guidance), rangées
+    # sous la même catégorie.
+    - role == "brique"
+    - categorie == "llm/sortie-structuree"
+    - famille == "modele"
+views:
+  - type: table
+    name: Modèles de décision
+    order:
+      - file.name
+      - pitch
+      - licence_type
+      - maturite
+      - tags
+    sort:
+      - property: file.name
+        direction: asc
+  - type: table
+    name: Licence restrictive
+    filters:
+      and:
+        - licence_type != "open-source"
+    order:
+      - file.name
+      - licence_type
+      - pitch
+    sort:
+      - property: file.name
+        direction: asc
