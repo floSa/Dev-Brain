@@ -613,4 +613,4 @@ Briques : aucune par défaut. Si tu juges qu'un outil manque vraiment (verl, Ope
 - [x] Lot 34 — OCR et documents
 - [x] Lot 35 — RAG : droits, multimodal, hiérarchique
 - [x] Lot 36 — agents : garde-fous hors modèle
-- [ ] Lot 37 — fondamentaux : méthodes et culture
+- [x] Lot 37 — fondamentaux : méthodes et culture
