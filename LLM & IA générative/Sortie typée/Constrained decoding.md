@@ -48,6 +48,7 @@ tags: [decoding, structured-output, tokenization]
 - [[Decoding strategies]] — la **famille mère** ; ici on restreint l'espace de tokens à chaque pas plutôt que de seulement le réchauffer/échantillonner.
 - [[Outlines]] et [[Guidance]] — bibliothèques de référence. XGrammar, llguidance, LM Format Enforcer et les grammaires GBNF de llama.cpp jouent le même rôle *(pages à créer)*.
 - [[Instructor]] — alternative **non contrainte** : prompt + validation + re-tentative, côté client, tout fournisseur — plus souple, mais **sans garantie** par construction.
+- [[Modèle de décision]] — même garantie de type, obtenue en lisant les jetons d'options plutôt qu'en masquant des jetons pendant une génération.
 
 ## Pour aller plus loin
 

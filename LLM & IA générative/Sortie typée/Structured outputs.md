@@ -49,6 +49,7 @@ tags: [structured-output, llm, tool-use, data-validation]
 - [[Instructor]] — Bibliothèque de sorties structurées pour LLM (Jason Liu) — emballe le client du fournisseur pour extraire des objets Pydantic validés, avec re-tentatives automatiques sur erreur de validation ; 15+ fournisseurs, multi-langages.
 - [[PydanticAI]] — Framework d'agents typés de l'équipe Pydantic — agents model-agnostic à sorties structurées validées, injection de dépendances et type-safety Python ; pensé pour des apps LLM de production (Logfire, MCP, durable execution).
 - [[Outlines]] / [[Guidance]] — réalisent la sortie structurée par [[Constrained decoding|décodage contraint]] (validité garantie par construction, modèle sous contrôle).
+- [[Modèle de décision]] — un quatrième mécanisme : le modèle ne génère pas, il rend une probabilité par option déclarée à l'appel (type garanti, réponse non garantie).
 
 ## Pour aller plus loin
 
