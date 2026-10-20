@@ -10,7 +10,7 @@ hosted: [self]
 maturite: experimental
 langage: TypeScript
 scaling: single-node
-alternatives: []
+alternatives: ["[[pi]]"]
 complements: []
 tags: [agents, code-assistant, sandbox, self-hosted]
 url_docs: https://deepseek-harness.github.io/deepseek-harness/
@@ -20,6 +20,11 @@ url_repo: https://github.com/deepseek-ai/deepseek-harness
 # DeepSeek Harness
 
 <!-- AUTO:BANDEAU:START -->
+> Application locale de harnais d'agent de code de DeepSeek AI (MIT, préversion développeur) — chaque brique (modèle, outils, sessions, bac à sable, boucle) est un plugin du framework Cordis ; fonctionne avec un modèle DeepSeek ou tout fournisseur compatible ; son bac à sable ne confine que les fichiers et un plugin installé tourne hors de lui.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Application TypeScript | open-source | self-hébergé · mono-nœud | experimental | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition
@@ -59,8 +64,7 @@ Relevé le 2026-10-20 : licence **MIT** lue dans les fichiers `LICENSE` de `deep
 
 ### Alternatives
 
-- *Aucune alternative déclarée : le brain ne fiche pas de harnais d'agent à plugins comparable. Les agents de code libres voisins se lisent dans [[Comparatif - Assistants de code IA]].*
-- voisin : [[pi]] — boîte à outils d'agent TypeScript (API LLM unifiée, boucle d'agent, TUI), la plus proche par l'esprit : un harnais minimal à assembler.
+- [[pi]] — Boîte à outils d'agent IA en TypeScript (API LLM unifiée, boucle d'agent, TUI, CLI de codage) avec support de première classe de llama.cpp et des endpoints OpenAI/Anthropic-compatible auto-hébergés. — la boîte à outils la plus proche par l'esprit : un harnais minimal à assembler, sans architecture à plugins ni application web, en CLI.
 - voisin : [[OpenCode]] — agent de code en terminal, prêt à l'emploi, là où Harness est un cadre à composer.
 
 ## Ressources

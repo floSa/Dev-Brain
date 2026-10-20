@@ -9,7 +9,7 @@ domaines: [ai-eng]
 licence_type: open-source
 os: "Windows, macOS, Linux, Android (Termux)"
 langage: TypeScript
-alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[freebuff]]", "[[OpenCode]]", "[[Goose]]"]
+alternatives: ["[[Aider]]", "[[Cline]]", "[[Continue]]", "[[freebuff]]", "[[OpenCode]]", "[[Goose]]", "[[DeepSeek Harness]]"]
 complements: []
 tags: [code-assistant, agents, local-llm, terminal-ui, tool-use]
 url_docs: https://github.com/earendil-works/pi/tree/main/packages/coding-agent
@@ -65,6 +65,7 @@ déclare dans `~/.pi/agent/models.json`.
 - [[freebuff]] — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 - [[OpenCode]] — Agent de code open source (MIT, TypeScript) pour le terminal, avec une application desktop en bêta : plus de 75 fournisseurs de modèles et les serveurs locaux Ollama, llama.cpp, LM Studio et vLLM par endpoint compatible OpenAI.
 - [[Goose]] — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
+- [[DeepSeek Harness]] — Application locale de harnais d'agent de code de DeepSeek AI (MIT, préversion développeur) — chaque brique (modèle, outils, sessions, bac à sable, boucle) est un plugin du framework Cordis ; fonctionne avec un modèle DeepSeek ou tout fournisseur compatible ; son bac à sable ne confine que les fichiers et un plugin installé tourne hors de lui. — un cadre à plugins plus large (application web, bureau, SDK, ACP) mais en préversion, avec un bac à sable limité aux fichiers.
 
 ## Ressources
 
