@@ -38,6 +38,7 @@ tags: [code-assistant, code-generation, agents, agent-skill, mcp]
 - Piloter plusieurs CLI d'agents déjà installées depuis une seule interface → [[t3code]].
 - Un journal rejouable de tout ce que l'agent a fait sur ma machine → [[Maka]].
 - Une boîte à outils TypeScript pour bâtir mon propre agent de code → [[pi]].
+- Un harnais d'agent à composer par plugins (MIT, préversion développeur), à n'essayer que sur une machine ou un conteneur jetable : son bac à sable ne confine que les fichiers et un plugin installé tourne hors de lui → [[DeepSeek Harness]].
 - Imposer un processus de spécification avant l'implémentation → [[Spec Kit]] (une fonctionnalité à spécifier), [[OpenSpec]] (des changements successifs sur du code existant, archivés), ou [[BMAD]] pour un cycle complet à rôles nommés. Comprendre BMAD avant de l'installer → [[BMAD - la méthode]], puis [[BMAD - tour complet des skills]] pour le catalogue.
 - Ne changer que la forme des réponses de l'agent → [[i-have-adhd]].
 - Un cycle complet de skills, enchaîné et obligatoire (brainstorming, plan, sous-agents, TDD, revue) → [[Superpowers]].

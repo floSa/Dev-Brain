@@ -25,7 +25,7 @@ tags: [distributed, gpu, parallel, out-of-core, distributed-training]
 - Distribuer du Python arbitraire : entraînement, tuning, inférence, agents → [[Ray]].
 - Du calcul numérique à accélérer sur GPU sans réécrire → [[CuPy]].
 - Pas d'infrastructure et un besoin ponctuel de GPU ou de gros CPU → [[Modal]].
-- Exécuter du code non fiable (généré par un LLM, soumis par un utilisateur) en bac à sable → [[E2B]].
+- Exécuter du code non fiable (généré par un LLM, soumis par un utilisateur) en bac à sable → [[E2B]] ; confiner plutôt un agent qui tourne sur sa propre machine → [[OpenShell]] ou [[sandbox-runtime]], rangés sous [[Systèmes IA]] ; les six comparés, sans classement → [[Comparatif - Isolation d'exécution d'un agent]].
 - Des environnements de développement jetables et reproductibles → [[Daytona]].
 
 <!-- AUTO:START -->

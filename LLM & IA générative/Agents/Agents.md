@@ -25,7 +25,7 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 
 ## Choisir
 
-- Un agent stateful, reprenable, à contrôler pas à pas → [[LangGraph]].
+- Un agent stateful, reprenable, à contrôler pas à pas → [[LangGraph]] ; ce que la reprise rejoue et pourquoi les outils doivent être idempotents → [[Checkpointing et reprise]].
 - Des sorties typées et validées, une base de code Python déjà typée → [[PydanticAI]].
 - Le minimum viable, agnostique du fournisseur, tracing inclus → [[OpenAI Agents SDK]].
 - Une boucle courte à lire en entier, l'action écrite en Python → [[smolagents]], avec sandbox.

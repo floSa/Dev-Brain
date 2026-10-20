@@ -30,6 +30,7 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - Couvrir beaucoup de modèles et de méthodes, avec une interface web → [[LLaMA-Factory]].
 - Tenir sur un seul GPU grand public, ou aller plus vite à matériel constant → [[Unsloth]].
 - Apprendre un format ou un ton → [[SFT]] ; aligner sur des préférences → [[RLHF and DPO]] ; optimiser un signal vérifiable → [[GRPO]].
+- Comprendre pourquoi un modèle aligné sur des préférences donne parfois raison à son interlocuteur plutôt qu'aux faits → [[Sycophancy]].
 - Injecter de la connaissance à jour → [[RAG]], pas ce dossier.
 - Changer seulement le comportement, sans entraînement → [[Prompt engineering]] d'abord.
 - Combiner des modèles ou des adaptateurs déjà ajustés, sans réentraîner → [[Fusion de modèles]].
