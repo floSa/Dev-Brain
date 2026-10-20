@@ -12,7 +12,7 @@ langage: "TypeScript, Go"
 scaling: serverless
 alternatives: ["[[E2B]]", "[[Modal]]"]
 complements: []
-tags: [agents, llm, container, ai-security]
+tags: [agents, llm, container, ai-security, sandbox]
 url_docs: https://www.daytona.io/docs
 url_repo: https://github.com/daytonaio/daytona
 ---
@@ -74,4 +74,5 @@ scanner un dépôt ouvert à la recherche de failles plus vite qu'aucune équipe
 - [[Sandboxing de code généré]] — la notion qu'il implémente, ici par kernel dédié et snapshots d'état
 - [[Calcul distribué]] — le hub du domaine
 - [[Hermes Agent]] — le propose comme backend d'exécution, aux côtés de Docker, SSH, Singularity et Modal
+- [[Comparatif - Isolation d'exécution d'un agent]] — ce qui le départage de cinq autres mises en œuvre, sans classement
 - [[AI security]] · [[Prompt injection]] — le contexte de sécurité

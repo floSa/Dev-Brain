@@ -10,9 +10,9 @@ hosted: [self, managed]
 maturite: production
 langage: "TypeScript, Python, Go"
 scaling: serverless
-alternatives: ["[[Modal]]", "[[Daytona]]"]
+alternatives: ["[[Modal]]", "[[Daytona]]", "[[OpenShell]]", "[[sandbox-runtime]]"]
 complements: []
-tags: [agents, llm, container, ai-security]
+tags: [agents, llm, container, ai-security, sandbox]
 url_docs: https://e2b.dev/docs
 url_repo: https://github.com/e2b-dev/E2B
 ---
@@ -63,6 +63,8 @@ managés est la licence **Apache-2.0** et un chemin d'auto-hébergement document
 
 - [[Modal]] — Plateforme de calcul serverless Python-first (propriétaire) — décorateurs à la place des Dockerfiles, démarrage à froid sous la seconde et facturation à la seconde ; ses Sandboxes isolent le code d'agent par gVisor, avec GPU disponible à l'intérieur.
 - [[Daytona]] — Bacs à sable managés pour code généré par IA — kernel dédié, snapshots d'état et démarrage annoncé sous 90 ms ; **passé closed-source en juin 2026**, le dépôt public restant figé à la v0.190.0 et non maintenu.
+- [[OpenShell]] — Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce. — un processus d'agent confiné par une politique déclarative (Landlock, seccomp, proxy), auto-hébergé, plutôt qu'une microVM créée par SDK.
+- [[sandbox-runtime]] — Outil en ligne de commande et bibliothèque de bac à sable léger d'Anthropic (Apache-2.0, préversion bêta) — restrictions de fichiers et de réseau au niveau du système d'exploitation, sans conteneur : Seatbelt sur macOS, bubblewrap sur Linux, proxy HTTP et SOCKS5 à liste de domaines ; Windows en alpha. — une enveloppe locale de processus, sans microVM ni infrastructure ; aucune isolation à noyau dédié.
 
 ## Ressources
 
@@ -74,4 +76,5 @@ managés est la licence **Apache-2.0** et un chemin d'auto-hébergement document
 - [[Sandboxing de code généré]] — la notion qu'il implémente, ici par microVM Firecracker
 - [[Calcul distribué]] — le hub du domaine
 - [[Hermes Agent]] · [[OpenHands]] — backend d'exécution possible pour ces agents auto-hébergés
+- [[Comparatif - Isolation d'exécution d'un agent]] — ce qui le départage de cinq autres mises en œuvre, sans classement
 - [[Prompt injection]] · [[AI security]] — le contexte de sécurité

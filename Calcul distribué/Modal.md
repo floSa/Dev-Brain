@@ -12,7 +12,7 @@ langage: "Python, JavaScript, Go"
 scaling: serverless
 alternatives: ["[[E2B]]", "[[Daytona]]"]
 complements: []
-tags: [agents, gpu, llm, container]
+tags: [agents, gpu, llm, container, sandbox]
 url_docs: https://modal.com/docs
 url_repo: 
 ---
@@ -74,4 +74,5 @@ sable**. Aucun self-host : ni version auto-hébergeable, ni dépôt public du c�
 - [[Sandboxing de code généré]] — la notion qu'il implémente, ici par gVisor
 - [[Calcul distribué]] — le hub du domaine
 - [[Hermes Agent]] — le propose comme backend d'exécution, aux côtés de Docker, SSH, Singularity et Daytona
+- [[Comparatif - Isolation d'exécution d'un agent]] — ses Sandboxes face à cinq autres mises en œuvre, sans classement
 - [[Ray]] — voisin sur l'axe calcul, mais approche opposée : cluster open-source à opérer plutôt que managé et serverless
