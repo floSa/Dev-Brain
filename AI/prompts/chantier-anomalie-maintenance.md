@@ -634,4 +634,4 @@ floSa (2026-10-20) : « Je ne veux pas de modèles dans mon DevBrain, seulement 
 - [x] Lot 35 — RAG : droits, multimodal, hiérarchique
 - [x] Lot 36 — agents : garde-fous hors modèle
 - [x] Lot 37 — fondamentaux : méthodes et culture
-- [ ] Lot 38 — retrait des fiches de modèles
+- [x] Lot 38 — retrait des fiches de modèles
