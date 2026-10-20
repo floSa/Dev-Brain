@@ -20,12 +20,12 @@ tags: [anomaly-detection, timeseries, foundation-model, forecasting, zero-shot, 
 ### Le résidu comme score
 
 - Un prévisionniste à poids figés $\theta$ reçoit le passé récent et prédit la valeur suivante ; l'anomalie est ce que le passé ne prévoyait pas. C'est l'« approche par résidus » de [[Time series anomaly detection]], avec un modèle de prévision qu'on n'a pas eu à ajuster.
-- TSB-AD les implémente ainsi pour Lag-Llama, Chronos et TimesFM : prévision comparée à la valeur réelle sur un contexte glissant, **erreur quadratique moyenne** comme score « pour garantir l'équité ». Les modèles probabilistes ([[Chronos]], Lag-Llama) fournissent des quantiles, mais le banc d'essai ne s'en sert pas.
+- TSB-AD les implémente ainsi pour Lag-Llama, Chronos et TimesFM : prévision comparée à la valeur réelle sur un contexte glissant, **erreur quadratique moyenne** comme score « pour garantir l'équité ». Les modèles probabilistes (Chronos, Lag-Llama) fournissent des quantiles, mais le banc d'essai ne s'en sert pas.
 - La qualité de prévision, mesurée par les [[Forecasting metrics]] (MASE, sMAPE), n'est pas la qualité de détection. Les sources lues ne relient pas les deux ; ne pas supposer qu'un meilleur prévisionniste donne un meilleur détecteur.
 
 ### Les modèles
 
-- **Chronos** (Ansari et al., 2024) — met à l'échelle puis quantifie les valeurs en un vocabulaire fixe et entraîne des modèles de langue de la famille T5 (20 M à 710 M de paramètres) par entropie croisée ; testé sur 42 jeux, compétitif sans ajustement sur des jeux hors entraînement. Fiche : [[Chronos]].
+- **Chronos** (Ansari et al., 2024) — met à l'échelle puis quantifie les valeurs en un vocabulaire fixe et entraîne des modèles de langue de la famille T5 (20 M à 710 M de paramètres) par entropie croisée ; testé sur 42 jeux, compétitif sans ajustement sur des jeux hors entraînement. Fiche : Chronos.
 - **TimesFM** (Das, Kong, Sen, Zhou, 2023-2024) — modèle à attention de type décodeur sur des *patches*, pré-entraîné sur un grand corpus ; annoncé proche des méthodes supervisées en zero-shot sur plusieurs jeux publics.
 - **Lag-Llama** (Rasul et al., 2023) — transformeur décodeur, prévision probabiliste **univariée**, retards (*lags*) comme covariables.
 - **Moirai** (Woo et al., ICML 2024) — encodeur « any-variate », pré-entraîné sur LOTSA (plus de 27 milliards d'observations, neuf domaines). Absent de TSB-AD.
@@ -86,7 +86,7 @@ tags: [anomaly-detection, timeseries, foundation-model, forecasting, zero-shot, 
 - [[Time series anomaly detection]] — la notion mère : résidus, profil matriciel, isolation.
 - [[Anomalies multivariées par apprentissage profond]] — l'autre branche du neuronal : modèles entraînés par série, sur des fenêtres multivariées.
 - [[Foundation models pour séries temporelles]] — le panorama des modèles et leur évaluation en prévision (GIFT-Eval, fuite de pré-entraînement).
-- [[Chronos]] et [[darts]] — la brique de prévision et la bibliothèque qui peut l'envelopper.
+- Chronos et [[darts]] — la brique de prévision et la bibliothèque qui peut l'envelopper.
 - [[Forecasting metrics]] — les métriques de la prévision ; pas celles de la détection.
 - [[Évaluer une détection d'anomalies]] — VUS-PR, *point-adjust* (Kim et al., AAAI 2022), seuil oracle.
 - [[Jeux de données d'anomalies]] — TSB-AD et ses prédécesseurs, avec leurs défauts.

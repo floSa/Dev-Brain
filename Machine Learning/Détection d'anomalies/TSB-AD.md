@@ -37,7 +37,7 @@ dépôt `TheDatumOrg/TSB-AD` en est le code, sous trois angles :
 - **Algorithmes** : le README annonce 40 détecteurs, rangés en méthodes statistiques ((Sub-)MCD,
   OCSVM, LOF, KNN, IForest, HBOS, PCA, COPOD, MatrixProfile, SAND, Series2Graph, SR…),
   réseaux de neurones (AutoEncoder, LSTMAD, Donut, OmniAnomaly, USAD, Anomaly Transformer,
-  TranAD, TimesNet, FITS…) et modèles de fondation (OFA, Lag-Llama, [[Chronos]], TimesFM,
+  TranAD, TimesNet, FITS…) et modèles de fondation (OFA, Lag-Llama, Chronos, TimesFM,
   MOMENT). Le code en liste davantage (`TSB_AD/model_wrapper.py` : 33 + 29 noms, variantes comprises) ; le tableau du README n'a pas été recompté.
 - **Évaluation** : `get_metrics(output, label)` rend AUC-ROC, AUC-PR, VUS-ROC et VUS-PR
   (indépendantes d'un seuil), plus F1 ponctuel, F1 avec point-adjust, F1 par événement, F1 par
