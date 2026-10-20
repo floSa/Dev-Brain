@@ -8,7 +8,7 @@ famille: paquet
 licence_type: open-source
 maturite: production
 langage: Python/R
-alternatives: ["[[statsforecast]]", "[[neuralforecast]]", "[[darts]]", "[[Chronos]]"]
+alternatives: ["[[statsforecast]]", "[[neuralforecast]]", "[[darts]]"]
 complements: []
 tags: [forecasting, timeseries]
 url_docs: https://facebook.github.io/prophet/
@@ -59,7 +59,6 @@ séries temporelles. La contrepartie est structurelle — un modèle vaut pour u
 - [[statsforecast]] — Prévision statistique ultra-rapide (Nixtla) — AutoARIMA / AutoETS / Theta compilés par Numba, jusqu'à des millions de séries (Spark, Dask, Ray).
 - [[neuralforecast]] — Prévision par réseaux de neurones (Nixtla) — 30+ architectures récentes (NHITS, NBEATS, TFT, PatchTST) sur PyTorch, GPU, prévision probabiliste et covariables.
 - [[darts]] — Bibliothèque de prévision unifiée — une même API fit/predict de l'ARIMA aux réseaux de neurones (PyTorch Lightning), avec backtesting, covariables et détection d'anomalies.
-- [[Chronos]] — Modèle de fondation pour séries temporelles (Amazon) — prévision zero-shot sans entraîner un modèle par série : Chronos tokenise les valeurs sur T5, Chronos-2 (2025) passe à un encoder-only multivarié natif (~120 M params). Approche voisine zero-shot, pas un concurrent direct du modèle additif.
 
 ## Ressources
 

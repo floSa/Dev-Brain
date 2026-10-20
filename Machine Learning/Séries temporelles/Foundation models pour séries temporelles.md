@@ -30,7 +30,7 @@ tags: [timeseries, forecasting, transformers, deep-learning]
 ### Panorama des modèles
 - **TimeGPT** (Nixtla, 2023) — premier modèle de fondation commercial, accès par API.
 - **Lag-Llama** (2024) — decoder-only open, prévision probabiliste.
-- [[Chronos]] (Amazon) — tokenisation de valeurs sur T5 ; *Chronos-Bolt* plus rapide ; **Chronos-2** (2025) abandonne la tokenisation discrète pour un encoder-only à *group attention*, multivarié natif (~120 M params).
+- Chronos (Amazon) — tokenisation de valeurs sur T5 ; *Chronos-Bolt* plus rapide ; **Chronos-2** (2025) abandonne la tokenisation discrète pour un encoder-only à *group attention*, multivarié natif (~120 M params).
 - **Moirai** (Salesforce) — any-variate ; **Moirai 2.0** (août 2025) passe en decoder-only, ~30× moins de paramètres pour de meilleurs scores.
 - **TimesFM** (Google) — decoder-only *patched* ; **TimesFM 2.5** (sept. 2025) reprend la tête de GIFT-Eval avec ~200 M params.
 - **MOMENT** (CMU), **Tiny Time Mixers / TTM** (IBM, minuscules pour l'edge).
