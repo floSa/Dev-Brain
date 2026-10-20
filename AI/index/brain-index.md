@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1259 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1266 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -946,11 +946,13 @@
 - **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
 - **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
 - **Architecture deep agent** — domaines : ai-eng · alias : deep agent, agent profond, agents profonds, agents à planification
+- **Boucle d'amélioration d'un agent** — domaines : ai-eng, ml-eng · alias : auto-amélioration récursive, recursive self-improvement, RSI, auto-amélioration d'un agent, boucle d'auto-amélioration, scaffold improvement, évolution dirigée
 - **Checkpointing et reprise** — domaines : ai-eng · alias : checkpointing, checkpoint, point de reprise, reprise après panne, durable execution, exécution durable, idempotence des outils d'agent, rejeu d'un nœud
 - **Deep research** — domaines : ai-eng · alias : recherche approfondie, deep research agent, agent de recherche approfondie
 - **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
 - **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
 - **Multi-agent systems** — domaines : ai-eng · alias : systèmes multi-agents, multi-agent systems, MAS
+- **Preuve formelle et assistant de preuve** — domaines : ai-eng, ml-eng · alias : Lean, Lean 4, assistant de preuve, proof assistant, vérification formelle, preuve vérifiée par machine, Mathlib, formalisation d'un énoncé
 - **Reliability patterns** — domaines : ai-eng · alias : patrons de fiabilité, reliability patterns, fiabilité des apps LLM
 - **Sous-agents et isolation du contexte** — domaines : ai-eng · alias : sous-agents, subagents, sub-agents, isolation du contexte, context isolation
 - **Tool use patterns** — domaines : ai-eng · alias : patrons d'appel d'outils, tool use patterns, function calling patterns
@@ -975,9 +977,11 @@
 - **Reward modeling** — domaines : ml-eng, ai-eng · alias : reward model, modèle de récompense, RM, preference model, modèle de préférence, RLAIF
 - **RL for LLMs** — domaines : ml-eng, ai-eng · alias : RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR
 - **RLHF and DPO** — domaines : ml-eng, ai-eng · alias : RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization
+- **Récompense vérifiable (RLVR)** — domaines : ml-eng, ai-eng · alias : Reinforcement Learning with Verifiable Rewards, apprentissage par renforcement à récompense vérifiable, récompense vérifiable, verifiable rewards, source de récompense
 - **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
 - **Sycophancy** — domaines : ai-eng, ml-eng · alias : flagornerie, sycophantie, complaisance des modèles, yes-man, modèle entraîné pour plaire, sycophancy LLM, gaslight sycophancy
 - **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
+- **Vérificateur externe et loi de Goodhart** — domaines : ml-eng, ai-eng · alias : vérificateur externe, loi de Goodhart, Goodhart, model collapse, effondrement des modèles, effondrement de modèle, juge externe, vérificateur contournable
 
 ### llm/memoire
 - **Agent memory** — domaines : ai-eng · alias : mémoire d'agent, agent memory, mémoire LLM
@@ -986,9 +990,11 @@
 - **Contexte long** — domaines : ai-eng, ml-eng · alias : fenêtre de contexte, longueur de contexte, long context, context window, contexte étendu, lost in the middle, needle in a haystack, NIAH, RULER, longueur effective, context rot, extension de contexte, RoPE scaling, YaRN, interpolation de positions
 - **Decoding strategies** — domaines : ai-eng · alias : stratégies de décodage, décodage, sampling, greedy, top-k, top-p, nucleus sampling, beam search, température
 - **Effort de raisonnement et courbe coût-qualité** — domaines : ai-eng · alias : effort de raisonnement, reasoning effort, thinkingLevel, réglage d'effort, low medium high xhigh max, budget de réflexion, courbe coût-qualité
+- **Généalogie des modèles de langage (2011-GPT-3)** — domaines : ai-eng, ml-eng · alias : généalogie des LLM, histoire des modèles de langage, de 2011 à GPT-3, ancêtres de GPT-2, publication par étapes de GPT-2, staged release, monopole du langage
 - **Hallucinations des LLM** — domaines : ai-eng · alias : hallucination, hallucinations, confabulation, confabulations, factualité, fidélité au contexte, faithfulness hallucination, factuality hallucination, SelfCheckGPT, FActScore, entropie sémantique
 - **Licences de modèles open weights** — domaines : ai-eng, ml-eng · alias : open weights, poids ouverts, licences de modèles, licence d'un modèle de langage, open-weight licensing, Llama Community License, open washing
 - **Perplexity** — domaines : ai-eng · alias : perplexité, PPL
+- **Pré-entraînement, affinage et apprentissage en contexte** — domaines : ai-eng, ml-eng · alias : pré-entraînement, pretraining, pré-entraînement et affinage, apprentissage en contexte, zero-shot, one-shot, few-shot prompting, apprentissage à quelques exemples, apprentissage sans exemple, pretrain-then-finetune
 - **Reasoning models** — domaines : ai-eng · alias : modèles de raisonnement, reasoning model, large reasoning model, LRM, test-time compute, inference-time scaling, long chain-of-thought, thinking models
 - **Scaling laws** — domaines : ai-eng, ml-eng · alias : lois d'échelle, loi d'échelle, scaling law, Chinchilla, Kaplan, compute-optimal
 - **Small Language Models** — domaines : ai-eng · alias : SLM, petits modèles de langage, small language model, modèles compacts, edge LLM, on-device LLM
@@ -1304,6 +1310,7 @@
 - **GAM** — domaines : data-sci, ml-eng · alias : Modèles additifs généralisés, Generalized Additive Model, Modèle additif généralisé
 - **Gaussian Process** — domaines : data-sci, ml-eng · alias : GP, Processus gaussien, Régression par processus gaussien, GaussianProcessRegressor, Krigeage, Kriging
 - **GLM** — domaines : data-sci, ml-eng · alias : Modèles linéaires généralisés, Generalized Linear Model, Modèle linéaire généralisé
+- **Histoire de l'IA (1943-2026)** — domaines : ml-eng, ai-eng · alias : histoire de l'intelligence artificielle, chronologie de l'IA, hiver de l'IA, AI winter, jalons de l'IA, premier hiver de l'IA, second hiver de l'IA
 - **k-NN** — domaines : data-sci, ml-eng · alias : KNN, k plus proches voisins, k-Nearest Neighbors, Plus proches voisins, KNeighborsClassifier, Apprentissage paresseux, Lazy learning
 - **Learning to rank** — domaines : data-sci, ml-eng · alias : LTR, Apprentissage du classement, Classement supervisé, LambdaMART, LambdaRank, RankNet, ListNet, RankSVM, pointwise, pairwise, listwise, Unbiased learning to rank, ULTR
 - **Méthodes à noyau** — domaines : data-sci, ml-eng · alias : Kernel methods, Méthodes à noyaux, Fonction noyau, Kernel ridge regression, Régression ridge à noyau, KRR, Random Fourier Features, Nyström, RKHS, Neural Tangent Kernel, NTK

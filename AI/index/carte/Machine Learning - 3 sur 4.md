@@ -1,7 +1,7 @@
 # Machine Learning — carte (3 sur 4)
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 104 pages, chacune avec son chemin et une ligne.
+> 105 pages, chacune avec son chemin et une ligne.
 > Couvre : Non supervisé, Plateformes data & IA, Recherche d'hyperparamètres, Serving, Socle, Suivi d'expériences, Séries temporelles.
 
 ## Non supervisé
@@ -74,6 +74,7 @@
 - [[GAM]] · notion · `Machine Learning/Socle/GAM.md` — Étend le GLM en remplaçant chaque effet linéaire par une fonction lisse (spline) apprise sur les données.
 - [[Gaussian Process]] · notion · `Machine Learning/Socle/Gaussian Process.md` — Modèle bayésien non paramétrique qui ne cherche pas une fonction, mais définit une distribution sur les fonctions : à chaque prédiction il rend une moyenne et…
 - [[GLM]] · notion · `Machine Learning/Socle/GLM.md` — Étend la régression linéaire aux cibles non normales : comptages, proportions, durées, montants positifs.
+- [[Histoire de l'IA (1943-2026)]] · notion · `Machine Learning/Socle/Histoire de l'IA (1943-2026).md` — Une chronologie sourcée de l'intelligence artificielle, du neurone formel de 1943 aux modèles de 2026, avec les dates et attributions corrigées : un « premier…
 - [[k-NN]] · notion · `Machine Learning/Socle/k-NN.md` — Le modèle supervisé le plus simple qui soit : pour prédire, on cherche les k observations les plus proches dans les données d'entraînement et on prend leur…
 - [[Learning to rank]] · notion · `Machine Learning/Socle/Learning to rank.md` — Apprentissage supervisé d'une fonction de score $f(q, d)$ dont le tri décroissant sur une liste de candidats donne le bon ordre.
 - [[Méthodes à noyau]] · notion · `Machine Learning/Socle/Méthodes à noyau.md` — Famille d'algorithmes qui n'ont jamais besoin des coordonnées des points, seulement d'une mesure de similarité $k(x, x')$ entre deux points : le noyau.

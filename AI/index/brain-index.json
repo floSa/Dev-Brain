@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1259,
+  "count": 1266,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -97,6 +97,7 @@
       "Backlog, Kanban, Scrum et Shape Up",
       "Backlog.md - l'outil",
       "Beads",
+      "Boucle d'amélioration d'un agent",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
       "Checkpointing et reprise",
@@ -162,6 +163,7 @@
       "Pattern - RAG structuré graphe + human-in-the-loop",
       "Ponytail",
       "PraisonAI",
+      "Preuve formelle et assistant de preuve",
       "PydanticAI",
       "Quel skill pour quelle étape",
       "Qwen Code",
@@ -246,8 +248,10 @@
       "Reasoning models",
       "Reward modeling",
       "Reward shaping and hacking",
+      "Récompense vérifiable (RLVR)",
       "Sycophancy",
-      "TRL"
+      "TRL",
+      "Vérificateur externe et loi de Goodhart"
     ],
     "ann": [
       "Annoy",
@@ -1162,6 +1166,8 @@
       "GANs",
       "Gradient checkpointing",
       "Graph Neural Networks",
+      "Généalogie des modèles de langage (2011-GPT-3)",
+      "Histoire de l'IA (1943-2026)",
       "HuggingFace",
       "Interprétabilité",
       "Interprétabilité mécaniste",
@@ -1454,6 +1460,8 @@
       "d1-omni-600M"
     ],
     "education": [
+      "Généalogie des modèles de langage (2011-GPT-3)",
+      "Histoire de l'IA (1943-2026)",
       "OpenMAIC"
     ],
     "effect-size": [
@@ -1652,6 +1660,7 @@
       "LLaMA-Factory",
       "LoRA et QLoRA",
       "PEFT",
+      "Pré-entraînement, affinage et apprentissage en contexte",
       "RL for LLMs",
       "RLHF and DPO",
       "SFT",
@@ -2295,6 +2304,7 @@
       "Architecture deep agent",
       "AutoGen",
       "Axolotl",
+      "Boucle d'amélioration d'un agent",
       "Canari de dérive d'un LLM en API",
       "Ce qui change derrière une API",
       "Chain-of-Thought",
@@ -2334,12 +2344,14 @@
       "GraphRAG",
       "Guardrails",
       "Guidance",
+      "Généalogie des modèles de langage (2011-GPT-3)",
       "Hallucinations des LLM",
       "Harnais d'agent",
       "Haystack",
       "Headroom",
       "Helicone",
       "Hermes Agent",
+      "Histoire de l'IA (1943-2026)",
       "Human-in-the-loop",
       "Inference optimization",
       "Inspect AI",
@@ -2404,9 +2416,11 @@
       "Plafond de débit d'un GPU (roofline)",
       "PraisonAI",
       "Prefill par morceaux et désagrégation prefill-decode",
+      "Preuve formelle et assistant de preuve",
       "Prometheus-Eval",
       "Prompt engineering",
       "Prompt injection",
+      "Pré-entraînement, affinage et apprentissage en contexte",
       "PydanticAI",
       "Quantification des LLM - GGUF, AWQ, GPTQ",
       "Query transformations",
@@ -2424,6 +2438,7 @@
       "Reliability patterns",
       "Reward modeling",
       "Routing and cascading",
+      "Récompense vérifiable (RLVR)",
       "SAELens",
       "SFT",
       "SGLang",
@@ -2454,6 +2469,7 @@
       "Unsloth",
       "Vanna",
       "Vision Language Models",
+      "Vérificateur externe et loi de Goodhart",
       "WrenAI",
       "Zoo Code",
       "a2a-protocol",
@@ -3547,6 +3563,7 @@
     "prompting": [
       "Chain-of-Thought",
       "Prompt engineering",
+      "Pré-entraînement, affinage et apprentissage en contexte",
       "i-have-adhd"
     ],
     "property-based-testing": [
@@ -3719,6 +3736,7 @@
       "Modèles de langage",
       "Qwen",
       "Reasoning models",
+      "Récompense vérifiable (RLVR)",
       "gpt-oss"
     ],
     "recommender-systems": [
@@ -3774,6 +3792,7 @@
       "AlphaZero and self-play",
       "Apprentissage par renforcement",
       "Bellman equations",
+      "Boucle d'amélioration d'un agent",
       "Comparatif - Reinforcement learning",
       "Entraîner pour la calibration",
       "Exploration vs exploitation",
@@ -3794,11 +3813,13 @@
       "Reinforcement learning",
       "Reward modeling",
       "Reward shaping and hacking",
+      "Récompense vérifiable (RLVR)",
       "Stable-Baselines3",
       "TF-Agents",
       "TRL",
       "Tunix",
-      "Value functions"
+      "Value functions",
+      "Vérificateur externe et loi de Goodhart"
     ],
     "relation-extraction": [
       "Construction de graphes de connaissances"
@@ -3834,6 +3855,7 @@
       "Hallucinations des LLM",
       "Human-in-the-loop",
       "OmniRoute",
+      "Preuve formelle et assistant de preuve",
       "Reliability patterns",
       "Théorie des valeurs extrêmes"
     ],
@@ -3957,7 +3979,8 @@
       "Traefik"
     ],
     "reward-shaping": [
-      "Reward shaping and hacking"
+      "Reward shaping and hacking",
+      "Vérificateur externe et loi de Goodhart"
     ],
     "routing": [
       "Cascade OCR et contrôle arithmétique des factures",
@@ -4012,11 +4035,13 @@
     ],
     "safety": [
       "AI security",
+      "Boucle d'amélioration d'un agent",
       "Excessive agency et lethal trifecta",
       "Guardrails",
       "Jailbreaking and defenses",
       "Llama Guard",
       "NeMo Guardrails",
+      "Preuve formelle et assistant de preuve",
       "Sycophancy"
     ],
     "sandbox": [
@@ -4044,6 +4069,7 @@
       "Trivy"
     ],
     "scaling-laws": [
+      "Généalogie des modèles de langage (2011-GPT-3)",
       "Maximal Update Parametrization",
       "Mixture of Experts",
       "Modèles de langage",
@@ -4228,7 +4254,8 @@
       "Apprentissage auto-supervisé en vision",
       "Apprentissage contrastif",
       "Dinomaly",
-      "Modèles de fondation vision"
+      "Modèles de fondation vision",
+      "Pré-entraînement, affinage et apprentissage en contexte"
     ],
     "semantic-search": [
       "Bases de données vectorielles",
@@ -4549,7 +4576,8 @@
       "Maintenance prédictive avec peu de pannes",
       "Mimesis",
       "SDV",
-      "Synthetic data generation"
+      "Synthetic data generation",
+      "Vérificateur externe et loi de Goodhart"
     ],
     "table-extraction": [
       "Docling",
@@ -4788,12 +4816,14 @@
       "Flash Attention and efficient attention",
       "Foundation models pour séries temporelles",
       "GLiNER",
+      "Généalogie des modèles de langage (2011-GPT-3)",
       "HuggingFace",
       "Interprétabilité",
       "Mixture of Experts",
       "Multi-Token Prediction",
       "Multi-head Latent Attention",
       "Positional encoding",
+      "Pré-entraînement, affinage et apprentissage en contexte",
       "Qwen3-Embedding",
       "RUL par apprentissage profond",
       "Segment Anything (SAM)",
@@ -5055,6 +5085,7 @@
       "Anomalie visuelle zero-shot et few-shot",
       "AnomalyCLIP",
       "Foundation models et anomalies de séries",
+      "Pré-entraînement, affinage et apprentissage en contexte",
       "SigLIP 2"
     ]
   },
@@ -14618,6 +14649,37 @@
       "maturite": "deprecated"
     },
     {
+      "path": "LLM & IA générative/Agents/Boucle d'amélioration d'un agent.md",
+      "nom": "Boucle d'amélioration d'un agent",
+      "alias": [
+        "auto-amélioration récursive",
+        "recursive self-improvement",
+        "RSI",
+        "auto-amélioration d'un agent",
+        "boucle d'auto-amélioration",
+        "scaffold improvement",
+        "évolution dirigée"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "reinforcement-learning",
+        "safety",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Agents/Checkpointing et reprise.md",
       "nom": "Checkpointing et reprise",
       "alias": [
@@ -14957,6 +15019,38 @@
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Preuve formelle et assistant de preuve.md",
+      "nom": "Preuve formelle et assistant de preuve",
+      "alias": [
+        "Lean",
+        "Lean 4",
+        "assistant de preuve",
+        "proof assistant",
+        "vérification formelle",
+        "preuve vérifiée par machine",
+        "Mathlib",
+        "formalisation d'un énoncé"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "reliability",
+        "llm",
+        "safety"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Agents/PydanticAI.md",
@@ -15907,6 +16001,35 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Fine-tuning/Récompense vérifiable (RLVR).md",
+      "nom": "Récompense vérifiable (RLVR)",
+      "alias": [
+        "Reinforcement Learning with Verifiable Rewards",
+        "apprentissage par renforcement à récompense vérifiable",
+        "récompense vérifiable",
+        "verifiable rewards",
+        "source de récompense"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "reasoning",
+        "alignment",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Fine-tuning/SFT.md",
       "nom": "SFT",
       "alias": [
@@ -16091,6 +16214,39 @@
         "[[Gemma]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Vérificateur externe et loi de Goodhart.md",
+      "nom": "Vérificateur externe et loi de Goodhart",
+      "alias": [
+        "vérificateur externe",
+        "loi de Goodhart",
+        "Goodhart",
+        "model collapse",
+        "effondrement des modèles",
+        "effondrement de modèle",
+        "juge externe",
+        "vérificateur contournable"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "reinforcement-learning",
+        "synthetic-data",
+        "alignment",
+        "reward-shaping",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Flowise.md",
@@ -16394,6 +16550,38 @@
       "maturite": "production"
     },
     {
+      "path": "LLM & IA générative/Modèles de langage/Généalogie des modèles de langage (2011-GPT-3).md",
+      "nom": "Généalogie des modèles de langage (2011-GPT-3)",
+      "alias": [
+        "généalogie des LLM",
+        "histoire des modèles de langage",
+        "de 2011 à GPT-3",
+        "ancêtres de GPT-2",
+        "publication par étapes de GPT-2",
+        "staged release",
+        "monopole du langage"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "transformers",
+        "deep-learning",
+        "scaling-laws",
+        "education"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "LLM & IA générative/Modèles de langage/Hallucinations des LLM.md",
       "nom": "Hallucinations des LLM",
       "alias": [
@@ -16571,6 +16759,42 @@
         "llm",
         "model-evaluation",
         "nlp"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Modèles de langage/Pré-entraînement, affinage et apprentissage en contexte.md",
+      "nom": "Pré-entraînement, affinage et apprentissage en contexte",
+      "alias": [
+        "pré-entraînement",
+        "pretraining",
+        "pré-entraînement et affinage",
+        "apprentissage en contexte",
+        "zero-shot",
+        "one-shot",
+        "few-shot prompting",
+        "apprentissage à quelques exemples",
+        "apprentissage sans exemple",
+        "pretrain-then-finetune"
+      ],
+      "role": "notion",
+      "categorie": "llm/modele",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "llm",
+        "transformers",
+        "fine-tuning",
+        "zero-shot",
+        "prompting",
+        "self-supervised"
       ],
       "alternatives": null,
       "complements": null,
@@ -27913,6 +28137,36 @@
         "regression",
         "bayesian",
         "non-parametric"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Machine Learning/Socle/Histoire de l'IA (1943-2026).md",
+      "nom": "Histoire de l'IA (1943-2026)",
+      "alias": [
+        "histoire de l'intelligence artificielle",
+        "chronologie de l'IA",
+        "hiver de l'IA",
+        "AI winter",
+        "jalons de l'IA",
+        "premier hiver de l'IA",
+        "second hiver de l'IA"
+      ],
+      "role": "notion",
+      "categorie": "ml/socle",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ml-eng",
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "deep-learning",
+        "llm",
+        "education"
       ],
       "alternatives": null,
       "complements": null,

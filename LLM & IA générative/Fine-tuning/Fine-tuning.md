@@ -45,9 +45,11 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - [[Reward modeling]] — domaines : ml-eng, ai-eng
 - [[RL for LLMs]] — domaines : ml-eng, ai-eng
 - [[RLHF and DPO]] — domaines : ml-eng, ai-eng
+- [[Récompense vérifiable (RLVR)]] — domaines : ml-eng, ai-eng
 - [[SFT]] — domaines : ml-eng, ai-eng
 - [[Sycophancy]] — domaines : ai-eng, ml-eng
 - [[Synthetic data generation]] — domaines : ml-eng, ai-eng
+- [[Vérificateur externe et loi de Goodhart]] — domaines : ml-eng, ai-eng
 
 ### Briques
 - [[Axolotl]] — Fine-tuning de LLM piloté par un unique fichier YAML — préprocessing, SFT/DPO/RLHF, multi-GPU (DeepSpeed/FSDP) et quantization couverts par la config, sans écrire de code d'entraînement.

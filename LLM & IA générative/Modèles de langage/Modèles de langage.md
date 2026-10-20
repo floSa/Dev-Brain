@@ -43,9 +43,11 @@ tags: [tokenization, decoding, scaling-laws, small-language-model, reasoning, ll
 - [[Contexte long]] — domaines : ai-eng, ml-eng
 - [[Decoding strategies]] — domaines : ai-eng
 - [[Effort de raisonnement et courbe coût-qualité]] — domaines : ai-eng
+- [[Généalogie des modèles de langage (2011-GPT-3)]] — domaines : ai-eng, ml-eng
 - [[Hallucinations des LLM]] — domaines : ai-eng
 - [[Licences de modèles open weights]] — domaines : ai-eng, ml-eng
 - [[Perplexity]] — domaines : ai-eng
+- [[Pré-entraînement, affinage et apprentissage en contexte]] — domaines : ai-eng, ml-eng
 - [[Reasoning models]] — domaines : ai-eng
 - [[Scaling laws]] — domaines : ai-eng, ml-eng
 - [[Small Language Models]] — domaines : ai-eng

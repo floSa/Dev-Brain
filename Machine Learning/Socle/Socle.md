@@ -52,6 +52,7 @@ tags: [supervised, classification, regression, linear-model, ml-pipeline]
 - [[GAM]] — domaines : data-sci, ml-eng
 - [[Gaussian Process]] — domaines : data-sci, ml-eng
 - [[GLM]] — domaines : data-sci, ml-eng
+- [[Histoire de l'IA (1943-2026)]] — domaines : ml-eng, ai-eng
 - [[k-NN]] — domaines : data-sci, ml-eng
 - [[Learning to rank]] — domaines : data-sci, ml-eng
 - [[Méthodes à noyau]] — domaines : data-sci, ml-eng

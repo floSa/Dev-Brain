@@ -47,11 +47,13 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - [[Agent skills]] — domaines : ai-eng
 - [[agent-loops]] — domaines : ai-eng
 - [[Architecture deep agent]] — domaines : ai-eng
+- [[Boucle d'amélioration d'un agent]] — domaines : ai-eng, ml-eng
 - [[Checkpointing et reprise]] — domaines : ai-eng
 - [[Deep research]] — domaines : ai-eng
 - [[Harnais d'agent]] — domaines : ai-eng
 - [[Human-in-the-loop]] — domaines : ai-eng
 - [[Multi-agent systems]] — domaines : ai-eng
+- [[Preuve formelle et assistant de preuve]] — domaines : ai-eng, ml-eng
 - [[Reliability patterns]] — domaines : ai-eng
 - [[Sous-agents et isolation du contexte]] — domaines : ai-eng
 - [[Tool use patterns]] — domaines : ai-eng
