@@ -20,6 +20,11 @@ url_repo: https://github.com/NVIDIA/OpenShell
 # OpenShell
 
 <!-- AUTO:BANDEAU:START -->
+> Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Rust | open-source | self-hébergé · mono-nœud | beta | amont non sondé |
 <!-- AUTO:BANDEAU:END -->
 
 ## Définition

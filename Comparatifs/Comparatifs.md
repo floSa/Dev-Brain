@@ -42,6 +42,7 @@ pitch: Ce qui départage plusieurs briques d'un même thème — un tableau par 
 
 ### Calcul distribué
 - [[Comparatif - Calcul distribué]]
+- [[Comparatif - Isolation d'exécution d'un agent]]
 
 ### Data & pipelines
 - [[Comparatif - BI auto-hébergée]]

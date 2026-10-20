@@ -45,6 +45,7 @@ tags: [fine-tuning, alignment, reinforcement-learning, quantization, synthetic-d
 - [[RL for LLMs]] — domaines : ml-eng, ai-eng
 - [[RLHF and DPO]] — domaines : ml-eng, ai-eng
 - [[SFT]] — domaines : ml-eng, ai-eng
+- [[Sycophancy]] — domaines : ai-eng, ml-eng
 - [[Synthetic data generation]] — domaines : ml-eng, ai-eng
 
 ### Briques

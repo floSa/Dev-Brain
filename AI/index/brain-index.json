@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1241,
+  "count": 1250,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -99,6 +99,7 @@
       "Beads",
       "Boucle de Ralph",
       "Branches courtes et worktrees pour agents",
+      "Checkpointing et reprise",
       "Claude Agent SDK",
       "Claude Squad",
       "Claude-Code-Usage-Monitor",
@@ -108,6 +109,7 @@
       "Comparatif - Automatisation no-code",
       "Comparatif - Frameworks LLM",
       "Comparatif - Frameworks text-to-SQL",
+      "Comparatif - Isolation d'exécution d'un agent",
       "Comparatif - Mémoire pour agents",
       "Comparatif - Plateformes LLM auto-hébergées",
       "Context engineering",
@@ -117,11 +119,14 @@
       "Daytona",
       "Deep Agents",
       "Deep research",
+      "DeepSeek Harness",
       "Dify",
       "Développement piloté par la spécification",
       "E2B",
+      "Excessive agency et lethal trifecta",
       "Fichiers de contexte pour agents",
       "Flowise",
+      "Garde-fous hors modèle",
       "Goose",
       "Graphiti",
       "Harnais d'agent",
@@ -129,6 +134,7 @@
       "Hermes Agent",
       "Human-in-the-loop",
       "Inspect AI",
+      "Isolation par politique déclarative",
       "Kilo Code",
       "LLM & IA générative",
       "LM Studio Bionic",
@@ -149,6 +155,7 @@
       "OpenCode",
       "OpenHands",
       "OpenMAIC",
+      "OpenShell",
       "OpenViking",
       "PRD et user stories",
       "Pattern - Agent sur LLM auto-hébergé",
@@ -171,6 +178,7 @@
       "Sous-agents et isolation du contexte",
       "Spec Kit",
       "Superpowers",
+      "Sycophancy",
       "Text-to-SQL",
       "Tool use patterns",
       "Vanna",
@@ -191,6 +199,7 @@
       "open_deep_research",
       "pi",
       "pm-skills",
+      "sandbox-runtime",
       "smolagents",
       "swarm-forge",
       "t3code"
@@ -198,20 +207,26 @@
     "ai-security": [
       "AI security",
       "Apprentissage fédéré",
+      "Comparatif - Isolation d'exécution d'un agent",
       "Confidentialité différentielle",
       "Daytona",
       "Données personnelles et anonymisation pour LLM",
       "E2B",
+      "Excessive agency et lethal trifecta",
+      "Garde-fous hors modèle",
+      "Isolation par politique déclarative",
       "Llama Guard",
       "Maka",
       "NeMo Guardrails",
+      "OpenShell",
       "Presidio",
       "Prompt injection",
       "Sandboxing de code généré",
       "Systèmes IA",
       "Sécurité",
       "garak",
-      "promptfoo"
+      "promptfoo",
+      "sandbox-runtime"
     ],
     "alerting": [
       "Alertmanager",
@@ -230,6 +245,7 @@
       "Reasoning models",
       "Reward modeling",
       "Reward shaping and hacking",
+      "Sycophancy",
       "TRL"
     ],
     "ann": [
@@ -605,6 +621,7 @@
       "Comparatif - Assistants de code IA",
       "Continue",
       "Cycle de vie d'un projet assisté par agent",
+      "DeepSeek Harness",
       "Fichiers de contexte pour agents",
       "Goose",
       "Graphify",
@@ -1810,6 +1827,7 @@
     ],
     "guardrails": [
       "Comparatif - Garde-fous pour LLM",
+      "Garde-fous hors modèle",
       "Guardrails",
       "Llama Guard",
       "NeMo Guardrails",
@@ -1823,6 +1841,7 @@
       "Active learning",
       "Annotation de données",
       "CVAT",
+      "Checkpointing et reprise",
       "Human-in-the-loop",
       "Label Studio",
       "Pattern - RAG structuré graphe + human-in-the-loop"
@@ -2264,6 +2283,7 @@
       "Canari de dérive d'un LLM en API",
       "Ce qui change derrière une API",
       "Chain-of-Thought",
+      "Checkpointing et reprise",
       "Choisir entre règle, classifieur, modèle de décision et LLM",
       "Claude Agent SDK",
       "Clef",
@@ -2401,6 +2421,7 @@
       "Speculative decoding",
       "Structured outputs",
       "Superposition",
+      "Sycophancy",
       "Synthetic data generation",
       "TGI",
       "TRL",
@@ -2467,6 +2488,7 @@
       "RAG eval",
       "RAGChecker",
       "Ragas",
+      "Sycophancy",
       "TruLens",
       "garak",
       "promptfoo",
@@ -3491,6 +3513,7 @@
       "Projections"
     ],
     "prompt-injection": [
+      "Excessive agency et lethal trifecta",
       "Prompt injection",
       "Systèmes IA",
       "Sécurité",
@@ -3780,6 +3803,7 @@
       "psycopg2"
     ],
     "reliability": [
+      "Checkpointing et reprise",
       "Hallucinations des LLM",
       "Human-in-the-loop",
       "OmniRoute",
@@ -3951,10 +3975,23 @@
     ],
     "safety": [
       "AI security",
+      "Excessive agency et lethal trifecta",
       "Guardrails",
       "Jailbreaking and defenses",
       "Llama Guard",
-      "NeMo Guardrails"
+      "NeMo Guardrails",
+      "Sycophancy"
+    ],
+    "sandbox": [
+      "Comparatif - Isolation d'exécution d'un agent",
+      "Daytona",
+      "DeepSeek Harness",
+      "E2B",
+      "Garde-fous hors modèle",
+      "Isolation par politique déclarative",
+      "Modal",
+      "OpenShell",
+      "sandbox-runtime"
     ],
     "sast": [
       "Analyse de vulnérabilités",
@@ -4075,6 +4112,7 @@
       "Comparatif - Registres d'images",
       "Dataiku",
       "Debezium",
+      "DeepSeek Harness",
       "DeepWiki-Open",
       "Dependency-Track",
       "EMQX",
@@ -4109,6 +4147,7 @@
       "Open WebUI",
       "OpenBao",
       "OpenMAIC",
+      "OpenShell",
       "OpenTelemetry",
       "PR-Agent",
       "Pipelines CI-CD on-prem — runners, secrets et artefacts",
@@ -8062,6 +8101,25 @@
       "maturite": null
     },
     {
+      "path": "Calcul distribué/Comparatif - Isolation d'exécution d'un agent.md",
+      "nom": "Comparatif - Isolation d'exécution d'un agent",
+      "alias": null,
+      "role": "comparatif",
+      "categorie": "compute/a-la-demande",
+      "famille": null,
+      "langage": null,
+      "domaines": null,
+      "pitch": null,
+      "tags": [
+        "sandbox",
+        "ai-security",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Calcul distribué/CuPy.md",
       "nom": "CuPy",
       "alias": [
@@ -8133,7 +8191,8 @@
         "agents",
         "llm",
         "container",
-        "ai-security"
+        "ai-security",
+        "sandbox"
       ],
       "alternatives": [
         "[[E2B]]",
@@ -8161,11 +8220,14 @@
         "agents",
         "llm",
         "container",
-        "ai-security"
+        "ai-security",
+        "sandbox"
       ],
       "alternatives": [
         "[[Modal]]",
-        "[[Daytona]]"
+        "[[Daytona]]",
+        "[[OpenShell]]",
+        "[[sandbox-runtime]]"
       ],
       "complements": [],
       "maturite": "production"
@@ -8189,7 +8251,8 @@
         "agents",
         "gpu",
         "llm",
-        "container"
+        "container",
+        "sandbox"
       ],
       "alternatives": [
         "[[E2B]]",
@@ -13709,6 +13772,35 @@
       "maturite": null
     },
     {
+      "path": "LLM & IA générative/Agents de code/DeepSeek Harness.md",
+      "nom": "DeepSeek Harness",
+      "alias": [
+        "dsh",
+        "DeepSeek Harness (dsh)",
+        "deepseek-harness",
+        "@deepseek-ai/dsh",
+        "Cordis",
+        "DeepSeek Harness et Cordis"
+      ],
+      "role": "brique",
+      "categorie": "llm/agent-de-code",
+      "famille": "application",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Application locale de harnais d'agent de code de DeepSeek AI (MIT, préversion développeur) — chaque brique (modèle, outils, sessions, bac à sable, boucle) est un plugin du framework Cordis ; fonctionne avec un modèle DeepSeek ou tout fournisseur compatible ; son bac à sable ne confine que les fichiers et un plugin installé tourne hors de lui.",
+      "tags": [
+        "agents",
+        "code-assistant",
+        "sandbox",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[pi]]"
+      ],
+      "complements": [],
+      "maturite": "experimental"
+    },
+    {
       "path": "LLM & IA générative/Agents de code/Goose.md",
       "nom": "Goose",
       "alias": [
@@ -14223,7 +14315,8 @@
         "[[Continue]]",
         "[[freebuff]]",
         "[[OpenCode]]",
-        "[[Goose]]"
+        "[[Goose]]",
+        "[[DeepSeek Harness]]"
       ],
       "complements": [],
       "maturite": null
@@ -14479,6 +14572,37 @@
       ],
       "complements": [],
       "maturite": "deprecated"
+    },
+    {
+      "path": "LLM & IA générative/Agents/Checkpointing et reprise.md",
+      "nom": "Checkpointing et reprise",
+      "alias": [
+        "checkpointing",
+        "checkpoint",
+        "point de reprise",
+        "reprise après panne",
+        "durable execution",
+        "exécution durable",
+        "idempotence des outils d'agent",
+        "rejeu d'un nœud"
+      ],
+      "role": "notion",
+      "categorie": "llm/agents",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "agents",
+        "reliability",
+        "human-in-the-loop",
+        "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
     },
     {
       "path": "LLM & IA générative/Agents/Claude Agent SDK.md",
@@ -15759,6 +15883,38 @@
       "tags": [
         "fine-tuning",
         "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "LLM & IA générative/Fine-tuning/Sycophancy.md",
+      "nom": "Sycophancy",
+      "alias": [
+        "flagornerie",
+        "sycophantie",
+        "complaisance des modèles",
+        "yes-man",
+        "modèle entraîné pour plaire",
+        "sycophancy LLM",
+        "gaslight sycophancy"
+      ],
+      "role": "notion",
+      "categorie": "llm/finetuning",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "ml-eng"
+      ],
+      "pitch": null,
+      "tags": [
+        "alignment",
+        "llm",
+        "llm-eval",
+        "agents",
+        "safety"
       ],
       "alternatives": null,
       "complements": null,
@@ -39035,6 +39191,69 @@
       "maturite": null
     },
     {
+      "path": "Sécurité/Systèmes IA/Excessive agency et lethal trifecta.md",
+      "nom": "Excessive agency et lethal trifecta",
+      "alias": [
+        "excessive agency",
+        "agence excessive",
+        "lethal trifecta",
+        "trifecta létale",
+        "triade mortelle",
+        "OWASP LLM06",
+        "LLM06",
+        "exfiltration par un agent"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "ai-security",
+        "prompt-injection",
+        "agents",
+        "safety"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Garde-fous hors modèle.md",
+      "nom": "Garde-fous hors modèle",
+      "alias": [
+        "garde-fous hors du modèle",
+        "règles hors modèle",
+        "enforcement hors modèle",
+        "sécurité hors du modèle",
+        "runtime enforcement",
+        "complete mediation",
+        "médiation complète"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "ai-security",
+        "guardrails",
+        "sandbox",
+        "agents"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
       "path": "Sécurité/Systèmes IA/Guardrails.md",
       "nom": "Guardrails",
       "alias": [
@@ -39055,6 +39274,37 @@
         "guardrails",
         "safety",
         "llm"
+      ],
+      "alternatives": null,
+      "complements": null,
+      "maturite": null
+    },
+    {
+      "path": "Sécurité/Systèmes IA/Isolation par politique déclarative.md",
+      "nom": "Isolation par politique déclarative",
+      "alias": [
+        "politique déclarative",
+        "isolation déclarative",
+        "policy-as-code pour agents",
+        "Landlock et seccomp",
+        "proxy réseau à politique",
+        "identifiants substitués",
+        "credentials substitués",
+        "deny by default"
+      ],
+      "role": "notion",
+      "categorie": "security/ia",
+      "famille": null,
+      "langage": null,
+      "domaines": [
+        "ai-eng",
+        "infra-ops"
+      ],
+      "pitch": null,
+      "tags": [
+        "ai-security",
+        "sandbox",
+        "agents"
       ],
       "alternatives": null,
       "complements": null,
@@ -39148,6 +39398,34 @@
         "[[garak]]"
       ],
       "maturite": "production"
+    },
+    {
+      "path": "Sécurité/Systèmes IA/OpenShell.md",
+      "nom": "OpenShell",
+      "alias": [
+        "openshell",
+        "NVIDIA OpenShell",
+        "NVIDIA/OpenShell",
+        "OpenShell sandbox"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "plateforme",
+      "langage": "Rust",
+      "domaines": null,
+      "pitch": "Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce.",
+      "tags": [
+        "ai-security",
+        "sandbox",
+        "agents",
+        "self-hosted"
+      ],
+      "alternatives": [
+        "[[sandbox-runtime]]",
+        "[[E2B]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Sécurité/Systèmes IA/Presidio.md",
@@ -39289,6 +39567,34 @@
       "complements": [
         "[[NeMo Guardrails]]"
       ],
+      "maturite": "beta"
+    },
+    {
+      "path": "Sécurité/Systèmes IA/sandbox-runtime.md",
+      "nom": "sandbox-runtime",
+      "alias": [
+        "srt",
+        "Anthropic Sandbox Runtime",
+        "anthropic sandbox-runtime",
+        "@anthropic-ai/sandbox-runtime",
+        "anthropics/sandbox-runtime"
+      ],
+      "role": "brique",
+      "categorie": "security/ia",
+      "famille": "cli",
+      "langage": "TypeScript",
+      "domaines": null,
+      "pitch": "Outil en ligne de commande et bibliothèque de bac à sable léger d'Anthropic (Apache-2.0, préversion bêta) — restrictions de fichiers et de réseau au niveau du système d'exploitation, sans conteneur : Seatbelt sur macOS, bubblewrap sur Linux, proxy HTTP et SOCKS5 à liste de domaines ; Windows en alpha.",
+      "tags": [
+        "ai-security",
+        "sandbox",
+        "agents"
+      ],
+      "alternatives": [
+        "[[OpenShell]]",
+        "[[E2B]]"
+      ],
+      "complements": [],
       "maturite": "beta"
     },
     {

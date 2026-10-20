@@ -26,7 +26,7 @@ Axe métier **ML Engineering** (`ml-eng`) — explorer par sous-domaine, puis de
 
 - [[Machine Learning]] — 165 page(s)
 - [[Mathématiques]] — 35 page(s)
-- [[LLM & IA générative]] — 25 page(s)
+- [[LLM & IA générative]] — 26 page(s)
 - [[Outils de développement]] — 6 page(s)
 - [[Signal & audio]] — 6 page(s)
 <!-- AUTO:END -->

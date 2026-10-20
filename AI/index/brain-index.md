@@ -1,7 +1,7 @@
 # Index — DevBrain
 
 > Document généré par `AI/scripts/build_index.py`. Ne pas éditer à la main.
-> 1241 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
+> 1250 pages actives. Réservoir v1 (0 pages Wiki) : référence, non indexé.
 
 ## Briques — ce qu'on déploie ou importe
 
@@ -374,6 +374,7 @@
 - **BMAD** — Framework de développement piloté par agents (MIT avec clause de marque, npm `bmad-method`) : installe dans Claude Code ou Cursor un jeu d'agents nommés — analyst, PM, architect, dev, UX, scrum master, test architect — et le flux brief → PRD → architecture → implémentation story par story.
 - **Cline** — Agent de code autonome pour VS Code : modes Plan/Act avec validation pas-à-pas et support MCP de première classe.
 - **Continue** — Assistant IA open-source pour VS Code et JetBrains : chat, autocomplétion, édition et agent, avec le modèle de ton choix (local ou API).
+- **DeepSeek Harness** — Application locale de harnais d'agent de code de DeepSeek AI (MIT, préversion développeur) — chaque brique (modèle, outils, sessions, bac à sable, boucle) est un plugin du framework Cordis ; fonctionne avec un modèle DeepSeek ou tout fournisseur compatible ; son bac à sable ne confine que les fichiers et un plugin installé tourne hors de lui.
 - **freebuff** — Assistant de code multi-agents gratuit financé par la publicité (ex-Codebuff) : modèles hébergés sans clé API, sessions journalières plafonnées et prompts exploités pour le ciblage.
 - **Goose** — Agent généraliste open source (Apache-2.0, Rust, Linux Foundation) : application desktop, CLI et API, plus de 15 fournisseurs et des extensions MCP, avec Ollama pour les modèles locaux.
 - **Graphify** — Transforme un dépôt (code, docs, SQL, images) en knowledge graph interrogeable pour que l'assistant IA lise la structure avant de grep : god nodes, communautés, outils MCP.
@@ -745,7 +746,9 @@
 - **garak** — Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites, génération de code malveillant) lancées contre un modèle local ou distant, avec détecteurs, rapports JSONL et HTML ; la plupart des détecteurs tournent en local, les attaques multi-tours demandent un modèle juge.
 - **Llama Guard** — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher.
 - **NeMo Guardrails** — Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits en YAML et en Colang, avec des rails prêts à l'emploi (sûreté du contenu, jailbreak, thème, PII) ; chaque contrôle sémantique rappelle un LLM, d'où une latence ajoutée.
+- **OpenShell** — Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce.
 - **Presidio** — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France.
+- **sandbox-runtime** — Outil en ligne de commande et bibliothèque de bac à sable léger d'Anthropic (Apache-2.0, préversion bêta) — restrictions de fichiers et de réseau au niveau du système d'exploitation, sans conteneur : Seatbelt sur macOS, bubblewrap sur Linux, proxy HTTP et SOCKS5 à liste de domaines ; Windows en alpha.
 
 ### security/recon
 - **osint4all** — Annuaire de liens OSINT (CC0, portage GitHub d'une page start.me) : de l'ordre de 78 rubriques et 1 400 liens — générateurs, récupération de hash, confidentialité, recherche de personnes, guides. Ni logiciel, ni service, et sans commit depuis juillet 2022.
@@ -938,6 +941,7 @@
 - **Agent skills** — domaines : ai-eng · alias : skill, skills, agent skill, mémoire procédurale, procedural memory, SKILL.md
 - **agent-loops** — domaines : ai-eng · alias : agent loop, boucle d'agent, boucle perception-action, agentic loop
 - **Architecture deep agent** — domaines : ai-eng · alias : deep agent, agent profond, agents profonds, agents à planification
+- **Checkpointing et reprise** — domaines : ai-eng · alias : checkpointing, checkpoint, point de reprise, reprise après panne, durable execution, exécution durable, idempotence des outils d'agent, rejeu d'un nœud
 - **Deep research** — domaines : ai-eng · alias : recherche approfondie, deep research agent, agent de recherche approfondie
 - **Harnais d'agent** — domaines : ai-eng · alias : harnais, harness, agent harness, scaffolding, échafaudage, agent scaffold
 - **Human-in-the-loop** — domaines : ai-eng · alias : HITL, human in the loop, supervision humaine, validation humaine, intervention humaine
@@ -967,6 +971,7 @@
 - **RL for LLMs** — domaines : ml-eng, ai-eng · alias : RL for language models, reinforcement learning for LLMs, RL appliqué aux LLM, RL post-training, post-training RL, RLVR
 - **RLHF and DPO** — domaines : ml-eng, ai-eng · alias : RLHF, DPO, alignement par préférences, preference tuning, direct preference optimization
 - **SFT** — domaines : ml-eng, ai-eng · alias : supervised fine-tuning, fine-tuning supervisé, instruction tuning, instruction fine-tuning
+- **Sycophancy** — domaines : ai-eng, ml-eng · alias : flagornerie, sycophantie, complaisance des modèles, yes-man, modèle entraîné pour plaire, sycophancy LLM, gaslight sycophancy
 - **Synthetic data generation** — domaines : ml-eng, ai-eng · alias : synthetic data, génération de données synthétiques, données synthétiques, self-instruct, evol-instruct, distillation de données
 
 ### llm/memoire
@@ -1358,7 +1363,10 @@
 ### security/ia
 - **AI security** — domaines : ai-eng · alias : sécurité IA, sécurité LLM, LLM security, AI security, OWASP LLM Top 10, sécurité des apps LLM
 - **Données personnelles et anonymisation pour LLM** — domaines : ai-eng, infra-ops · alias : données personnelles et LLM, RGPD et LLM, PII masking, masquage de données personnelles, pseudonymisation, anonymisation de données personnelles, PII
+- **Excessive agency et lethal trifecta** — domaines : ai-eng, infra-ops · alias : excessive agency, agence excessive, lethal trifecta, trifecta létale, triade mortelle, OWASP LLM06, LLM06, exfiltration par un agent
+- **Garde-fous hors modèle** — domaines : ai-eng, infra-ops · alias : garde-fous hors du modèle, règles hors modèle, enforcement hors modèle, sécurité hors du modèle, runtime enforcement, complete mediation, médiation complète
 - **Guardrails** — domaines : ai-eng · alias : garde-fous, guardrails, garde-fous LLM, garde-fous d'entrée/sortie
+- **Isolation par politique déclarative** — domaines : ai-eng, infra-ops · alias : politique déclarative, isolation déclarative, policy-as-code pour agents, Landlock et seccomp, proxy réseau à politique, identifiants substitués, credentials substitués, deny by default
 - **Jailbreaking and defenses** — domaines : ai-eng · alias : jailbreak, jailbreaking, contournement de l'alignement, jailbreaking and defenses, DAN
 - **Prompt injection** — domaines : ai-eng · alias : injection de prompt, prompt injection, indirect prompt injection, injection indirecte, LLM01
 - **Sandboxing de code généré** — domaines : ai-eng · alias : sandboxing, sandbox, bac à sable, code execution sandbox, exécution isolée, microVM
@@ -1448,6 +1456,9 @@
 
 ### automation/no-code
 - **Comparatif - Automatisation no-code** — —
+
+### compute/a-la-demande
+- **Comparatif - Isolation d'exécution d'un agent** — —
 
 ### compute/distribue
 - **Comparatif - Calcul distribué** — —

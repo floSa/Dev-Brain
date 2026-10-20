@@ -1,7 +1,7 @@
 # Calcul distribué — carte
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 8 pages, chacune avec son chemin et une ligne.
+> 9 pages, chacune avec son chemin et une ligne.
 
 ## Au niveau du dossier
 - [[CuPy]] · brique · `Calcul distribué/CuPy.md` — NumPy/SciPy sur GPU : tableau ndarray compatible drop-in exécuté sur CUDA/ROCm, pour accélérer le calcul numérique existant sans réécrire le code.
@@ -12,3 +12,4 @@
 - [[Ray]] · brique · `Calcul distribué/Ray.md` — Moteur de calcul distribué Python (« AI compute engine ») : un runtime de tâches et d'acteurs scalant du laptop au cluster, surmonté de bibliothèques ML…
 - [[Spark]] · brique · `Calcul distribué/Spark.md` — Moteur unifié de traitement de données à grande échelle (JVM) : SQL, DataFrames, streaming structuré et MLlib sur cluster, exécution en mémoire et API PySpark.
 - [[Comparatif - Calcul distribué]] · comparatif · `Calcul distribué/Comparatif - Calcul distribué.md` — ce qu'on distribue — une table, un tableau, du code Python quelconque — ou bien on ne distribue rien du tout et l'on descend simplement sur le GPU.
+- [[Comparatif - Isolation d'exécution d'un agent]] · comparatif · `Calcul distribué/Comparatif - Isolation d'exécution d'un agent.md` — où s'applique la règle (dans un processus local confiné, dans une microVM ou un noyau émulé créés à la demande, dans le harnais lui-même), ce qui est isolé…

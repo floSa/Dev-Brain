@@ -40,4 +40,5 @@ tags: [distributed, gpu, parallel, out-of-core, distributed-training]
 
 ### Comparatifs
 - [[Comparatif - Calcul distribué]]
+- [[Comparatif - Isolation d'exécution d'un agent]]
 <!-- AUTO:END -->

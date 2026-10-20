@@ -39,7 +39,10 @@ tags: [ai-security, prompt-injection, jailbreak, guardrails]
 ### Notions
 - [[AI security]] — domaines : ai-eng
 - [[Données personnelles et anonymisation pour LLM]] — domaines : ai-eng, infra-ops
+- [[Excessive agency et lethal trifecta]] — domaines : ai-eng, infra-ops
+- [[Garde-fous hors modèle]] — domaines : ai-eng, infra-ops
 - [[Guardrails]] — domaines : ai-eng
+- [[Isolation par politique déclarative]] — domaines : ai-eng, infra-ops
 - [[Jailbreaking and defenses]] — domaines : ai-eng
 - [[Prompt injection]] — domaines : ai-eng
 - [[Sandboxing de code généré]] — domaines : ai-eng
@@ -48,7 +51,9 @@ tags: [ai-security, prompt-injection, jailbreak, guardrails]
 - [[garak]] — Scanner de vulnérabilités de LLM par sondes (Apache-2.0, NVIDIA) — une quarantaine de familles de sondes (injection de prompt, jailbreaks, encodages, fuites, génération de code malveillant) lancées contre un modèle local ou distant, avec détecteurs, rapports JSONL et HTML ; la plupart des détecteurs tournent en local, les attaques multi-tours demandent un modèle juge.
 - [[Llama Guard]] — Classifieur de sûreté de Meta, un modèle de langage qui juge une conversation sûre ou non selon 13 à 14 catégories (licence propre de Meta, pas open source) — Llama Guard 3 en 1B et 8B (texte), Llama Guard 4 en 12B multimodal ; à héberger soi-même (vLLM, Ollama), huit langues dont le français pour le 8B, et une clause d'exclusion pour les sociétés établies dans l'UE que la génération 4 peut déclencher.
 - [[NeMo Guardrails]] — Framework de garde-fous programmables de NVIDIA (Apache-2.0) — cinq types de rails autour d'un LLM (entrée, dialogue, récupération, exécution, sortie) décrits en YAML et en Colang, avec des rails prêts à l'emploi (sûreté du contenu, jailbreak, thème, PII) ; chaque contrôle sémantique rappelle un LLM, d'où une latence ajoutée.
+- [[OpenShell]] — Runtime de bac à sable pour agents d'IA de NVIDIA (Apache-2.0) — une politique déclarative en YAML appliquée hors de l'agent : Landlock et seccomp pour les fichiers et les appels système, un proxy qui filtre le réseau par hôte, programme, méthode et chemin et ajoute les identifiants à la place de l'agent ; jeune (0.1.4 le 2026-10-13), à passer en mode enforce.
 - [[Presidio]] — Détection et anonymisation de données personnelles dans du texte, des images et des tables (MIT, projet communautaire Data Privacy Stack, ex-Microsoft) — reconnaisseurs par regex et NER (spaCy, Transformers, Stanza), opérateurs de masquage dont un chiffrement réversible, tout en local ; mais anglais seul par défaut et aucun reconnaisseur propre à la France.
+- [[sandbox-runtime]] — Outil en ligne de commande et bibliothèque de bac à sable léger d'Anthropic (Apache-2.0, préversion bêta) — restrictions de fichiers et de réseau au niveau du système d'exploitation, sans conteneur : Seatbelt sur macOS, bubblewrap sur Linux, proxy HTTP et SOCKS5 à liste de domaines ; Windows en alpha.
 
 ### Comparatifs
 - [[Comparatif - Garde-fous pour LLM]]

@@ -46,6 +46,7 @@ tags: [agents, multi-agent, tool-use, agent-memory, llm]
 - [[Agent skills]] — domaines : ai-eng
 - [[agent-loops]] — domaines : ai-eng
 - [[Architecture deep agent]] — domaines : ai-eng
+- [[Checkpointing et reprise]] — domaines : ai-eng
 - [[Deep research]] — domaines : ai-eng
 - [[Harnais d'agent]] — domaines : ai-eng
 - [[Human-in-the-loop]] — domaines : ai-eng
