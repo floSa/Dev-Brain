@@ -48,6 +48,7 @@ tags: [retrieval, reranking, embeddings, semantic-search, information-retrieval,
 - [[Hybrid retrieval]] — autre manière de dépasser le dense seul (fusion dense + lexical) ; SPLADE (sparse appris) en est un cousin.
 - [[RAGatouille]] · [[Vespa]] — les implémentations côté Dev.
 - Voir aussi : [[ColPali]], [[RAG visuel - retrouver des documents sans OCR]].
+- [[Embedding multimodal et modality gap]] — un vecteur par entrée, toutes modalités, contre un vecteur par patch de page ; [[Coller le corpus ou récupérer]] — le jeu LIMIT et les limites des embeddings à un seul vecteur.
 
 ## Pour aller plus loin
 

@@ -65,6 +65,7 @@ tags: [rag, llm, retrieval, local-llm, self-hosted]
 - [[Comparatif - Plateformes LLM auto-hébergées]] — ce que chaque plateforme permet, licence et SSO compris.
 - [[Reranking]] · [[Hybrid retrieval]] · [[GraphRAG]] — ce qu'un assemblage peut ajouter et qu'un moteur propose ou non.
 - Voir aussi : [[RAG visuel - retrouver des documents sans OCR]].
+- [[Droits d'accès dans un RAG]] — le développement de la section sur les droits : filtre avant le prompt, index centralisé ou requête fédérée, sur-partage à la source.
 
 ## Pour aller plus loin
 

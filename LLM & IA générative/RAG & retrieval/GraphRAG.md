@@ -52,6 +52,7 @@ tags: [rag, knowledge-graph, graph-db, retrieval, llm]
 - [[Bases de données vectorielles]] / [[Neo4j]] — les deux mémoires interrogeables (vecteurs vs graphe), souvent associées.
 - [[Graphe de connaissances]] — ce qu'est le graphe qu'on interroge ici, avec son [[Ontologie|ontologie]] ; [[Interroger un graphe en langage naturel]] — l'autre façon de s'en servir : faire écrire une requête plutôt que lire des extraits.
 - Alternative : rester en [[RAG]] vectoriel + [[Reranking|reranking]] — plus simple et moins cher quand les questions ne sont pas relationnelles.
+- [[Microsoft GraphRAG]] · [[LightRAG]] — les deux frameworks de graphe du brain : communautés et rapports d'un côté, ajout incrémental de l'autre, sans classement ; [[RAG hiérarchique]] — l'arbre de résumés, autre réponse aux questions de synthèse.
 
 ## Pour aller plus loin
 
