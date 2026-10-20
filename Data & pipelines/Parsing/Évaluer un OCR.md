@@ -71,7 +71,7 @@ Mesures de première main de l'auteur d'une vidéo (AI WITH Rithesh), sur un Mac
 | LightOnOCR-3 0,8B, 1B, 4B | 4 pages, 5 lignes manuscrites, 1 graphique | 0,30 / 0,25 / 0,30 % | 0,938 / 0,926 / 0,947 | MAE 0,33 / 0,33 / 0,0 | 2026-10-10 |
 | Indra OCR 0.3.2 | 23 pages, 20 lignes manuscrites | 0 à 3,3 % sur imprimé propre et pages tournées ; 40,7 % ticket ; 49,6 % manuscrit ; 12,1 % télécopie | non mesuré | tableaux : cellules 72,0 à 98,0 %, nombres 100 % | 2026-10-15 |
 
-Les scores publiés par les éditeurs (olmOCR-Bench, ParseBench, OmniParseBench) sont **auto-rapportés** : cf. les fiches [[LightOnOCR-3]] et [[Indra OCR]].
+Les scores publiés par les éditeurs (olmOCR-Bench, ParseBench, OmniParseBench) sont **auto-rapportés** : cf. les fiches LightOnOCR-3 et [[Indra OCR]].
 
 ## Approches voisines & alternatives
 
