@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
       "query": "path:Comparatifs/",
@@ -68,5 +68,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.14577765249366997,
-  "close": false
+  "close": true
 }
