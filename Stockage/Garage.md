@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Rust
 scaling: distributed
-alternatives: ["[[RustFS]]", "[[MinIO]]", "[[SeaweedFS]]", "[[Ceph]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
+alternatives: ["[[RustFS]]", "[[MinIO]]", "[[Silo]]", "[[SeaweedFS]]", "[[Ceph]]", "[[Versity GW]]", "[[S3Proxy]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
 complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://garagehq.deuxfleurs.fr/documentation/
@@ -39,11 +39,16 @@ garantie visée est la **lecture après écriture**, obtenue par des quorums (2 
 non par un consensus ; aucune transaction entre plusieurs clés. Le résultat est un binaire léger,
 simple à exploiter, pensé pour tourner hors datacenter. En production chez Deuxfleurs depuis 2020.
 
-*Constat du 2026-09-30 :* étiquette **v2.4.1** (commit du 2026-09-07), précédée de v2.4.0 le
-2026-09-06 et de v2.3.0 le 2026-04-16 ; la branche 1.x reste maintenue. Le dépôt principal est
-sur `git.deuxfleurs.fr` ; le miroir GitHub `deuxfleurs-org/garage` compte environ **4,6 k
-étoiles**. Licence **AGPL-3.0**, confirmée sur le miroir. Côté S3, la page officielle de
-compatibilité liste les **manques** : pas de versioning (`GetBucketVersioning` répond « non
+*Constat du 2026-10-30 :* version **v2.5.0**, publiée le 2026-10-24 (release du dépôt principal),
+précédée de v2.4.1 le 2026-09-08, de v2.4.0 le 2026-09-06 et de v2.3.0 le 2026-04-16 ; la dernière
+release de la branche 1.x est la v1.3.1 du 2026-01-24. Le dépôt principal est sur
+`git.deuxfleurs.fr` ; le miroir GitHub `deuxfleurs-org/garage` compte environ **4,8 k étoiles**
+(le dépôt principal en affiche 179). Licence **AGPL-3.0**,
+lue dans le fichier `LICENSE` du dépôt principal. **Console web** : aucune n'est intégrée au
+binaire. Une interface officielle, `garage-webadmin` (AGPL-3.0, v0.2.0 du 2026-10-25), est en phase
+de test d'après son README et doit être embarquée dans le binaire de Garage ; en attendant,
+`garage-webui`, d'un tiers (MIT, environ 1,2 k étoiles, dernier push le 2025-09-23). Côté S3, la
+page officielle de compatibilité, relue le 2026-10-30, liste les **manques** : pas de versioning (`GetBucketVersioning` répond « non
 activé »), **pas d'Object Lock**, donc pas de WORM, pas de politiques de bucket ni d'ACL (Garage
 a son propre modèle de droits par clé et par bucket), pas de tagging, de notifications ni de
 réplication S3, et un cycle de vie réduit à l'expiration et à l'abandon des multiparts. Il n'y a
@@ -76,8 +81,11 @@ petite échelle ; la section « à grande échelle » de sa page de benchmarks e
 
 - [[RustFS]] — Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé en Go, sous AGPLv3 : dépôt communautaire archivé et déclaré non maintenu par l'éditeur (2026-04-25), dernière release en octobre 2025 ; la suite est AIStor (propriétaire) ou un fork communautaire.
+- [[Silo]] — Fork communautaire de MinIO publié par Pigsty sous AGPL-3.0, avec console web, binaires, paquets et images Docker (`pgsty/silo`, ex-`pgsty/minio`, renommé le 2026-08-06) : un pont de migration pour une installation MinIO existante, mais un seul mainteneur (94 % des commits sur six mois), donc pas un choix pour une nouvelle installation.
 - [[SeaweedFS]] — Stockage objet S3-compatible distribué en Go (inspiré de Haystack) optimisé pour des milliards de petits fichiers en accès O(1), sous licence permissive Apache 2.0.
 - [[Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
+- [[Versity GW]] — Passerelle S3 en Go sous Apache 2.0 qui expose un système de fichiers POSIX, ScoutFS ou Azure Blob comme un serveur S3, ou relaie vers un autre serveur S3 : sans état, sans stockage propre, avec une WebGUI optionnelle et un mode S3 sur RDMA — une passerelle, pas un moteur. — passerelle : elle se pose devant un stockage existant, elle n'en fournit pas.
+- [[S3Proxy]] — Passerelle S3 en Java sous Apache 2.0 qui traduit l'API S3 vers Azure, Google Cloud, OpenStack Swift, SFTP, un autre S3 ou un dossier local, et sert aussi à tester sans AWS : sans stockage propre ni console, avec un seul mainteneur (99 % des commits sur six mois) — une passerelle, pas un moteur. — passerelle : elle se pose devant un stockage existant, elle n'en fournit pas.
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
