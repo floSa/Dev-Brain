@@ -19,6 +19,14 @@ url_repo: https://github.com/pgsty/silo
 
 # Silo
 
+<!-- AUTO:BANDEAU:START -->
+> Fork communautaire de MinIO publié par Pigsty sous AGPL-3.0, avec console web, binaires, paquets et images Docker (`pgsty/silo`, ex-`pgsty/minio`, renommé le 2026-08-06) : un pont de migration pour une installation MinIO existante, mais un seul mainteneur (94 % des commits sur six mois), donc pas un choix pour une nouvelle installation.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | beta | amont non sondé |
+<!-- AUTO:BANDEAU:END -->
+
 ## Définition
 
 Serveur de stockage objet **S3-compatible** à héberger soi-même, écrit en **Go** : un **fork
@@ -73,7 +81,7 @@ compte environ 2,6 millions de téléchargements (lu le 2026-10-30).
 
 - Documentation — https://silo.pgsty.com/docs/
 - Dépôt — https://github.com/pgsty/silo
-- Guide de migration depuis MinIO — https://silo.pgsty.com/compatibility/migration/
+- Documentation — https://silo.pgsty.com/compatibility/migration/ (guide de migration depuis MinIO)
 
 ## Voir aussi
 
