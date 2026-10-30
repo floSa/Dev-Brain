@@ -74,6 +74,7 @@ on-prem industriel, ESN.
 | 21 | Lots 35, 36 (en parallèle) | Lots 33 et 34 clos et poussés |
 | 22 | Lot 37 | Lots 35 et 36 clos et poussés |
 | 23 | Lot 38 | Lots 1 à 37 clos et poussés |
+| 24 | Lot 39 | Lot 38 clos et poussé |
 
 ## Faits vérifiés le 2026-10-02 (à reconfirmer à la source avant d'écrire)
 
@@ -596,6 +597,40 @@ floSa (2026-10-20) : « Je ne veux pas de modèles dans mon DevBrain, seulement 
 
 **Livrables dans ta synthèse** : la liste des pages retirées, des comparatifs retirés ou modifiés, le nombre de liens convertis, les cas limites, les fiches douteuses non retirées, et le compte avant/après de briques, de notions et de comparatifs.
 
+## Lot 39 — Stockage objet S3 : mise à jour et nouvelles fiches (vague 24)
+
+Déclencheur (floSa, 2026-10-30) : Docker Hub a supprimé `minio/minio` et `minio/mc`, MinIO n'est plus un choix. floSa veut les alternatives au brain, un comparatif qui donne **étoiles, licence, console web**, et les fiches à jour. Décisions de floSa : l'AGPL ne le gêne pas (usage interne, produit non commercialisé) ; il s'intéresse surtout à **RustFS, SeaweedFS et Garage** ; Silo l'inquiète parce qu'il n'a qu'un mainteneur. Le dossier est `Stockage/`, catégorie `storage/objet`. Pages existantes : MinIO, RustFS, SeaweedFS, Garage, Ceph, Apache Ozone, OpenStack Swift, AWS S3, Cloudflare R2, « Comparatif - Stockage objet », la notion « Stockage objet et API S3 ». Relis-les d'abord. Règle 19 : aucun modèle ; ici ce sont des serveurs, aucun problème.
+
+**Faits relevés le 2026-10-30 (à re-mesurer à la source le jour où tu écris, puis dater)** :
+
+| | Étoiles | Licence | Console web | Version | Auteurs sur 6 mois (part du premier) |
+|---|---|---|---|---|---|
+| SeaweedFS | 35,8 k | Apache-2.0 | Admin UI | 4.48 (2026-09-28) | 66 (52 %) |
+| RustFS | 35,6 k | Apache-2.0 | intégrée, port 9001 | 1.0.4 (2026-10-25) | 39 (41 % ; les deux premiers 70 %) |
+| Garage | 4,8 k (miroir GitHub ; dépôt principal chez Deuxfleurs) | AGPL-3.0 | aucune officielle ; interface tierce garage-webui ; officielle en conception | 2.4.1 (2026-09-07) | 31 (environ 20 %) |
+| Silo (`pgsty/silo`) | 4,4 k | AGPL-3.0 | oui, console MinIO v2.5.1 | RELEASE.2026-10-26 | 14 (94 %) |
+| Versity GW | 3,1 k | Apache-2.0 | WebGUI optionnelle | 1.10.0 (2026-10-22) | 43 (50 %) |
+| S3Proxy | 2,4 k | Apache-2.0 | aucune | 4.1.1 (2026-09-10) | non mesuré |
+| MinIO | 61,3 k | AGPL-3.0 | — | archivé le 2026-04-24 | — |
+
+Méthode de mesure des auteurs : `gh api "repos/<dépôt>/commits?since=<date>&per_page=100"` sur les six derniers mois, hors robots. Pour Ceph, Apache Ozone et OpenStack Swift, mesure les mêmes colonnes et lis la console à la source (Ceph : Dashboard ; Ozone : Recon, à confirmer ; Swift : à confirmer).
+
+**À faire**
+
+1. **Créer trois fiches** (licence lue dans le fichier LICENSE du dépôt ; première phrase = ce que c'est, règle 17 ; schéma Mermaid si utile) :
+   - **Silo** : fork communautaire de MinIO publié par Pigsty, **renommé** de `pgsty/minio` en `pgsty/silo` le 2026-08-06. Même code, console, binaires, paquets et images Docker (`pgsty/silo`, standard et sans distribution). Dis noir sur blanc : **un seul mainteneur** (94 % des commits depuis octobre 2025), donc un pont de migration pour un MinIO existant, pas un choix pour une nouvelle installation. L'AGPL permet un nouveau fork.
+   - **Versity GW** : passerelle S3 qui transforme un système de fichiers (posix) en serveur S3, ou relaie vers un autre S3 ; option S3 sur RDMA. Une passerelle, pas un moteur.
+   - **S3Proxy** : passerelle S3 en Java qui traduit vers Azure, Google Cloud, Swift, SFTP ou un dossier local, utile aussi pour tester. Une passerelle, pas un moteur.
+   Pas de fiche pour Zenko CloudServer, JuiceFS, OpenMaxIO (décision du pilote ; cite-les en texte simple dans le comparatif).
+2. **Mettre à jour MinIO** (accord de floSa) : ajoute la suppression Docker Hub du **2026-09-11** (preuves : tickets GitHub `xtdb/xtdb#6061` du 2026-09-11 et `milvus-io/milvus#53430` du 2026-09-14 ; l'état de quay.io et de `dl.min.io` est contradictoire selon les sources : vérifie ou dis que tu ne sais pas) ; remplace partout `pgsty/minio` par **Silo** avec un lien vers la fiche ; **raccourcis** la page, qui doit garder le pourquoi de l'abandon, la chronologie, où aller, et quand garder encore une installation existante. **Ne la supprime pas** : floSa la garde comme repère. Maturité `deprecated`.
+3. **Mettre à jour RustFS, SeaweedFS, Garage** (accord de floSa, limité à : la ligne « Constat du … » datée, la version, les étoiles, et les alternatives réciproques avec Silo, Versity GW, S3Proxy). RustFS : recompte les avis de sécurité à la source depuis décembre 2025 et donne la version courante.
+4. **Réécrire « Comparatif - Stockage objet »** : en tête, **SeaweedFS, RustFS, Garage** ; un tableau daté avec **étoiles, licence, console web, version et date, auteurs sur six mois (part du premier)** ; trois familles : serveurs de stockage (SeaweedFS, RustFS, Garage, Silo, Ceph, Apache Ozone, OpenStack Swift), **passerelles** (Versity GW, S3Proxy ; elles n'ont pas leur propre stockage et ne se comparent pas aux moteurs), services managés (AWS S3, Cloudflare R2). Garde « On tranche sur » et propose la lecture de floSa : **SeaweedFS pour la production aujourd'hui** (le plus de recul, couverture S3 large), **RustFS pour remplacer MinIO sans changer ses habitudes mais à réévaluer dans six mois** (stable depuis le 2026-09-16), **Garage pour un petit cluster réparti** (sans versioning, sans Object Lock, sans console officielle). Si la vue `.base` ne sait pas afficher les nouvelles colonnes (elles ne sont pas dans le frontmatter), mets le tableau dans la page et garde la vue telle quelle ; n'invente pas de champ.
+5. **Notion « Stockage objet et API S3 »** (pas à toi : ne la réécris pas) : liens seuls vers Silo, Versity GW, S3Proxy ; propose dans ta synthèse deux ou trois lignes (passerelles, Silo, console).
+6. **Hub `Stockage`**, comptes de `Home.md` et de `CLAUDE.md` (`audit_inventaire.py`), liens retour des fiches voisines.
+7. **Candidats à la suppression, sans rien supprimer** : dis dans ta synthèse quelles fiches du dossier te paraissent perdre leur intérêt (par exemple OpenStack Swift) et pourquoi ; floSa décidera.
+
+Rappel : un commit par page, aucun trailer `Co-Authored-By`, aucune mention d'outil dans les messages ; règle 18 en fin de lot.
+
 ## Suivi
 
 - [x] Lot 1 — ouverture et socle
@@ -635,3 +670,4 @@ floSa (2026-10-20) : « Je ne veux pas de modèles dans mon DevBrain, seulement 
 - [x] Lot 36 — agents : garde-fous hors modèle
 - [x] Lot 37 — fondamentaux : méthodes et culture
 - [x] Lot 38 — retrait des fiches de modèles
+- [ ] Lot 39 — stockage objet S3 : mise à jour et nouvelles fiches
