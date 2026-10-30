@@ -95,6 +95,7 @@ Chaque projet publie sa page de compatibilité, et aucune ne dit « identique »
 - [[Stockage]] — le hub du domaine.
 - [[AWS S3]] et [[Cloudflare R2]] — les références managées, dont l'egress est le poste de coût qui surprend.
 - [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Garage]], [[Ceph]], [[Apache Ozone]], [[OpenStack Swift]] — les serveurs auto-hébergeables.
+- [[Silo]], [[Versity GW]] et [[S3Proxy]] — le fork communautaire de MinIO, et deux passerelles S3.
 - [[Apache Iceberg]] — le format de table qui pose des transactions au-dessus d'objets.
 - **JuiceFS** n'a pas de page ici : c'est un système de fichiers POSIX, Apache 2.0, qui s'appuie sur un stockage objet existant et sur une base de métadonnées (Redis, PostgreSQL, TiKV). Il se pose sur les briques ci-dessus ; il ne les remplace pas.
 
