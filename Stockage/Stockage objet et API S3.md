@@ -79,19 +79,22 @@ Chaque projet publie sa page de compatibilité, et aucune ne dit « identique »
 
 ## En pratique
 
-- **Le point de départ a changé.** [[MinIO]], longtemps le serveur S3 par défaut, est archivé depuis le 2026-04-25 (cf. sa fiche) : un choix d'il y a deux ans ne se reconduit pas sans relecture. [[RustFS]] en vise la succession et n'a que deux semaines de version stable.
+- **Le point de départ a changé.** [[MinIO]], longtemps le serveur S3 par défaut, est archivé depuis le 2026-04-25 et ses images ont été supprimées de Docker Hub le 2026-09-11 (cf. sa fiche) : un choix d'il y a deux ans ne se reconduit pas sans relecture. [[RustFS]] en vise la succession : version stable depuis le 2026-09-16, mais 43 avis de sécurité publiés depuis décembre 2025 (relevé du 2026-10-30).
 - **Partir des exigences qui éliminent**, pas d'un classement :
   - **WORM ou conformité** : Object Lock présent chez [[SeaweedFS]], [[Ceph]] (documenté) et [[RustFS]] ; absent chez [[Garage]], [[Apache Ozone]] et [[Cloudflare R2]] (qui a ses propres verrous).
   - **Échelle et équipe** : [[Garage]] pour un petit cluster sur plusieurs sites, [[SeaweedFS]] pour l'intermédiaire, [[Ceph]] quand le cluster sert aussi du bloc et du fichier et qu'une équipe l'exploite, [[Apache Ozone]] pour l'analytique Hadoop sur de très gros volumes.
-  - **Licence** : AGPL pour [[MinIO]] et [[Garage]] (copyleft réseau, à faire valider) ; Apache 2.0 pour [[RustFS]], [[SeaweedFS]], [[Apache Ozone]] et [[OpenStack Swift]] ; LGPL pour [[Ceph]].
+  - **Licence** : AGPL pour [[MinIO]], [[Silo]] et [[Garage]] (copyleft réseau : l'usage interne ne pose rien, la livraison à un client oblige à fournir le code) ; Apache 2.0 pour [[RustFS]], [[SeaweedFS]], [[Apache Ozone]], [[OpenStack Swift]], [[Versity GW]] et [[S3Proxy]] ; LGPL pour [[Ceph]].
   - **Petits fichiers** : c'est la thèse de [[SeaweedFS]], dont les chiffres publiés viennent d'un portable ; une page de son wiki, non mise à jour depuis 2018, dit elle-même qu'ils sont trompeurs.
+- **Une passerelle ne stocke rien.** [[Versity GW]] et [[S3Proxy]] traduisent S3 vers un stockage existant : la durabilité et la capacité sont celles du stockage qui se trouve derrière.
+- **Silo est un pont, pas une destination.** [[Silo]], le fork de MinIO, rend la console, les binaires et les images, mais avec un seul mainteneur (94 % des commits sur six mois, relevé du 2026-10-30).
+- **La console web varie.** [[RustFS]] et [[Silo]] en intègrent une, [[SeaweedFS]] a une Admin UI, [[Ceph]] un Dashboard ; [[Garage]] en prépare une, encore en test, et [[S3Proxy]] n'en a pas.
 - **Tester ses propres clients.** Les SDK, l'outil de sauvegarde, le moteur de requêtes : c'est leur jeu d'opérations qui compte, pas le catalogue du projet. Une liste de manques, comme celle ci-dessus, se confronte à cette liste-là.
 - **Se méfier des benchmarks.** Un essai individuel de mars 2026 compare MinIO, SeaweedFS, Garage et RustFS, mais MinIO fait un `fsync` par écriture et les autres non : les politiques de durabilité diffèrent, donc la vitesse ne se compare pas. Un autre, d'août 2025, est mesuré sur un nœud unique sans réglage, et ses auteurs préviennent que le multinœud peut différer beaucoup. Les comparatifs publiés par des éditeurs de produits qui se connectent à ces backends ne sont pas indépendants.
 - **Migrer demande de réécrire l'IAM.** L'API se repointe ; les politiques, les clés et la réplication sont propres à chaque serveur.
 
 ## Approches voisines & alternatives
 
-- [[Comparatif - Stockage objet]] — ce qui départage les neuf briques du dossier, avec leur état et leur licence.
+- [[Comparatif - Stockage objet]] — ce qui départage les douze briques du dossier, avec leur état et leur licence.
 - [[Stockage]] — le hub du domaine.
 - [[AWS S3]] et [[Cloudflare R2]] — les références managées, dont l'egress est le poste de coût qui surprend.
 - [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Garage]], [[Ceph]], [[Apache Ozone]], [[OpenStack Swift]] — les serveurs auto-hébergeables.
