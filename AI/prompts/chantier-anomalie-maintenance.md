@@ -670,4 +670,4 @@ Rappel : un commit par page, aucun trailer `Co-Authored-By`, aucune mention d'ou
 - [x] Lot 36 — agents : garde-fous hors modèle
 - [x] Lot 37 — fondamentaux : méthodes et culture
 - [x] Lot 38 — retrait des fiches de modèles
-- [ ] Lot 39 — stockage objet S3 : mise à jour et nouvelles fiches
+- [x] Lot 39 — stockage objet S3 : mise à jour et nouvelles fiches
