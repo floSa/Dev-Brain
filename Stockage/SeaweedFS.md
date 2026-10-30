@@ -10,7 +10,7 @@ hosted: [self]
 maturite: production
 langage: Go
 scaling: distributed
-alternatives: ["[[OpenStack Swift]]", "[[Apache Ozone]]", "[[RustFS]]", "[[MinIO]]", "[[Ceph]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
+alternatives: ["[[OpenStack Swift]]", "[[Apache Ozone]]", "[[RustFS]]", "[[MinIO]]", "[[Silo]]", "[[Ceph]]", "[[Garage]]", "[[Versity GW]]", "[[S3Proxy]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
 complements: []
 tags: [object-storage, s3-compatible]
 url_docs: https://github.com/seaweedfs/seaweedfs/wiki
@@ -38,8 +38,10 @@ couche **S3** expose l'API compatible par-dessus. L'erasure coding, repris des i
 couvre le stockage tiède. Sa licence **Apache 2.0** en fait l'alternative que l'on cite quand
 le copyleft réseau d'un concurrent pose problème.
 
-*Constat du 2026-09-30 :* version **4.48**, publiée le 2026-09-28, après 47 releases en douze
-mois ; environ **35,1 k étoiles** GitHub. Côté S3, le README et le wiki officiel décrivent
+*Constat du 2026-10-30 :* version **4.51**, publiée le 2026-10-25, après 48 releases en douze
+mois ; environ **35,8 k étoiles** GitHub ; licence **Apache 2.0** lue dans le fichier `LICENSE`.
+Interface web d'administration (`weed admin`, port 12535 d'après le wiki ; la connexion par OIDC
+est réservée à l'offre Enterprise). Côté S3, le README et le wiki officiel décrivent
 aujourd'hui une couverture bien plus large qu'un « sous-ensemble » : **versioning** (sans MFA
 Delete), **Object Lock** (rétention et legal hold), cycle de vie, tagging, CORS, **écritures
 conditionnelles** (`If-Match`, `If-None-Match`), URL présignées, multipart, IAM avec politiques de
@@ -82,8 +84,11 @@ petits fichiers est une thèse d'architecture, pas un résultat indépendant.
 - [[Apache Ozone]] — Stockage objet distribué d'Apache (Apache 2.0) pour les très gros volumes analytiques sur site : espace de noms à milliards d'objets, accès S3 et système de fichiers Hadoop, erasure coding et cohérence forte par Raft, mais une douzaine de machines au minimum et un S3 sans versioning, Object Lock ni politiques de bucket.
 - [[RustFS]] — Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.
 - [[MinIO]] — Stockage objet S3-compatible auto-hébergé en Go, sous AGPLv3 : dépôt communautaire archivé et déclaré non maintenu par l'éditeur (2026-04-25), dernière release en octobre 2025 ; la suite est AIStor (propriétaire) ou un fork communautaire.
+- [[Silo]] — Fork communautaire de MinIO publié par Pigsty sous AGPL-3.0, avec console web, binaires, paquets et images Docker (`pgsty/silo`, ex-`pgsty/minio`, renommé le 2026-08-06) : un pont de migration pour une installation MinIO existante, mais un seul mainteneur (94 % des commits sur six mois), donc pas un choix pour une nouvelle installation.
 - [[Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
 - [[Garage]] — Stockage objet S3-compatible léger en Rust conçu pour l'auto-hébergement géo-distribué sur matériel hétérogène : résilient, sans coordination lourde (CRDT), sous AGPLv3.
+- [[Versity GW]] — Passerelle S3 en Go sous Apache 2.0 qui expose un système de fichiers POSIX, ScoutFS ou Azure Blob comme un serveur S3, ou relaie vers un autre serveur S3 : sans état, sans stockage propre, avec une WebGUI optionnelle et un mode S3 sur RDMA — une passerelle, pas un moteur. — passerelle : elle se pose devant un stockage existant, elle n'en fournit pas.
+- [[S3Proxy]] — Passerelle S3 en Java sous Apache 2.0 qui traduit l'API S3 vers Azure, Google Cloud, OpenStack Swift, SFTP, un autre S3 ou un dossier local, et sert aussi à tester sans AWS : sans stockage propre ni console, avec un seul mainteneur (99 % des commits sur six mois) — une passerelle, pas un moteur. — passerelle : elle se pose devant un stockage existant, elle n'en fournit pas.
 - [[AWS S3]] — Stockage objet de référence d'AWS : durabilité 11 neuf, scaling quasi illimité et écosystème intégré, mais egress facturé et dépendance au cloud AWS.
 - [[Cloudflare R2]] — Stockage objet managé S3-compatible sans frais d'egress : sortie de données gratuite et intégration native avec Cloudflare Workers.
 
