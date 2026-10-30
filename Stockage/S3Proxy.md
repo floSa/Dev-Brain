@@ -19,6 +19,14 @@ url_repo: https://github.com/gaul/s3proxy
 
 # S3Proxy
 
+<!-- AUTO:BANDEAU:START -->
+> Passerelle S3 en Java sous Apache 2.0 qui traduit l'API S3 vers Azure, Google Cloud, OpenStack Swift, SFTP, un autre S3 ou un dossier local, et sert aussi à tester sans AWS : sans stockage propre ni console, avec un seul mainteneur (99 % des commits sur six mois) — une passerelle, pas un moteur.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Java | open-source | self-hébergé · mono-nœud | production | amont non sondé |
+<!-- AUTO:BANDEAU:END -->
+
 ## Définition
 
 **Passerelle S3** écrite en **Java** (Java 17 ou plus) : un serveur qui parle l'API S3 vers les

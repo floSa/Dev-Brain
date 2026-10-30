@@ -19,6 +19,14 @@ url_repo: https://github.com/versity/versitygw
 
 # Versity GW
 
+<!-- AUTO:BANDEAU:START -->
+> Passerelle S3 en Go sous Apache 2.0 qui expose un système de fichiers POSIX, ScoutFS ou Azure Blob comme un serveur S3, ou relaie vers un autre serveur S3 : sans état, sans stockage propre, avec une WebGUI optionnelle et un mode S3 sur RDMA — une passerelle, pas un moteur.
+
+| Nature | Licence | Exécution | Maturité | Fraîcheur |
+|---|---|---|---|---|
+| Plateforme Go | open-source | self-hébergé · distribué | production | amont non sondé |
+<!-- AUTO:BANDEAU:END -->
+
 ## Définition
 
 **Passerelle S3** écrite en **Go** par Versity Software : un serveur qui parle l'API S3 vers les

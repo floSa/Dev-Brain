@@ -1,7 +1,7 @@
 # Carte des liens — DevBrain
 
 > Généré par `AI/scripts/build_links.py`. Ne pas éditer à la main.
-> 1236 pages actives.
+> 1239 pages actives.
 
 ## Par page
 
@@ -797,8 +797,8 @@
 
 ### Garage  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[croc]]
+- liens sortants : [[AWS S3]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[MinIO]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Versity GW]], [[croc]]
 
 ### garak  ·  brique
 - tags : `ai-security`, `prompt-injection`, `jailbreak`, `llm-eval`, `red-teaming`
@@ -1422,8 +1422,8 @@
 
 ### MinIO  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[lakeFS]]
-- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[MLflow]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[croc]], [[dlt]], [[lakeFS]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[lakeFS]]
+- liens entrants : [[AWS S3]], [[Airbyte]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Plateformes LLM auto-hébergées]], [[Comparatif - Stockage objet]], [[DVC]], [[Delta Lake]], [[Garage]], [[MLflow]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RAG documentaire on-prem - clé en main ou assemblé]], [[RAGFlow]], [[RustFS]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Tempo]], [[Trino]], [[croc]], [[dlt]], [[lakeFS]]
 
 ### mise  ·  brique
 - tags : `task-runner`, `reproducibility`, `package-manager`
@@ -2217,8 +2217,13 @@
 
 ### RustFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[Apache Ozone]], [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens sortants : [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[Apache Ozone]], [[Ceph]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+
+### S3Proxy  ·  brique
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
 
 ### SAELens  ·  brique
 - tags : `explainability`, `llm`
@@ -2277,8 +2282,8 @@
 
 ### SeaweedFS  ·  brique
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[croc]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[S3Proxy]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Docker]], [[Garage]], [[MLflow]], [[MinIO]], [[Métriques, logs et traces]], [[OLTP, OLAP et lakehouse]], [[OpenStack Swift]], [[Parquet]], [[Pattern - Stack démo ML locale multi-services]], [[Pipelines CI-CD on-prem — runners, secrets et artefacts]], [[RustFS]], [[S3Proxy]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Trino]], [[Versity GW]], [[croc]]
 
 ### Seldon Core  ·  brique
 - tags : `model-serving`, `inference`, `kubernetes`
@@ -2339,6 +2344,11 @@
 - tags : `data-app`, `dashboard`, `web-framework`
 - liens sortants : [[Comparatif - Apps data & démos ML]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
 - liens entrants : [[Comparatif - Apps data & démos ML]], [[Comparatif - Frontends web légers]], [[Dash]], [[Gradio]], [[Interfaces & apps data]], [[Streamlit]]
+
+### Silo  ·  brique
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### SimPy  ·  brique
 - tags : `simulation`, `inventory`, `scheduling`
@@ -2699,6 +2709,11 @@
 - tags : `text-to-sql`, `llm`, `rag`, `agents`, `local-llm`
 - liens sortants : [[Chroma]], [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Ollama]], [[Qdrant]], [[RAG]], [[Text-to-SQL]], [[WrenAI]], [[pgvector]]
 - liens entrants : [[Comparatif - Frameworks text-to-SQL]], [[DB-GPT]], [[Interroger un graphe en langage naturel]], [[Text-to-SQL]], [[WrenAI]]
+
+### Versity GW  ·  brique
+- tags : `object-storage`, `s3-compatible`
+- liens sortants : [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens entrants : [[Comparatif - Stockage objet]], [[Garage]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
 
 ### Vespa  ·  brique
 - tags : `search`, `vector-db`, `hybrid-search`, `ranking`, `distributed`
@@ -3157,8 +3172,8 @@
 
 ### Comparatif - Stockage objet  ·  comparatif
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet.base]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[Stockage objet et API S3]]
+- liens sortants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet.base]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatifs]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[Pattern - Stack démo ML locale multi-services]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Stockage objet et API S3]], [[Versity GW]]
 
 ### Comparatif - Suivi d'expériences ML  ·  comparatif
 - tags : `experiment-tracking`, `model-registry`
@@ -3612,8 +3627,8 @@
 
 ### Stockage  ·  hub
 - tags : `object-storage`, `s3-compatible`, `self-hosted`
-- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage objet et API S3]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Data Engineering]], [[Garage]], [[Infrastructure & Ops]], [[MLOps]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Réseau]], [[SeaweedFS]], [[Stockage objet et API S3]]
+- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage objet et API S3]], [[Versity GW]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Data Engineering]], [[Garage]], [[Infrastructure & Ops]], [[MLOps]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[Réseau]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage objet et API S3]], [[Versity GW]]
 
 ### Suivi d'expériences  ·  hub
 - tags : `experiment-tracking`, `model-registry`, `reproducibility`, `hyperparameter-tuning`, `ml-pipeline`
@@ -5782,8 +5797,8 @@
 
 ### Stockage objet et API S3  ·  notion
 - tags : `object-storage`, `s3-compatible`
-- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]]
-- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[SeaweedFS]], [[Stockage]], [[lakeFS]]
+- liens sortants : [[AWS S3]], [[Apache Iceberg]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Versity GW]]
+- liens entrants : [[AWS S3]], [[Apache Ozone]], [[Ceph]], [[Cloudflare R2]], [[Comparatif - Stockage objet]], [[Garage]], [[MinIO]], [[OpenStack Swift]], [[RustFS]], [[S3Proxy]], [[SeaweedFS]], [[Silo]], [[Stockage]], [[Versity GW]], [[lakeFS]]
 
 ### Stream processing  ·  notion
 - tags : `streaming`, `data-pipeline`, `idempotence`
@@ -6422,7 +6437,7 @@
 - `note-taking` : Obsidian, Page to Markdown  — pas de page concept dédiée
 - `notebook` : Kubeflow, Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill  — pas de page concept dédiée
 - `object-detection` : CVAT, Comparatif - Détection & segmentation, Detectron2, Détection d'objets, Métriques vision, OpenCV, Suivi d'objets, Vision, albumentations, supervision
-- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS  — pas de page concept dédiée
+- `object-storage` : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, S3Proxy, SeaweedFS, Silo, Stockage, Stockage objet et API S3, Versity GW, lakeFS  — pas de page concept dédiée
 - `object-tracking` : OpenCV, Suivi d'objets, Vision, supervision
 - `observability` : Alertmanager, Beszel, Grafana, Journalisation structurée et traçabilité, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix  — pas de page concept dédiée
 - `ocr` : Cascade OCR et contrôle arithmétique des factures, Comparatif - Parsing de documents, Couche de texte d'un PDF contre OCR, Documents, EasyOCR, Indra OCR, LlamaParse, Marker, MinerU, OCR, OCR classique vs modèles vision-langage pour documents, OCR vision-langage en une passe avec grounding, PaddleOCR, Parsing, RAG visuel - retrouver des documents sans OCR, Stirling PDF, Surya, Tesseract, Unstructured, docTR, olmOCR, pdf-inspector, Évaluer un OCR
@@ -6495,7 +6510,7 @@
 - `routing` : Cascade OCR et contrôle arithmétique des factures, Choisir entre règle, classifieur, modèle de décision et LLM, OmniRoute, OpenRouter, Passerelles, Routing and cascading, Tarif catalogue contre coût par tâche
 - `rul` : Indicateurs de santé, Jeux de données PHM, Jumeau numérique et modèles hybrides, Loi de Weibull, Politique de maintenance et coût, PyBaMM, RUL par analyse de survie, RUL par apprentissage profond, Santé de batterie (SOH et RUL), scikit-survival
 - `rule` : Rule - Commits conventionnels et versions automatiques, Rule - Config typée, Rule - Entraîner sur du normal vérifié, Rule - Git et identité, Rule - Image Docker minimale, Rule - Packaging démo, Rule - Projet assisté par agent, Rule - Qualité stricte, Rule - README, docs et décisions, Rule - Secrets hors du dépôt, Rule - Structure de projet, Rule - Tests Python avec pytest, Rule - Toolchain Python, Rule - Évaluer une anomalie par événement, pas par point  — pas de page concept dédiée
-- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS
+- `s3-compatible` : Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, RustFS, S3Proxy, SeaweedFS, Silo, Stockage, Stockage objet et API S3, Versity GW, lakeFS
 - `safety` : AI security, Boucle d'amélioration d'un agent, Excessive agency et lethal trifecta, Guardrails, Jailbreaking and defenses, NeMo Guardrails, Preuve formelle et assistant de preuve, Sycophancy  — pas de page concept dédiée
 - `sandbox` : Comparatif - Isolation d'exécution d'un agent, Daytona, DeepSeek Harness, E2B, Garde-fous hors modèle, Isolation par politique déclarative, Modal, OpenShell, sandbox-runtime
 - `sast` : Analyse de vulnérabilités, Semgrep, Sécurité  — pas de page concept dédiée
@@ -6722,7 +6737,7 @@
 - `nosql` (porté par : Apache Cassandra, Bases de données, Comparatif - Bases NoSQL, DBeaver, DataGrip, MongoDB, MongoDB Compass, Redis)
 - `note-taking` (porté par : Obsidian, Page to Markdown)
 - `notebook` (porté par : Kubeflow, Marimo, Notebooks, Notebooks-as-code, Quarto, jupysql, jupytext, papermill)
-- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, SeaweedFS, Stockage, Stockage objet et API S3, lakeFS)
+- `object-storage` (porté par : AWS S3, Apache Ozone, Ceph, Cloudflare R2, Comparatif - Stockage objet, Garage, MinIO, OpenStack Swift, Pattern - Stack démo ML locale multi-services, RustFS, S3Proxy, SeaweedFS, Silo, Stockage, Stockage objet et API S3, Versity GW, lakeFS)
 - `observability` (porté par : Alertmanager, Beszel, Grafana, Journalisation structurée et traçabilité, Kibana, Loki, Métriques, logs et traces, Netdata, Observabilité, Observabilité des LLM, OpenTelemetry, Prometheus, SLO et alerting, Tempo, Uptime Kuma, VictoriaMetrics, Zabbix)
 - `optimization` (porté par : Adam optimizer, CVXPY, Comparatif - Solveurs d'optimisation, Convexity, De la prévision probabiliste à la quantité commandée, Gradient descent, HiGHS, Learning rate schedules, Loss landscape and saddle points, Mathématiques, Maximal Update Parametrization, Modèle du vendeur de journaux (newsvendor), Newton & quasi-Newton, Normalisation et initialisation des réseaux, Optimal transport, Optimisation, Optimisation bayésienne, Optimisation combinatoire, Optimisation sous contrainte, Politique de maintenance et coût, Politiques de réapprovisionnement (s,S) et (R,Q), Programmation linéaire en nombres entiers (MIP), PuLP, Pyomo, Quantité économique de commande et tailles de lot, Recherche opérationnelle, Théorie des jeux)
 - `orchestration` (porté par : Activepieces, Airflow, Automatisation no-code, Celery, ClearML, Comparatif - Automatisation no-code, Comparatif - Orchestrateurs ML, Comparatif - Orchestrateurs data, Dagster, Flyte, Kestra, Mage, Metaflow, Orchestration, Prefect, Temporal, Windmill, Zapier, ZenML, gumloop, n8n)

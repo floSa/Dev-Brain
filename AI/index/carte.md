@@ -1,7 +1,7 @@
 # Carte — DevBrain
 
 > Généré par `AI/scripts/build_carte.py`. Ne pas éditer à la main.
-> 1138 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
+> 1141 pages décrites dans 22 dossiers. À lire d'abord : le fichier du dossier voulu détaille chaque page.
 
 - **Automatisation no-code** — 5 briques · 1 comparatif → [détail](carte/Automatisation%20no-code.md)
 - **Bases de données** — 71 briques · 17 notions · 12 comparatifs → [détail](carte/Bases%20de%20donn%C3%A9es.md)
@@ -87,7 +87,7 @@
   - Méthodes causales — 1 brique · 4 notions
   - Probabilités — 9 notions
   - Tests & estimation — 4 briques · 14 notions · 1 comparatif
-- **Stockage** — 9 briques · 1 notion · 1 comparatif → [détail](carte/Stockage.md)
+- **Stockage** — 12 briques · 1 notion · 1 comparatif → [détail](carte/Stockage.md)
 - **Sécurité** — 18 briques · 12 notions · 3 comparatifs → [détail](carte/S%C3%A9curit%C3%A9.md)
   - Analyse de vulnérabilités — 5 briques · 1 notion · 1 comparatif
   - Authentification — 4 briques · 1 notion · 1 comparatif

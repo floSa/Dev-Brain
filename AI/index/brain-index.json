@@ -27,7 +27,7 @@
     "Web & API"
   ],
   "scope": "v2-only (réservoir v1 exclu)",
-  "count": 1236,
+  "count": 1239,
   "tags_index": {
     "ab-testing": [
       "A/B testing",
@@ -3082,9 +3082,12 @@
       "OpenStack Swift",
       "Pattern - Stack démo ML locale multi-services",
       "RustFS",
+      "S3Proxy",
       "SeaweedFS",
+      "Silo",
       "Stockage",
       "Stockage objet et API S3",
+      "Versity GW",
       "lakeFS"
     ],
     "object-tracking": [
@@ -3926,9 +3929,12 @@
       "MinIO",
       "OpenStack Swift",
       "RustFS",
+      "S3Proxy",
       "SeaweedFS",
+      "Silo",
       "Stockage",
       "Stockage objet et API S3",
+      "Versity GW",
       "lakeFS"
     ],
     "safety": [
@@ -37895,8 +37901,11 @@
       "alternatives": [
         "[[RustFS]]",
         "[[MinIO]]",
+        "[[Silo]]",
         "[[SeaweedFS]]",
         "[[Ceph]]",
+        "[[Versity GW]]",
+        "[[S3Proxy]]",
         "[[AWS S3]]",
         "[[Cloudflare R2]]"
       ],
@@ -37920,6 +37929,7 @@
         "s3-compatible"
       ],
       "alternatives": [
+        "[[Silo]]",
         "[[Apache Ozone]]",
         "[[RustFS]]",
         "[[Ceph]]",
@@ -37981,12 +37991,42 @@
       ],
       "alternatives": [
         "[[MinIO]]",
+        "[[Silo]]",
         "[[SeaweedFS]]",
         "[[Garage]]",
-        "[[Ceph]]"
+        "[[Ceph]]",
+        "[[Versity GW]]",
+        "[[S3Proxy]]"
       ],
       "complements": [],
       "maturite": "beta"
+    },
+    {
+      "path": "Stockage/S3Proxy.md",
+      "nom": "S3Proxy",
+      "alias": [
+        "s3proxy",
+        "s3 proxy",
+        "gaul/s3proxy"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Java",
+      "domaines": null,
+      "pitch": "Passerelle S3 en Java sous Apache 2.0 qui traduit l'API S3 vers Azure, Google Cloud, OpenStack Swift, SFTP, un autre S3 ou un dossier local, et sert aussi à tester sans AWS : sans stockage propre ni console, avec un seul mainteneur (99 % des commits sur six mois) — une passerelle, pas un moteur.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[Versity GW]]",
+        "[[SeaweedFS]]",
+        "[[RustFS]]",
+        "[[Garage]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Stockage/SeaweedFS.md",
@@ -38011,13 +38051,44 @@
         "[[Apache Ozone]]",
         "[[RustFS]]",
         "[[MinIO]]",
+        "[[Silo]]",
         "[[Ceph]]",
         "[[Garage]]",
+        "[[Versity GW]]",
+        "[[S3Proxy]]",
         "[[AWS S3]]",
         "[[Cloudflare R2]]"
       ],
       "complements": [],
       "maturite": "production"
+    },
+    {
+      "path": "Stockage/Silo.md",
+      "nom": "Silo",
+      "alias": [
+        "silo",
+        "pgsty silo",
+        "pgsty/silo",
+        "pgsty/minio"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Fork communautaire de MinIO publié par Pigsty sous AGPL-3.0, avec console web, binaires, paquets et images Docker (`pgsty/silo`, ex-`pgsty/minio`, renommé le 2026-08-06) : un pont de migration pour une installation MinIO existante, mais un seul mainteneur (94 % des commits sur six mois), donc pas un choix pour une nouvelle installation.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[MinIO]]",
+        "[[RustFS]]",
+        "[[SeaweedFS]]",
+        "[[Garage]]"
+      ],
+      "complements": [],
+      "maturite": "beta"
     },
     {
       "path": "Stockage/Stockage objet et API S3.md",
@@ -38074,6 +38145,34 @@
       "alternatives": null,
       "complements": null,
       "maturite": null
+    },
+    {
+      "path": "Stockage/Versity GW.md",
+      "nom": "Versity GW",
+      "alias": [
+        "versity gw",
+        "versitygw",
+        "versity s3 gateway",
+        "versity gateway"
+      ],
+      "role": "brique",
+      "categorie": "storage/objet",
+      "famille": "plateforme",
+      "langage": "Go",
+      "domaines": null,
+      "pitch": "Passerelle S3 en Go sous Apache 2.0 qui expose un système de fichiers POSIX, ScoutFS ou Azure Blob comme un serveur S3, ou relaie vers un autre serveur S3 : sans état, sans stockage propre, avec une WebGUI optionnelle et un mode S3 sur RDMA — une passerelle, pas un moteur.",
+      "tags": [
+        "object-storage",
+        "s3-compatible"
+      ],
+      "alternatives": [
+        "[[S3Proxy]]",
+        "[[SeaweedFS]]",
+        "[[RustFS]]",
+        "[[Garage]]"
+      ],
+      "complements": [],
+      "maturite": "production"
     },
     {
       "path": "Sécurité/Analyse de vulnérabilités/Analyse de vulnérabilités.md",
