@@ -10,7 +10,7 @@ hosted: [self]
 maturite: deprecated
 langage: Go
 scaling: distributed
-alternatives: ["[[Apache Ozone]]", "[[RustFS]]", "[[Ceph]]", "[[SeaweedFS]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
+alternatives: ["[[Silo]]", "[[Apache Ozone]]", "[[RustFS]]", "[[Ceph]]", "[[SeaweedFS]]", "[[Garage]]", "[[AWS S3]]", "[[Cloudflare R2]]"]
 complements: ["[[Delta Lake]]", "[[lakeFS]]", "[[DVC]]", "[[RAGFlow]]", "[[Trino]]"]
 tags: [object-storage, s3-compatible]
 url_docs: https://min.io/docs/minio/linux/index.html
@@ -29,63 +29,64 @@ url_repo: https://github.com/minio/minio
 
 ## Définition
 
-Serveur de stockage objet **S3-compatible** écrit en **Go**, pensé pour être posé sur ses
-propres machines : un seul binaire expose l'API S3, et l'on obtient « son S3 » en local ou dans
-son cloud. En mode distribué, la tolérance aux pannes de disque et de nœud passe par de
-l'**erasure coding**, sans RAID. C'est le moyen courant d'avoir l'API S3 sans AWS, et son usage
-le plus fréquent n'est même pas la production : un conteneur MinIO sert de S3 de développement
-et de CI. Les décisions de l'éditeur, prises entre 2025 et 2026, pèsent aujourd'hui plus lourd
-que la technique : l'édition libre a perdu sa console d'administration, puis ses binaires, puis
-sa maintenance, et le dépôt est **archivé**. La fiche est donc classée **abandonnée** : c'est
-le critère qui écarte une brique des propositions automatiques, et le README du projet dit
+Serveur de stockage objet **S3-compatible** écrit en **Go**, à héberger soi-même : un binaire
+expose l'API S3, et la tolérance aux pannes passe par de l'**erasure coding**, sans RAID. Il a
+été le moyen courant d'avoir « son S3 » sans AWS, et son usage le plus fréquent était un S3 de
+développement et de CI en conteneur. La fiche est classée **abandonnée** et reste au brain comme
+**repère** : sa chute est la raison du comparatif du dossier. Pourquoi : l'éditeur a retiré en
+2025 la console d'administration, puis les binaires et les images, puis la maintenance ; le dépôt
+est **archivé**, et ses images ont disparu de Docker Hub en septembre 2026. Le README du projet dit
 lui-même que toute production bâtie sur des binaires compilés depuis les sources l'est « à ses
-propres risques ».
+propres risques ». **Où aller** : [[Silo]] si une installation MinIO existe et doit rester à jour ;
+[[SeaweedFS]], [[RustFS]] ou [[Garage]] pour une nouvelle installation (voir le
+[[Comparatif - Stockage objet]]).
 
-*Constat du 2026-09-30 :* dépôt `minio/minio` archivé par son propriétaire le **2026-04-25**
-(bannière GitHub, lecture seule) ; environ **61,3 k étoiles** ; dernière release
-`RELEASE.2025-10-15T17-29-55Z`, publiée le 2025-10-16 — un correctif d'élévation de privilèges
-par contournement des session policies des comptes de service et de STS. Aucune release
-depuis, et aucun correctif de sécurité officiel à attendre.
+*Constat du 2026-10-30 :* dépôt `minio/minio` archivé en lecture seule (dernier push le
+2026-04-24, bannière « THIS REPOSITORY IS NO LONGER MAINTAINED ») ; environ **61,3 k étoiles** ;
+licence **AGPL-3.0** ; dernière release `RELEASE.2025-10-15T17-29-55Z`, publiée le 2025-10-16 (un
+correctif d'élévation de privilèges sur les session policies des comptes de service et de STS).
+Aucune release depuis, aucun correctif de sécurité officiel à attendre.
 
 ## Chronologie — comment l'édition libre s'est arrêtée
 
 - **Mai 2025** — la console web d'administration est retirée de la Community Edition : il ne reste qu'un navigateur d'objets, le reste passe par `mc` (source : Blocks & Files, 2025-06-19).
-- **Octobre 2025** — plus de binaires ni d'images Docker officiels (source : It's FOSS ; le README actuel confirme : « distributed as source code only »).
-- **2025-12-03** — le README annonce un projet « en maintenance » qui n'accepte plus de changements : ni fonction, ni amélioration, ni pull request ; les correctifs de sécurité critiques sont examinés « au cas par cas » (commit `27742d46`).
-- **2025-12-23** — l'éditeur annonce trois paliers AIStor : *Free* (licence propriétaire qui limite la redistribution, **mononœud uniquement**), *Enterprise Lite* (multinœud, moins de 400 TiB) et *Enterprise*. Les prix ne sont pas publics.
-- **2026-02-12** — le README devient « THIS REPOSITORY IS NO LONGER MAINTAINED » et renvoie vers AIStor (commit `7aac2a2c`).
-- **2026-04-25** — dépôt archivé. Les sources divergent sur la date (It's FOSS la place au 25 avril, un billet de Pigsty au 12 février, date du dernier commit de README) ; la bannière GitHub lue ce jour donne le 25 avril.
+- **Octobre 2025** — plus de binaires ni d'images Docker officiels côté libre (source : It's FOSS ; le README confirme : « distributed as source code only »).
+- **2025-12-03** — le README annonce un projet « en maintenance » qui n'accepte plus de changements ; les correctifs de sécurité critiques sont examinés « au cas par cas ».
+- **2025-12-23** — trois paliers AIStor : *Free* (licence propriétaire, **mononœud uniquement**), *Enterprise Lite* (multinœud, moins de 400 TiB) et *Enterprise* ; prix non publics.
+- **2026-02-12** — le README devient « THIS REPOSITORY IS NO LONGER MAINTAINED » et renvoie vers AIStor.
+- **2026-04-24** — dernier push, dépôt archivé (les sources donnent le 24 ou le 25 avril : bannière GitHub, It's FOSS).
+- **2026-08-06** — le fork de Pigsty devient [[Silo]] (le dépôt `pgsty/minio` est renommé `pgsty/silo`).
+- **2026-09-11** — les dépôts `minio/minio` et `minio/mc` disparaissent de **Docker Hub**. Preuves : le ticket `xtdb/xtdb#6061` du 2026-09-11 (« withdrawn from Docker Hub », l'API répond 404) et `milvus-io/milvus#53430` du 2026-09-14 (le `docker compose` de développement ne démarre plus). Lu le 2026-10-30 : l'API de Docker Hub répond toujours 404 pour les deux dépôts, et `dl.min.io` répond **410** pour les binaires du serveur et du client. Pour `quay.io/minio/minio`, l'API répond comme pour un dépôt qui n'existe pas (401, alors que `quay.io/minio/operator` répond 200) : retiré ou privé, la sortie ne tranche pas. Aucune annonce de l'éditeur trouvée.
 
-## Forks et suites
+## Où aller
 
-- **AIStor** — l'offre de l'éditeur. *Free* n'est pas une option de cluster : mononœud, licence propriétaire. Le multinœud est payant, sur devis.
-- **`pgsty/minio`** — fork communautaire de Pigsty, **AGPL-3.0**, créé le 2025-10-25, environ 3,6 k étoiles, dernière release le 2026-09-16. Il rétablit la console, les binaires, les images et les paquets RPM/DEB. Périmètre annoncé : correctifs de bugs et de CVE, pas de fonction nouvelle. Il est maintenu par une petite structure, non affiliée à MinIO Inc. (source : billet de son mainteneur, partie prenante). OpenMaxIO, fork de la console seule, est inactif depuis juin 2025 : pas une suite.
+- **Une installation MinIO existe** → [[Silo]] : même code, même format de données, console, binaires, paquets et images. Un seul mainteneur : un pont de migration, pas une destination.
+- **Une nouvelle installation** → [[SeaweedFS]] (le plus de recul, couverture S3 large), [[RustFS]] (le plus proche des habitudes MinIO, à réévaluer), [[Garage]] (petit cluster réparti), [[Ceph]] pour du bloc et du fichier en plus.
+- **AIStor**, l'offre de l'éditeur : *Free* est mononœud et propriétaire, le multinœud est payant sur devis. Hors périmètre du brain (pas de page pour un logiciel fermé).
+- OpenMaxIO, fork de la console seule, est inactif depuis juin 2025 : ce n'est pas une suite.
 
 ## Prendre si / Écarter si
 
 | Prendre si | Écarter si |
 |---|---|
-| Maintenir une installation existante le temps de migrer : les binaires déjà déployés continuent de tourner | **Toute nouvelle installation de production** : dépôt archivé, aucune release depuis octobre 2025, plus de correctif de sécurité officiel → [[RustFS]], [[SeaweedFS]], [[Ceph]] |
-| S3 de développement ou de CI avec une image figée, là où une faille n'expose aucune donnée réelle | Il faut **compiler soi-même** : la Community Edition est distribuée en sources uniquement, sans binaire ni image officiels |
-| Rester sur la base de code MinIO avec des correctifs de sécurité : le fork `pgsty/minio` existe, à évaluer comme dépendance (petite structure, périmètre limité aux correctifs) | La **console web d'administration** est retirée de l'édition libre — policies, réplication et supervision passent par la CLI `mc` ou par l'offre payante |
-| | L'**AGPLv3** est un copyleft réseau : exposer un service bâti sur MinIO peut imposer de publier le code lié — à valider juridiquement |
-| | AIStor, la suite de l'éditeur : *Free* est mononœud et propriétaire, le multinœud est payant, sur devis |
-| | Aucune envie d'opérer disques, nœuds et mises à jour → managé [[AWS S3]] ou [[Cloudflare R2]] |
-| | Compatibilité S3 large mais **partielle** : certains cas limites d'AWS ne sont pas couverts, tester ses intégrations |
-| | Erasure coding et quorum à dimensionner : un cluster sous-dimensionné perd en disponibilité |
+| Garder une installation existante le temps de migrer : les binaires déjà déployés continuent de tourner | **Toute nouvelle installation** : dépôt archivé, plus de release depuis octobre 2025, plus de correctif de sécurité officiel → [[SeaweedFS]], [[RustFS]], [[Garage]] |
+| Un S3 de développement ou de CI sur une image figée que l'on a déjà en cache, là où une faille n'expose aucune donnée réelle | Il faut **récupérer l'image ou le binaire** : `minio/minio` et `minio/mc` ont disparu de Docker Hub, et `dl.min.io` répond 410 |
+| Rester sur la base de code MinIO avec des correctifs : [[Silo]] | La **console web d'administration** : retirée de l'édition libre |
+| | L'**AGPLv3** est un copyleft réseau : exposer un service bâti sur MinIO peut imposer de publier le code lié |
 
 ## Mise en œuvre
 
-- Installation — build depuis les sources (`go install`) ; plus de binaire ni d'image officiels côté libre depuis octobre 2025 (le fork `pgsty/minio` en fournit)
+- Installation — build depuis les sources (`go install`) ; plus de binaire ni d'image officiels côté libre, et les images ont quitté Docker Hub en septembre 2026
 - Point d'entrée — l'API S3, et la CLI `mc` pour l'administration
-- Prérequis — plusieurs nœuds et un nombre de disques cohérent avec le schéma d'erasure coding visé : ensembles de 2 à 16 disques (jusqu'à 32 par réglage), parité EC:3 ou plus en production d'après la documentation de l'éditeur, par exemple EC:4 sur 16 disques pour 75 % d'espace utile
+- Prérequis — plusieurs nœuds et un nombre de disques cohérent avec le schéma d'erasure coding visé ; parité EC:3 ou plus en production d'après la documentation de l'éditeur
 - Exécution — self-hébergé, du mono-nœud au cluster distribué
-- Coût — gratuit sous AGPLv3 pour le cœur, sans maintenance. **AIStor** (ex-Enterprise) porte la console d'admin, le support et les fonctions avancées : *Free* mononœud et propriétaire, *Enterprise Lite* sous 400 TiB, *Enterprise* avec support 24/7, sur devis
+- Coût — gratuit sous AGPLv3, sans maintenance ; la suite **AIStor** est propriétaire
 
 ## Écosystème
 
 ### Alternatives
 
+- [[Silo]] — Fork communautaire de MinIO publié par Pigsty sous AGPL-3.0, avec console web, binaires, paquets et images Docker (`pgsty/silo`, ex-`pgsty/minio`, renommé le 2026-08-06) : un pont de migration pour une installation MinIO existante, mais un seul mainteneur (94 % des commits sur six mois), donc pas un choix pour une nouvelle installation.
 - [[Apache Ozone]] — Stockage objet distribué d'Apache (Apache 2.0) pour les très gros volumes analytiques sur site : espace de noms à milliards d'objets, accès S3 et système de fichiers Hadoop, erasure coding et cohérence forte par Raft, mais une douzaine de machines au minimum et un S3 sans versioning, Object Lock ni politiques de bucket.
 - [[RustFS]] — Stockage objet S3-compatible en Rust sous Apache 2.0, qui vise la succession de MinIO : versioning, Object Lock, réplication et mode distribué au catalogue, mais en version stable depuis le 2026-09-16 seulement et avec des failles IAM encore publiées chaque mois.
 - [[Ceph]] — Plateforme de stockage distribué unifiée (objet, bloc, fichier) : l'API S3 via RADOS Gateway sur un cluster massivement scalable et auto-réparant, au prix d'une exploitation lourde.
